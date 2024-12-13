@@ -1,0 +1,39 @@
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Composer dependencies
+# vendor/
+
+# Environment and configuration files
+# .env
+# .env.*
+# .idea/
+# .vscode/
+
+# Log files
+# *.log
+# logs/
+
+# CodeIgniter writable directories
+# writable/cache/*
+# writable/logs/*
+# writable/session/*
+# writable/uploads/*
+
+# Ignore database file (if applicable)
+# *.sql
+# *.sqlite
+
+# Operating system files
+# .DS_Store
+# Thumbs.db
+
+# PHPStorm project files
+# /.idea
+
+# JetBrains IDE
+# .idea/
+# *.iml
+
+# MacOS specific files
+# *.DS_Store
