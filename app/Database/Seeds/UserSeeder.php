@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
 
         $insertdata['name'] = 'Test';
         $insertdata['email'] = 'user@demo.com';
-        $insertdata['password'] = 'Sirmutha@111';
+        $insertdata['password'] = 'password';
 
         $user->insert($insertdata);
     }

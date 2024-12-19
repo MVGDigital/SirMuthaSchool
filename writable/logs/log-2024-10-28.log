@@ -1,0 +1,23 @@
+CRITICAL - 2024-10-28 11:11:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_banner.php"
+[Method: GET, Route: adm1n/banner/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_banner.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_banner', [], true)
+ 3 APPPATH\Controllers\BannerController.php(87): view('edit_banner', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BannerController->edit('3')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BannerController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-10-28 11:14:09 --> Error: Call to undefined method App\Controllers\BannerController::generateUniqueFileName()
+[Method: POST, Route: adm1n/banner/update/3]
+in APPPATH\Controllers\BannerController.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BannerController->update('3')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BannerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')

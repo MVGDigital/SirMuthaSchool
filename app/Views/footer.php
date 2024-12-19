@@ -53,12 +53,12 @@
 
 
 
-
 <!-- Js Script Links -->
 <script src="<?= base_url('js/jquery-3.7.1.min.js') ?>"></script>
 <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
 <script src="<?= base_url('js/splide.min.js') ?>"></script>
 <script src="<?= base_url('js/custom.js') ?>"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
 <?php if ($page_code === 'index'): ?>
@@ -236,6 +236,79 @@ var splide = new Splide('#spl-education-slider', {
     },
 });
 splide.mount();
+
+<?php endif; ?>
+
+<?php if ($page_code === 'beyond-curriculum'): ?>
+
+//Clubs Slider
+var splide = new Splide('#clubs', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+/* Student Newsletter */
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical:true,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    verticalSwiping:true,
+    responsive: [
+    {
+        breakpoint: 992,
+        settings: {
+          vertical: false,
+        }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        vertical: false,
+      }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      }
+    }
+    ]
+});
+/* Student Newsletter */
+
 
 <?php endif; ?>
 

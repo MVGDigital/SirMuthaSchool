@@ -1,0 +1,178 @@
+CRITICAL - 2024-11-05 11:37:21 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 11:42:55 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 11:42:57 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:25:40 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:26:12 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:26:49 --> ErrorException: Undefined array key "sort_order"
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Views\ecommerce-index.php on line 74.
+ 1 APPPATH\Views\ecommerce-index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sort_order"', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter\\app\\Views\\ecommerce-index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ecommerce-index', [], true)
+ 5 APPPATH\Controllers\VideoBannerController.php(15): view('ecommerce-index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:29:32 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:29:33 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:32:35 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:35:43 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:38:00 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:41:02 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:41:48 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')
+CRITICAL - 2024-11-05 12:47:37 --> ErrorException: Undefined variable $id
+[Method: GET, Route: adm1n/videobanner]
+in APPPATH\Controllers\VideoBannerController.php on line 13.
+ 1 APPPATH\Controllers\VideoBannerController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\Codeigniter\\app\\Controllers\\VideoBannerController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VideoBannerController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VideoBannerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Codeigniter\\public\\index.php')

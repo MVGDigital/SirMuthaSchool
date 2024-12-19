@@ -136,6 +136,9 @@ p {
     padding-left: 80px;
     padding-right: 80px;
 }
+.pb-100{
+    padding-bottom: 100px;
+}
 .plr-30-80{
     padding-left: 30px;
     padding-right: 80px;
@@ -585,6 +588,19 @@ main{
     text-transform: uppercase;
     font-family: 'Figtree-Regular';
     background-color: var(--blue-bg);
+}
+.whiteBtn-medium{
+    padding: 20px 0;
+}
+.whiteBtn-medium a{
+    padding: 11px 5%;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--color-blue)!important;
+    color: var(--color-blue)!important;
+    text-transform: uppercase;
+    font-family: 'Figtree-Regular';
 }
 .lft-rgt-content,.lft-rgt-content p, .lft-rgt-content h3{
     text-align: start!important;
@@ -1256,7 +1272,249 @@ label.error{
     background-color:#102753;
 }
 
+/* Beyond Curriculum */
+.clubsSec .sectionTitle-white{
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4C5D7E;
+}
+.clubsSec .sectionTitle-white h3{
+    margin-bottom: 0!important;
+}
+.clubsSec .overlayPagination .splide__arrows{
+    bottom: -6%!important;
+}
+.clubsSec .overlayPagination .splide__pagination{
+    bottom: -8% !important;
+}
 
+
+/* Slick Slider */
+.vehicle-detail-banner .car-slider-desc {
+    max-width: 180px;
+    margin: 0 auto;
+}
+.slick-banner-slider .slider.slider-for {
+    max-width: 50%;
+    padding-right: 15px;
+}
+.slick-banner-slider .slider.slider-nav {
+    max-width: 50%;
+}
+.slick-banner-slider .slider.slider-for,
+.slick-banner-slider .slider.slider-nav {
+    width: 100%;
+    float: left;
+}
+.slick-banner-slider .slider.slider-nav {
+    height: 610px;
+    overflow: hidden;
+
+}
+.slick-slider-banner-image {
+    height: 610px;
+}
+.slick-banner-slider .slider.slider-nav {
+    padding-left: 15px;
+}
+
+.slider-nav .slick-slide.thumbnail-image .thumbImg{
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.slick-vertical .slick-slide.slick-current{
+    background: #f5f5f5;
+}
+.slick-vertical .slick-slide{
+    padding: 10px;
+    border-radius: 4px;
+    display: flex!important;
+}
+.slick-vertical .slick-slide:active,
+.slick-vertical .slick-slide:focus,
+.slick-arrow:hover,
+.slick-arrow:focus {
+    border: 0;
+    outline: 0;
+}
+.slick-banner-slider .slick-slide .thumbContent {
+    padding-left: 30px;
+    text-align: start;
+}
+.slick-banner-slider .slick-slide .thumbContent h6{
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--color-blue);
+    text-transform: capitalize;
+    font-family: 'Figtree-Regular';
+    margin: 0;
+}
+.slick-banner-slider .slick-slide .thumbContent p{
+    font-size: 14px;
+    line-height: 28.8px;
+    color: var(--color-inActive);
+    text-transform: capitalize;
+    font-family: 'Figtree-Regular';
+    margin: 10px 0;
+}
+.slick-banner-slider .slick-slide .thumbContent span{
+    font-size: 14px;
+    line-height: 28.8px;
+    color: var(--color-inActive);
+    text-transform: capitalize;
+    font-family: 'Figtree-Regular';
+    padding: 0;
+}
+.slick-slider-banner-image img{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+}
+.slick-slider-banner-image .thumbContent{
+    padding:20px 0!important;
+}
+
+.slider-nav .slick-slide.slick-current span {
+    color: #196DB6;
+}
+.slider-nav .slick-slide {
+    text-align: center;
+}
+.slider-nav .slick-slide span {
+    font-size: 14px;
+    display: block;
+    padding: 5px 0 15px;
+}
+.slick-arrow {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.slick-prev {
+   top: 0;
+}
+.slick-next {
+   bottom: 0;
+   background-color: #fff;
+}
+.slick-prev.slick-arrow {
+    background-image: url(../images/black-up-arrow.png);
+}
+.slick-next.slick-arrow {
+    background-image: url(../images/black-down-arrow.png);
+}
+/*End USE CSS for Slider*/
+
+@media screen and (max-width : 991px) {
+
+	.slick-banner-slider .slider.slider-for,
+	.slick-banner-slider .slider.slider-nav {
+	    max-width: 100%;
+	    float: none;
+	}
+	.slick-banner-slider .slider.slider-for {
+		padding-right: 0;
+	}
+	.slick-banner-slider .slider.slider-nav {
+		height: auto;
+	}
+	.slick-slider-banner-image {
+	    height: 500px;
+	} 
+	.slider.slider-nav.thumb-image {
+        padding: 10px 30px 0;
+	}
+	.slider-nav .slick-slide span {
+		padding: 5px 0;
+	}
+	.slick-arrow {
+		padding: 0;
+	    width: 30px;
+	    height: 30px;
+	    top: 50%;
+	    bottom: 0;
+	    -webkit-transform: translateY(-50%) rotate(-90deg);
+	    -moz-transform: translateY(-50%) rotate(-90deg);
+	    -ms-transform: translateY(-50%) rotate(-90deg);
+	    transform: translateY(-50%) rotate(-90deg);
+	}
+	.slick-prev {
+	    left: 0;
+	    right: unset;
+	}
+	.slick-next {
+	    left: unset;
+	    right: 0;
+   		background-color: transparent;
+	}
+	.vehicle-detail-banner .car-slider-desc {
+    	max-width: 340px;
+	}
+	.bid-tag {
+    	padding: 10px 0 15px;
+	}
+	.slider.slider-nav.thumb-image {
+	   white-space: nowrap;
+	}
+	.thumbnail-image.slick-slide {
+		padding: 0px 5px;
+		min-width: 75px;
+		display: inline-block;
+		float: none;
+	}
+}
+
+@media screen and (max-width : 767px) {
+	.slick-slider-banner-image {
+	    height: 400px;
+	}
+	.slider.slider-nav.thumb-image {
+    	padding: 0px 20px 0;
+    	margin: 10px 0px 0;
+	}
+	.slider-nav .slick-slide.thumbnail-image .thumbImg {
+		max-width: 140px;
+		height: 80px;
+	}
+	.slick-prev.slick-arrow {
+    	background-position: center 10px;
+	}
+	.slick-next.slick-arrow {
+    	background-position: center 10px, center;
+	}
+	.slider-nav .slick-slide span {
+	    font-size: 12px;
+	    white-space: normal;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.slick-slider-banner-image {
+	    height:340px;
+	}
+}
+
+@media screen and (max-width : 480px) {
+	.slick-slider-banner-image {
+	    height:280px;
+	}
+}
+/* Slick Slider */
+
+
+
+
+
+/* =============================== Beyond Curriculum =================================*/
 
 
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= base_url('css/splide.min.css') ?>">
     <!-- <link rel="stylesheet" href="<?= base_url('css/splide-core.min.css') ?>"> -->
     <link rel="stylesheet" href="<?= base_url('css/custom.css') ?>">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
 

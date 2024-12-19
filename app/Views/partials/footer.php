@@ -8,7 +8,7 @@
                         <p class="text-muted text-center mb-0">
                             ©
                             <script> document.write(new Date().getFullYear()) </script>
-                            Sir Mutha School
+                            LADY ANDAL SCHOOL
                         </p>
                     </div>
                 </div>
