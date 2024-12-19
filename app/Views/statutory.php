@@ -85,8 +85,8 @@
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
                         <img src="<?= base_url('images/statutory/code-of-conduct.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
-                        <div class="sectionTitle-blue">
-                            <h3>code of <span>Conduct</span></h3>
+                        <div class="sectionSubTitle-blue">
+                            <h4>code of <span>Conduct</span></h4>
                         </div>
                         <div class="card-under-line"><hr></div>
                         <div class="blueBtn-medium">
@@ -97,8 +97,8 @@
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
                         <img src="<?= base_url('images/statutory/rules-and-regulations.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
-                        <div class="sectionTitle-blue">
-                            <h3>Rules & <span>Regulations</span></h3>
+                        <div class="sectionSubTitle-blue">
+                            <h4>Rules & <span>Regulations</span></h4>
                         </div>
                         <div class="card-under-line"><hr></div>
                         <div class="blueBtn-medium">
@@ -109,8 +109,8 @@
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
                         <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
-                        <div class="sectionTitle-blue">
-                            <h3>Child <span>Support Policy</span></h3>
+                        <div class="sectionSubTitle-blue">
+                            <h4>Child <span>Support Policy</span></h4>
                         </div>
                         <div class="card-under-line"><hr></div>
                         <div class="blueBtn-medium">

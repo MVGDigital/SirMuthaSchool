@@ -309,6 +309,39 @@ $('.slider-nav').slick({
 });
 /* Student Newsletter */
 
+/* Annual Events */
+var main = new Splide( '#annual-event', {
+  type       : 'slide',
+  heightRatio: 0.5,
+  pagination : false,
+  arrows     : false,
+  cover      : true,
+} );
+
+var thumbnails = new Splide( '#thumbnail-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    rewind          : false,
+    perPage         : 6,
+    isNavigation    : true,
+    pagination      : false,
+    cover           : true,
+    dragMinThreshold: {
+        mouse: 4,
+        touch: 10,
+    },
+    breakpoints : {
+        640: {
+        
+        },
+    },
+} );
+
+main.sync( thumbnails );
+main.mount();
+thumbnails.mount();
+/* Annual Events */
 
 <?php endif; ?>
 
