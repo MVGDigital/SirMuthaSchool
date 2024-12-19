@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-<title>Lady Andal School - Admin</title>
+<title><?= isset($title) ? esc($title) : 'Sir Mutha School - Admin' ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
 <meta content="" name="author" />
