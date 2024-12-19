@@ -133,9 +133,9 @@
                                             <div class="card-body">
                                                 <i class="icofont-users-alt-3 display-4 icon-about"></i>
                                                 <h5 class="card-title">About Us</h5>
-                                                <p class="card-text">Manage information about the teachers.</p>
-                                                <a href="<?= base_url('adm1n/teacher'); ?>" class="btn bg-colour">View
-                                                    Teachers</a>
+                                                <p class="card-text">Manage information about the board of members</p>
+                                                <a href="<?= base_url('adm1n/boardofmember'); ?>" class="btn bg-colour">View
+                                                    Board of Members</a>
                                             </div>
                                         </div>
                                     </div>

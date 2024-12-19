@@ -126,23 +126,23 @@
                     <!--end nav-item-->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#sidebarAboutUs" data-bs-toggle="collapse" role="button"
-                            aria-expanded="false" aria-controls="sidebarAboutUs">
-                            <i class="icofont-users-alt-3 menu-icon"></i>
-                            <span>About us</span>
-                        </a>
-                        <div class="collapse " id="sidebarAboutUs">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?= base_url('adm1n/teacher'); ?>">Teacher</a>
-                                </li>
-                                <!--end nav-item-->
-                            </ul>
-                            <!--end nav-->
-                        </div>
-                        <!--end startbarDashboards-->
-                    </li>
-                    <!--end nav-item-->
+    <a class="nav-link" href="#sidebarAboutUs" data-bs-toggle="collapse" role="button"
+        aria-expanded="false" aria-controls="sidebarAboutUs">
+        <i class="icofont-users-alt-3 menu-icon"></i>
+        <span>About us</span>
+    </a>
+    <div class="collapse" id="sidebarAboutUs">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('adm1n/boardofmember'); ?>">Board of Members</a>
+            </li>
+            <!--end nav-item-->
+        </ul>
+        <!--end nav-->
+    </div>
+    <!--end startbarDashboards-->
+</li>
+<!--end nav-item-->
 
                     <li class="nav-item">
                         <a class="nav-link" href="#sidebarContactUs" data-bs-toggle="collapse" role="button"
