@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Rizz Admin Dashboard')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Sir Mutha Admin Dashboard')) ?>
     <link rel="stylesheet" href="/libs/jsvectormap/jsvectormap.min.css">
     <?= $this->include('partials/head-css') ?>
     <style>
@@ -92,7 +92,7 @@
                                     <div class="col-md-4 mb-3">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <i class="icofont-search-job display-4 icon-career"></i>
+                                                <i class="fa-solid fa-briefcase display-4 icon-career"></i>
                                                 <h5 class="card-title">Careers</h5>
                                                 <p class="card-text">View job postings and applications.</p>
                                                 <a href="<?= base_url('adm1n/career'); ?>" class="btn bg-colour">Manage
@@ -131,7 +131,7 @@
                                     <div class="col-md-4 mb-3">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <i class="icofont-users-alt-3 display-4 icon-about"></i>
+                                                <i class="fa-solid fa-users display-4 icon-about"></i>
                                                 <h5 class="card-title">About Us</h5>
                                                 <p class="card-text">Manage information about the teachers.</p>
                                                 <a href="<?= base_url('adm1n/teacher'); ?>" class="btn bg-colour">View

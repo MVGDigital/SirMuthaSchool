@@ -3,7 +3,7 @@
     <div class="brand">
         <a href="index" class="logo">
             <!-- <span> -->
-            <img src="/images/mss-logo.svg" alt="logo-small" class="logo-sm">
+            <img src="/images/mss-logo.svg" alt="logo" class="logo-sm">
             <!-- </span> -->
             <!-- <span class="">
                 <img src="/images/logo-light.png" alt="logo-large" class="logo-lg logo-light">
@@ -51,7 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#sidebarCareers" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarCareers">
-                            <i class="icofont-search-job menu-icon"></i>
+                            <i class="fa-solid fa-briefcase menu-icon"></i>
                             <span>Careers</span>
                         </a>
                         <div class="collapse " id="sidebarCareers">
@@ -128,7 +128,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#sidebarAboutUs" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarAboutUs">
-                            <i class="icofont-users-alt-3 menu-icon"></i>
+                            <i class="fa-solid fa-users menu-icon"></i>
                             <span>About us</span>
                         </a>
                         <div class="collapse " id="sidebarAboutUs">
