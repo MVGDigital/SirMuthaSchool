@@ -87,11 +87,6 @@ const paths = {
     }
 };
 
-function handleError(error) {
-    console.error(error.toString());
-    this.emit('end');
-}
-
 gulp.task('browsersync', function (callback) {
     browsersync.init({
         server: {

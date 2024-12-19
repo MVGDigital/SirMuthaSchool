@@ -55,6 +55,9 @@ $routes->get('/admission', 'Admission::index');
 //Inclusive Education
 $routes->get('/inclusive-education', 'InclusiveEducation::index');
 
+//Beyond Curriculum
+$routes->get('/beyond-curriculum', 'BeyondCurriculum::index');
+
 //Gallery
 $routes->get('/gallery', 'Gallery::index');
 
@@ -79,15 +82,6 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('/adm1n/banner/update/(:num)', 'BannerController::update/$1');
     $routes->get('/adm1n/banner/delete/(:num)', 'BannerController::delete/$1');
     $routes->get('/adm1n/banner/toggle-status/(:num)', 'BannerController::toggleStatus/$1');
-
-    // Board of Member routes
-$routes->get('/adm1n/boardofmember', 'BoardOfmembers::index');
-$routes->get('adm1n/boardofmember/list', 'BoardOfmembers::index');
-$routes->get('adm1n/boardofmember/add', 'BoardOfmembers::add');
-$routes->get('adm1n/boardofmember/edit/(:num)', 'BoardOfmembers::edit/$1');
-$routes->post('adm1n/boardofmembers/submit', 'BoardOfmembers::submit');
-$routes->post('adm1n/boardofmember/update/(:num)', 'BoardOfmembers::update/$1');
-$routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfmembers::delete/$1');
 
     // Event routes
     $routes->get('adm1n/event/add', 'EventController::add');
@@ -114,7 +108,14 @@ $routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfmembers::delete/$1');
     $routes->get('/adm1n/job-applications/delete/(:num)', 'JobApplication::delete/$1');
     $routes->get('/adm1n/job-applications/export', 'JobApplication::export');
 
-
+    // Teacher routes
+    $routes->get('adm1n/teacher', 'Teacher::index');
+    $routes->get('adm1n/teacher/list', 'Teacher::index');
+    $routes->get('adm1n/teacher/add', 'Teacher::add');
+    $routes->get('adm1n/teacher/edit/(:num)', 'Teacher::edit/$1');
+    $routes->post('adm1n/teacher/submit', 'Teacher::submit');
+    $routes->post('adm1n/teacher/update/(:num)', 'Teacher::update/$1');
+    $routes->get('adm1n/teacher/delete/(:num)', 'Teacher::delete/$1');
 
     // Document routes
     $routes->get('adm1n/document', 'DocumentController::index');

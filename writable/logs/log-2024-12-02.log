@@ -1,0 +1,41 @@
+CRITICAL - 2024-12-02 07:32:05 --> ErrorException: include(D:\xampp\htdocs\projects\MSS Websites\sirMutha\vendor\composer/../../app/Controllers/NewsEvents.php): Failed to open stream: No such file or directory
+[Method: GET, Route: news-events]
+in VENDORPATH\composer\ClassLoader.php on line 480.
+ 1 VENDORPATH\composer\ClassLoader.php(480): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer/../../app/Controllers/NewsEvents.php): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer\\ClassLoader.php', 480)
+ 2 VENDORPATH\composer\ClassLoader.php(480): include()
+ 3 VENDORPATH\composer\ClassLoader.php(346): Composer\Autoload\includeFile('D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer/../../app/Controllers/NewsEvents.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\NewsEvents')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\NewsEvents', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\public\\index.php')
+CRITICAL - 2024-12-02 07:32:07 --> ErrorException: include(D:\xampp\htdocs\projects\MSS Websites\sirMutha\vendor\composer/../../app/Controllers/Careers.php): Failed to open stream: No such file or directory
+[Method: GET, Route: career-jobs]
+in VENDORPATH\composer\ClassLoader.php on line 480.
+ 1 VENDORPATH\composer\ClassLoader.php(480): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer/../../app/Controllers/Careers.php): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer\\ClassLoader.php', 480)
+ 2 VENDORPATH\composer\ClassLoader.php(480): include()
+ 3 VENDORPATH\composer\ClassLoader.php(346): Composer\Autoload\includeFile('D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\vendor\\composer/../../app/Controllers/Careers.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Careers')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Careers', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\public\\index.php')
+CRITICAL - 2024-12-02 07:32:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Index.php(19): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Index->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\projects\\MSS Websites\\sirMutha\\public\\index.php')
