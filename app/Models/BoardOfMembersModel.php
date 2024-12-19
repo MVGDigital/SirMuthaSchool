@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class TeacherModel extends Model
+class BoardOfMembersModel extends Model
 {
     protected $table = 'board_of_members';
     protected $primaryKey = 'bom_id';
