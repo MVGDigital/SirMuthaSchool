@@ -11,6 +11,7 @@ class BoardOfMembers extends BaseController
     {
         $boardOfMembersModel = new BoardOfMembersModel();
         $data['board_of_members'] = $boardOfMembersModel->findAll();
+        log_message('debug', 'Board of Members Data: ' . print_r($data['board_of_members'], true));
         return view('boardofmembers_list', $data);
     }
 
@@ -52,9 +53,9 @@ class BoardOfMembers extends BaseController
             'content' => 'permit_empty'
         ];
 
-        $file = $this->request->getFile('boardofmember_photo');
+        $file = $this->request->getFile('boardofmembers_photo');
         if ($file && $file->isValid()) {
-            $rules['boardofmember_photo'] = 'uploaded[boardofmember_photo]|max_size[boardofmember_photo,2048]|is_image[boardofmember_photo]|mime_in[boardofmember_photo,image/jpg,image/jpeg,image/png]';
+            $rules['boardofmembers_photo'] = 'uploaded[boardofmembers_photo]|max_size[boardofmembers_photo,2048]|is_image[boardofmembers_photo]|mime_in[boardofmembers_photo,image/jpg,image/jpeg,image/png]';
         }
 
         $validation = \Config\Services::validation();
@@ -68,7 +69,7 @@ class BoardOfMembers extends BaseController
         if ($file && $file->isValid() && !$file->hasMoved()) {
             try {
                 $newName = $file->getRandomName();
-                $file->move(FCPATH . 'public/uploads/boardofmember_photos', $newName);
+                $file->move(FCPATH . 'uploads/boardofmember_photos', $newName);
             } catch (\Exception $e) {
                 return redirect()->back()->with('error', 'Error uploading photo: ' . $e->getMessage())->withInput();
             }
