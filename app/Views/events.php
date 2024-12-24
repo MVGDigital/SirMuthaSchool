@@ -38,7 +38,7 @@
     <!-- Section Menus -->
 
     <!--  Upcoming Events -->
-    <section class="container-space lightColor-bg ptb-80">
+    <section class="container-space lightColor-bg pb-100">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Upcoming<span> Events</span></h3>
         </div>
@@ -229,10 +229,59 @@
                             
                         </div>
                     </li>
-                    
+
                     
                 </ul>
             </div>
         </div>
     </section>
     <!--  Upcoming Events -->
+
+    <!-- Past Events -->
+     <section class="container-space ptb-80">
+        <div class="sectionTitle-blue col-lg-10 m-auto">
+            <h3>Past<span> Events</span></h3>
+        </div>
+
+        <div class="pastEvent-container row w100">
+            <div class="col-lg-4">
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="Sir Mutha Past Events">
+            </div>
+            <div class="col-lg-8">
+                <h6>Sir Mutha - 2023</h6>
+                <div class="event-date">
+                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
+                    <span>17 October 2023</span>
+                </div>
+                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
+            </div>
+        </div>
+        <div class="pastEvent-container row w100">
+            <div class="col-lg-4">
+                <img src="<?= base_url('images/events/past-event-2.jpg') ?>" alt="Sir Mutha Past Events">
+            </div>
+            <div class="col-lg-8">
+                <h6>Sir Mutha - 2023</h6>
+                <div class="event-date">
+                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
+                    <span>17 October 2023</span>
+                </div>
+                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
+            </div>
+        </div>
+        <div class="pastEvent-container row w100">
+            <div class="col-lg-4">
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="Sir Mutha Past Events">
+            </div>
+            <div class="col-lg-8">
+                <h6>Sir Mutha - 2023</h6>
+                <div class="event-date">
+                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
+                    <span>17 October 2023</span>
+                </div>
+                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
+            </div>
+        </div>
+
+     </section>
+    <!-- Past Events -->
