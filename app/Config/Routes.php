@@ -146,10 +146,10 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('adm1n/faq/delete/(:num)', 'Faq::delete/$1');
 
     // Contact routes
-    $routes->get('adm1n/contact', 'Contact::index');
-    $routes->get('adm1n/contact/create', 'Contact::create');
-    $routes->post('adm1n/contact/submit', 'Contact::submit');
-    $routes->get('adm1n/contact/export/(:num)', 'Contact::export/$1');
+    $routes->get('adm1n/contact', 'ContactController::index');
+    $routes->get('adm1n/contact/create', 'ContactController::create');
+    $routes->post('adm1n/contact/submit', 'ContactController::submit');
+    $routes->get('adm1n/contact/export/(:num)', 'ContactController::export/$1');
 
     // Student routes
     $routes->get('/adm1n/students', 'Student::index');

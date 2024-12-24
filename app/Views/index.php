@@ -8,24 +8,15 @@
     <div id="homeSlider" class="splide homeBanner">
         <div class="splide__track">
             <ul class="splide__list">
+                <?php foreach ($banners as $banner): ?>
                 <li class="splide__slide">
                     <div class="sliderContainer">
-                        <img src="<?= base_url('images/home/slider-1.png') ?>" class="img-fluid" alt="home slider image">
-                        <h4>From Legacy to Future</h4>
+                        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+                            alt="<?= esc($banner['title']) ?>">
+                        <h4><?= esc($banner['title']) ?></h4>
                     </div>
                 </li>
-                <li class="splide__slide">
-                    <div class="sliderContainer">
-                        <img src="<?= base_url('images/home/slider-2.png') ?>" class="img-fluid" alt="home slider image">
-                        <h4>From Legacy to Future</h4>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <div class="sliderContainer">
-                        <img src="<?= base_url('images/home/slider-3.png') ?>" class="img-fluid" alt="home slider image">
-                        <h4>From Legacy to Future</h4>
-                    </div>
-                </li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
