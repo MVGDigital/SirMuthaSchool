@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Rizz')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Lady Andal')) ?>
 
     <?= $this->include('partials/head-css') ?>
 </head>
@@ -15,16 +15,16 @@
                     <div class="row">
                         <div class="col-lg-4 mx-auto">
                             <div class="card">
-                                <div class="card-body p-0  auth-header-box rounded-top" style="background: #8A0101;">
+                                <div class="card-body p-0  auth-header-box rounded-top" style="border: 2px solid #8A0101; border-bottom:none;">
                                     <div class="text-center p-3">
-                                        <a href="index.html" class="logo logo-admin">
-                                            <img src="/images/mss-logo.svg" height="50" alt="logo" class="auth-logo">
-                                        </a>
+                                        <!-- <a href="index.html" class="logo logo-admin"> -->
+                                            <img src="<?= base_url('/images/favicon.png') ?>" height="50" alt="logo" class="auth-logo">
+                                        <!-- </a> -->
                                         <!-- <h4 class="mt-3 mb-1 fw-semibold text-white fs-18">Let's Get Started Rizz</h4>
                                         <p class="text-muted fw-medium mb-0">Sign in to continue to Rizz.</p> -->
                                     </div>
                                 </div>
-                                <div class="card-body pt-0">
+                                <div class="card-body pt-0" style="border: 2px solid #8A0101; border-top:none;">
                                     <form method="POST" class="my-4" action="<?= base_url('adm1n/loginCheck') ?>">
 
                                         <?php if (!empty(session()->getFlashdata('error'))) : ?>
@@ -33,12 +33,12 @@
 
                                         <div class="form-group mb-2">
                                             <label class="form-label" for="username" style="color: #8A0101;">Username</label>
-                                            <input type="email" class="form-control" id="username" name="email" placeholder="Enter username" value="user@demo.com">
+                                            <input type="email" class="form-control" style="border: 2px solid #8A0101;" id="username" name="email" placeholder="Enter username">
                                         </div><!--end form-group-->
 
                                         <div class="form-group">
                                             <label class="form-label" for="userpassword" style="color: #8A0101;">Password</label>
-                                            <input type="password" class="form-control" name="password" id="userpassword" placeholder="Enter password" value="password">
+                                            <input type="password" class="form-control" style="border: 2px solid #8A0101;" name="password" id="userpassword" placeholder="Enter password">
                                         </div><!--end form-group-->
 
                                         <div class="form-group row mt-3">
@@ -56,7 +56,7 @@
                                         <div class="form-group mb-0 row">
                                             <div class="col-6">
                                                 <div class="d-grid mt-3" >
-                                                    <button class="btn btn-primary" type="submit" style="background: #8A0101;">Log In <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                                    <button class="btn" type="submit" style="background: #8A0101; border: 2px solid #8A0101; color:white;">Log In <i class="fas fa-sign-in-alt ms-1"></i></button>
                                                 </div>
                                             </div><!--end col-->
                                         </div> <!--end form-group-->
