@@ -153,7 +153,7 @@ splide.mount();
 
 <?php if ($page_code === 'academics'): ?>
 
-//Board members Slider
+//teacher-enrichment Slider
 var splide = new Splide('#teacher-enrichment', {
     type: 'slide',
     autoplay: false,
@@ -197,7 +197,7 @@ var splide = new Splide('#facilities', {
 });
 splide.mount();
 
-//Board members Slider
+//curve Slider
 var splide = new Splide('#curve-slider', {
     type: 'slide',
     autoplay: false,
@@ -342,6 +342,30 @@ main.sync( thumbnails );
 main.mount();
 thumbnails.mount();
 /* Annual Events */
+
+<?php endif; ?>
+
+<?php if ($page_code === 'events'): ?>
+
+//Upcoming Events Slider
+var splide = new Splide('#upcoming-events', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 4,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
 
 <?php endif; ?>
 

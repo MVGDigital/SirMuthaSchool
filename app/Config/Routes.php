@@ -61,6 +61,9 @@ $routes->get('/beyond-curriculum', 'BeyondCurriculum::index');
 //Gallery
 $routes->get('/gallery', 'Gallery::index');
 
+//Events
+$routes->get('/events', 'Events::index');
+
 //Contact
 $routes->get('/contact', 'Contact::index');
 
