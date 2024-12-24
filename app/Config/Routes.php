@@ -120,6 +120,15 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('adm1n/teacher/update/(:num)', 'Teacher::update/$1');
     $routes->get('adm1n/teacher/delete/(:num)', 'Teacher::delete/$1');
 
+    // Board of Member routes
+    $routes->get('/adm1n/boardofmember', 'BoardOfmembers::index');
+    $routes->get('adm1n/boardofmember/list', 'BoardOfmembers::index');
+    $routes->get('adm1n/boardofmember/add', 'BoardOfmembers::add');
+    $routes->get('adm1n/boardofmember/edit/(:num)', 'BoardOfmembers::edit/$1');
+    $routes->post('adm1n/boardofmembers/submit', 'BoardOfmembers::submit');
+    $routes->post('adm1n/boardofmember/update/(:num)', 'BoardOfmembers::update/$1');
+    $routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfmembers::delete/$1');
+
     // Document routes
     $routes->get('adm1n/document', 'DocumentController::index');
     $routes->get('adm1n/document/add', 'DocumentController::add');

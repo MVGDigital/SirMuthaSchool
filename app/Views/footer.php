@@ -53,12 +53,12 @@
 
 
 
+
 <!-- Js Script Links -->
 <script src="<?= base_url('js/jquery-3.7.1.min.js') ?>"></script>
 <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
 <script src="<?= base_url('js/splide.min.js') ?>"></script>
 <script src="<?= base_url('js/custom.js') ?>"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
 <?php if ($page_code === 'index'): ?>
