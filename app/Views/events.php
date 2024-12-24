@@ -8,7 +8,7 @@
             <p>A unit of the madras seva sadan</p>
         </div>
         <div class="banner-subTitle">
-            <h2>Academics</h2>
+            <h2>Events</h2>
         </div>
 
     </section>
@@ -38,7 +38,7 @@
     <!-- Section Menus -->
 
     <!--  Upcoming Events -->
-    <section class="container-space lightColor-bg pb-100">
+    <section class="container-space lightColor-bg pt-60 pb-100">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Upcoming<span> Events</span></h3>
         </div>
