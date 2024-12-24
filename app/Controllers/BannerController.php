@@ -75,17 +75,17 @@ class BannerController extends BaseController
         $desktopImageWidth = $desktopImageDimensions[0];
         $desktopImageHeight = $desktopImageDimensions[1];
 
-        if ($desktopImageWidth !== 1920 || $desktopImageHeight !== 1000) {
-            return redirect()->back()->withInput()->with('error', 'Desktop image dimensions must be exactly 1920x1000 pixels.');
-        }
+        // if ($desktopImageWidth !== 1062 || $desktopImageHeight !== 424) {
+        //     return redirect()->back()->withInput()->with('error', 'Desktop image dimensions must be exactly 1920x1000 pixels.');
+        // }
 
         $mobileImageDimensions = getimagesize($mobileImage->getTempName());
         $mobileImageWidth = $mobileImageDimensions[0];
         $mobileImageHeight = $mobileImageDimensions[1];
 
-        if ($mobileImageWidth !== 600 || $mobileImageHeight !== 1500) {
-            return redirect()->back()->withInput()->with('error', 'Mobile image dimensions must be exactly 600x1500 pixels.');
-        }
+        // if ($mobileImageWidth !== 600 || $mobileImageHeight !== 1500) {
+        //     return redirect()->back()->withInput()->with('error', 'Mobile image dimensions must be exactly 600x1500 pixels.');
+        // }
 
         $desktopImageName = pathinfo($desktopImage->getClientName(), PATHINFO_FILENAME) . '_' . date('Ymd_His') . '.' . $desktopImage->getExtension();
         $desktopImage->move(FCPATH . 'uploads/banner_images', $desktopImageName);

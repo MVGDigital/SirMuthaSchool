@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Banner List')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Rizz')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <?= $this->include('partials/head-css') ?>
@@ -26,11 +26,11 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h4 class="card-title">Banners</h4>
+                                        <h4 class="card-title">Gallery List</h4>
                                     </div>
                                     <div class="col text-end">
-                                        <a href="<?= base_url('adm1n/banner/create') ?>" class="btn bg-colour">
-                                            <i class="fa fa-plus"></i> Add Banner
+                                        <a href="<?= base_url('adm1n/gallery/create') ?>" class="btn bg-colour">
+                                            <i class="fa fa-plus"></i> Add New
                                         </a>
                                     </div>
                                     <!--end col-->
@@ -65,52 +65,36 @@
                                     </div>
                                     <?php endif; ?>
                                     <div class="table-responsive">
-                                        <table id="banner" class="table table-striped">
+                                        <table id="gallery" class="table table-striped mb-0">
                                             <thead class="table-light">
                                                 <tr>
-                                                    <th>Page</th>
-                                                    <th>Title</th>
-                                                    <th>Desktop Image</th>
-                                                    <th>Mobile Image</th>
+                                                    <th>Image</th>
                                                     <th>Sort Order</th>
-                                                    <th>Is_published</th>
+                                                    <th>Status</th>
                                                     <th class="text-end">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($banners as $banner): ?>
+                                                <?php foreach ($gallery as $item): ?>
                                                 <tr>
-                                                    <td><?= esc($banner['page']) ?></td>
-                                                    <td><?= esc($banner['title']) ?></td>
-                                                    <td><img src="<?= base_url('/uploads/banner_images/') ?><?= esc($banner['desktop_image']) ?>"
-                                                            alt="Desktop Image" width="50"></td>
-                                                    <td><img src="<?= base_url('/uploads/banner_images/') ?><?= esc($banner['mobile_image']) ?>"
-                                                            alt="Mobile Image" width="50"></td>
-                                                    <td><?= esc($banner['sort_order']) ?></td>
                                                     <td>
-                                                        <div class="form-check form-switch form-switch-success">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="customSwitch<?= esc($banner['banner_id']) ?>"
-                                                                onchange="toggleStatus(<?= esc($banner['banner_id']) ?>, this.checked)"
-                                                                <?= $banner['is_published'] ? 'checked' : '' ?>>
-                                                            <label class="form-check-label"
-                                                                for="customSwitch<?= esc($banner['banner_id']) ?>">
-                                                                <?= $banner['is_published'] ? 'Active' : 'Inactive' ?>
-                                                            </label>
-                                                        </div>
+                                                        <img src="<?= base_url('/uploads/gallery_files/') ?><?= esc($item['file_path']) ?>"
+                                                            alt="Gallery Image" width="100">
                                                     </td>
-                                                    <td class="text-center">
-                                                        <a
-                                                            href="<?= base_url('/adm1n/banner/edit/') ?><?= esc($banner['banner_id']) ?>"><i
-                                                                class="las la-pen text-secondary font-16"></i></a>
-                                                        <a href="<?= base_url('/adm1n/banner/delete/') ?><?= esc($banner['banner_id']) ?>"
-                                                            onclick="return confirm('Are you sure you want to delete this banner?')">
-                                                            <i class="las la-trash-alt text-secondary font-16"></i>
+                                                    <td><?= esc($item['sort_order']) ?></td>
+                                                    <td>
+                                                        <?= $item['is_published'] ? 'Published' : 'Unpublished' ?>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="<?= base_url('/adm1n/gallery/edit/') ?><?= esc($item['id']) ?>"
+                                                            class=" btn-sm btn-warning mx-2">
+                                                            <i class="fa fa-edit"></i>
                                                         </a>
-                                                        <!-- <a
-                                                        href="/adm1n/banner/toggle-status/<?= esc($banner['banner_id']) ?>">
-                                                        <?= $banner['is_published'] ? 'Deactivate' : 'Activate' ?>
-                                                    </a> -->
+                                                        <a href="<?= base_url('/adm1n/gallery/delete/') ?><?= esc($item['id']) ?>"
+                                                            class=" btn-sm btn-danger text-danger"
+                                                            onclick="return confirm('Are you sure you want to delete this item?')">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach; ?>
@@ -143,11 +127,12 @@
             <script src="<?= base_url('/js/pages/index.init.js') ?>"></script>
             <script src="<?= base_url('/js/app.js') ?>"></script>
             <script>
-                $(document).ready(function() {
-            $('#banner').DataTable();
-        });
-            function toggleStatus(bannerId, isActive) {
-                const url = "<?= base_url('adm1n/banner/toggle-status/') ?>" + bannerId;
+            $(document).ready(function() {
+                $('#gallery').DataTable();
+            });
+
+            function toggleStatus(itemId) {
+                const url = "<?= base_url('/adm1n/gallery/toggle-status/') ?>" + itemId;
 
                 fetch(url, {
                         method: 'GET',
@@ -157,25 +142,24 @@
                     })
                     .then(response => {
                         if (!response.ok) {
-                            throw new Error('Network response was not ok');
+                            throw new Error('Failed to update status');
                         }
                         return response.json();
                     })
                     .then(data => {
                         if (data.status === 'success') {
-                            console.log(`Banner ${bannerId} is now ${data.is_published ? 'Active' : 'Inactive'}.`);
-                            const label = document.querySelector(`label[for="customSwitch${bannerId}"]`);
-                            label.innerText = data.is_published ? 'Active' : 'Inactive';
+                            alert(data.message);
+                            location.reload();
                         } else {
-                            console.error(data.message);
+                            alert(data.message);
                         }
                     })
                     .catch(error => {
                         console.error('Error:', error);
+                        alert('An error occurred. Please try again.');
                     });
             }
             </script>
-            
 </body>
 <!--end body-->
 
