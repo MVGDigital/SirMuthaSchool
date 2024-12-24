@@ -239,6 +239,115 @@ splide.mount();
 
 <?php endif; ?>
 
+<<<<<<< HEAD
+=======
+<?php if ($page_code === 'beyond-curriculum'): ?>
+
+//Clubs Slider
+var splide = new Splide('#clubs', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+/* Student Newsletter */
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical:true,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    verticalSwiping:true,
+    responsive: [
+    {
+        breakpoint: 992,
+        settings: {
+          vertical: false,
+        }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        vertical: false,
+      }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      }
+    }
+    ]
+});
+/* Student Newsletter */
+
+/* Annual Events */
+var main = new Splide( '#annual-event', {
+  type       : 'slide',
+  heightRatio: 0.5,
+  pagination : false,
+  arrows     : false,
+  cover      : true,
+} );
+
+var thumbnails = new Splide( '#thumbnail-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    rewind          : false,
+    perPage         : 6,
+    isNavigation    : true,
+    pagination      : false,
+    cover           : true,
+    dragMinThreshold: {
+        mouse: 4,
+        touch: 10,
+    },
+    breakpoints : {
+        640: {
+        
+        },
+    },
+} );
+
+main.sync( thumbnails );
+main.mount();
+thumbnails.mount();
+/* Annual Events */
+
+<?php endif; ?>
+
+>>>>>>> 5f1b33479732db8d2bf18ceb614ac92ca8469b80
 
 <?php if ($page_code === 'admission'): ?>
 
