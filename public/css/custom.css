@@ -136,12 +136,25 @@ p {
     padding-left: 80px;
     padding-right: 80px;
 }
+
+.ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .pb-100{
     padding-bottom: 100px;
 }
 .plr-30-80{
     padding-left: 30px;
     padding-right: 80px;
+}
+.ptb-50-80{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.ptb-80-30{
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 /* Images */
 .mobileImg {
@@ -1201,7 +1214,8 @@ main{
 }
 label.error{
     margin: 10px 0;
-    color: #ff1400;
+    opacity: 1 !important;
+    color: #ff1400!important;
 }
 .captcha-error{
     margin: 10px 0;
@@ -1655,6 +1669,86 @@ label.error{
     font-family: 'Figtree-Regular';
 }
 /* =============================== Events =================================*/
+
+.wave-yellow-overwireLightBg{
+    margin-top: -10%;
+    padding-top: 12%;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;    
+    background-image: url(../images/wave-overwrite-light-img.png);
+}
+
+.wave-yellow-overwireLightBg h5{
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    color: var(--color-blue);
+    font-family: 'EBGaramond-SemiBold';
+}
+.wave-yellow-overwireLightBg p{
+    font-size: 18px;
+    line-height: 36.6px;
+    margin-bottom: 20px;
+    color: var(--color-inActive);
+    font-family: 'Figtree-Light';
+}
+.event-location{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+.eveDates{
+    display: flex;
+    margin: 0 20px;
+}
+.eveDates img{
+    margin-right: 10px;
+}
+.eveDates span{
+    color: #474747;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Figtree-Regular';
+}
+
+.eventRegBg {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/events/eventRegBg.png);
+}
+.eventRegBg .contact-container{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
