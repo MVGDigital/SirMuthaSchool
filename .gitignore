@@ -17,7 +17,7 @@ node_modules/
 # CodeIgniter writable directories
 # writable/cache/*
 # writable/logs/*
-# writable/session/*
+writable/session/*
 # writable/uploads/*
 
 # Ignore database file (if applicable)

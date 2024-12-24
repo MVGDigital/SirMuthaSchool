@@ -239,8 +239,6 @@ splide.mount();
 
 <?php endif; ?>
 
-<<<<<<< HEAD
-=======
 <?php if ($page_code === 'beyond-curriculum'): ?>
 
 //Clubs Slider
@@ -347,7 +345,6 @@ thumbnails.mount();
 
 <?php endif; ?>
 
->>>>>>> 5f1b33479732db8d2bf18ceb614ac92ca8469b80
 
 <?php if ($page_code === 'admission'): ?>
 
