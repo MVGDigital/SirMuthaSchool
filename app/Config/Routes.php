@@ -63,9 +63,8 @@ $routes->get('/gallery', 'Gallery::index');
 
 //Events
 $routes->get('/events', 'Events::index');
+$routes->get('/event-details', 'Events::eventDetails');
 
-//event dtails
-$routes->get('/event-details', 'EventDetails::index');
 
 //Contact
 $routes->get('/contact', 'Contact::index');

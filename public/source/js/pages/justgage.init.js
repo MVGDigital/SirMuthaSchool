@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         counter: true,
         hideInnerShadow: true,
         gaugeColor: ['rgba(42, 118, 244, .1)'],
-        levelColors:['#22c55e'],
+        levelColors:['#102753'],
       }
   
       var gg1 = new JustGage({
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         counter: true,
         hideInnerShadow: true,
         gaugeColor: ['rgba(42, 118, 244, .1)'],
-        levelColors:['#22c55e'],
+        levelColors:['#102753'],
     });
 
     document.getElementById('Counter_2_refresh').addEventListener('click', function () {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         counter: true,
         formatNumber: true,
         gaugeColor: ['rgba(42, 118, 244, .1)'],
-        levelColors:['#22c55e'],
+        levelColors:['#102753'],
     });
   
     document.getElementById('Counter_refresh').addEventListener('click', function() {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       symbol: '%',
       pointer: true,
       gaugeColor: ['rgba(42, 118, 244, .1)'],
-      levelColors:['#22c55e'],
+      levelColors:['#102753'],
       pointerOptions: {
         toplength: -15,
         bottomlength: 10,
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       label: "temperature",
       pointer: true,
       gaugeColor: ['rgba(42, 118, 244, .1)'],
-      levelColors:['#22c55e'],
+      levelColors:['#102753'],
       textRenderer: function(val) {
           if (val < 50) {
               return 'Cold';
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       gaugeWidthScale: 0.6,
       counter: true,
       gaugeColor: ['rgba(42, 118, 244, .1)'],
-      levelColors:['#22c55e'],
+      levelColors:['#102753'],
       titleFontColor: "red",
       titleFontFamily: "Georgia",
       titlePosition: "below",
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       gaugeWidthScale: 0.6,
       pointer: true,
       gaugeColor: ['rgba(42, 118, 244, .1)'],
-        levelColors:['#22c55e'],
+        levelColors:['#102753'],
       pointerOptions: {
           toplength: 10,
           bottomlength: 10,
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       gaugeWidthScale: 0.6,
       pointer: true,
       gaugeColor: ['rgba(42, 118, 244, .1)'],
-        levelColors:['#22c55e'],
+        levelColors:['#102753'],
       pointerOptions: {
           toplength: 5,
           bottomlength: 15,

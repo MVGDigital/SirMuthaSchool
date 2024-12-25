@@ -1,16 +1,18 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <?php if (!empty($banner)): ?>
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+            alt="<?= esc($banner['title']); ?>">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
         </div>
         <div class="banner-subTitle">
-            <h2>Facilities</h2>
+            <h2><?= esc($banner['title']); ?></h2>
         </div>
-
+        <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -255,7 +257,8 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100" alt="Lady Andal">
+                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
             </div>
         </div>
     </section>
@@ -265,7 +268,8 @@
     <section class="wave-sec blueBg-Sec ">
         <div class="itemSpaceBetween">
             <div class="col-lg-7">
-                <img src="<?= base_url('images/facilities/spl-edication.png') ?>" class="img-fluid w100" alt="Lady Andal">
+                <img src="<?= base_url('images/facilities/spl-edication.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
             </div>
             <div class="col-lg-5 plr-30-80">
                 <div class="sectionTitle-white lft-rgt-content">
@@ -336,7 +340,7 @@
     <!-- Special Education -->
 
     <!-- Green Campus -->
-     <section class="green-campus-sec">
+    <section class="green-campus-sec">
         <div class="img-overwite-wave">
             <img src="<?= base_url('images/facilities/green-capus.jpg') ?>" class="img-fluid" alt="">
         </div>
@@ -345,14 +349,19 @@
             <div class="sectionTitle-blue col-lg-10 m-auto">
                 <h3>Green <span>Campus</span></h3>
                 <h6 class="light-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
                 </h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat</p>
                 <div class="blueBtn-medium text-center">
                     <a href="#">Know More</a>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- Green Campus -->

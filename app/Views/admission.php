@@ -1,16 +1,18 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <?php if (!empty($banner)): ?>
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+            alt="<?= esc($banner['title']); ?>">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
         </div>
         <div class="banner-subTitle">
-            <h2>Admission</h2>
+            <h2><?= esc($banner['title']); ?></h2>
         </div>
-
+        <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -64,7 +66,8 @@
                     <div class="cardTitle">
                         <h4>Pre KG</h4>
                     </div>
-                    <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100" alt="Sir Mutha Logo">
+                    <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
+                        alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Know More</a>
                     </div>
@@ -75,7 +78,8 @@
                     <div class="cardTitle">
                         <h4>KG- 1 Std</h4>
                     </div>
-                    <img src="<?= base_url('images/admission/kg-1std.png') ?>" class="img-fluid w100" alt="Sir Mutha Logo">
+                    <img src="<?= base_url('images/admission/kg-1std.png') ?>" class="img-fluid w100"
+                        alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Know More</a>
                     </div>

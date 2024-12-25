@@ -100,7 +100,7 @@
       xaxis: {
         type: 'datetime',
       },
-      colors:  ["#22c55e"],
+      colors:  ["#102753"],
       tooltip: {
         shared: false,
         y: {
@@ -125,7 +125,7 @@
               autoSelected: 'zoom'
             },
         },
-        colors: ["#22c55e", "rgba(34, 197, 94, 0.3)"],
+        colors: ["#102753", "rgba(34, 197, 94, 0.3)"],
         dataLabels: {
             enabled: false
         },
@@ -535,7 +535,7 @@
             color: '#bec7e0',
           },    
         },
-        colors: ["#22c55e"],
+        colors: ["#102753"],
         tooltip: {
           x: {
               format: 'dd MMM yyyy'
@@ -1088,7 +1088,7 @@ var options2 = {
   fill: {
       type: 'gradient',
   },
-  colors: ["#727cf5", "#22c55e", "#fa5c7c", "#39afd1"],
+  colors: ["#727cf5", "#102753", "#fa5c7c", "#39afd1"],
   xaxis: {
       tickAmount: 12,
       type: 'datetime',
@@ -2021,7 +2021,7 @@ var sparklineData = [47, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35,
 
 // the default colorPalette for this dashboard
 //var colorPalette = ['#01BFD6', '#5564BE', '#F7A600', '#EDCD24', '#F74F58'];
-var colorPalette = ['#00D8B6', '#22c55e', '#FEB019', '#FF4560', '#775DD0']
+var colorPalette = ['#00D8B6', '#102753', '#FEB019', '#FF4560', '#775DD0']
 
 var spark1 = {
   chart: {
@@ -2045,7 +2045,7 @@ var spark1 = {
   yaxis: {
       min: 0
   },
-  colors: ['#22c55e'],
+  colors: ['#102753'],
   title: {
       text: '$424,652',
       offsetX: 20,

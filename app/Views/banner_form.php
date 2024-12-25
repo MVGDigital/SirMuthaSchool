@@ -75,39 +75,27 @@
                                                             <option value="contact"
                                                                 <?= isset($banner) && $banner['page'] == 'contact' ? 'selected' : '' ?>>
                                                                 Contact Us</option>
-                                                            <option value="learning"
-                                                                <?= isset($banner) && $banner['page'] == 'learning' ? 'selected' : '' ?>>
-                                                                Learning</option>
-                                                            <option value="learning-inquiry"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-inquiry' ? 'selected' : '' ?>>
-                                                                Learning Inquiry</option>
-                                                            <option value="learning-myp"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-myp' ? 'selected' : '' ?>>
-                                                                Learning MYP</option>
-                                                            <option value="learning-pyp"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-pyp' ? 'selected' : '' ?>>
-                                                                Learning PYP</option>
-                                                            <option value="learning-dp"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-dp' ? 'selected' : '' ?>>
-                                                                Learning DP</option>
-                                                            <option value="learning-profile"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-profile' ? 'selected' : '' ?>>
-                                                                Learning Profile</option>
-                                                            <option value="learning-im"
-                                                                <?= isset($banner) && $banner['page'] == 'learning-im' ? 'selected' : '' ?>>
-                                                                Learning IM</option>
-                                                            <option value="testimonial"
-                                                                <?= isset($banner) && $banner['page'] == 'testimonial' ? 'selected' : '' ?>>
-                                                                Testimonial</option>
-                                                            <option value="student-life"
-                                                                <?= isset($banner) && $banner['page'] == 'student-life' ? 'selected' : '' ?>>
-                                                                Student Life</option>
-                                                            <option value="newsEvents"
-                                                                <?= isset($banner) && $banner['page'] == 'newsEvents' ? 'selected' : '' ?>>
-                                                                News and Events</option>
-                                                            <option value="infrastructure"
-                                                                <?= isset($banner) && $banner['page'] == 'infrastructure' ? 'selected' : '' ?>>
-                                                                Infrastructure</option>
+                                                            <option value="academics"
+                                                                <?= isset($banner) && $banner['page'] == 'academics' ? 'selected' : '' ?>>
+                                                                Academics</option>
+                                                            <option value="facilities"
+                                                                <?= isset($banner) && $banner['page'] == 'facilities' ? 'selected' : '' ?>>
+                                                                Facilities</option>
+                                                            <option value="statutory"
+                                                                <?= isset($banner) && $banner['page'] == 'statutory' ? 'selected' : '' ?>>
+                                                                Statutory</option>
+                                                            <option value="inclusive-education"
+                                                                <?= isset($banner) && $banner['page'] == 'inclusive-education' ? 'selected' : '' ?>>
+                                                                Inclusive Education</option>
+                                                            <option value="beyond-curriculum"
+                                                                <?= isset($banner) && $banner['page'] == 'beyond-curriculum' ? 'selected' : '' ?>>
+                                                                Beyond Curriculum</option>
+                                                            <option value="gallery"
+                                                                <?= isset($banner) && $banner['page'] == 'gallery' ? 'selected' : '' ?>>
+                                                                Gallery</option>
+                                                            <option value="events"
+                                                                <?= isset($banner) && $banner['page'] == 'events' ? 'selected' : '' ?>>
+                                                                Events</option>
                                                             <option value="documents"
                                                                 <?= isset($banner) && $banner['page'] == 'documents' ? 'selected' : '' ?>>
                                                                 Documents</option>

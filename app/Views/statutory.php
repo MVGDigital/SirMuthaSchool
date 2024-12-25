@@ -1,16 +1,18 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <?php if (!empty($banner)): ?>
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+            alt="<?= esc($banner['title']); ?>">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
         </div>
         <div class="banner-subTitle">
-            <h2>Statutory</h2>
+            <h2><?= esc($banner['title']); ?></h2>
         </div>
-
+        <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -36,13 +38,14 @@
             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h6>
 
-                <div class="lightYellowBtn">
-                    <a href="#">Begin your Chapter</a>
-                </div>
+            <div class="lightYellowBtn">
+                <a href="#">Begin your Chapter</a>
+            </div>
         </div>
     </section>
     <div class="overlay-wave-img">
-        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid" alt="Teacher's Discussion">
+        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid"
+            alt="Teacher's Discussion">
     </div>
     <!-- Section Menus -->
 
@@ -56,7 +59,8 @@
                     </div>
                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid"
                         alt="Sir Mutha Logo">
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna</h6>
                     <div class="blueBtn-medium">
                         <a href="#">Know More</a>
                     </div>
@@ -69,7 +73,8 @@
                     </div>
                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid"
                         alt="Sir Mutha Logo">
-                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna</h6>
                     <div class="blueBtn-medium">
                         <a href="#">Know More</a>
                     </div>
@@ -84,11 +89,14 @@
             <div class="row m-0 w100">
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/code-of-conduct.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
+                        <img src="<?= base_url('images/statutory/code-of-conduct.png') ?>" class="img-fluid"
+                            alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>code of <span>Conduct</span></h4>
                         </div>
-                        <div class="card-under-line"><hr></div>
+                        <div class="card-under-line">
+                            <hr>
+                        </div>
                         <div class="blueBtn-medium">
                             <a href="#">Know More</a>
                         </div>
@@ -96,11 +104,14 @@
                 </div>
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/rules-and-regulations.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
+                        <img src="<?= base_url('images/statutory/rules-and-regulations.png') ?>" class="img-fluid"
+                            alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>Rules & <span>Regulations</span></h4>
                         </div>
-                        <div class="card-under-line"><hr></div>
+                        <div class="card-under-line">
+                            <hr>
+                        </div>
                         <div class="blueBtn-medium">
                             <a href="#">Know More</a>
                         </div>
@@ -108,11 +119,14 @@
                 </div>
                 <div class="col-lg-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
+                        <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid"
+                            alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>Child <span>Support Policy</span></h4>
                         </div>
-                        <div class="card-under-line"><hr></div>
+                        <div class="card-under-line">
+                            <hr>
+                        </div>
                         <div class="blueBtn-medium">
                             <a href="#">Know More</a>
                         </div>

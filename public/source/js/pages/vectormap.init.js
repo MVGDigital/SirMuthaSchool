@@ -27,7 +27,7 @@
     markerStyle: {
       initial: {
           r: 5, // Marker width
-          fill: '#22c55e', // Marker color
+          fill: '#102753', // Marker color
           fillOpacity: 1, // The opacity of the marker shape
           stroke: '#FFF', // Stroke
           strokeWidth: 1, // the stroke width
@@ -147,7 +147,7 @@ var map_2 = new jsVectorMap({
   markerStyle: {
       initial: {
           r: 5, // Marker width
-          fill: '#22c55e', // Marker color
+          fill: '#102753', // Marker color
           fillOpacity: 1, // The opacity of the marker shape
           stroke: '#FFF', // Stroke
           strokeWidth: 1, // the stroke width

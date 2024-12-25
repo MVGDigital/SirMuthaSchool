@@ -1,16 +1,18 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <?php if (!empty($banner)): ?>
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+            alt="<?= esc($banner['title']); ?>">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
         </div>
         <div class="banner-subTitle">
-            <h2>Beyond Curriculum</h2>
+            <h2><?= esc($banner['title']); ?></h2>
         </div>
-
+        <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -300,7 +302,7 @@
                     <li class="splide__slide"><span>2019</span></li>
                     <li class="splide__slide"><span>2018</span></li>
                     <li class="splide__slide"><span>2017</span></li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -309,8 +311,8 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
-                               class="img-fluid" alt="Sir Mutha Newsletter Image">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
                             <h6>Sports Day, Nov 2022</h6>
@@ -327,8 +329,8 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
-                               class="img-fluid" alt="Sir Mutha Newsletter Image">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
                             <h6>Sports Day, Nov 2022</h6>
@@ -345,8 +347,8 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
-                               class="img-fluid" alt="Sir Mutha Newsletter Image">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
                             <h6>Sports Day, Nov 2022</h6>
@@ -363,8 +365,8 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
-                               class="img-fluid" alt="Sir Mutha Newsletter Image">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
                             <h6>Sports Day, Nov 2022</h6>

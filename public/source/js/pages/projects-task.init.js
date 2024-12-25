@@ -43,7 +43,7 @@
     offsetY: 0,
   },
   labels: [ "Active","Completed", "Assigned" ],
-  colors: ["#22c55e", "#08b0e7", "#ffc728"],
+  colors: ["#102753", "#08b0e7", "#ffc728"],
  
   responsive: [{
       breakpoint: 600,

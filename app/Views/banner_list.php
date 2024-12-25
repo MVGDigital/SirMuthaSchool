@@ -74,7 +74,7 @@
                                                     <th>Mobile Image</th>
                                                     <th>Sort Order</th>
                                                     <th>Is_published</th>
-                                                    <th class="text-end">Actions</th>
+                                                    <th class="text-center">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -83,9 +83,9 @@
                                                     <td><?= esc($banner['page']) ?></td>
                                                     <td><?= esc($banner['title']) ?></td>
                                                     <td><img src="<?= base_url('/uploads/banner_images/') ?><?= esc($banner['desktop_image']) ?>"
-                                                            alt="Desktop Image" width="50"></td>
+                                                            alt="Desktop Image" width="100"></td>
                                                     <td><img src="<?= base_url('/uploads/banner_images/') ?><?= esc($banner['mobile_image']) ?>"
-                                                            alt="Mobile Image" width="50"></td>
+                                                            alt="Mobile Image" width="100"></td>
                                                     <td><?= esc($banner['sort_order']) ?></td>
                                                     <td>
                                                         <div class="form-check form-switch form-switch-success">
@@ -105,7 +105,7 @@
                                                                 class="las la-pen text-secondary font-16"></i></a>
                                                         <a href="<?= base_url('/adm1n/banner/delete/') ?><?= esc($banner['banner_id']) ?>"
                                                             onclick="return confirm('Are you sure you want to delete this banner?')">
-                                                            <i class="las la-trash-alt text-secondary font-16"></i>
+                                                            <i class="las la-trash-alt text-danger font-16 px-2"></i>
                                                         </a>
                                                         <!-- <a
                                                         href="/adm1n/banner/toggle-status/<?= esc($banner['banner_id']) ?>">

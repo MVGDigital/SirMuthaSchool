@@ -116,7 +116,7 @@ chart2.render();
 
 // Monthly income widget
 
-var colors = ['#95a0c5', '#95a0c5', '#95a0c5', '#22c55e', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5'];
+var colors = ['#95a0c5', '#95a0c5', '#95a0c5', '#102753', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5'];
 var options = {
   chart: {
       height: 270,
@@ -257,7 +257,7 @@ dataLabels: {
     enabled: false,
   },
   style: {
-    colors: ["#22c55e"],
+    colors: ["#102753"],
     fontWeight: 400,
     fontSize: '13px',
   },
@@ -332,7 +332,7 @@ chart.render();
     offsetY: 0,
   },
   labels: [ "Currenet","New", "Retargeted" ],
-  colors: ["#22c55e", "#08b0e7", "#ffc728"],
+  colors: ["#102753", "#08b0e7", "#ffc728"],
  
   responsive: [{
       breakpoint: 600,

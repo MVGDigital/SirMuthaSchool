@@ -57,7 +57,7 @@ var options = {
             }
         }],
     },
-    colors: ["#22c55e", "rgba(106, 155, 155, 0.3)"],
+    colors: ["#102753", "rgba(106, 155, 155, 0.3)"],
     dataLabels: {
         enabled: false,
     },
@@ -334,7 +334,7 @@ var map_2 = new jsVectorMap({
     markerStyle: {
         initial: {
             r: 5, // Marker width
-            fill: '#22c55e', // Marker color
+            fill: '#102753', // Marker color
             fillOpacity: 1, // The opacity of the marker shape
             stroke: '#FFF', // Stroke
             strokeWidth: 1, // the stroke width
