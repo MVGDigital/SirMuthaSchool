@@ -57,9 +57,10 @@
 <!-- Js Script Links -->
 <script src="<?= base_url('js/jquery-3.7.1.min.js') ?>"></script>
 <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
+<script src="<?= base_url('js/splide.min.js') ?>"></script>
+<script src="<?= base_url('js/slick.min.js') ?>"></script>
 <script src="<?= base_url('js/jquery.validate.min.js') ?>"></script>
 <script src="<?= base_url('js/juery.validate.additional-methods.js') ?>"></script>
-<script src="<?= base_url('js/splide.min.js') ?>"></script>
 <script src="<?= base_url('js/custom.js') ?>"></script>
 
 <script>
