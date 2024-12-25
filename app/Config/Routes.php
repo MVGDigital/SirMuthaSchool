@@ -67,6 +67,8 @@ $routes->get('/event-details', 'Events::eventDetails');
 
 
 //Contact
+$routes->get('/career', 'CareerController::index');
+//Contact
 $routes->get('/contact', 'Contact::index');
 
 
