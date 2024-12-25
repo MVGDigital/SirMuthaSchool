@@ -372,7 +372,7 @@ splide.mount();
 
 <?php endif; ?>
 
-<?php if ($page_code === 'event-details'): ?>
+<?php if ($page_code === 'events-details'): ?>
 
     $(document).ready(function () {
         $("#contact-form").validate({
