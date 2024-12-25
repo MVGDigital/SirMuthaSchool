@@ -27,11 +27,11 @@ class Events extends BaseController
 
         $data = [
             'page_title' => 'EventDetails',
-            'page_code' => 'event-details',
+            'page_code' => 'events-details',
             'banner' => $banner
         ];
 
-        return view('header', $data) . view('event-details', $data) . view('footer');
+        return view('header', $data) . view('events-details', $data) . view('footer');
     }
     
 }
