@@ -80,7 +80,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#fac146'
+            '#102753', '#fac146'
         ],
     },
     legend: {
@@ -191,7 +191,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146'
+            '#102753', '#1ccab8', '#fac146'
         ]
     }
 };
@@ -298,7 +298,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146'
+            '#102753', '#1ccab8', '#fac146'
         ]
     }
 };
@@ -405,7 +405,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146'
+            '#102753', '#1ccab8', '#fac146'
         ]
     }
 };
@@ -515,7 +515,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146', '#ecedf1'
+            '#102753', '#1ccab8', '#fac146', '#ecedf1'
         ]
     }
 };
@@ -741,7 +741,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146', '#ecedf1'
+            '#102753', '#1ccab8', '#fac146', '#ecedf1'
         ]
     }
 };
@@ -1361,7 +1361,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8',
+            '#102753', '#1ccab8',
         ]
     }
 };
@@ -1448,7 +1448,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146', '#ef4586', '#f1b44c'
+            '#102753', '#1ccab8', '#fac146', '#ef4586', '#f1b44c'
         ]
     }
 };
@@ -1550,7 +1550,7 @@ var theme = {
     series: {
         series: {
             colors: [
-                '#22c55e', '#1ccab8', '#fac146', '#ef4586', '#f1b44c'
+                '#102753', '#1ccab8', '#fac146', '#ef4586', '#f1b44c'
             ]
         },
         label: {
@@ -1778,7 +1778,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146', '#ef4586', 
+            '#102753', '#1ccab8', '#fac146', '#ef4586', 
         ],
         borderColor: 'rgba(255, 255, 255, 0.4)',
         borderWidth: 4
@@ -2158,7 +2158,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8',
+            '#102753', '#1ccab8',
         ]
     }
 };
@@ -2269,7 +2269,7 @@ var theme = {
     },
     series: {
         colors: [
-            '#22c55e', '#1ccab8', '#fac146', '#ef4586',
+            '#102753', '#1ccab8', '#fac146', '#ef4586',
         ],
         ranges: [{ color: '#eee', opacity: 0.7 },
             null,

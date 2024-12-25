@@ -21,7 +21,7 @@
             <ul class="topbar-item list-unstyled d-inline-flex align-items-center mb-0">
 
 
-                <li class="dropdown topbar-item">
+                <!-- <li class="dropdown topbar-item">
                     <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown"
                         href="<?= base_url('#') ?>" role="button" aria-haspopup="false" aria-expanded="false">
                         <i class="icofont-bell-alt"></i>
@@ -54,18 +54,17 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- All-->
                         <a href="<?= base_url('/adm1n') ?>" class="dropdown-item text-center text-dark fs-13 py-2">
                             View All <i class="fi-arrow-right"></i>
                         </a>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="dropdown topbar-item">
                     <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown"
                         href="<?= base_url('#') ?>" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="<?= base_url('/images/ladyandal-logo.svg') ?>" alt=""
-                            class="thumb-lg bg-colour rounded-circle">
+                        <img src="<?= base_url('/images/favicon.png') ?>" alt=""
+                            class="thumb-lg rounded-circle">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end py-2">
 

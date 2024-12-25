@@ -3,7 +3,7 @@
     <div class="brand">
         <a href="index" class="logo">
             <!-- <span> -->
-            <img src="/images/mss-logo.svg" alt="logo" class="logo-sm">
+            <img src="/images/favicon.png" alt="logo" class="logo-sm">
             <!-- </span> -->
             <!-- <span class="">
                 <img src="/images/logo-light.png" alt="logo-large" class="logo-lg logo-light">
