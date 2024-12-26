@@ -67,8 +67,13 @@ $routes->group('events', function ($routes) {
     $routes->get('details', 'Events::eventDetails');
 });
 
-//Contact
-$routes->get('/career', 'CareerController::index');
+//Career
+$routes->group('career', function ($routes) {
+    $routes->get('', 'CareerController::index');
+    $routes->get('form', 'CareerController::careerForm');
+});
+
+
 //Contact
 $routes->get('/contact', 'Contact::index');
 

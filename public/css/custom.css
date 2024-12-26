@@ -96,13 +96,13 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'LeBeauneNew';
+    font-family: 'Figtree-Regular';
 }
 
 h6,
 p,
 a {
-    font-family: 'Open Sans';
+    font-family: 'Figtree-Regular';
 }
 
 .p-0{
@@ -110,7 +110,7 @@ a {
 }
 p {
     line-height: 36.6px;
-    font-family: 'Open Sans Light';
+    font-family: 'Figtree-Light';
 }
 
 .mt-50{
@@ -302,8 +302,9 @@ main{
 }
 .contactBtn{
     font-size: 12px;
-    padding: 10px 20px;
+    padding: 13px 20px;
     border-radius: 5px;
+    line-height: 14px;
     border: 1px solid #FFF;
     text-transform: uppercase;
     font-family: 'Figtree-Regular';
@@ -1148,7 +1149,7 @@ main{
     text-decoration: none;
     color: var(--color-inActive);
     opacity: 0.7;
-    font-family: 'Open Sans';
+    font-family: 'Figtree-Regular';
     font-size: 22px;
     transition: color .15s;
 }
@@ -1221,7 +1222,7 @@ label.error{
     margin: 10px 0;
     color: #ff1400!important;
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: 'Figtree-Regular';
 }
 .formFields{
     display: flex;
@@ -1277,6 +1278,10 @@ label.error{
     color: var(--color-white);
     font-family: 'Figtree-Medium';
     background-color: var(--blue-bg);
+}
+#submitBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.3 !important;
 }
 .contactInfo{
     text-align: center;
@@ -1724,7 +1729,324 @@ label.error{
     margin-top: 10%;
 }
 
+/* ======================================== Career =============================== */
+.shortBySearch {
+    display: flex;
+}
 
+.has-search {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.has-search .form-control {
+    border-radius: 0;    
+    font-size: 14px;
+    border-radius: 5px;
+    padding: .690rem 2.75rem;
+    font-family: 'Figtree-Light';
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    padding: 0 15px;
+    line-height: 1.95rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-control:focus {
+    border-color: #C2D1DA;
+    outline: 0;
+    box-shadow: none;
+}
+
+.shortBySearch .ss-main {
+    width: 60%;
+    margin: 0 20px;
+    padding: 0 15px;
+    border-radius: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: 'Figtree-Light';
+}
+
+.ss-main .ss-values .ss-single {
+    color: #72716D;
+}
+
+.ss-main .ss-arrow path {
+    stroke: #72716D !important;
+}
+
+.ss-main:focus {
+    box-shadow: none !important;
+}
+
+.ss-content .ss-search input:focus {
+    box-shadow: 0 0 5px #102753 !important;
+}
+
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+    background-color: #102753 !important;
+}
+
+.ss-content .ss-list .ss-option:hover {
+    background-color: #102753 !important;
+}
+.form-btn {
+    border: none;
+    color: #fff;
+    padding: 8px 60px;
+    font-size: 12px;
+    line-height: 14px;
+    margin: auto;
+    width: fit-content;
+    letter-spacing: 2.1px;
+    text-transform: capitalize;
+    font-family: 'Figtree-Bold';
+    background-color: #102753;
+}
+.shortBySearch .form-btn {
+    margin: 0 0 0 auto;
+    border-radius: 7px;
+}
+#sort-by-key{
+    margin-top: 30px;
+}
+.job-searchBtn {
+    font-family: 'Figtree-SemiBold';
+}
+.jobTitleSec h4{
+    font-size: 32px;
+    line-height: 54.4px;
+    font-family: 'EBGaramond-Medium';
+}
+.jobCounts{
+    margin: 40px 0;
+}
+.jobCounts h5{
+    font-size: 22px;
+    line-height: 33px;
+    font-family: 'Figtree-Regular';
+}
+
+/* Accordion code */
+.accordionSec .sectionTitle {
+    margin-bottom: 70px;
+}
+
+.accordion-container {
+    margin: 0 auto;
+}
+.accordion{
+    background-color: #ece9e900;
+}
+.accordion .content h6{
+    font-size: 16px;
+    color: var(--color-inActive);
+    font-family: 'Figtree-SemiBold';
+}
+.accordion .content ul li{
+    font-size: 16px;
+    color: var(--color-inActive)!important;
+    font-family: 'Figtree-Regular';
+}
+.accordion .content p{
+    font-size: 16px;
+    color: var(--color-inActive)!important;
+    font-family: 'Figtree-Regular';
+}
+.accordion-container .menu-button {
+    width: 100%;
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Figtree-Regular';
+    justify-content: space-between;
+    align-items: start;
+    border: none;
+    background-color: #FDFDFD;
+    cursor: pointer;
+    text-align: start;
+}
+
+.accordion-container .menu-button:hover {
+    background-color: #1027530a;
+}
+
+.accordion-container .icon {
+    font-size: 30px;
+    transition: 0.4s;
+    color: #102753;
+}
+
+.menu-button.open {
+    background-color: #1027530a;
+}
+
+/*  .menu-button.open .icon {
+    transform: rotate(45deg);
+  } */
+
+.accordion-container .content {
+    padding: 0 40px;
+    background-color: #1027530a;
+    transition: 0.4s;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion-container .content {
+    font-size: 18px;
+}
+.jobHyp-link{
+    display: flex;
+}
+.jobHyp-link a{
+    font-size: 14px;
+    display: flex;
+    padding: 0 25px;
+    width: max-content;
+    align-items: center;
+    font-family: 'Figtree-Regular';
+    color: var(--color-blue)!important;
+    text-decoration-line: underline !important;
+}
+.jobInfo h5{
+    font-size: 22px;
+    line-height: 36.6px;
+    color: var(--color-blue);
+    font-family: 'Figtree-Regular';
+}
+.jobInfo h6{
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--color-inActive);
+    font-family: 'Figtree-Regular';
+}
+.jobInfo p{
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: var(--color-inActive);
+    font-family: 'Figtree-Regular';
+}
+.job-location-details{
+    display: flex;
+    margin: 30px 0;
+}
+.job-locDetails{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.job-locDetails p{
+    margin-bottom: 0;
+}
+.job-locDetails img{
+    margin-right: 10px;
+}
+/* Accordion code */
+
+.backBtn{
+    display: flex;
+    align-items: center;
+}
+.backBtn img{
+    margin-right: 10px;
+}
+.backBtn a{
+    line-height: 24px;
+    color: var(--color-blue)!important;
+}
+
+.careerForm-container{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #FBFBFD;
+}
+.careerForm-container h6{
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: var(--color-blue);
+    font-family: 'Figtree-Regular';
+}
+.careerForm-container .fields{
+    padding: 0 50px;
+}
+.careerForm-container .fields label{
+    color: var(--color-blue);
+}
+
+/* File upload Code */
+.file-upload-container {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+.file-error {
+    color: red;
+    font-weight: bold;
+}
+.file-upload-label {
+    display: inline-block;
+    width: 100%;
+    padding: 40px 20px;
+    border: 2px dotted #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.file-upload-label.drag-over {
+    border: 2px dashed #007bff; /* Change to your desired highlight color */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+}
+.file-upload-icon {
+    font-size: 24px;
+}
+
+.file-upload-text {
+    font-size: 14px;
+    color: #212121;
+    margin-top: 10px;
+    display: block;
+    line-height: 28px;
+    font-family: 'Figtree-Regular';
+}
+.file-upload-text span{
+    color: #1D92F1;
+}
+.file-upload-input {
+    display: none;
+}
+
+.file-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #72716D;
+    display: flex;
+    align-items: center;
+    font-family: 'Figtree-Regular';
+}
+.file-info img{
+    margin-right: 10px;
+}
+.file-error {
+    color: red;
+}
+/* File upload Code */
+/* ======================================== Career =============================== */
 
 
 
