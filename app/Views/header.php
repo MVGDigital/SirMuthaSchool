@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('css/splide.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('css/slick.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/slimselect.css') ?>">
     <!-- <link rel="stylesheet" href="<?= base_url('css/splide-core.min.css') ?>"> -->
     <link rel="stylesheet" href="<?= base_url('css/custom.css') ?>">
 </head>
