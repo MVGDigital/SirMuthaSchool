@@ -16,7 +16,7 @@ node_modules/
 
 # CodeIgniter writable directories
 # writable/cache/*
-# writable/logs/*
+writable/logs/*
 writable/session/*
 # writable/uploads/*
 

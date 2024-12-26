@@ -42,9 +42,11 @@
     <!-- Video Section -->
     <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-10 m-auto">
+        <?php if (!empty($video)) : ?>
             <video id="sir-mitha-campus" controls>
-                <source src="<?= base_url('videos/sir-mutha.mp4') ?>" type="video/mp4">
+                <source src="<?= base_url('uploads/videos/' . $video['video_file']); ?>" type="video/mp4">
             </video>
+            <?php endif; ?>
 
             <!-- Play icon and text overlay -->
             <div id="playOverlay" class="playOverlay" autoplay playsinline>

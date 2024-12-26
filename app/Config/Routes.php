@@ -213,7 +213,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 
     // Home routes
     $routes->get('/adm1n', 'Home::index');
-    $routes->get('/(:any)', 'Home::root/$1');
+    // $routes->get('/(:any)', 'Home::root/$1');
 
     // Video Banner routes
     // $routes->get('adm1n/videoBanners', 'VideoBannerController::index');
