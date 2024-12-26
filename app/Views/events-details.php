@@ -79,7 +79,7 @@
                     <div class="sectionTitle-white">
                         <h3>Register for this event</h3>
                     </div>
-                    <form id="contact-form" action="POST">
+                    <form id="event-form" action="POST">
                         <div class="formFields row w100 m-0">
                             <div class="col-12 col-md-6 col-lg-6 fields m-0">
                                 <label for="first-name">First Name</label>
