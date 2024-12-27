@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?= lang('Errors.pageNotFound') ?></title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('images/favicon.png') ?>">
 
     <style>
         div.logo {
