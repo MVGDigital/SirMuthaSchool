@@ -74,9 +74,12 @@
                             class="file-upload-input" />
                         <div class="itemSpaceBetween upload-doc-msg">
                             <div class="file-info">
-                                <img src="<?= base_url('images/file-info.svg') ?>"
+                                <img src="<?= base_url('images/file-info.svg') ?>" 
                                     alt="Lady andal upload cv information icon">
                                 <span>File can be any format</span>
+                                <div class="hoverInfo">
+                                    <p>Please upload your resume in any format (e.g., PDF, DOC, DOCX, TXT). Ensure the file size is within the allowable limit.</p>
+                                </div>
                             </div>
                             <div id="fileError" class="file-info">Maximum Limit: 2Mb</div>
                         </div>

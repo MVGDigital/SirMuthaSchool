@@ -18,14 +18,14 @@
     <div class="col-lg-8 m-auto footer-menus">
         <div class="itemSpaceBetween">
             <a href="<?= base_url('index') ?>">Home</a>
-            <a href="<?= base_url('index') ?>">About Us</a>
-            <a href="<?= base_url('index') ?>">Sports</a>
-            <a href="<?= base_url('index') ?>">Arts</a>
-            <a href="<?= base_url('index') ?>">Gallery</a>
-            <a href="<?= base_url('index') ?>">Community Learning</a>
-            <a href="<?= base_url('index') ?>">Contact Us</a>
-            <a href="<?= base_url('index') ?>">Career</a>
-            <a href="<?= base_url('index') ?>">FAQ</a>
+            <a href="<?= base_url('about') ?>">About Us</a>
+            <a href="<?= base_url('academics') ?>">Academics</a>
+            <a href="<?= base_url('facilities') ?>">Facilities</a>
+            <a href="<?= base_url('statutory') ?>">Statutory</a>
+            <a href="<?= base_url('admission') ?>">Admission</a>
+            <a href="<?= base_url('gallery') ?>">Gallery</a>
+            <a href="<?= base_url('career') ?>">Career</a>
+            <a href="<?= base_url('contact') ?>">Contact</a>
         </div>
     </div>
     <div class="pageTitleLine">
@@ -750,7 +750,7 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'admission'): ?>
 
-var video = $('#sir-mitha-campus').get(0); // Get the video element
+    var video = $('#sir-mitha-campus').get(0); // Get the video element
 var playOverlay = $('#playOverlay');
 
 // Ensure the video is muted for autoplay to work
@@ -794,8 +794,10 @@ video.addEventListener('ended', function() {
 playOverlay.click(function() {
     if (video.paused) {
         video.play();
+        playOverlay.addClass('hidden'); // Hide the overlay when playing
     } else {
         video.pause();
+        playOverlay.removeClass('hidden'); // Show the overlay when paused
     }
 });
 

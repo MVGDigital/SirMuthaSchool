@@ -40,7 +40,7 @@
     <section class="container-space blueBg-Sec contactBg ptb-80">
         <div class="contact-container">
             <div class="col-lg-6 contact-details-container">
-                <div class="contactForm">
+                <div class="regForm">
                     <div class="sectionTitle-white">
                         <h3>Drop Us a line</h3>
                         <p>We aim to create a holistic individual by providing a happy atmosphere for the child.</p>

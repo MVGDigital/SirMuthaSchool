@@ -267,7 +267,7 @@ main{
     background-color:transparent;
     position: absolute;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     max-width: 1920px;
     margin: auto;
     left: 0;
@@ -276,6 +276,10 @@ main{
 .navbar-light .navbar-toggler{
     border: none;
     padding-right: 0;
+    padding-left: 50px;
+}
+.closeIcon{
+    display: none;
 }
 .logo{
     text-align: center;
@@ -302,14 +306,121 @@ main{
 }
 .contactBtn{
     font-size: 12px;
-    padding: 13px 20px;
+    padding: 13px 30px;
     border-radius: 5px;
     line-height: 14px;
     border: 1px solid #FFF;
     text-transform: uppercase;
     font-family: 'Figtree-Regular';
     background-color: var(--blue-bg);
+    margin: 0 10px;
 }
+
+/* Header Menus */
+.navbar-collapse{
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    position: fixed;
+    background: var(--blue-bg);
+    padding: 0 80px;
+}
+.menusContainer{
+    display: flex;
+    max-width: 1920px;
+    margin: auto;
+    margin-top: 11%;
+    margin-right: 0!important;
+    margin-left: auto!important;
+}
+.subMenuItems ul li{
+    list-style: none;
+}
+.navbar-nav .nav-link{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: 'EBGaramond-Regular';
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.whiteLine {
+    height: 75vh !important;
+    border: 1px solid #f6f6f6c7;
+    margin: auto 50px;
+    color: inherit;
+    background-color: currentColor;
+}
+.subMenus .subMenuItems ul li{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 35px;
+    font-family: 'Figtree-Regular';
+}
+.headerContact-info h5{    
+    font-size: 16px;
+    line-height: 38px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: 'Figtree-Bold';
+}
+.quickLinks{
+    display: flex;
+}
+.quickLinks span{
+    font-size: 16px;
+    line-height: 38px;
+    color: var(--color-white);
+    font-family: 'Figtree-Medium';
+    padding: 0 20px;
+}
+.horizontal-whiteLine{
+    width: 100%;
+    height: 1px !important;
+    border: 1px solid #f6f6f6c7;
+    margin: 4.5px 0;
+    color: inherit;
+    background-color: currentColor;
+}
+.headerContact-info{
+    padding: 0 12px;
+    position: relative;
+    height: 100%;
+}
+.socialMedial-links{
+    display: flex;
+    bottom: 0;
+    position: absolute;
+}
+.socialIcons{
+    display: flex;
+}
+.socialIcons span{
+    font-size: 16px;
+    line-height: 38px;
+    color: var(--color-white);
+    font-family: 'Figtree-Medium';
+    padding: 0 15px;
+}
+/* Header Menus */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Banner Section */
 .homeBanner{
     position: relative;
@@ -324,7 +435,7 @@ main{
 }
 .bannerTitle{
     position: absolute;
-    z-index: 99;
+    /* z-index: 99; */
     top: 20%;
     width: 100%;
 }
@@ -345,7 +456,6 @@ main{
 }
 .banner-subTitle{
     position: absolute;
-    bottom: 0;
     bottom: 10%;
     z-index: 99;
     width: 100%;
@@ -995,7 +1105,9 @@ main{
 
 .admsn-PageVideo video {
     width: 100%;
+    height: 600px;
 }
+
 /* Play overlay styles */
 .playOverlay {
     position: absolute;
@@ -1183,7 +1295,7 @@ main{
 
 /* ====================================== Contact Us =================================== */
 .contactBg{
-    background-size: 100%;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;    
     background-image: url(../images/contact/contactBg.jpg);
@@ -1197,15 +1309,15 @@ main{
     display: flex;
     align-items: stretch;
 }
-.contactForm{
+.regForm{
     width: 100%;
     padding: 50px;
     background-color: #feffff1c;
 }
-.contactForm h3{
+.regForm h3{
     text-transform: uppercase;
 }
-.contactForm p{
+.regForm p{
     font-size: 18px;
 }
 #contact-form{
@@ -1214,7 +1326,6 @@ main{
     background-blend-mode: color-burn;
 }
 label.error{
-    margin: 10px 0;
     opacity: 1 !important;
     color: #ff1400!important;
 }
@@ -1267,6 +1378,7 @@ label.error{
 }
 .formBtn-fullWidth{
     padding:10px;
+    margin-top: 30px!important;
 }
 .formBtn-fullWidth button{
     width: 100%;
@@ -1612,6 +1724,7 @@ label.error{
     line-height: 25px;
     color: #333333;
     text-align: start;
+    text-transform: capitalize;
     font-family: 'Figtree-Medium';
 }
 .upcomingEvent-info .eventTitle p{
@@ -1631,6 +1744,15 @@ label.error{
     padding: 16px 10px;
     border-radius: 10px;
 }
+.upcomEvent-link{
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 25px;
+    text-align: start;
+    text-transform: capitalize;
+    color: #5EB9FF!important;
+    font-family: 'Figtree-Medium';
+}
 #upcoming-events .card-content{
     height: 100%;
     display: flex;
@@ -1648,6 +1770,7 @@ label.error{
     text-align: start;
     margin-bottom: 0;
     color: var(--color-blue);
+    text-transform: capitalize;
     font-family: 'Figtree-SemiBold';
 }
 .event-date{
@@ -1663,6 +1786,7 @@ label.error{
     text-align: start;
     margin-bottom: 0;
     color: #6B6B6B;
+    text-transform: capitalize;
     font-family: 'Figtree-Regular';
 }
 .pastEvent-container p{
@@ -1691,6 +1815,7 @@ label.error{
     line-height: 27px;
     margin-bottom: 20px;
     color: var(--color-blue);
+    text-transform: capitalize;
     font-family: 'EBGaramond-SemiBold';
 }
 .wave-yellow-overwireLightBg p{
@@ -1716,18 +1841,18 @@ label.error{
     color: #474747;
     font-size: 18px;
     line-height: 27px;
+    text-transform: capitalize;
     font-family: 'Figtree-Regular';
 }
 
 .eventRegBg {
+    padding: 12% 0 80px 0;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     background-image: url(../images/events/eventRegBg.png);
 }
-.eventRegBg .contact-container{
-    margin-top: 10%;
-}
+
 
 /* ======================================== Career =============================== */
 .shortBySearch {
@@ -2037,6 +2162,8 @@ label.error{
     color: #72716D;
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
     font-family: 'Figtree-Regular';
 }
 .file-info img{
@@ -2044,6 +2171,27 @@ label.error{
 }
 .file-error {
     color: red;
+}
+.hoverInfo {
+    position: absolute;
+    z-index: 99;
+    background-color: #dde0e7;
+    color: var(--color-blue);
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-55px);
+    transition: opacity 0.3s ease, transform 0.7s ease;
+}
+.hoverInfo p{
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Figtree-Regular';
+}
+.file-info:hover .hoverInfo {
+    opacity: 1;
+    
 }
 /* File upload Code */
 /* ======================================== Career =============================== */
