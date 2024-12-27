@@ -72,14 +72,14 @@
     <!-- Event Details -->
 
     <!-- Contact Form -->
-    <section class="container-space lightColor-bg eventRegBg ptb-50-80">
+    <section class="container-space lightColor-bg eventRegBg">
         <div class="contact-container">
             <div class="col-lg-6 contact-details-container m-auto">
-                <div class="contactForm">
+                <div class="regForm">
                     <div class="sectionTitle-white">
                         <h3>Register for this event</h3>
                     </div>
-                    <form id="event-form" action="POST">
+                    <form id="event-form" class="mt-50" action="POST">
                         <div class="formFields row w100 m-0">
                             <div class="col-12 col-md-6 col-lg-6 fields m-0">
                                 <label for="first-name">First Name</label>

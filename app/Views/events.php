@@ -66,6 +66,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -89,6 +90,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -112,6 +114,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -135,6 +138,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -158,6 +162,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -181,6 +186,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -204,6 +210,7 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
@@ -227,12 +234,12 @@
                                         <span>+55</span>
                                     </div>
                                 </div>
+                                <a href="#" class="upcomEvent-link">View Details</a>
                             </div>
 
                         </div>
                     </li>
-
-
+                    
                 </ul>
             </div>
         </div>
