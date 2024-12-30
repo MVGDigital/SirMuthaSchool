@@ -51,34 +51,34 @@
           <div class="mainMenus col-lg-3">
             <ul class="navbar-nav">
                 <li id="aboutMenu" class="nav-item">
-                    <a class="nav-link active" href="#">About Us</a>
+                    <a class="nav-link active" href="<?= base_url('about') ?>">About Us</a>
                 </li>
                 <li id="academicsMenu" class="nav-item">
-                    <a class="nav-link" href="#">Academics</a>
+                    <a class="nav-link" href="<?= base_url('academics') ?>">Academics</a>
                 </li>
                 <li id="facilitiesMenu" class="nav-item">
-                    <a class="nav-link" href="#">Facilities</a>
+                    <a class="nav-link" href="<?= base_url('facilities') ?>">Facilities</a>
                 </li>
                 <li id="admissionMenu" class="nav-item">
-                    <a class="nav-link" href="#">Admissions</a>
+                    <a class="nav-link" href="<?= base_url('admission') ?>">Admissions</a>
                 </li>
                 <li id="statutoryMenu" class="nav-item">
-                    <a class="nav-link" href="#">Statutory</a>
+                    <a class="nav-link" href="<?= base_url('statutory') ?>">Statutory</a>
                 </li>
                 <li id="inclusiveMenu" class="nav-item">
-                    <a class="nav-link" href="#">Inclusive Educations</a>
+                    <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
                 </li>
                 <li id="curriculumMenu" class="nav-item">
-                    <a class="nav-link" href="#">Beyond Curriculum</a>
+                    <a class="nav-link" href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
                 </li>
                 <li id="galleryMenu" class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                 </li>
                 <li id="eventsMenu" class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="<?= base_url('events') ?>">Events</a>
                 </li>
                 <li id="careersMenu" class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="<?= base_url('career') ?>">Careers</a>
                 </li>
                 <li id="parentsMenu" class="nav-item">
                     <a class="nav-link" href="#">Parents Landing Page</a>

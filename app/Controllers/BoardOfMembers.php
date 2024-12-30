@@ -50,7 +50,8 @@ class BoardOfMembers extends BaseController
         $rules = [
             'name' => 'required',
             'designation' => 'required',
-            'content' => 'permit_empty'
+            'content' => 'permit_empty',
+            'sort_order' => 'required|integer',
         ];
 
         $file = $this->request->getFile('boardofmembers_photo');
@@ -80,6 +81,8 @@ class BoardOfMembers extends BaseController
             'designation' => $this->request->getPost('designation'),
             'content' => $this->request->getPost('content'),
             'photo' => $newName,
+            'sort_order' => $this->request->getPost('sort_order'),
+            'is_published' => $this->request->getPost('is_published') ? 1 : 0,
         ];
 
         if ($id) {
@@ -100,5 +103,29 @@ class BoardOfMembers extends BaseController
         $boardOfMembersModel = new BoardOfMembersModel();
         $boardOfMembersModel->delete($id);
         return redirect()->to(base_url('adm1n/boardofmember'))->with('success', 'Board of Member profile deleted successfully');
+    }
+
+    public function toggleStatus($id)
+    {
+        $boardOfMembersModel = new BoardOfMembersModel();
+        $member = $boardOfMembersModel->find($id);
+
+        if ($member) {
+            $newStatus = $this->request->getPost('is_published') === 'true' ? 1 : 0;
+            $boardOfMembersModel->update($id, ['is_published' => $newStatus]);
+
+            return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'Publish status updated',
+                'is_published' => $newStatus
+            ]);
+        } else {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Banner not found'
+            ]);
+        }
+
+        return $this->response->setJSON(['status' => 'error', 'message' => 'Member not found']);
     }
 }
