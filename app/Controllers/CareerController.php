@@ -15,13 +15,15 @@ class CareerController extends BaseController
         $banner = $bannerModel->where('page', 'career')->where('is_published', 1)->first();
         $categories = $careerModel->select('job_title')->groupBy('job_title')->findAll();
         $jobs = $careerModel->where('publish', 1)->orderBy('posted_on', 'DESC')->findAll();
+        $totalJobs = count($jobs);
 
         $data = [
             'page_title' => 'Career',
             'page_code' => 'career',
             'banner' => $banner,
             'categories' => $categories,
-            'jobs' => $jobs
+            'jobs' => $jobs,
+            'total_jobs' => $totalJobs
         ];
 
         return view('header', $data) . view('career', $data) . view('footer', $data);

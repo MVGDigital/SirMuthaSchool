@@ -450,67 +450,74 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'career'): ?>
 $(document).ready(function() {
-    /* Select Field */
+    /* Initialize SlimSelect for the job category dropdown */
     new SlimSelect({
         select: '.job-category',
     });
 
-    //FAQ Script Code
-    const menuBtns = document.querySelectorAll(".menu-button");
+    function attachAccordionListeners() {
+        const menuBtns = document.querySelectorAll(".menu-button");
 
-    menuBtns.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", function() {
-            //----- open only one menu --------------
-            const activeAccordion = document.querySelector(".menu-button.open");
-            if (activeAccordion && activeAccordion !== this) {
-                activeAccordion.nextElementSibling.style.height = 0;
-                activeAccordion.classList.remove("open");
-                // Change icon back to plus for the closed accordion
-                activeAccordion.querySelector(".icon").textContent = "+";
-            }
-            //------------------------------------------------
+        menuBtns.forEach((menuBtn) => {
+            menuBtn.addEventListener("click", function() {
+                const activeAccordion = document.querySelector(".menu-button.open");
+                if (activeAccordion && activeAccordion !== this) {
+                    activeAccordion.nextElementSibling.style.height = 0;
+                    activeAccordion.classList.remove("open");
+                    activeAccordion.querySelector(".icon").textContent = "+";
+                }
 
-            this.classList.toggle("open");
-            const content = this.nextElementSibling;
-            const icon = this.querySelector(".icon");
+                this.classList.toggle("open");
+                const content = this.nextElementSibling;
+                const icon = this.querySelector(".icon");
 
-            if (this.classList.contains("open")) {
-                content.style.height = content.scrollHeight + "px";
-                icon.textContent = "−"; // Change icon to minus when open
-            } else {
-                content.style.height = 0;
-                icon.textContent = "+"; // Change icon back to plus when closed
-            }
+                if (this.classList.contains("open")) {
+                    content.style.height = content.scrollHeight + "px";
+                    icon.textContent = "−";
+                } else {
+                    content.style.height = 0;
+                    icon.textContent = "+";
+                }
+            });
         });
-    });
-    //FAQ Script Code
-});
+    }
+    attachAccordionListeners();
 
-document.getElementById('sort-by-key').addEventListener('submit', function(event) {
-    event.preventDefault();
+    // Form Submission for Sorting and Filtering Jobs
+    document.getElementById('sort-by-key').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-    const keyword = document.querySelector('.searchInput').value;
-    const category = document.getElementById('jobCategory').value;
+        const keyword = document.querySelector('.searchInput').value.trim();
+        const category = document.getElementById('jobCategory').value;
 
-    const url = new URL('<?= base_url("career/searchJobs") ?>');
-    const params = {
-        keyword,
-        category
-    };
-    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+        const url = new URL('<?= base_url("career/searchJobs") ?>');
+        if (keyword) url.searchParams.append('keyword', keyword);
+        if (category) url.searchParams.append('category', category);
 
-    fetch(url, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-        .then(response => response.json())
-        .then(data => {
-            const container = document.querySelector('.accordion-container');
-            container.innerHTML = '';
-            data.forEach(job => {
-                container.innerHTML += `
+        const container = document.querySelector('.accordion-container');
+        const totalJobsElement = document.getElementById('totalJobs');
+        const jobCounts = document.querySelector('.jobCounts');
+        container.innerHTML = '<p>Loading...</p>';
+
+        fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                container.innerHTML = '';
+
+                totalJobsElement.textContent = `(${data.length})`;
+
+                if (data.length === 0) {
+                    container.innerHTML = '<p>No jobs found.</p>';
+                    return;
+                }
+
+                data.forEach((job) => {
+                    const jobHtml = `
                 <div class="accordion">
                     <button class="menu-button">
                         <div class="jobInfo">
@@ -548,9 +555,16 @@ document.getElementById('sort-by-key').addEventListener('submit', function(event
                         <p>${job.last_applied_date}</p>
                     </div>
                 </div>`;
+                    container.innerHTML += jobHtml;
+                });
+                attachAccordionListeners();
+            })
+            .catch((error) => {
+                console.error('Error fetching jobs:', error);
+                container.innerHTML = '<p>Error loading jobs. Please try again.</p>';
             });
-        })
-        .catch(error => console.error('Error fetching jobs:', error));
+    });
+
 });
 
 <?php endif; ?>

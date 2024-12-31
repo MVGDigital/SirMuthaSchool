@@ -57,7 +57,7 @@
             </div>
         </form>
         <div class="jobCounts">
-            <h5>Total jobs found <span id="totalJobs">(142)</span></h5>
+            <h5>Total jobs found <span id="totalJobs">(<?= $total_jobs ?>)</span></h5>
         </div>
 
         <div class="accordion-container">
