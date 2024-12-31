@@ -201,126 +201,24 @@
             <div id="board-member-slider" class="splide paginationCenter mt-50">
                 <div class="splide__track">
                     <ul class="splide__list">
+                        <?php if (!empty($boardMembers)) : ?>
+                        <?php foreach ($boardMembers as $member) : ?>
                         <li class="splide__slide">
                             <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
+                                <img src="<?= base_url('uploads/boardofmember_photos/' . $member['photo']) ?>" class="img-fluid"
+                                    alt="<?= esc($member['name']) ?>">
                                 <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
+                                    <h5><?= esc($member['designation']) ?></h5>
+                                    <h6><?= esc($member['name']) ?></h6>
                                 </div>
                             </div>
                         </li>
+                        <?php endforeach; ?>
+                        <?php else : ?>
                         <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
+                            <p>No board members found.</p>
                         </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="boardMenberItem">
-                                <img src="<?= base_url('images/about/krithika-kumar-quintal.png') ?>" class="img-fluid"
-                                    alt="">
-                                <div class="boardMenberInfo">
-                                    <h5>Correspondent</h5>
-                                    <h6>Mrs. Krithika Kumar Quintal</h6>
-                                </div>
-                            </div>
-                        </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>

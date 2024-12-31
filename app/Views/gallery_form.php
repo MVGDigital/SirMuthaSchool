@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Rizz')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Gallery')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <?= $this->include('partials/head-css') ?>
 </head>
@@ -49,6 +49,34 @@
                                                 <?= session()->getFlashdata('error') ?>
                                             </div>
                                             <?php endif; ?>
+
+                                            <div class="mb-3 row">
+                                                <label for="category"
+                                                    class="col-sm-2 col-form-label text-lg-end">Category</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control" id="category" name="category" required>
+                                                        <option value="">Select Category</option>
+                                                        <option value="RSP"
+                                                            <?= (isset($item) && $item['category'] == 'RSP') ? 'selected' : '' ?>>
+                                                            RSP</option>
+                                                        <option value="Yoga"
+                                                            <?= (isset($item) && $item['category'] == 'Yoga') ? 'selected' : '' ?>>
+                                                            Yoga</option>
+                                                        <option value="Health & Wellness"
+                                                            <?= (isset($item) && $item['category'] == 'Health & Wellness') ? 'selected' : '' ?>>
+                                                            Health & Wellness</option>
+                                                        <option value="Model IMU Nations"
+                                                            <?= (isset($item) && $item['category'] == 'Model IMU Nations') ? 'selected' : '' ?>>
+                                                            Model IMU Nations</option>
+                                                    </select>
+                                                    <?php if (session()->getFlashdata('errors')): ?>
+                                                    <?php $errors = session()->getFlashdata('errors'); ?>
+                                                    <?php if (isset($errors['category'])): ?>
+                                                    <small class="text-danger"><?= esc($errors['category']) ?></small>
+                                                    <?php endif; ?>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
 
                                             <!-- File Upload Field -->
                                             <div class="mb-3 row">

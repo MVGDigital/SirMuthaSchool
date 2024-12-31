@@ -89,7 +89,6 @@
                                                 <tr>
                                                     <th>S.No</th>
                                                     <th>Job Title</th>
-                                                    <th>Job Type</th>
                                                     <th>Employment Type</th>
                                                     <th>Location</th>
                                                     <th>Posted On</th>
@@ -100,7 +99,7 @@
                                             <tbody></tbody>
                                         </table>
                                     </div>
-                                    <div id="pagination-controls" class="mt-3">
+                                    <div id="pagination-controls" class="mt-3 text-end">
                                         <button id="prev-page" class="btn btn-secondary" disabled>Previous</button>
                                         <span id="page-info"></span>
                                         <button id="next-page" class="btn btn-secondary">Next</button>
@@ -156,7 +155,7 @@
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     handleLoad(data);
                 })
                 .catch(error => console.error('Error fetching careers:', error));
@@ -178,7 +177,6 @@
             <td>${item[4]}</td>
             <td>${item[5]}</td>
             <td>${item[6]}</td>
-            <td>${item[7]}</td>
         </tr>`;
                 });
 

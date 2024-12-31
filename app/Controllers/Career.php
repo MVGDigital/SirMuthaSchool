@@ -17,48 +17,47 @@ class Career extends BaseController
     }
 
     public function getCareers()
-{
-    $careerModel = new CareerModel();
+    {
+        $careerModel = new CareerModel();
 
-    $searchTerm = $this->request->getGet('search') ?? '';
-    $page = (int)$this->request->getGet('page') ?? 1;
-    $rowsPerPage = (int)$this->request->getGet('rowsPerPage') ?? 10;
+        $searchTerm = $this->request->getGet('search') ?? '';
+        $page = (int)$this->request->getGet('page') ?? 1;
+        $rowsPerPage = (int)$this->request->getGet('rowsPerPage') ?? 10;
 
-    if ($page < 1) {
-        $page = 1;
+        if ($page < 1) {
+            $page = 1;
+        }
+        if ($rowsPerPage < 1) {
+            $rowsPerPage = 10;
+        }
+
+        $totalCareers = $careerModel->countCareers($searchTerm);
+        $totalPages = ceil($totalCareers / $rowsPerPage);
+
+        if ($page > $totalPages && $totalPages > 0) {
+            $page = $totalPages;
+        }
+
+        $careers = $careerModel->getCareersWithPagination($searchTerm, $page, $rowsPerPage);
+
+        $data = [];
+        $serial = ($page - 1) * $rowsPerPage + 1;
+        foreach ($careers as $career) {
+            $data[] = [
+                $serial++,
+                esc($career['job_title']),
+                esc($career['employment_type']),
+                esc($career['location']),
+                esc(date('d-m-Y', strtotime($career['posted_on']))),
+                esc(date('d-m-Y', strtotime($career['last_applied_date']))),
+                '<a href="' . base_url('adm1n/career/edit/' . $career['career_id']) . '"><i class="las la-pen text-secondary font-16"></i></a>
+                <a href="' . base_url('adm1n/career/view/' . $career['career_id']) . '"><i class="icofont-eye text-secondary font-16"></i></a>
+                <a href="' . base_url('adm1n/career/delete/' . $career['career_id']) . '" onclick="return confirm(\'Are you sure you want to delete this job?\');"><i class="las la-trash-alt text-secondary font-16"></i></a>'
+            ];
+        }
+
+        return $this->response->setJSON(['data' => $data, 'totalPages' => $totalPages]);
     }
-    if ($rowsPerPage < 1) {
-        $rowsPerPage = 10;
-    }
-
-    $totalCareers = $careerModel->countCareers($searchTerm);
-    $totalPages = ceil($totalCareers / $rowsPerPage);
-
-    if ($page > $totalPages && $totalPages > 0) {
-        $page = $totalPages;
-    }
-
-    $careers = $careerModel->getCareersWithPagination($searchTerm, $page, $rowsPerPage);
-
-    $data = [];
-    $serial = ($page - 1) * $rowsPerPage + 1;
-    foreach ($careers as $career) {
-        $data[] = [
-            $serial++,
-            esc($career['job_title']),
-            esc($career['job_type']),
-            esc($career['employment_type']),
-            esc($career['location']),
-            esc($career['posted_on']),
-            esc($career['last_applied_date']),
-            '<a href="' . base_url('adm1n/career/edit/' . $career['career_id']) . '"><i class="las la-pen text-secondary font-16"></i></a>
-             <a href="' . base_url('adm1n/career/view/' . $career['career_id']) . '"><i class="icofont-eye text-secondary font-16"></i></a>
-             <a href="' . base_url('adm1n/career/delete/' . $career['career_id']) . '" onclick="return confirm(\'Are you sure you want to delete this job?\');"><i class="las la-trash-alt text-secondary font-16"></i></a>'
-        ];
-    }
-
-    return $this->response->setJSON(['data' => $data, 'totalPages' => $totalPages]);
-}
 
     public function add()
     {
@@ -83,7 +82,6 @@ class Career extends BaseController
         $careerModel = new CareerModel();
 
         $rules = [
-            'job_type'             => 'required|in_list[Academic Opportunities,Administrative Opportunities]',
             'job_title'            => 'required|max_length[255]',
             'employment_type'      => 'required|in_list[Full-time,Part-time,Contract]',
             'posted_on'            => 'required|valid_date',
@@ -102,7 +100,6 @@ class Career extends BaseController
         }
 
         $data = [
-            'job_type'             => $this->request->getPost('job_type'),
             'job_title'            => $this->request->getPost('job_title'),
             'employment_type'      => $this->request->getPost('employment_type'),
             'posted_on'            => $this->request->getPost('posted_on'),
@@ -156,7 +153,7 @@ class Career extends BaseController
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
 
-        $headers = ['Job Title', 'Job Type', 'Employment Type', 'Posted On', 'Location', 'Job Overview',
+        $headers = ['Job Type', 'Employment Type', 'Posted On', 'Location', 'Job Overview',
                     'Qualifications', 'Experience', 'Who Are We Looking For', 'Key Responsibilities',
                     'Must Have', 'Nice to Have', 'Last Applied Date', 'Publish'];
         $sheet->fromArray($headers, null, 'A1');
@@ -165,9 +162,8 @@ class Career extends BaseController
         foreach ($careers as $career) {
             $sheet->fromArray([
                 $career['job_title'],
-                $career['job_type'],
                 $career['employment_type'],
-                $career['posted_on'],
+                $formattedPostedOn = date('d-m-Y', strtotime($career['posted_on'])),
                 $career['location'],
                 $career['job_overview'],
                 $career['qualifications'],
@@ -176,7 +172,7 @@ class Career extends BaseController
                 $career['key_responsibilities'],
                 $career['must_have'],
                 $career['nice_to_have'],
-                $career['last_applied_date'],
+                $formattedLastApplied = date('d-m-Y', strtotime($career['last_applied_date'])),
                 $career['publish'] ? 'Yes' : 'No'
             ], null, 'A' . $rowNumber++);
         }
