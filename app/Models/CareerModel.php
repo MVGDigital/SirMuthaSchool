@@ -10,7 +10,6 @@ class CareerModel extends Model
     protected $primaryKey = 'career_id';
 
     protected $allowedFields = [
-        'job_type',
         'job_title',
         'employment_type',
         'posted_on',
@@ -26,14 +25,13 @@ class CareerModel extends Model
         'publish',
     ];
 
-    protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
     public function getAllCareersForExport()
     {
         return $this->select([
-            'career_id', 'job_type', 'job_title', 'employment_type', 'posted_on',
+            'career_id', 'job_title', 'employment_type', 'posted_on',
             'location', 'job_overview', 'qualifications', 'experience',
             'who_are_we_looking_for', 'key_responsibilities', 'must_have',
             'nice_to_have', 'last_applied_date', 'publish'
@@ -45,7 +43,7 @@ class CareerModel extends Model
     $offset = ($page - 1) * $rowsPerPage;
     
     $careers = $this->select([
-        'career_id', 'job_title', 'job_type', 'employment_type', 'location', 'posted_on', 'last_applied_date'
+        'career_id', 'job_title', 'employment_type', 'location', 'posted_on', 'last_applied_date'
     ])->limit($rowsPerPage, $offset)->findAll() ?? [];
 
     if ($searchTerm) {

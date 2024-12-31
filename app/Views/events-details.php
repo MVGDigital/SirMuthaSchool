@@ -72,14 +72,14 @@
     <!-- Event Details -->
 
     <!-- Contact Form -->
-    <section class="container-space lightColor-bg eventRegBg ptb-50-80">
+    <section class="container-space lightColor-bg eventRegBg">
         <div class="contact-container">
             <div class="col-lg-6 contact-details-container m-auto">
-                <div class="contactForm">
+                <div class="regForm">
                     <div class="sectionTitle-white">
                         <h3>Register for this event</h3>
                     </div>
-                    <form id="contact-form" action="POST">
+                    <form id="event-form" class="mt-50" action="POST">
                         <div class="formFields row w100 m-0">
                             <div class="col-12 col-md-6 col-lg-6 fields m-0">
                                 <label for="first-name">First Name</label>
@@ -97,6 +97,24 @@
                         <div class="col-12 col-md-12 col-lg-12 fields">
                             <label for="mobile-number">Phone Number</label>
                             <input type="tel" name="mobile-number" id="mobile-number">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="gender">Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="" selected disabled>Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="guests">How many guests are you bringing?</label>
+                        <input type="text" name="guests" id="guests" placeholder="Enter number of guests">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="residential-address">Residential Address</label>
+                            <textarea id="residential-address" name="residential_address"
+                                placeholder="Enter residential address"></textarea>
                         </div>
                         <div class="formBtn-fullWidth">
                             <button>Submit</button>

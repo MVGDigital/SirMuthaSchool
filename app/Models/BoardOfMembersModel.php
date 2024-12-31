@@ -8,9 +8,8 @@ class BoardOfMembersModel extends Model
 {
     protected $table = 'board_of_members';
     protected $primaryKey = 'bom_id';
-    protected $allowedFields = ['name', 'designation', 'content', 'photo'];
+    protected $allowedFields = ['name', 'designation', 'content', 'photo', 'sort_order', 'is_published'];
 
-    protected $useTimestamps = true;
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
 }

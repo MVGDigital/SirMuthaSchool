@@ -143,9 +143,10 @@
             <script src="<?= base_url('/js/pages/index.init.js') ?>"></script>
             <script src="<?= base_url('/js/app.js') ?>"></script>
             <script>
-                $(document).ready(function() {
-            $('#banner').DataTable();
-        });
+            $(document).ready(function() {
+                $('#banner').DataTable();
+            });
+
             function toggleStatus(bannerId, isActive) {
                 const url = "<?= base_url('adm1n/banner/toggle-status/') ?>" + bannerId;
 
@@ -175,7 +176,7 @@
                     });
             }
             </script>
-            
+
 </body>
 <!--end body-->
 
