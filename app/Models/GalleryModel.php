@@ -13,8 +13,9 @@ class GalleryModel extends Model
         'file_path',
         'sort_order',
         'is_published',
+        'category',
         'created_at',
-        'updated_at',
+        'updated_at'
     ];
 
     protected $createdField = 'created_at';

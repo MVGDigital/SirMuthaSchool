@@ -72,7 +72,6 @@
                                                     <th>Content</th>
                                                     <th>Photo</th>
                                                     <th>Sort Order</th>
-                                                    <th>Is_published</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -90,7 +89,7 @@
                                                             alt="Board of Member Photo" width="100" height="100">
                                                     </td>
                                                     <td><?= esc($member['sort_order']) ?></td>
-                                                    <td class="text-center">
+                                                    <!-- <td class="text-center">
                                                         <div class="form-check form-switch form-switch-success">
                                                             <input class="form-check-input" type="checkbox"
                                                                 id="customSwitch<?= esc($member['bom_id']) ?>"
@@ -101,7 +100,7 @@
                                                                 <?= $member['is_published'] ? 'Active' : 'Inactive' ?>
                                                             </label>
                                                         </div>
-                                                    </td>
+                                                    </td> -->
                                                     <td class="text-center">
                                                         <a href="<?= base_url('adm1n/boardofmember/edit/' . esc($member['bom_id'])) ?>"
                                                             class="text-secondary px-2" title="Edit">
@@ -160,24 +159,20 @@
         }, 5000);
 
         function toggleStatus(memberId, isActive) {
+            console.log(`Toggling status for Member ID: ${memberId}, New Status: ${isActive}`);
             const url = "<?= base_url('adm1n/boardofmember/toggle-status/') ?>" + memberId;
 
             fetch(url, {
-                    method: 'POST', // Use POST to update the status
+                    method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '<?= csrf_hash() ?>' // Include CSRF token if needed
+                        'X-CSRF-TOKEN': '<?= csrf_hash() ?>'
                     },
                     body: JSON.stringify({
-                        is_published: isActive
-                    }) // Send the new status
+                        is_published: isActive.toString() // Ensure this is a string
+                    })
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
                     if (data.status === 'success') {
                         console.log(`Member ${memberId} is now ${data.is_published ? 'Active' : 'Inactive'}.`);

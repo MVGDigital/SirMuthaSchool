@@ -72,7 +72,7 @@ $routes->group('career', function ($routes) {
     $routes->get('', 'CareerController::index');
     $routes->get('form', 'CareerController::careerForm');
 });
-
+$routes->get('career/searchJobs', 'CareerController::searchJobs');
 
 //Contact
 $routes->get('/contact', 'Contact::index');
@@ -138,7 +138,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('adm1n/boardofmembers/submit', 'BoardOfmembers::submit');
     $routes->post('adm1n/boardofmember/update/(:num)', 'BoardOfmembers::update/$1');
     $routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfmembers::delete/$1');
-    $routes->post('adm1n/boardofmember/toggle-status/(:num)', 'BoardOfMember::toggleStatus/$1');
+    $routes->post('adm1n/boardofmember/toggle-status/(:num)', 'BoardOfmembers::toggleStatus/$1');
 
     // Document routes
     $routes->get('adm1n/document', 'DocumentController::index');

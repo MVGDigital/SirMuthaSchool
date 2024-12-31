@@ -383,8 +383,8 @@ $(document).ready(function() {
     });
 
     $("#email").on("input", function(e) {
-        var value = e.target.value;  // Get the current value
-        e.target.value = value.toLowerCase();  // Convert it to lowercase and set it back
+        var value = e.target.value; // Get the current value
+        e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
     });
 
     $.validator.addMethod("customEmail", function(value, element) {
@@ -485,6 +485,74 @@ $(document).ready(function() {
     });
     //FAQ Script Code
 });
+
+document.getElementById('sort-by-key').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const keyword = document.querySelector('.searchInput').value;
+    const category = document.getElementById('jobCategory').value;
+
+    const url = new URL('<?= base_url("career/searchJobs") ?>');
+    const params = {
+        keyword,
+        category
+    };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+    fetch(url, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.accordion-container');
+            container.innerHTML = '';
+            data.forEach(job => {
+                container.innerHTML += `
+                <div class="accordion">
+                    <button class="menu-button">
+                        <div class="jobInfo">
+                            <h5>${job.job_title}</h5>
+                            <h6>${job.employment_type} - ${job.location}</h6>
+                            <div class="job-location-details">
+                                <div class="job-locDetails">
+                                    <p>Posted on - <span>${job.posted_on}</span></p>
+                                </div>
+                                <div class="job-locDetails">
+                                    <p>Last date to apply - <span>${job.last_applied_date}</span></p>
+                                </div>
+                            </div>
+                            <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
+                        </div>
+                        <div class="jobHyp-link">
+                            <a href="#">Apply Here</a>
+                            <span class="icon">&plus;</span>
+                        </div>
+                    </button>
+                    <div class="content">
+                        <h6>Key Responsibilities :</h6>
+                        <ul><li>${job.key_responsibilities}</li></ul>
+                        <h6>Qualifications :</h6>
+                        <ul><li>${job.qualifications}</li></ul>
+                        <h6>Experience Required :</h6>
+                        <ul><li>${job.experience}</li></ul>
+                        <h6>Who We Are Looking For :</h6>
+                        <ul><li>${job.who_are_we_looking_for}</li></ul>
+                        <h6>Must Have :</h6>
+                        <ul><li>${job.must_have}</li></ul>
+                        <h6>Nice to Have :</h6>
+                        <ul><li>${job.nice_to_have}</li></ul>
+                        <h6>Last Date to Apply :</h6>
+                        <p>${job.last_applied_date}</p>
+                    </div>
+                </div>`;
+            });
+        })
+        .catch(error => console.error('Error fetching jobs:', error));
+});
+
 <?php endif; ?>
 
 <?php if ($page_code === 'career-form'): ?>
@@ -576,8 +644,8 @@ $(document).ready(function() {
     });
 
     $("#email").on("input", function(e) {
-        var value = e.target.value;  // Get the current value
-        e.target.value = value.toLowerCase();  // Convert it to lowercase and set it back
+        var value = e.target.value; // Get the current value
+        e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
     });
 
     $.validator.addMethod("customEmail", function(value, element) {
@@ -590,7 +658,7 @@ $(document).ready(function() {
         $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
     });
 
-    
+
     // jQuery Validation
     $("#career-form").validate({
         rules: {
@@ -675,8 +743,8 @@ $(document).ready(function() {
     });
 
     $("#email").on("input", function(e) {
-        var value = e.target.value;  // Get the current value
-        e.target.value = value.toLowerCase();  // Convert it to lowercase and set it back
+        var value = e.target.value; // Get the current value
+        e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
     });
 
     $.validator.addMethod("customEmail", function(value, element) {
@@ -750,7 +818,7 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'admission'): ?>
 
-    var video = $('#sir-mitha-campus').get(0); // Get the video element
+var video = $('#sir-mitha-campus').get(0); // Get the video element
 var playOverlay = $('#playOverlay');
 
 // Ensure the video is muted for autoplay to work

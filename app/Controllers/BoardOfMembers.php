@@ -17,19 +17,21 @@ class BoardOfMembers extends BaseController
 
     public function add()
     {
-        $data['board_of_members'] = [];
+        $data['boardofmembers'] = [];
+        $data['page_title'] = 'Add Board of Member';
         return view('boardofmembers_form', $data);
     }
 
     public function edit($id)
     {
         $boardOfMembersModel = new BoardOfMembersModel();
-        $data['board_of_members'] = $boardOfMembersModel->find($id);
+        $data['boardofmembers'] = $boardOfMembersModel->find($id);
 
-        if (!$data['board_of_members']) {
+        if (!$data['boardofmembers']) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Board of Member not found');
         }
 
+        $data['page_title'] = 'Edit Board of Member';
         return view('boardofmembers_form', $data);
     }
 
@@ -112,7 +114,10 @@ class BoardOfMembers extends BaseController
 
         if ($member) {
             $newStatus = $this->request->getPost('is_published') === 'true' ? 1 : 0;
-            $boardOfMembersModel->update($id, ['is_published' => $newStatus]);
+            log_message('info', 'Member ID: ' . $id . ' New Status Received: ' . $newStatus);
+
+            $updateResult = $boardOfMembersModel->update($id, ['is_published' => $newStatus]);
+            log_message('info', 'Update Result: ' . json_encode($updateResult));
 
             return $this->response->setJSON([
                 'status' => 'success',
@@ -122,10 +127,8 @@ class BoardOfMembers extends BaseController
         } else {
             return $this->response->setJSON([
                 'status' => 'error',
-                'message' => 'Banner not found'
+                'message' => 'Member not found'
             ]);
         }
-
-        return $this->response->setJSON(['status' => 'error', 'message' => 'Member not found']);
     }
 }

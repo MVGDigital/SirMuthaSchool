@@ -205,7 +205,7 @@
                         <?php foreach ($boardMembers as $member) : ?>
                         <li class="splide__slide">
                             <div class="boardMenberItem">
-                                <img src="<?= base_url('uploads/' . $member['photo']) ?>" class="img-fluid"
+                                <img src="<?= base_url('uploads/boardofmember_photos/' . $member['photo']) ?>" class="img-fluid"
                                     alt="<?= esc($member['name']) ?>">
                                 <div class="boardMenberInfo">
                                     <h5><?= esc($member['designation']) ?></h5>
