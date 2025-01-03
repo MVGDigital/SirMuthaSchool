@@ -33,11 +33,9 @@
 
     <!-- Jobs Section -->
     <section class="container-space ptb-80">
-
         <div class="jobTitleSec">
             <h4>Search for job Openings</h4>
         </div>
-
         <form id="sort-by-key" action="<?= base_url('career/searchJobs') ?>" method="get">
             <div class="shortBySearch">
                 <div class="form-group has-search">
@@ -59,7 +57,6 @@
         <div class="jobCounts">
             <h5>Total jobs found <span id="totalJobs">(<?= $total_jobs ?>)</span></h5>
         </div>
-
         <div class="accordion-container">
             <?php foreach ($jobs as $job): ?>
             <div class="accordion">
@@ -88,7 +85,8 @@
                         <p><b>Job Overview:</b> <span><?= esc($job['job_overview']) ?></span></p>
                     </div>
                     <div class="jobHyp-link">
-                        <a href="#">Apply Here</a>
+                        <a href="javascript:void(0);" class="apply-link"
+                            data-job-id="<?= esc($job['career_id']) ?>">Apply Here</a>
                         <span class="icon">&plus;</span>
                     </div>
                 </button>
