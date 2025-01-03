@@ -71,8 +71,10 @@ $routes->group('events', function ($routes) {
 $routes->group('career', function ($routes) {
     $routes->get('', 'CareerController::index');
     $routes->get('form', 'CareerController::careerForm');
+    $routes->get('searchJobs', 'CareerController::searchJobs');
+    $routes->post('apply', 'CareerController::apply');
+    $routes->post('setJobSession', 'CareerController::setJobSession');
 });
-$routes->get('career/searchJobs', 'CareerController::searchJobs');
 
 //Contact
 $routes->get('/contact', 'Contact::index');
@@ -118,7 +120,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('/adm1n/career/delete/(:num)', 'Career::delete/$1');
     $routes->get('/adm1n/career/getCareers', 'Career::getCareers');
     $routes->get('/adm1n/job-applications', 'JobApplication::index');
-    $routes->get('/adm1n/job-applications/delete/(:num)', 'JobApplication::delete/$1');
+    $routes->get('/adm1n/job-application/delete/(:num)', 'JobApplication::delete/$1');
     $routes->get('/adm1n/job-applications/export', 'JobApplication::export');
 
     // Teacher routes
@@ -148,14 +150,15 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('adm1n/document/update/(:num)', 'DocumentController::update/$1');
     $routes->get('adm1n/document/delete/(:num)', 'DocumentController::delete/$1');
 
-    // FAQ routes
-    $routes->get('adm1n/faq', 'Faq::index');
-    $routes->get('adm1n/faq/create', 'Faq::add');
-    $routes->post('adm1n/faq/submit', 'Faq::submit');
-    $routes->get('adm1n/faq/edit/(:num)', 'Faq::edit/$1');
-    $routes->post('adm1n/faq/update/(:num)', 'Faq::update/$1');
-    $routes->get('adm1n/faq/delete/(:num)', 'Faq::delete/$1');
-
+    $routes->group('adm1n/alumni-events', ['namespace' => 'App\Controllers'], function ($routes) {
+        $routes->get('/', 'AlumniEventController::index');
+        $routes->get('create', 'AlumniEventController::create');
+        $routes->post('store', 'AlumniEventController::store');
+        $routes->get('edit/(:num)', 'AlumniEventController::edit/$1');
+        $routes->post('update/(:num)', 'AlumniEventController::update/$1');
+        $routes->get('delete/(:num)', 'AlumniEventController::delete/$1');
+    });
+    
     // Contact routes
     $routes->get('adm1n/contact', 'ContactController::index');
     $routes->get('adm1n/contact/create', 'ContactController::create');

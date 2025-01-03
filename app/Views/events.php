@@ -47,204 +47,36 @@
         <div id="upcoming-events" class="splide paginationCenter cardSlider mt-50">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <?php foreach ($upcoming_events as $event): ?>
                     <li class="splide__slide">
                         <div class="slider-card">
                             <div class="card-content">
                                 <div class="eventFullDate">
-                                    <h5>22</h5>
+                                    <h5><?= date('d', strtotime($event['event_date'])) ?></h5>
                                     <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
+                                        <p><?= date('l', strtotime($event['event_date'])) ?></p>
+                                        <span><?= date('F, Y', strtotime($event['event_date'])) ?></span>
                                     </div>
                                 </div>
                                 <div class="upcomingEvent-info">
                                     <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
+                                        <h6><?= esc($event['event_name']) ?></h6>
+                                        <p>Starts at <?= esc($event['start_time']) ?></p>
                                     </div>
                                     <div class="eventRegCount">
-                                        <span>+55</span>
+                                        <span>+66</span>
                                     </div>
                                 </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
+                                <a href="<?= base_url('events/details') ?>" class="upcomEvent-link">View
+                                    Details</a>
                             </div>
-
                         </div>
                     </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider-card">
-                            <div class="card-content">
-                                <div class="eventFullDate">
-                                    <h5>22</h5>
-                                    <div class="eventDate">
-                                        <p>Saturday</p>
-                                        <span>December, 2024</span>
-                                    </div>
-                                </div>
-                                <div class="upcomingEvent-info">
-                                    <div class="eventTitle">
-                                        <h6>Sir Mutha Festival</h6>
-                                        <p>Starts at 6:30 PM</p>
-                                    </div>
-                                    <div class="eventRegCount">
-                                        <span>+55</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="upcomEvent-link">View Details</a>
-                            </div>
-
-                        </div>
-                    </li>
-                    
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
     </section>
-    <!--  Upcoming Events -->
 
     <!-- Past Events -->
     <section class="container-space ptb-80">
@@ -252,45 +84,20 @@
             <h3>Past<span> Events</span></h3>
         </div>
 
+        <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container row w100">
             <div class="col-lg-4">
-                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="Sir Mutha Past Events">
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="<?= esc($event['event_name']) ?>">
             </div>
             <div class="col-lg-8">
-                <h6>Sir Mutha - 2023</h6>
+                <h6><?= esc($event['event_name']) ?> - <?= date('Y', strtotime($event['event_date'])) ?></h6>
                 <div class="event-date">
-                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
-                    <span>17 October 2023</span>
+                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Event date Icon">
+                    <span><?= date('d F Y', strtotime($event['event_date'])) ?></span>
                 </div>
-                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
+                <p><?= esc($event['event_description']) ?></p>
             </div>
         </div>
-        <div class="pastEvent-container row w100">
-            <div class="col-lg-4">
-                <img src="<?= base_url('images/events/past-event-2.jpg') ?>" alt="Sir Mutha Past Events">
-            </div>
-            <div class="col-lg-8">
-                <h6>Sir Mutha - 2023</h6>
-                <div class="event-date">
-                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
-                    <span>17 October 2023</span>
-                </div>
-                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
-            </div>
-        </div>
-        <div class="pastEvent-container row w100">
-            <div class="col-lg-4">
-                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="Sir Mutha Past Events">
-            </div>
-            <div class="col-lg-8">
-                <h6>Sir Mutha - 2023</h6>
-                <div class="event-date">
-                    <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Sir Mutha date Icon">
-                    <span>17 October 2023</span>
-                </div>
-                <p>Our resource centre boasts an extensive collection of books that spans genres - and in different.</p>
-            </div>
-        </div>
-
+        <?php endforeach; ?>
     </section>
     <!-- Past Events -->

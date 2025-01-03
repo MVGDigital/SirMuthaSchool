@@ -449,10 +449,41 @@ $(document).ready(function() {
 <?php endif; ?>
 
 <?php if ($page_code === 'career'): ?>
+
+function setJobAndRedirect(jobId) {
+    fetch('<?= base_url('career/setJobSession') ?>', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                jobId: jobId
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                window.location.href = data.redirect_url;
+            } else {
+                alert(data.message);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
 $(document).ready(function() {
     /* Initialize SlimSelect for the job category dropdown */
     new SlimSelect({
         select: '.job-category',
+    });
+    $(document).on('click', '.apply-link', function(event) {
+        event.preventDefault();
+        const jobId = $(this).data('job-id');
+        setJobAndRedirect(jobId);
     });
 
     function attachAccordionListeners() {
@@ -534,7 +565,7 @@ $(document).ready(function() {
                             <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
                         </div>
                         <div class="jobHyp-link">
-                            <a href="#">Apply Here</a>
+                            <a href="javascript:void(0);" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
                             <span class="icon">&plus;</span>
                         </div>
                     </button>
@@ -564,7 +595,6 @@ $(document).ready(function() {
                 container.innerHTML = '<p>Error loading jobs. Please try again.</p>';
             });
     });
-
 });
 
 <?php endif; ?>

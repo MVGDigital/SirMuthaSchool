@@ -110,7 +110,7 @@
                         </div>
                         <!--end col-->
                     </div>
-                    <!--end row-->
+                    <!--end row-->, 
                     <?= $this->include('partials/footer') ?>
                 </div>
                 <!--end page-content-->

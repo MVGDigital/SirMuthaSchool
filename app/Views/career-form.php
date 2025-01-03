@@ -42,8 +42,29 @@
 
         <div class="careerForm-container">
             <div class="col-lg-8 m-auto">
+                <?php if (isset($job_details)): ?>
+                <div class="selected-job-details">
+                    <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
+                    <p><strong>Location:</strong> <?= esc($job_details['location']) ?></p>
+                    <!-- <p><strong>Employment Type:</strong> <?= esc($job_details['employment_type']) ?></p> -->
+                </div>
+                <?php endif; ?>
                 <h6>fill in your details</h6>
-                <form id="career-form" action="POST">
+                <form id="career-form" action="<?= base_url('career/apply') ?>" method="POST"
+                    enctype="multipart/form-data">
+                    <?php if (session()->getFlashdata('message')): ?>
+                    <div class="alert alert-success"><?= session()->getFlashdata('message') ?></div>
+                    <?php endif; ?>
+                    <?php if (session()->getFlashdata('errors')): ?>
+                    <div class="alert alert-danger">
+                        <ul>
+                            <?php foreach (session()->getFlashdata('errors') as $error): ?>
+                            <li><?= esc($error) ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <?php endif; ?>
+                    <input type="hidden" name="job_id" value="<?= esc($job_details['career_id']) ?>">
                     <div class="col-12 col-md-12 col-lg-12 fields">
                         <label for="first-name">First Name</label>
                         <input type="text" name="first-name" id="first-name" placeholder="Enter first name">
@@ -74,11 +95,12 @@
                             class="file-upload-input" />
                         <div class="itemSpaceBetween upload-doc-msg">
                             <div class="file-info">
-                                <img src="<?= base_url('images/file-info.svg') ?>" 
+                                <img src="<?= base_url('images/file-info.svg') ?>"
                                     alt="Lady andal upload cv information icon">
                                 <span>File can be any format</span>
                                 <div class="hoverInfo">
-                                    <p>Please upload your resume in any format (e.g., PDF, DOC, DOCX, TXT). Ensure the file size is within the allowable limit.</p>
+                                    <p>Please upload your resume in any format (e.g., PDF, DOC, DOCX, TXT). Ensure the
+                                        file size is within the allowable limit.</p>
                                 </div>
                             </div>
                             <div id="fileError" class="file-info">Maximum Limit: 2Mb</div>
