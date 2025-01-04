@@ -123,7 +123,7 @@
     <!-- Co Curricular -->
     <section class="wave-sec wave-bottom-img">
         <div class="itemSpaceBetween">
-            <div class="col-lg-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Co- <span> Curricular</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
@@ -164,11 +164,11 @@
     <!-- Terms & Conditions -->
     <section class="wave-sec ligh-yellowWithGg-img ptb-80">
         <div class="itemSpaceBetween">
-            <div class="col-lg-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
-            <div class="col-lg-6 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Terms & <span> Conditions</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

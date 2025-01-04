@@ -39,7 +39,7 @@
     <!-- Contact Form -->
     <section class="container-space blueBg-Sec contactBg ptb-80">
         <div class="contact-container">
-            <div class="col-12 col-md-12 col-lg-6 contact-details-container">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-6 contact-details-container">
                 <div class="regForm">
                     <div class="sectionTitle-white">
                         <h3>Drop Us a line</h3>
@@ -74,7 +74,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 contact-details-container">
+            <div class="col-12 col-md-12 col-lg-4 col-xl-5 contact-details-container">
                 <div class="contactForm">
                     <div class="contactInfo">
                         <h6>Address</h6>
