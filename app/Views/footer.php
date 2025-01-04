@@ -355,6 +355,20 @@ var thumbnails = new Splide('#thumbnail-slider', {
 main.sync(thumbnails);
 main.mount();
 thumbnails.mount();
+
+
+var splide = new Splide('.annual-event-imgs', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: false,
+});
+splide.mount();
 /* Annual Events */
 
 <?php endif; ?>
