@@ -373,7 +373,15 @@ var splide = new Splide('#upcoming-events', {
     perPage: 4,
     arrows: true,
     breakpoints: {
-        767: {
+        1024: {
+            perPage: 3,
+            pagination: true,
+        },
+        768: {
+            perPage: 2,
+            pagination: true,
+        },
+        600: {
             perPage: 1,
             pagination: true,
         },
@@ -403,7 +411,7 @@ $(document).ready(function() {
     }, "Please enter a valid email address");
 
     // Restrict input to only numeric characters in the phone number field
-    $("#mobile-number").on("input", function(e) {
+    $("#mobile-number, #guests").on("input", function(e) {
         const value = $(this).val();
         $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
     });
@@ -428,6 +436,15 @@ $(document).ready(function() {
                 minlength: 10,
                 maxlength: 15
             },
+            gender:{
+                required: true,
+            },
+            guests:{
+                required: true,
+            },
+            "residential_address":{
+                required: true,
+            }
         },
         messages: {
             "first-name": {
@@ -448,6 +465,17 @@ $(document).ready(function() {
                 minlength: "Phone number must be at least 10 digits",
                 maxlength: "Phone number cannot exceed 15 digits"
             },
+            gender:{
+                required: "Please select gender",
+            },
+            guests:{
+                required: true,
+                required: "Please enter number of guests",
+            },
+            "residential_address":{
+                required: true,
+                required: "Please enter residential address",
+            }
         },
         submitHandler: function(form) {
             alert("Form submitted successfully!");
