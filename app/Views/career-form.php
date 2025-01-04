@@ -41,7 +41,7 @@
         </div>
 
         <div class="careerForm-container">
-            <div class="col-lg-8 m-auto">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-8 m-auto">
                 <?php if (isset($job_details)): ?>
                 <div class="selected-job-details">
                     <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="formBtn-fullWidth col-4 m-auto">
+                    <div class="formBtn-fullWidth col-8 col-md-6 col-lg-6 col-xl-4 m-auto">
                         <button id="submitBtn" type='sumit'>Submit</button>
                     </div>
                 </form>

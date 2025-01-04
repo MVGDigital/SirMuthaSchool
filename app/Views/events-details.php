@@ -74,7 +74,7 @@
     <!-- Contact Form -->
     <section class="container-space lightColor-bg eventRegBg">
         <div class="contact-container">
-            <div class="col-lg-6 contact-details-container m-auto">
+            <div class="col-12 col-md-11 col-lg-8 col-xl-6 contact-details-container m-auto">
                 <div class="regForm">
                     <div class="sectionTitle-white">
                         <h3>Register for this event</h3>
