@@ -2,8 +2,9 @@
     <!-- Banner Section -->
     <section class="banner-section">
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+            <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+            <img src="<?= base_url('images/about/about-MobBanner.jpg'); ?>" class="img-fluid mobImg w100" alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -22,7 +23,7 @@
             <ul>
                 <li><a href="#" class="active">About CBSE</a></li>
                 <li><a href="#">CBSE Curriculum</a></li>
-                <li><a href="#">Teachers Professional Development Programme</a></li>
+                <li><a href="#">Teachers Professional DP</a></li>
                 <li><a href="#">School Promotion Policy</a></li>
             </ul>
         </div>
@@ -53,10 +54,10 @@
     <!-- CBSE Curriculum -->
     <section class="wave-sec white-bgImg">
         <div class="itemSpaceBetween">
-            <div class="col-lg-5">
+            <div class="col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
             </div>
-            <div class="col-lg-7 plr-80">
+            <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>CBSE <span> Curriculam</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

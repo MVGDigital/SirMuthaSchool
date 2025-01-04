@@ -52,12 +52,12 @@
     <!-- Policys -->
     <section class="container-space white-bgImg ptb-80">
         <div class="row m-0 w100">
-            <div class="col-lg-6 p-0">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
                 <div class="cardWith-under-info">
                     <div class="sectionTitle-blue">
                         <h3>Guidelines <span>For Parents</span></h3>
                     </div>
-                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna</h6>
@@ -66,12 +66,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 p-0">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
                 <div class="cardWith-under-info">
                     <div class="sectionTitle-blue">
                         <h3>Attendence & <span>Leave Policy</span></h3>
                     </div>
-                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna</h6>
@@ -87,9 +87,9 @@
     <section class="container-space linenWhite-bgImg ptb-80">
         <div class="mt-50">
             <div class="row m-0 w100">
-                <div class="col-lg-4 p-0">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/code-of-conduct.png') ?>" class="img-fluid"
+                        <img src="<?= base_url('images/statutory/code-of-conduct.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>code of <span>Conduct</span></h4>
@@ -102,9 +102,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 p-0">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/rules-and-regulations.png') ?>" class="img-fluid"
+                        <img src="<?= base_url('images/statutory/rules-and-regulations.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>Rules & <span>Regulations</span></h4>
@@ -117,9 +117,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 p-0">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                     <div class="cardWith-under-info-center">
-                        <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid"
+                        <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
                             <h4>Child <span>Support Policy</span></h4>

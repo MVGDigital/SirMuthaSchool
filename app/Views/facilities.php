@@ -151,7 +151,7 @@
         <div class="row m-0 w100">
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
-                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Swimming Pool</a>
@@ -160,7 +160,7 @@
             </div>
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
-                    <img src="<?= base_url('images/facilities/extra-curicular-2.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-2.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Concert Hall</a>
@@ -169,7 +169,7 @@
             </div>
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
-                    <img src="<?= base_url('images/facilities/extra-curicular-3.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-3.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Cricket Nets</a>
@@ -178,7 +178,7 @@
             </div>
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
-                    <img src="<?= base_url('images/facilities/extra-curicular-4.jpg') ?>" class="img-fluid"
+                    <img src="<?= base_url('images/facilities/extra-curicular-4.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="#">Hockey Field </a>
@@ -192,7 +192,7 @@
     <!-- Co-Curricular -->
     <section class="wave-sec ligh-yellowBG">
         <div class="itemSpaceBetween">
-            <div class="col-lg-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Co- <span> Curricular</span></h3>
                     <div id="curve-slider" class="splide paginationCenter toRight-pagination">
@@ -256,7 +256,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
@@ -267,11 +267,11 @@
     <!-- Special Education -->
     <section class="wave-sec blueBg-Sec ">
         <div class="itemSpaceBetween">
-            <div class="col-lg-7">
+            <div class="col-12 col-md-12 col-lg-5 col-lg-5 col-xl-7">
                 <img src="<?= base_url('images/facilities/spl-edication.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
-            <div class="col-lg-5 plr-30-80">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-30-80">
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3>Special <span> Education</span></h3>
                     <div id="spl-education-slider" class="splide paginationCenter toLeft-pagination">
@@ -346,7 +346,7 @@
         </div>
 
         <div class="container-space wave-yellow-overwireBg ptb-80">
-            <div class="sectionTitle-blue col-lg-10 m-auto">
+            <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
                 <h3>Green <span>Campus</span></h3>
                 <h6 class="light-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
