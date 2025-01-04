@@ -90,10 +90,10 @@
 
         <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container row w100">
-            <div class="col-lg-4">
-                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" alt="<?= esc($event['event_name']) ?>">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-4">
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100" alt="<?= esc($event['event_name']) ?>">
             </div>
-            <div class="col-lg-8">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50">
                 <h6><?= esc($event['event_name']) ?> - <?= date('Y', strtotime($event['event_date'])) ?></h6>
                 <div class="event-date">
                     <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Event date Icon">
