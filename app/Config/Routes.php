@@ -64,7 +64,10 @@ $routes->get('/gallery', 'Gallery::index');
 //Events
 $routes->group('events', function ($routes) {
     $routes->get('', 'Events::index');
+    $routes->post('set-event-details', 'Events::setEventDetails');
     $routes->get('details', 'Events::eventDetails');
+    $routes->get('past-event/details', 'Events::eventDetails');
+    $routes->post('register', 'Events::registerEvent');
 });
 
 //Career
