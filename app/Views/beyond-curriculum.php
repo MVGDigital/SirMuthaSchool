@@ -311,6 +311,50 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
+                        <div class="splide annual-event-imgs">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="annualEventImg">
+                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                                alt="Sir Mutha Newsletter Image">
+                                        </div>
+                                        <div class="thumbContent">
+                                            <h6>Sports Day, Nov 2022</h6>
+                                            <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
+                                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
+                                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
+                                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                                Swimming
+                                                Academy, Mogappair.</p>
+                                            <div class="whiteBtn-medium">
+                                                <a href="#">View Gallery</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="annualEventImg">
+                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                                                alt="Sir Mutha Newsletter Image">
+                                        </div>
+                                        <div class="thumbContent">
+                                            <h6>Sports Day, Nov 2022</h6>
+                                            <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
+                                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
+                                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
+                                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                                Swimming
+                                                Academy, Mogappair.</p>
+                                            <div class="whiteBtn-medium">
+                                                <a href="#">View Gallery</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="splide__slide">
                         <div class="annualEventImg">
                             <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
@@ -363,25 +407,7 @@
                                 <a href="#">View Gallery</a>
                             </div>
                         </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
-                                alt="Sir Mutha Newsletter Image">
-                        </div>
-                        <div class="thumbContent">
-                            <h6>Sports Day, Nov 2022</h6>
-                            <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
-                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
-                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
-                                Swimming
-                                Academy, Mogappair.</p>
-                            <div class="whiteBtn-medium">
-                                <a href="#">View Gallery</a>
-                            </div>
-                        </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
