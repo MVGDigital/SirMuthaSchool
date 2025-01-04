@@ -30,22 +30,23 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
+        <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
+            <h3>Welcome to sir mutha <span>clubs</span></h3>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </h6>
+        </div>
     </section>
     <!-- Section Menus -->
 
     <!-- Clubs -->
     <section id="sirMutha-clubs" class="container-space clubsSec blueBg-Sec blue-wave pb-100">
-        <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
-            <h3>Welcome to sir mutha <span>clubs</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h6>
-        </div>
-        <div id="clubs" class="splide paginationCenter overlayPagination cardSlider mt-50">
+        <div id="clubs" class="splide paginationCenter overlayPagination cardSlider">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="row m-0 w100">
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
@@ -57,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
@@ -73,24 +74,24 @@
                     </li>
                     <li class="splide__slide">
                         <div class="row m-0 w100">
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
-                                    <div class="sectionTitle-white">
-                                        <h3>Guidelines <span>For Parents</span></h3>
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Guidelines <span>For Parents</span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
                                         <a href="#">Know More</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
-                                    <div class="sectionTitle-white">
-                                        <h3>Guidelines <span>For Parents</span></h3>
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Guidelines <span>For Parents</span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
                                         <a href="#">Know More</a>
@@ -101,24 +102,24 @@
                     </li>
                     <li class="splide__slide">
                         <div class="row m-0 w100">
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
-                                    <div class="sectionTitle-white">
-                                        <h3>Guidelines <span>For Parents</span></h3>
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Guidelines <span>For Parents</span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
                                         <a href="#">Know More</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 p-0">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
                                     <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>"
                                         class="img-fluid" alt="Sir Mutha Logo">
-                                    <div class="sectionTitle-white">
-                                        <h3>Guidelines <span>For Parents</span></h3>
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Guidelines <span>For Parents</span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
                                         <a href="#">Know More</a>
@@ -306,7 +307,7 @@
                 </ul>
             </div>
         </div>
-        <div id="annual-event" class="splide splideMain col-lg-10 m-auto">
+        <div id="annual-event" class="splide splideMain col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">

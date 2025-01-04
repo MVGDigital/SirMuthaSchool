@@ -68,10 +68,22 @@
   .cardWith-Btn .blueBtn-medium{
     width: 75%;
   }
+  .accordion-container .menu-button{
+    padding: 10px 25px;
+  }
+  .job-location-details{
+    flex-wrap: wrap;
+  }
+  .job-locDetails{
+    margin-top: 10px;
+  }
+  #thumbnail-slider .splide__track--nav{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   
 }
 @media (max-width: 992px) {
-<<<<<<< HEAD
 
   .mobContTop-p50{
     padding-top: 50px;
@@ -134,6 +146,36 @@
     margin-top: -20%;
     padding-top: 21%;
   }
+  .Tabs__presentation-slider{
+    display: none;
+  }
+  .contactForm{
+    width: 100%;
+    padding-top: 50px 0;
+  }
+  .clubsSec .overlayPagination .splide__arrows{
+    bottom: -4% !important;
+  }
+  .clubsSec .overlayPagination .splide__pagination {
+    bottom: -5% !important;
+  }
+  .cardWith-under-info h3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .slick-slider-banner-image{
+    height: auto!important;
+  }
+  .slider-nav  .thumbContent{
+    display: none;
+  }
+  .slider-nav .slick-slide.thumbnail-image .thumbImg{
+    height: auto!important;
+  }
+  .slick-slide img{
+    width: 100%;
+  }
+
   /* Footer Section */
 
   .policy-txt hr{
@@ -148,16 +190,20 @@
   .blueBg-Sec .paginationCenter .splide__pagination{
     bottom: -11%;
   }
-
-=======
-  .dropdown-toggle::after{
-    display: block;
+  .clubsSec .overlayPagination .splide__arrows{
+    bottom: -10% !important;
+  }
+  .clubsSec .overlayPagination .splide__pagination {
+    bottom: -12% !important;
 }
->>>>>>> f4776e7c34a91b7ba1e6a1f047ff8e49d7e1f366
+
 }
 @media (max-width: 767px) {
   .navbar{
     padding:10px 20px;
+  }
+  .mb-80{
+    margin-bottom: 50px;
   }
   .plr-80{
     padding-left: 20px;
@@ -228,6 +274,10 @@ position: unset;
 .lightYellowBtn a{
   padding: 14px 10%;
 }
+.fullWidth-Imgwith-center-btn .lightYellowBtn{
+  width: 80%;
+}
+
 .boardMenberInfo{
   text-align: center;
 }
@@ -290,7 +340,52 @@ position: unset;
 .sectionTitle-blue h3{
   font-size: 28px;
 }
+.center-card{
+  margin: 15px 0;
+}
+.cardTitle h4{
+  font-size: 30px;
+  line-height: 32px;
+}
 /* Statutory */
+/* Admission */
+.admsn-PageVideo video{
+  height: auto;
+}
+/* Admission */
+/* Gallery */
+.Panel-body{
+  padding: 0;
+}
+.Tabs__tab{
+  margin: 0 0px;
+}
+.Tab>span{
+  padding: 8px 10px;
+  font-size: 18px;
+}
+.gallery-imgs{
+  padding:15px 0;
+}
+/* Gallery */
+
+/* Career */
+.shortBySearch {
+  flex-wrap: wrap;
+}
+.shortBySearch .ss-main{
+  width: 50%;
+  margin: 16px 0px;
+  padding: .690rem 1rem;
+}
+.shortBySearch .form-btn{
+  margin: auto;
+  margin-right: 0!important;
+  padding: 15px 50px;
+  font-size: 14px;
+}
+/* Career */
+
 
 
 /* Footer Section */
@@ -375,7 +470,19 @@ footer .itemSpaceBetween{
 .copyRights-txt a{
   line-height: 23px;
 }
-
+.jobTitleSec h4{
+  font-size: 28px;
+  line-height: 34.4px;
+}
+#thumbnail-slider .splide__arrow--prev{
+  left: 0em;
+}
+#thumbnail-slider .splide__arrow--next{
+  right: 0em;
+}
+.annual-event-waveBg{
+  background-size: auto 80%;
+}
 
 }
 @media (min-width: 712px) and (max-width: 730px) {
@@ -409,6 +516,9 @@ footer .itemSpaceBetween{
 .cardWith-Btn .blueBtn-medium{
   width: 75%;
 }
+.accordion-container .menu-button{
+  padding: 10px;
+}
 }
 @media (max-width: 375px){
   .navbar-nav .nav-link{
@@ -441,6 +551,9 @@ footer .itemSpaceBetween{
     margin-top: -55%;
     padding-top: 60%;
 }
+.jobHyp-link a{
+  padding: 0 8px;
+}
 }
 @media (max-width: 350px){
   .lft-rgt-content{
@@ -463,6 +576,26 @@ footer .itemSpaceBetween{
   .sectionTitle-blue h3{
     font-size: 22px;
     line-height: 24px;
+  }
+  .jobInfo h5{
+    font-size: 16px;
+    line-height: 22.6px;
+  }
+  .jobInfo h6{
+    font-size: 12px;
+  }
+  .job-locDetails{
+    margin-right: 0px;
+  }
+  .jobInfo p{
+    font-size: 12px;
+  }
+  .shortBySearch .ss-main{
+    width: 58%;
+    padding: .690rem 1rem;
+  }
+  .shortBySearch .form-btn{
+    padding: 15px 25px;
   }
 }
 

@@ -302,13 +302,14 @@ $('.slider-nav').slick({
             breakpoint: 768,
             settings: {
                 vertical: false,
+                slidesToShow: 2,
             }
         },
         {
             breakpoint: 580,
             settings: {
                 vertical: false,
-                slidesToShow: 3,
+                slidesToShow: 2,
             }
         },
         {
@@ -346,7 +347,7 @@ var thumbnails = new Splide('#thumbnail-slider', {
     },
     breakpoints: {
         640: {
-
+            perPage: 3,
         },
     },
 });
@@ -785,44 +786,6 @@ $(document).ready(function() {
 
 <?php endif; ?>
 
-    //FAQ Script Code
-    const menuBtns = document.querySelectorAll(".menu-button");
-
-    menuBtns.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", function() {
-            //----- open only one menu --------------
-            const activeAccordion = document.querySelector(".menu-button.open");
-            if (activeAccordion && activeAccordion !== this) {
-                activeAccordion.nextElementSibling.style.height = 0;
-                activeAccordion.classList.remove("open");
-                // Change icon back to plus for the closed accordion
-                activeAccordion.querySelector(".icon").textContent = "+";
-            }
-            //------------------------------------------------
-
-            this.classList.toggle("open");
-            const content = this.nextElementSibling;
-            const icon = this.querySelector(".icon");
-
-            if (this.classList.contains("open")) {
-                content.style.height = content.scrollHeight + "px";
-                icon.textContent = "−"; // Change icon to minus when open
-            } else {
-                content.style.height = 0;
-                icon.textContent = "+"; // Change icon back to plus when closed
-            }
-        });
-$(document).ready(function() {
-
-
-    $("#first-name, #last-name").on("input", function() {
-        const value = $(this).val();
-        // Allow only letters and spaces
-        $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
-    });
-    //FAQ Script Code
-});
-<?php endif; ?>
 
 <?php if ($page_code === 'career-form'): ?>
 
