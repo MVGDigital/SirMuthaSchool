@@ -1,45 +1,464 @@
 @media (min-width: 1920px) {
-    .navbar{
-        max-width: 1920px;
-        margin: auto;
-        padding: 0 70px;
-    }
-    .menusContainer {
-        display: flex;
-        width: 100%;
-        max-width: 1920px;
-        margin: auto;
-        position: fixed;
-        left: 0;
-        right: 0;
-    }
+  .navbar{
+    max-width: 1920px;
+    margin: auto;
+    padding: 0 70px;
+  }
+  .menusContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  .toRight-pagination .splide__pagination{
+   right: 5%;
+    bottom: -20%;
+  }
+  .splide__pagination{
+    bottom: -7%;
+  }
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+@media (max-width: 1024px) {
+  .headerContact-info{
+    padding: 50px 0;
+  }
+  .navbar-nav .nav-link{
+    margin-bottom: 10px;
+  }
+  .contact-container{
+    flex-wrap: wrap;
+  }
+  .regForm{
+    padding: 20px;
+  }
+  .innerMenus-sec{
+    margin-top: -8%;
+    padding-top: 12%;
+  }
+  .innerMenus{
+    padding: 15px;
+    background-position: bottom;
+  }
+  .innerMenus ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .innerMenus ul li{
+    margin: 0 10px;
+  }
+  .toRight-pagination .splide__pagination{
+    right: 15%;
+    bottom: -13%;
+  }
+  .toRight-pagination .splide__arrows .splide__arrow--prev{
+    left: -11em;
+  }
+  .blueBg-Sec .paginationCenter .splide__pagination{
+    bottom: -11%;
+  }
+  .wave-yellow-overwireBg{
+    margin-top: -15%;
+    padding-top: 15%;
+  }
+  .cardWith-Btn .blueBtn-medium{
+    width: 75%;
+  }
+  
 }
 @media (max-width: 992px) {
+
+  .mobContTop-p50{
+    padding-top: 50px;
+  }
+  .mobContTop-p-tb50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .dropdown-toggle::after{
     display: block;
+  }
+  .plr-30-80{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .plr-80{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .navbar{
+    padding: 20px 50px
+  }
+  .container-space{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .toRight-pagination .splide__pagination{
+    right: 10%;
+    bottom: 10%;
+  }
+  .toRight-pagination .splide__arrows{
+    bottom: 2em;
+    right: 2%;
+  }
+  .innerMenus-sec{
+    margin-top: -10%;
+    padding-top: 15%;
+  }
+  .blueBg-Sec .paginationCenter .splide__pagination{
+    bottom: -13%;
+  }
+  #spl-education-slider .blueBtn-medium{
+    text-align: end;
+  }
+  .toLeft-pagination .splide__arrows{
+    bottom: 2em;
+  }
+  .toLeft-pagination .splide__arrows .splide__arrow--prev{
+    left: 0em;
+    right: 0;
+  }
+  .toLeft-pagination .splide__arrows .splide__arrow--next{
+    left: 10em;
+  }
+  .toLeft-pagination .splide__pagination{
+    left: 10%;
+    bottom: 9% !important;
+  }
+  .wave-yellow-overwireBg{
+    margin-top: -20%;
+    padding-top: 21%;
+  }
+  /* Footer Section */
+
+  .policy-txt hr{
+    margin: auto 10px;
+  }
 }
+@media (min-width: 768px) and (max-width: 820px){
+  .toRight-pagination .splide__pagination {
+    right: 11%;
+    bottom: 9%;
+  }
+  .blueBg-Sec .paginationCenter .splide__pagination{
+    bottom: -11%;
+  }
+
 }
 @media (max-width: 767px) {
-    
+  .navbar{
+    padding:10px 20px;
+  }
+  .plr-80{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .plr-30-80{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-collapse{
+    padding:20px;
+  }
+  .menusContainer{
+    margin-top: 103px;
+  }
+  .navbar-nav .nav-link {
+    margin-bottom: 0px;
+}
+.contactMenuBtn{
+  display: none!important;
+}
+.whiteLine{
+  width: 100%;
+  height: 1px !important;
+}
+
+/* Home page Code */
+#homeSlider{
+  top: 25px!important;
+}
+.home-Sec .bannerTitle{
+position: unset;
+}
+.home-Sec .banner-section{
+  padding-top: 35%;
+}
+.home-Sec .sliderContainer{
+  text-align: center;
+}
+/* Home page Code */
+
+.bannerTitle{
+  top: 15%;
+}
+.banner-subTitle{
+  bottom: 15%;
+}
+.innerMenus-sec{
+  margin-top: -30%;
+  padding-top: 30%;
+}
+.deskTopImg{
+  display: none;
+}
+.mobImg{
+  display: block;
+}
+/* About Page */
+.bgWith-bottom-content h6{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.blueBtn{
+  padding: 12px 10%;
+}
+.lightYellowBtn a{
+  padding: 14px 10%;
+}
+.boardMenberInfo{
+  text-align: center;
+}
+.splide__pagination{
+  bottom: -8%;
+}
+.paginationCenter .splide__arrow--prev{
+  left: -10em;
+}
+.paginationCenter .splide__arrow--next{
+  right: -10em;
+}
+.sectionTitle-white-italic h4{
+  font-size: 28px;
+  line-height: 44px;
+}
+.toRight-pagination .splide__pagination{
+  right: 19%;
+  bottom: 7%;
+}
+/* Academics */
+.blueBg-Sec .paginationCenter .splide__pagination{
+  bottom: -10%;
+}
+.blueBg-Sec .paginationCenter .splide__arrow--prev{
+  left: -8em;
+}
+.blueBg-Sec .paginationCenter .splide__arrow--next{
+  right: -8em;
+}
+
+/* Academics */
+
+/* Facilities */
+.sliderItem-end-content{
+  width: 100%;
+  right: 0;
+  text-align: start;
+  padding: 0 20px;
+}
+.sliderItem-end-content h4{
+  font-size: 24px;
+}
+.sliderItem-end-content .blueBtn-medium{
+  padding: 20px 0 40px 0;
+}
+.sliderItem-end-content .blueBtn-medium a{
+  padding: 8px 5%;
+}
+#spl-education-slider.paginationCenter .splide__arrow--prev{
+  left: 0!important;
+}
+#spl-education-slider.paginationCenter .splide__pagination{
+  left: 18%;
+  bottom: 8% !important;
+}
+/* Facilities */
+
+/* Statutory */
+.sectionTitle-blue h3{
+  font-size: 28px;
+}
+/* Statutory */
+
+
+/* Footer Section */
+footer .itemSpaceBetween{
+  flex-direction: column;
+}
+.navbar-brand{
+  margin-right: 0;
+}
+.contactBtn{
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  line-height: 3px;
+}
+.navbar-light .navbar-toggler{
+  padding-right: 0;
+  padding-left: 0px;
+}
+.headerContact-info{
+  padding: 0;
+}
+.headerContact-info h5{
+  margin-bottom: 8px;
+}
+.socialMedial-links{
+  position: relative;
+}
+.mobQuickLinks{
+  /* display: flex; */
+  flex-wrap: wrap;
+  display: none;
+}
+.socialIcons span{
+  font-size: 14px;
+  padding: 0 12px;
+}
+.horizontal-whiteLine{
+  display: none;
+}
+/* .horizontal-whiteLine.d-line{
+  display: block;
+  margin: 20px auto;
+} */
+
+
+.subMenus{
+  display: none;
+}
+
+/* Banner Images */
+.bannerTitle h1{
+  font-size: 30px;
+}
+.bannerTitle p{
+  font-size: 18px;
+}
+#homeSlider h4{
+  font-size: 22px;
+}
+
+
+.pageTitleLine{
+  padding: 30px 0;
+}
+.policy-txt{
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.copy-rights{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-space{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.copyRights-txt{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.copyRights-txt a{
+  line-height: 23px;
+}
+
+
+}
+@media (min-width: 712px) and (max-width: 730px) {
+  .splide__pagination{
+    bottom: -5%;
+  }
+  .toRight-pagination .splide__pagination {
+    right: 11%;
+    bottom: 10%;
+  }
+  .blueBg-Sec .paginationCenter .splide__pagination {
+    bottom: -15%;
+  }
+  #spl-education-slider.paginationCenter .splide__pagination{
+    left: 10%;
+  }
+
 }
 @media (max-width: 601px){
-    
+  .innerMenus-sec {
+    margin-top: -40%;
+    padding-top: 40%;
+}
+.blueBg-Sec .paginationCenter .splide__pagination {
+  bottom: -12%;
+}
+.wave-yellow-overwireBg {
+  margin-top: -43%;
+  padding-top: 50%;
+}
+.cardWith-Btn .blueBtn-medium{
+  width: 75%;
+}
 }
 @media (max-width: 375px){
-    
-    
+  .navbar-nav .nav-link{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .headerContact-info h5{
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .innerMenus-sec {
+    margin-top: -45%;
+    padding-top: 50%;
+}
+
+  .toRight-pagination .splide__arrows .splide__arrow--prev{
+    left: -10em;
+  }
+  .blueBg-Sec .paginationCenter .splide__pagination {
+    bottom: -10%;
+  }
+  #spl-education-slider.paginationCenter .splide__arrows .splide__arrow--next{
+    left: 8em!important;
+  }
+  #spl-education-slider.paginationCenter .splide__pagination{
+    left: 17%;
+    bottom: 7% !important;
+  }
+  .wave-yellow-overwireBg {
+    margin-top: -55%;
+    padding-top: 60%;
+}
 }
 @media (max-width: 350px){
-
+  .lft-rgt-content{
+    width: 100%;
+  }
+  .toRight-pagination .splide__arrows .splide__arrow--prev{
+    left: -9em;
+    bottom: 6%;
+  }
+  .toLeft-pagination .blueBtn-medium a{
+    padding: 10px 5%;
+  }
+  .sliderItem-end-content .blueBtn-medium {
+    padding: 5px 0 40px 0;
+  }
+  .wave-yellow-overwireBg {
+    margin-top: -67%;
+    padding-top: 70%;
+  }
+  .sectionTitle-blue h3{
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
-
-
-
 
 /* Search Code */
 

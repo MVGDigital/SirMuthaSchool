@@ -127,13 +127,29 @@ $(document).ready(function() {
     /* Sir Mutha Code */
     $(".navbar-toggler").on("click", function () {
         var isExpanded = $(this).attr("aria-expanded") === "true"; // Check current state
+    
+        // Toggle icons
         if (isExpanded) {
             $(".openIcon").hide();
             $(".closeIcon").show();
+            $("body").addClass("no-scroll"); // Add class to prevent scroll
         } else {
             $(".openIcon").show();
             $(".closeIcon").hide();
+            $("body").removeClass("no-scroll"); // Remove class to allow scroll
         }
     });
+
+    //Scroll header
+    document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+            navbar.style.backgroundColor = "rgb(16 39 83)"; // Add background color
+            navbar.style.transition = "background-color 0.3s ease"; // Smooth transition
+        } else {
+            navbar.style.backgroundColor = "transparent"; // Remove background color
+        }
+    });
+    
       
 });

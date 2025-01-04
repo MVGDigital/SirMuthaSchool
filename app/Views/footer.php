@@ -32,14 +32,14 @@
         <hr>
     </div>
     <div class="copy-rights">
-        <div class="col-lg-6">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
                 <a href="#">Cookie Policy</a>
                 <hr>
                 <a href="#">Privacy Policy</a>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
                 <a href="#">© Copyrights sIR MUTHA SCHOOL</a>
                 <hr>
@@ -72,6 +72,12 @@ var splide = new Splide('#homeSlider', {
     padding: '10rem',
     arrows: false,
     pagination: false,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            padding: '2rem',
+        },
+    },
 });
 splide.mount();
 <?php endif; ?>
@@ -169,6 +175,10 @@ var splide = new Splide('#teacher-enrichment', {
     perPage: 3,
     arrows: true,
     breakpoints: {
+        912: {
+            perPage: 2,
+            pagination: true,
+        },
         767: {
             perPage: 1,
             pagination: true,
@@ -750,7 +760,7 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'admission'): ?>
 
-    var video = $('#sir-mitha-campus').get(0); // Get the video element
+    var video = $('#sir-mutha-campus').get(0); // Get the video element
 var playOverlay = $('#playOverlay');
 
 // Ensure the video is muted for autoplay to work
@@ -802,7 +812,7 @@ playOverlay.click(function() {
 });
 
 // Toggle play/pause when clicking on the video itself
-$('#sir-mitha-campus').click(function() {
+$('#sir-mutha-campus').click(function() {
     if (video.paused) {
         video.play();
     } else {

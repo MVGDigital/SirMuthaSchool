@@ -2,8 +2,9 @@
     <!-- Banner Section -->
     <section class="banner-section">
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+            <img src="<?= base_url('images/about/about-MobBanner.jpg'); ?>" class="img-fluid mobImg w100" alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -34,16 +35,9 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Our <span>History</span></h3>
             <h6>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home. Established
-                on
-                the 18th of July 2012 and affiliated with the Central Board of Secondary Education, the school embodies
-                a
-                harmonious blend of legacy and innovation. Inspired by the visionary ideals of the late Chief Justice
-                Sir
-                Mutha Venkatasubba Rao, it is deeply committed to nurturing the spirit of inquiry and the pursuit of
-                knowledge in every child. The school stands as a beacon of our dedication to fostering intellectual
-                curiosity, inclusivity, and a spirit of excellence. Here, learning is not merely an academic endeavour
-                but
-                a journey of self-discovery.</h6>
+                on the 18th of July 2012 and affiliated with the Central Board of Secondary Education, the school embodies
+                a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the late Chief Justice
+                Sir Mutha Venkatasubba Rao</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -69,7 +63,8 @@
 
     <!-- Founder bg Section -->
     <section class="founders-sec">
-        <img src="<?= base_url('images/about/founder-bg.jpg') ?>" class="img-fluid w100" alt="Sir Mutha and Lady Andal">
+        <img src="<?= base_url('images/about/founder-bg.jpg') ?>" class="img-fluid deskTopImg w100" alt="Sir Mutha and Lady Andal">
+        <img src="<?= base_url('images/about/founder-MobBg.jpg') ?>" class="img-fluid mobImg w100" alt="Sir Mutha and Lady Andal">
 
         <div class="bgWith-bottom-content container-space">
             <div class="col-lg-10 m-auto">
@@ -85,7 +80,7 @@
     <section class="founder-sec">
         <div class="container-space">
             <div class="row w100 m-0 ptb-80">
-                <div class="col-lg-6 alignItemCenter">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 alignItemCenter">
                     <div class="sectionTitle-blue lft-rgt-content">
                         <h3>Our <span>Founders</span></h3>
                         <div id="founders-slider" class="splide paginationCenter toRight-pagination">
@@ -157,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <img src="<?= base_url('images/about/founder-ladyandal.png') ?>" class="img-fluid w100"
                         alt="Lady Andal">
                 </div>
@@ -169,10 +164,10 @@
     <!-- Vision & Mission Section -->
     <section class="container-space blueBg-Sec ptb-80">
         <div class="itemSpaceBetween">
-            <div class="col-lg-5">
-                <img src="<?= base_url('images/about/vision-mission.png') ?>" class="img-fluid w100" alt="Lady Andal">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+                <img src="<?= base_url('images/about/vision-mission.png') ?>" class="img-fluid w100" alt="Sir Mutha Vision and Mission">
             </div>
-            <div class="col-lg-6">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p50">
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3>Vision <span class="and">&</span> <span> Mission</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

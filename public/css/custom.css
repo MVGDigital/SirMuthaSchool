@@ -193,6 +193,7 @@ p {
 
 .itemSpaceBetween {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -261,15 +262,20 @@ main{
     margin: auto;
 }
 
+.no-scroll {
+    overflow: hidden; /* Prevent scrolling */
+}
 /* Home Page */
 .navbar{
-    padding: 20px 68px;
+    padding: 20px 80px 10px 80px;
     background-color:transparent;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    height: 103px;
     z-index: 999;
     max-width: 1920px;
     margin: auto;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -330,12 +336,16 @@ main{
 }
 .menusContainer{
     display: flex;
+    flex-wrap: wrap;
     max-width: 1920px;
     margin: auto;
-    margin-top: 11%;
+    margin-top: 103px;
     margin-right: 0!important;
     margin-left: auto!important;
 }
+.subMenuItems ul{
+    padding-left: 0!important;
+  }
 .subMenuItems ul li{
     list-style: none;
 }
@@ -348,9 +358,9 @@ main{
     display: none;
 }
 .whiteLine {
-    height: 75vh !important;
+    width: 1px;
+    height: 100% !important;
     border: 1px solid #f6f6f6c7;
-    margin: auto 50px;
     color: inherit;
     background-color: currentColor;
 }
@@ -408,24 +418,15 @@ main{
 }
 /* Header Menus */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Banner Section */
+.home-Sec{
+    background: var(--blue-bg);
+  }
 .homeBanner{
     position: relative;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     background-image: url(../images/home/bannerBottomBg.png);
 }
 .banner-section{
@@ -436,7 +437,7 @@ main{
 .bannerTitle{
     position: absolute;
     /* z-index: 99; */
-    top: 20%;
+    top: 115px;
     width: 100%;
 }
 .bannerTitle h1{
@@ -457,7 +458,7 @@ main{
 .banner-subTitle{
     position: absolute;
     bottom: 10%;
-    z-index: 99;
+    /* z-index: 99; */
     width: 100%;
     font-size: 38px;
     line-height: 38px;
@@ -475,10 +476,11 @@ main{
     top: 15rem;
 }
 #homeSlider h4{
-    color: var(--color-blue);
     font-size: 24px;
     line-height: 24px;
     padding: 30px 0;
+    color: var(--color-blue);
+    text-transform: capitalize;
     font-family: 'Figtree-Medium';
 }
 #homeSlider .splide__slide{
@@ -498,8 +500,12 @@ main{
     position: relative;
     padding-bottom: 30px;
     background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
     background-image: url(../images/about/banner-blueBg.png);
+}
+.mobImg{
+  display: none;
 }
 .innerMenus{
     border-radius: 10px;
@@ -666,7 +672,7 @@ main{
     font-size: 52px;
     line-height: 54px;
     color: #51648A;
-    margin-bottom: 25px;
+    margin: 15px 0; 
     font-family: 'Figtree-Bold';
 }
 .counterItem p{
@@ -780,6 +786,9 @@ main{
 .boardMenberItem{
     padding: 15px;
 }
+.boardMenberItem img{
+    width: 100%;
+  }
 .boardMenberInfo{
     margin: 25px 0;
 }
