@@ -98,6 +98,24 @@
                             <label for="mobile-number">Phone Number</label>
                             <input type="tel" name="mobile-number" id="mobile-number">
                         </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="gender">Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="" selected disabled>Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="guests">How many guests are you bringing?</label>
+                        <input type="text" name="guests" id="guests" placeholder="Enter number of guests">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 fields">
+                        <label for="residential-address">Residential Address</label>
+                            <textarea id="residential-address" name="residential_address"
+                                placeholder="Enter residential address"></textarea>
+                        </div>
                         <div class="formBtn-fullWidth">
                             <button>Submit</button>
                         </div>

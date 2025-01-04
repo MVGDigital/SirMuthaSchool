@@ -71,9 +71,7 @@
                                                             id="boardofmembers-photo" name="boardofmembers_photo"
                                                             accept="image/*">
                                                         <?php if (!empty($boardofmembers['photo'])): ?>
-                                                        <p>Current File: <a
-                                                                href="<?= base_url('public/uploads/boardofmembers_photos/' . esc($boardofmembers['photo'])) ?>"
-                                                                target="_blank">View Photo</a></p>
+                                                        <p>Current File: <?= esc($boardofmembers['photo']) ?></p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -107,6 +105,35 @@
                                                     <div class="col-sm-8">
                                                         <textarea class="form-control" name="content"
                                                             id="content"><?= esc($boardofmembers['content'] ?? '') ?></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Sort Order -->
+                                                <div class="mb-3 row">
+                                                    <label for="sort-order" class="col-sm-4 col-form-label">Sort
+                                                        Order</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" type="number" id="sort-order"
+                                                            name="sort_order"
+                                                            value="<?= esc($boardofmembers['sort_order'] ?? '') ?>">
+                                                        <small
+                                                            class="text-danger"><?= session('errors.sort_order') ?></small>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Publish -->
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-4 col-form-label">Publish</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="form-check form-switch form-switch-success">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="publish-banner" name="is_published" value="1"
+                                                                <?= isset($boardofmembers['is_published']) && $boardofmembers['is_published'] ? 'checked' : '' ?>>
+                                                            <label class="form-check-label"
+                                                                for="publish-banner">Publish</label>
+                                                            <small
+                                                                class="text-danger"><?= session('errors.is_published') ?></small>
+                                                        </div>
                                                     </div>
                                                 </div>
 

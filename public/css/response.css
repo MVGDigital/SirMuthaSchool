@@ -71,6 +71,7 @@
   
 }
 @media (max-width: 992px) {
+<<<<<<< HEAD
 
   .mobContTop-p50{
     padding-top: 50px;
@@ -148,6 +149,11 @@
     bottom: -11%;
   }
 
+=======
+  .dropdown-toggle::after{
+    display: block;
+}
+>>>>>>> f4776e7c34a91b7ba1e6a1f047ff8e49d7e1f366
 }
 @media (max-width: 767px) {
   .navbar{

@@ -127,6 +127,7 @@ $(document).ready(function() {
     /* Sir Mutha Code */
     $(".navbar-toggler").on("click", function () {
         var isExpanded = $(this).attr("aria-expanded") === "true"; // Check current state
+<<<<<<< HEAD
     
         // Toggle icons
         if (isExpanded) {
@@ -151,5 +152,15 @@ $(document).ready(function() {
         }
     });
     
+=======
+        if (isExpanded) {
+            $(".openIcon").hide();
+            $(".closeIcon").show();
+        } else {
+            $(".openIcon").show();
+            $(".closeIcon").hide();
+        }
+    });
+>>>>>>> f4776e7c34a91b7ba1e6a1f047ff8e49d7e1f366
       
 });

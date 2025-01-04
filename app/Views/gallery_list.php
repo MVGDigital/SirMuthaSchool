@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Rizz')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Gallery')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <?= $this->include('partials/head-css') ?>
@@ -110,7 +110,7 @@
                         </div>
                         <!--end col-->
                     </div>
-                    <!--end row-->
+                    <!--end row-->, 
                     <?= $this->include('partials/footer') ?>
                 </div>
                 <!--end page-content-->
