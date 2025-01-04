@@ -28,6 +28,7 @@ class GalleryController extends BaseController
             'file' => 'uploaded[file]|max_size[file,20480]|ext_in[file,jpg,jpeg,png]|is_image[file]',
             'sort_order' => 'required|integer',
             'is_published' => 'permit_empty|in_list[1,0]',
+            'category' => 'required',
         ];
 
         if (!$this->validate($validationRules)) {
@@ -44,9 +45,9 @@ class GalleryController extends BaseController
             $width = $imageInfo[0];
             $height = $imageInfo[1];
 
-            if (!(($width === 800 && $height === 1000) || ($width === 500 && $height === 670))) {
-                return redirect()->back()->withInput()->with('error', 'Image size must be 800x1000 or 500x670 pixels.');
-            }
+            // if (!(($width === 800 && $height === 1000) || ($width === 500 && $height === 670))) {
+            //     return redirect()->back()->withInput()->with('error', 'Image size must be 800x1000 or 500x670 pixels.');
+            // }
 
             $fileName = $file->getRandomName();
             $file->move(FCPATH . 'uploads/gallery_files', $fileName);
@@ -56,6 +57,7 @@ class GalleryController extends BaseController
             'file_path' => $fileName,
             'sort_order' => $this->request->getPost('sort_order'),
             'is_published' => $this->request->getPost('is_published') ? 1 : 0,
+            'category' => $this->request->getPost('category'),
         ];
 
         $galleryModel->save($galleryData);
@@ -87,6 +89,7 @@ class GalleryController extends BaseController
             'file' => 'max_size[file,20480]|ext_in[file,jpg,jpeg,png]|is_image[file]',
             'sort_order' => 'required|integer',
             'is_published' => 'permit_empty|in_list[1,0]',
+            'category' => 'required',
         ];
 
         if (!$this->validate($validationRules)) {
@@ -105,10 +108,10 @@ class GalleryController extends BaseController
             $width = $imageInfo[0];
             $height = $imageInfo[1];
 
-            if (!(($width === 800 && $height === 1000) || ($width === 500 && $height === 670))) {
-                log_message('error', 'Invalid image size. Expected 800x1000 pixels.');
-                return redirect()->back()->withInput()->with('error', 'Image size must be 800x1000 pixels.');
-            }
+            // if (!(($width === 800 && $height === 1000) || ($width === 500 && $height === 670))) {
+            //     log_message('error', 'Invalid image size. Expected 800x1000 pixels.');
+            //     return redirect()->back()->withInput()->with('error', 'Image size must be 800x1000 pixels.');
+            // }
 
             if (file_exists(FCPATH . 'uploads/gallery_files/' . $fileName)) {
                 unlink(FCPATH . 'uploads/gallery_files/' . $fileName);
@@ -121,6 +124,7 @@ class GalleryController extends BaseController
             'file_path' => $fileName,
             'sort_order' => $this->request->getPost('sort_order'),
             'is_published' => $this->request->getPost('is_published') ? 1 : 0,
+            'category' => $this->request->getPost('category'),
         ];
 
         $galleryModel->update($id, $galleryData);

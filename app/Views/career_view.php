@@ -60,7 +60,6 @@
 
                                         <h2><?= esc($career['job_title']) ?></h2>
 
-                                        <p><strong>Job Type:</strong> <?= esc($career['job_type']) ?></p>
                                         <p><strong>Employment Type:</strong> <?= esc($career['employment_type']) ?></p>
                                         <p><strong>Location:</strong> <?= esc($career['location']) ?></p>
                                         <p><strong>Posted On:</strong> <?= esc($career['posted_on']) ?></p>

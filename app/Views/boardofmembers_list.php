@@ -71,6 +71,7 @@
                                                     <th>Designation</th>
                                                     <th>Content</th>
                                                     <th>Photo</th>
+                                                    <th>Sort Order</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -87,6 +88,19 @@
                                                         <img src="<?= base_url('uploads/boardofmember_photos/' . esc($member['photo'])) ?>"
                                                             alt="Board of Member Photo" width="100" height="100">
                                                     </td>
+                                                    <td><?= esc($member['sort_order']) ?></td>
+                                                    <!-- <td class="text-center">
+                                                        <div class="form-check form-switch form-switch-success">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="customSwitch<?= esc($member['bom_id']) ?>"
+                                                                onchange="toggleStatus(<?= esc($member['bom_id']) ?>, this.checked)"
+                                                                <?= $member['is_published'] ? 'checked' : '' ?>>
+                                                            <label class="form-check-label"
+                                                                for="customSwitch<?= esc($member['bom_id']) ?>">
+                                                                <?= $member['is_published'] ? 'Active' : 'Inactive' ?>
+                                                            </label>
+                                                        </div>
+                                                    </td> -->
                                                     <td class="text-center">
                                                         <a href="<?= base_url('adm1n/boardofmember/edit/' . esc($member['bom_id'])) ?>"
                                                             class="text-secondary px-2" title="Edit">
@@ -143,6 +157,35 @@
                 errorAlert.style.display = 'none';
             }
         }, 5000);
+
+        function toggleStatus(memberId, isActive) {
+            console.log(`Toggling status for Member ID: ${memberId}, New Status: ${isActive}`);
+            const url = "<?= base_url('adm1n/boardofmember/toggle-status/') ?>" + memberId;
+
+            fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '<?= csrf_hash() ?>'
+                    },
+                    body: JSON.stringify({
+                        is_published: isActive.toString() // Ensure this is a string
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        console.log(`Member ${memberId} is now ${data.is_published ? 'Active' : 'Inactive'}.`);
+                        const label = document.querySelector(`label[for="customSwitch${memberId}"]`);
+                        label.innerText = data.is_published ? 'Active' : 'Inactive';
+                    } else {
+                        console.error(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
         </script>
 </body>
 
