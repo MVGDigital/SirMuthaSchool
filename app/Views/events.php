@@ -67,8 +67,12 @@
                                         <span>+66</span>
                                     </div>
                                 </div>
-                                <a href="<?= base_url('events/details') ?>" class="upcomEvent-link">View
-                                    Details</a>
+                                <form action="<?= base_url('events/set-event-details') ?>" method="POST"
+                                    style="display: inline;">
+                                    <input type="hidden" name="event_id" value="<?= $event['id'] ?>">
+                                    <input type="hidden" name="event_type" value="upcoming">
+                                    <button type="submit" class="upcomEvent-link">View Details</button>
+                                </form>
                             </div>
                         </div>
                     </li>
@@ -96,6 +100,11 @@
                     <span><?= date('d F Y', strtotime($event['event_date'])) ?></span>
                 </div>
                 <p><?= esc($event['event_description']) ?></p>
+                <form action="<?= base_url('events/set-event-details') ?>" method="POST" style="display: inline;">
+                    <input type="hidden" name="event_id" value="<?= $event['id'] ?>">
+                    <input type="hidden" name="event_type" value="past">
+                    <button type="submit" class="upcomEvent-link">View Details</button>
+                </form>
             </div>
         </div>
         <?php endforeach; ?>
