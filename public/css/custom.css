@@ -354,8 +354,34 @@ main{
     line-height: 27px;
     font-family: 'EBGaramond-Regular';
 }
-.dropdown-toggle::after{
+.dropdown-arrow {
+    cursor: pointer;
+    margin-left: 5px;
     display: none;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+    position: relative;
+    z-index: 1;
+}
+
+.submenu li {
+    padding: 5px 15px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.submenu li a:hover {
+    background: #f1f1f1;
 }
 .whiteLine {
     width: 1px;

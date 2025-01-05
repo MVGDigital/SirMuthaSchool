@@ -83,6 +83,11 @@ $(document).ready(function() {
         }
     );
 
+    // Prevent submenu display when clicking menu text or links
+    $(".navbar-nav a").on("click", function (e) {
+        e.preventDefault();
+    });
+
 
     //Menus
     $('#openMenu').click( function() {
@@ -106,22 +111,26 @@ $(document).ready(function() {
         }
     })
     
-    // Click event for dropdown arrow
+    // Click event specifically for dropdown arrow
     $(".dropdown-arrow").on("click", function (e) {
-        e.preventDefault();
+        // Only trigger the dropdown logic for screens under 600px
+        if ($(window).width() <= 600) {
+            e.preventDefault();
 
-        const currentSubmenu = $(this).next(".submenu");
+            const currentSubmenu = $(this).siblings(".dropdown-menu");
 
-        // Check if the clicked submenu is already open
-        if (currentSubmenu.is(":visible")) {
-            // Close the current submenu if it's already open
-            currentSubmenu.slideUp();
-        } else {
-            // Otherwise, open the current submenu and close others
-            $(".submenu").slideUp(); // Close all submenus
-            currentSubmenu.slideDown(); // Open the clicked submenu
+            // Check if the clicked submenu is already open
+            if (currentSubmenu.is(":visible")) {
+                // Close the current submenu if it's already open
+                currentSubmenu.slideUp();
+            } else {
+                // Otherwise, open the current submenu and close others
+                $(".dropdown-menu").slideUp(); // Close all other submenus
+                currentSubmenu.slideDown(); // Open the clicked submenu
+            }
         }
     });
+
 
 
     /* Sir Mutha Code */
