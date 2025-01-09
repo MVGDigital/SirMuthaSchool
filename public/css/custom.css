@@ -1280,6 +1280,29 @@ main{
 .Tabs__tab:nth-child(4).active~.Tabs__presentation-slider {
     transform: translateX(calc(36.133% * 2)) scaleX(0.268);
 }
+.achievements nav{
+    max-width: 100%;
+}
+
+.achievements .Tabs__tab:first-child.active~.Tabs__presentation-slider {
+    transform: translateX(13.8633%) scaleX(0.123);
+}
+
+.achievements .Tabs__tab:nth-child(2).active~.Tabs__presentation-slider {
+    transform: translateX(30.133%) scaleX(0.100);
+}
+.achievements .Tabs__tab:nth-child(3).active~.Tabs__presentation-slider {
+    transform: translateX(calc(21.833% * 2)) scaleX(0.140);
+}
+
+.achievements .Tabs__tab:nth-child(4).active~.Tabs__presentation-slider {
+    transform: translateX(calc(31.133% * 2)) scaleX(0.138);
+}
+
+.achievements .Tabs__tab:nth-child(5).active~.Tabs__presentation-slider {
+    transform: translateX(calc(40.650% * 2)) scaleX(0.100);
+}
+
 
 .Tabs__presentation-slider {
     position: absolute;
