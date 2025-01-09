@@ -121,7 +121,7 @@
                         alt="menu arrow"></span>
                     </li>
                     <li id="parentsMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('parent-landing') ?>">Parents Landing Page</a>
+                        <a class="nav-link" href="<?= base_url('parents') ?>">Parents Landing Page</a>
                     </li>
                 </ul>
             </div>
