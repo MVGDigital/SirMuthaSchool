@@ -82,12 +82,12 @@
                                                             <option value="" disabled selected>Select a
                                                                 Page
                                                             </option>
-                                                            <option value="home"
-                                                                <?= isset($banner) && $banner['page'] == 'home' ? 'selected' : '' ?>>
-                                                                Home</option>
                                                             <option value="admission"
                                                                 <?= isset($banner) && $banner['page'] == 'admission' ? 'selected' : '' ?>>
                                                                 Admission</option>
+                                                            <option value="parentLanding"
+                                                                <?= isset($banner) && $banner['page'] == 'parentLanding' ? 'selected' : '' ?>>
+                                                                Parent Landing</option>
                                                         </select>
                                                     </div>
                                                 </div>
