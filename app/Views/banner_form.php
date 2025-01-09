@@ -60,7 +60,7 @@
                                                         class="col-sm-2 col-form-label text-lg-end">Select Page<span class="text-danger">*</span></label>
                                                     <div class="col-sm-10">
                                                         <select class="form-select" id="select-page" name="page">
-                                                            <option <?= !isset($banner) ? 'selected' : '' ?>>Select a
+                                                            <option <?= !isset($banner) ? 'selected' : '' ?> disabled>Select a
                                                                 Page
                                                             </option>
                                                             <option value="home"
@@ -96,21 +96,12 @@
                                                             <option value="events"
                                                                 <?= isset($banner) && $banner['page'] == 'events' ? 'selected' : '' ?>>
                                                                 Events</option>
-                                                            <option value="documents"
-                                                                <?= isset($banner) && $banner['page'] == 'documents' ? 'selected' : '' ?>>
-                                                                Documents</option>
                                                             <option value="admission"
                                                                 <?= isset($banner) && $banner['page'] == 'admission' ? 'selected' : '' ?>>
                                                                 Admission</option>
-                                                            <option value="our-work-culture"
-                                                                <?= isset($banner) && $banner['page'] == 'our-work-culture' ? 'selected' : '' ?>>
-                                                                Our Work Culture</option>
-                                                            <option value="blogs"
-                                                                <?= isset($banner) && $banner['page'] == 'blogs' ? 'selected' : '' ?>>
-                                                                Blogs</option>
-                                                            <option value="faq"
-                                                                <?= isset($banner) && $banner['page'] == 'faq' ? 'selected' : '' ?>>
-                                                                FAQ</option>
+                                                            <option value="parent-landing"
+                                                                <?= isset($banner) && $banner['page'] == 'parent-landing' ? 'selected' : '' ?>>
+                                                                Parent Landing</option>
                                                             <option value="under-construction"
                                                                 <?= isset($banner) && $banner['page'] == 'under-construction' ? 'selected' : '' ?>>
                                                                 Under Construction</option>
