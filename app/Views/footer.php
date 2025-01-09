@@ -23,7 +23,7 @@
             <a href="<?= base_url('facilities') ?>">Facilities</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>            
-            <a href="<?= base_url('parent-landing') ?>">Parents</a>
+            <a href="<?= base_url('parents') ?>">Parents</a>
             <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
@@ -1088,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php endif; ?>
 
-<?php if ($page_code === 'parent-landing'): ?>
+<?php if ($page_code === 'parents'): ?>
 
 var video = $('#sir-mutha-campus').get(0); // Get the video element
 var playOverlay = $('#playOverlay');

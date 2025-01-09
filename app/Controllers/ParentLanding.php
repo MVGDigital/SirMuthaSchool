@@ -12,17 +12,17 @@ class ParentLanding extends BaseController
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
 
-        $banner = $bannerModel->where('page', 'parent-landing')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'parents')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'parentLanding')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'Parent Landing',
-            'page_code' => 'parent-landing',
+            'page_title' => 'Parents',
+            'page_code' => 'parents',
             'banner' => $banner,
             'video' => $video
         ];
 
-        return view('header', $data) . view('parent-landing', $data) . view('footer');
+        return view('header', $data) . view('parents', $data) . view('footer');
     }
     
 }
