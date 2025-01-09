@@ -75,15 +75,25 @@
                     </div>
 
                     <?php if (session('success')): ?>
-                    <div class="alert alert-success">
+                    <div class="" id="flash-message">
                         <?= session('success') ?>
                     </div>
+                    <script>
+                    setTimeout(() => {
+                        window.location.href = "<?= base_url('events') ?>";
+                    }, 3000);
+                    </script>
                     <?php endif; ?>
 
                     <?php if (session('error')): ?>
-                    <div class="alert alert-danger">
+                    <div class="">
                         <?= session('error') ?>
                     </div>
+                    <script>
+                    setTimeout(() => {
+                        window.location.href = "<?= base_url('events') ?>";
+                    }, 3000);
+                    </script>
                     <?php endif; ?>
 
                     <form id="event-form" class="mt-50" action="<?= base_url('events/register') ?>" method="POST">

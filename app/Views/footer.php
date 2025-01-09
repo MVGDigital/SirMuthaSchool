@@ -453,13 +453,13 @@ $(document).ready(function() {
                 minlength: 10,
                 maxlength: 15
             },
-            gender:{
+            gender: {
                 required: true,
             },
-            guests:{
+            guests: {
                 required: true,
             },
-            "residential_address":{
+            "residential_address": {
                 required: true,
             }
         },
@@ -482,14 +482,14 @@ $(document).ready(function() {
                 minlength: "Phone number must be at least 10 digits",
                 maxlength: "Phone number cannot exceed 15 digits"
             },
-            gender:{
+            gender: {
                 required: "Please select gender",
             },
-            guests:{
+            guests: {
                 required: true,
                 required: "Please enter number of guests",
             },
-            "residential_address":{
+            "residential_address": {
                 required: true,
                 required: "Please enter residential address",
             }
@@ -621,7 +621,7 @@ $(document).ready(function() {
                             <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
                         </div>
                         <div class="jobHyp-link">
-                            <a href="javascript:void(0);" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
+                            <a href="<?= base_url('career/form') ?>" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
                             <span class="icon">&plus;</span>
                         </div>
                     </button>
@@ -828,184 +828,6 @@ $(document).ready(function() {
 
 });
 
-
-<?php endif; ?>
-
-
-<?php if ($page_code === 'career-form'): ?>
-
-$(document).ready(function() {
-    const fileUploadContainer = $(".file-upload-label");
-    const fileInput = $("#fileUpload");
-    const submitButton = $("#submitBtn");
-    const fileError = $("#fileError");
-    const uploadText = $(".file-upload-text");
-
-    // Disable submit button initially
-    $("#submitBtn").prop("disabled", true);
-
-    // Drag and Drop Events
-    fileUploadContainer.on("dragover", function(e) {
-        e.preventDefault(); // Prevent default behavior
-        fileUploadContainer.addClass("drag-over");
-    });
-
-    fileUploadContainer.on("dragleave", function() {
-        fileUploadContainer.removeClass("drag-over");
-    });
-
-    fileUploadContainer.on("drop", function(e) {
-        e.preventDefault(); // Prevent default behavior
-        fileUploadContainer.removeClass("drag-over");
-
-        const files = e.originalEvent.dataTransfer.files;
-        if (files.length) {
-            fileInput.prop("files", files); // Set the file to the input
-            validateFile(files[0]);
-        }
-    });
-
-    // File Input Change Event
-    fileInput.on("change", function() {
-        const file = this.files[0];
-        validateFile(file);
-    });
-
-    // Validate File on Change
-    function validateFile(file) {
-        fileError.text("");
-        uploadText.html('Drag & Drop your file(s) here to upload <br>or <span>Select File</span>');
-        fileError.removeClass("file-error");
-
-        if (file) {
-            const isValidType = /(\.pdf|\.doc|\.docx)$/i.test(file.name);
-            const maxSize = 2 * 1024 * 1024; // 2 MB limit
-
-            if (!isValidType) {
-                fileError.text("Invalid file type. Only PDF, DOC, DOCX files are allowed.");
-                fileError.addClass("file-error");
-                submitButton.prop("disabled", true);
-                fileInput.val(""); // Clear the input
-            } else if (file.size > maxSize) {
-                fileError.text("File size exceeds the 2 MB limit.");
-                fileError.addClass("file-error");
-                submitButton.prop("disabled", true);
-                fileInput.val(""); // Clear the input
-            } else {
-                uploadText.html(file.name); // Update with the selected file name
-                fileError.text("Maximum Limit: 2Mb");
-                fileError.removeClass("file-error");
-                toggleSubmitButton(); // Re-evaluate button state
-            }
-        } else {
-            // Reset the text if no file is chosen
-            fileError.text("Please upload a file.");
-            fileError.addClass("file-error");
-            submitButton.prop("disabled", true);
-        }
-    }
-
-    // Toggle Submit Button Based on Form Validity
-    function toggleSubmitButton() {
-        if ($("#career-form").valid() && fileInput.val() !== "") {
-            submitButton.prop("disabled", false);
-        } else {
-            submitButton.prop("disabled", true);
-        }
-    }
-
-    $("#first-name, #last-name").on("input", function() {
-        const value = $(this).val();
-        // Allow only letters and spaces
-        $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
-    });
-
-    $("#email").on("input", function(e) {
-        var value = e.target.value;  // Get the current value
-        e.target.value = value.toLowerCase();  // Convert it to lowercase and set it back
-    });
-
-    $.validator.addMethod("customEmail", function(value, element) {
-        return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
-    }, "Please enter a valid email address");
-
-    // Restrict input to only numeric characters in the phone number field
-    $("#mobile-number").on("input", function(e) {
-        const value = $(this).val();
-        $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
-    });
-
-    
-    // jQuery Validation
-    $("#career-form").validate({
-        rules: {
-            "first-name": {
-                required: true,
-                minlength: 2
-            },
-            "last-name": {
-                required: true,
-                minlength: 2
-            },
-            "email": {
-                required: true,
-                customEmail: true
-            },
-            "mobile-number": {
-                required: true,
-                digits: true,
-                minlength: 10,
-                maxlength: 15
-            },
-            "fileUpload": {
-                required: true,
-                accept: "application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-            }
-        },
-        messages: {
-            "first-name": {
-                required: "Please enter your first name",
-                minlength: "First name must be at least 2 characters long"
-            },
-            "last-name": {
-                required: "Please enter your last name",
-                minlength: "Last name must be at least 2 characters long"
-            },
-            "email": {
-                required: "Please enter your email address",
-                customEmail: "Please enter a valid email address"
-            },
-            "mobile-number": {
-                required: "Please enter your phone number",
-                digits: "Please enter only numbers",
-                minlength: "Phone number must be at least 10 digits",
-                maxlength: "Phone number cannot exceed 15 digits"
-            },
-            "fileUpload": {
-                required: "Please upload your resume",
-                accept: "Only PDF, DOC, or DOCX files are allowed"
-            }
-        },
-        errorPlacement: function(error, element) {
-            if (element.attr("id") === "fileUpload") {
-                fileError.html(error);
-            } else {
-                error.insertAfter(element);
-            }
-        },
-        submitHandler: function(form) {
-            alert("Form submitted successfully!");
-            form.submit();
-
-            setTimeout(() => {
-                form.reset();
-            }, 2000);
-        }
-    });
-
-});
-
-
 <?php endif; ?>
 
 <?php if ($page_code === 'contact'): ?>
@@ -1018,78 +840,6 @@ $(document).ready(function() {
         // Allow only letters and spaces
         $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
     });
-
-    $("#email").on("input", function(e) {
-        var value = e.target.value;  // Get the current value
-        e.target.value = value.toLowerCase();  // Convert it to lowercase and set it back
-    });
-
-    $.validator.addMethod("customEmail", function(value, element) {
-        return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
-    }, "Please enter a valid email address");
-
-    // Restrict input to only numeric characters in the phone number field
-    $("#mobile-number").on("input", function(e) {
-        const value = $(this).val();
-        $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
-    });
-
-
-    $("#contact-form").validate({
-        rules: {
-            "first-name": {
-                required: true,
-                minlength: 2
-            },
-            "last-name": {
-                required: true,
-                minlength: 2
-            },
-            "email": {
-                required: true,
-                customEmail: true
-            },
-            "mobile-number": {
-                required: true,
-                digits: true,
-                minlength: 10,
-                maxlength: 15
-            },
-            "msg": {
-                required: true,
-                minlength: 10
-            }
-        },
-        messages: {
-            "first-name": {
-                required: "Please enter your first name",
-                minlength: "First name must be at least 2 characters long"
-            },
-            "last-name": {
-                required: "Please enter your last name",
-                minlength: "Last name must be at least 2 characters long"
-            },
-            "email": {
-                required: "Please enter your email address",
-                customEmail: "Please enter a valid email address"
-            },
-            "mobile-number": {
-                required: "Please enter your phone number",
-                digits: "Please enter only numbers",
-                minlength: "Phone number must be at least 10 digits",
-                maxlength: "Phone number cannot exceed 15 digits"
-            },
-            "msg": {
-                required: "Please enter your message",
-                minlength: "Message must be at least 10 characters long"
-            }
-        },
-        submitHandler: function(form) {
-            alert("Form submitted successfully!");
-            form.submit();
-        }
-    });
-});
 
     $("#email").on("input", function(e) {
         var value = e.target.value; // Get the current value
@@ -1163,11 +913,83 @@ $(document).ready(function() {
     });
 });
 
+$("#email").on("input", function(e) {
+    var value = e.target.value; // Get the current value
+    e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
+});
+
+$.validator.addMethod("customEmail", function(value, element) {
+    return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
+}, "Please enter a valid email address");
+
+// Restrict input to only numeric characters in the phone number field
+$("#mobile-number").on("input", function(e) {
+    const value = $(this).val();
+    $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
+});
+
+
+$("#contact-form").validate({
+rules: {
+    "first-name": {
+        required: true,
+        minlength: 2
+    },
+    "last-name": {
+        required: true,
+        minlength: 2
+    },
+    "email": {
+        required: true,
+        customEmail: true
+    },
+    "mobile-number": {
+        required: true,
+        digits: true,
+        minlength: 10,
+        maxlength: 15
+    },
+    "msg": {
+        required: true,
+        minlength: 10
+    }
+},
+messages: {
+    "first-name": {
+        required: "Please enter your first name",
+        minlength: "First name must be at least 2 characters long"
+    },
+    "last-name": {
+        required: "Please enter your last name",
+        minlength: "Last name must be at least 2 characters long"
+    },
+    "email": {
+        required: "Please enter your email address",
+        customEmail: "Please enter a valid email address"
+    },
+    "mobile-number": {
+        required: "Please enter your phone number",
+        digits: "Please enter only numbers",
+        minlength: "Phone number must be at least 10 digits",
+        maxlength: "Phone number cannot exceed 15 digits"
+    },
+    "msg": {
+        required: "Please enter your message",
+        minlength: "Message must be at least 10 characters long"
+    }
+},
+submitHandler: function(form) {
+    alert("Form submitted successfully!");
+    form.submit();
+}
+});
+});
+
 <?php endif; ?>
 
 <?php if ($page_code === 'admission'): ?>
 
-    var video = $('#sir-mutha-campus').get(0); // Get the video element
+var video = $('#sir-mutha-campus').get(0); // Get the video element
 var playOverlay = $('#playOverlay');
 
 // Ensure the video is muted for autoplay to work

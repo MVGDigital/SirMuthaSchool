@@ -84,9 +84,9 @@ $(document).ready(function() {
     );
 
     // Prevent submenu display when clicking menu text or links
-    $(".navbar-nav a").on("click", function (e) {
-        e.preventDefault();
-    });
+    // $(".navbar-nav a").on("click", function (e) {
+    //     e.preventDefault();
+    // });
 
 
     //Menus
