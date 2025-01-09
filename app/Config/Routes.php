@@ -156,13 +156,13 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('adm1n/document/update/(:num)', 'DocumentController::update/$1');
     $routes->get('adm1n/document/delete/(:num)', 'DocumentController::delete/$1');
 
-    $routes->group('adm1n/alumni-events', ['namespace' => 'App\Controllers'], function ($routes) {
-        $routes->get('/', 'AlumniEventController::index');
-        $routes->get('create', 'AlumniEventController::create');
-        $routes->post('store', 'AlumniEventController::store');
-        $routes->get('edit/(:num)', 'AlumniEventController::edit/$1');
-        $routes->post('update/(:num)', 'AlumniEventController::update/$1');
-        $routes->get('delete/(:num)', 'AlumniEventController::delete/$1');
+    $routes->group('adm1n/annual-events', ['namespace' => 'App\Controllers'], function ($routes) {
+        $routes->get('/', 'AnnualEventController::index');
+        $routes->get('create', 'AnnualEventController::create');
+        $routes->post('store', 'AnnualEventController::store');
+        $routes->get('edit/(:num)', 'AnnualEventController::edit/$1');
+        $routes->post('update/(:num)', 'AnnualEventController::update/$1');
+        $routes->get('delete/(:num)', 'AnnualEventController::delete/$1');
     });
     
     // Contact routes

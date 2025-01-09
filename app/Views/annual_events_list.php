@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Alumni Events')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Annual Events')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <?= $this->include('partials/head-css') ?>
@@ -26,10 +26,10 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h4>Alumni Events</h4>
+                                        <h4>Annual Events</h4>
                                     </div>
                                     <div class="col text-end">
-                                        <a href="<?= base_url('adm1n/alumni-events/create') ?>" class="btn bg-colour"><i
+                                        <a href="<?= base_url('adm1n/annual-events/create') ?>" class="btn bg-colour"><i
                                                 class="fa fa-plus"></i>Add
                                             Event</a>
                                     </div>
@@ -40,7 +40,7 @@
                                 <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
                                 <?php endif; ?>
                                 <div class="table-responsive">
-                                    <table id="alumni-events" class="table table-striped mb-0">
+                                    <table id="annual-events" class="table table-striped mb-0">
                                         <thead class="table-light">
                                             <tr>
                                                 <th>S.No</th>
@@ -59,11 +59,11 @@
                                                 <td><?= esc($event['year']) ?></td>
                                                 <td><?= esc($event['month']) ?></td>
                                                 <td>
-                                                    <a href="<?= base_url('adm1n/alumni-events/edit/' . $event['event_id']) ?>"
+                                                    <a href="<?= base_url('adm1n/annual-events/edit/' . $event['event_id']) ?>"
                                                         class="mx-2">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
-                                                    <a href="<?= base_url('adm1n/alumni-events/delete/' . $event['event_id']) ?>"
+                                                    <a href="<?= base_url('adm1n/annual-events/delete/' . $event['event_id']) ?>"
                                                         class=" text-danger"
                                                         onclick="return confirm('Are you sure you want to delete this item?')">
                                                         <i class="fa fa-trash"></i></a>
@@ -95,7 +95,7 @@
                 <script src="<?= base_url('/js/app.js') ?>"></script>
                 <script>
                 $(document).ready(function() {
-                    $('#alumni-events').DataTable();
+                    $('#annual-events').DataTable();
                 });
 
                 function toggleStatus(itemId) {
