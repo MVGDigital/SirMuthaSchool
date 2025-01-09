@@ -85,7 +85,7 @@
                         <p><b>Job Overview:</b> <span><?= esc($job['job_overview']) ?></span></p>
                     </div>
                     <div class="jobHyp-link">
-                        <a href="javascript:void(0);" class="apply-link"
+                        <a href="<?= base_url('career/form') ?>" class="apply-link"
                             data-job-id="<?= esc($job['career_id']) ?>">Apply Here</a>
                         <span class="icon">&plus;</span>
                     </div>

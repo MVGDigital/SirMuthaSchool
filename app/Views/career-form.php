@@ -45,8 +45,6 @@
                 <?php if (isset($job_details)): ?>
                 <div class="selected-job-details">
                     <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
-                    <p><strong>Location:</strong> <?= esc($job_details['location']) ?></p>
-                    <!-- <p><strong>Employment Type:</strong> <?= esc($job_details['employment_type']) ?></p> -->
                 </div>
                 <?php endif; ?>
                 <h6>fill in your details</h6>

@@ -52,7 +52,7 @@
             <div class="mainMenus col-12 col-md-5 col-lg-5 col-xl-3 col-xxl-3">
                 <ul class="navbar-nav">
                     <li id="aboutMenu" class="nav-item">
-                        <a class="nav-link active" href="">About Us</a>
+                        <a class="nav-link active" href="<?= base_url('about') ?>">About Us</a>
                         <span class="dropdown-arrow">
                             <img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid" alt="menu arrow">
                         </span>
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
                     <li id="academicsMenu" class="nav-item">
-                        <a class="nav-link" href="#">Academics</a>
+                        <a class="nav-link" href="<?= base_url('academics') ?>">Academics</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
@@ -73,7 +73,7 @@
                         </ul>
                     </li>
                     <li id="facilitiesMenu" class="nav-item">
-                        <a class="nav-link" href="#">Facilities</a>
+                        <a class="nav-link" href="<?= base_url('facilities') ?>">Facilities</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
@@ -83,7 +83,7 @@
                         </ul>
                     </li>
                     <li id="admissionMenu" class="nav-item">
-                        <a class="nav-link" href="#">Admissions</a>
+                        <a class="nav-link" href="<?= base_url('admission') ?>">Admissions</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
@@ -93,17 +93,17 @@
                         </ul>
                     </li>
                     <li id="statutoryMenu" class="nav-item">
-                        <a class="nav-link" href="#">Statutory</a>
+                        <a class="nav-link" href="<?= base_url('statutory') ?>">Statutory</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                     </li>
                     <li id="inclusiveMenu" class="nav-item">
-                        <a class="nav-link" href="#">Inclusive Educations</a>
+                        <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                     </li>
                     <li id="curriculumMenu" class="nav-item">
-                        <a class="nav-link" href="#">Beyond Curriculum</a>
+                        <a class="nav-link" href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                     </li>
@@ -111,17 +111,17 @@
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                     </li>
                     <li id="eventsMenu" class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="<?= base_url('events') ?>">Events</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                     </li>
                     <li id="careersMenu" class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
+                        <a class="nav-link" href="<?= base_url('career') ?>">Careers</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                     </li>
                     <li id="parentsMenu" class="nav-item">
-                        <a class="nav-link" href="#">Parents Landing Page</a>
+                        <a class="nav-link" href="<?= base_url('parent-landing') ?>">Parents Landing Page</a>
                     </li>
                 </ul>
             </div>
