@@ -55,8 +55,6 @@
 </main>
 
 
-
-
 <!-- Js Script Links -->
 <script src="<?= base_url('js/jquery-3.7.1.min.js') ?>"></script>
 <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
@@ -1088,69 +1086,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php endif; ?>
 
+<<<<<<< HEAD
 <?php if ($page_code === 'parents'): ?>
+=======
+<?php if ($page_code === 'achievements'): ?>
+>>>>>>> 4bbe00c9e30a82de47bd67263a6fbd7968899916
 
-var video = $('#sir-mutha-campus').get(0); // Get the video element
-var playOverlay = $('#playOverlay');
+    document.addEventListener("DOMContentLoaded", function() {
+        var tabs = document.getElementsByClassName("Tab");
+        var contents = document.getElementsByClassName("tab-content");
 
-// Ensure the video is muted for autoplay to work
-video.muted = true;
+        // Add event listeners to tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.addEventListener("click", setActiveClass);
+        });
 
-// Use IntersectionObserver to detect when the video section is in view
-var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            // If the video is in view, start playing it
-            video.play().catch(function(error) {
-                console.log('Autoplay prevented:', error);
+        function setActiveClass(evt) {
+            // Remove active class from all tabs
+            Array.prototype.forEach.call(tabs, function(tab) {
+                tab.classList.remove("active");
             });
-        } else {
-            // If the video goes out of view, pause it
-            video.pause();
+
+            // Add active class to the clicked tab
+            evt.currentTarget.classList.add("active");
+
+            // Hide all tab content
+            Array.prototype.forEach.call(contents, function(content) {
+                content.style.display = "none";
+            });
+
+            // Show the content that corresponds to the clicked tab
+            var tabNumber = evt.currentTarget.getAttribute("data-tab");
+            var selectedTabContent = document.getElementById("tab-" + tabNumber);
+            selectedTabContent.style.display = "block";
         }
     });
-}, {
-    threshold: 0.5 // Video will start playing when 50% of it is visible
-});
-
-// Observe the section containing the video
-observer.observe(document.querySelector('#campusVideo'));
-
-// Hide overlay when the video starts playing
-video.addEventListener('play', function() {
-    playOverlay.addClass('hidden');
-});
-
-// Show overlay when the video is paused or ended
-video.addEventListener('pause', function() {
-    playOverlay.removeClass('hidden');
-});
-
-video.addEventListener('ended', function() {
-    playOverlay.removeClass('hidden');
-});
-
-// Play or pause the video when the overlay is clicked
-playOverlay.click(function() {
-    if (video.paused) {
-        video.play();
-        playOverlay.addClass('hidden'); // Hide the overlay when playing
-    } else {
-        video.pause();
-        playOverlay.removeClass('hidden'); // Show the overlay when paused
-    }
-});
-
-// Toggle play/pause when clicking on the video itself
-$('#sir-mutha-campus').click(function() {
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
-});
 
 <?php endif; ?>
+
 </script>
 </body>
 
