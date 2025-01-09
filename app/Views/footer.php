@@ -55,8 +55,6 @@
 </main>
 
 
-
-
 <!-- Js Script Links -->
 <script src="<?= base_url('js/jquery-3.7.1.min.js') ?>"></script>
 <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
@@ -1087,6 +1085,41 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 <?php endif; ?>
+
+<?php if ($page_code === 'achievements'): ?>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var tabs = document.getElementsByClassName("Tab");
+        var contents = document.getElementsByClassName("tab-content");
+
+        // Add event listeners to tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.addEventListener("click", setActiveClass);
+        });
+
+        function setActiveClass(evt) {
+            // Remove active class from all tabs
+            Array.prototype.forEach.call(tabs, function(tab) {
+                tab.classList.remove("active");
+            });
+
+            // Add active class to the clicked tab
+            evt.currentTarget.classList.add("active");
+
+            // Hide all tab content
+            Array.prototype.forEach.call(contents, function(content) {
+                content.style.display = "none";
+            });
+
+            // Show the content that corresponds to the clicked tab
+            var tabNumber = evt.currentTarget.getAttribute("data-tab");
+            var selectedTabContent = document.getElementById("tab-" + tabNumber);
+            selectedTabContent.style.display = "block";
+        }
+    });
+
+<?php endif; ?>
+
 </script>
 </body>
 
