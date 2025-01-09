@@ -22,10 +22,13 @@
             <a href="<?= base_url('academics') ?>">Academics</a>
             <a href="<?= base_url('facilities') ?>">Facilities</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
+            <a href="<?= base_url('gallery') ?>">Gallery</a>            
+            <a href="<?= base_url('parent-landing') ?>">Parents</a>
+            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
-            <a href="<?= base_url('gallery') ?>">Gallery</a>
             <a href="<?= base_url('career') ?>">Career</a>
             <a href="<?= base_url('contact') ?>">Contact</a>
+
         </div>
     </div>
     <div class="pageTitleLine">

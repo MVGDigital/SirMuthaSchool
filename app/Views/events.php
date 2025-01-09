@@ -20,8 +20,8 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="#" class="active">Upcoming Events</a></li>
-                <li><a href="#">Past Events</a></li>
+                <li><a href="<?= base_url('events/#upcomingEvents') ?>" class="active">Upcoming Events</a></li>
+                <li><a href="<?= base_url('events/#pastEvents') ?>">Past Events</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -40,7 +40,7 @@
     <!-- Section Menus -->
 
     <!--  Upcoming Events -->
-    <section class="container-space lightColor-bg pt-60 pb-100">
+    <section id="upcomingEvents" class="container-space lightColor-bg pt-60 pb-100">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Upcoming<span> Events</span></h3>
         </div>
@@ -83,7 +83,7 @@
     </section>
 
     <!-- Past Events -->
-    <section class="container-space ptb-80">
+    <section id="pastEvents" class="container-space ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Past<span> Events</span></h3>
         </div>

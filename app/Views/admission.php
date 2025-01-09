@@ -120,12 +120,12 @@
     </section>
     <!-- Application Process-->
 
-    <!-- Co Curricular -->
+    <!-- Fee Structure -->
     <section class="wave-sec wave-bottom-img">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Co- <span> Curricular</span></h3>
+                    <h3>Fee <span> Structure</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -140,7 +140,7 @@
             </div>
         </div>
     </section>
-    <!-- Co Curricular -->
+    <!-- Fee Structure -->
 
     <!-- Registration Process -->
     <section class="blueBg-Sec pt-60">

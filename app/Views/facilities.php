@@ -267,7 +267,7 @@
     <!-- Special Education -->
     <section class="wave-sec blueBg-Sec ">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-5 col-lg-5 col-xl-7">
+            <div class="col-12 col-md-12 col-lg-5 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/facilities/spl-edication.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

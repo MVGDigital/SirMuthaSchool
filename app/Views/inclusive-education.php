@@ -36,15 +36,15 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- Terms & Conditions -->
-    <section class="wave-sec wave-yellowWith-bottom-img ptb-80">
+    <!-- Learning Centers -->
+    <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80">
         <div class="itemSpaceBetween">
-            <div class="col-lg-5">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
-            <div class="col-lg-6 plr-80">
-                <div class="sectionTitle-blue lft-rgt-content">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
+                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
                     <h3>Learing <span> Center</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -62,12 +62,12 @@
             </div>
         </div>
     </section>
-    <!-- Terms & Conditions -->
+    <!-- Learning Centers -->
 
 
     <!-- OT -->
     <section class="">
-    <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="">
+        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="">
 
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
