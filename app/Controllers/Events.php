@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\BannerModel;
 use App\Models\EventModel;
+use App\Models\EventUserModel;
 
 class Events extends BaseController
 {
@@ -115,11 +116,21 @@ class Events extends BaseController
             'residential_address' => $this->request->getPost('residential_address')
         ];
 
+        $existingUser = $eventUserModel->where([
+            'event_id' => $eventId,
+            'email' => $data['email']
+        ])->first();
+        
+        if ($existingUser) {
+            return redirect()->to('events/details#event-form')->withInput()->with('error', 'You have already registered for this event.');
+        }
+
         try {
             $eventUserModel->insert($data);
-            return redirect()->back()->with('success', 'Registration completed successfully!');
+            session()->setFlashdata('success', 'Registration completed successfully!');
+            return redirect()->to('events/details#event-form');
         } catch (\Exception $e) {
-            return redirect()->back()->withInput()->with('error', 'Registration failed. Please try again.');
-        }
+            return redirect()->to('events/details#event-form')->withInput()->with('error', 'Registration failed. Please try again.');
+        }            
     }
 }
