@@ -27,6 +27,9 @@
   .headerContact-info{
     padding: 50px 0;
   }
+  .changeTitleColor h3{
+    color: #FFF;
+  }
   .navbar-nav .nav-link{
     margin-bottom: 10px;
   }

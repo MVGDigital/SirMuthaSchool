@@ -18,12 +18,7 @@
 
     <!-- Section Menus -->
     <section class="container-space innerMenus-sec">
-        <div class="innerMenus">
-            <ul>
-                <li><a href="#" class="active">Upcoming Events</a></li>
-                <li><a href="#">Past Events</a></li>
-            </ul>
-        </div>
+        
         <div class="pageTitleLine col-lg-8 m-auto">
             <hr>
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">

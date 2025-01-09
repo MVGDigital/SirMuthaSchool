@@ -1058,8 +1058,8 @@ main{
     left: 0em;
 }
 .toLeft-pagination .splide__pagination{
-    left: 11%;
-    bottom: -18%!important;
+    left: 8%;
+    bottom: -22%!important;
     justify-content: start;
 }
 .toLeft-pagination .blueBtn-medium a{
@@ -1222,6 +1222,7 @@ main{
     background-position: top;
     background-image: url(../images/admission/ligh-yellowWithGg-img.svg);
 }
+
 /* ================================== Inclusive Education ============================= */
 .wave-yellowWith-bottom-img{
     background-size: 100%;
@@ -1326,6 +1327,12 @@ main{
     background-position: bottom;
     background-repeat: no-repeat;    
     background-image: url(../images/gallery/wave-blue-bottom-Img.png);
+}
+.lightYellow-wave-bottom-img{
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;    
+    background-image: url(../images/parents/lightYellow-wave-bottom-img.svg);
 }
 
 
@@ -1782,6 +1789,8 @@ label.error{
     border-radius: 10px;
 }
 .upcomEvent-link{
+    outline: none;
+    border: none;
     font-size: 16px;
     padding: 0 20px;
     line-height: 25px;
@@ -1789,6 +1798,7 @@ label.error{
     text-transform: capitalize;
     color: #5EB9FF!important;
     font-family: 'Figtree-Medium';
+    background-color: transparent;
 }
 #upcoming-events .card-content{
     height: 100%;
@@ -1809,6 +1819,9 @@ label.error{
     color: var(--color-blue);
     text-transform: capitalize;
     font-family: 'Figtree-SemiBold';
+}
+.pastEvent-container .upcomEvent-link{
+    padding: 0;
 }
 .event-date{
   display: flex;
