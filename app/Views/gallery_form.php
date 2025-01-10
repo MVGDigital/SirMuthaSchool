@@ -54,7 +54,7 @@
                                                 <label for="category"
                                                     class="col-sm-2 col-form-label text-lg-end">Category</label>
                                                 <div class="col-sm-10">
-                                                    <select class="form-control" id="category" name="category" required>
+                                                    <select class="form-control" id="category" name="category">
                                                         <option value="">Select Category</option>
                                                         <option value="RSP"
                                                             <?= (isset($item) && $item['category'] == 'RSP') ? 'selected' : '' ?>>

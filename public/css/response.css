@@ -27,6 +27,12 @@
   .headerContact-info{
     padding: 50px 0;
   }
+  .menusContainer{
+    margin-top: 21%;
+  }
+  .horizontal-whiteLine {
+    display: none;
+}
   .changeTitleColor h3{
     color: #FFF;
   }
@@ -86,6 +92,12 @@
   }
   .eventRegBg{
     padding: 23% 0 80px 0;
+  }
+  .achievements .Tabs__tab{
+    margin: 0 10px;
+  }
+  .Tabs__presentation-slider{
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -186,6 +198,9 @@
 .wave-yellow-overwireLightBg{
   margin-top: -15%;
   padding-top: 18%;
+}
+.achievements .Tabs__tab{
+  margin: 0px;
 }
 
   /* Footer Section */

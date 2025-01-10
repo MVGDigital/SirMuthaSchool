@@ -1,8 +1,10 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
+            alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>

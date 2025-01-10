@@ -6,7 +6,7 @@ use App\Models\ContactModel;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-class Contact extends BaseController
+class ContactController extends BaseController
 {
     public function index()
     {

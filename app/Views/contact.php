@@ -1,8 +1,10 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <img src="<?= base_url('images/about/about-banner.jpg') ?>" class="img-fluid"
-            alt="Sir mutha about banner image">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
+            alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -80,22 +82,30 @@
                         <h6>Address</h6>
                         <p>Shenstone Park, No.7,Harrington Road, Chennai-600 031.</p>
                     </div>
-                    <div class="contactInfo-line"><hr></div>
+                    <div class="contactInfo-line">
+                        <hr>
+                    </div>
                     <div class="contactInfo">
                         <h6>Email</h6>
                         <p><a href="mailto:admin@sirmuthaschool.edu.in">admin@sirmuthaschool.edu.in</a></p>
                     </div>
-                    <div class="contactInfo-line"><hr></div>
+                    <div class="contactInfo-line">
+                        <hr>
+                    </div>
                     <div class="contactInfo">
                         <h6>Phone Number</h6>
                         <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
                     </div>
-                    <div class="contactInfo-line"><hr></div>
+                    <div class="contactInfo-line">
+                        <hr>
+                    </div>
                     <div class="contactInfo">
                         <h6>Social</h6>
                         <div class="contact-socialIcons">
-                            <a href="#"><img src="<?= base_url('images/contact/instagram-Icon.svg') ?>" alt="Instagram icon"></a>
-                            <a href="#"><img src="<?= base_url('images/contact/facebook-Icon.svg') ?>" alt="facebook icon"></a>
+                            <a href="#"><img src="<?= base_url('images/contact/instagram-Icon.svg') ?>"
+                                    alt="Instagram icon"></a>
+                            <a href="#"><img src="<?= base_url('images/contact/facebook-Icon.svg') ?>"
+                                    alt="facebook icon"></a>
                             <a href="#"><img src="<?= base_url('images/contact/x-icon.svg') ?>" alt="x icon"></a>
                         </div>
                     </div>
@@ -106,7 +116,10 @@
     <!-- Contact Form -->
 
     <!-- Map Section -->
-     <section class="map-view">
-        <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SHENSTONE%20PARK,%207,%20Harrington%20Rd,%20Chetpet,%20Chennai,%20Tamil%20Nadu%20600031,%20India+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
-     </section>
+    <section class="map-view">
+        <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SHENSTONE%20PARK,%207,%20Harrington%20Rd,%20Chetpet,%20Chennai,%20Tamil%20Nadu%20600031,%20India+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/">gps devices</a></iframe></div>
+    </section>
     <!-- Map Section -->

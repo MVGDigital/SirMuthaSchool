@@ -58,13 +58,8 @@ $routes->get('/inclusive-education', 'InclusiveEducation::index');
 //Beyond Curriculum
 $routes->get('/beyond-curriculum', 'BeyondCurriculum::index');
 
-<<<<<<< HEAD
 //Beyond Curriculum
 $routes->get('/parents', 'ParentLanding::index');
-=======
-//Parent Landing 
-$routes->get('/parent-landing', 'ParentLanding::index');
->>>>>>> 4bbe00c9e30a82de47bd67263a6fbd7968899916
 
 //Parent Landing 
 $routes->get('/achievements', 'Achievements::index');
@@ -122,9 +117,9 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('adm1n/events/update/(:num)', 'EventController::update/$1');
     $routes->get('events/view/(:num)', 'EventController::view/$1');
     $routes->delete('adm1n/events/delete/(:num)', 'EventController::delete/$1');
-    $routes->get('adm1n/event_users', 'EventUserController::index');
-    $routes->get('adm1n/event_user/exportCsv', 'EventUserController::exportCsv');
-    $routes->post('adm1n/event_user/fetchData', 'EventUserController::fetchData');
+    $routes->get('adm1n/event_users', 'EventUserController::event');
+    $routes->get('adm1n/event-user/exportCsv', 'EventUserController::exportCsv');
+    $routes->post('adm1n/event-user/fetchData', 'EventUserController::fetchData');
 
     // Career routes
     $routes->get('/adm1n/career', 'Career::index');

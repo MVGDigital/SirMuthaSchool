@@ -2,8 +2,10 @@
     <!-- Banner Section -->
     <section class="banner-section">
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -91,7 +93,8 @@
         <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container row w100">
             <div class="col-12 col-md-12 col-lg-5 col-xl-4">
-                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100" alt="<?= esc($event['event_name']) ?>">
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100"
+                    alt="<?= esc($event['event_name']) ?>">
             </div>
             <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50">
                 <h6><?= esc($event['event_name']) ?> - <?= date('Y', strtotime($event['event_date'])) ?></h6>
