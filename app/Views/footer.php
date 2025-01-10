@@ -1078,9 +1078,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var tabNumber = evt.currentTarget.getAttribute("data-tab");
         var selectedTabContent = document.getElementById("tab-" + tabNumber);
         selectedTabContent.style.display = "block";
-
-        // Reinitialize pagination for the selected tab
-        reinitializePagination(selectedTabContent);
     }
 });
 
