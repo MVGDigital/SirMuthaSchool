@@ -112,3 +112,4 @@
         <?php endforeach; ?>
     </section>
     <!-- Past Events -->
+</main>

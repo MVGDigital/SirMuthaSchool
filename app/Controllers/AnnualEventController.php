@@ -29,8 +29,7 @@ class AnnualEventController extends BaseController
         $validation = \Config\Services::validation();
 
         $rules = [
-            'year' => 'required',
-            'month' => 'required',
+            'event_date' => 'required|valid_date',
             'title' => 'required',
             'description' => 'required',
             'images' => 'uploaded[images.0]|max_size[images,2048]|is_image[images.0]',
@@ -55,8 +54,7 @@ class AnnualEventController extends BaseController
         }
 
             $this->annualEventModel->insert([
-                'year' => $this->request->getPost('year'),
-                'month' => $this->request->getPost('month'),
+                'event_date' => $this->request->getPost('event_date'),
                 'title' => $this->request->getPost('title'),
                 'description' => $this->request->getPost('description'),
                 'published' => $this->request->getPost('published') ? 1 : 0,
@@ -76,8 +74,7 @@ class AnnualEventController extends BaseController
     {
         $validation = \Config\Services::validation();
         $this->validate([
-            'year' => 'required',
-            'month' => 'required',
+            'event_date' => 'required|valid_date',
             'title' => 'required',
             'description' => 'required',
             'images' => 'max_size[images,2048]|is_image[images.0]',
@@ -85,24 +82,24 @@ class AnnualEventController extends BaseController
 
         if ($this->request->getMethod() === 'post' && $this->validate()) {
             $event = $this->annualEventModel->find($id);
-            $images = json_decode($event['images'], true);
+            $image = $event['images'];
 
-            if ($files = $this->request->getFiles()) {
-                foreach ($files['images'] as $file) {
-                    if ($file->isValid() && !$file->hasMoved()) {
-                        $filePath = FCPATH . 'uploads/annual_events/';
-                        if (!is_dir($filePath)) {
-                            mkdir($filePath, 0777, true);
-                        }
-                        $file->move($filePath);
-                        $images[] = $file->getName();
+            if ($file = $this->request->getFile('images')) {
+                if ($file->isValid() && !$file->hasMoved()) {
+                    $filePath = FCPATH . 'uploads/annual_events/';
+                    if (!is_dir($filePath)) {
+                        mkdir($filePath, 0777, true);
                     }
+                    if (file_exists($filePath . $image)) {
+                        unlink($filePath . $image);
+                    }
+                    $file->move($filePath);
+                    $image = $file->getName();
                 }
             }
 
             $this->annualEventModel->update($id, [
-                'year' => $this->request->getPost('year'),
-                'month' => $this->request->getPost('month'),
+                'event_date' => $this->request->getPost('event_date'),
                 'title' => $this->request->getPost('title'),
                 'description' => $this->request->getPost('description'),
                 'published' => $this->request->getPost('published') ? 1 : 0,

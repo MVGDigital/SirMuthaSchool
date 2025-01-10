@@ -168,3 +168,4 @@
     </section>
     <?php endif; ?>
     <!-- Contact Form -->
+</main>
