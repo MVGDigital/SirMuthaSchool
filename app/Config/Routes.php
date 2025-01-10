@@ -58,8 +58,13 @@ $routes->get('/inclusive-education', 'InclusiveEducation::index');
 //Beyond Curriculum
 $routes->get('/beyond-curriculum', 'BeyondCurriculum::index');
 
+<<<<<<< HEAD
+//Beyond Curriculum
+$routes->get('/parents', 'ParentLanding::index');
+=======
 //Parent Landing 
 $routes->get('/parent-landing', 'ParentLanding::index');
+>>>>>>> 4bbe00c9e30a82de47bd67263a6fbd7968899916
 
 //Parent Landing 
 $routes->get('/achievements', 'Achievements::index');
