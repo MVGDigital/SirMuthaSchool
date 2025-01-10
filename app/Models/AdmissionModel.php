@@ -19,38 +19,4 @@ class AdmissionModel extends Model
     ]; // Columns that are allowed to be inserted/updated
     protected $returnType = 'array'; // Return type for queries
     protected $useTimestamps = true; // Automatically add created_at and updated_at
-
-    // Validation rules for the form data
-    protected $validationRules = [
-        'name' => 'required',
-        'dob' => 'required',
-        'gender' => 'required|in_list[male,female,other]',
-        'nationality' => 'required',
-        'state' => 'required',
-        'religion' => 'required',
-        'community' => 'required',
-        'mother_tongue' => 'required',
-        'caste' => 'required',
-        'class_last_studied' => 'required',
-        'school_last_attended' => 'required',
-        'class_admission_sought' => 'required',
-        'residential_address' => 'required',
-        'father_name' => 'required',
-        'father_religion' => 'required',
-        'father_language' => 'required',
-        'father_qualification' => 'required',
-        'father_occupation' => 'required',
-        'father_mobile' => 'required',
-        'father_email' => 'required|valid_email',
-        'mother_name' => 'required',
-        'mother_religion' => 'required',
-        'mother_language' => 'required',
-        'mother_qualification' => 'required',
-        'mother_occupation' => 'required',
-        'mother_mobile' => 'required',
-        'mother_email' => 'required|valid_email',
-               
-        
-
-    ];
 }

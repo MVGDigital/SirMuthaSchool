@@ -25,6 +25,21 @@ class Admission extends BaseController
         return view('header', $data) . view('admission', $data) . view('footer');
     }
 
+    public function admissionForm()
+    {
+        $bannerModel = new BannerModel();
+
+        $banner = $bannerModel->where('page', 'admission')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Admission Form',
+            'page_code' => 'admission-form',
+            'banner' => $banner,
+        ];
+
+        return view('header', $data) . view('admission_form', $data) . view('footer');
+    }
+
     public function submit()    // This method will be called when the form is submitted
     {
         // Instantiate the model
