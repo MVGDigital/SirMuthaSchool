@@ -23,7 +23,7 @@
             <a href="<?= base_url('facilities') ?>">Facilities</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>            
-            <a href="<?= base_url('parent-landing') ?>">Parents</a>
+            <a href="<?= base_url('parents') ?>">Parents</a>
             <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
@@ -1083,7 +1083,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php endif; ?>
 
+<<<<<<< HEAD
+<?php if ($page_code === 'parents'): ?>
+=======
 <?php if ($page_code === 'achievements'): ?>
+>>>>>>> 4bbe00c9e30a82de47bd67263a6fbd7968899916
 
     document.addEventListener("DOMContentLoaded", function() {
         var tabs = document.getElementsByClassName("Tab");

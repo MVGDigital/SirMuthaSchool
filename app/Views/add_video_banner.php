@@ -87,7 +87,7 @@
                                                                 Admission</option>
                                                             <option value="parentLanding"
                                                                 <?= isset($banner) && $banner['page'] == 'parentLanding' ? 'selected' : '' ?>>
-                                                                Parent Landing</option>
+                                                                Parents</option>
                                                         </select>
                                                     </div>
                                                 </div>
