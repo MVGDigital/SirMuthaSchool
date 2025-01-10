@@ -2,8 +2,10 @@
     <!-- Banner Section -->
     <section class="banner-section">
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -32,8 +34,10 @@
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
             <h3>Welcome to sir mutha <span>clubs</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco
             </h6>
         </div>
     </section>
@@ -316,15 +320,18 @@
                                 <ul class="splide__list">
                                     <li class="splide__slide">
                                         <div class="annualEventImg">
-                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
-                                                alt="Sir Mutha Newsletter Image">
+                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                                class="img-fluid" alt="Sir Mutha Newsletter Image">
                                         </div>
                                         <div class="thumbContent">
                                             <h6>Sports Day, Nov 2022</h6>
                                             <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
-                                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
-                                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                                Education (KARE), Srivilliputhur, bagged the overall championship
+                                                trophies in school and
+                                                college category in the KESPA - HITS TN State level Swimming meet 2024
+                                                organised by the
+                                                Kerala Sportspersons Association (KESPA) Chennai in association with the
+                                                Dolphin
                                                 Swimming
                                                 Academy, Mogappair.</p>
                                             <div class="whiteBtn-medium">
@@ -334,15 +341,18 @@
                                     </li>
                                     <li class="splide__slide">
                                         <div class="annualEventImg">
-                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
-                                                alt="Sir Mutha Newsletter Image">
+                                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                                class="img-fluid" alt="Sir Mutha Newsletter Image">
                                         </div>
                                         <div class="thumbContent">
                                             <h6>Sports Day, Nov 2022</h6>
                                             <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
-                                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
-                                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                                Education (KARE), Srivilliputhur, bagged the overall championship
+                                                trophies in school and
+                                                college category in the KESPA - HITS TN State level Swimming meet 2024
+                                                organised by the
+                                                Kerala Sportspersons Association (KESPA) Chennai in association with the
+                                                Dolphin
                                                 Swimming
                                                 Academy, Mogappair.</p>
                                             <div class="whiteBtn-medium">

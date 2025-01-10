@@ -182,6 +182,8 @@ class BannerController extends BaseController
         }
 
         $desktopImage = $this->request->getFile('desktop_image');
+        $mobileImage = $this->request->getFile('mobile_image');
+
         if ($desktopImage->isValid() && !$desktopImage->hasMoved()) {
             if ($banner['desktop_image'] && file_exists(FCPATH . 'uploads/banner_images/' . $banner['desktop_image'])) {
                 unlink(FCPATH . 'uploads/banner_images/' . $banner['desktop_image']);
@@ -190,9 +192,10 @@ class BannerController extends BaseController
             $desktopImageName = $this->generateUniqueFileName($desktopImage);
             $desktopImage->move(FCPATH . 'uploads/banner_images', $desktopImageName);
             $banner['desktop_image'] = $desktopImageName;
+        } else {
+            $banner['desktop_image'] = $banner['desktop_image'];
         }
 
-        $mobileImage = $this->request->getFile('mobile_image');
         if ($mobileImage->isValid() && !$mobileImage->hasMoved()) {
             if ($banner['mobile_image'] && file_exists(FCPATH . 'uploads/banner_images/' . $banner['mobile_image'])) {
                 unlink(FCPATH . 'uploads/banner_images/' . $banner['mobile_image']);
@@ -201,6 +204,8 @@ class BannerController extends BaseController
             $mobileImageName = $this->generateUniqueFileName($mobileImage);
             $mobileImage->move(FCPATH . 'uploads/banner_images', $mobileImageName);
             $banner['mobile_image'] = $mobileImageName;
+        } else {
+            $banner['mobile_image'] = $banner['mobile_image'];
         }
 
         $banner['page'] = $this->request->getPost('page');

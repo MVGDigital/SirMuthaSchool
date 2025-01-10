@@ -3,7 +3,7 @@
     <div class="brand">
         <a href="index" class="logo">
             <!-- <span> -->
-            <img src="/images/favicon.png" alt="logo" class="logo-sm">
+            <img src="<?= base_url('/images/favicon.png'); ?>" alt="logo" class="logo-sm">
             <!-- </span> -->
             <!-- <span class="">
                 <img src="/images/logo-light.png" alt="logo-large" class="logo-lg logo-light">
@@ -29,7 +29,7 @@
                         <a class="nav-link" href="#sidebarBanners" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarBanners">
                             <i class="iconoir-home-simple menu-icon"></i>
-                            <span>Dashboards</span>
+                            <span>Banner</span>
                         </a>
                         <div class="collapse " id="sidebarBanners">
                             <ul class="nav flex-column">

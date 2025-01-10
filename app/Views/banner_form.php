@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Rizz')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Banner')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <?= $this->include('partials/head-css') ?>
 </head>
