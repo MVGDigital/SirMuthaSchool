@@ -51,6 +51,7 @@ $routes->get('/statutory', 'Statutory::index');
 
 //Admission
 $routes->get('/admission', 'Admission::index');
+$routes->get('/admission-form', 'Admission::admissionForm');
 
 //Inclusive Education
 $routes->get('/inclusive-education', 'InclusiveEducation::index');
