@@ -243,7 +243,7 @@
     <!--  Teacher Enrichment -->
 
     <!--  Annual Pedagogical Policy-->
-    <section class="container-space blueBg-Sec white-wave ptb-80">
+    <section class="container-space blueBg-Sec white-wave ptb-80 d-none">
         <div class="itemSpaceBetween">
             <div class="col-lg-6">
                 <div class="sectionTitle-white lft-rgt-content">

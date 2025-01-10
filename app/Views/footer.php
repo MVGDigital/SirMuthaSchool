@@ -926,63 +926,6 @@ $("#mobile-number").on("input", function(e) {
     $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
 });
 
-
-$("#contact-form").validate({
-rules: {
-    "first-name": {
-        required: true,
-        minlength: 2
-    },
-    "last-name": {
-        required: true,
-        minlength: 2
-    },
-    "email": {
-        required: true,
-        customEmail: true
-    },
-    "mobile-number": {
-        required: true,
-        digits: true,
-        minlength: 10,
-        maxlength: 15
-    },
-    "msg": {
-        required: true,
-        minlength: 10
-    }
-},
-messages: {
-    "first-name": {
-        required: "Please enter your first name",
-        minlength: "First name must be at least 2 characters long"
-    },
-    "last-name": {
-        required: "Please enter your last name",
-        minlength: "Last name must be at least 2 characters long"
-    },
-    "email": {
-        required: "Please enter your email address",
-        customEmail: "Please enter a valid email address"
-    },
-    "mobile-number": {
-        required: "Please enter your phone number",
-        digits: "Please enter only numbers",
-        minlength: "Phone number must be at least 10 digits",
-        maxlength: "Phone number cannot exceed 15 digits"
-    },
-    "msg": {
-        required: "Please enter your message",
-        minlength: "Message must be at least 10 characters long"
-    }
-},
-submitHandler: function(form) {
-    alert("Form submitted successfully!");
-    form.submit();
-}
-});
-});
-
 <?php endif; ?>
 
 <?php if ($page_code === 'admission'): ?>
