@@ -992,6 +992,83 @@ $('#sir-mutha-campus').click(function() {
 
 <?php endif; ?>
 
+<?php if ($page_code === 'admission_form'): ?>
+
+$(document).ready(function() {
+    $("#studentForm").validate({
+        rules: {
+            name: true,
+            dob: true,
+            nationality: true,
+            religion: true,
+            community: true,
+            mother_tongue: true,
+            gender: true,
+            state: true,
+            caste: true,
+            class_last_studied: true,
+            school_last_attended: true,
+            class_admission_sought: true,
+            residential_address: true,
+            father_name: true,
+            father_religion: true,
+            father_language: true,
+            father_qualification: true,
+            father_occupation: true,
+            father_mobile: {
+                required: true,
+                digits: true,
+                minlength: 10,
+                maxlength: 10
+            },
+            father_email: {
+                required: true,
+                email: true
+            },
+            mother_name: true,
+            mother_religion: true
+        },
+        messages: {
+            name: "Please enter the student's name.",
+            dob: "Please enter the date of birth.",
+            nationality: "Please specify nationality.",
+            religion: "Please specify religion.",
+            community: "Please specify community.",
+            mother_tongue: "Please specify mother tongue.",
+            gender: "Please select gender.",
+            state: "Please specify state.",
+            caste: "Please specify caste.",
+            class_last_studied: "Please enter the last class studied.",
+            school_last_attended: "Please enter the last school attended.",
+            class_admission_sought: "Please enter the class for admission.",
+            residential_address: "Please enter the residential address.",
+            father_name: "Please enter the father's name.",
+            father_religion: "Please specify the father's religion.",
+            father_language: "Please specify the father's language.",
+            father_qualification: "Please enter the father's qualification.",
+            father_occupation: "Please enter the father's occupation.",
+            father_mobile: {
+                required: "Please enter the father's mobile number.",
+                digits: "Please enter only digits.",
+                minlength: "Mobile number must be 10 digits.",
+                maxlength: "Mobile number must be 10 digits."
+            },
+            father_email: {
+                required: "Please enter the father's email.",
+                email: "Please enter a valid email address."
+            },
+            mother_name: "Please enter the mother's name.",
+            mother_religion: "Please specify the mother's religion."
+        },
+        submitHandler: function(form, e) {
+            e.preventDefault();
+            form.submit(); // Submit the form if validation passes
+        }
+    });
+});
+
+<?php endif; ?>
+
 <?php if ($page_code === 'gallery'): ?>
 
 document.addEventListener("DOMContentLoaded", function() {
