@@ -99,6 +99,9 @@
                                                             <option value="admission"
                                                                 <?= isset($banner) && $banner['page'] == 'admission' ? 'selected' : '' ?>>
                                                                 Admission</option>
+                                                            <option value="intheoutdoor"
+                                                                <?= isset($banner) && $banner['page'] == 'intheoutdoor' ? 'selected' : '' ?>>
+                                                                In The Outdoor</option>
                                                             <option value="parents"
                                                                 <?= isset($banner) && $banner['page'] == 'parents' ? 'selected' : '' ?>>
                                                                 Parents</option>

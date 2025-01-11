@@ -78,7 +78,7 @@ class EventController extends Controller
             'end_time' => $this->request->getPost('end_time'),
             'event_location' => $this->request->getPost('event_location'),
             'event_description' => $this->request->getPost('event_description'),
-            'registration_required' => $this->request->getPost('registration_required'),
+            'registration_required' => $this->request->getPost('registration_required') === 'yes' ? 1 : 0,
             'desktop_image' => $desktopImageName,
             'mobile_image' => $mobileImageName,
             'is_published' => $this->request->getPost('is_published') ? 1 : 0,
@@ -129,7 +129,6 @@ public function update($id)
             'mime_in[mobile_image,image/jpg,image/jpeg,image/gif,image/png]',
             'max_size[mobile_image,2048]',
         ],
-        'registration_required' => 'required|in_list[yes,no]',
     ]);
 
     if (!$validation) {
@@ -141,7 +140,7 @@ public function update($id)
         'event_date' => $this->request->getPost('event_date'),
         'start_time' => $this->request->getPost('start_time'),
         'end_time' => $this->request->getPost('end_time'),
-        'registration_required' => $this->request->getPost('registration_required') == 1 ? 'yes' : 'no',
+        'registration_required' => $this->request->getPost('registration_required') === 'yes' ? 1 : 0,
         'event_location' => $this->request->getPost('event_location'),
         'event_description' => $this->request->getPost('event_description'),
         'registration_required' => $this->request->getPost('registration_required'),

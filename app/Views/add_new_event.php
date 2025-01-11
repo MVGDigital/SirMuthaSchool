@@ -64,13 +64,13 @@
                                             <label for="event-name" class="col-sm-2 col-form-label">Event Name</label>
                                             <div class="col-sm-4">
                                                 <input type="text" class="form-control" id="event-name"
-                                                    name="event_name" >
+                                                    name="event_name">
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
                                             <label for="event-banner" class="col-sm-4 offset-sm-2"><b>Event
-                                                Banner</b></label>
+                                                    Banner</b></label>
                                             <!-- <div class="col-sm-4">
                                             <input type="file" class="form-control" id="event-banner" name="event_banner" accept="image/*" >
                                         </div> -->
@@ -81,7 +81,7 @@
                                                 Image</label>
                                             <div class="col-sm-4">
                                                 <input type="file" class="form-control" id="desktop-image"
-                                                    name="desktop_image" accept="image/*" >
+                                                    name="desktop_image" accept="image/*">
                                             </div>
                                         </div>
 
@@ -90,7 +90,7 @@
                                                 Image</label>
                                             <div class="col-sm-4">
                                                 <input type="file" class="form-control" id="mobile-image"
-                                                    name="mobile_image" accept="image/*" >
+                                                    name="mobile_image" accept="image/*">
                                             </div>
                                         </div>
 
@@ -98,7 +98,7 @@
                                             <label for="event-date" class="col-sm-2 col-form-label">Event Date</label>
                                             <div class="col-sm-4">
                                                 <input type="date" class="form-control" id="event-date"
-                                                    name="event_date" >
+                                                    name="event_date">
                                             </div>
                                         </div>
 
@@ -107,15 +107,14 @@
                                                 Time</label>
                                             <div class="col-sm-4">
                                                 <input type="time" class="form-control" id="start-time"
-                                                    name="start_time" >
+                                                    name="start_time">
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
                                             <label for="end-time" class="col-sm-2 col-form-label">Event End Time</label>
                                             <div class="col-sm-4">
-                                                <input type="time" class="form-control" id="end-time" name="end_time"
-                                                    >
+                                                <input type="time" class="form-control" id="end-time" name="end_time">
                                             </div>
                                         </div>
 
@@ -123,7 +122,7 @@
                                             <label for="location" class="col-sm-2 col-form-label">Event Location</label>
                                             <div class="col-sm-4">
                                                 <input type="text" class="form-control" id="location"
-                                                    name="event_location" >
+                                                    name="event_location">
                                             </div>
                                         </div>
 
@@ -132,24 +131,21 @@
                                                 Description</label>
                                             <div class="col-sm-4">
                                                 <textarea class="form-control" id="description" name="event_description"
-                                                    rows="4" ></textarea>
+                                                    rows="4"></textarea>
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
-                                            <label for="registration-"
-                                                class="col-sm-2 col-form-label">Registration </label>
+                                            <label for="registration_" class="col-sm-2 col-form-label">Registration
+                                                Required</label>
                                             <div class="col-sm-4">
-                                                <select class="form-control" id="registration-"
-                                                    name="registration_" >
-                                                    <option value="" disabled selected>Please select your option
-                                                    </option>
+                                                <select class="form-control" id="registration_"
+                                                    name="registration_required">
                                                     <option value="yes">Yes</option>
                                                     <option value="no">No</option>
                                                 </select>
                                             </div>
                                         </div>
-
 
                                         <div class="mb-3 row">
                                             <div class="col-sm-4 offset-sm-2">
