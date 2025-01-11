@@ -52,6 +52,9 @@
                 <tr><th>Father's Language</th><td><?php echo $admissions['father_language']; ?></td></tr>
                 <tr><th>Father's Qualification</th><td><?php echo $admissions['father_qualification']; ?></td></tr>
                 <tr><th>Father's Occupation</th><td><?php echo $admissions['father_occupation']; ?></td></tr>
+
+                                <tr><th>Father's Office Address</th><td><?php echo $admissions['father_office_address']; ?></td></tr>
+
                 <tr><th>Father's Mobile</th><td><?php echo $admissions['father_mobile']; ?></td></tr>
                 <tr><th>Father's Email</th><td><?php echo $admissions['father_email']; ?></td></tr>
                 <tr><th>Mother's Name</th><td><?php echo $admissions['mother_name']; ?></td></tr>
@@ -69,6 +72,7 @@
                 <tr><th>Guardian's Address</th><td><?php echo $admissions['guardian_address']; ?></td></tr>
                 <tr><th>Sibling's Name</th><td><?php echo $admissions['sibling_name']; ?></td></tr>
                 <tr><th>Other Information</th><td><?php echo $admissions['other_info']; ?></td></tr>
+                <tr><th>Family Photo</th><td><img src="<?php echo base_url('uploads/' . $admissions['family_photo']); ?>" alt="Family Photo" style="max-width: 200px;"></td></tr>
                 <tr><th>Application Number</th><td><?php echo $admissions['registration_number']; ?>/2526</td></tr>
             </table>
             <a href="javascript:window.print()" class="btn">Save as PDF</a>

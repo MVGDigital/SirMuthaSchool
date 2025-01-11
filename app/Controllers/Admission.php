@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\BannerModel;
 use App\Models\VideoBannerModel;
+use App\Models\AdmissionModel;
 
 class Admission extends BaseController
 {
@@ -22,7 +23,7 @@ class Admission extends BaseController
             'video' => $video
         ];
 
-        return view('header', $data) . view('admission', $data) . view('footer');
+        return view('header', $data) . view('admission_form', $data) . view('footer');
     }
 
     public function admissionForm()
