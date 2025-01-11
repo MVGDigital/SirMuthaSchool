@@ -51,31 +51,12 @@
                                             <?php endif; ?>
 
                                             <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label " for="year">Year</label>
+                                                <label class="col-sm-4 col-form-label " for="event_date">Event
+                                                    Date</label>
                                                 <div class="col-sm-8">
-                                                    <select name="year" id="year" class="form-control">
-                                                        <option value="">Select Year</option>
-                                                        <?php for ($i = date('Y'); $i >= date('Y') - 5; $i--): ?>
-                                                        <option value="<?= $i ?>"
-                                                            <?= isset($event) && $event['year'] == $i ? 'selected' : '' ?>>
-                                                            <?= $i ?>
-                                                        </option>
-                                                        <?php endfor; ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label " for="month">Month</label>
-                                                <div class="col-sm-8">
-                                                    <select name="month" id="month" class="form-control">
-                                                        <option value="">Select Month</option>
-                                                        <?php foreach (['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as $month): ?>
-                                                        <option value="<?= $month ?>"
-                                                            <?= isset($event) && $event['month'] == $month ? 'selected' : '' ?>>
-                                                            <?= $month ?></option>
-                                                        <?php endforeach; ?>
-                                                    </select>
+                                                    <input type="date" name="event_date" id="event_date"
+                                                        class="form-control"
+                                                        value="<?= isset($event) ? esc($event['event_date']) : '' ?>">
                                                 </div>
                                             </div>
 
