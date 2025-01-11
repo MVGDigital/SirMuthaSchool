@@ -38,7 +38,8 @@
     <!-- Event Details -->
     <section class="event-details-sec">
         <div class="img-overwite-wave">
-            <img src="<?= base_url('images/facilities/green-capus.jpg') ?>" class="img-fluid" alt="">
+            <img src="<?= base_url('uploads/desktop_images/'. $event['desktop_image']);?>" class="img-fluid w100"
+                alt="<?= esc($event['event_name']) ?>">
         </div>
 
         <div class="container-space wave-yellow-overwireLightBg ptb-80-30">
@@ -66,6 +67,9 @@
     <!-- Event Details -->
 
     <!-- Contact Form -->
+    <script>
+    console.log('Show Registration Form: <?= $show_registration_form ?>');
+    </script>
     <?php if ($show_registration_form): ?>
     <section class="container-space lightColor-bg eventRegBg">
         <div class="contact-container">

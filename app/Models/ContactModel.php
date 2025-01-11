@@ -8,9 +8,6 @@ class ContactModel extends Model
 {
     protected $table = 'contacts';
     protected $primaryKey = 'contact_id';
-    protected $allowedFields = ['first_name', 'last_name', 'email', 'phone', 'message'];
+    protected $allowedFields = ['first_name', 'last_name', 'email', 'phone', 'message', 'created_at', 'updated_at'];
 
-    protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
 }
