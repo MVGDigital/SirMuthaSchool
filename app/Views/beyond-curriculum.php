@@ -306,7 +306,6 @@
                     <li class="splide__slide"><span>2019</span></li>
                     <li class="splide__slide"><span>2018</span></li>
                     <li class="splide__slide"><span>2017</span></li>
-
                 </ul>
             </div>
         </div>
@@ -323,7 +322,7 @@
                                                 class="img-fluid" alt="Sir Mutha Newsletter Image">
                                         </div>
                                         <div class="thumbContent">
-                                            <h6>Sports Day, Nov 2022</h6>
+                                            <h6>Sports Day,06 Nov 2022</h6>
                                             <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
                                                 Education (KARE), Srivilliputhur, bagged the overall championship
                                                 trophies in school and

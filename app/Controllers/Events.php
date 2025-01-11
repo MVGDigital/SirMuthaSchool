@@ -55,6 +55,9 @@ class Events extends BaseController
         $eventId = session()->get('current_event_id');
         $eventType = session()->get('event_type');
 
+        log_message('debug', 'Event ID: ' . $eventId);
+        log_message('debug', 'Event Type: ' . $eventType);
+
         if (!$eventId) {
             return redirect()->to('events');
         }
@@ -69,7 +72,7 @@ class Events extends BaseController
             return redirect()->to('events');
         }
 
-        $showRegistrationForm = ($eventType === 'upcoming' && $event['registration_required'] === '1');
+        $showRegistrationForm = ($eventType === 'upcoming' && (!empty($event['registration_required']) && $event['registration_required'] == 1));
 
         $data = [
             'page_title' => 'Event Details',
