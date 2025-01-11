@@ -3,15 +3,45 @@
 namespace App\Controllers;
 
 use App\Models\AdmissionLahocModel;
+use App\Models\VideoBannerModel;
+use App\Models\AdmissionModel;
+use App\Models\BannerModel;
+
 
 class AdmissionFormLahoc extends BaseController
 {
     public function index()
     {
-        // Load the Admission Form View
-        return view('admissionform_lahoc');
+        $bannerModel = new BannerModel();
+        $videoBannerModel = new VideoBannerModel();
+
+        $banner = $bannerModel->where('page', 'admission')->where('is_published', 1)->first();
+        $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Admission',
+            'page_code' => 'admission',
+            'banner' => $banner,
+            'video' => $video
+        ];
+
+        return view('header', $data) . view('admission_lahoc', $data) . view('footer');
     }
 
+    public function admissionFormlahoc()
+    {
+        $bannerModel = new BannerModel();
+
+        $banner = $bannerModel->where('page', 'admission')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Admission Form',
+            'page_code' => 'admissionform-lahoc',
+            'banner' => $banner,
+        ];
+
+        return view('header', $data) . view('admission_lahoc', $data) . view('footer');
+    }
     public function submit()
     {
         // Instantiate the model
@@ -65,6 +95,7 @@ class AdmissionFormLahoc extends BaseController
             'father_language' => $formData['father_language'],
             'father_qualification' => $formData['father_qualification'],
             'father_occupation' => $formData['father_occupation'],
+            'father_office_address' => $formData['father_office_address'],
             'father_mobile' => $formData['father_mobile'],
             'father_email' => $formData['father_email'],
             'mother_name' => $formData['mother_name'],
@@ -81,7 +112,8 @@ class AdmissionFormLahoc extends BaseController
             'guardian_mobile' => $formData['guardian_mobile'],
             'guardian_email' => $formData['guardian_email'],
             'sibling_name' => $formData['sibling_name'],
-            'other_info' => $formData['other_info']
+            'other_info' => $formData['other_info'],
+            'family_photo' => $formData['family_photo']
         ]);
 
         // Redirect to a success page with the registration number
@@ -94,7 +126,7 @@ class AdmissionFormLahoc extends BaseController
         $registration_number = $this->request->getGet('registration_number');
 
         // Load a success message view
-        return view('success_page', [
+        return view('success_page_lahoc', [
             'message' => 'Your admission form has been submitted successfully!',
             'registration_number' => $registration_number
         ]);
@@ -104,7 +136,29 @@ class AdmissionFormLahoc extends BaseController
     {
         $admissionModel = new AdmissionLahocModel();
         $data['admissions'] = $admissionModel->findAll();
-        return view('admissions_list', $data);
+        return view('admissionslahoc_list', $data);
+    }
+
+    public function printView($registration_number)
+    {
+        if (!is_numeric($registration_number)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Invalid Registration Number');
+        }
+        $admissionModel = new AdmissionLahocModel();
+        $admissions = $admissionModel->where('registration_number', $registration_number)->first();
+
+        if ($admissions) {
+            return view('print_view', ['admissions' => $admissions]);
+        } else {
+            return view('print_view', ['admissions' => null]);
+        }    }
+
+    public function delete($id)
+    {
+        $admissionModel = new AdmissionLahocModel();
+        $admissionModel->delete($id);
+
+        return redirect()->to('/admissionformlahoc/list');
     }
 }
 

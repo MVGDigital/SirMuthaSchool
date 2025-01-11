@@ -49,9 +49,22 @@ $routes->get('/facilities', 'Facilities::index');
 //Statutory
 $routes->get('/statutory', 'Statutory::index');
 
-//Admission
+// Admission
 $routes->get('/admission', 'Admission::index');
 $routes->get('/admission-form', 'Admission::admissionForm');
+$routes->post('admission/submit', 'Admission::submit');
+$routes->get('admission/success', 'Admission::success'); // Add this line
+$routes->get('/admission/printView/(:num)', 'Admission::printView/$1');
+$routes->get('/admission/list', 'Admission::listAdmissions');
+
+$routes->get('admissionformlahoc', 'AdmissionFormLahoc::index');
+$routes->get('admissionform-lahoc', 'AdmissionFormLahoc::admissionFormlahoc');
+$routes->post('admissionformlahoc/submit', 'AdmissionFormLahoc::submit');
+$routes->get('admissionformlahoc/success', 'AdmissionFormLahoc::success');
+$routes->get('admissionformlahoc/printView/(:num)', 'AdmissionFormLahoc::printView/$1');
+$routes->get('admissionformlahoc/list', 'AdmissionFormLahoc::listAdmissions');
+
+
 
 //Inclusive Education
 $routes->get('/inclusive-education', 'InclusiveEducation::index');

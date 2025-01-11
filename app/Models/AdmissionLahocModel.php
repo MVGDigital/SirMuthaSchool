@@ -25,6 +25,7 @@ class AdmissionLahocModel extends Model
         'father_language',
         'father_qualification',
         'father_occupation',
+        'father_office_address',
         'father_mobile',
         'father_email',
         'mother_name',
@@ -41,24 +42,8 @@ class AdmissionLahocModel extends Model
         'guardian_mobile',
         'guardian_email',
         'sibling_name',
-        'other_info'
-    ];
-
-    protected $validationRules = [
-        'student_name' => 'required|min_length[3]|max_length[255]',
-        'dob' => 'required|valid_date',
-        'gender' => 'required|in_list[Male,Female,Other]',
-        'nationality' => 'required|max_length[100]',
-        'state' => 'required|max_length[100]',
-        'religion' => 'required|max_length[100]',
-        'residential_address' => 'required|max_length[500]',
-        'father_name' => 'required|min_length[3]|max_length[255]',
-        'father_mobile' => 'required|regex_match[/^[0-9]{10}$/]',
-        'father_email' => 'required|valid_email',
-
-        
-  
-
+        'other_info',
+        'family_photo',
     ];
 
     protected $useTimestamps = true;
