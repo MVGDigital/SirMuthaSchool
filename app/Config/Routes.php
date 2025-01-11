@@ -106,6 +106,8 @@ $routes->group('career', function ($routes) {
 
 //Contact
 $routes->get('/contact', 'Contact::index');
+$routes->post('contact/submitContactForm', 'Contact::submitContactForm');
+
 
 
 $routes->get('/adm1n/login', 'Auth::index', ['filter' => 'noauth']);

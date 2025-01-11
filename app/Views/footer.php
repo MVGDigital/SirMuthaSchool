@@ -190,6 +190,30 @@ splide.mount();
 
 <?php endif; ?>
 
+<?php if ($page_code === 'intheoutdoor'): ?>
+
+    //Board members Slider
+    var splide = new Splide('#founders-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+<?php endif; ?>
+
 <?php if ($page_code === 'facilities'): ?>
 
 //Board members Slider
@@ -831,30 +855,6 @@ $(document).ready(function() {
 <?php if ($page_code === 'contact'): ?>
 
 $(document).ready(function() {
-
-
-    $("#first-name, #last-name").on("input", function() {
-        const value = $(this).val();
-        // Allow only letters and spaces
-        $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
-    });
-
-    $("#email").on("input", function(e) {
-        var value = e.target.value; // Get the current value
-        e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
-    });
-
-    $.validator.addMethod("customEmail", function(value, element) {
-        return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
-    }, "Please enter a valid email address");
-
-    // Restrict input to only numeric characters in the phone number field
-    $("#mobile-number").on("input", function(e) {
-        const value = $(this).val();
-        $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
-    });
-
-
     $("#contact-form").validate({
         rules: {
             "first-name": {
@@ -905,11 +905,26 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
-            form.submit();
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('contact/submitContactForm') ?>",
+                data: $(form).serialize(),
+                success: function(response) {
+                    $('#responseMessage').html(
+                        '<p class="success-message text-center">Your message has been sent successfully!</p>'
+                        );
+                    $(form)[0].reset();
+                },
+                error: function(xhr, status, error) {
+                    $('#responseMessage').html(
+                        '<p class="error-message text-center">There was an error while submitting your message. Please try again later.</p>'
+                        );
+                }
+            });
         }
     });
 });
+
 
 $("#email").on("input", function(e) {
     var value = e.target.value; // Get the current value

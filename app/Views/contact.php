@@ -49,6 +49,7 @@
                         <p>We aim to create a holistic individual by providing a happy atmosphere for the child.</p>
                     </div>
                     <form id="contact-form">
+                    <div id="responseMessage"></div>
                         <div class="formFields row w100 m-0">
                             <div class="col-12 col-md-6 col-lg-6 fields m-0">
                                 <label for="first-name">First Name</label>
@@ -72,7 +73,7 @@
                             <textarea name="msg" id="msg"></textarea>
                         </div>
                         <div class="formBtn-fullWidth">
-                            <button>Submit</button>
+                            <button type="submit">Submit</button>
                         </div>
                     </form>
                 </div>

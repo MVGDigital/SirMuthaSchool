@@ -94,11 +94,6 @@
                                                     <td><?= esc($event['start_time']); ?></td>
                                                     <td>
                                                         <span class="d-flex align-items-center">
-                                                            <label class="switch-but mini-switch">
-                                                                <input type="checkbox"
-                                                                    <?= $event['is_published'] ? 'checked' : ''; ?>>
-                                                                <span class="slider round"></span>
-                                                            </label>
                                                             <span class="ms-2">
                                                                 <a href="<?= base_url('adm1n/events/edit/' . $event['id']); ?>"
                                                                     class="text-primary" title="Edit">
