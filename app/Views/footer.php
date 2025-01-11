@@ -190,6 +190,30 @@ splide.mount();
 
 <?php endif; ?>
 
+<?php if ($page_code === 'intheoutdoor'): ?>
+
+    //Board members Slider
+    var splide = new Splide('#founders-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+<?php endif; ?>
+
 <?php if ($page_code === 'facilities'): ?>
 
 //Board members Slider
