@@ -79,7 +79,7 @@
                                             <div class="card-body">
                                                 <img src="https://img.icons8.com/?size=1000&id=yF8LPIFelJU7&format=png&color=007bff"
                                                     alt="Banners Icon" class="display-4"
-                                                    style="width: 60px; height: 60px;">
+                                                    style="width: 60px; height: 56px;">
                                                 <h5 class="card-title">Banners</h5>
                                                 <p class="card-text">Manage website banners.</p>
                                                 <a href="<?= base_url('adm1n/banner'); ?>" class="btn bg-colour">Manage
@@ -149,30 +149,6 @@
                                                 <p class="card-text">View and manage contact inquiries.</p>
                                                 <a href="<?= base_url('adm1n/contact'); ?>" class="btn bg-colour">Manage
                                                     Contacts</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Academic Section -->
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center">
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-graduation-cap display-4 icon-academic"></i>
-                                                <h5 class="card-title">Academic</h5>
-                                                <p class="card-text">Upload and manage academic documents.</p>
-                                                <a href="<?= base_url('adm1n/document'); ?>"
-                                                    class="btn bg-colour">Manage Documents</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center">
-                                            <div class="card-body">
-                                                <i class="iconoir-quote-solid display-4 icon-broucher"></i>
-                                                <h5 class="card-title">Broucher & Policies</h5>
-                                                <p class="card-text">Manage Broucher & Policies</p>
-                                                <a href="<?= base_url('adm1n/brochure_policies'); ?>" class="btn bg-colour">Broucher & Policies</a>
                                             </div>
                                         </div>
                                     </div>

@@ -45,9 +45,9 @@ class Events extends BaseController
         ]);
 
         if ($eventType === 'past') {
-            return redirect()->to('events/past-event/details');
+            return redirect()->to(base_url('events/past-event/details'));
         }
-        return redirect()->to('events/details');
+        return redirect()->to(base_url('events/details'));
     }
 
     public function eventDetails()
