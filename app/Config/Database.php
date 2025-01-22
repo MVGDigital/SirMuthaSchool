@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'sirmuthaschool',
+        'username'     => 'sirmutha_user',
+        'password'     => '@@jU9];^*NNA',
+        'database'     => 'sirmutha_db',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

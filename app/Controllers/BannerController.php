@@ -71,10 +71,26 @@ class BannerController extends BaseController
             return redirect()->back()->withInput()->with('error', 'Failed to upload files.');
         }
 
-        $desktopImageName = $this->generateUniqueFileName($desktopImage);
-        $mobileImageName = $this->generateUniqueFileName($mobileImage);
+        $desktopImageDimensions = getimagesize($desktopImage->getTempName());
+        $desktopImageWidth = $desktopImageDimensions[0];
+        $desktopImageHeight = $desktopImageDimensions[1];
 
+        // if ($desktopImageWidth !== 1062 || $desktopImageHeight !== 424) {
+        //     return redirect()->back()->withInput()->with('error', 'Desktop image dimensions must be exactly 1920x1000 pixels.');
+        // }
+
+        $mobileImageDimensions = getimagesize($mobileImage->getTempName());
+        $mobileImageWidth = $mobileImageDimensions[0];
+        $mobileImageHeight = $mobileImageDimensions[1];
+
+        // if ($mobileImageWidth !== 600 || $mobileImageHeight !== 1500) {
+        //     return redirect()->back()->withInput()->with('error', 'Mobile image dimensions must be exactly 600x1500 pixels.');
+        // }
+
+        $desktopImageName = pathinfo($desktopImage->getClientName(), PATHINFO_FILENAME) . '_' . date('Ymd_His') . '.' . $desktopImage->getExtension();
         $desktopImage->move(FCPATH . 'uploads/banner_images', $desktopImageName);
+
+        $mobileImageName = pathinfo($mobileImage->getClientName(), PATHINFO_FILENAME) . '_' . date('Ymd_His') . '.' . $mobileImage->getExtension();
         $mobileImage->move(FCPATH . 'uploads/banner_images', $mobileImageName);
 
         
@@ -120,7 +136,7 @@ class BannerController extends BaseController
         return true;
     }
 
-    private function generateUniqueFileName($file)
+        private function generateUniqueFileName($file)
     {
         $fileName = $file->getClientName();
         $uniqueName = pathinfo($fileName, PATHINFO_FILENAME) . '_' . date('Dmy_His') . '.' . $file->getExtension();
@@ -141,8 +157,8 @@ class BannerController extends BaseController
     public function update($id)
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->find($id);
 
+        $banner = $bannerModel->find($id);
         if (!$banner) {
             return redirect()->to(base_url('/adm1n/banner'))->with('error', 'Banner not found');
         }
@@ -161,6 +177,7 @@ class BannerController extends BaseController
         if (!$this->validate($validationRules)) {
             $errors = $this->validator->getErrors();
             log_message('error', 'Validation Errors: ' . json_encode($errors));
+            
             return redirect()->back()->withInput()->with('errors', $errors);
         }
 
@@ -175,6 +192,8 @@ class BannerController extends BaseController
             $desktopImageName = $this->generateUniqueFileName($desktopImage);
             $desktopImage->move(FCPATH . 'uploads/banner_images', $desktopImageName);
             $banner['desktop_image'] = $desktopImageName;
+        } else {
+            $banner['desktop_image'] = $banner['desktop_image'];
         }
 
         if ($mobileImage->isValid() && !$mobileImage->hasMoved()) {
@@ -185,6 +204,8 @@ class BannerController extends BaseController
             $mobileImageName = $this->generateUniqueFileName($mobileImage);
             $mobileImage->move(FCPATH . 'uploads/banner_images', $mobileImageName);
             $banner['mobile_image'] = $mobileImageName;
+        } else {
+            $banner['mobile_image'] = $banner['mobile_image'];
         }
 
         $banner['page'] = $this->request->getPost('page');
@@ -196,11 +217,11 @@ class BannerController extends BaseController
 
         try {
             $bannerModel->save($banner);
-            log_message('info', 'Banner updated successfully: ' . json_encode($banner));
+            log_message('info', 'Banner data updated: ' . json_encode($banner));
             return redirect()->to(base_url('/adm1n/banner'))->with('success', 'Banner updated successfully!');
         } catch (\Exception $e) {
-            log_message('error', 'Error updating banner: ' . $e->getMessage());
-            return redirect()->back()->withInput()->with('errors', ['database' => 'Failed to update banner.']);
+            log_message('error', 'Database error: ' . $e->getMessage());
+            return redirect()->back()->withInput()->with('errors', ['database' => 'Failed to update banner data.']);
         }
     }
 

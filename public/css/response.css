@@ -10,8 +10,9 @@
     max-width: 1920px;
     margin: auto;
     position: fixed;
-    left: 0;
-    right: 0;
+    
+    top:25%;
+    padding: 0 70px;
   }
   .toRight-pagination .splide__pagination{
    right: 5%;
@@ -20,6 +21,18 @@
   .splide__pagination{
     bottom: -7%;
   }
+  .navbar-collapse {
+    width: 1920px;
+    height: 100vh;
+    top: 0%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    position: fixed;
+    background: var(--blue-bg);
+    padding: 0 80px;
+    margin: 0 auto;
+}
 }
 
 
@@ -27,12 +40,6 @@
   .headerContact-info{
     padding: 50px 0;
   }
-  .menusContainer{
-    margin-top: 21%;
-  }
-  .horizontal-whiteLine {
-    display: none;
-}
   .changeTitleColor h3{
     color: #FFF;
   }
@@ -92,12 +99,6 @@
   }
   .eventRegBg{
     padding: 23% 0 80px 0;
-  }
-  .achievements .Tabs__tab{
-    margin: 0 10px;
-  }
-  .Tabs__presentation-slider{
-    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -198,9 +199,6 @@
 .wave-yellow-overwireLightBg{
   margin-top: -15%;
   padding-top: 18%;
-}
-.achievements .Tabs__tab{
-  margin: 0px;
 }
 
   /* Footer Section */

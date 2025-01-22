@@ -14,6 +14,7 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -21,12 +22,12 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="#" class="active">Compliance Details</a></li>
-                <li><a href="#">Guidelines for parents</a></li>
-                <li><a href="#">Attendence & Leave Policy</a></li>
-                <li><a href="#">Code of Conduct</a></li>
-                <li><a href="#">Rules & Regulations</a></li>
-                <li><a href="#">Child Support Policy</a></li>
+                <li><a href="<?= base_url('statutory#aboutcbse') ?>" class="active">Compliance Details</a></li>
+                <li><a href="<?= base_url('statutory#guidelines') ?>">Guidelines for parents</a></li>
+                <li><a href="<?= base_url('statutory#guidelines') ?>">Attendence & Leave Policy</a></li>
+                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Code of Conduct</a></li>
+                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Rules & Regulations</a></li>
+                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Child Support Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -34,14 +35,16 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-        <div class="sectionTitle-white col-lg-10 m-auto withYellowBtn">
+        <div class="sectionTitle-white col-lg-10 m-auto withYellowBtn statutarypagecontent">
             <h3>Compliance <span>Details</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h6>
+            <p>Students are prohibited from bringing cell phones, discs, walkmans, iPods, or CDs to school. Confiscated items will not be returned.</p>
+            <p>On occasions when it is essential to bring a mobile phone to school, it must be handed over to the school office at the beginning of the day.</p>
+            <p>The Department of Education strictly prohibits students from riding or driving any motorized vehicles.</p>
+            <p>Any communication (request/complaint/excuse) made by parents should be addressed to the Principal and not to the class teacher.</p>
+            <p>Pupils are responsible for the safe custody of their books and belongings.</p>
+            <p>Any damage done to school property will have to be compensated for, and the disciplinary action taken by the management in this regard is final.</p>
 
-            <div class="lightYellowBtn">
-                <a href="#">Begin your Chapter</a>
-            </div>
+            
         </div>
     </section>
     <div class="overlay-wave-img">
@@ -51,33 +54,31 @@
     <!-- Section Menus -->
 
     <!-- Policys -->
-    <section class="container-space white-bgImg ptb-80">
+    <section class="container-space white-bgImg ptb-80" id="guidelines">
         <div class="row m-0 w100">
             <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
                 <div class="cardWith-under-info">
                     <div class="sectionTitle-blue">
                         <h3>Guidelines <span>For Parents</span></h3>
                     </div>
-                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid w100"
+                    <img src="<?= base_url('images/statutory/parent-image.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna</h6>
+                    <h6>Provide a conducive environment for studies at home. Assist & guide your ward in doing his/her home - work.</h6>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="<?= base_url('statutory/parents-guidelines') ?>">Know More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
                 <div class="cardWith-under-info">
                     <div class="sectionTitle-blue">
-                        <h3>Attendence & <span>Leave Policy</span></h3>
+                        <h3>Attendance & <span>Leave Policy</span></h3>
                     </div>
-                    <img src="<?= base_url('images/facilities/extra-curicular-1.jpg') ?>" class="img-fluid w100"
+                    <img src="<?= base_url('images/statutory/attendance-policy.jpg') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna</h6>
+                    <h6>Pupils should not stay away from school except for special reasons, for which prior leave of absence is to be obtained in writing</h6>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="<?= base_url('statutory/attendance-and-leavepolicy') ?>">Know More</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +86,7 @@
     </section>
     <!-- Policys -->
 
-    <section class="container-space linenWhite-bgImg ptb-80">
+    <section class="container-space linenWhite-bgImg ptb-80" id="">
         <div class="mt-50">
             <div class="row m-0 w100">
                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
@@ -99,7 +100,7 @@
                             <hr>
                         </div>
                         <div class="blueBtn-medium">
-                            <a href="#">Know More</a>
+                        <a href="<?= base_url('statutory/code-of-contact') ?>">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                             <hr>
                         </div>
                         <div class="blueBtn-medium">
-                            <a href="#">Know More</a>
+                             <a href="<?= base_url('statutory/rules-and-regulation') ?>">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -129,10 +130,21 @@
                             <hr>
                         </div>
                         <div class="blueBtn-medium">
-                            <a href="#">Know More</a>
+                        <a href="<?= base_url('statutory/child-support-policy') ?>">Know More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        .statutarypagecontent p {
+            
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 34px;
+            font-family: 'Figtree-Regular';
+            color:white !important;
+        }
+    </style>

@@ -99,20 +99,17 @@
                                         <textarea class="form-control" id="event_description" name="event_description"
                                             rows="4" required><?= esc($event['event_description']); ?></textarea>
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label for="registration_" class="col-sm-2 col-form-label">Registration
-                                            Required</label>
-                                        <div class="col-sm-4">
-                                            <select class="form-control" id="registration_"
-                                                name="registration_required">
-                                                <option value="1"
-                                                    <?= $event['registration_required'] == 1 ? 'selected' : '' ?>>Yes
-                                                </option>
-                                                <option value="0"
-                                                    <?= $event['registration_required'] == 0 ? 'selected' : '' ?>>No
-                                                </option>
-                                            </select>
-                                        </div>
+                                    <div class="form-group mb-3" style="max-width:500px">
+                                        <label for="registration_required">Registration Required</label>
+                                        <select class="form-control" id="registration_required"
+                                            name="registration_required">
+                                            <option value="yes"
+                                                <?= $event['registration_required'] === 'yes' ? 'selected' : ''; ?>>Yes
+                                            </option>
+                                            <option value="no"
+                                                <?= $event['registration_required'] === 'no' ? 'selected' : ''; ?>>No
+                                            </option>
+                                        </select>
                                     </div>
                                     <div class="form-group mb-3" style="max-width:500px">
                                         <label for="desktop_image">Desktop Image</label>

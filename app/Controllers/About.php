@@ -24,4 +24,48 @@ class About extends BaseController
 
         return view('header', $data) . view('about', $data) . view('footer');
     }
+    public function aboutmss()
+    {
+       
+        $bannerModel = new BannerModel();
+
+        $banner = $bannerModel->where('page', 'about')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'About MSS',
+            'page_code' => 'about',
+            'banner' => $banner
+        ];
+
+        
+        return view('header', $data) 
+            . view('aboutmss', $data) 
+            . view('footer');
+    }
+    public function ourfounders()
+    {
+       
+        $data = [
+            'page_title' => '',
+            'page_code' => 'our_founders',
+        ];
+
+        
+        return view('header', $data) 
+            . view('ourfounders', $data) 
+            . view('footer');
+    }
+    public function visionandmission()
+    {
+       
+        $data = [
+            'page_title' => '',
+            'page_code' => 'visionandmission',
+        ];
+
+        
+        return view('header', $data) 
+            . view('visionandmission', $data) 
+            . view('footer');
+    }
 }

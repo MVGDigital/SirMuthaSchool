@@ -35,65 +35,85 @@ $routes->setAutoRoute(false);  // Turned off auto routing for security
 
 //Home page
 $routes->get('/', 'Index::index');
-$routes->get('/index', 'Index::index');
+$routes->get('index', 'Index::index');
 
 //AboutUs page
 $routes->get('/about', 'About::index');
+$routes->get('/aboutmss', 'About::aboutmss');
+$routes->get('/ourfounders', 'About::ourfounders');
+$routes->get('/visionandmission', 'About::visionandmission');
+
 
 //Academics page
-$routes->get('/academics', 'Academics::index');
-
+$routes->group('academics', function ($routes) {
+    $routes->get('', 'Academics::index');
+    $routes->get('annulapolicy', 'Academics::annulapolicy');
+});
 //Facilities
-$routes->get('/facilities', 'Facilities::index');
+$routes->group('facilities', function ($routes) {
+    $routes->get('', 'Facilities::index');
+    $routes->get('swimmingpool', 'Facilities::swimmingpool');
+    $routes->get('concerthall', 'Facilities::concerthall');
+    $routes->get('cricketnets', 'Facilities::cricketnets');
+    $routes->get('hockeyfield', 'Facilities::hockeyfield');
+    $routes->get('biologylab', 'Facilities::biologylab');
+    $routes->get('library', 'Facilities::library');
+    $routes->get('musicandartroom', 'Facilities::musicandartroom');
+    $routes->get('networkedclassrooms', 'Facilities::networkedclassrooms');
+    $routes->get('chemistrylab', 'Facilities::chemistrylab');
+    $routes->get('physicslab', 'Facilities::physicslab');
+    $routes->get('computerlab', 'Facilities::computerlab');
+    $routes->get('artandcraft', 'Facilities::artandcraft');
+    $routes->get('technology', 'Facilities::technology');
+    $routes->get('healthandsaftey', 'Facilities::healthandsaftey');
+});
 
 //Statutory
-$routes->get('/statutory', 'Statutory::index');
+$routes->get('statutory', 'Statutory::index');
+$routes->get('statutory/parents-guidelines', 'Statutory::parentsguidelines');	
+$routes->get('statutory/attendance-and-leavepolicy', 'Statutory::leavepolicy');	
+$routes->get('statutory/code-of-contact', 'Statutory::codecontact');	
+$routes->get('statutory/rules-and-regulation', 'Statutory::regulation');	
+$routes->get('statutory/child-support-policy', 'Statutory::supportpolicy');
 
-// Admission
-$routes->get('/admission', 'Admission::index');
-$routes->get('/admission-form', 'Admission::admissionForm');
+//Admission
+$routes->group('admission', function ($routes) {
+    $routes->get('', 'Admission::index');
+    $routes->get('form', 'Admission::admissionForm');
+    $routes->get('lahoc', 'Admission::admissionLahocForm');
+});
 $routes->post('admission/submit', 'Admission::submit');
-$routes->get('admission/success', 'Admission::success'); // Add this line
-$routes->get('/admission/printView/(:num)', 'Admission::printView/$1');
-$routes->get('/admission/list', 'Admission::listAdmissions');
-
-$routes->get('admissionformlahoc', 'AdmissionFormLahoc::index');
-$routes->get('admissionform-lahoc', 'AdmissionFormLahoc::admissionFormlahoc');
+$routes->get('admission/success', 'Admission::success');
+$routes->get('admission/printView/(:num)', 'Admission::printView/$1');
+$routes->get('admission/list', 'Admission::listAdmissions');
 $routes->post('admissionformlahoc/submit', 'AdmissionFormLahoc::submit');
 $routes->get('admissionformlahoc/success', 'AdmissionFormLahoc::success');
 $routes->get('admissionformlahoc/printView/(:num)', 'AdmissionFormLahoc::printView/$1');
 $routes->get('admissionformlahoc/list', 'AdmissionFormLahoc::listAdmissions');
 
-
-
 //Inclusive Education
-$routes->get('/inclusive-education', 'InclusiveEducation::index');
+$routes->get('inclusive-education', 'InclusiveEducation::index');
 
 //Beyond Curriculum
-$routes->get('/beyond-curriculum', 'BeyondCurriculum::index');
+$routes->get('beyond-curriculum', 'BeyondCurriculum::index');
 
-//Parents
-$routes->get('/parents', 'ParentLanding::index');
+//Beyond Curriculum
+$routes->get('parents', 'ParentLanding::index');
 
-//Achievements 
-$routes->get('/achievements', 'Achievements::index');
-
-//In the outdoor 
-$routes->get('/in-the-outdoor', 'InTheOutdoor::index');
-
-
+//Parent Landing 
+$routes->get('achievements', 'Achievements::index');
 
 //Gallery
-$routes->get('/gallery', 'Gallery::index');
+$routes->get('gallery', 'Gallery::index');
 
 //Events
 $routes->group('events', function ($routes) {
     $routes->get('', 'Events::index');
-    $routes->post('set-event-details', 'Events::setEventDetails');
     $routes->get('details', 'Events::eventDetails');
     $routes->get('past-event/details', 'Events::eventDetails');
     $routes->post('register', 'Events::registerEvent');
 });
+$routes->post('events/set-event-details', 'Events::setEventDetails');
 
 //Career
 $routes->group('career', function ($routes) {
@@ -105,19 +125,15 @@ $routes->group('career', function ($routes) {
 });
 
 //Contact
-$routes->get('/contact', 'Contact::index');
-$routes->post('contact/submitContactForm', 'Contact::submitContactForm');
-
-
+$routes->get('contact', 'Contact::index');
 
 $routes->get('/adm1n/login', 'Auth::index', ['filter' => 'noauth']);
 $routes->post('/adm1n/loginCheck', 'Auth::loginCheck');
 $routes->get('/adm1n/logout', 'Auth::logout');
 
-
 // Filter on route group
 $routes->group('', ['filter' => 'auth'], function ($routes) {
-
+    
     // Banner routes
     $routes->get('/adm1n/banner', 'BannerController::index');
     $routes->get('adm1n/banner/create', 'BannerController::add');
@@ -163,14 +179,14 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('adm1n/teacher/delete/(:num)', 'Teacher::delete/$1');
 
     // Board of Member routes
-    $routes->get('/adm1n/boardofmember', 'BoardOfmembers::index');
-    $routes->get('adm1n/boardofmember/list', 'BoardOfmembers::index');
-    $routes->get('adm1n/boardofmember/add', 'BoardOfmembers::add');
-    $routes->get('adm1n/boardofmember/edit/(:num)', 'BoardOfmembers::edit/$1');
-    $routes->post('adm1n/boardofmembers/submit', 'BoardOfmembers::submit');
-    $routes->post('adm1n/boardofmember/update/(:num)', 'BoardOfmembers::update/$1');
-    $routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfmembers::delete/$1');
-    $routes->post('adm1n/boardofmember/toggle-status/(:num)', 'BoardOfmembers::toggleStatus/$1');
+    $routes->get('adm1n/boardofmember', 'BoardOfMembers::index');
+    $routes->get('adm1n/boardofmember/list', 'BoardOfMembers::index');
+    $routes->get('adm1n/boardofmember/add', 'BoardOfMembers::add');
+    $routes->get('adm1n/boardofmember/edit/(:num)', 'BoardOfMembers::edit/$1');
+    $routes->post('adm1n/boardofmembers/submit', 'BoardOfMembers::submit');
+    $routes->post('adm1n/boardofmember/update/(:num)', 'BoardOfMembers::update/$1');
+    $routes->get('adm1n/boardofmember/delete/(:num)', 'BoardOfMembers::delete/$1');
+    $routes->post('adm1n/boardofmember/toggle-status/(:num)', 'BoardOfMembers::toggleStatus/$1');
 
     // Document routes
     $routes->get('adm1n/document', 'DocumentController::index');

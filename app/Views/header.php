@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    <div class="mainContainer">
     <!-- Header Section -->
     <nav class="navbar navbar-light">
         <div class="container-fluid itemSpaceBetween p-0">
@@ -26,7 +26,7 @@
                 <p>Sir mutha school</p>
             </a>
             <div class="headerInfo">
-                <a class="contactBtn" href="<?= base_url('#') ?>">Donate</a>
+                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part">Donate</a>
                 <a class="contactBtn contactMenuBtn" href="<?= base_url('contact') ?>">contact Us</a>
                 <!-- Search Code -->
                 <!-- <button class="search">
@@ -48,8 +48,8 @@
 
     <!-- Menus -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="menusContainer col-12 col-lg-12 col-xl-11 col-xxl-11">
-            <div class="mainMenus col-12 col-md-5 col-lg-5 col-xl-3 col-xxl-3">
+        <div class="menusContainer col-12 col-lg-12 col-xl-11 col-xxl-12">
+            <div class="mainMenus col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                 <ul class="navbar-nav">
                     <li id="aboutMenu" class="nav-item">
                         <a class="nav-link active" href="<?= base_url('about') ?>">About Us</a>
@@ -121,54 +121,70 @@
                         alt="menu arrow"></span>
                     </li>
                     <li id="parentsMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('parents') ?>">Parents Landing Page</a>
+                        <a class="nav-link" href="<?= base_url('parents') ?>">Parents</a>
                     </li>
                 </ul>
             </div>
-            <div class="itemCenter col-12 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+            <div class="itemCenter col-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                 <hr class="whiteLine">
             </div>
-            <div class="subMenus col-12 col-md-5 col-lg-5 col-xl-4 col-xxl-4">
+            <div class="subMenus col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div id="aboutSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">About - Submenu Item 1</a></li>
-                        <li><a href="#">About - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('about#ourhistory') ?>">Our History</a></li>
+                        <li><a href="<?= base_url('about#aboutmss') ?>">About MSS</a></li>
+                        <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
+                        <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
+                        <li><a href="<?= base_url('about#boardmember') ?>">Board Members</a></li>
+                        <li><a target="_blank" href="https://themadrassevasadan.org/Be_A_Part">Be a Part</a></li>
                     </ul>
                 </div>
                 <div id="academicsSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Academics - Submenu Item 1</a></li>
-                        <li><a href="#">Academics - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
+                        <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
+                        <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
+                        <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
                     </ul>
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Facilities - Submenu Item 1</a></li>
-                        <li><a href="#">Facilities - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
+                        <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                        <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
+                        <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                        <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                     </ul>
                 </div>
                 <div id="admissionSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Admissions - Submenu Item 1</a></li>
-                        <li><a href="#">Admissions - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('admission#application_process') ?>" class="active">Application Process</a></li>
+                        <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
+                        <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
+                        <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                     </ul>
                 </div>
                 <div id="statutorySubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Statutory - Submenu Item 1</a></li>
-                        <li><a href="#">Statutory - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('statutory#aboutcbse') ?>" class="active">Compliance Details</a></li>
+                        <li><a href="<?= base_url('statutory#guidelines') ?>">Guidelines for parents</a></li>
+                        <li><a href="<?= base_url('statutory#guidelines') ?>">Attendence & Leave Policy</a></li>
+                        <li><a href="<?= base_url('statutory#aboutcbse') ?>">Code of Conduct</a></li>
+                        <li><a href="<?= base_url('statutory#aboutcbse') ?>">Rules & Regulations</a></li>
+                        <li><a href="<?= base_url('statutory#aboutcbse') ?>">Child Support Policy</a></li>
                     </ul>
                 </div>
                 <div id="inclusiveSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Inclusive - Submenu Item 1</a></li>
-                        <li><a href="#">Inclusive - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a></li>
+                        <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
                     </ul>
                 </div>
                 <div id="curriculumSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="#">Curriculum - Submenu Item 1</a></li>
-                        <li><a href="#">Curriculum - Submenu Item 2</a></li>
+                        <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
+                        <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
+                        <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                     </ul>
                 </div>
                 <div id="gallerySubMenu" class="subMenuItems">
@@ -196,7 +212,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="headerContact-info">
                     <h5>Quick Links</h5>
 
