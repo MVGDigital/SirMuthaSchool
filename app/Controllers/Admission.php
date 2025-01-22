@@ -23,22 +23,35 @@ class Admission extends BaseController
             'video' => $video
         ];
 
-        return view('header', $data) . view('admission_form', $data) . view('footer');
+        return view('header', $data) . view('admission', $data) . view('footer');
     }
 
     public function admissionForm()
     {
         $bannerModel = new BannerModel();
-
         $banner = $bannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Admission Form',
-            'page_code' => 'admission-form',
-            'banner' => $banner,
+            'page_code' => 'admission',
+            'banner' => $banner
         ];
 
         return view('header', $data) . view('admission_form', $data) . view('footer');
+    }
+
+    public function admissionLahocForm()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'admission')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Admission Form',
+            'page_code' => 'admission',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('admission_lahoc', $data) . view('footer');
     }
 
     public function submit()    // This method will be called when the form is submitted
@@ -48,15 +61,6 @@ class Admission extends BaseController
         
         // Retrieve input from the form
         $formData = $this->request->getPost();
-
-        // Validate input data using model rules
-        if (!$admissionModel->validate($formData)) {
-            // If validation fails, pass errors and previous input back to the view
-            return view('admission_form', [
-                'validation' => $admissionModel->errors(),
-                'oldInput' => $formData
-            ]);
-        }
 
         // Generate the next registration number
         $db = \Config\Database::connect(); // Connect to the database
@@ -127,11 +131,21 @@ class Admission extends BaseController
         // Get the registration number from the query parameter
         $registration_number = $this->request->getGet('registration_number');
 
-        // Load a success message view
-        return view('success_page', [
+        // Retrieve banners
+        $bannerModel = new BannerModel();
+        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+
+        // Prepare data for the view
+        $data = [
             'message' => 'Your admission form has been submitted successfully!',
-            'registration_number' => $registration_number
-        ]);
+            'registration_number' => $registration_number,
+            'banners' => $banners,
+            'page_title' => 'Application Success',
+            'page_code' => 'application-success'
+        ];
+
+        // Load the header, success page, and footer
+        return view('header', $data) . view('success_page', $data) . view('footer');
     }
 
     public function printView($registration_number)
@@ -139,29 +153,23 @@ class Admission extends BaseController
         if (!is_numeric($registration_number)) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Invalid Registration Number');
         }
-    
+
         $admissionModel = new AdmissionModel();
         $application_details = $admissionModel->where('registration_number', $registration_number)->first();
-    
-        if ($application_details) {
-            return view('print_view', ['admissions' => $application_details]);
-        } else {
-            return view('print_view', ['admissions' => null]);
-        }
-    }
-    public function listAdmissions()
-    {
-        $admissionModel = new AdmissionModel();
-        $data['admissions'] = $admissionModel->findAll();
-        return view('admissions_list', $data);
-    }
 
-    public function deleteAdmission($id)
-    {
-        $admissionModel = new AdmissionModel();
-        if ($admissionModel->delete($id)) {
-            return redirect()->to('/admission/list')->with('success', 'Admission deleted successfully.');
-        }
-        return redirect()->to('/admission/list')->with('error', 'Failed to delete admission.');
+        // Retrieve banners
+        $bannerModel = new BannerModel();
+        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+
+        // Prepare data for the view
+        $data = [
+            'admissions' => $application_details,
+            'banners' => $banners,
+            'page_title' => 'Print Application',
+            'page_code' => 'print-view'
+        ];
+
+        // Load the header, print view, and footer
+        return view('header', $data) . view('print_view', $data) . view('footer');
     }
 }

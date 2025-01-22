@@ -14,6 +14,7 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -59,7 +60,7 @@
     <!-- Video Section -->
 
     <!-- Parent Portal -->
-    <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80">
+    <section id="parentsportal" class="wave-sec wave-yellowWith-bottom-img container-space ptb-80">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
@@ -68,13 +69,11 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
                     <h3>Parent <span> Portal</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    <p>The Parent Portal at Lady Andal IB School is designed to streamline communication and provide quick access to essential resources for parents. 
+                    Stay informed with academic calendars, fee payment systems, and classroom schedules at your fingertips
                     </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    <p>The portal also offers real-time updates on school events, exam schedules, and important notices, ensuring you are always connected to your child’s educational journey.
+                    With its intuitive interface, the Parent Portal empowers parents to actively engage with the school community and support their child’s learning experience.
                     </p>
                 </div>
             </div>
@@ -91,17 +90,15 @@
             <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Parent <span> Association</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    <p>At Lady Andal IB School, the Parent Association plays a crucial role in fostering a strong partnership between families and the school.
+                    This vibrant group provides parents with opportunities to contribute through volunteering, event coordination, and fundraising activities. 
                     </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    <p>Whether organizing cultural events, supporting academic initiatives, or assisting with charity drives, the Parent Association is central to building a collaborative and enriching environment. 
+                    this group not only allows parents to make a meaningful impact but also helps create lifelong connections within the school community.
                     </p>
-                    <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
-                    </div>
+                    <!--<div class="blueBtn-medium">-->
+                    <!--    <a href="#">Know More</a>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -114,12 +111,7 @@
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3>Resources</span></h3>
-                    <p>The Resources section is your one-stop hub for practical tools and information. From student
-                        handbooks that outline policies and expectations to updated lunch menus and uniform guidelines,
-                        this section ensures that parents have easy access to essential documents. Designed for
-                        convenience, it keeps parents informed and prepared, helping them navigate the school year with
-                        ease. At Lady Andal IB School, we believe in providing resources that make school life more
-                        organized and enjoyable for both parents and students.</p>
+                    <p>The Resources section is your one-stop hub for practical tools and information. From student handbooks that outline policies and expectations to updated lunch menus and uniform guidelines, this section ensures that parents have easy access to essential documents. Designed for convenience, it keeps parents informed and prepared, helping them navigate the school year with ease. At Lady Andal IB School, we believe in providing resources that make school life more organized and enjoyable for both parents and students.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">

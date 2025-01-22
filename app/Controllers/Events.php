@@ -55,9 +55,6 @@ class Events extends BaseController
         $eventId = session()->get('current_event_id');
         $eventType = session()->get('event_type');
 
-        log_message('debug', 'Event ID: ' . $eventId);
-        log_message('debug', 'Event Type: ' . $eventType);
-
         if (!$eventId) {
             return redirect()->to('events');
         }

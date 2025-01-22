@@ -14,6 +14,7 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -56,13 +57,13 @@
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/rsp_gallery_1.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/rsp_gallery_2.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
@@ -71,66 +72,66 @@
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/gallery-1.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/rsp_gallery_3.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/gallery-2.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/rsp_gallery_4.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-3.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/rsp_gallery_5.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-4.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/rsp_gallery_6.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-2" style="display: none;">
-                    <div class="row w100 m-0">
-                        <div class="col-lg-6 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid w100"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid w100"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="row w100 m-0">-->
+                        <!--<div class="col-lg-6 p-0">-->
+                        <!--    <div class="gallery-imgs">-->
+                        <!--        <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid w100"-->
+                        <!--            alt="Sir Gallery Images">-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                    <!--    <div class="col-lg-6 p-0">-->
+                    <!--        <div class="gallery-imgs">-->
+                    <!--            <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid w100"-->
+                    <!--                alt="Sir Gallery Images">-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <div class="row w100 m-0">
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/gallery-1.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/Yoga 1.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/gallery-2.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/Yoga 2.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-3.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/Yoga 3.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-4.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/Yoga 4.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>

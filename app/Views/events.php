@@ -14,6 +14,7 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
@@ -92,7 +93,7 @@
         <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container row w100">
             <div class="col-12 col-md-12 col-lg-5 col-xl-4">
-                <img src="<?= base_url('uploads/desktop_images/'. $event['desktop_image']);?>" class="img-fluid w100"
+                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100"
                     alt="<?= esc($event['event_name']) ?>">
             </div>
             <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50">
@@ -112,4 +113,3 @@
         <?php endforeach; ?>
     </section>
     <!-- Past Events -->
-</main>

@@ -2,10 +2,8 @@
     <!-- Banner Section -->
     <section class="banner-section">
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
             alt="<?= esc($banner['title']); ?>">
-        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
-            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -14,12 +12,13 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
+        </div>
     </section>
     <!-- Banner Section -->
 
     <!-- Section Menus -->
     <section class="container-space innerMenus-sec">
-
+        
         <div class="pageTitleLine col-lg-8 m-auto">
             <hr>
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
@@ -38,8 +37,7 @@
     <!-- Event Details -->
     <section class="event-details-sec">
         <div class="img-overwite-wave">
-            <img src="<?= base_url('uploads/desktop_images/'. $event['desktop_image']);?>" class="img-fluid w100"
-                alt="<?= esc($event['event_name']) ?>">
+            <img src="<?= base_url('images/facilities/green-capus.jpg') ?>" class="img-fluid" alt="">
         </div>
 
         <div class="container-space wave-yellow-overwireLightBg ptb-80-30">
@@ -66,10 +64,8 @@
     </section>
     <!-- Event Details -->
 
+    <script>console.log('Show Registration Form: <?= $show_registration_form ?>');</script>
     <!-- Contact Form -->
-    <script>
-    console.log('Show Registration Form: <?= $show_registration_form ?>');
-    </script>
     <?php if ($show_registration_form): ?>
     <section class="container-space lightColor-bg eventRegBg">
         <div class="contact-container">
@@ -172,4 +168,3 @@
     </section>
     <?php endif; ?>
     <!-- Contact Form -->
-</main>

@@ -190,30 +190,6 @@ splide.mount();
 
 <?php endif; ?>
 
-<?php if ($page_code === 'intheoutdoor'): ?>
-
-    //Board members Slider
-    var splide = new Splide('#founders-slider', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 1,
-    arrows: true,
-    breakpoints: {
-        767: {
-            perPage: 1,
-            pagination: true,
-        },
-    },
-});
-splide.mount();
-
-<?php endif; ?>
-
 <?php if ($page_code === 'facilities'): ?>
 
 //Board members Slider
@@ -275,6 +251,32 @@ var splide = new Splide('#spl-education-slider', {
     },
 });
 splide.mount();
+
+<?php endif; ?>
+
+
+<?php if ($page_code === 'computerlab'): ?>
+
+
+var splide = new Splide('#curve-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: false,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: false,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: false,
+        },
+    },
+});
+splide.mount();
+
 
 <?php endif; ?>
 
@@ -348,53 +350,55 @@ $('.slider-nav').slick({
 });
 /* Student Newsletter */
 
-/* Annual Events */
-var main = new Splide('#annual-event', {
-    type: 'slide',
-    heightRatio: 0.5,
-    pagination: false,
-    arrows: false,
-    cover: true,
-});
+ // Initialize Main Slider
+    var main = new Splide('#annual-event', {
+        type: 'slide',
+        heightRatio: 0.5,
+        pagination: false,
+        arrows: false,
+        cover: true,
+    });
 
-var thumbnails = new Splide('#thumbnail-slider', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    rewind: false,
-    perPage: 6,
-    isNavigation: true,
-    pagination: false,
-    cover: true,
-    dragMinThreshold: {
-        mouse: 4,
-        touch: 10,
-    },
-    breakpoints: {
-        640: {
-            perPage: 3,
+    // Initialize Thumbnail Slider
+    var thumbnails = new Splide('#thumbnail-slider', {
+        type: 'slide',
+        autoplay: false,
+        pauseOnHover: false,
+        rewind: false,
+        perPage: 6,
+        isNavigation: true,
+        pagination: false,
+        cover: true,
+        dragMinThreshold: {
+            mouse: 4,
+            touch: 10,
         },
-    },
-});
+        breakpoints: {
+            640: {
+                perPage: 3,
+            },
+        },
+    });
 
-main.sync(thumbnails);
-main.mount();
-thumbnails.mount();
+    // Sync Sliders
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
 
-
-var splide = new Splide('.annual-event-imgs', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 1,
-    arrows: false,
-});
-splide.mount();
-/* Annual Events */
+    // Initialize Individual Event Sliders
+    document.querySelectorAll('.annual-event-imgs').forEach(function (el) {
+        new Splide(el, {
+            type: 'slide',
+            autoplay: true,
+            pauseOnHover: false,
+            pagination: true,
+            speed: 1000,
+            rewindSpeed: 1000,
+            height: 'auto',
+            perPage: 1,
+            arrows: true,
+        }).mount();
+    });
 
 <?php endif; ?>
 
@@ -855,6 +859,30 @@ $(document).ready(function() {
 <?php if ($page_code === 'contact'): ?>
 
 $(document).ready(function() {
+
+
+    $("#first-name, #last-name").on("input", function() {
+        const value = $(this).val();
+        // Allow only letters and spaces
+        $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
+    });
+
+    $("#email").on("input", function(e) {
+        var value = e.target.value; // Get the current value
+        e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
+    });
+
+    $.validator.addMethod("customEmail", function(value, element) {
+        return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
+    }, "Please enter a valid email address");
+
+    // Restrict input to only numeric characters in the phone number field
+    $("#mobile-number").on("input", function(e) {
+        const value = $(this).val();
+        $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
+    });
+
+
     $("#contact-form").validate({
         rules: {
             "first-name": {
@@ -905,26 +933,11 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "<?= base_url('contact/submitContactForm') ?>",
-                data: $(form).serialize(),
-                success: function(response) {
-                    $('#responseMessage').html(
-                        '<p class="success-message text-center">Your message has been sent successfully!</p>'
-                        );
-                    $(form)[0].reset();
-                },
-                error: function(xhr, status, error) {
-                    $('#responseMessage').html(
-                        '<p class="error-message text-center">There was an error while submitting your message. Please try again later.</p>'
-                        );
-                }
-            });
+            alert("Form submitted successfully!");
+            form.submit();
         }
     });
 });
-
 
 $("#email").on("input", function(e) {
     var value = e.target.value; // Get the current value
@@ -939,6 +952,63 @@ $.validator.addMethod("customEmail", function(value, element) {
 $("#mobile-number").on("input", function(e) {
     const value = $(this).val();
     $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
+});
+
+
+$("#contact-form").validate({
+rules: {
+    "first-name": {
+        required: true,
+        minlength: 2
+    },
+    "last-name": {
+        required: true,
+        minlength: 2
+    },
+    "email": {
+        required: true,
+        customEmail: true
+    },
+    "mobile-number": {
+        required: true,
+        digits: true,
+        minlength: 10,
+        maxlength: 15
+    },
+    "msg": {
+        required: true,
+        minlength: 10
+    }
+},
+messages: {
+    "first-name": {
+        required: "Please enter your first name",
+        minlength: "First name must be at least 2 characters long"
+    },
+    "last-name": {
+        required: "Please enter your last name",
+        minlength: "Last name must be at least 2 characters long"
+    },
+    "email": {
+        required: "Please enter your email address",
+        customEmail: "Please enter a valid email address"
+    },
+    "mobile-number": {
+        required: "Please enter your phone number",
+        digits: "Please enter only numbers",
+        minlength: "Phone number must be at least 10 digits",
+        maxlength: "Phone number cannot exceed 15 digits"
+    },
+    "msg": {
+        required: "Please enter your message",
+        minlength: "Message must be at least 10 characters long"
+    }
+},
+submitHandler: function(form) {
+    alert("Form submitted successfully!");
+    form.submit();
+}
+});
 });
 
 <?php endif; ?>
@@ -1005,7 +1075,6 @@ $('#sir-mutha-campus').click(function() {
     }
 });
 
-
 <?php endif; ?>
 
 <?php if ($page_code === 'gallery'): ?>
@@ -1037,6 +1106,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var tabNumber = evt.currentTarget.getAttribute("data-tab");
         var selectedTabContent = document.getElementById("tab-" + tabNumber);
         selectedTabContent.style.display = "block";
+
+        // Reinitialize pagination for the selected tab
+        reinitializePagination(selectedTabContent);
     }
 });
 
@@ -1135,6 +1207,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php endif; ?>
 </script>
+</div>
 </body>
 
 </html>

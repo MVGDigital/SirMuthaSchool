@@ -46,5 +46,4 @@ class AdmissionLahocModel extends Model
         'family_photo',
     ];
 
-    protected $useTimestamps = true;
 }
