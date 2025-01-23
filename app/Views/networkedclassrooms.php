@@ -14,7 +14,6 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
-        </div>
     </section>
     <!-- Banner Section -->
 
@@ -57,10 +56,10 @@
         </div>
     </section>
 
-   
+
 
     <!-- Co-Curricular -->
-     <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowBG" id="co-curricular">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
@@ -70,13 +69,16 @@
                     <!--        <ul class="splide__list">-->
                     <!--            <li class="splide__slide">-->
 
-                                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
-                                   <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods.</p>
-                                    <!--<div class="blueBtn-medium">-->
-                                    <!--    <a href="<?= base_url('facilities_artandcraft') ?>">Know More</a>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                               
+                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information
+                        fast and more effectively.</p>
+                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of
+                        teaching help students learn a concept that is difficult to understand through traditional
+                        methods.</p>
+                    <!--<div class="blueBtn-medium">-->
+                    <!--    <a href="<?= base_url('facilities_artandcraft') ?>">Know More</a>-->
+                    <!--</div>-->
+                    <!--</li>-->
+
 
                     <!--        </ul>-->
                     <!--    </div>-->
@@ -96,32 +98,33 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Classroom<span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to
+                            shape the future."</h6>
                     </div>
-                    
+
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>" class="img-fluid w100"
-                                    alt="Sir Gallery Images">
+                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>" class="img-fluid w100"
-                                        alt="Sir Gallery Images">
+                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>" class="img-fluid w100"
-                                        alt="Sir Gallery Images">
+                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>" class="img-fluid w100"
-                                    alt="Sir Gallery Images">
+                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                     </div>
@@ -130,14 +133,11 @@
         </div>
     </section>
     <style>
-        p.facilitycontent
-        {
-            font-size: 22px;
-            line-height: 35px;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            color: var(--color-inActive);
-        }
+    p.facilitycontent {
+        font-size: 22px;
+        line-height: 35px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: var(--color-inActive);
+    }
     </style>
-
-        
