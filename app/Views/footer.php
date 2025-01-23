@@ -1102,6 +1102,19 @@ $('#sir-mutha-campus').click(function() {
 });
 splide.mount();
 
+var splide = new Splide('#sports', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+});
+splide.mount();
+
 <?php endif; ?>
 
 <?php if ($page_code === 'gallery'): ?>

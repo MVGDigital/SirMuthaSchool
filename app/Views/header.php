@@ -99,11 +99,10 @@
                             <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                         </ul>
                     </li>
-                    <li id="statutoryMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('statutory') ?>">Statutory</a>
-                    </li>
                     <li id="inclusiveMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
+                        <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
+                        alt="menu arrow"></span>
                         <ul class="dropdown-menu">
                             <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a></li>
                             <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
@@ -111,11 +110,25 @@
                     </li>
                     <li id="curriculumMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
+                        <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
+                        alt="menu arrow"></span>
                         <ul class="dropdown-menu">
                             <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
                             <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
                             <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                         </ul>
+                    </li>
+                    <li id="eventsMenu" class="nav-item">
+                        <a class="nav-link" href="<?= base_url('events') ?>">Events</a>
+                        <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
+                        alt="menu arrow"></span>
+                        <ul class="dropdown-menu">
+                        <li><a href="<?= base_url('events/#upcomingEvents') ?>">Upcoming Events</a></li>
+                        <li><a href="<?= base_url('events/#pastEvents') ?>">Past Events</a></li>
+                        </ul>
+                    </li>
+                    <li id="statutoryMenu" class="nav-item">
+                        <a class="nav-link" href="<?= base_url('statutory') ?>">Statutory</a>
                     </li>
                     <li id="announcementsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('announcements') ?>">Announcements</a>
@@ -129,15 +142,7 @@
                     <li id="galleryMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                     </li>
-                    <li id="eventsMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('events') ?>">Events</a>
-                        <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
-                        alt="menu arrow"></span>
-                        <ul class="dropdown-menu">
-                        <li><a href="<?= base_url('events/#upcomingEvents') ?>">Upcoming Events</a></li>
-                        <li><a href="<?= base_url('events/#pastEvents') ?>">Past Events</a></li>
-                        </ul>
-                    </li>
+                    
                     <li id="careersMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('career') ?>">Careers</a>
                     </li>
@@ -264,7 +269,7 @@
                     </div>
 
                     <div class="mobBtns">
-                        <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part">Donate</a>
+                        <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" traget="_blank">Donate</a>
                         <a class="contactBtn" href="<?= base_url('contact') ?>">contact Us</a>
                     </div>
 
