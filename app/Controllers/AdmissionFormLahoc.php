@@ -125,7 +125,7 @@ class AdmissionFormLahoc extends BaseController
     {
         $admissionModel = new AdmissionLahocModel();
         $data['admissions'] = $admissionModel->findAll();
-        return view('admissionslahoc_list', $data);
+        return view('admissions_list_lahoc', $data);
     }
 
     public function printView($registration_number)
