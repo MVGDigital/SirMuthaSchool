@@ -14,7 +14,6 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
-        </div>
     </section>
     <!-- Banner Section -->
 
@@ -22,9 +21,9 @@
     <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">Adventure Camps</a></li>
-                <li><a href="<?= base_url('academics#cbsecurriculum') ?>">Educational Tours</a></li>
-                <li><a href="<?= base_url('academics#teacherenrichment') ?>">Excursions</a></li>
+                <li><a href="<?= base_url('in-the-outdoors#adventure-camps') ?>" class="active">Adventure Camps</a></li>
+                <li><a href="<?= base_url('in-the-outdoors#excursions') ?>">Educational Tours</a></li>
+                <li><a href="<?= base_url('in-the-outdoors#educational-tour') ?>">Excursions</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -45,8 +44,8 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- CBSE Curriculum Section-->
-    <section class="wave-sec white-bgImg" id="cbsecurriculum">
+    <!-- Adventure Camps Section-->
+    <section id="adventure-camps" class="wave-sec white-bgImg" id="cbsecurriculum">
         <div class="itemSpaceBetween">
             <div class="col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
@@ -62,10 +61,10 @@
             </div>
         </div>
     </section>
-    <!-- CBSE Curriculum Section-->
+    <!-- Adventure Camps Section-->
 
     <!-- Excursions Section -->
-    <section class="container-space blueBg-Sec ptb-80" id="visionmission">
+    <section id="excursions" class="container-space blueBg-Sec ptb-80" id="visionmission">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p50">
                 <div class="sectionTitle-white lft-rgt-content">
@@ -86,9 +85,8 @@
     <!-- Excursions Section -->
 
     <!-- Educational Tours Section-->
-    <section class="">
+    <section id="educational-tour">
         <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
-
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
                 <h3>Educational <span>Tours</span></h3>
@@ -100,5 +98,5 @@
                 <!--</div>-->
             </div>
         </div>
-     </section>
+    </section>
     <!-- Educational Tours Section-->
