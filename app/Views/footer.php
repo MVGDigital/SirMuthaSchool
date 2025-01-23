@@ -44,9 +44,9 @@
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
-                <a href="#">© Copyrights sIR MUTHA SCHOOL</a>
+                <a href="#">© <script> document.write(new Date().getFullYear()) </script> SIR MUTHA SCHOOL</a>
                 <hr>
-                <a href="#"> Designed By MVG Digital </a>
+                <a href="#"> Designed & Developed By MVG Digital </a>
             </div>
         </div>
     </div>
@@ -1009,6 +1009,7 @@ $('#sir-mutha-campus').click(function() {
 
 <?php if ($page_code === 'achievements'): ?>
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function() {
     var tabs = document.getElementsByClassName("Tab");
     var contents = document.getElementsByClassName("tab-content");
@@ -1037,7 +1038,30 @@ document.addEventListener("DOMContentLoaded", function() {
         var selectedTabContent = document.getElementById("tab-" + tabNumber);
         selectedTabContent.style.display = "block";
     }
+=======
+    var splide = new Splide('#teachers', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        1024: {
+            perPage: 2,
+            pagination: true,
+        },
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+>>>>>>> 30e28b8b1deff10d4b8fa677750a5f319f519295
 });
+splide.mount();
 
 <?php endif; ?>
 
