@@ -121,7 +121,7 @@
                                                 <i class="fa-solid fa-school display-4 icon-admission"></i>
                                                 <h5 class="card-title">Admissions</h5>
                                                 <p class="card-text">View and manage admission and FAQ.</p>
-                                                <a href="<?= base_url('adm1n/kindergarten'); ?>"
+                                                <a href="<?= base_url('adm1n/admission'); ?>"
                                                     class="btn bg-colour">Manage Admissions</a>
                                             </div>
                                         </div>
@@ -154,7 +154,7 @@
                                     </div>
 
                                     <!-- Academic Section -->
-                                    <div class="col-md-4 mb-3">
+                                    <!-- <div class="col-md-4 mb-3">
                                         <div class="card text-center">
                                             <div class="card-body">
                                                 <i class="fa-solid fa-graduation-cap display-4 icon-academic"></i>
@@ -175,7 +175,7 @@
                                                 <a href="<?= base_url('adm1n/brochure_policies'); ?>" class="btn bg-colour">Broucher & Policies</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
