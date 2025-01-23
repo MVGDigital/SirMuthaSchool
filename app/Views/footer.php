@@ -44,9 +44,9 @@
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
-                <a href="#">© Copyrights sIR MUTHA SCHOOL</a>
+                <a href="#">© <script> document.write(new Date().getFullYear()) </script> SIR MUTHA SCHOOL</a>
                 <hr>
-                <a href="#"> Designed By MVG Digital </a>
+                <a href="#"> Designed & Developed By MVG Digital </a>
             </div>
         </div>
     </div>
@@ -1079,35 +1079,28 @@ $('#sir-mutha-campus').click(function() {
 
 <?php if ($page_code === 'achievements'): ?>
 
-    document.addEventListener("DOMContentLoaded", function() {
-    var tabs = document.getElementsByClassName("Tab");
-    var contents = document.getElementsByClassName("tab-content");
-
-    // Add event listeners to tabs
-    Array.prototype.forEach.call(tabs, function(tab) {
-        tab.addEventListener("click", setActiveClass);
-    });
-
-    function setActiveClass(evt) {
-        // Remove active class from all tabs
-        Array.prototype.forEach.call(tabs, function(tab) {
-            tab.classList.remove("active");
-        });
-
-        // Add active class to the clicked tab
-        evt.currentTarget.classList.add("active");
-
-        // Hide all tab content
-        Array.prototype.forEach.call(contents, function(content) {
-            content.style.display = "none";
-        });
-
-        // Show the content that corresponds to the clicked tab
-        var tabNumber = evt.currentTarget.getAttribute("data-tab");
-        var selectedTabContent = document.getElementById("tab-" + tabNumber);
-        selectedTabContent.style.display = "block";
-    }
+    var splide = new Splide('#teachers', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        1024: {
+            perPage: 2,
+            pagination: true,
+        },
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
 });
+splide.mount();
 
 <?php endif; ?>
 

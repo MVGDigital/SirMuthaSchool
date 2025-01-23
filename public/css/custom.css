@@ -511,6 +511,7 @@ main{
     line-height: 38px;
     letter-spacing: 2.5px;
     margin-bottom: 20px;
+    text-transform: uppercase;
     font-family: 'Figtree-SemiBold';
 }
 .bannerTitle p{
@@ -781,7 +782,7 @@ main{
     text-align: center;
 }
 .bgWith-bottom-content h6{
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     line-height: 44px;
     margin-bottom: 40px;
@@ -958,6 +959,43 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-color: #F8F8F8;
+}
+.img-hoverEffect .slider-card {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(#FFF, #ff734566);
+    /* background-image: linear-gradient(#FFF, #FFF0C7); */
+}
+.img-hoverEffect.paginationCenter .splide__pagination{
+    bottom: -8%!important;
+}
+.hoverImg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+.hoverImg img{
+    object-fit: cover;
+    height: 30%;
+    width: 35%;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    border: none;
+    transition: all 0.4s ease-in-out;
+
+}
+.hoverImg:hover img{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    border: 2px solid #ff881c;
 }
 .slider-card h5{
     font-size: 18px;
