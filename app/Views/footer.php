@@ -1,5 +1,5 @@
 <footer class="container-space blueBg-Sec ptb-80">
-    <div class="col-lg-3 m-auto ">
+    <div class="col-12 col-lg-6 col-lg-3 col-xl-3 m-auto ">
         <a class="footer-logo" href="<?= base_url('index') ?>">
             <img src="<?= base_url('images/sir-mutha-logo.svg') ?>" class="img-fluid" alt="Sir Mutha School Logo">
             <p>Sir mutha school</p>
@@ -15,7 +15,7 @@
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
-    <div class="col-lg-8 m-auto footer-menus">
+    <div class="col-12 col-md-8 col-lg-12 col-xl-8 m-auto footer-menus">
         <div class="itemSpaceBetween">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
@@ -1072,6 +1072,40 @@ $('#sir-mutha-campus').click(function() {
         video.play();
     } else {
         video.pause();
+    }
+});
+
+<?php endif; ?>
+
+<?php if ($page_code === 'achievements'): ?>
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
+
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
+
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
+
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
+
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
     }
 });
 

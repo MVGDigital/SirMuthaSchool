@@ -6,13 +6,13 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
-        <div class="banner-subTitle">
-            <h2><?= esc($banner['title']); ?></h2>
-        </div>
+            <div class="bannerTitle">
+                <h1>Sir Mutha School</h1>
+                <p>A unit of the madras seva sadan</p>
+            </div>
+            <div class="banner-subTitle">
+                <h2><?= esc($banner['title']); ?></h2>
+            </div>
         <?php endif; ?>
         </div>
     </section>
@@ -37,14 +37,17 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto withYellowBtn statutarypagecontent">
             <h3>Compliance <span>Details</span></h3>
-            <p>Students are prohibited from bringing cell phones, discs, walkmans, iPods, or CDs to school. Confiscated items will not be returned.</p>
-            <p>On occasions when it is essential to bring a mobile phone to school, it must be handed over to the school office at the beginning of the day.</p>
-            <p>The Department of Education strictly prohibits students from riding or driving any motorized vehicles.</p>
-            <p>Any communication (request/complaint/excuse) made by parents should be addressed to the Principal and not to the class teacher.</p>
+            <p>Students are prohibited from bringing cell phones, discs, walkmans, iPods, or CDs to school. Confiscated
+                items will not be returned.</p>
+            <p>On occasions when it is essential to bring a mobile phone to school, it must be handed over to the school
+                office at the beginning of the day.</p>
+            <p>The Department of Education strictly prohibits students from riding or driving any motorized vehicles.
+            </p>
+            <p>Any communication (request/complaint/excuse) made by parents should be addressed to the Principal and not
+                to the class teacher.</p>
             <p>Pupils are responsible for the safe custody of their books and belongings.</p>
-            <p>Any damage done to school property will have to be compensated for, and the disciplinary action taken by the management in this regard is final.</p>
-
-            
+            <p>Any damage done to school property will have to be compensated for, and the disciplinary action taken by
+                the management in this regard is final.</p>
         </div>
     </section>
     <div class="overlay-wave-img">
@@ -56,29 +59,69 @@
     <!-- Policys -->
     <section class="container-space white-bgImg ptb-80" id="guidelines">
         <div class="row m-0 w100">
-            <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
-                <div class="cardWith-under-info">
-                    <div class="sectionTitle-blue">
-                        <h3>Guidelines <span>For Parents</span></h3>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
                     </div>
-                    <img src="<?= base_url('images/statutory/parent-image.jpg') ?>" class="img-fluid w100"
-                        alt="Sir Mutha Logo">
-                    <h6>Provide a conducive environment for studies at home. Assist & guide your ward in doing his/her home - work.</h6>
                     <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutory/parents-guidelines') ?>">Know More</a>
+                        <a href="#" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-0">
-                <div class="cardWith-under-info">
-                    <div class="sectionTitle-blue">
-                        <h3>Attendance & <span>Leave Policy</span></h3>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
                     </div>
-                    <img src="<?= base_url('images/statutory/attendance-policy.jpg') ?>" class="img-fluid w100"
-                        alt="Sir Mutha Logo">
-                    <h6>Pupils should not stay away from school except for special reasons, for which prior leave of absence is to be obtained in writing</h6>
                     <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutory/attendance-and-leavepolicy') ?>">Know More</a>
+                        <a href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Center For Learning</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="#">Know More</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +129,7 @@
     </section>
     <!-- Policys -->
 
-    <section class="container-space linenWhite-bgImg ptb-80" id="">
+    <!-- <section class="container-space linenWhite-bgImg ptb-80" id="">
         <div class="mt-50">
             <div class="row m-0 w100">
                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
@@ -136,15 +179,4 @@
                 </div>
             </div>
         </div>
-    </section>
-    <style>
-        .statutarypagecontent p {
-            
-            font-size: 20px;
-            text-align: center;
-            margin-top: 10px;
-            line-height: 34px;
-            font-family: 'Figtree-Regular';
-            color:white !important;
-        }
-    </style>
+    </section> -->

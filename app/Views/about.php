@@ -33,14 +33,16 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-        <div class="sectionTitle-white col-lg-10 m-auto" >
+        <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Our <span>History</span></h3>
-            <h6>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home. 
-            Established on the 18th of July 2012 and affiliated with the Central Board of Secondary Education, 
-            the school embodies a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the late Chief Justice Sir Mutha Venkatasubba Rao,
-            it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child. 
-            The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a spirit of excellence.
-            Here, learning is not merely an academic endeavour but a journey of self-discovery.
+            <h6>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
+                Established on the 18th of July 2012 and affiliated with the Central Board of Secondary Education,
+                the school embodies a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the
+                late Chief Justice Sir Mutha Venkatasubba Rao,
+                it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child.
+                The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a
+                spirit of excellence.
+                Here, learning is not merely an academic endeavour but a journey of self-discovery.
             </h6>
         </div>
     </section>
@@ -58,7 +60,7 @@
                 <p>Faculty Members</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="1168">0</h6>
+                <h6 class="counter-number" data-count="168">0</h6>
                 <p>I To XII Students</p>
             </div>
         </div>
@@ -69,16 +71,18 @@
     <section class="founders-sec" id="aboutmss">
         <img src="<?= base_url('images/about/founder-bg.jpg') ?>" class="img-fluid deskTopImg w100"
             alt="Sir Mutha and Lady Andal">
-        <img src="<?= base_url('images/about/founder-MobBg.jpg') ?>" class="img-fluid mobImg w100"
+        <img src="<?= base_url('images/about/founder-MobBg.png') ?>" class="img-fluid mobImg w100"
             alt="Sir Mutha and Lady Andal">
 
         <div class="bgWith-bottom-content container-space">
             <div class="col-lg-10 m-auto">
                 <!--<h6>A 90 year old legacy, founded by Sir Mutha & Lady Andal Venkatasubba Rao dedicated to Social Causes,-->
                 <!--    Education, Arts & Sports.</h6>-->
-                <h6>The Madras Seva Sadan was founded in 1928 by Sir & Lady M. Venkatasubba Rao. 
-                It was founded as a Home for grown-up girls and young women "who were poor and destitute", such as deserted wives, helpless widows, and orphans.
-                With a view to impart to them such education and training as would make them fit, in course of time, to look after themselves, and be thoroughly self-supporting and self-reliant.
+                <h6>The Madras Seva Sadan was founded in 1928 by Sir & Lady M. Venkatasubba Rao.
+                    It was founded as a Home for grown-up girls and young women "who were poor and destitute", such as
+                    deserted wives, helpless widows, and orphans.
+                    With a view to impart to them such education and training as would make them fit, in course of time,
+                    to look after themselves, and be thoroughly self-supporting and self-reliant.
                 </h6>
                 <a href="https://themadrassevasadan.org/about" class="blueBtn">Know More</a>
             </div>
@@ -87,83 +91,113 @@
     <!-- Founder bg Section -->
 
     <!-- Founder Slider Section -->
-    <section class="founder-sec" id ="ourfounders">
-        <div class="container-space">
-            <div class="row w100 m-0 ptb-80">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 alignItemCenter">
-                    <div class="sectionTitle-blue lft-rgt-content">
-                        <h3>Our <span>Founders</span></h3>
-                        <div id="founders-slider" class="splide paginationCenter toRight-pagination">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                         <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                                                <h4>Sir Mutha Venkatasubba Rao</h4>
-                                                <p>Sir Mutha Venkatasubba Rao, born on 18 July 1878, was a distinguished legal luminary and social reformer.
-                                                Educated at Madras Christian College, he became the youngest judge of the Madras High Court in 1921, 
-                                                specialising in cases initiated directly in the court. Honoured with a knighthood for his contributions, 
-                                                he received the King George V and VI Medals. Together with his wife, Andalamma, 
-                                                he fervently pursued his passion for social welfare and reform, founding The Madras Seva Sadan—a pioneering institution dedicated to championing women’s rights and empowerment.
-                                                Renowned for his unwavering integrity and meticulousness, he seamlessly blended legal acumen with philanthropy. 
-                                                At the age of 82, on 30 December 1960, he reached the lotus feet of the Almighty, ending a glorious and beautiful life.
-                                                </p>
-                                               
-                                            </div>  
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                                <img src="<?= base_url('images/about/founder_sir_mutha.png') ?>" class="img-fluid w100" alt="Lady Andal">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                         <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                                                <h4>Lady Andal Venkatasubba Rao</h4>
-                                                <p>Lady Andal Venkatasubba Rao, born in 1894, emerged as a transformative figure in a Madras marked by social injustices,
-                                                    particularly against women. Educated at St. Thomas Convent and Presidency High School, she developed a strong social awareness that would define her life’s work.
-                                                    Together with her husband, Justice M. Venkatasubba Rao, she founded The Madras Seva Sadan in 1928, a pioneering institution dedicated to uplifting destitute women and children. 
-                                                    Under her compassionate leadership, the Sadan grew from eight beneficiaries to over 3,000, providing education, shelter, and vocational training. 
-                                                    Honoured with prestigious awards such as the Padma Bhushan, the Kaiser-i-Hind Medal, and the King George VI Medal, she remained humble and devoted to her community. 
-                                                    Lady Andal broke down societal barriers, promoting inclusivity and kindness in her efforts. 
-                                                    Following her husband’s passing in 1960, she bore her loss with grace, continuing her work until her own death in 1969. Her legacy endures through the school named in her honour, embodying her ideals of service, compassion, and unwavering positivity.
-                                                    At the heart of her life’s work was a simple yet profound motto: to brighten the way for others, always with a smile.
-                                                </p>
-                                                
-                                            </div>  
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                                <img src="<?= base_url('images/about/founder_lady1.png') ?>" class="img-fluid w100" alt="Lady Andal">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                         <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                                                <h4>Mrs. C. Prema Kumar</h4>
-                                                <p>Mrs. C. Prema Kumar, the grandniece of Sir Mutha Venkatasubba Rao and Lady Andal Venkatasubba Rao and long-time Correspondent of the Lady Andal Venkatasubba Rao School in Chetpet, 
-                                                commanded respect wherever she went. Known for her sharp business acumen, probably a result of her B. Com degree, she earned her Diploma in Montessori Teachers Training and dreamed of setting up a school that was child-centric over being academics-centric. 
-                                                Culminating in the formation of Lady Andal Venkatasubba Rao School. Mrs. C. Prema Kumar was a great leader. She was the pillar of The Madras Seva Sadan, a visionary, a wonderful mentor, and a perfectionist in all aspects of life. 
-                                                Mrs. Prema Kumar was the pioneer of inclusive education in India. She worked tirelessly to mainstream children with physical and learning disabilities, and other special needs.
-                                                To facilitate this, she started an Occupational Therapy Centre and a Learning Centre to cater to the needs of the special children. She aspired to provide children with a positive environment and atmosphere that nurtured all-round development, enabling them to look forward to school.
-                                                She was never inclined towards forcing children into a mould; instead, she believed in allowing them to flourish and discover their true potential. On 19th May 2017, Mrs.C.Prema Kumar was reunited with her beloved Sir Mutha and Lady Andal in their Heavenly Abode. Although her earthly journey came to an end, her ideals and legacy continue to thrive.
-                                                </p>
-                                                
-                                            </div>  
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                                <img src="<?= base_url('images/about/founder_prema.png') ?>" class="img-fluid w100" alt="Lady Andal">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                    
-                                    
-                                </ul>
-                            </div>
-                        </div>
+    <section class="founder-sec" id="ourfounders">
+        <div class="container-space ptb-80">
+            <div class="sectionTitle-blue lft-rgt-content">
+                <h3>Our <span>Founders</span></h3>
+                <div id="founders-slider" class="splide paginationCenter">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="row w100 m-0">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                        <h4>Sir Mutha Venkatasubba Rao</h4>
+                                        <p>Sir Mutha Venkatasubba Rao, born on 18 July 1878, was a distinguished legal
+                                            luminary and social reformer.
+                                            Educated at Madras Christian College, he became the youngest judge of the
+                                            Madras High Court in 1921,
+                                            specialising in cases initiated directly in the court. Honoured with a
+                                            knighthood for his contributions,
+                                            he received the King George V and VI Medals. Together with his wife,
+                                            Andalamma,
+                                            he fervently pursued his passion for social welfare and reform, founding The
+                                            Madras Seva Sadan—a pioneering institution dedicated to championing women’s
+                                            rights and empowerment.
+                                            Renowned for his unwavering integrity and meticulousness, he seamlessly
+                                            blended legal acumen with philanthropy.
+                                            At the age of 82, on 30 December 1960, he reached the lotus feet of the
+                                            Almighty, ending a glorious and beautiful life.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                        <img src="<?= base_url('images/about/founder_sir_mutha.png') ?>"
+                                            class="img-fluid w100" alt="Lady Andal">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row w100 m-0">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                        <h4>Lady Andal Venkatasubba Rao</h4>
+                                        <p>Lady Andal Venkatasubba Rao, born in 1894, emerged as a transformative figure
+                                            in a Madras marked by social injustices,
+                                            particularly against women. Educated at St. Thomas Convent and Presidency
+                                            High School, she developed a strong social awareness that would define her
+                                            life’s work.
+                                            Together with her husband, Justice M. Venkatasubba Rao, she founded The
+                                            Madras Seva Sadan in 1928, a pioneering institution dedicated to uplifting
+                                            destitute women and children.
+                                            Under her compassionate leadership, the Sadan grew from eight beneficiaries
+                                            to over 3,000, providing education, shelter, and vocational training.
+                                            Honoured with prestigious awards such as the Padma Bhushan, the
+                                            Kaiser-i-Hind Medal, and the King George VI Medal, she remained humble and
+                                            devoted to her community.
+                                            Lady Andal broke down societal barriers, promoting inclusivity and kindness
+                                            in her efforts.
+                                            Following her husband’s passing in 1960, she bore her loss with grace,
+                                            continuing her work until her own death in 1969. Her legacy endures through
+                                            the school named in her honour, embodying her ideals of service, compassion,
+                                            and unwavering positivity.
+                                            At the heart of her life’s work was a simple yet profound motto: to brighten
+                                            the way for others, always with a smile.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                        <img src="<?= base_url('images/about/founder_lady1.png') ?>"
+                                            class="img-fluid w100" alt="Lady Andal">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row w100 m-0">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                        <h4>Mrs. C. Prema Kumar</h4>
+                                        <p>Mrs. C. Prema Kumar, the grandniece of Sir Mutha Venkatasubba Rao and Lady
+                                            Andal Venkatasubba Rao and long-time Correspondent of the Lady Andal
+                                            Venkatasubba Rao School in Chetpet,
+                                            commanded respect wherever she went. Known for her sharp business acumen,
+                                            probably a result of her B. Com degree, she earned her Diploma in Montessori
+                                            Teachers Training and dreamed of setting up a school that was child-centric
+                                            over being academics-centric.
+                                            Culminating in the formation of Lady Andal Venkatasubba Rao School. Mrs. C.
+                                            Prema Kumar was a great leader. She was the pillar of The Madras Seva Sadan,
+                                            a visionary, a wonderful mentor, and a perfectionist in all aspects of life.
+                                            Mrs. Prema Kumar was the pioneer of inclusive education in India. She worked
+                                            tirelessly to mainstream children with physical and learning disabilities,
+                                            and other special needs.
+                                            To facilitate this, she started an Occupational Therapy Centre and a
+                                            Learning Centre to cater to the needs of the special children. She aspired
+                                            to provide children with a positive environment and atmosphere that nurtured
+                                            all-round development, enabling them to look forward to school.
+                                            She was never inclined towards forcing children into a mould; instead, she
+                                            believed in allowing them to flourish and discover their true potential. On
+                                            19th May 2017, Mrs.C.Prema Kumar was reunited with her beloved Sir Mutha and
+                                            Lady Andal in their Heavenly Abode. Although her earthly journey came to an
+                                            end, her ideals and legacy continue to thrive.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                        <img src="<?= base_url('images/about/founder_prema.png') ?>"
+                                            class="img-fluid w100" alt="Lady Andal">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    
-                </div> -->
             </div>
         </div>
     </section>
@@ -179,11 +213,16 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p50">
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3>Vision <span class="and">&</span> <span> Mission</span></h3>
-                    
-                    <p>To provide top-notch scholastic education, with a broad, participative and balanced curriculum</p>
-                    <p>To facilitate a nurturing and safe environment that encourages lifelong learning and personal growth</p>
-                    <p>To enable students to discover their talents & capabilities and achieve their true potential, so that they may reach the highest possible standard in everything they undertake</p>
-                    <p>To encourage citizenship and responsibility and teach generosity of spirit, so that students become self-disciplined and learn to respect themselves, each other, and the world in general.</p>
+
+                    <p>To provide top-notch scholastic education, with a broad, participative and balanced curriculum
+                    </p>
+                    <p>To facilitate a nurturing and safe environment that encourages lifelong learning and personal
+                        growth</p>
+                    <p>To enable students to discover their talents & capabilities and achieve their true potential, so
+                        that they may reach the highest possible standard in everything they undertake</p>
+                    <p>To encourage citizenship and responsibility and teach generosity of spirit, so that students
+                        become self-disciplined and learn to respect themselves, each other, and the world in general.
+                    </p>
                     <!-- <div class="blueBtn-medium">
                         <a href="<?= base_url('visionandmission') ?>">Know More</a>
                     </div> -->
@@ -198,7 +237,7 @@
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Our Board<span> Members</span></h3>
         </div>
-        <div class="col-lg-9 m-auto">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-9 m-auto">
             <div id="board-member-slider" class="splide paginationCenter mt-50">
                 <div class="splide__track">
                     <ul class="splide__list">
