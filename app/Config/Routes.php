@@ -100,6 +100,12 @@ $routes->get('beyond-curriculum', 'BeyondCurriculum::index');
 //Beyond Curriculum
 $routes->get('parents', 'ParentLanding::index');
 
+//Announcement
+$routes->get('announcements', 'Announcement::index');
+
+//Intheoutdoors
+$routes->get('in-the-outdoors', 'Intheoutdoors::index');
+
 //Parent Landing 
 $routes->get('achievements', 'Achievements::index');
 

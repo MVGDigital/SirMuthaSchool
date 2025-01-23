@@ -73,8 +73,8 @@
                 <h3>Occupational <span>Theraphy</span></h3>
                 <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the essential role of the Occupational Therapist in paediatrics.
                 </h6>
-                <h6 class="light-blue"> The primary mission is to help children play, grow, and develop the skills vital for a fulfilling adult life. When a child struggles with writing, displays poor motor control, or suffers from a fleeting attention span, the Occupational Therapist conducts a thorough assessment and may recommend tailored therapy sessions.</h6>
-                <h6 class="light-blue">Utilising Sensory Integration and a Biomechanical framework, we observe significant improvements in both gross and fine motor coordination. This ripple effect strengthens handwriting, attention span, memory, and self-esteem, resulting in remarkable progress for the children in our care.</h6>
+                <p class="light-blue"> The primary mission is to help children play, grow, and develop the skills vital for a fulfilling adult life. When a child struggles with writing, displays poor motor control, or suffers from a fleeting attention span, the Occupational Therapist conducts a thorough assessment and may recommend tailored therapy sessions.</p>
+                <p class="light-blue">Utilising Sensory Integration and a Biomechanical framework, we observe significant improvements in both gross and fine motor coordination. This ripple effect strengthens handwriting, attention span, memory, and self-esteem, resulting in remarkable progress for the children in our care.</p>
                 <!--<div class="blueBtn-medium text-center">-->
                 <!--    <a href="#">Know More</a>-->
                 <!--</div>-->
