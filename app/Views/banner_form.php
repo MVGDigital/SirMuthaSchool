@@ -57,10 +57,12 @@
                                                 </div>
                                                 <div class="mb-3 row">
                                                     <label for="select-page"
-                                                        class="col-sm-2 col-form-label text-lg-end">Select Page<span class="text-danger">*</span></label>
+                                                        class="col-sm-2 col-form-label text-lg-end">Select Page<span
+                                                            class="text-danger">*</span></label>
                                                     <div class="col-sm-10">
                                                         <select class="form-select" id="select-page" name="page">
-                                                            <option <?= !isset($banner) ? 'selected' : '' ?> disabled>Select a
+                                                            <option <?= !isset($banner) ? 'selected' : '' ?> disabled>
+                                                                Select a
                                                                 Page
                                                             </option>
                                                             <option value="home"
@@ -99,6 +101,15 @@
                                                             <option value="admission"
                                                                 <?= isset($banner) && $banner['page'] == 'admission' ? 'selected' : '' ?>>
                                                                 Admission</option>
+                                                            <option value="announcement"
+                                                                <?= isset($banner) && $banner['page'] == 'announcement' ? 'selected' : '' ?>>
+                                                                Announcements</option>
+                                                            <option value="achievement"
+                                                                <?= isset($banner) && $banner['page'] == 'achievement' ? 'selected' : '' ?>>
+                                                                Achievements</option>
+                                                            <option value="intheoutdoor"
+                                                                <?= isset($banner) && $banner['page'] == 'intheoutdoor' ? 'selected' : '' ?>>
+                                                                In the outdoor</option>
                                                             <option value="parents"
                                                                 <?= isset($banner) && $banner['page'] == 'parents' ? 'selected' : '' ?>>
                                                                 Parents</option>
@@ -114,7 +125,8 @@
 
                                                 <div class="mb-3 row">
                                                     <label for="banner-title"
-                                                        class="col-sm-2 col-form-label text-lg-end">Banner Title<span class="text-danger">*</span></label>
+                                                        class="col-sm-2 col-form-label text-lg-end">Banner Title<span
+                                                            class="text-danger">*</span></label>
                                                     <div class="col-sm-10">
                                                         <input class="form-control" type="text" id="banner-title"
                                                             name="title" placeholder="Enter banner title"
@@ -135,6 +147,21 @@
                                                             placeholder="Enter banner caption"><?= isset($banner) ? esc($banner['caption']) : '' ?></textarea>
                                                         <small class="text-danger">
                                                             <?= session('errors.caption') ?>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                                <!-- <label for="">:</label>
+                                                <input type="text" name="hyperlink" id="hyperlink"
+                                                    value="<?= old('hyperlink') ?>"> -->
+                                                <div class="mb-3 row">
+                                                    <label for="hyperlink"
+                                                        class="col-sm-2 col-form-label text-lg-end">Hyperlink (optional)</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" id="hyperlink"
+                                                            name="hyperlink"
+                                                            placeholder="Enter hyperlink"value="<?= isset($banner) ? esc($banner['hyperlink']) : '' ?>">
+                                                        <small class="text-danger">
+                                                            <?= session('errors.hyperlink') ?>
                                                         </small>
                                                     </div>
                                                 </div>

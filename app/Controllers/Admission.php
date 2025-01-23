@@ -172,4 +172,20 @@ class Admission extends BaseController
         // Load the header, print view, and footer
         return view('header', $data) . view('print_view', $data) . view('footer');
     }
+
+    public function listAdmissions()
+    {
+        $admissionModel = new AdmissionModel();
+        $data['admissions'] = $admissionModel->findAll();
+        return view('admissions_list', $data);
+    }
+
+    public function deleteAdmission($id)
+    {
+        $admissionModel = new AdmissionModel();
+        if ($admissionModel->delete($id)) {
+            return redirect()->to('/adm1n/admission')->with('success', 'Admission deleted successfully.');
+        }
+        return redirect()->to('/adm1n/admission')->with('error', 'Failed to delete admission.');
+    }
 }

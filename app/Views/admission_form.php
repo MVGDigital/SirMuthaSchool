@@ -147,7 +147,6 @@
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
-        </div>
     </section>
     <!-- Banner Section -->
     <section>
