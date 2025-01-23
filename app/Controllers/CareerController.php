@@ -17,6 +17,7 @@ class CareerController extends BaseController
         $categories = $careerModel->select('job_title')->groupBy('job_title')->findAll();
         $jobs = $careerModel->select('career_id, job_title, employment_type, location, posted_on, last_applied_date, job_overview, key_responsibilities, qualifications, experience, who_are_we_looking_for, must_have, nice_to_have')
                         ->where('publish', 1)
+                        ->where('last_applied_date >=', date('Y-m-d'))
                         ->orderBy('posted_on', 'DESC')
                         ->findAll();
         $totalJobs = count($jobs);
@@ -40,7 +41,8 @@ class CareerController extends BaseController
         $category = $this->request->getVar('category');
 
         $query = $careerModel->select('career_id, job_title, employment_type, location, posted_on, last_applied_date, job_overview, key_responsibilities, qualifications, experience, who_are_we_looking_for, must_have, nice_to_have')
-                            ->where('publish', 1);
+                            ->where('publish', 1)
+                            ->where('last_applied_date >=', date('Y-m-d'));
 
         if ($keyword) {
             $query->groupStart()
