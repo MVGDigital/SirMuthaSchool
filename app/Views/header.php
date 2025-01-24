@@ -251,16 +251,16 @@
 
                     <div class="socialMedial-links">
                         <div class="socialIcons">
-                            <img src="<?= base_url('images/menu-instaIcon.svg') ?>" alt="">
-                            <span>Instagram</span>
+                            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/menu-instaIcon.svg') ?>" alt="">
+                            <span>Instagram</span></a>
                         </div>
                         <div class="socialIcons">
-                            <img src="<?= base_url('images/menu-facebookIcon.svg') ?>" alt="">
-                            <span>Facebook</span>
+                            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/menu-facebookIcon.svg') ?>" alt="">
+                            <span>Facebook</span></a>
                         </div>
                         <div class="socialIcons">
-                            <img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
-                            <span>Twitter</span>
+                            <a href=""><img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
+                            <span>Twitter</span></a>
                         </div>
                     </div>
 
