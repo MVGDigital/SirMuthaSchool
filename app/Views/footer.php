@@ -66,6 +66,7 @@
 <script src="<?= base_url('js/juery.validate.additional-methods.js') ?>"></script>
 <script src="<?= base_url('js/slimselect.min.js') ?>"></script>
 <script src="<?= base_url('js/custom.js') ?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
 <script>
 <?php if ($page_code === 'index'): ?>
@@ -1039,6 +1040,7 @@ $('#sir-mutha-campus').click(function() {
 
 <?php if ($page_code === 'achievements'): ?>
 
+<<<<<<< HEAD
     <<
     <<
     <<
@@ -1051,6 +1053,163 @@ document.addEventListener("DOMContentLoaded", function() {
             // Add event listeners to tabs
             Array.prototype.forEach.call(tabs, function(tab) {
                 tab.addEventListener("click", setActiveClass);
+=======
+    var splide = new Splide('#teachers', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        1024: {
+            perPage: 2,
+            pagination: true,
+        },
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+var splide = new Splide('#sports', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+});
+splide.mount();
+
+<?php endif; ?>
+
+<?php if ($page_code === 'announcement'): ?>
+    
+
+    $(document).ready(function() {
+
+        var pdfFiles = [
+        {
+            url: "<?= base_url('images/announcements/Circular-Open-House-2024.pdf'); ?>",
+            title: "Document 1: Circular"
+        },
+        {
+            url: "<?= base_url('images/announcements/Invitation-for-the-Farewell-Circular.pdf'); ?>",
+            title: "Document 2: Circular"
+        }
+        ];
+
+        var pdfjsLib = window['pdfjs-dist/build/pdf'];
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+        pdfFiles.forEach(function(file, index) {
+            // Create a container for each PDF and its title
+            var container = $('<div class="pdf-container" style="margin-bottom: 20px;"></div>').appendTo('#pdf-render-area');
+
+            // Add the title above the canvas
+            $('<h3 style="text-align: center;">' + file.title + '</h3>').appendTo(container);
+
+            // Create the canvas for rendering the PDF
+            var canvas = $('<canvas></canvas>').appendTo(container).get(0);
+
+            // Load the PDF and render it
+            var loadingTask = pdfjsLib.getDocument(file.url);
+            loadingTask.promise.then(function(pdf) {
+                console.log(`PDF ${index + 1} loaded`);
+
+                pdf.getPage(1).then(function(page) {
+                    console.log('Page loaded');
+
+                    var scale = 1.5;
+                    var viewport = page.getViewport({ scale: scale });
+
+                    var context = canvas.getContext('2d');
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+
+                    var renderContext = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+                    var renderTask = page.render(renderContext);
+                    renderTask.promise.then(function() {
+                        console.log(`PDF ${index + 1} rendered`);
+                    });
+                });
+            }).catch(function(error) {
+                console.error('Error loading PDF:', error);
+            });
+        });
+    });
+
+
+
+
+<?php endif; ?>
+
+
+<?php if ($page_code === 'gallery'): ?>
+
+document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
+
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
+
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
+
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
+
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
+
+        // Reinitialize pagination for the selected tab
+        reinitializePagination(selectedTabContent);
+    }
+});
+
+<?php endif; ?>
+
+<?php if ($page_code === 'parents'): ?>
+
+var video = $('#sir-mutha-campus').get(0); // Get the video element
+var playOverlay = $('#playOverlay');
+
+// Ensure the video is muted for autoplay to work
+video.muted = true;
+
+// Use IntersectionObserver to detect when the video section is in view
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            // If the video is in view, start playing it
+            video.play().catch(function(error) {
+                console.log('Autoplay prevented:', error);
+>>>>>>> a06132e1c52dff91400982d2e4b280fdff618194
             });
 
             function setActiveClass(evt) {
