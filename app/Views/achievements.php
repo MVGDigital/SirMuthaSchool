@@ -39,7 +39,7 @@
     </section>
     <!-- Section Menus -->
 
-    <!--  Teachers Section -->
+    <!--  Sports Section -->
     <section class="container-space blueBg-Sec ptb-80">
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Sports <span> Achievements</span></h3>
@@ -49,7 +49,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6> Sarvepalli Sai Aditya</h6>
@@ -58,7 +58,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Aarushi R Chowatia</h6>
@@ -67,7 +67,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Devan S</h6>
@@ -76,7 +76,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>The swimming team of Sir Mutha School</h6>
@@ -86,7 +86,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Mohamed Izaan</h6>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </section>
-    <!--  Teachers Sections -->
+    <!--  Sports Sections -->
 
     <!-- Inter School Section-->
     <section id="inter-school" class="wave-sec white-bgImg" id="cbsecurriculum">
