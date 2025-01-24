@@ -10,8 +10,8 @@
             <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
         </div>
         <div class="social-media">
-            <a href="#"><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
-            <a href="#"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
@@ -1040,21 +1040,7 @@ $('#sir-mutha-campus').click(function() {
 
 <?php if ($page_code === 'achievements'): ?>
 
-<<<<<<< HEAD
-    <<
-    <<
-    <<
-    <
-    HEAD
-document.addEventListener("DOMContentLoaded", function() {
-            var tabs = document.getElementsByClassName("Tab");
-            var contents = document.getElementsByClassName("tab-content");
-
-            // Add event listeners to tabs
-            Array.prototype.forEach.call(tabs, function(tab) {
-                tab.addEventListener("click", setActiveClass);
-=======
-    var splide = new Splide('#teachers', {
+var splide = new Splide('#teachers', {
     type: 'slide',
     autoplay: false,
     pauseOnHover: false,
@@ -1093,12 +1079,11 @@ splide.mount();
 <?php endif; ?>
 
 <?php if ($page_code === 'announcement'): ?>
-    
 
-    $(document).ready(function() {
 
-        var pdfFiles = [
-        {
+$(document).ready(function() {
+
+    var pdfFiles = [{
             url: "<?= base_url('images/announcements/Circular-Open-House-2024.pdf'); ?>",
             title: "Document 1: Circular"
         },
@@ -1106,50 +1091,54 @@ splide.mount();
             url: "<?= base_url('images/announcements/Invitation-for-the-Farewell-Circular.pdf'); ?>",
             title: "Document 2: Circular"
         }
-        ];
+    ];
 
-        var pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
 
-        pdfFiles.forEach(function(file, index) {
-            // Create a container for each PDF and its title
-            var container = $('<div class="pdf-container" style="margin-bottom: 20px;"></div>').appendTo('#pdf-render-area');
+    pdfFiles.forEach(function(file, index) {
+        // Create a container for each PDF and its title
+        var container = $('<div class="pdf-container" style="margin-bottom: 20px;"></div>').appendTo(
+            '#pdf-render-area');
 
-            // Add the title above the canvas
-            $('<h3 style="text-align: center;">' + file.title + '</h3>').appendTo(container);
+        // Add the title above the canvas
+        $('<h3 style="text-align: center;">' + file.title + '</h3>').appendTo(container);
 
-            // Create the canvas for rendering the PDF
-            var canvas = $('<canvas></canvas>').appendTo(container).get(0);
+        // Create the canvas for rendering the PDF
+        var canvas = $('<canvas></canvas>').appendTo(container).get(0);
 
-            // Load the PDF and render it
-            var loadingTask = pdfjsLib.getDocument(file.url);
-            loadingTask.promise.then(function(pdf) {
-                console.log(`PDF ${index + 1} loaded`);
+        // Load the PDF and render it
+        var loadingTask = pdfjsLib.getDocument(file.url);
+        loadingTask.promise.then(function(pdf) {
+            console.log(`PDF ${index + 1} loaded`);
 
-                pdf.getPage(1).then(function(page) {
-                    console.log('Page loaded');
+            pdf.getPage(1).then(function(page) {
+                console.log('Page loaded');
 
-                    var scale = 1.5;
-                    var viewport = page.getViewport({ scale: scale });
-
-                    var context = canvas.getContext('2d');
-                    canvas.width = viewport.width;
-                    canvas.height = viewport.height;
-
-                    var renderContext = {
-                        canvasContext: context,
-                        viewport: viewport
-                    };
-                    var renderTask = page.render(renderContext);
-                    renderTask.promise.then(function() {
-                        console.log(`PDF ${index + 1} rendered`);
-                    });
+                var scale = 1.5;
+                var viewport = page.getViewport({
+                    scale: scale
                 });
-            }).catch(function(error) {
-                console.error('Error loading PDF:', error);
+
+                var context = canvas.getContext('2d');
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.promise.then(function() {
+                    console.log(`PDF ${index + 1} rendered`);
+                });
             });
+        }).catch(function(error) {
+            console.error('Error loading PDF:', error);
         });
     });
+});
 
 
 
@@ -1209,201 +1198,83 @@ var observer = new IntersectionObserver(function(entries) {
             // If the video is in view, start playing it
             video.play().catch(function(error) {
                 console.log('Autoplay prevented:', error);
->>>>>>> a06132e1c52dff91400982d2e4b280fdff618194
             });
+        } else {
+            // If the video goes out of view, pause it
+            video.pause();
+        }
+    });
+}, {
+    threshold: 0.5 // Video will start playing when 50% of it is visible
+});
 
-            function setActiveClass(evt) {
-                // Remove active class from all tabs
-                Array.prototype.forEach.call(tabs, function(tab) {
-                    tab.classList.remove("active");
-                });
+// Observe the section containing the video
+observer.observe(document.querySelector('#campusVideo'));
 
-                // Add active class to the clicked tab
-                evt.currentTarget.classList.add("active");
+// Hide overlay when the video starts playing
+video.addEventListener('play', function() {
+    playOverlay.addClass('hidden');
+});
 
-                // Hide all tab content
-                Array.prototype.forEach.call(contents, function(content) {
-                    content.style.display = "none";
-                });
+// Show overlay when the video is paused or ended
+video.addEventListener('pause', function() {
+    playOverlay.removeClass('hidden');
+});
 
-                // Show the content that corresponds to the clicked tab
-                var tabNumber = evt.currentTarget.getAttribute("data-tab");
-                var selectedTabContent = document.getElementById("tab-" + tabNumber);
-                selectedTabContent.style.display = "block";
-            } ===
-            ===
-            =
-            var splide = new Splide('#teachers', {
-                type: 'slide',
-                autoplay: false,
-                pauseOnHover: false,
-                pagination: true,
-                speed: 1000,
-                rewindSpeed: 1000,
-                height: 'auto',
-                perPage: 3,
-                arrows: true,
-                breakpoints: {
-                    1024: {
-                        perPage: 2,
-                        pagination: true,
-                    },
-                    767: {
-                        perPage: 1,
-                        pagination: true,
-                    },
-                },
-                >>>
-                >>>
-                >
-                30e28 b8b1deff10d4b8fa677750a5f319f519295
-            });
-            splide.mount();
+video.addEventListener('ended', function() {
+    playOverlay.removeClass('hidden');
+});
 
-            var splide = new Splide('#sports', {
-                type: 'slide',
-                autoplay: false,
-                pauseOnHover: false,
-                pagination: true,
-                speed: 1000,
-                rewindSpeed: 1000,
-                height: 'auto',
-                perPage: 1,
-                arrows: true,
-            });
-            splide.mount();
+// Play or pause the video when the overlay is clicked
+playOverlay.click(function() {
+    if (video.paused) {
+        video.play();
+        playOverlay.addClass('hidden'); // Hide the overlay when playing
+    } else {
+        video.pause();
+        playOverlay.removeClass('hidden'); // Show the overlay when paused
+    }
+});
 
-            <?php endif; ?>
+// Toggle play/pause when clicking on the video itself
+$('#sir-mutha-campus').click(function() {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
 
-            <?php if ($page_code === 'gallery'): ?>
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
 
-            document.addEventListener("DOMContentLoaded", function() {
-                var tabs = document.getElementsByClassName("Tab");
-                var contents = document.getElementsByClassName("tab-content");
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
 
-                // Add event listeners to tabs
-                Array.prototype.forEach.call(tabs, function(tab) {
-                    tab.addEventListener("click", setActiveClass);
-                });
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
 
-                function setActiveClass(evt) {
-                    // Remove active class from all tabs
-                    Array.prototype.forEach.call(tabs, function(tab) {
-                        tab.classList.remove("active");
-                    });
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
 
-                    // Add active class to the clicked tab
-                    evt.currentTarget.classList.add("active");
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
+    }
+});
 
-                    // Hide all tab content
-                    Array.prototype.forEach.call(contents, function(content) {
-                        content.style.display = "none";
-                    });
-
-                    // Show the content that corresponds to the clicked tab
-                    var tabNumber = evt.currentTarget.getAttribute("data-tab");
-                    var selectedTabContent = document.getElementById("tab-" + tabNumber);
-                    selectedTabContent.style.display = "block";
-
-                    // Reinitialize pagination for the selected tab
-                    reinitializePagination(selectedTabContent);
-                }
-            });
-
-            <?php endif; ?>
-
-            <?php if ($page_code === 'parents'): ?>
-
-            var video = $('#sir-mutha-campus').get(0); // Get the video element
-            var playOverlay = $('#playOverlay');
-
-            // Ensure the video is muted for autoplay to work
-            video.muted = true;
-
-            // Use IntersectionObserver to detect when the video section is in view
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        // If the video is in view, start playing it
-                        video.play().catch(function(error) {
-                            console.log('Autoplay prevented:', error);
-                        });
-                    } else {
-                        // If the video goes out of view, pause it
-                        video.pause();
-                    }
-                });
-            }, {
-                threshold: 0.5 // Video will start playing when 50% of it is visible
-            });
-
-            // Observe the section containing the video
-            observer.observe(document.querySelector('#campusVideo'));
-
-            // Hide overlay when the video starts playing
-            video.addEventListener('play', function() {
-                playOverlay.addClass('hidden');
-            });
-
-            // Show overlay when the video is paused or ended
-            video.addEventListener('pause', function() {
-                playOverlay.removeClass('hidden');
-            });
-
-            video.addEventListener('ended', function() {
-                playOverlay.removeClass('hidden');
-            });
-
-            // Play or pause the video when the overlay is clicked
-            playOverlay.click(function() {
-                if (video.paused) {
-                    video.play();
-                    playOverlay.addClass('hidden'); // Hide the overlay when playing
-                } else {
-                    video.pause();
-                    playOverlay.removeClass('hidden'); // Show the overlay when paused
-                }
-            });
-
-            // Toggle play/pause when clicking on the video itself
-            $('#sir-mutha-campus').click(function() {
-                if (video.paused) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-            document.addEventListener("DOMContentLoaded", function() {
-                var tabs = document.getElementsByClassName("Tab");
-                var contents = document.getElementsByClassName("tab-content");
-
-                // Add event listeners to tabs
-                Array.prototype.forEach.call(tabs, function(tab) {
-                    tab.addEventListener("click", setActiveClass);
-                });
-
-                function setActiveClass(evt) {
-                    // Remove active class from all tabs
-                    Array.prototype.forEach.call(tabs, function(tab) {
-                        tab.classList.remove("active");
-                    });
-
-                    // Add active class to the clicked tab
-                    evt.currentTarget.classList.add("active");
-
-                    // Hide all tab content
-                    Array.prototype.forEach.call(contents, function(content) {
-                        content.style.display = "none";
-                    });
-
-                    // Show the content that corresponds to the clicked tab
-                    var tabNumber = evt.currentTarget.getAttribute("data-tab");
-                    var selectedTabContent = document.getElementById("tab-" + tabNumber);
-                    selectedTabContent.style.display = "block";
-                }
-            });
-
-            <?php endif; ?>
+<?php endif; ?>
 </script>
 </div>
 </body>
