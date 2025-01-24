@@ -15,9 +15,16 @@ class CareerController extends BaseController
 
         $banner = $bannerModel->where('page', 'career')->where('is_published', 1)->first();
         $categories = $careerModel->select('job_title')->groupBy('job_title')->findAll();
+        $today = date('Y-m-d');
         $jobs = $careerModel->select('career_id, job_title, employment_type, location, posted_on, last_applied_date, job_overview, key_responsibilities, qualifications, experience, who_are_we_looking_for, must_have, nice_to_have')
                         ->where('publish', 1)
+                        ->where('last_applied_date >=', $today)
                         ->orderBy('posted_on', 'DESC')
+                        ->findAll();
+        $categories = $careerModel->select('job_title')
+                        ->where('publish', 1)
+                        ->where('last_applied_date >=', $today)
+                        ->groupBy('job_title')
                         ->findAll();
         $totalJobs = count($jobs);
 
@@ -38,19 +45,18 @@ class CareerController extends BaseController
         $careerModel = new CareerModel();
         $keyword = $this->request->getVar('keyword');
         $category = $this->request->getVar('category');
+        $today = date('Y-m-d');
 
-        $query = $careerModel->select('career_id, job_title, employment_type, location, posted_on, last_applied_date, job_overview, key_responsibilities, qualifications, experience, who_are_we_looking_for, must_have, nice_to_have')
-                            ->where('publish', 1);
+        $query = $careerModel->where('publish', 1)
+                            ->where('last_applied_date >=', $today);
 
-        if ($keyword) {
-            $query->groupStart()
-                  ->like('job_title', $keyword)
-                  ->orLike('job_overview', $keyword)
-                  ->groupEnd();
+        if (!empty($keyword)) {
+            $query = $query->like('job_title', $keyword)
+                        ->orLike('job_overview', $keyword);
         }
 
-        if ($category) {
-            $query->where('job_title', $category);
+        if (!empty($category)) {
+            $query = $query->where('job_title', $category);
         }
 
         $jobs = $query->orderBy('posted_on', 'DESC')->findAll();

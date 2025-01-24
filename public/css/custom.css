@@ -90,7 +90,9 @@ a:hover {
     color: #FFF;
     text-decoration: none !important;
 }
-
+.active{
+    color: #B5D2EE!important;
+}
 h1,
 h2,
 h3,
@@ -207,7 +209,7 @@ p {
 }
 /* Splider Code */
 .splide__pagination {
-    bottom: -9%;
+    bottom: -2.5em;
     padding: 0;
     justify-content: start;
 }
@@ -242,6 +244,7 @@ p {
     background: #ffffff;
     transform: scale(1);
 }
+
 .leftPagination .splide__pagination{
     padding: 0;
     justify-content: start;
@@ -267,7 +270,7 @@ main{
 }
 /* Home Page */
 .navbar{
-    padding: 20px 80px 10px 80px;
+    padding: 15px 80px 15px 80px;
     background-color:transparent;
     position: fixed;
     width: 100%;
@@ -278,6 +281,9 @@ main{
     top: 0;
     left: 0;
     right: 0;
+}
+.navbar-brand{
+    padding: 0;
 }
 .navbar-light .navbar-toggler{
     border: none;
@@ -302,6 +308,7 @@ main{
 }
 .headerInfo{
     display: flex;
+    align-items: center;
 }
 .headerInfo .search{
     background: none;
@@ -312,14 +319,15 @@ main{
 }
 .contactBtn{
     font-size: 12px;
-    padding: 13px 30px;
+    padding: 14px 30px;
     border-radius: 5px;
-    line-height: 14px;
+    line-height: 4px;
+    margin: 0 10px;
     border: 1px solid #FFF;
     text-transform: uppercase;
     font-family: 'Figtree-Regular';
     background-color: var(--blue-bg);
-    margin: 0 10px;
+    height: -webkit-fill-available;
 }
 
 /* Header Menus */
@@ -331,8 +339,12 @@ main{
     right: 0;
     z-index: 99;
     position: fixed;
-    background: var(--blue-bg);
     padding: 0 80px;
+    background-color: var(--blue-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("./../images/menuBg-img.jpg");
 }
 .menusContainer{
     display: flex;
@@ -342,6 +354,7 @@ main{
     margin-top: 103px;
     margin-right: 0!important;
     margin-left: auto!important;
+    height: -webkit-fill-available;
 }
 .subMenuItems ul{
     padding-left: 0!important;
@@ -349,9 +362,24 @@ main{
 .subMenuItems ul li{
     list-style: none;
 }
+.mainMenus .navbar-nav .nav-link{
+    transition: padding 0.7s ease;
+}
+.mainMenus .navbar-nav .nav-link:hover{
+    padding: .5rem 1.5rem;
+    color: #B5D2EE!important;
+}
+.subMenuItems ul li a{
+    transition: padding 0.7s ease;
+}
+.subMenuItems ul li a:hover{
+    padding: .5rem 1rem;
+    color: #B5D2EE!important;
+}
 .navbar-nav .nav-link{
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: capitalize;
     font-family: 'EBGaramond-Regular';
 }
 .dropdown-arrow {
@@ -386,9 +414,10 @@ main{
 .whiteLine {
     width: 1px;
     height: 100% !important;
-    border: 1px solid #f6f6f6c7;
-    color: inherit;
-    background-color: currentColor;
+    border: 1px solid #FFFF;
+    color: #FFF;
+    background-color: #FFFF;
+    opacity: 1;
 }
 .subMenus .subMenuItems ul li{
     font-size: 18px;
@@ -406,6 +435,7 @@ main{
 }
 .quickLinks{
     display: flex;
+    cursor: pointer;
 }
 .quickLinks span{
     font-size: 16px;
@@ -413,27 +443,42 @@ main{
     color: var(--color-white);
     font-family: 'Figtree-Medium';
     padding: 0 20px;
+    transition: padding 0.7s ease;
+}
+.quickLinks:hover span{
+    padding: 0 30px;
 }
 .horizontal-whiteLine{
     width: 100%;
     height: 1px !important;
-    border: 1px solid #f6f6f6c7;
+    border: 1px solid #fff;
     margin: 4.5px 0;
-    color: inherit;
-    background-color: currentColor;
+    color: #fff;
+    opacity: 1;
+    background-color: #fff;
 }
 .headerContact-info{
     padding: 0 12px;
-    position: relative;
-    height: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.mobBtns{
+    display: none;
 }
 .socialMedial-links{
     display: flex;
-    bottom: 0;
-    position: absolute;
+    margin-top: 20%;
 }
 .socialIcons{
     display: flex;
+    cursor: pointer;
+}
+.socialIcons img{
+    transition: transform 0.5s ease;
+}
+.socialIcons:hover img{
+    transform: scale(1.5);
 }
 .socialIcons span{
     font-size: 16px;
@@ -452,7 +497,7 @@ main{
     position: relative;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: 100%;
     background-image: url(../images/home/bannerBottomBg.png);
 }
 .banner-section{
@@ -472,6 +517,7 @@ main{
     line-height: 38px;
     letter-spacing: 2.5px;
     margin-bottom: 20px;
+    text-transform: uppercase;
     font-family: 'Figtree-SemiBold';
 }
 .bannerTitle p{
@@ -499,7 +545,7 @@ main{
     font-family: 'EBGaramond-SemiBold';
 }
 #homeSlider{
-    top: 15rem;
+    padding-top: 15rem;
 }
 #homeSlider h4{
     font-size: 24px;
@@ -507,6 +553,7 @@ main{
     padding: 30px 0;
     color: var(--color-blue);
     text-transform: capitalize;
+    text-align: center;
     font-family: 'Figtree-Medium';
 }
 #homeSlider .splide__slide{
@@ -581,12 +628,16 @@ main{
     margin: 0 5px;
 }
 .sectionTitle-white h3{
-    font-size: 32px;
+    font-size: 33px;
     line-height: 33px;
     text-align: center;
     color: var(--color-white);
     text-transform: capitalize;
     font-family: 'EBGaramond-Medium';
+}
+.sectionTitle-white h4{
+    font-size: 24px;
+    line-height: 28px;
 }
 .sectionTitle-white h3 span{
     color: var(--color-orange);
@@ -614,7 +665,7 @@ main{
 }
 
 .sectionTitle-white p{
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
     text-align: center;
     line-height: 25.8px;
@@ -622,8 +673,8 @@ main{
     font-family: 'Figtree-Regular';
 }
 .sectionTitle-white-italic h4{
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 33px;
+    line-height: 55px;
     text-align: center;
     color: var(--color-white);
     text-transform: capitalize;
@@ -645,6 +696,10 @@ main{
     color: var(--color-blue);
     text-transform: capitalize;
     font-family: 'EBGaramond-Medium';
+}
+.sectionTitle-blue h4{
+    font-size: 24px;
+    line-height: 28px;
 }
 .sectionTitle-blue h3 span{
     color: var(--color-orange);
@@ -671,7 +726,7 @@ main{
     color: var(--color-white);
 }
 .sectionTitle-blue p{
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
     text-align: center;
     line-height: 25.8px;
@@ -733,7 +788,7 @@ main{
     text-align: center;
 }
 .bgWith-bottom-content h6{
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
     line-height: 44px;
     margin-bottom: 40px;
@@ -792,7 +847,7 @@ main{
     margin-bottom: 20px;
 }
 .lft-rgt-content p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25.8px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -877,7 +932,7 @@ main{
     background-repeat: no-repeat;    
 }
 .join-with-us{
-    background-image: url(../images/about/join-with-us.jpg);
+    background-image: url(../images/about/join-with-us.png);
 }
 
 .lightYellowBtn{
@@ -910,6 +965,43 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-color: #F8F8F8;
+}
+.img-hoverEffect .slider-card {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(#FFF, #ff734566);
+    /* background-image: linear-gradient(#FFF, #FFF0C7); */
+}
+.img-hoverEffect.paginationCenter .splide__pagination{
+    bottom: -8%!important;
+}
+.hoverImg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+.hoverImg img{
+    object-fit: cover;
+    height: 30%;
+    width: 35%;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    border: none;
+    transition: all 0.4s ease-in-out;
+
+}
+.hoverImg:hover img{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    border: 2px solid #ff881c;
 }
 .slider-card h5{
     font-size: 18px;
@@ -954,6 +1046,9 @@ main{
 }
 .blueBg-Sec .paginationCenter .splide__pagination{
     bottom: -13%;
+}
+#founders-slider .splide__pagination {
+    bottom: -8%;
 }
 
 /* Annual Policy */
@@ -1186,8 +1281,6 @@ main{
 }
 .center-card{
     margin:15px;
-    margin-top: 50px;
-    margin-bottom: 30px;
     padding: 40px 25px;
     text-align: center;
     border-radius: 10px;
@@ -1195,6 +1288,15 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-color: #F8F8F8;
+}
+.center-card h5{
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--color-blue);
+    font-family: 'Figtree-SemiBold';
+}
+.center-card .card-content .pdfIcon{
+    margin-bottom: 20px;
 }
 .center-card h3 span{
     text-transform: lowercase;
@@ -1641,18 +1743,19 @@ label.error{
 }
 /*End USE CSS for Slider*/
 
-.splideMain .thumbContent{
+.thumbContent{
     padding: 30px 0;
 }
-.splideMain .thumbContent h6{
+.thumbContent h6{
     font-size: 24px;
     line-height: 34px;
     color: var(--color-blue);
     text-transform: capitalize;
     font-family: 'Figtree-Regular';
     margin: 0;
+    text-transform: capitalize!important;
 }
-.splideMain .thumbContent p{
+.thumbContent p{
     font-size: 14px;
     line-height: 25.8px;
     color: var(--color-inActive);
@@ -1660,13 +1763,25 @@ label.error{
     font-family: 'Figtree-Regular';
     margin: 10px 0;
 }
-.splideMain .thumbContent span{
+.thumbContent span{
     font-size: 14px;
     line-height: 28.8px;
     color: var(--color-inActive);
     text-transform: capitalize;
     font-family: 'Figtree-Regular';
     padding: 0;
+}
+#sports .thumbContent h6{
+    color: var(--color-white);
+}
+#sports .thumbContent p{
+    color: var(--color-white);
+}
+#sports .thumbContent span{
+    color: var(--color-white);
+}
+#sports.paginationCenter .splide__pagination{
+    bottom: -6%!important;
 }
 #annual-event .splide__slide{
     height: auto!important;
@@ -2271,7 +2386,30 @@ label.error{
 /* ======================================== Career =============================== */
 
 
-
+#pdf-render-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+.pdf-container{
+    width: 50%;
+}
+.pdf-container canvas{
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    object-fit: cover;
+    border-radius: 4% !important;
+}
+.pdf-container h3{
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-family: 'EBGaramond-Medium';
+}
 
 
 
@@ -2408,7 +2546,7 @@ footer{
 
 
 .detailpagecontent p {
-    color: black !important;
+    color: #3F5667 !important;
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
@@ -2416,7 +2554,7 @@ footer{
     font-family: 'Figtree-Regular';
 }
 .detailpagecontent p:first-of-type {
-    color: black !important;
+    color: #3F5667 !important;
     font-size: 20px;
     text-align: center;
     margin-top: 30px;

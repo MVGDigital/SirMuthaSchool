@@ -105,7 +105,7 @@
                         <div class="collapse " id="sidebarAdmission">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?= base_url('adm1n/kindergarten'); ?>">Kindergarten Grade
+                                    <a class="nav-link" href="<?= base_url('adm1n/admission'); ?>">Kindergarten Grade
                                         IX</a>
                                 </li>
                                 <!--end nav-item-->

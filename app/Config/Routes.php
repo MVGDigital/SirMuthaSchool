@@ -100,6 +100,12 @@ $routes->get('beyond-curriculum', 'BeyondCurriculum::index');
 //Beyond Curriculum
 $routes->get('parents', 'ParentLanding::index');
 
+//Announcement
+$routes->get('announcements', 'Announcement::index');
+
+//Intheoutdoors
+$routes->get('in-the-outdoors', 'Intheoutdoors::index');
+
 //Parent Landing 
 $routes->get('achievements', 'Achievements::index');
 
@@ -212,17 +218,17 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('adm1n/contact/export/(:num)', 'ContactController::export/$1');
 
     // Student routes
-    $routes->get('/adm1n/students', 'Student::index');
+    $routes->get('/adm1n/students', 'AdmissionFormLahoc::listAdmissions');
     $routes->get('/adm1n/students/create', 'Student::create');
     $routes->post('students/submit', 'Student::submit');
     $routes->get('/adm1n/students/export/(:num)', 'Student::export/$1');
 
     // Kindergarten routes
-    $routes->get('/adm1n/kindergarten', 'Kindergarten::index');
+    $routes->get('/adm1n/admission', 'Admission::listAdmissions');
     $routes->get('/kindergarten/create', 'Kindergarten::create');
     $routes->post('kindergarten/submit', 'Kindergarten::submit');
-    $routes->get('/adm1n/kindergarten/delete/(:num)', 'Kindergarten::delete/$1');
-    $routes->get('/adm1n/kindergarten/export/(:num)', 'Kindergarten::export/$1');
+    $routes->get('/adm1n/admission/delete/(:num)', 'Admission::deleteAdmission/$1');
+    $routes->get('/adm1n/admission/export/(:num)', 'Kindergarten::export/$1');
 
     $routes->get('adm1n/videobanner', 'VideoBannerController::index');
     $routes->get('adm1n/videobanner/create', 'VideoBannerController::add');

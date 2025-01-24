@@ -56,6 +56,32 @@ $(document).ready(function() {
         }
     );
 
+    // Hover event for 'statutoryMenu' main menu item
+    $("#statutoryMenu").hover(
+        function () {
+            $(".subMenuItems").hide();
+        }
+    );
+    
+    // Hover event for 'announcementsMenu' main menu item
+    $("#announcementsMenu").hover(
+        function () {
+            $(".subMenuItems").hide();
+        }
+    );
+    // Hover event for 'achievementsMenu' main menu item
+    $("#achievementsMenu").hover(
+        function () {
+            $(".subMenuItems").hide();
+        }
+    );
+    // Hover event for 'intheoutdoorsMenu' main menu item
+    $("#intheoutdoorsMenu").hover(
+        function () {
+            $(".subMenuItems").hide();
+        }
+    );
+
     // Hover event for 'Admission' main menu item
     $("#galleryMenu").hover(
         function () {
@@ -118,15 +144,22 @@ $(document).ready(function() {
             e.preventDefault();
 
             const currentSubmenu = $(this).siblings(".dropdown-menu");
+            const currentLink = $(this).siblings(".nav-link"); 
 
             // Check if the clicked submenu is already open
             if (currentSubmenu.is(":visible")) {
                 // Close the current submenu if it's already open
                 currentSubmenu.slideUp();
+                
+                currentLink.removeClass("active");
             } else {
                 // Otherwise, open the current submenu and close others
                 $(".dropdown-menu").slideUp(); // Close all other submenus
+                $(".nav-link").removeClass("active");
                 currentSubmenu.slideDown(); // Open the clicked submenu
+
+                currentLink.addClass("active");
+                
             }
         }
     });
@@ -142,6 +175,7 @@ $(document).ready(function() {
             $(".openIcon").hide();
             $(".closeIcon").show();
             $("body").addClass("no-scroll"); // Add class to prevent scroll
+            $(".navbar").css('background-color','transparent');
         } else {
             $(".openIcon").show();
             $(".closeIcon").hide();
