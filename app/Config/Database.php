@@ -29,7 +29,11 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '',
+<<<<<<< HEAD
         'database'     => 'sirmutha_db',
+=======
+        'database'     => 'sirmuthaschool',
+>>>>>>> e0107ce7703c2a87de7a1d3414f37bb5d5ef6dc6
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

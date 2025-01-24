@@ -1,5 +1,5 @@
 <footer class="container-space blueBg-Sec ptb-80">
-    <div class="col-lg-3 m-auto ">
+    <div class="col-12 col-lg-6 col-lg-3 col-xl-3 m-auto ">
         <a class="footer-logo" href="<?= base_url('index') ?>">
             <img src="<?= base_url('images/sir-mutha-logo.svg') ?>" class="img-fluid" alt="Sir Mutha School Logo">
             <p>Sir mutha school</p>
@@ -10,12 +10,12 @@
             <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
         </div>
         <div class="social-media">
-            <a href="#"><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
-            <a href="#"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
-    <div class="col-lg-8 m-auto footer-menus">
+    <div class="col-12 col-md-8 col-lg-12 col-xl-8 m-auto footer-menus">
         <div class="itemSpaceBetween">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
@@ -44,9 +44,11 @@
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
-                <a href="#">© Copyrights sIR MUTHA SCHOOL</a>
+                <a href="#">© <script>
+                    document.write(new Date().getFullYear())
+                    </script> SIR MUTHA SCHOOL</a>
                 <hr>
-                <a href="#"> Designed By MVG Digital </a>
+                <a href="#"> Designed & Developed By MVG Digital </a>
             </div>
         </div>
     </div>
@@ -64,6 +66,7 @@
 <script src="<?= base_url('js/juery.validate.additional-methods.js') ?>"></script>
 <script src="<?= base_url('js/slimselect.min.js') ?>"></script>
 <script src="<?= base_url('js/custom.js') ?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
 <script>
 <?php if ($page_code === 'index'): ?>
@@ -350,55 +353,55 @@ $('.slider-nav').slick({
 });
 /* Student Newsletter */
 
- // Initialize Main Slider
-    var main = new Splide('#annual-event', {
-        type: 'slide',
-        heightRatio: 0.5,
-        pagination: false,
-        arrows: false,
-        cover: true,
-    });
+// Initialize Main Slider
+var main = new Splide('#annual-event', {
+    type: 'slide',
+    heightRatio: 0.5,
+    pagination: false,
+    arrows: false,
+    cover: true,
+});
 
-    // Initialize Thumbnail Slider
-    var thumbnails = new Splide('#thumbnail-slider', {
+// Initialize Thumbnail Slider
+var thumbnails = new Splide('#thumbnail-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    rewind: false,
+    perPage: 6,
+    isNavigation: true,
+    pagination: false,
+    cover: true,
+    dragMinThreshold: {
+        mouse: 4,
+        touch: 10,
+    },
+    breakpoints: {
+        640: {
+            perPage: 3,
+        },
+    },
+});
+
+// Sync Sliders
+main.sync(thumbnails);
+main.mount();
+thumbnails.mount();
+
+// Initialize Individual Event Sliders
+document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
+    new Splide(el, {
         type: 'slide',
-        autoplay: false,
+        autoplay: true,
         pauseOnHover: false,
-        rewind: false,
-        perPage: 6,
-        isNavigation: true,
-        pagination: false,
-        cover: true,
-        dragMinThreshold: {
-            mouse: 4,
-            touch: 10,
-        },
-        breakpoints: {
-            640: {
-                perPage: 3,
-            },
-        },
-    });
-
-    // Sync Sliders
-    main.sync(thumbnails);
-    main.mount();
-    thumbnails.mount();
-
-    // Initialize Individual Event Sliders
-    document.querySelectorAll('.annual-event-imgs').forEach(function (el) {
-        new Splide(el, {
-            type: 'slide',
-            autoplay: true,
-            pauseOnHover: false,
-            pagination: true,
-            speed: 1000,
-            rewindSpeed: 1000,
-            height: 'auto',
-            perPage: 1,
-            arrows: true,
-        }).mount();
-    });
+        pagination: true,
+        speed: 1000,
+        rewindSpeed: 1000,
+        height: 'auto',
+        perPage: 1,
+        arrows: true,
+    }).mount();
+});
 
 <?php endif; ?>
 
@@ -557,11 +560,13 @@ function setJobAndRedirect(jobId) {
         })
         .catch(error => console.error('Error:', error));
 }
+const base_url = '<?= base_url() ?>';
 $(document).ready(function() {
     /* Initialize SlimSelect for the job category dropdown */
     new SlimSelect({
         select: '.job-category',
     });
+
     $(document).on('click', '.apply-link', function(event) {
         event.preventDefault();
         const jobId = $(this).data('job-id');
@@ -596,6 +601,16 @@ $(document).ready(function() {
     }
     attachAccordionListeners();
 
+    // Helper function to format date
+    function formatDate(dateStr) {
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+        return new Date(dateStr).toLocaleDateString('en-US', options);
+    }
+
     // Form Submission for Sorting and Filtering Jobs
     document.getElementById('sort-by-key').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -620,56 +635,74 @@ $(document).ready(function() {
             })
             .then((response) => response.json())
             .then((data) => {
+                const today = new Date();
+                today.setHours(0, 0, 0, 0); // Normalize to midnight
                 container.innerHTML = '';
 
-                totalJobsElement.textContent = `(${data.length})`;
+                const validJobs = data.filter((job) => {
+                    const lastDate = new Date(job.last_applied_date);
+                    return lastDate >= today; // Include today and future dates
+                });
 
-                if (data.length === 0) {
+                totalJobsElement.textContent = `(${validJobs.length})`;
+
+                if (validJobs.length === 0) {
                     container.innerHTML = '<p>No jobs found.</p>';
                     return;
                 }
 
-                data.forEach((job) => {
+                validJobs.forEach((job) => {
                     const jobHtml = `
-                <div class="accordion">
-                    <button class="menu-button">
-                        <div class="jobInfo">
-                            <h5>${job.job_title}</h5>
-                            <h6>${job.employment_type} - ${job.location}</h6>
-                            <div class="job-location-details">
-                                <div class="job-locDetails">
-                                    <p>Posted on - <span>${job.posted_on}</span></p>
+                    <div class="accordion">
+                        <button class="menu-button">
+                            <div class="jobInfo">
+                                <h5>${job.job_title}</h5>
+                                <h6>${job.employment_type} - ${job.location}</h6>
+                                <div class="job-location-details">
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/joblocationIcon.svg') ?>" alt="Job Location">
+                                        <p><span>${job.location}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/jobIcon.svg') ?>" alt="Employment Type">
+                                        <p><span>${job.employment_type}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/posted-dateIcon.svg') ?>" alt="Posted Date">
+                                        <p>Posted on - <span>${formatDate(job.posted_on)}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/last-dateIcon.svg') ?>" alt="Last Date">
+                                        <p>Last date to apply - <span>${formatDate(job.last_applied_date)}</span></p>
+                                    </div>
                                 </div>
-                                <div class="job-locDetails">
-                                    <p>Last date to apply - <span>${job.last_applied_date}</span></p>
-                                </div>
+                                <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
                             </div>
-                            <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
+                            <div class="jobHyp-link">
+                                <a href="<?= base_url('career/form') ?>" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
+                                <span class="icon">&plus;</span>
+                            </div>
+                        </button>
+                        <div class="content">
+                            <h6>Key Responsibilities :</h6>
+                            <ul><li>${job.key_responsibilities}</li></ul>
+                            <h6>Qualifications :</h6>
+                            <ul><li>${job.qualifications}</li></ul>
+                            <h6>Experience Required :</h6>
+                            <ul><li>${job.experience}</li></ul>
+                            <h6>Who We Are Looking For :</h6>
+                            <ul><li>${job.who_are_we_looking_for}</li></ul>
+                            <h6>Must Have :</h6>
+                            <ul><li>${job.must_have}</li></ul>
+                            <h6>Nice to Have :</h6>
+                            <ul><li>${job.nice_to_have}</li></ul>
+                            <h6>Last Date to Apply :</h6>
+                            <p>${formatDate(job.last_applied_date)}</p>
                         </div>
-                        <div class="jobHyp-link">
-                            <a href="<?= base_url('career/form') ?>" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
-                            <span class="icon">&plus;</span>
-                        </div>
-                    </button>
-                    <div class="content">
-                        <h6>Key Responsibilities :</h6>
-                        <ul><li>${job.key_responsibilities}</li></ul>
-                        <h6>Qualifications :</h6>
-                        <ul><li>${job.qualifications}</li></ul>
-                        <h6>Experience Required :</h6>
-                        <ul><li>${job.experience}</li></ul>
-                        <h6>Who We Are Looking For :</h6>
-                        <ul><li>${job.who_are_we_looking_for}</li></ul>
-                        <h6>Must Have :</h6>
-                        <ul><li>${job.must_have}</li></ul>
-                        <h6>Nice to Have :</h6>
-                        <ul><li>${job.nice_to_have}</li></ul>
-                        <h6>Last Date to Apply :</h6>
-                        <p>${job.last_applied_date}</p>
-                    </div>
-                </div>`;
+                    </div>`;
                     container.innerHTML += jobHtml;
                 });
+
                 attachAccordionListeners();
             })
             .catch((error) => {
@@ -939,78 +972,6 @@ $(document).ready(function() {
     });
 });
 
-$("#email").on("input", function(e) {
-    var value = e.target.value; // Get the current value
-    e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
-});
-
-$.validator.addMethod("customEmail", function(value, element) {
-    return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
-}, "Please enter a valid email address");
-
-// Restrict input to only numeric characters in the phone number field
-$("#mobile-number").on("input", function(e) {
-    const value = $(this).val();
-    $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
-});
-
-
-$("#contact-form").validate({
-rules: {
-    "first-name": {
-        required: true,
-        minlength: 2
-    },
-    "last-name": {
-        required: true,
-        minlength: 2
-    },
-    "email": {
-        required: true,
-        customEmail: true
-    },
-    "mobile-number": {
-        required: true,
-        digits: true,
-        minlength: 10,
-        maxlength: 15
-    },
-    "msg": {
-        required: true,
-        minlength: 10
-    }
-},
-messages: {
-    "first-name": {
-        required: "Please enter your first name",
-        minlength: "First name must be at least 2 characters long"
-    },
-    "last-name": {
-        required: "Please enter your last name",
-        minlength: "Last name must be at least 2 characters long"
-    },
-    "email": {
-        required: "Please enter your email address",
-        customEmail: "Please enter a valid email address"
-    },
-    "mobile-number": {
-        required: "Please enter your phone number",
-        digits: "Please enter only numbers",
-        minlength: "Phone number must be at least 10 digits",
-        maxlength: "Phone number cannot exceed 15 digits"
-    },
-    "msg": {
-        required: "Please enter your message",
-        minlength: "Message must be at least 10 characters long"
-    }
-},
-submitHandler: function(form) {
-    alert("Form submitted successfully!");
-    form.submit();
-}
-});
-});
-
 <?php endif; ?>
 
 <?php if ($page_code === 'admission'): ?>
@@ -1076,6 +1037,114 @@ $('#sir-mutha-campus').click(function() {
 });
 
 <?php endif; ?>
+
+<?php if ($page_code === 'achievements'): ?>
+
+var splide = new Splide('#teachers', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        1024: {
+            perPage: 2,
+            pagination: true,
+        },
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+var splide = new Splide('#sports', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+});
+splide.mount();
+
+<?php endif; ?>
+
+<?php if ($page_code === 'announcement'): ?>
+
+
+$(document).ready(function() {
+
+    var pdfFiles = [{
+            url: "<?= base_url('images/announcements/Circular-Open-House-2024.pdf'); ?>",
+            title: "Document 1: Circular"
+        },
+        {
+            url: "<?= base_url('images/announcements/Invitation-for-the-Farewell-Circular.pdf'); ?>",
+            title: "Document 2: Circular"
+        }
+    ];
+
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+    pdfFiles.forEach(function(file, index) {
+        // Create a container for each PDF and its title
+        var container = $('<div class="pdf-container" style="margin-bottom: 20px;"></div>').appendTo(
+            '#pdf-render-area');
+
+        // Add the title above the canvas
+        $('<h3 style="text-align: center;">' + file.title + '</h3>').appendTo(container);
+
+        // Create the canvas for rendering the PDF
+        var canvas = $('<canvas></canvas>').appendTo(container).get(0);
+
+        // Load the PDF and render it
+        var loadingTask = pdfjsLib.getDocument(file.url);
+        loadingTask.promise.then(function(pdf) {
+            console.log(`PDF ${index + 1} loaded`);
+
+            pdf.getPage(1).then(function(page) {
+                console.log('Page loaded');
+
+                var scale = 1.5;
+                var viewport = page.getViewport({
+                    scale: scale
+                });
+
+                var context = canvas.getContext('2d');
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.promise.then(function() {
+                    console.log(`PDF ${index + 1} rendered`);
+                });
+            });
+        }).catch(function(error) {
+            console.error('Error loading PDF:', error);
+        });
+    });
+});
+
+
+
+
+<?php endif; ?>
+
 
 <?php if ($page_code === 'gallery'): ?>
 

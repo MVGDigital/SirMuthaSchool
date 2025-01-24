@@ -33,6 +33,7 @@
                             <div class="card-body pt-0">
                                 <form action="<?= base_url('adm1n/career/submit') ?>" method="post"
                                     enctype="multipart/form-data">
+                                    <input type="hidden" name="career_id" value="<?= isset($career) ? $career['career_id'] : '' ?>">
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="formFields row w100 m-0">
