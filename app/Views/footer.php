@@ -44,7 +44,9 @@
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
-                <a href="#">© <script> document.write(new Date().getFullYear()) </script> SIR MUTHA SCHOOL</a>
+                <a href="#">© <script>
+                    document.write(new Date().getFullYear())
+                    </script> SIR MUTHA SCHOOL</a>
                 <hr>
                 <a href="#"> Designed & Developed By MVG Digital </a>
             </div>
@@ -557,11 +559,13 @@ function setJobAndRedirect(jobId) {
         })
         .catch(error => console.error('Error:', error));
 }
+const base_url = '<?= base_url() ?>';
 $(document).ready(function() {
     /* Initialize SlimSelect for the job category dropdown */
     new SlimSelect({
         select: '.job-category',
     });
+
     $(document).on('click', '.apply-link', function(event) {
         event.preventDefault();
         const jobId = $(this).data('job-id');
@@ -596,6 +600,16 @@ $(document).ready(function() {
     }
     attachAccordionListeners();
 
+    // Helper function to format date
+    function formatDate(dateStr) {
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+        return new Date(dateStr).toLocaleDateString('en-US', options);
+    }
+
     // Form Submission for Sorting and Filtering Jobs
     document.getElementById('sort-by-key').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -621,9 +635,14 @@ $(document).ready(function() {
             .then((response) => response.json())
             .then((data) => {
                 const today = new Date();
+                today.setHours(0, 0, 0, 0); // Normalize to midnight
                 container.innerHTML = '';
 
-                const validJobs = data.filter((job) => new Date(job.last_applied_date) >= today);
+                const validJobs = data.filter((job) => {
+                    const lastDate = new Date(job.last_applied_date);
+                    return lastDate >= today; // Include today and future dates
+                });
+
                 totalJobsElement.textContent = `(${validJobs.length})`;
 
                 if (validJobs.length === 0) {
@@ -633,45 +652,56 @@ $(document).ready(function() {
 
                 validJobs.forEach((job) => {
                     const jobHtml = `
-                <div class="accordion">
-                    <button class="menu-button">
-                        <div class="jobInfo">
-                            <h5>${job.job_title}</h5>
-                            <h6>${job.employment_type} - ${job.location}</h6>
-                            <div class="job-location-details">
-                                <div class="job-locDetails">
-                                    <p>Posted on - <span>${job.posted_on}</span></p>
+                    <div class="accordion">
+                        <button class="menu-button">
+                            <div class="jobInfo">
+                                <h5>${job.job_title}</h5>
+                                <h6>${job.employment_type} - ${job.location}</h6>
+                                <div class="job-location-details">
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/joblocationIcon.svg') ?>" alt="Job Location">
+                                        <p><span>${job.location}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/jobIcon.svg') ?>" alt="Employment Type">
+                                        <p><span>${job.employment_type}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/posted-dateIcon.svg') ?>" alt="Posted Date">
+                                        <p>Posted on - <span>${formatDate(job.posted_on)}</span></p>
+                                    </div>
+                                    <div class="job-locDetails">
+                                        <img src="<?= base_url('images/last-dateIcon.svg') ?>" alt="Last Date">
+                                        <p>Last date to apply - <span>${formatDate(job.last_applied_date)}</span></p>
+                                    </div>
                                 </div>
-                                <div class="job-locDetails">
-                                    <p>Last date to apply - <span>${job.last_applied_date}</span></p>
-                                </div>
+                                <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
                             </div>
-                            <p><b>Job Overview:</b> <span>${job.job_overview}</span></p>
+                            <div class="jobHyp-link">
+                                <a href="<?= base_url('career/form') ?>" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
+                                <span class="icon">&plus;</span>
+                            </div>
+                        </button>
+                        <div class="content">
+                            <h6>Key Responsibilities :</h6>
+                            <ul><li>${job.key_responsibilities}</li></ul>
+                            <h6>Qualifications :</h6>
+                            <ul><li>${job.qualifications}</li></ul>
+                            <h6>Experience Required :</h6>
+                            <ul><li>${job.experience}</li></ul>
+                            <h6>Who We Are Looking For :</h6>
+                            <ul><li>${job.who_are_we_looking_for}</li></ul>
+                            <h6>Must Have :</h6>
+                            <ul><li>${job.must_have}</li></ul>
+                            <h6>Nice to Have :</h6>
+                            <ul><li>${job.nice_to_have}</li></ul>
+                            <h6>Last Date to Apply :</h6>
+                            <p>${formatDate(job.last_applied_date)}</p>
                         </div>
-                        <div class="jobHyp-link">
-                            <a href="<?= base_url('career/form') ?>" class="apply-link" data-job-id="${job.career_id}">Apply Here</a>
-                            <span class="icon">&plus;</span>
-                        </div>
-                    </button>
-                    <div class="content">
-                        <h6>Key Responsibilities :</h6>
-                        <ul><li>${job.key_responsibilities}</li></ul>
-                        <h6>Qualifications :</h6>
-                        <ul><li>${job.qualifications}</li></ul>
-                        <h6>Experience Required :</h6>
-                        <ul><li>${job.experience}</li></ul>
-                        <h6>Who We Are Looking For :</h6>
-                        <ul><li>${job.who_are_we_looking_for}</li></ul>
-                        <h6>Must Have :</h6>
-                        <ul><li>${job.must_have}</li></ul>
-                        <h6>Nice to Have :</h6>
-                        <ul><li>${job.nice_to_have}</li></ul>
-                        <h6>Last Date to Apply :</h6>
-                        <p>${job.last_applied_date}</p>
-                    </div>
-                </div>`;
+                    </div>`;
                     container.innerHTML += jobHtml;
                 });
+
                 attachAccordionListeners();
             })
             .catch((error) => {
@@ -1009,204 +1039,212 @@ $('#sir-mutha-campus').click(function() {
 
 <?php if ($page_code === 'achievements'): ?>
 
-<<<<<<< HEAD
+    <<
+    <<
+    <<
+    <
+    HEAD
 document.addEventListener("DOMContentLoaded", function() {
-    var tabs = document.getElementsByClassName("Tab");
-    var contents = document.getElementsByClassName("tab-content");
+            var tabs = document.getElementsByClassName("Tab");
+            var contents = document.getElementsByClassName("tab-content");
 
-    // Add event listeners to tabs
-    Array.prototype.forEach.call(tabs, function(tab) {
-        tab.addEventListener("click", setActiveClass);
-    });
-
-    function setActiveClass(evt) {
-        // Remove active class from all tabs
-        Array.prototype.forEach.call(tabs, function(tab) {
-            tab.classList.remove("active");
-        });
-
-        // Add active class to the clicked tab
-        evt.currentTarget.classList.add("active");
-
-        // Hide all tab content
-        Array.prototype.forEach.call(contents, function(content) {
-            content.style.display = "none";
-        });
-
-        // Show the content that corresponds to the clicked tab
-        var tabNumber = evt.currentTarget.getAttribute("data-tab");
-        var selectedTabContent = document.getElementById("tab-" + tabNumber);
-        selectedTabContent.style.display = "block";
-    }
-=======
-    var splide = new Splide('#teachers', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 3,
-    arrows: true,
-    breakpoints: {
-        1024: {
-            perPage: 2,
-            pagination: true,
-        },
-        767: {
-            perPage: 1,
-            pagination: true,
-        },
-    },
->>>>>>> 30e28b8b1deff10d4b8fa677750a5f319f519295
-});
-splide.mount();
-
-var splide = new Splide('#sports', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 1,
-    arrows: true,
-});
-splide.mount();
-
-<?php endif; ?>
-
-<?php if ($page_code === 'gallery'): ?>
-
-document.addEventListener("DOMContentLoaded", function() {
-    var tabs = document.getElementsByClassName("Tab");
-    var contents = document.getElementsByClassName("tab-content");
-
-    // Add event listeners to tabs
-    Array.prototype.forEach.call(tabs, function(tab) {
-        tab.addEventListener("click", setActiveClass);
-    });
-
-    function setActiveClass(evt) {
-        // Remove active class from all tabs
-        Array.prototype.forEach.call(tabs, function(tab) {
-            tab.classList.remove("active");
-        });
-
-        // Add active class to the clicked tab
-        evt.currentTarget.classList.add("active");
-
-        // Hide all tab content
-        Array.prototype.forEach.call(contents, function(content) {
-            content.style.display = "none";
-        });
-
-        // Show the content that corresponds to the clicked tab
-        var tabNumber = evt.currentTarget.getAttribute("data-tab");
-        var selectedTabContent = document.getElementById("tab-" + tabNumber);
-        selectedTabContent.style.display = "block";
-
-        // Reinitialize pagination for the selected tab
-        reinitializePagination(selectedTabContent);
-    }
-});
-
-<?php endif; ?>
-
-<?php if ($page_code === 'parents'): ?>
-
-var video = $('#sir-mutha-campus').get(0); // Get the video element
-var playOverlay = $('#playOverlay');
-
-// Ensure the video is muted for autoplay to work
-video.muted = true;
-
-// Use IntersectionObserver to detect when the video section is in view
-var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            // If the video is in view, start playing it
-            video.play().catch(function(error) {
-                console.log('Autoplay prevented:', error);
+            // Add event listeners to tabs
+            Array.prototype.forEach.call(tabs, function(tab) {
+                tab.addEventListener("click", setActiveClass);
             });
-        } else {
-            // If the video goes out of view, pause it
-            video.pause();
-        }
-    });
-}, {
-    threshold: 0.5 // Video will start playing when 50% of it is visible
-});
 
-// Observe the section containing the video
-observer.observe(document.querySelector('#campusVideo'));
+            function setActiveClass(evt) {
+                // Remove active class from all tabs
+                Array.prototype.forEach.call(tabs, function(tab) {
+                    tab.classList.remove("active");
+                });
 
-// Hide overlay when the video starts playing
-video.addEventListener('play', function() {
-    playOverlay.addClass('hidden');
-});
+                // Add active class to the clicked tab
+                evt.currentTarget.classList.add("active");
 
-// Show overlay when the video is paused or ended
-video.addEventListener('pause', function() {
-    playOverlay.removeClass('hidden');
-});
+                // Hide all tab content
+                Array.prototype.forEach.call(contents, function(content) {
+                    content.style.display = "none";
+                });
 
-video.addEventListener('ended', function() {
-    playOverlay.removeClass('hidden');
-});
+                // Show the content that corresponds to the clicked tab
+                var tabNumber = evt.currentTarget.getAttribute("data-tab");
+                var selectedTabContent = document.getElementById("tab-" + tabNumber);
+                selectedTabContent.style.display = "block";
+            } ===
+            ===
+            =
+            var splide = new Splide('#teachers', {
+                type: 'slide',
+                autoplay: false,
+                pauseOnHover: false,
+                pagination: true,
+                speed: 1000,
+                rewindSpeed: 1000,
+                height: 'auto',
+                perPage: 3,
+                arrows: true,
+                breakpoints: {
+                    1024: {
+                        perPage: 2,
+                        pagination: true,
+                    },
+                    767: {
+                        perPage: 1,
+                        pagination: true,
+                    },
+                },
+                >>>
+                >>>
+                >
+                30e28 b8b1deff10d4b8fa677750a5f319f519295
+            });
+            splide.mount();
 
-// Play or pause the video when the overlay is clicked
-playOverlay.click(function() {
-    if (video.paused) {
-        video.play();
-        playOverlay.addClass('hidden'); // Hide the overlay when playing
-    } else {
-        video.pause();
-        playOverlay.removeClass('hidden'); // Show the overlay when paused
-    }
-});
+            var splide = new Splide('#sports', {
+                type: 'slide',
+                autoplay: false,
+                pauseOnHover: false,
+                pagination: true,
+                speed: 1000,
+                rewindSpeed: 1000,
+                height: 'auto',
+                perPage: 1,
+                arrows: true,
+            });
+            splide.mount();
 
-// Toggle play/pause when clicking on the video itself
-$('#sir-mutha-campus').click(function() {
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
-});
-document.addEventListener("DOMContentLoaded", function() {
-    var tabs = document.getElementsByClassName("Tab");
-    var contents = document.getElementsByClassName("tab-content");
+            <?php endif; ?>
 
-    // Add event listeners to tabs
-    Array.prototype.forEach.call(tabs, function(tab) {
-        tab.addEventListener("click", setActiveClass);
-    });
+            <?php if ($page_code === 'gallery'): ?>
 
-    function setActiveClass(evt) {
-        // Remove active class from all tabs
-        Array.prototype.forEach.call(tabs, function(tab) {
-            tab.classList.remove("active");
-        });
+            document.addEventListener("DOMContentLoaded", function() {
+                var tabs = document.getElementsByClassName("Tab");
+                var contents = document.getElementsByClassName("tab-content");
 
-        // Add active class to the clicked tab
-        evt.currentTarget.classList.add("active");
+                // Add event listeners to tabs
+                Array.prototype.forEach.call(tabs, function(tab) {
+                    tab.addEventListener("click", setActiveClass);
+                });
 
-        // Hide all tab content
-        Array.prototype.forEach.call(contents, function(content) {
-            content.style.display = "none";
-        });
+                function setActiveClass(evt) {
+                    // Remove active class from all tabs
+                    Array.prototype.forEach.call(tabs, function(tab) {
+                        tab.classList.remove("active");
+                    });
 
-        // Show the content that corresponds to the clicked tab
-        var tabNumber = evt.currentTarget.getAttribute("data-tab");
-        var selectedTabContent = document.getElementById("tab-" + tabNumber);
-        selectedTabContent.style.display = "block";
-    }
-});
+                    // Add active class to the clicked tab
+                    evt.currentTarget.classList.add("active");
 
-<?php endif; ?>
+                    // Hide all tab content
+                    Array.prototype.forEach.call(contents, function(content) {
+                        content.style.display = "none";
+                    });
+
+                    // Show the content that corresponds to the clicked tab
+                    var tabNumber = evt.currentTarget.getAttribute("data-tab");
+                    var selectedTabContent = document.getElementById("tab-" + tabNumber);
+                    selectedTabContent.style.display = "block";
+
+                    // Reinitialize pagination for the selected tab
+                    reinitializePagination(selectedTabContent);
+                }
+            });
+
+            <?php endif; ?>
+
+            <?php if ($page_code === 'parents'): ?>
+
+            var video = $('#sir-mutha-campus').get(0); // Get the video element
+            var playOverlay = $('#playOverlay');
+
+            // Ensure the video is muted for autoplay to work
+            video.muted = true;
+
+            // Use IntersectionObserver to detect when the video section is in view
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        // If the video is in view, start playing it
+                        video.play().catch(function(error) {
+                            console.log('Autoplay prevented:', error);
+                        });
+                    } else {
+                        // If the video goes out of view, pause it
+                        video.pause();
+                    }
+                });
+            }, {
+                threshold: 0.5 // Video will start playing when 50% of it is visible
+            });
+
+            // Observe the section containing the video
+            observer.observe(document.querySelector('#campusVideo'));
+
+            // Hide overlay when the video starts playing
+            video.addEventListener('play', function() {
+                playOverlay.addClass('hidden');
+            });
+
+            // Show overlay when the video is paused or ended
+            video.addEventListener('pause', function() {
+                playOverlay.removeClass('hidden');
+            });
+
+            video.addEventListener('ended', function() {
+                playOverlay.removeClass('hidden');
+            });
+
+            // Play or pause the video when the overlay is clicked
+            playOverlay.click(function() {
+                if (video.paused) {
+                    video.play();
+                    playOverlay.addClass('hidden'); // Hide the overlay when playing
+                } else {
+                    video.pause();
+                    playOverlay.removeClass('hidden'); // Show the overlay when paused
+                }
+            });
+
+            // Toggle play/pause when clicking on the video itself
+            $('#sir-mutha-campus').click(function() {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                var tabs = document.getElementsByClassName("Tab");
+                var contents = document.getElementsByClassName("tab-content");
+
+                // Add event listeners to tabs
+                Array.prototype.forEach.call(tabs, function(tab) {
+                    tab.addEventListener("click", setActiveClass);
+                });
+
+                function setActiveClass(evt) {
+                    // Remove active class from all tabs
+                    Array.prototype.forEach.call(tabs, function(tab) {
+                        tab.classList.remove("active");
+                    });
+
+                    // Add active class to the clicked tab
+                    evt.currentTarget.classList.add("active");
+
+                    // Hide all tab content
+                    Array.prototype.forEach.call(contents, function(content) {
+                        content.style.display = "none";
+                    });
+
+                    // Show the content that corresponds to the clicked tab
+                    var tabNumber = evt.currentTarget.getAttribute("data-tab");
+                    var selectedTabContent = document.getElementById("tab-" + tabNumber);
+                    selectedTabContent.style.display = "block";
+                }
+            });
+
+            <?php endif; ?>
 </script>
 </div>
 </body>
