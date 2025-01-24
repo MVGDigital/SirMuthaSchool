@@ -175,6 +175,7 @@ $(document).ready(function() {
             $(".openIcon").hide();
             $(".closeIcon").show();
             $("body").addClass("no-scroll"); // Add class to prevent scroll
+            $(".navbar").css('background-color','transparent');
         } else {
             $(".openIcon").show();
             $(".closeIcon").hide();
