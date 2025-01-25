@@ -1,6 +1,7 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
@@ -46,53 +47,19 @@
     <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-10 m-auto">
             <?php if (!empty($video)) : ?>
-            <video id="sir-mutha-campus" controls playsinline>
+            <video id="sir-mutha-campus" playsinline>
                 <source src="<?= base_url('uploads/videos/' . $video['video_file']); ?>" type="video/mp4">
             </video>
             <?php endif; ?>
 
             <!-- Play icon and text overlay -->
-            <div id="playOverlay" class="playOverlay">
+            <div id="playOverlayBtn" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
             </div>
         </div>
     </section>
     <!-- Video Section -->
-
-    <!-- Start Your Journey -->
-    <section class="container-space wave-with-bgImg ptb-80">
-        <div class="sectionTitle-blue mb-80">
-            <h3>Start your <span> Journey</span></h3>
-        </div>
-        <div class="row m-0 w100">
-            <div class="col-lg-6 p-0">
-                <div class="cardWith-Btn">
-                    <div class="cardTitle">
-                        <h4>Pre KG</h4>
-                    </div>
-                    <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
-                        alt="Sir Mutha Logo">
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('admission/lahoc') ?>">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 p-0">
-                <div class="cardWith-Btn">
-                    <div class="cardTitle">
-                        <h4>KG- 1 Std</h4>
-                    </div>
-                    <img src="<?= base_url('images/admission/kg-1std.png') ?>" class="img-fluid w100"
-                        alt="Sir Mutha Logo">
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('admission/form') ?>">Know More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Start Your Journey -->
 
     <!-- Application Process -->
     <section class="container-space bgImg-with-center-content application-process-img ptb-80"  id="application_process">
@@ -102,16 +69,26 @@
             <!--    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
             <!--    ex ea commodo consequat.</h6>-->
         </div>
-        <div class="col-lg-9 m-auto">
-            <div class="center-card">
+        <div class="col-lg-9 m-auto mt-50">
+            <div class="center-card card-text-start">
                 <div class="sectionTitle-blue">
                     <h3>Step to <span>follow</span></h3>
-                    <p>1. Online enquiry form </p>
+                    <p><b>1. Online enquiry form</b> </p>
                     <p>The school's admission enquiry form will be available on the website from January onwards.</p>
-                    <p>2. Submission of Online Enquiry Form</p>
+                    <p><b>2. Submission of Online Enquiry Form</b></p>
                     <p>Parents/guardians submit the online enquiry form available on the school website. Specific instructions are provided for completing the form.</p>
-                    <p>3. Interview and Entrance test </p>
+                    <p><b>3. Interview and Entrance test </b></p>
                     <p>Subject to the availability of seats, shortlisted applicants may be invited for an interview involving the applicant and their parents or guardians. Applicants for grade 5 upwards may also be required to sit an entrance test to assess their proficiency in key subjects.</p>
+
+                    <p><b>4. Document Verification</b></p>
+                    <p>The school verifies the submitted documents for authenticity.</p>
+                    <p><b>5. Fee Payment and Confirmation</b></p>
+                    <p>Parents/guardians must pay the admission and tuition fees within the stipulated time.</p>
+                    <p><b>6. Orientation</b></p>
+                    <p>The school conducts an orientation session to familiarise newly admitted students and their parents/guardians with the school's environment, guidelines,and policies.</p>
+
+                    <p>We understand how important it is to choose the right school for your child’s education, and we are pleased that you are considering Sir Mutha School. Our team of experienced admissions staff is dedicated to providing excellent service, offering guidance and information at every step of the process to support you through the admissions process.</p>
+                    <p>We are able to consider your child for entry from LKG to Grade IX, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
                     
                     <div class="blueBtn-medium">
                         <a href="#">Know More</a>
@@ -123,7 +100,7 @@
     <!-- Application Process-->
 
     <!-- Fee Structure -->
-    <section class="wave-sec wave-bottom-img"  id="fee_structure">
+    <section class="wave-sec wave-lightyellow-bottom-img"  id="fee_structure">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
@@ -138,32 +115,13 @@
                     <!--</div>-->
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5 fee-structureImg">
+                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid"
                     alt="Lady Andal">
             </div>
         </div>
     </section>
     <!-- Fee Structure -->
-
-    <!-- Registration Process -->
-    <section class="blueBg-Sec pt-60"  id="registration_process">
-        <div class="container-space">
-            <div class="sectionTitle-white">
-                <h3>Registration <span>Process</span></h3>
-                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</h6>
-            </div>
-        </div>
-        <div class="fullWidth-Imgwith-center-btn">
-            <img src="<?= base_url('images/admission/registration-process.png') ?>" class="img-fluid" alt="">
-            <div class="lightYellowBtn">
-                <a href="#">Continue To Register</a>
-            </div>
-        </div>
-    </section>
-    <!-- Registration Process -->
 
     <!-- Terms & Conditions -->
     <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
@@ -188,3 +146,37 @@
         </div>
     </section>
     <!-- Terms & Conditions -->
+
+    <!-- Admission Enquiry Form -->
+    <section class="container-space wave-with-bgImg ptb-80">
+        <div class="sectionTitle-blue mb-80">
+            <h3>Admission <span> Form</span></h3>
+        </div>
+        <div class="row m-0 w100">
+            <div class="col-lg-6 p-0">
+                <div class="cardWith-Btn">
+                    <div class="cardTitle">
+                        <h4>Activity Centre/PREK-KG: 2025-26</h4>
+                    </div>
+                    <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
+                        alt="Sir Mutha Logo">
+                    <div class="blueBtn-medium">
+                        <a href="<?= base_url('admission/lahoc') ?>">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="cardWith-Btn">
+                    <div class="cardTitle">
+                        <h4>Apply For LKG to Grade X: 2025-2026</h4>
+                    </div>
+                    <img src="<?= base_url('images/admission/kg-1std.png') ?>" class="img-fluid w100"
+                        alt="Sir Mutha Logo">
+                    <div class="blueBtn-medium">
+                        <a href="<?= base_url('admission/form') ?>">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Admission Enquiry Form -->

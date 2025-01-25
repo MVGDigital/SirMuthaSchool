@@ -21,12 +21,7 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>" class="active">Compliance Details</a></li>
-                <li><a href="<?= base_url('statutory#guidelines') ?>">Guidelines for parents</a></li>
-                <li><a href="<?= base_url('statutory#guidelines') ?>">Attendence & Leave Policy</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Code of Conduct</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Rules & Regulations</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Child Support Policy</a></li>
+                <li><a href="<?= base_url('statutory#Statutory-Compliances') ?>" class="active">Statutory Compliances</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -56,16 +51,31 @@
     <!-- Section Menus -->
 
     <!-- Policys -->
-    <section class="container-space white-bgImg ptb-80" id="guidelines">
-        <div class="row m-0 w100">
+    <section class="container-space white-bgImg ptb-80" id="Statutory-Compliances">
+        <div class="sectionTitle-blue">
+            <h3>Statutory <span>Compliances</span></h3>
+        </div>
+        <div class="row m-0 w100 mt-50">
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>Building Safety Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#" target="_blank">Know More</a>
+                        <a href="/statutorydocument/building-safety-certificate.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Cbse Affiliation Letter</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/cbse-affiliation-letter.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -73,10 +83,10 @@
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>Calender 2024-2025</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="/statutorydocument/calender-2024-2025.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -84,10 +94,10 @@
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>Certificate of Recognition</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="/statutorydocument/certificate-of-recognition.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -95,10 +105,10 @@
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>Fire & Rescue No Objection Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="/statutorydocument/fire&rescue-no-objection-certificate.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -106,10 +116,10 @@
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>No Objection Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="/statutorydocument/no-objection-certificate.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -117,13 +127,69 @@
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Center For Learning</h5>
+                        <h5>Sanitary Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <a href="/statutorydocument/sanitary-certificate.pdf" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>School Management Committee</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/school-management-committee.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Staff Details with Qualification</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/staff-details-with-qualification.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>TC FORMAT</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/tc-format.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Text Books Revised Order 2024-2025</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/text-books-revised-order-2024-2025.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
+                <div class="center-card">
+                    <div class="card-content">
+                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
+                        <h5>Tuition Fees and School Strength</h5>
+                    </div>
+                    <div class="blueBtn-medium">
+                        <a href="/statutorydocument/tuition-fees-and-school-strength.pdf" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
     <!-- Policys -->
