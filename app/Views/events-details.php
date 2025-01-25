@@ -1,6 +1,7 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
             alt="<?= esc($banner['title']); ?>">

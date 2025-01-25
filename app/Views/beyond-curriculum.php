@@ -58,7 +58,7 @@
                                         <h4>Heritage <span>Club</span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
-                                        <a href="<?= base_url('/beyond-curriculum/heritageclub') ?>">Know More</a>
+                                        <a href="<?= base_url('beyond-curriculum/heritageclub') ?>">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -130,16 +130,8 @@
                             <div class="thumbContent">
                                 <h6>Sir Mutha School, KARE secure top honours</h6>
                                 <span>Dec, 2024</span>
-                                <p><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                    Education (KARE), Srivilliputhur, bagged the overall championship trophies in school
-                                    and college category in the KESPA - HITS TN State level Swimming meet 2024 organised
-                                    by the Kerala Sportspersons Association (KESPA) Chennai in association with the
-                                    Dolphin Swimming Academy, Mogappair.</p>
+                                <p class="newsText"><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and</p>
                                 <div class="whiteBtn-medium">
-                                    <!-- <a
-                                        href="https://www.newindianexpress.com/cities/chennai/2024/Feb/21/sir-mutha-school-kare-secure-top-honours">Know
-                                        More</a> -->
-
                                     <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter2.pdf"
                                         target="_blank">Know
                                         More</a>
@@ -152,7 +144,7 @@
                             <div class="thumbContent">
                                 <h6>School unravels traffic knots</h6>
                                 <span>August, 2017</span>
-                                <p><b>Sir Mutha School :</b> Over the last few days, Harrington Road is not as congested
+                                <p class="newsText"><b>Sir Mutha School :</b> Over the last few days, Harrington Road is not as congested
                                     as before, during rush hour. On the heels of Chennai Traffic Police (CTP) restoring
                                     two-way traffic on EVR Salai-Chetpet-Gengu Reddy Subway, Sir Mutha School (CBSE),
                                     Harrington Road, took measures to prevent traffic snarls on the stretch.</p>
@@ -169,7 +161,7 @@
                             <div class="thumbContent">
                                 <h6>Sir Mutha School, KARE secure top honours</h6>
                                 <span>Dec, 2024</span>
-                                <p><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
+                                <p class="newsText"><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
                                     Education (KARE), Srivilliputhur, bagged the overall championship trophies in school
                                     and college category in the KESPA - HITS TN State level Swimming meet 2024 organised
                                     by the Kerala Sportspersons Association (KESPA) Chennai in association with the
@@ -191,7 +183,7 @@
                             <div class="thumbContent">
                                 <h6>School unravels traffic knots</h6>
                                 <span>August, 2017</span>
-                                <p><b>Sir Mutha School :</b> Over the last few days, Harrington Road is not as congested
+                                <p class="newsText"><b>Sir Mutha School :</b> Over the last few days, Harrington Road is not as congested
                                     as before, during rush hour. On the heels of Chennai Traffic Police (CTP) restoring
                                     two-way traffic on EVR Salai-Chetpet-Gengu Reddy Subway, Sir Mutha School (CBSE),
                                     Harrington Road, took measures to prevent traffic snarls on the stretch.</p>
@@ -202,41 +194,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="slick-slider-banner-image">-->
-                        <!--    <img src="<?= base_url('images/beyond-curriculum/thumb-banner-1.jpg') ?>" class="img-fluid"-->
-                        <!--        alt="Sir Mutha Newsletter Image">-->
-                        <!--    <div class="thumbContent">-->
-                        <!--        <h6>Sir Mutha School, KARE secure top honours</h6>-->
-                        <!--        <span>Dec, 2024</span>-->
-                        <!--        <p><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and-->
-                        <!--            Education (KARE), Srivilliputhur, bagged the overall championship trophies in school-->
-                        <!--            and college category in the KESPA - HITS TN State level Swimming meet 2024 organised-->
-                        <!--            by the Kerala Sportspersons Association (KESPA) Chennai in association with the-->
-                        <!--            Dolphin Swimming Academy, Mogappair.</p>-->
-                        <!--        <div class="whiteBtn-medium">-->
-                        <!--            <a-->
-                        <!--                href="https://www.newindianexpress.com/cities/chennai/2024/Feb/21/sir-mutha-school-kare-secure-top-honours">Know-->
-                        <!--                More</a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="slick-slider-banner-image">-->
-                        <!--    <img src="<?= base_url('images/beyond-curriculum/thumb-banner-1.jpg') ?>" class="img-fluid"-->
-                        <!--        alt="Sir Mutha Newsletter Image">-->
-                        <!--    <div class="thumbContent">-->
-                        <!--        <h6>School unravels traffic knots</h6>-->
-                        <!--        <span>August, 2017</span>-->
-                        <!--        <p><b>Sir Mutha School :</b> Over the last few days, Harrington Road is not as congested-->
-                        <!--            as before, during rush hour. On the heels of Chennai Traffic Police (CTP) restoring-->
-                        <!--            two-way traffic on EVR Salai-Chetpet-Gengu Reddy Subway, Sir Mutha School (CBSE),-->
-                        <!--            Harrington Road, took measures to prevent traffic snarls on the stretch.</p>-->
-                        <!--        <div class="whiteBtn-medium">-->
-                        <!--            <a-->
-                        <!--                href="https://www.thehindu.com/news/cities/chennai/school-unravels-traffic-knots/article19518142.ece">Know-->
-                        <!--                More</a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
 
                     </div>
                     <div class="slider slider-nav thumb-image">
@@ -247,7 +204,7 @@
                             </div>
                             <div class="thumbContent">
                                 <h6>KARE secure top honours</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor....
+                                <p class="newsThumbText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 </p>
                                 <span>Dec, 2024</span>
                                 <div class="whiteBtn-medium">
@@ -263,7 +220,7 @@
                             </div>
                             <div class="thumbContent">
                                 <h6>School unravels traffic knots</h6>
-                                <p>Sir Mutha School has introduced a new traffic arrangement to ease traffic....</p>
+                                <p class="newsThumbText">Sir Mutha School has introduced a new traffic arrangement to ease traffic</p>
                                 <span>August, 2017</span>
                                 <div class="whiteBtn-medium">
                                     <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf">Know
@@ -278,7 +235,7 @@
                             </div>
                             <div class="thumbContent">
                                 <h6>KARE secure top honours</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor....
+                                <p class="newsThumbText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 </p>
                                 <span>Dec, 2024</span>
                                 <div class="whiteBtn-medium">
@@ -294,7 +251,7 @@
                             </div>
                             <div class="thumbContent">
                                 <h6>School unravels traffic knots</h6>
-                                <p>Sir Mutha School has introduced a new traffic arrangement to ease traffic....</p>
+                                <p class="newsThumbText">Sir Mutha School has introduced a new traffic arrangement to ease traffic</p>
                                 <span>August, 2017</span>
                                 <div class="whiteBtn-medium">
                                     <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf">Know

@@ -1388,6 +1388,13 @@ main{
     background-color: var(--blue-bg);   
     background-image: url(../images/wave-yellowWith-bottom-img.png);
 }
+.fullWidthImg .splide__pagination{
+    bottom: 2.5em;
+}
+.splide__pagination__page.is-active{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+}
 /* ================================== Gallery ==================================*/
 
 /* Tabs Code */
@@ -1703,7 +1710,9 @@ label.error{
 .slick-banner-slider .slider.slider-nav {
     padding-left: 15px;
 }
-
+.slider-nav .slick-slide.thumbnail-image{
+    /* border-bottom: 2px solid #10275347; */
+}
 .slider-nav .slick-slide.thumbnail-image .thumbImg{
     max-width: 100%;
     margin: 0 auto;
