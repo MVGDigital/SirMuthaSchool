@@ -10,8 +10,10 @@
             <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
         </div>
         <div class="social-media">
-            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
-            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img
+                    src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>"
+                    alt="facebook icon"></a>
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
@@ -22,7 +24,7 @@
             <a href="<?= base_url('academics') ?>">Academics</a>
             <a href="<?= base_url('facilities') ?>">Facilities</a>
             <a href="<?= base_url('inclusive-education') ?>">Inclusive Education</a>
-            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>    
+            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('events') ?>">Events</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
             <a href="<?= base_url('achievements') ?>">Achievements</a>
@@ -33,7 +35,7 @@
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
             <a href="<?= base_url('contact') ?>">Contact</a>
-           
+
         </div>
     </div>
     <div class="pageTitleLine">
@@ -42,7 +44,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-            <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
+                <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
@@ -176,25 +178,39 @@ splide.mount();
 
 <?php if ($page_code === 'inclusive-education'): ?>
 
-    //Special Education 
-    var splide = new Splide('#spl-education-slider', {
-        type: 'slide',
-        autoplay: false,
-        pauseOnHover: false,
-        pagination: true,
-        speed: 1000,
-        rewindSpeed: 1000,
-        height: 'auto',
-        perPage: 1,
-        arrows: true,
-        breakpoints: {
-            767: {
-                perPage: 1,
-                pagination: true,
-            },
+//Special Education 
+var splide = new Splide('#spl-education-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
         },
-    });
-    splide.mount();
+    },
+});
+splide.mount();
+
+//Special Education 
+var splide = new Splide('#occupational-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: false,
+});
+splide.mount();
 
 <?php endif; ?>
 
@@ -439,6 +455,24 @@ document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
         perPage: 1,
         arrows: true,
     }).mount();
+});
+
+$(document).ready(function() {
+    var fullText = $('.newsText').text(); // Get the full text
+    var words = fullText.split(' '); // Split the text into words
+    var limit = 105; // Word limit
+    var truncatedText = words.slice(0, limit).join(' ') + '...'; // Create truncated text
+
+    // Initially display the truncated text
+    $('.newsText').text(truncatedText);
+
+    var thumbFullText = $('.newsThumbText').text(); // Get the full text
+    var thumbWords = thumbFullText.split(' '); // Split the text into words
+    var thumbLimit = 10; // Word limit
+    var thumbTruncatedText = thumbWords.slice(0, thumbLimit).join(' ') + '...'; // Create truncated text
+
+    // Initially display the truncated text
+    $('.newsThumbText').text(thumbTruncatedText);
 });
 
 <?php endif; ?>
@@ -1015,76 +1049,78 @@ $(document).ready(function() {
 <?php if ($page_code === 'admission'): ?>
 
 
-    $(document).ready(function () {
-        var video = $('#sir-mutha-campus').get(0); // Get the video element
-        var playOverlay = $('#playOverlayBtn'); // Play overlay button
-        var isUserPaused = false; // Track if the user explicitly paused the video
+$(document).ready(function() {
+    var video = $('#sir-mutha-campus').get(0); // Get the video element
+    var playOverlay = $('#playOverlayBtn'); // Play overlay button
+    var isUserPaused = false; // Track if the user explicitly paused the video
 
-        // Ensure the video is muted for autoplay
-        video.muted = true;
+    // Ensure the video is muted for autoplay
+    video.muted = true;
 
-        // Use IntersectionObserver to detect visibility
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    console.log('Video is in view');
-                    if (!isUserPaused) {
-                        video.play().catch(function (error) {
-                            console.error('Autoplay prevented:', error);
-                        });
-                    }
-                } else {
-                    console.log('Video is out of view');
-                    video.pause();
+    // Use IntersectionObserver to detect visibility
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                console.log('Video is in view');
+                if (!isUserPaused) {
+                    video.play().catch(function(error) {
+                        console.error('Autoplay prevented:', error);
+                    });
                 }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(document.querySelector('#campusVideo'));
-
-        // Hide overlay when the video starts playing
-        video.addEventListener('play', function () {
-            playOverlay.addClass('hidden');
-            console.log('Video started playing');
-        });
-
-        // Show overlay when the video is paused or ended
-        video.addEventListener('pause', function () {
-            playOverlay.removeClass('hidden');
-            console.log('Video paused');
-        });
-
-        video.addEventListener('ended', function () {
-            playOverlay.removeClass('hidden');
-            console.log('Video ended');
-        });
-
-        // Play or pause the video when overlay is clicked
-        playOverlay.click(function () {
-            console.log('Play overlay clicked');
-            if (video.paused) {
-                video.play();
-                playOverlay.addClass('hidden');
-                isUserPaused = false; // Reset flag when user resumes playing
             } else {
+                console.log('Video is out of view');
                 video.pause();
-                playOverlay.removeClass('hidden');
-                isUserPaused = true; // Set flag when user pauses
             }
         });
-
-        // Auto-play when clicking the video itself
-        $('#sir-mutha-campus').click(function () {
-            console.log('Video clicked');
-            if (video.paused) {
-                video.play();
-                isUserPaused = false; // Reset flag when user resumes playing
-            } else {
-                video.pause();
-                isUserPaused = true; // Set flag when user pauses
-            }
-        });
+    }, {
+        threshold: 0.5
     });
+
+    observer.observe(document.querySelector('#campusVideo'));
+
+    // Hide overlay when the video starts playing
+    video.addEventListener('play', function() {
+        playOverlay.addClass('hidden');
+        console.log('Video started playing');
+    });
+
+    // Show overlay when the video is paused or ended
+    video.addEventListener('pause', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video paused');
+    });
+
+    video.addEventListener('ended', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video ended');
+    });
+
+    // Play or pause the video when overlay is clicked
+    playOverlay.click(function() {
+        console.log('Play overlay clicked');
+        if (video.paused) {
+            video.play();
+            playOverlay.addClass('hidden');
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            playOverlay.removeClass('hidden');
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+
+    // Auto-play when clicking the video itself
+    $('#sir-mutha-campus').click(function() {
+        console.log('Video clicked');
+        if (video.paused) {
+            video.play();
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+});
 
 
 
