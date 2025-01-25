@@ -51,9 +51,22 @@
 .img-hoverEffect.paginationCenter .splide__pagination{
   bottom: -10%!important;
 }
+#specialeducation .toLeft-pagination .splide__pagination{
+  left: 7%;
+  bottom: -27% !important;
+}
+#spl-education-slider .splide__pagination {
+  bottom: 6%;
+}
 }
 
 @media (max-width: 1024px) {
+  .deskTopImg-forTab{
+    display: none;
+  }
+  .tabImg{
+    display: block;
+  }
   .headerContact-info{
     padding: 50px 0;
   }
@@ -108,6 +121,10 @@
   .blueBg-Sec .paginationCenter .splide__pagination{
     bottom: -11%;
   }
+  #greencampus .wave-yellow-overwireBg {
+    margin-top: -65%;
+    padding-top: 60%;
+}
   .wave-yellow-overwireBg{
     margin-top: -15%;
     padding-top: 15%;
@@ -278,6 +295,9 @@
 }
 .hoverImg img{
   width: 45%;
+}
+#spl-education-slider .splide__pagination {
+  bottom: 2.5%;
 }
 
 }
@@ -451,11 +471,11 @@ position: unset;
   padding: 8px 5%;
 }
 #spl-education-slider.paginationCenter .splide__arrow--prev{
-  left: 0!important;
+  left: 0p!important;
 }
 #spl-education-slider.paginationCenter .splide__pagination{
-  left: 18%;
-  bottom: 8% !important;
+  left: 0%;
+  bottom: 3.5% !important;
 }
 /* Facilities */
 
@@ -470,7 +490,7 @@ position: unset;
   margin: 15px 0;
 }
 .cardTitle h4{
-  font-size: 30px;
+  font-size: 20px;
   line-height: 32px;
 }
 /* Statutory */

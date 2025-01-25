@@ -116,6 +116,9 @@ p {
 }
 
 .mt-50{
+    margin-top: 50px!important;
+}
+.mt-50{
     margin-top: 50px;
 }
 .mt-80{
@@ -587,6 +590,9 @@ main{
 .mobImg{
   display: none;
 }
+.tabImg{
+    display: none;
+}
 .innerMenus{
     border-radius: 10px;
     padding: 30px 0;
@@ -665,12 +671,14 @@ main{
 .sectionTitle-white h6{
     font-size: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 20px;
     line-height: 34px;
     font-family: 'Figtree-Regular';
     color: var(--color-white);
 }
-
+.innerMenus-sec .sectionTitle-white h3{
+    margin-bottom: 50px;
+}
 .sectionTitle-white p{
     font-size: 16px;
     margin-top: 20px;
@@ -1122,7 +1130,10 @@ main{
 }
 .cardWith-Btn{
     padding: 15px;
-    position: relative;
+    position: relative;    
+}
+.cardWith-Btn img{
+    border-radius: 7px;
 }
 .cardWith-Btn .blueBtn-medium{
     width: 100%;
@@ -1190,7 +1201,18 @@ main{
 .wave-yellow-overwireBg p{
     color: var(--color-inActive);
 }
-
+#curve-slider .splide__arrows{
+    bottom: 3em;
+}
+#curve-slider .splide__pagination{
+    bottom: 2.5em;
+}
+#spl-education-slider .splide__arrows{
+    bottom: 3em;
+}
+#spl-education-slider .splide__pagination{
+    bottom: 8%;
+}
 /* =============================== Statutory ============================== */
 .withYellowBtn{
     text-align: center;
@@ -1240,6 +1262,9 @@ main{
     background-repeat: no-repeat;    
     background-image: url(../images/statutory/linenWhite-Bg.svg);
 }
+#Statutory-Compliances .center-card{
+    background-color: #1027530f;
+}
 
 /* =========================== Admission ========================= */
 .admsn-PageVideo {
@@ -1251,6 +1276,7 @@ main{
 .admsn-PageVideo video {
     width: 100%;
     height: 600px;
+    cursor: pointer;
 }
 
 /* Play overlay styles */
@@ -1283,7 +1309,7 @@ main{
     margin: 30px 0;
 }
 .cardTitle h4{
-    font-size: 38px;
+    font-size: 26px;
     line-height: 38px;
     color: var(--color-blue);
     font-family: 'Figtree-Medium';
@@ -1302,7 +1328,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #F8F8F8;
+    background-color: #F5F0E4;
 }
 .center-card h5{
     font-size: 18px;
@@ -1316,11 +1342,20 @@ main{
 .center-card h3 span{
     text-transform: lowercase;
 }
+.card-text-start p{
+    text-align: start!important;
+}
 .wave-bottom-img{
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;    
     background-image: url(../images/wave-bottom-Img.png);
+}
+.wave-lightyellow-bottom-img{
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;    
+    background-image: url(../images/wave-lightYellow-bottom-Img.png);
 }
 .fullWidth-Imgwith-center-btn{
     position: relative;
@@ -1339,7 +1374,12 @@ main{
     background-position: top;
     background-image: url(../images/admission/ligh-yellowWithGg-img.svg);
 }
-
+.fee-structureImg {
+    text-align: end;
+}
+.fee-structureImg img{
+    width: 85%;
+}
 /* ================================== Inclusive Education ============================= */
 .wave-yellowWith-bottom-img{
     background-size: 100%;
@@ -1455,6 +1495,9 @@ main{
 
 .gallery-imgs{
     padding: 15px;
+}
+.gallery-imgs img{
+    border-radius: 10px;
 }
 .gallery-imgItem1{
     padding-bottom: 15px;
