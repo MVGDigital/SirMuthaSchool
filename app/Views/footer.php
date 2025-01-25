@@ -174,6 +174,30 @@ splide.mount();
 
 <?php endif; ?>
 
+<?php if ($page_code === 'inclusive-education'): ?>
+
+    //Special Education 
+    var splide = new Splide('#spl-education-slider', {
+        type: 'slide',
+        autoplay: false,
+        pauseOnHover: false,
+        pagination: true,
+        speed: 1000,
+        rewindSpeed: 1000,
+        height: 'auto',
+        perPage: 1,
+        arrows: true,
+        breakpoints: {
+            767: {
+                perPage: 1,
+                pagination: true,
+            },
+        },
+    });
+    splide.mount();
+
+<?php endif; ?>
+
 <?php if ($page_code === 'facilities'): ?>
 
 //Board members Slider
@@ -235,6 +259,39 @@ var splide = new Splide('#spl-education-slider', {
     },
 });
 splide.mount();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
+
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
+
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
+
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
+
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
+
+        // Reinitialize pagination for the selected tab
+        reinitializePagination(selectedTabContent);
+    }
+});
 
 <?php endif; ?>
 
@@ -1075,7 +1132,6 @@ splide.mount();
 
 <?php if ($page_code === 'announcement'): ?>
 
-
 $(document).ready(function() {
 
     var pdfFiles = [{
@@ -1134,8 +1190,6 @@ $(document).ready(function() {
         });
     });
 });
-
-
 
 
 <?php endif; ?>
