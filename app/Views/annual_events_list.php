@@ -45,8 +45,8 @@
                                             <tr>
                                                 <th>S.No</th>
                                                 <th>Title</th>
-                                                <th>Year</th>
-                                                <th>Month</th>
+                                                <th>Date</th>
+                                                <th>Published</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -56,23 +56,36 @@
                                             <tr>
                                                 <td><?= $serial++ ?></td>
                                                 <td><?= esc($event['title']) ?></td>
-                                                <td><?= esc($event['year']) ?></td>
-                                                <td><?= esc($event['month']) ?></td>
+                                                <td><?= esc($event['event_date']) ?></td>
+                                                <td>
+                                                    <div class="form-check form-switch form-switch-success">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="customSwitch<?= esc($event['event_id']) ?>"
+                                                            onchange="toggleStatus(<?= esc($event['event_id']) ?>, this.checked)"
+                                                            <?= $event['published'] ? 'checked' : '' ?>>
+                                                        <label class="form-check-label"
+                                                            for="customSwitch<?= esc($event['event_id']) ?>">
+                                                            <?= $event['published'] ? 'Active' : 'Inactive' ?>
+                                                        </label>
+                                                    </div>
+                                                </td>
                                                 <td>
                                                     <a href="<?= base_url('adm1n/annual-events/edit/' . $event['event_id']) ?>"
                                                         class="mx-2">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
                                                     <a href="<?= base_url('adm1n/annual-events/delete/' . $event['event_id']) ?>"
-                                                        class=" text-danger"
+                                                        class="text-danger"
                                                         onclick="return confirm('Are you sure you want to delete this item?')">
-                                                        <i class="fa fa-trash"></i></a>
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <?php endforeach; ?>
                                         </tbody>
                                     </table>
                                 </div>
+
                             </div>
 
                             <!--end col-->
@@ -98,14 +111,17 @@
                     $('#annual-events').DataTable();
                 });
 
-                function toggleStatus(itemId) {
-                    const url = "<?= base_url('/adm1n/gallery/toggle-status/') ?>" + itemId;
+                function toggleStatus(eventId, isChecked) {
+                    const url = "<?= base_url('adm1n/annual-events/toggle-published/') ?>" + eventId;
 
                     fetch(url, {
-                            method: 'GET',
+                            method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
-                            }
+                            },
+                            body: JSON.stringify({
+                                published: isChecked
+                            })
                         })
                         .then(response => {
                             if (!response.ok) {

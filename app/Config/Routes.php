@@ -209,6 +209,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
         $routes->get('edit/(:num)', 'AnnualEventController::edit/$1');
         $routes->post('update/(:num)', 'AnnualEventController::update/$1');
         $routes->get('delete/(:num)', 'AnnualEventController::delete/$1');
+        $routes->post('toggle-published/(:num)', 'AnnualEventController::togglePublished/$1');
     });
     
     // Contact routes
