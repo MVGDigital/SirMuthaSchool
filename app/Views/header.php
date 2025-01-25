@@ -259,7 +259,7 @@
                             <span>Facebook</span></a>
                         </div>
                         <div class="socialIcons">
-                            <a href=""><img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
+                            <a href="#"><img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
                             <span>Twitter</span></a>
                         </div>
                     </div>
