@@ -15,20 +15,25 @@
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
-    <div class="col-12 col-md-8 col-lg-12 col-xl-8 m-auto footer-menus">
+    <div class="col-12 col-md-8 col-lg-12 col-xl-12 m-auto footer-menus">
         <div class="itemSpaceBetween">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
             <a href="<?= base_url('academics') ?>">Academics</a>
             <a href="<?= base_url('facilities') ?>">Facilities</a>
+            <a href="<?= base_url('inclusive-education') ?>">Inclusive Education</a>
+            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>    
+            <a href="<?= base_url('events') ?>">Events</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
+            <a href="<?= base_url('achievements') ?>">Achievements</a>
+            <a href="<?= base_url('announcements') ?>">Announcements</a>
+            <a href="<?= base_url('in-the-outdoors') ?>">In The Outdoors</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>
             <a href="<?= base_url('parents') ?>">Parents</a>
-            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
             <a href="<?= base_url('contact') ?>">Contact</a>
-
+           
         </div>
     </div>
     <div class="pageTitleLine">
@@ -37,9 +42,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-                <a href="#">Cookie Policy</a>
-                <hr>
-                <a href="#">Privacy Policy</a>
+            <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
