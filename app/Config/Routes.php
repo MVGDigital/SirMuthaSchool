@@ -132,6 +132,7 @@ $routes->group('career', function ($routes) {
 
 //Contact
 $routes->get('contact', 'Contact::index');
+$routes->post('contact/submitContactForm', 'Contact::submitContactForm');
 
 $routes->get('/adm1n/login', 'Auth::index', ['filter' => 'noauth']);
 $routes->post('/adm1n/loginCheck', 'Auth::loginCheck');
@@ -210,6 +211,16 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
         $routes->post('update/(:num)', 'AnnualEventController::update/$1');
         $routes->get('delete/(:num)', 'AnnualEventController::delete/$1');
         $routes->post('toggle-published/(:num)', 'AnnualEventController::togglePublished/$1');
+    });
+    
+    $routes->group('adm1n/announcements', ['namespace' => 'App\Controllers'], function ($routes) {
+        $routes->get('/', 'AnnouncementController::index');
+        $routes->get('create', 'AnnouncementController::create');
+        $routes->post('store', 'AnnouncementController::store');
+        $routes->get('edit/(:num)', 'AnnouncementController::edit/$1');
+        $routes->post('update/(:num)', 'AnnouncementController::update/$1');
+        $routes->get('delete/(:num)', 'AnnouncementController::delete/$1');
+        $routes->post('toggle-published/(:num)', 'AnnouncementController::togglePublished/$1');
     });
     
     // Contact routes

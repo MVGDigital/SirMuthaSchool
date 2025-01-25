@@ -10,8 +10,10 @@
             <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
         </div>
         <div class="social-media">
-            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
-            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img
+                    src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>"
+                    alt="facebook icon"></a>
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
@@ -22,7 +24,7 @@
             <a href="<?= base_url('academics') ?>">Academics</a>
             <a href="<?= base_url('facilities') ?>">Facilities</a>
             <a href="<?= base_url('inclusive-education') ?>">Inclusive Education</a>
-            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>    
+            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('events') ?>">Events</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
             <a href="<?= base_url('achievements') ?>">Achievements</a>
@@ -33,7 +35,7 @@
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
             <a href="<?= base_url('contact') ?>">Contact</a>
-           
+
         </div>
     </div>
     <div class="pageTitleLine">
@@ -42,7 +44,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-            <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
+                <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
@@ -874,18 +876,20 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-
+    // Input validation for first name and last name
     $("#first-name, #last-name").on("input", function() {
         const value = $(this).val();
         // Allow only letters and spaces
         $(this).val(value.replace(/[^a-zA-Z\s]/g, ""));
     });
 
+    // Email input handling (convert to lowercase)
     $("#email").on("input", function(e) {
         var value = e.target.value; // Get the current value
         e.target.value = value.toLowerCase(); // Convert it to lowercase and set it back
     });
 
+    // Custom email validation
     $.validator.addMethod("customEmail", function(value, element) {
         return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
     }, "Please enter a valid email address");
@@ -895,7 +899,6 @@ $(document).ready(function() {
         const value = $(this).val();
         $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
     });
-
 
     $("#contact-form").validate({
         rules: {
@@ -947,87 +950,112 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
-            form.submit();
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('contact/submitContactForm') ?>",
+                data: $(form).serialize(),
+                success: function(response) {
+                    $('#responseMessage').html(
+                        '<p class="success-message text-center" style="color: #00ff3a;">Your message has been sent successfully!</p>'
+                    );
+                    $(form)[0].reset();
+
+                    setTimeout(function() {
+                        $('#responseMessage').html('');
+                    }, 3000);
+                },
+                error: function(xhr, status, error) {
+                    $('#responseMessage').html(
+                        '<p class="error-message text-center" style="color: #ff1b1b;">There was an error while submitting your message. Please try again later.</p>'
+                    );
+
+                    setTimeout(function() {
+                        $('#responseMessage').html('');
+                    }, 3000);
+                }
+            });
         }
     });
 });
+
 
 <?php endif; ?>
 
 <?php if ($page_code === 'admission'): ?>
 
 
-    $(document).ready(function () {
-        var video = $('#sir-mutha-campus').get(0); // Get the video element
-        var playOverlay = $('#playOverlayBtn'); // Play overlay button
-        var isUserPaused = false; // Track if the user explicitly paused the video
+$(document).ready(function() {
+    var video = $('#sir-mutha-campus').get(0); // Get the video element
+    var playOverlay = $('#playOverlayBtn'); // Play overlay button
+    var isUserPaused = false; // Track if the user explicitly paused the video
 
-        // Ensure the video is muted for autoplay
-        video.muted = true;
+    // Ensure the video is muted for autoplay
+    video.muted = true;
 
-        // Use IntersectionObserver to detect visibility
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    console.log('Video is in view');
-                    if (!isUserPaused) {
-                        video.play().catch(function (error) {
-                            console.error('Autoplay prevented:', error);
-                        });
-                    }
-                } else {
-                    console.log('Video is out of view');
-                    video.pause();
+    // Use IntersectionObserver to detect visibility
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                console.log('Video is in view');
+                if (!isUserPaused) {
+                    video.play().catch(function(error) {
+                        console.error('Autoplay prevented:', error);
+                    });
                 }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(document.querySelector('#campusVideo'));
-
-        // Hide overlay when the video starts playing
-        video.addEventListener('play', function () {
-            playOverlay.addClass('hidden');
-            console.log('Video started playing');
-        });
-
-        // Show overlay when the video is paused or ended
-        video.addEventListener('pause', function () {
-            playOverlay.removeClass('hidden');
-            console.log('Video paused');
-        });
-
-        video.addEventListener('ended', function () {
-            playOverlay.removeClass('hidden');
-            console.log('Video ended');
-        });
-
-        // Play or pause the video when overlay is clicked
-        playOverlay.click(function () {
-            console.log('Play overlay clicked');
-            if (video.paused) {
-                video.play();
-                playOverlay.addClass('hidden');
-                isUserPaused = false; // Reset flag when user resumes playing
             } else {
+                console.log('Video is out of view');
                 video.pause();
-                playOverlay.removeClass('hidden');
-                isUserPaused = true; // Set flag when user pauses
             }
         });
-
-        // Auto-play when clicking the video itself
-        $('#sir-mutha-campus').click(function () {
-            console.log('Video clicked');
-            if (video.paused) {
-                video.play();
-                isUserPaused = false; // Reset flag when user resumes playing
-            } else {
-                video.pause();
-                isUserPaused = true; // Set flag when user pauses
-            }
-        });
+    }, {
+        threshold: 0.5
     });
+
+    observer.observe(document.querySelector('#campusVideo'));
+
+    // Hide overlay when the video starts playing
+    video.addEventListener('play', function() {
+        playOverlay.addClass('hidden');
+        console.log('Video started playing');
+    });
+
+    // Show overlay when the video is paused or ended
+    video.addEventListener('pause', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video paused');
+    });
+
+    video.addEventListener('ended', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video ended');
+    });
+
+    // Play or pause the video when overlay is clicked
+    playOverlay.click(function() {
+        console.log('Play overlay clicked');
+        if (video.paused) {
+            video.play();
+            playOverlay.addClass('hidden');
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            playOverlay.removeClass('hidden');
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+
+    // Auto-play when clicking the video itself
+    $('#sir-mutha-campus').click(function() {
+        console.log('Video clicked');
+        if (video.paused) {
+            video.play();
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+});
 
 
 
@@ -1075,68 +1103,60 @@ splide.mount();
 
 <?php if ($page_code === 'announcement'): ?>
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch announcements from PHP
+    var pdfFiles = <?= json_encode($announcements) ?>;
 
-$(document).ready(function() {
-
-    var pdfFiles = [{
-            url: "<?= base_url('images/announcements/Circular-Open-House-2024.pdf'); ?>",
-            title: "Document 1: Circular"
-        },
-        {
-            url: "<?= base_url('images/announcements/Invitation-for-the-Farewell-Circular.pdf'); ?>",
-            title: "Document 2: Circular"
-        }
-    ];
-
+    // Load PDF.js
     var pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc =
         'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
 
-    pdfFiles.forEach(function(file, index) {
-        // Create a container for each PDF and its title
-        var container = $('<div class="pdf-container" style="margin-bottom: 20px;"></div>').appendTo(
-            '#pdf-render-area');
+    // Iterate over the announcements and render PDFs
+    pdfFiles.forEach(function(announcement, index) {
+        if (announcement.pdf_file) {
+            // Create a container for each PDF and its title
+            var container = document.createElement("div");
+            container.className = "pdf-container";
+            container.style.marginBottom = "20px";
+            document.getElementById("pdf-render-area").appendChild(container);
 
-        // Add the title above the canvas
-        $('<h3 style="text-align: center;">' + file.title + '</h3>').appendTo(container);
+            // Add the title
+            var title = document.createElement("h3");
+            title.style.textAlign = "center";
+            title.textContent = announcement.title;
+            container.appendChild(title);
 
-        // Create the canvas for rendering the PDF
-        var canvas = $('<canvas></canvas>').appendTo(container).get(0);
+            // Create the canvas
+            var canvas = document.createElement("canvas");
+            container.appendChild(canvas);
 
-        // Load the PDF and render it
-        var loadingTask = pdfjsLib.getDocument(file.url);
-        loadingTask.promise.then(function(pdf) {
-            console.log(`PDF ${index + 1} loaded`);
+            // Load the PDF and render it
+            var loadingTask = pdfjsLib.getDocument("<?= base_url('uploads/announcements') ?>/" +
+                announcement.pdf_file);
+            loadingTask.promise.then(function(pdf) {
+                pdf.getPage(1).then(function(page) {
+                    var scale = 1.5;
+                    var viewport = page.getViewport({
+                        scale: scale
+                    });
 
-            pdf.getPage(1).then(function(page) {
-                console.log('Page loaded');
+                    var context = canvas.getContext("2d");
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
 
-                var scale = 1.5;
-                var viewport = page.getViewport({
-                    scale: scale
+                    var renderContext = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+                    page.render(renderContext);
                 });
-
-                var context = canvas.getContext('2d');
-                canvas.width = viewport.width;
-                canvas.height = viewport.height;
-
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                var renderTask = page.render(renderContext);
-                renderTask.promise.then(function() {
-                    console.log(`PDF ${index + 1} rendered`);
-                });
+            }).catch(function(error) {
+                console.error("Error loading PDF:", error);
             });
-        }).catch(function(error) {
-            console.error('Error loading PDF:', error);
-        });
+        }
     });
 });
-
-
-
 
 <?php endif; ?>
 
