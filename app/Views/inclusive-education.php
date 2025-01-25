@@ -20,9 +20,15 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a></li>
+                <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a>
+                </li>
                 <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
             </ul>
+        </div>
+        <div class="pageTitleLine col-lg-8 m-auto">
+            <hr>
+            <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
+            <hr>
         </div>
         <!--<div class="pageTitleLine col-lg-8 m-auto">-->
         <!--    <hr>-->
@@ -45,13 +51,17 @@
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
-                    <h3>Learing <span> Center</span></h3>
-                    <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to cater to the needs of children with special needs, 
-                    while simultaneously fostering awareness among teachers, parents, and the community at large.
+                    <h3>Learning <span> Centers</span></h3>
+                    <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to
+                        cater to the needs of children with special needs,
+                        while simultaneously fostering awareness among teachers, parents, and the community at large.
                     </p>
-                    <p>Caregivers are equipped through comprehensive training programmes, enabling them to assist these children in mainstream classrooms.
-                    The Learning Centre has garnered accolades from the Madras Dyslexia Association, being hailed as one of the best in its field. 
-                    Ultimately, this initiative reinforces the school’s commitment to helping every child achieve their unique potential.
+                    <p>Caregivers are equipped through comprehensive training programmes, enabling them to assist these
+                        children in mainstream classrooms.
+                        The Learning Centre has garnered accolades from the Madras Dyslexia Association, being hailed as
+                        one of the best in its field.
+                        Ultimately, this initiative reinforces the school’s commitment to helping every child achieve
+                        their unique potential.
                     </p>
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor-->
                     <!--    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
@@ -65,20 +75,115 @@
 
 
     <!-- OT -->
-    <section class="">
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+    <section>
+        <div id="occupational-slider" class="splide paginationCenter fullWidthImg">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
                 <h3>Occupational <span>Theraphy</span></h3>
-                <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the essential role of the Occupational Therapist in paediatrics.
+                <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the
+                    essential role of the Occupational Therapist in paediatrics.
                 </h6>
-                <p class="light-blue"> The primary mission is to help children play, grow, and develop the skills vital for a fulfilling adult life. When a child struggles with writing, displays poor motor control, or suffers from a fleeting attention span, the Occupational Therapist conducts a thorough assessment and may recommend tailored therapy sessions.</p>
-                <p class="light-blue">Utilising Sensory Integration and a Biomechanical framework, we observe significant improvements in both gross and fine motor coordination. This ripple effect strengthens handwriting, attention span, memory, and self-esteem, resulting in remarkable progress for the children in our care.</p>
+                <p class="light-blue"> The primary mission is to help children play, grow, and develop the skills vital
+                    for a fulfilling adult life. When a child struggles with writing, displays poor motor control, or
+                    suffers from a fleeting attention span, the Occupational Therapist conducts a thorough assessment
+                    and may recommend tailored therapy sessions.</p>
+                <p class="light-blue">Utilising Sensory Integration and a Biomechanical framework, we observe
+                    significant improvements in both gross and fine motor coordination. This ripple effect strengthens
+                    handwriting, attention span, memory, and self-esteem, resulting in remarkable progress for the
+                    children in our care.</p>
                 <!--<div class="blueBtn-medium text-center">-->
                 <!--    <a href="#">Know More</a>-->
                 <!--</div>-->
             </div>
         </div>
     </section>
-     <!-- OT -->
+    <!-- OT -->
+
+    <!-- Special Education -->
+    <section class="wave-sec blueBg-Sec" id="specialeducation">
+        <div class="lft-rgt-content">
+            <div id="spl-education-slider" class="splide paginationCenter">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="row w100 m-0 itemSpaceBetween">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
+                                        class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
+                                    <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
+                                        class="img-fluid tabImg w100" alt="Lady Andal">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50">
+                                    <div class="sectionTitle-white">
+                                        <h3>Special <span> Education</span></h3>
+                                        <h4 class="text-white">Learning Centre</h4>
+                                        <p>
+                                            In keeping with the vision of Sir Mutha School, the Learning Centre was
+                                            established in 2012 to cater to the needs of children with special needs,
+                                            while simultaneously fostering awareness among teachers, parents, and the
+                                            community at large.
+                                            Caregivers are equipped through comprehensive training programmes, enabling
+                                            them
+                                            to assist these children in mainstream classrooms.
+                                            The Learning Centre has garnered accolades from the Madras Dyslexia
+                                            Association,
+                                            being hailed as one of the best in its field. Ultimately,
+                                            this initiative reinforces the school’s commitment to helping every child
+                                            achieve their unique potential.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="row w100 m-0 itemSpaceBetween">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
+                                        class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
+                                    <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
+                                        class="img-fluid tabImg w100" alt="Lady Andal">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7  mobContTop-p-tb50">
+                                    <div class="sectionTitle-white">
+                                        <h3>Special <span> Education</span></h3>
+                                        <h4 class="text-white">Occupational Therapy Centre</h4>
+                                        <p>
+                                            An Occupational Therapy Centre thrives within the school, dedicated to the
+                                            essential role of the Occupational Therapist in paediatrics.
+                                            The primary mission is to help children play, grow, and develop the skills
+                                            vital
+                                            for a fulfilling adult life. When a child struggles with writing, displays
+                                            poor
+                                            motor control, or suffers from a fleeting attention span,
+                                            the Occupational Therapist conducts a thorough assessment and may recommend
+                                            tailored therapy sessions. Utilising Sensory Integration and a Biomechanical
+                                            framework, we observe significant improvements in both gross and fine motor
+                                            coordination.
+                                            This ripple effect strengthens handwriting, attention span, memory, and
+                                            self-esteem, resulting in remarkable progress for the children in our care.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Special Education -->

@@ -95,7 +95,10 @@ $routes->get('admissionformlahoc/list', 'AdmissionFormLahoc::listAdmissions');
 $routes->get('inclusive-education', 'InclusiveEducation::index');
 
 //Beyond Curriculum
-$routes->get('beyond-curriculum', 'BeyondCurriculum::index');
+$routes->group('beyond-curriculum', function ($routes) {
+$routes->get('', 'BeyondCurriculum::index');
+$routes->get('heritageclub', 'BeyondCurriculum::heritageclub');
+});
 
 //Beyond Curriculum
 $routes->get('parents', 'ParentLanding::index');

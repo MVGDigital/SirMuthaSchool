@@ -176,6 +176,44 @@ splide.mount();
 
 <?php endif; ?>
 
+<?php if ($page_code === 'inclusive-education'): ?>
+
+//Special Education 
+var splide = new Splide('#spl-education-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+//Special Education 
+var splide = new Splide('#occupational-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: false,
+});
+splide.mount();
+
+<?php endif; ?>
+
 <?php if ($page_code === 'facilities'): ?>
 
 //Board members Slider
@@ -237,6 +275,39 @@ var splide = new Splide('#spl-education-slider', {
     },
 });
 splide.mount();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
+
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
+
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
+
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
+
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
+
+        // Reinitialize pagination for the selected tab
+        reinitializePagination(selectedTabContent);
+    }
+});
 
 <?php endif; ?>
 
@@ -384,6 +455,24 @@ document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
         perPage: 1,
         arrows: true,
     }).mount();
+});
+
+$(document).ready(function() {
+    var fullText = $('.newsText').text(); // Get the full text
+    var words = fullText.split(' '); // Split the text into words
+    var limit = 105; // Word limit
+    var truncatedText = words.slice(0, limit).join(' ') + '...'; // Create truncated text
+
+    // Initially display the truncated text
+    $('.newsText').text(truncatedText);
+
+    var thumbFullText = $('.newsThumbText').text(); // Get the full text
+    var thumbWords = thumbFullText.split(' '); // Split the text into words
+    var thumbLimit = 10; // Word limit
+    var thumbTruncatedText = thumbWords.slice(0, thumbLimit).join(' ') + '...'; // Create truncated text
+
+    // Initially display the truncated text
+    $('.newsThumbText').text(thumbTruncatedText);
 });
 
 <?php endif; ?>
