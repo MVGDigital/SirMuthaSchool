@@ -1,6 +1,7 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
@@ -21,12 +22,7 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>" class="active">Compliance Details</a></li>
-                <li><a href="<?= base_url('statutory#guidelines') ?>">Guidelines for parents</a></li>
-                <li><a href="<?= base_url('statutory#guidelines') ?>">Attendence & Leave Policy</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Code of Conduct</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Rules & Regulations</a></li>
-                <li><a href="<?= base_url('statutory#aboutcbse') ?>">Child Support Policy</a></li>
+                <li><a href="<?= base_url('statutory#Statutory-Compliances') ?>" class="active">Statutory Compliances</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -56,8 +52,11 @@
     <!-- Section Menus -->
 
     <!-- Policys -->
-    <section class="container-space white-bgImg ptb-80" id="guidelines">
-        <div class="row m-0 w100">
+    <section class="container-space white-bgImg ptb-80" id="Statutory-Compliances">
+        <div class="sectionTitle-blue">
+            <h3>Statutory <span>Compliances</span></h3>
+        </div>
+        <div class="row m-0 w100 mt-50">
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                 <div class="center-card">
                     <div class="card-content">
