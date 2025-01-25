@@ -72,6 +72,10 @@
                         comprehensive educational guidelines. The CBSE Curriculum for Classes IX-XII (2024-25) is
                         accessible via link given below:
                     </p>
+                    <div class="blueBtn-medium">
+    <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
+</div>
+
                 </div>
             </div>
         </div>
