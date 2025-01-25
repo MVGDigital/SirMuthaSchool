@@ -26,7 +26,7 @@
                 <p>Sir mutha school</p>
             </a>
             <div class="headerInfo">
-                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part">Donate</a>
+                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" target="_blank">Donate</a>
                 <a class="contactBtn contactMenuBtn" href="<?= base_url('contact') ?>">contact Us</a>
                 <!-- Search Code -->
                 <!-- <button class="search">

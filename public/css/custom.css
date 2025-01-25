@@ -505,6 +505,13 @@ main{
     text-align: center;
     background-color: var(--blue-bg);
 }
+.banner-section .bannerImg-OverlayContainer{    
+    opacity: 40%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #102753;
+}
 .bannerTitle{
     position: absolute;
     /* z-index: 99; */
@@ -1049,6 +1056,14 @@ main{
 }
 #founders-slider .splide__pagination {
     bottom: -8%;
+}
+.content-lists li{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: start;
+    line-height: 25.8px;
+    font-family: 'Figtree-Regular';
+    color: var(--color-inActive);
 }
 
 /* Annual Policy */
@@ -2546,16 +2561,16 @@ footer{
 
 
 .detailpagecontent p {
-    color: #3F5667 !important;
-    font-size: 20px;
+    color: var(--color-inActive) !important;
+    font-size: 18px;
     text-align: center;
     margin-top: 10px;
     line-height: 25px;
     font-family: 'Figtree-Regular';
 }
 .detailpagecontent p:first-of-type {
-    color: #3F5667 !important;
-    font-size: 20px;
+    color: var(--color-inActive) !important;
+    font-size: 18px;
     text-align: center;
     margin-top: 30px;
     line-height: 25px;

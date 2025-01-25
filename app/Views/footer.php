@@ -167,29 +167,7 @@ splide.mount();
 
 <?php if ($page_code === 'academics'): ?>
 
-//teacher-enrichment Slider
-var splide = new Splide('#teacher-enrichment', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 3,
-    arrows: true,
-    breakpoints: {
-        912: {
-            perPage: 2,
-            pagination: true,
-        },
-        767: {
-            perPage: 1,
-            pagination: true,
-        },
-    },
-});
-splide.mount();
+
 
 <?php endif; ?>
 
@@ -976,65 +954,76 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'admission'): ?>
 
-var video = $('#sir-mutha-campus').get(0); // Get the video element
-var playOverlay = $('#playOverlay');
 
-// Ensure the video is muted for autoplay to work
+    var video = $('#sir-mutha-campus').get(0);
+var playOverlay = $('#playOverlay');
+var isUserPaused = false; // Track if the user explicitly paused the video
+
+// Ensure the video is muted for autoplay
 video.muted = true;
 
-// Use IntersectionObserver to detect when the video section is in view
-var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
+// Use IntersectionObserver to detect visibility
+var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-            // If the video is in view, start playing it
-            video.play().catch(function(error) {
-                console.log('Autoplay prevented:', error);
-            });
+            console.log('Video is in view');
+            if (!isUserPaused) {
+                video.play().catch(function (error) {
+                    console.error('Autoplay prevented:', error);
+                });
+            }
         } else {
-            // If the video goes out of view, pause it
+            console.log('Video is out of view');
             video.pause();
         }
     });
-}, {
-    threshold: 0.5 // Video will start playing when 50% of it is visible
-});
+}, { threshold: 0.5 });
 
-// Observe the section containing the video
 observer.observe(document.querySelector('#campusVideo'));
 
 // Hide overlay when the video starts playing
-video.addEventListener('play', function() {
+video.addEventListener('play', function () {
     playOverlay.addClass('hidden');
+    console.log('Video started playing');
 });
 
 // Show overlay when the video is paused or ended
-video.addEventListener('pause', function() {
+video.addEventListener('pause', function () {
     playOverlay.removeClass('hidden');
+    console.log('Video paused');
 });
 
-video.addEventListener('ended', function() {
+video.addEventListener('ended', function () {
     playOverlay.removeClass('hidden');
+    console.log('Video ended');
 });
 
-// Play or pause the video when the overlay is clicked
-playOverlay.click(function() {
+// Play or pause the video when overlay is clicked
+playOverlay.click(function () {
+    console.log('Play overlay clicked');
     if (video.paused) {
         video.play();
-        playOverlay.addClass('hidden'); // Hide the overlay when playing
+        playOverlay.addClass('hidden');
+        isUserPaused = false; // Reset flag when user resumes playing
     } else {
         video.pause();
-        playOverlay.removeClass('hidden'); // Show the overlay when paused
+        playOverlay.removeClass('hidden');
+        isUserPaused = true; // Set flag when user pauses
     }
 });
 
-// Toggle play/pause when clicking on the video itself
-$('#sir-mutha-campus').click(function() {
+// Toggle play/pause when clicking the video
+$('#sir-mutha-campus').click(function () {
+    console.log('Video clicked');
     if (video.paused) {
         video.play();
+        isUserPaused = false; // Reset flag when user resumes playing
     } else {
         video.pause();
+        isUserPaused = true; // Set flag when user pauses
     }
 });
+
 
 <?php endif; ?>
 
