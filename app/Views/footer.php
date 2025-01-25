@@ -15,20 +15,25 @@
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
-    <div class="col-12 col-md-8 col-lg-12 col-xl-8 m-auto footer-menus">
+    <div class="col-12 col-md-8 col-lg-12 col-xl-12 m-auto footer-menus">
         <div class="itemSpaceBetween">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
             <a href="<?= base_url('academics') ?>">Academics</a>
             <a href="<?= base_url('facilities') ?>">Facilities</a>
+            <a href="<?= base_url('inclusive-education') ?>">Inclusive Education</a>
+            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>    
+            <a href="<?= base_url('events') ?>">Events</a>
             <a href="<?= base_url('statutory') ?>">Statutory</a>
+            <a href="<?= base_url('achievements') ?>">Achievements</a>
+            <a href="<?= base_url('announcements') ?>">Announcements</a>
+            <a href="<?= base_url('in-the-outdoors') ?>">In The Outdoors</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>
             <a href="<?= base_url('parents') ?>">Parents</a>
-            <a href="<?= base_url('beyond-curriculum') ?>">Beyond Curriculum</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
             <a href="<?= base_url('contact') ?>">Contact</a>
-
+           
         </div>
     </div>
     <div class="pageTitleLine">
@@ -37,9 +42,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-                <a href="#">Cookie Policy</a>
-                <hr>
-                <a href="#">Privacy Policy</a>
+            <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
@@ -167,29 +170,7 @@ splide.mount();
 
 <?php if ($page_code === 'academics'): ?>
 
-//teacher-enrichment Slider
-var splide = new Splide('#teacher-enrichment', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 3,
-    arrows: true,
-    breakpoints: {
-        912: {
-            perPage: 2,
-            pagination: true,
-        },
-        767: {
-            perPage: 1,
-            pagination: true,
-        },
-    },
-});
-splide.mount();
+
 
 <?php endif; ?>
 
@@ -976,65 +957,79 @@ $(document).ready(function() {
 
 <?php if ($page_code === 'admission'): ?>
 
-var video = $('#sir-mutha-campus').get(0); // Get the video element
-var playOverlay = $('#playOverlay');
 
-// Ensure the video is muted for autoplay to work
-video.muted = true;
+    $(document).ready(function () {
+        var video = $('#sir-mutha-campus').get(0); // Get the video element
+        var playOverlay = $('#playOverlayBtn'); // Play overlay button
+        var isUserPaused = false; // Track if the user explicitly paused the video
 
-// Use IntersectionObserver to detect when the video section is in view
-var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            // If the video is in view, start playing it
-            video.play().catch(function(error) {
-                console.log('Autoplay prevented:', error);
+        // Ensure the video is muted for autoplay
+        video.muted = true;
+
+        // Use IntersectionObserver to detect visibility
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    console.log('Video is in view');
+                    if (!isUserPaused) {
+                        video.play().catch(function (error) {
+                            console.error('Autoplay prevented:', error);
+                        });
+                    }
+                } else {
+                    console.log('Video is out of view');
+                    video.pause();
+                }
             });
-        } else {
-            // If the video goes out of view, pause it
-            video.pause();
-        }
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('#campusVideo'));
+
+        // Hide overlay when the video starts playing
+        video.addEventListener('play', function () {
+            playOverlay.addClass('hidden');
+            console.log('Video started playing');
+        });
+
+        // Show overlay when the video is paused or ended
+        video.addEventListener('pause', function () {
+            playOverlay.removeClass('hidden');
+            console.log('Video paused');
+        });
+
+        video.addEventListener('ended', function () {
+            playOverlay.removeClass('hidden');
+            console.log('Video ended');
+        });
+
+        // Play or pause the video when overlay is clicked
+        playOverlay.click(function () {
+            console.log('Play overlay clicked');
+            if (video.paused) {
+                video.play();
+                playOverlay.addClass('hidden');
+                isUserPaused = false; // Reset flag when user resumes playing
+            } else {
+                video.pause();
+                playOverlay.removeClass('hidden');
+                isUserPaused = true; // Set flag when user pauses
+            }
+        });
+
+        // Auto-play when clicking the video itself
+        $('#sir-mutha-campus').click(function () {
+            console.log('Video clicked');
+            if (video.paused) {
+                video.play();
+                isUserPaused = false; // Reset flag when user resumes playing
+            } else {
+                video.pause();
+                isUserPaused = true; // Set flag when user pauses
+            }
+        });
     });
-}, {
-    threshold: 0.5 // Video will start playing when 50% of it is visible
-});
 
-// Observe the section containing the video
-observer.observe(document.querySelector('#campusVideo'));
 
-// Hide overlay when the video starts playing
-video.addEventListener('play', function() {
-    playOverlay.addClass('hidden');
-});
-
-// Show overlay when the video is paused or ended
-video.addEventListener('pause', function() {
-    playOverlay.removeClass('hidden');
-});
-
-video.addEventListener('ended', function() {
-    playOverlay.removeClass('hidden');
-});
-
-// Play or pause the video when the overlay is clicked
-playOverlay.click(function() {
-    if (video.paused) {
-        video.play();
-        playOverlay.addClass('hidden'); // Hide the overlay when playing
-    } else {
-        video.pause();
-        playOverlay.removeClass('hidden'); // Show the overlay when paused
-    }
-});
-
-// Toggle play/pause when clicking on the video itself
-$('#sir-mutha-campus').click(function() {
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
-});
 
 <?php endif; ?>
 

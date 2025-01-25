@@ -26,7 +26,7 @@
                 <p>Sir mutha school</p>
             </a>
             <div class="headerInfo">
-                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part">Donate</a>
+                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" target="_blank">Donate</a>
                 <a class="contactBtn contactMenuBtn" href="<?= base_url('contact') ?>">contact Us</a>
                 <!-- Search Code -->
                 <!-- <button class="search">
@@ -88,7 +88,7 @@
                             <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                         </ul>
                     </li>
-                    <li id="admissionMenu" class="nav-item">
+                    <!-- <li id="admissionMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('admission') ?>">Admissions</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
@@ -98,7 +98,7 @@
                             <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
                             <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li id="inclusiveMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
@@ -141,10 +141,6 @@
                     </li>
                     <li id="galleryMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
-                    </li>
-                    
-                    <li id="careersMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('career') ?>">Careers</a>
                     </li>
                     <li id="parentsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('parents') ?>">Parents</a>
