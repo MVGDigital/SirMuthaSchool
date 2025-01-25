@@ -82,7 +82,7 @@
                                             <tr>
                                                 <td><?php echo $serial++; ?></td>
                                                 <td><?php echo $admission['registration_number']; ?></td>
-                                                <td><?php echo $admission['name']; ?></td>
+                                                <td><?php echo $admission['student_name']; ?></td>
                                                 <td><?php echo $admission['dob']; ?></td>
                                                 <td><?php echo $admission['gender']; ?></td>
                                                 <td><?php echo $admission['nationality']; ?></td>
@@ -163,7 +163,6 @@
             });
         });
         </script>
-
 </body>
 
 </html>

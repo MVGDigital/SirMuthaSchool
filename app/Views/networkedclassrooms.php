@@ -1,6 +1,7 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
@@ -61,9 +62,9 @@
     <!-- Co-Curricular -->
     <section class="wave-sec ligh-yellowBG" id="co-curricular">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Networked Classrooms<span>and </span>Smart Boards</h3>
+                    <h3>Networked Classrooms and <span> Smart Boards</span></h3>
                     <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
                     <!--    <div class="splide__track">-->
                     <!--        <ul class="splide__list">-->
@@ -97,13 +98,13 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Classroom<span> Gallery</span></h3>
+                        <h3>Classroom <span> Gallery</span></h3>
                         <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to
                             shape the future."</h6>
                     </div>
 
                     <div class="row w100 m-0">
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
@@ -121,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
