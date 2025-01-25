@@ -590,6 +590,9 @@ main{
 .mobImg{
   display: none;
 }
+.tabImg{
+    display: none;
+}
 .innerMenus{
     border-radius: 10px;
     padding: 30px 0;
@@ -668,12 +671,14 @@ main{
 .sectionTitle-white h6{
     font-size: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 20px;
     line-height: 34px;
     font-family: 'Figtree-Regular';
     color: var(--color-white);
 }
-
+.innerMenus-sec .sectionTitle-white h3{
+    margin-bottom: 50px;
+}
 .sectionTitle-white p{
     font-size: 16px;
     margin-top: 20px;
@@ -1125,7 +1130,10 @@ main{
 }
 .cardWith-Btn{
     padding: 15px;
-    position: relative;
+    position: relative;    
+}
+.cardWith-Btn img{
+    border-radius: 7px;
 }
 .cardWith-Btn .blueBtn-medium{
     width: 100%;
@@ -1193,7 +1201,18 @@ main{
 .wave-yellow-overwireBg p{
     color: var(--color-inActive);
 }
-
+#curve-slider .splide__arrows{
+    bottom: 3em;
+}
+#curve-slider .splide__pagination{
+    bottom: 2.5em;
+}
+#spl-education-slider .splide__arrows{
+    bottom: 3em;
+}
+#spl-education-slider .splide__pagination{
+    bottom: 8%;
+}
 /* =============================== Statutory ============================== */
 .withYellowBtn{
     text-align: center;
@@ -1476,6 +1495,9 @@ main{
 
 .gallery-imgs{
     padding: 15px;
+}
+.gallery-imgs img{
+    border-radius: 10px;
 }
 .gallery-imgItem1{
     padding-bottom: 15px;
