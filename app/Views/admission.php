@@ -1,6 +1,7 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
@@ -52,7 +53,7 @@
             <?php endif; ?>
 
             <!-- Play icon and text overlay -->
-            <div id="playOverlay" class="playOverlay">
+            <div id="playOverlayBtn" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
             </div>
