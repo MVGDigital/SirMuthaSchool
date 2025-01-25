@@ -51,31 +51,12 @@
                                             <?php endif; ?>
 
                                             <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label " for="year">Year</label>
+                                                <label class="col-sm-4 col-form-label " for="event_date">Event
+                                                    Date</label>
                                                 <div class="col-sm-8">
-                                                    <select name="year" id="year" class="form-control">
-                                                        <option value="">Select Year</option>
-                                                        <?php for ($i = date('Y'); $i >= date('Y') - 5; $i--): ?>
-                                                        <option value="<?= $i ?>"
-                                                            <?= isset($event) && $event['year'] == $i ? 'selected' : '' ?>>
-                                                            <?= $i ?>
-                                                        </option>
-                                                        <?php endfor; ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label " for="month">Month</label>
-                                                <div class="col-sm-8">
-                                                    <select name="month" id="month" class="form-control">
-                                                        <option value="">Select Month</option>
-                                                        <?php foreach (['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as $month): ?>
-                                                        <option value="<?= $month ?>"
-                                                            <?= isset($event) && $event['month'] == $month ? 'selected' : '' ?>>
-                                                            <?= $month ?></option>
-                                                        <?php endforeach; ?>
-                                                    </select>
+                                                    <input type="date" name="event_date" id="event_date"
+                                                        class="form-control"
+                                                        value="<?= isset($event) ? esc($event['event_date']) : '' ?>">
                                                 </div>
                                             </div>
 
@@ -92,28 +73,24 @@
                                                     for="description">Description</label>
                                                 <div class="col-sm-8">
                                                     <textarea name="description" id="description" class="form-control"
-                                                        rows="4"><?= isset($event) ? esc($event['description']) : '' ?></textarea>
+                                                        rows="4"><?= old('description', isset($event) ? esc($event['description']) : '') ?></textarea>
                                                 </div>
                                             </div>
 
                                             <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label" for="images">Upload
-                                                    Images</label>
+                                                <label class="col-sm-4 col-form-label" for="images">Upload Image</label>
                                                 <div class="col-sm-8">
-                                                    <input type="file" name="images[]" id="images" class="form-control"
-                                                        multiple onchange="previewImages()">
+                                                    <input type="file" name="images" id="images" class="form-control"
+                                                        onchange="previewImages()">
                                                     <div id="preview"></div>
                                                     <?php if (isset($event['images'])): ?>
-                                                    <p>Current Images:</p>
-                                                    <ul id="current-images">
-                                                        <?php foreach (json_decode($event['images']) as $image): ?>
-                                                        <li>
-                                                            <?= esc($image) ?>
-                                                            <button type="button"
-                                                                onclick="removeImage('<?= esc($image) ?>')">×</button>
-                                                        </li>
-                                                        <?php endforeach; ?>
-                                                    </ul>
+                                                    <p>Current Image:</p>
+                                                    <div id="current-image">
+                                                        <img src="<?= base_url('uploads/annual_events/' . esc($event['images'])) ?>"
+                                                            alt="Current Image" style="width: 100px;">
+                                                        <button type="button"
+                                                            onclick="removeImage('<?= esc($event['images']) ?>')">×</button>
+                                                    </div>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
@@ -168,31 +145,20 @@
                     const img = document.createElement('img');
                     img.src = e.target.result;
                     img.style.width = '100px';
-                    img.style.margin = '10px';
-
-                    const closeBtn = document.createElement('button');
-                    closeBtn.innerText = '×';
-                    closeBtn.style.marginLeft = '-20px';
-                    closeBtn.onclick = function() {
-                        img.remove();
-                        closeBtn.remove();
-                    };
-
+                    img.style.margin = '5px';
                     preview.appendChild(img);
-                    preview.appendChild(closeBtn);
                 };
                 reader.readAsDataURL(file);
             });
         }
 
         function removeImage(imageName) {
-            const currentImages = document.getElementById('current-images');
-            const images = Array.from(currentImages.getElementsByTagName('li'));
-            images.forEach((li) => {
-                if (li.textContent.includes(imageName)) {
-                    li.remove();
-                }
-            });
+            // Handle server-side deletion via AJAX (if needed)
+            const currentImage = document.getElementById('current-image');
+            if (currentImage) {
+                currentImage.remove();
+            }
+            console.log(`Removed image: ${imageName}`);
         }
         </script>
 </body>
