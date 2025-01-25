@@ -61,7 +61,7 @@
     <!-- Co-Curricular -->
     <section class="wave-sec ligh-yellowBG" id="co-curricular">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Music <span>and</span>Arts room facility</h3>
                     <!--<div id="curve-slider" class=" paginationCenter toRight-pagination">-->
@@ -96,7 +96,7 @@
                     </div>
                     
                     <div class="row w100 m-0">
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <img src="<?= base_url('images/gallery/music_arts_leftside.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 p-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <img src="<?= base_url('images/gallery/music_arts_rightside.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
