@@ -1387,12 +1387,16 @@ main{
 }
 /* ================================== Inclusive Education ============================= */
 .wave-yellowWith-bottom-img{
-    background-size: 100%;
-    background-position: bottom;
+    background-size:cover;
+    background-position: top;
     background-repeat: no-repeat; 
     background-color: var(--blue-bg);   
     background-image: url(../images/wave-yellowWith-bottom-img.png);
 }
+/* #parentsportal.wave-yellowWith-bottom-img{
+    background-color: transparent!important;
+    background-image: url(../images/wave-yellowWith-bottom-parentImg.png);
+} */
 .fullWidthImg .splide__pagination{
     bottom: 2.5em;
 }
