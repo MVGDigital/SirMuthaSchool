@@ -179,26 +179,6 @@ splide.mount();
 <?php if ($page_code === 'inclusive-education'): ?>
 
 //Special Education 
-var splide = new Splide('#spl-education-slider', {
-    type: 'slide',
-    autoplay: false,
-    pauseOnHover: false,
-    pagination: true,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 1,
-    arrows: true,
-    breakpoints: {
-        767: {
-            perPage: 1,
-            pagination: true,
-        },
-    },
-});
-splide.mount();
-
-//Special Education 
 var splide = new Splide('#occupational-slider', {
     type: 'slide',
     autoplay: false,
@@ -1057,11 +1037,21 @@ $(document).ready(function() {
         return this.optional(element) || /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/.test(value);
     }, "Please enter a valid email address");
 
-    // Restrict input to only numeric characters in the phone number field
-    $("#mobile-number").on("input", function(e) {
-        const value = $(this).val();
-        $(this).val(value.replace(/[^0-9]/g, "")); // Remove non-numeric characters
+    // Restrict input to only valid numeric characters and first character rules for the phone number field
+    $("#mobile-number").on("input", function () {
+        let value = $(this).val();
+
+        // Restrict the first character to +, 9, 6, 7, or 8
+        if (!value.startsWith("9") && !value.startsWith("6") && !value.startsWith("7") && !value.startsWith("8")) {
+            value = value.substring(1); // Remove the invalid first character
+        }
+
+        // Remove any non-numeric characters, but allow '+' as the first character
+        value = value.replace(/(?!^\+)[^\d]/g, ""); 
+
+        $(this).val(value); // Update the input value
     });
+
 
     $("#contact-form").validate({
         rules: {
@@ -1081,7 +1071,7 @@ $(document).ready(function() {
                 required: true,
                 digits: true,
                 minlength: 10,
-                maxlength: 15
+                maxlength: 13
             },
             "msg": {
                 required: true,
@@ -1105,7 +1095,7 @@ $(document).ready(function() {
                 required: "Please enter your phone number",
                 digits: "Please enter only numbers",
                 minlength: "Phone number must be at least 10 digits",
-                maxlength: "Phone number cannot exceed 15 digits"
+                maxlength: "Phone number cannot exceed 13 digits"
             },
             "msg": {
                 required: "Please enter your message",

@@ -51,39 +51,8 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- CBSE Curriculum -->
-    <section class="wave-sec white-bgImg" id="cbsecurriculum">
-        <div class="itemSpaceBetween">
-            <div class="col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
-            </div>
-            <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
-                <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>CBSE <span> Curriculam</span></h3>
-
-                    <p>The curriculum aims to cultivate the holistic development of students, enhancing not only their
-                        physical and intellectual abilities but also their social competencies. It incorporates
-                        values-based learning activities that instil a strong ethical foundation. Furthermore, the
-                        curriculum seamlessly integrates environmental education across various subjects and
-                        disciplines, while also promoting critical and creative thinking. Emphasis is placed on
-                        application-based learning to prepare students for real-world challenges. The adoption of the
-                        National Curriculum Framework for School Education – 2023, as stipulated by the Central Board of
-                        Secondary Education (CBSE), mandates that institutions that come under the board adhere to these
-                        comprehensive educational guidelines. The CBSE Curriculum for Classes IX-XII (2024-25) is
-                        accessible via link given below:
-                    </p>
-                    <div class="blueBtn-medium">
-    <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CBSE Curriculum -->
-
     <!--  Teacher Enrichment -->
-    <section class="container-space bgImg-with-center-content application-process-img ptb-80">
+    <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80">
         <div class="col-lg-9 m-auto">
             <div class="center-card">
                 <div class="sectionTitle-blue detailpagecontent">
@@ -107,6 +76,38 @@
     </section>
     <!--  Teacher Enrichment -->
 
+    
+    <!-- CBSE Curriculum -->
+    <section class="wave-sec white-bgImg" id="cbsecurriculum">
+        <div class="itemSpaceBetween">
+            <div class="col-md-12 col-lg-5 col-xl-5">
+                <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
+            </div>
+            <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>CBSE <span> Curriculam</span></h3>
+
+                    <p>The curriculum aims to cultivate the holistic development of students, enhancing not only their
+                        physical and intellectual abilities but also their social competencies. It incorporates
+                        values-based learning activities that instil a strong ethical foundation. Furthermore, the
+                        curriculum seamlessly integrates environmental education across various subjects and
+                        disciplines, while also promoting critical and creative thinking. Emphasis is placed on
+                        application-based learning to prepare students for real-world challenges. The adoption of the
+                        National Curriculum Framework for School Education – 2023, as stipulated by the Central Board of
+                        Secondary Education (CBSE), mandates that institutions that come under the board adhere to these
+                        comprehensive educational guidelines. The CBSE Curriculum for Classes IX-XII (2024-25) is
+                        accessible via link given below:
+                    </p>
+                    <div class="blueBtn-medium">
+                        <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CBSE Curriculum -->
+
     <!--  Annual Pedagogical Policy -->
     <section id="annual-pedagogical">
         <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
@@ -117,23 +118,38 @@
                 <!-- <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the
                     essential role of the Occupational Therapist in paediatrics.
                 </h6> -->
-                <p class="light-blue">Sir Mutha School stands firmly by its core values of Commitment, Acceptance, Respect, Excellence, and Strength (CARES), each of which serves as a cornerstone in shaping the character and aspirations of our students. At the heart of our approach lies the creation of a vibrant, joyful learning environment where students are encouraged to express themselves freely, embrace their creative potential, and nurture the multifaceted dimensions of their personalities.</p>
-                <p class="light-blue">Equally central to our philosophy is the emphasis on a dynamic teaching approach, one that goes beyond conventional instruction. Our educators, with their profound expertise and dedication, engage in continuous professional development, ensuring their methods remain both innovative and attuned to the diverse needs of our students.</p>
-                <h6 class="light-blue">To ensure students are engaged and involved in their learning, we personalise learning in the following ways:</h6>
+                <p class="light-blue">Sir Mutha School stands firmly by its core values of Commitment, Acceptance,
+                    Respect, Excellence, and Strength (CARES), each of which serves as a cornerstone in shaping the
+                    character and aspirations of our students. At the heart of our approach lies the creation of a
+                    vibrant, joyful learning environment where students are encouraged to express themselves freely,
+                    embrace their creative potential, and nurture the multifaceted dimensions of their personalities.
+                </p>
+                <p class="light-blue">Equally central to our philosophy is the emphasis on a dynamic teaching approach,
+                    one that goes beyond conventional instruction. Our educators, with their profound expertise and
+                    dedication, engage in continuous professional development, ensuring their methods remain both
+                    innovative and attuned to the diverse needs of our students.</p>
+                <h6 class="light-blue">To ensure students are engaged and involved in their learning, we personalise
+                    learning in the following ways:</h6>
                 <ul class="content-lists">
                     <li>Carefully planned curriculum based on each individual child’s needs which includes:</li>
                     <li>Emphasis on prior knowledge</li>
                     <li>Stress on individual interests</li>
                     <li>Focus on individual learning styles</li>
-                    <li>Identifying the abilities and skills of students helps them identify their future learning goals</li>
-                    <li>Students and teachers construct learning pathways together based on two‐way feedback conversations.</li>
+                    <li>Identifying the abilities and skills of students helps them identify their future learning goals
+                    </li>
+                    <li>Students and teachers construct learning pathways together based on two‐way feedback
+                        conversations.</li>
                     <li>Experiential learning as a way of life is not environment- or- curriculum specific</li>
-                    <li>Teachers and students hold feedback conversations to discuss data and developmental needs and together they set goals. They discuss ways to reach those goals and the types of evidence that the students will need to produce.</li>
+                    <li>Teachers and students hold feedback conversations to discuss data and developmental needs and
+                        together they set goals. They discuss ways to reach those goals and the types of evidence that
+                        the students will need to produce.</li>
                     <li>Scope and sequence need to be flexible</li>
                     <li>Parents can track the progress of their wards via the Parents’ Portals.</li>
-                    <li>Students’ need to be able to articulate their learning in conferences including video conferences.</li>
+                    <li>Students’ need to be able to articulate their learning in conferences including video
+                        conferences.</li>
                     <li>Teachers get to know students as “people” not just “students” and what their interests are.</li>
-                    <li>Children have a choice in terms of regulating behaviour, what/how to learn and how to present their learning.</li>
+                    <li>Children have a choice in terms of regulating behaviour, what/how to learn and how to present
+                        their learning.</li>
                 </ul>
             </div>
         </div>
