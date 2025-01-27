@@ -73,8 +73,8 @@
                         accessible via link given below:
                     </p>
                     <div class="blueBtn-medium">
-    <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
-</div>
+                        <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
+                    </div>
 
                 </div>
             </div>
@@ -117,23 +117,38 @@
                 <!-- <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the
                     essential role of the Occupational Therapist in paediatrics.
                 </h6> -->
-                <p class="light-blue">Sir Mutha School stands firmly by its core values of Commitment, Acceptance, Respect, Excellence, and Strength (CARES), each of which serves as a cornerstone in shaping the character and aspirations of our students. At the heart of our approach lies the creation of a vibrant, joyful learning environment where students are encouraged to express themselves freely, embrace their creative potential, and nurture the multifaceted dimensions of their personalities.</p>
-                <p class="light-blue">Equally central to our philosophy is the emphasis on a dynamic teaching approach, one that goes beyond conventional instruction. Our educators, with their profound expertise and dedication, engage in continuous professional development, ensuring their methods remain both innovative and attuned to the diverse needs of our students.</p>
-                <h6 class="light-blue"><b>To ensure students are engaged and involved in their learning, we personalise learning in the following ways:</b></h6>
+                <p class="light-blue">Sir Mutha School stands firmly by its core values of Commitment, Acceptance,
+                    Respect, Excellence, and Strength (CARES), each of which serves as a cornerstone in shaping the
+                    character and aspirations of our students. At the heart of our approach lies the creation of a
+                    vibrant, joyful learning environment where students are encouraged to express themselves freely,
+                    embrace their creative potential, and nurture the multifaceted dimensions of their personalities.
+                </p>
+                <p class="light-blue">Equally central to our philosophy is the emphasis on a dynamic teaching approach,
+                    one that goes beyond conventional instruction. Our educators, with their profound expertise and
+                    dedication, engage in continuous professional development, ensuring their methods remain both
+                    innovative and attuned to the diverse needs of our students.</p>
+                <h6 class="light-blue"><b>To ensure students are engaged and involved in their learning, we personalise
+                        learning in the following ways:</b></h6>
                 <ul class="content-lists">
                     <li>Carefully planned curriculum based on each individual child’s needs which includes:</li>
                     <li>Emphasis on prior knowledge</li>
                     <li>Stress on individual interests</li>
                     <li>Focus on individual learning styles</li>
-                    <li>Identifying the abilities and skills of students helps them identify their future learning goals</li>
-                    <li>Students and teachers construct learning pathways together based on two‐way feedback conversations.</li>
+                    <li>Identifying the abilities and skills of students helps them identify their future learning goals
+                    </li>
+                    <li>Students and teachers construct learning pathways together based on two‐way feedback
+                        conversations.</li>
                     <li>Experiential learning as a way of life is not environment- or- curriculum specific</li>
-                    <li>Teachers and students hold feedback conversations to discuss data and developmental needs and together they set goals. They discuss ways to reach those goals and the types of evidence that the students will need to produce.</li>
+                    <li>Teachers and students hold feedback conversations to discuss data and developmental needs and
+                        together they set goals. They discuss ways to reach those goals and the types of evidence that
+                        the students will need to produce.</li>
                     <li>Scope and sequence need to be flexible</li>
                     <li>Parents can track the progress of their wards via the Parents’ Portals.</li>
-                    <li>Students’ need to be able to articulate their learning in conferences including video conferences.</li>
+                    <li>Students’ need to be able to articulate their learning in conferences including video
+                        conferences.</li>
                     <li>Teachers get to know students as “people” not just “students” and what their interests are.</li>
-                    <li>Children have a choice in terms of regulating behaviour, what/how to learn and how to present their learning.</li>
+                    <li>Children have a choice in terms of regulating behaviour, what/how to learn and how to present
+                        their learning.</li>
                 </ul>
             </div>
         </div>
