@@ -30,11 +30,7 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-        <div class="pageTitleLine col-lg-8 m-auto">
-           <hr>
-           <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
-           <hr>
-        </div>
+       
         <div class="sectionTitle-white col-lg-10 m-auto">
            <h3>Special <span> Education</span></h3>
            <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centers and occupational therapy. With comprehensive training for caregivers and tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child achieve their full potential, promoting inclusivity and growth."</h6>
@@ -115,7 +111,7 @@
     <!-- OT -->
 
     <!-- Special Education -->
-    <section class="wave-sec blueBg-Sec" id="specialeducation">
+    <!-- <section class="wave-sec blueBg-Sec" id="specialeducation">
         <div class="lft-rgt-content">
             <div id="spl-education-slider" class="splide paginationCenter">
                 <div class="splide__track">
@@ -185,5 +181,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Special Education -->

@@ -269,8 +269,8 @@
 
     <!-- Join With Us Section -->
     <section class="container-space bgImg-with-center-content join-with-us ptb-80 mt-80">
-        <div class="bgImg-with-center-content container-space">
-            <div class="sectionTitle-white-italic col-lg-10 m-auto">
+        <div class="join-with-us-container">
+            <div class="sectionTitle-white-italic col-lg-10">
                 <h4>Donate, Partner & Volunteer <br> With Us</h4>
                 <div class="lightYellowBtn">
                     <a href="https://themadrassevasadan.org/be_a_part" target="_blank">Begin your Chapter</a>
