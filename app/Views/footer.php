@@ -44,7 +44,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-            <a href="<?= base_url('disclaimerdocument/Disclaimer.pdf') ?>" target="_blank">Disclaimer</a>
+                <a href="<?= base_url('disclaimerdocument/Disclaimer.pdf') ?>" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
@@ -424,19 +424,19 @@ main.mount();
 thumbnails.mount();
 
 // Initialize Individual Event Sliders
-document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
-    new Splide(el, {
-        type: 'slide',
-        autoplay: false,
-        pauseOnHover: false,
-        pagination: true,
-        speed: 1000,
-        rewindSpeed: 1000,
-        height: 'auto',
-        perPage: 1,
-        arrows: true,
-    }).mount();
-});
+var annualEventImg = new Splide('.annual-event-imgs', {
+    type: 'slide',
+    autoplay: true,
+    pauseOnHover: false,
+    pagination: false,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: true,
+})
+annualEventImg.mount();
+
 
 $(document).ready(function() {
     var fullText = $('.newsText').text(); // Get the full text
@@ -492,7 +492,7 @@ new SlimSelect({
     select: '#jobCategory',
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     // Lazy load implementation
     $("#loader").hide();
@@ -501,12 +501,12 @@ $(document).ready(function () {
 
     let isLoading = false;
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
             isLoading = true;
             $("#loader").show();
 
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".pastEvent-items:hidden").slice(0, 4).slideDown();
                 $("#loader").hide();
                 isLoading = false;
@@ -659,14 +659,14 @@ $(document).ready(function() {
         setJobAndRedirect(jobId);
     });
 
-   /*  $(".apply-link").on("click", function(event) {
-        event.stopPropagation(); // Prevent the event from reaching the accordion logic
-        console.log("Apply link clicked");
-        // Add your desired functionality here
-    }); */
+    /*  $(".apply-link").on("click", function(event) {
+         event.stopPropagation(); // Prevent the event from reaching the accordion logic
+         console.log("Apply link clicked");
+         // Add your desired functionality here
+     }); */
 
     function attachAccordionListeners() {
-        const menuBtns = document.querySelectorAll(".menu-button");  
+        const menuBtns = document.querySelectorAll(".menu-button");
 
         menuBtns.forEach((menuBtn) => {
             menuBtn.addEventListener("click", function() {
@@ -694,13 +694,13 @@ $(document).ready(function() {
     attachAccordionListeners();
 
     // Prevent accordion toggle when "Apply Here" is clicked
-    $(".apply-link").on("click", function (event) {
+    $(".apply-link").on("click", function(event) {
         const activeAccordion = document.querySelector(".menu-button.open");
         activeAccordion.nextElementSibling.style.height = 0;
-        
+
     });
 
-    $(document).ready(function () {
+    $(document).ready(function() {
 
         // Lazy load implementation
         $("#loader").hide();
@@ -709,12 +709,13 @@ $(document).ready(function() {
 
         let isLoading = false;
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !
+                isLoading) {
                 isLoading = true;
                 $("#loader").show();
 
-                setTimeout(function () {
+                setTimeout(function() {
                     $(".jobItems:hidden").slice(0, 5).slideDown();
                     $("#loader").hide();
                     isLoading = false;
@@ -725,7 +726,7 @@ $(document).ready(function() {
                 }, 3000);
             }
         });
-        });
+    });
 
     // Helper function to format date
     function formatDate(dateStr) {
@@ -1038,16 +1039,17 @@ $(document).ready(function() {
     }, "Please enter a valid email address");
 
     // Restrict input to only valid numeric characters and first character rules for the phone number field
-    $("#mobile-number").on("input", function () {
+    $("#mobile-number").on("input", function() {
         let value = $(this).val();
 
         // Restrict the first character to +, 9, 6, 7, or 8
-        if (!value.startsWith("9") && !value.startsWith("6") && !value.startsWith("7") && !value.startsWith("8")) {
+        if (!value.startsWith("9") && !value.startsWith("6") && !value.startsWith("7") && !value
+            .startsWith("8")) {
             value = value.substring(1); // Remove the invalid first character
         }
 
         // Remove any non-numeric characters, but allow '+' as the first character
-        value = value.replace(/(?!^\+)[^\d]/g, ""); 
+        value = value.replace(/(?!^\+)[^\d]/g, "");
 
         $(this).val(value); // Update the input value
     });
