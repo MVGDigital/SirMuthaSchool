@@ -10,14 +10,14 @@ class Announcement extends BaseController
     public function index()
     {
         $bannerModel = new BannerModel();
-        $banners = $bannerModel->where('page', 'about')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+        $banner = $bannerModel->where('page', 'announcement')->where('is_published', 1)->first();
         $announcementModel = new AnnouncementModel();
         $announcements = $announcementModel->getAnnouncements();
 
         $data = [
             'page_title' => 'Announcement',
             'page_code' => 'announcement',
-            'banners' => $banners,
+            'banner' => $banner,
             'announcements' => $announcements
         ];
 
