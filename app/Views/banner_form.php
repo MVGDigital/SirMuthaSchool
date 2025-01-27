@@ -113,6 +113,48 @@
                                                             <option value="parents"
                                                                 <?= isset($banner) && $banner['page'] == 'parents' ? 'selected' : '' ?>>
                                                                 Parents</option>
+                                                            <option value="computerlab"
+                                                                <?= isset($banner) && $banner['page'] == 'computerlab' ? 'selected' : '' ?>>
+                                                                Computer Lab</option>
+                                                            <option value="swimmingpool"
+                                                                <?= isset($banner) && $banner['page'] == 'swimmingpool' ? 'selected' : '' ?>>
+                                                                Swimming Pool</option>
+                                                            <option value="concerthall"
+                                                                <?= isset($banner) && $banner['page'] == 'concerthall' ? 'selected' : '' ?>>
+                                                                Concert Hall</option>
+                                                            <option value="cricketnets"
+                                                                <?= isset($banner) && $banner['page'] == 'cricketnets' ? 'selected' : '' ?>>
+                                                                Cricket Nets</option>
+                                                            <option value="hockeyfield"
+                                                                <?= isset($banner) && $banner['page'] == 'hockeyfield' ? 'selected' : '' ?>>
+                                                                Hockey Field</option>
+                                                            <option value="biologylab"
+                                                                <?= isset($banner) && $banner['page'] == 'biologylab' ? 'selected' : '' ?>>
+                                                                Biology Lab</option>
+                                                            <option value="library"
+                                                                <?= isset($banner) && $banner['page'] == 'library' ? 'selected' : '' ?>>
+                                                                Library</option>
+                                                            <option value="musicandartroom"
+                                                                <?= isset($banner) && $banner['page'] == 'musicandartroom' ? 'selected' : '' ?>>
+                                                                Music and Art Room</option>
+                                                            <option value="networkedclassrooms"
+                                                                <?= isset($banner) && $banner['page'] == 'networkedclassrooms' ? 'selected' : '' ?>>
+                                                                Networked Classrooms</option>
+                                                            <option value="chemistrylab"
+                                                                <?= isset($banner) && $banner['page'] == 'chemistrylab' ? 'selected' : '' ?>>
+                                                                Chemistry Lab</option>
+                                                            <option value="physicslab"
+                                                                <?= isset($banner) && $banner['page'] == 'physicslab' ? 'selected' : '' ?>>
+                                                                Physics Lab</option>
+                                                            <option value="artandcraft"
+                                                                <?= isset($banner) && $banner['page'] == 'artandcraft' ? 'selected' : '' ?>>
+                                                                Art and Craft</option>
+                                                            <option value="technology"
+                                                                <?= isset($banner) && $banner['page'] == 'technology' ? 'selected' : '' ?>>
+                                                                Technology</option>
+                                                            <option value="healthandsaftey"
+                                                                <?= isset($banner) && $banner['page'] == 'healthandsaftey' ? 'selected' : '' ?>>
+                                                                Health and Saftey</option>
                                                             <option value="under-construction"
                                                                 <?= isset($banner) && $banner['page'] == 'under-construction' ? 'selected' : '' ?>>
                                                                 Under Construction</option>
@@ -155,11 +197,12 @@
                                                     value="<?= old('hyperlink') ?>"> -->
                                                 <div class="mb-3 row">
                                                     <label for="hyperlink"
-                                                        class="col-sm-2 col-form-label text-lg-end">Hyperlink (optional)</label>
+                                                        class="col-sm-2 col-form-label text-lg-end">Hyperlink
+                                                        (optional)</label>
                                                     <div class="col-sm-10">
-                                                        <input class="form-control" id="hyperlink"
-                                                            name="hyperlink"
-                                                            placeholder="Enter hyperlink"value="<?= isset($banner) ? esc($banner['hyperlink']) : '' ?>">
+                                                        <input class="form-control" id="hyperlink" name="hyperlink"
+                                                            placeholder="Enter hyperlink"
+                                                            value="<?= isset($banner) ? esc($banner['hyperlink']) : '' ?>">
                                                         <small class="text-danger">
                                                             <?= session('errors.hyperlink') ?>
                                                         </small>

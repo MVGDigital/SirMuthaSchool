@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Physics Lab <span>Facility</span></h3>
+            <h3>Physics <span> Lab</span></h3>
             <h6>"Our physics lab is equipped with cutting-edge instruments, providing students with practical experiences in scientific principles. Through hands-on experiments and demonstrations, students explore concepts of physics, enhancing their understanding of motion, energy, and force. This interactive environment encourages curiosity, critical thinking, and a deeper appreciation for the physical world."</h6>
             
         </div>

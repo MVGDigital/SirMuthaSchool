@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Concert <span>Hall</span></h3>
+            <h3>Concert <span> Hall</span></h3>
             <h6>"Our school’s concert hall is a premier venue for musical performances, drama, and cultural events. Equipped with excellent acoustics and a spacious seating arrangement, it provides a vibrant platform for students to showcase their talents. It fosters creativity, teamwork, and a love for the performing arts in a dynamic environment."</h6>
 
         </div>
