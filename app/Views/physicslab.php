@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Computer <span>Lab</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h3>Physics Lab <span>Facility</span></h3>
+            <h6>"Our physics lab is equipped with cutting-edge instruments, providing students with practical experiences in scientific principles. Through hands-on experiments and demonstrations, students explore concepts of physics, enhancing their understanding of motion, energy, and force. This interactive environment encourages curiosity, critical thinking, and a deeper appreciation for the physical world."</h6>
             
         </div>
     </section>
@@ -89,8 +89,8 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h3>Physics Lab <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Discovering the laws of nature through hands-on experiments in our advanced physics lab."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

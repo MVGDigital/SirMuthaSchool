@@ -36,7 +36,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Cricket <span>Nets</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h6>"Our school features a dedicated cricket net facility, designed to hone students' batting and bowling skills. With high-quality equipment and a safe, spacious environment, it provides aspiring cricketers the opportunity to practice, improve technique, and prepare for competitive matches, fostering teamwork and sportsmanship."</h6>
             
         </div>
     </section>
@@ -90,7 +90,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Cricket Net <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h6 style="color:black;">"Perfecting cricket skills with practice sessions in our well-equipped cricket net facility."</h6>
                     </div>
                     
                     <div class="row w100 m-0">
