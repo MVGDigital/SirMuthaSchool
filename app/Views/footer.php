@@ -44,7 +44,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-                <a href="/disclaimerdocument/Dsisclaimer.pdf" target="_blank">Disclaimer</a>
+                <a href="/disclaimerdocument/disclaimer.pdf" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">

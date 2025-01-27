@@ -36,19 +36,21 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- Green Campus -->
-    <section class="green-campus-sec" id="greencampus">
-
-        <div class="container-space wave-yellow-overwireBg ptb-80">
-            <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
-                <h3>Maths <span>club</span></h3>
-                
-                <h6 class="light-blue">
-                The ‘Maths Club’ facilitates students’ exploration of mathematics beyond the confines of textbooks, encouraging them to think creatively and develop a genuine interest in the subject. Through a variety of stimulating activities, the club sharpens learning and enhances problem-solving skills applicable to everyday life.
-                Students enjoy engaging in mathematical games, puzzles, and artistic exercises that reinforce essential concepts, transforming the study of mathematics into an enjoyable pursuit. By participating in the Maths Club activities, students not only deepen their understanding of mathematical principles but also cultivate a lasting appreciation for the subject, equipping them with skills that extend far beyond the classroom.
-                </h6>
-                
+    <!-- Literary & Arts -->
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>Maths <span> club</span></h3>
+                    <p>The ‘Maths Club’ facilitates students’ exploration of mathematics beyond the confines of textbooks, encouraging them to think creatively and develop a genuine interest in the subject. Through a variety of stimulating activities, the club sharpens learning and enhances problem-solving skills applicable to everyday life.</p>
+                <p>Students enjoy engaging in mathematical games, puzzles, and artistic exercises that reinforce essential concepts, transforming the study of mathematics into an enjoyable pursuit. By participating in the Maths Club activities, students not only deepen their understanding of mathematical principles but also cultivate a lasting appreciation for the subject, equipping them with skills that extend far beyond the classroom.
+                </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
             </div>
         </div>
     </section>
-    <!-- Green Campus -->
+    <!-- Literary & Arts -->
