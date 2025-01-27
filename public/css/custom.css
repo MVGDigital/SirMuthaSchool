@@ -1710,8 +1710,25 @@ label.error{
 .slick-banner-slider .slider.slider-nav {
     padding-left: 15px;
 }
+#thumbnail-slider #thumbnail-slider-list{
+    justify-content: center;
+}
+#annual-event.paginationCenter .splide__arrows{
+    left: 0;
+    right: 0;
+    top: 50%!important;
+    bottom: unset!important;
+}
+#annual-event.paginationCenter .splide__arrow--prev{
+    left: 1em;
+    background-color: #102753;
+}
+#annual-event.paginationCenter .splide__arrow--next{
+    right: 1em;
+    background-color: #102753;
+}
 .slider-nav .slick-slide.thumbnail-image{
-    /* border-bottom: 2px solid #10275347; */
+    border-bottom: 2px solid #10275347;
 }
 .slider-nav .slick-slide.thumbnail-image .thumbImg{
     max-width: 100%;
@@ -1746,7 +1763,7 @@ label.error{
     margin: 0;
 }
 .slick-banner-slider .slick-slide .thumbContent p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 28.8px;
     color: var(--color-inActive);
     text-transform: capitalize;
@@ -1809,9 +1826,11 @@ label.error{
     background-image: url(../images/black-down-arrow.png);
 }
 /*End USE CSS for Slider*/
-
-.thumbContent{
+#annual-event .thumbContent{
     padding: 30px 0;
+}
+.thumbContent{
+    padding: 0px 0;
 }
 .thumbContent h6{
     font-size: 24px;
@@ -1823,7 +1842,7 @@ label.error{
     text-transform: capitalize!important;
 }
 .thumbContent p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25.8px;
     color: var(--color-inActive);
     text-transform: capitalize;
