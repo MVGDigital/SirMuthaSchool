@@ -447,7 +447,7 @@ thumbnails.mount();
 document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
     new Splide(el, {
         type: 'slide',
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: false,
         pagination: true,
         speed: 1000,
@@ -507,6 +507,39 @@ var splide = new Splide('#upcoming-events', {
     },
 });
 splide.mount();
+
+new SlimSelect({
+    select: '#jobCategory',
+});
+
+$(document).ready(function () {
+
+    // Lazy load implementation
+    $("#loader").hide();
+    $(".pastEvent-items").hide();
+    $(".pastEvent-items").slice(0, 4).show();
+
+    let isLoading = false;
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
+            isLoading = true;
+            $("#loader").show();
+
+            setTimeout(function () {
+                $(".pastEvent-items:hidden").slice(0, 4).slideDown();
+                $("#loader").hide();
+                isLoading = false;
+
+                if ($(".pastEvent-items:hidden").length === 0) {
+                    $(window).off("scroll");
+                }
+            }, 3000);
+        }
+    });
+});
+
+
 
 <?php endif; ?>
 
@@ -646,8 +679,14 @@ $(document).ready(function() {
         setJobAndRedirect(jobId);
     });
 
+   /*  $(".apply-link").on("click", function(event) {
+        event.stopPropagation(); // Prevent the event from reaching the accordion logic
+        console.log("Apply link clicked");
+        // Add your desired functionality here
+    }); */
+
     function attachAccordionListeners() {
-        const menuBtns = document.querySelectorAll(".menu-button");
+        const menuBtns = document.querySelectorAll(".menu-button");  
 
         menuBtns.forEach((menuBtn) => {
             menuBtn.addEventListener("click", function() {
@@ -673,6 +712,40 @@ $(document).ready(function() {
         });
     }
     attachAccordionListeners();
+
+    // Prevent accordion toggle when "Apply Here" is clicked
+    $(".apply-link").on("click", function (event) {
+        const activeAccordion = document.querySelector(".menu-button.open");
+        activeAccordion.nextElementSibling.style.height = 0;
+        
+    });
+
+    $(document).ready(function () {
+
+        // Lazy load implementation
+        $("#loader").hide();
+        $(".jobItems").hide();
+        $(".jobItems").slice(0, 5).show();
+
+        let isLoading = false;
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
+                isLoading = true;
+                $("#loader").show();
+
+                setTimeout(function () {
+                    $(".jobItems:hidden").slice(0, 5).slideDown();
+                    $("#loader").hide();
+                    isLoading = false;
+
+                    if ($(".jobItems:hidden").length === 0) {
+                        $(window).off("scroll");
+                    }
+                }, 3000);
+            }
+        });
+        });
 
     // Helper function to format date
     function formatDate(dateStr) {
@@ -1290,94 +1363,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php if ($page_code === 'parents'): ?>
 
-var video = $('#sir-mutha-campus').get(0); // Get the video element
-var playOverlay = $('#playOverlay');
-
-// Ensure the video is muted for autoplay to work
-video.muted = true;
-
-// Use IntersectionObserver to detect when the video section is in view
-var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            // If the video is in view, start playing it
-            video.play().catch(function(error) {
-                console.log('Autoplay prevented:', error);
-            });
-        } else {
-            // If the video goes out of view, pause it
-            video.pause();
-        }
-    });
-}, {
-    threshold: 0.5 // Video will start playing when 50% of it is visible
-});
-
-// Observe the section containing the video
-observer.observe(document.querySelector('#campusVideo'));
-
-// Hide overlay when the video starts playing
-video.addEventListener('play', function() {
-    playOverlay.addClass('hidden');
-});
-
-// Show overlay when the video is paused or ended
-video.addEventListener('pause', function() {
-    playOverlay.removeClass('hidden');
-});
-
-video.addEventListener('ended', function() {
-    playOverlay.removeClass('hidden');
-});
-
-// Play or pause the video when the overlay is clicked
-playOverlay.click(function() {
-    if (video.paused) {
-        video.play();
-        playOverlay.addClass('hidden'); // Hide the overlay when playing
-    } else {
-        video.pause();
-        playOverlay.removeClass('hidden'); // Show the overlay when paused
-    }
-});
-
-// Toggle play/pause when clicking on the video itself
-$('#sir-mutha-campus').click(function() {
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
-});
-document.addEventListener("DOMContentLoaded", function() {
-    var tabs = document.getElementsByClassName("Tab");
-    var contents = document.getElementsByClassName("tab-content");
-
-    // Add event listeners to tabs
-    Array.prototype.forEach.call(tabs, function(tab) {
-        tab.addEventListener("click", setActiveClass);
-    });
-
-    function setActiveClass(evt) {
-        // Remove active class from all tabs
-        Array.prototype.forEach.call(tabs, function(tab) {
-            tab.classList.remove("active");
-        });
-
-        // Add active class to the clicked tab
-        evt.currentTarget.classList.add("active");
-
-        // Hide all tab content
-        Array.prototype.forEach.call(contents, function(content) {
-            content.style.display = "none";
-        });
-
-        // Show the content that corresponds to the clicked tab
-        var tabNumber = evt.currentTarget.getAttribute("data-tab");
-        var selectedTabContent = document.getElementById("tab-" + tabNumber);
-        selectedTabContent.style.display = "block";
-    }
-});
 
 <?php endif; ?>
 </script>
