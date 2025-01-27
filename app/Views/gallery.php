@@ -97,92 +97,92 @@
                     <!--</div>-->
                     <div class="row w100 m-0">
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 3.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <div class="gallery-imgItem1">
-            <img src="<?= base_url('images/gallery/Yoga 1.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-        <div class="gallery-imgItem2">
-            <img src="<?= base_url('images/gallery/Yoga 2.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-    </div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/yoga3.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/yoga1.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/yoga2.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 4.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/yoga4.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="tab-3" style="display: none;">
-                <div class="row w100 m-0">
+                    <div class="row w100 m-0">
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 3.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <div class="gallery-imgItem1">
-            <img src="<?= base_url('images/gallery/Yoga 1.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-        <div class="gallery-imgItem2">
-            <img src="<?= base_url('images/gallery/Yoga 2.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-    </div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/health&wellness_left.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/health&wellness_top.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/health&wellness_bottom.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 4.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/health&wellness_right.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="tab-4" style="display: none;">
-                <div class="row w100 m-0">
+                    <div class="row w100 m-0">
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 3.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <div class="gallery-imgItem1">
-            <img src="<?= base_url('images/gallery/Yoga 1.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-        <div class="gallery-imgItem2">
-            <img src="<?= base_url('images/gallery/Yoga 2.png') ?>" class="img-fluid w100"
-                alt="Sir Gallery Images">
-        </div>
-    </div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/imu_nation_left.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/imu_nation_top.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/imu_nation_bottom.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
 
-<div class="col-lg-4 p-0">
-    <div class="gallery-imgs">
-        <img src="<?= base_url('images/gallery/Yoga 4.png') ?>" class="img-fluid w100"
-            alt="Sir Gallery Images">
-    </div>
-</div>
-</div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/imu_nation_right.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
