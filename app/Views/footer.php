@@ -49,7 +49,7 @@
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
             <div class="copyRights-txt">
-                <a href="#">© <script>
+                <a>© <script>
                     document.write(new Date().getFullYear())
                     </script> SIR MUTHA SCHOOL</a>
                 <hr>
@@ -412,13 +412,14 @@ var main = new Splide('#annual-event', {
     type: 'slide',
     heightRatio: 0.5,
     pagination: false,
-    arrows: false,
+    arrows: true,
     cover: true,
 });
 
 // Initialize Thumbnail Slider
 var thumbnails = new Splide('#thumbnail-slider', {
     type: 'slide',
+    arrows: true,
     autoplay: false,
     pauseOnHover: false,
     rewind: false,
@@ -460,7 +461,7 @@ document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
 $(document).ready(function() {
     var fullText = $('.newsText').text(); // Get the full text
     var words = fullText.split(' '); // Split the text into words
-    var limit = 105; // Word limit
+    var limit = 25; // Word limit
     var truncatedText = words.slice(0, limit).join(' ') + '...'; // Create truncated text
 
     // Initially display the truncated text
