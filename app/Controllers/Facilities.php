@@ -25,7 +25,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'computerlab')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -42,7 +42,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'swimmingpool')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -59,7 +59,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'concerthall')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -76,7 +76,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'cricketnets')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -93,7 +93,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'hockeyfield')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -109,7 +109,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'biologylab')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -125,7 +125,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'library')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -141,7 +141,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'musicandartroom')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -157,7 +157,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'networkedclassrooms')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -173,7 +173,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'chemistrylab')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -189,7 +189,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'physicslab')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -205,7 +205,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'artandcraft')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -221,7 +221,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'technology')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
@@ -237,7 +237,7 @@ class Facilities extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
-        $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'healthandsaftey')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
