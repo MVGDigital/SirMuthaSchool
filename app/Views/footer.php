@@ -447,7 +447,7 @@ thumbnails.mount();
 document.querySelectorAll('.annual-event-imgs').forEach(function(el) {
     new Splide(el, {
         type: 'slide',
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: false,
         pagination: true,
         speed: 1000,
@@ -507,6 +507,39 @@ var splide = new Splide('#upcoming-events', {
     },
 });
 splide.mount();
+
+new SlimSelect({
+    select: '#jobCategory',
+});
+
+$(document).ready(function () {
+
+    // Lazy load implementation
+    $("#loader").hide();
+    $(".pastEvent-items").hide();
+    $(".pastEvent-items").slice(0, 4).show();
+
+    let isLoading = false;
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
+            isLoading = true;
+            $("#loader").show();
+
+            setTimeout(function () {
+                $(".pastEvent-items:hidden").slice(0, 4).slideDown();
+                $("#loader").hide();
+                isLoading = false;
+
+                if ($(".pastEvent-items:hidden").length === 0) {
+                    $(window).off("scroll");
+                }
+            }, 3000);
+        }
+    });
+});
+
+
 
 <?php endif; ?>
 
@@ -646,8 +679,14 @@ $(document).ready(function() {
         setJobAndRedirect(jobId);
     });
 
+   /*  $(".apply-link").on("click", function(event) {
+        event.stopPropagation(); // Prevent the event from reaching the accordion logic
+        console.log("Apply link clicked");
+        // Add your desired functionality here
+    }); */
+
     function attachAccordionListeners() {
-        const menuBtns = document.querySelectorAll(".menu-button");
+        const menuBtns = document.querySelectorAll(".menu-button");  
 
         menuBtns.forEach((menuBtn) => {
             menuBtn.addEventListener("click", function() {
@@ -673,6 +712,40 @@ $(document).ready(function() {
         });
     }
     attachAccordionListeners();
+
+    // Prevent accordion toggle when "Apply Here" is clicked
+    $(".apply-link").on("click", function (event) {
+        const activeAccordion = document.querySelector(".menu-button.open");
+        activeAccordion.nextElementSibling.style.height = 0;
+        
+    });
+
+    $(document).ready(function () {
+
+        // Lazy load implementation
+        $("#loader").hide();
+        $(".jobItems").hide();
+        $(".jobItems").slice(0, 5).show();
+
+        let isLoading = false;
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 500 && !isLoading) {
+                isLoading = true;
+                $("#loader").show();
+
+                setTimeout(function () {
+                    $(".jobItems:hidden").slice(0, 5).slideDown();
+                    $("#loader").hide();
+                    isLoading = false;
+
+                    if ($(".jobItems:hidden").length === 0) {
+                        $(window).off("scroll");
+                    }
+                }, 3000);
+            }
+        });
+        });
 
     // Helper function to format date
     function formatDate(dateStr) {
