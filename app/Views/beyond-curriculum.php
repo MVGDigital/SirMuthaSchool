@@ -109,7 +109,7 @@
     <!-- Clubs -->
 
     <!-- News Letters -->
-    <section id="news-letter" class="container-space cardWith-overlay-Btn white-bgImg ptb-80">
+    <section id="news-letter" class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Students <span>Newsletter</span></h3>
             <h6 class="light-blue">"Our student newsletter showcases the latest school news, events, achievements, and creative student contributions. It provides a platform for students to express their ideas, celebrate success, and stay informed."
@@ -313,7 +313,7 @@
         </div>
 
         <!-- Main Slider -->
-        <div id="annual-event" class="splide splideMain col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
+        <div id="annual-event" class="splide splideMain paginationCenter col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
             <div class="splide__track">
                 <ul class="splide__list">
                     <?php foreach ($events_by_year as $year => $events): ?>
