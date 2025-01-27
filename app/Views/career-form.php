@@ -43,7 +43,7 @@
         </div>
 
         <div class="careerForm-container">
-            <div class="col-12 col-md-12 col-lg-12 col-xl-8 m-auto">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 m-auto">
                 <?php if (isset($job_details)): ?>
                 <div class="selected-job-details">
                     <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
@@ -65,22 +65,31 @@
                     </div>
                     <?php endif; ?>
                     <input type="hidden" name="job_id" value="<?= esc($job_details['career_id']) ?>">
-                    <div class="col-12 col-md-12 col-lg-12 fields">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Enter first name">
+                    <div class="career-fieldsContainer">
+                        <div class="formFields row w100 m-0">
+                            <div class="col-12 col-md-6 col-lg-6 fields">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="Enter first name">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 fields">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Enter last name">
+                            </div>
+                        </div>
+
+                        <div class="formFields row w100 m-0">
+                            <div class="col-12 col-md-6 col-lg-6 fields">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 fields">
+                                <label for="mobile-number">Phone Number</label>
+                                <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter phone number">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-12 fields">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name">
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-12 fields">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-12 fields">
-                        <label for="mobile-number">Phone Number</label>
-                        <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter phone number">
-                    </div>
+                    
+                    
                     <h6>Upload your resume</h6>
 
                     <div class="file-upload-container">
@@ -107,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="formBtn-fullWidth col-8 col-md-6 col-lg-6 col-xl-4 m-auto">
+                    <div class="formBtn-fullWidth col-8 col-md-6 col-lg-6 col-xl-6 m-auto">
                         <button id="submitBtn" type='sumit'>Submit</button>
                     </div>
                 </form>
