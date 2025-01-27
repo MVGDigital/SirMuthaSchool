@@ -91,7 +91,7 @@
                     <p>We are able to consider your child for entry from LKG to Grade IX, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
                     
                     <div class="blueBtn-medium">
-                        <a href="#">Know More</a>
+                        <!-- <a href="#">Know More</a> -->
                     </div>
                 </div>
             </div>
