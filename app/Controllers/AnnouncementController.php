@@ -30,12 +30,11 @@ class AnnouncementController extends BaseController
 
         $rules = [
             'title' => 'required',
-            'description' => 'required',
             'pdf_file' => 'uploaded[pdf_file]|max_size[pdf_file,2048]|ext_in[pdf_file,pdf]',
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('validation', $this->validator);
+            return redirect()->back()->withInput()->with('validation', $this->validator->getErrors());
         }
 
         $pdfFile = null;
@@ -45,16 +44,24 @@ class AnnouncementController extends BaseController
                 if (!is_dir($filePath)) {
                     mkdir($filePath, 0777, true);
                 }
-                $file->move($filePath);
-                $pdfFile = $file->getName();
+    
+                $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
+                $extension = $file->getExtension();
+                $uniqueName = $originalName . '_' . date('dmy_His') . '.' . $extension;
+    
+                $file->move($filePath, $uniqueName);
+                $pdfFile = $uniqueName;
             }
         }
+
+        $currentDateTime = date('Y-m-d H:i:s');
 
         $this->announcementModel->insert([
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
             'pdf_file' => $pdfFile,
             'published' => $this->request->getPost('published') ? 1 : 0,
+            'created_at' => $currentDateTime,
         ]);
 
         return redirect()->to('adm1n/announcements')->with('success', 'Announcement added successfully');
@@ -77,12 +84,11 @@ class AnnouncementController extends BaseController
 
         $rules = [
             'title' => 'required',
-            'description' => 'required',
             'pdf_file' => 'max_size[pdf_file,2048]|ext_in[pdf_file,pdf]',
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('validation', $this->validator);
+            return redirect()->back()->withInput()->with('validation', $this->validator->getErrors());
         }
 
         $announcement = $this->announcementModel->find($id);
@@ -90,7 +96,7 @@ class AnnouncementController extends BaseController
             return redirect()->to('adm1n/announcements')->with('error', 'Announcement not found.');
         }
 
-        $pdfFile = $announcement['pdf_file']; // Keep the current PDF file
+        $pdfFile = $announcement['pdf_file'];
 
         if ($file = $this->request->getFile('pdf_file')) {
             if ($file->isValid() && !$file->hasMoved()) {
@@ -98,22 +104,27 @@ class AnnouncementController extends BaseController
                 if (!is_dir($filePath)) {
                     mkdir($filePath, 0777, true);
                 }
-
-                // Delete the old PDF if it exists
+    
                 if ($pdfFile && file_exists($filePath . $pdfFile)) {
                     unlink($filePath . $pdfFile);
                 }
-
-                $file->move($filePath);
-                $pdfFile = $file->getName(); // Update the PDF file name
+    
+                $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
+                $extension = $file->getExtension();
+                $uniqueName = $originalName . '_' . date('dmy_His') . '.' . $extension;
+    
+                $file->move($filePath, $uniqueName);
+                $pdfFile = $uniqueName;
             }
         }
+        $currentDateTime = date('Y-m-d H:i:s');
 
         $this->announcementModel->update($id, [
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
             'pdf_file' => $pdfFile,
             'published' => $this->request->getPost('published') ? 1 : 0,
+            'updated_at' => $currentDateTime,
         ]);
 
         return redirect()->to('adm1n/announcements')->with('success', 'Announcement updated successfully');

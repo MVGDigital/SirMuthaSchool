@@ -225,6 +225,15 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
         $routes->get('delete/(:num)', 'AnnouncementController::delete/$1');
         $routes->post('toggle-published/(:num)', 'AnnouncementController::togglePublished/$1');
     });
+
+    $routes->group('adm1n', function($routes) {
+        $routes->get('achievements', 'AchievementController::index');
+        $routes->get('achievements/create', 'AchievementController::create');
+        $routes->post('achievements/store', 'AchievementController::store');
+        $routes->get('achievements/edit/(:num)', 'AchievementController::edit/$1');
+        $routes->post('achievements/update/(:num)', 'AchievementController::update/$1');
+        $routes->get('achievements/delete/(:num)', 'AchievementController::delete/$1');
+    });
     
     // Contact routes
     $routes->get('adm1n/contact', 'ContactController::index');

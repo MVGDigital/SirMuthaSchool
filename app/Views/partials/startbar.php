@@ -164,7 +164,7 @@
                     </li>
                     <!--end nav-item-->
 
-                   <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#sidebarBlogs" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarBlogs">
                             <i class="fa-solid fa-blog menu-icon"></i>
@@ -182,6 +182,24 @@
                         <!--end startbarDashboards-->
                     </li>
                     <!--end nav-item-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sidebarannouncements" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarannouncements">
+                            <i class="fa-solid fa-bullhorn menu-icon"></i>
+                            <span>Announcements</span>
+                        </a>
+                        <div class="collapse" id="sidebarannouncements">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?= base_url('adm1n/announcements'); ?>">Announcements</a>
+                                </li>
+                                <!--end nav-item-->
+                            </ul>
+                            <!--end nav-->
+                        </div>
+                        <!--end startbarDashboards-->
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#sidebarGallery" data-bs-toggle="collapse" role="button"
@@ -203,14 +221,6 @@
                     <!--end nav-item-->
                 </ul>
                 <!--end navbar-nav--->
-                <!-- <div class="update-msg text-center"> 
-                    <div class="d-flex justify-content-center align-items-center thumb-lg update-icon-box  rounded-circle mx-auto">
-                        <i class="iconoir-peace-hand h3 align-self-center mb-0 text-primary"></i>
-                    </div>                   
-                    <h5 class="mt-3">Mannat Themes</h5>
-                    <p class="mb-3 text-muted">Rizz is a high quality web applications.</p>
-                    <a href="javascript: void(0);" class="btn text-primary shadow-sm rounded-pill">Upgrade your plan</a>
-                </div> -->
             </div>
         </div>
         <!--end startbar-collapse-->
