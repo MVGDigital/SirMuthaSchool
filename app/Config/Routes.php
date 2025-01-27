@@ -236,6 +236,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
         $routes->get('achievements/edit/(:num)', 'AchievementController::edit/$1');
         $routes->post('achievements/update/(:num)', 'AchievementController::update/$1');
         $routes->get('achievements/delete/(:num)', 'AchievementController::delete/$1');
+        $routes->post('achievements/toggle-published/(:num)', 'AchievementController::togglePublished/$1');
     });
     
     // Contact routes

@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Chemistry Lab <span>Facility</span></h3>
+            <h3>Chemistry <span> Lab</span></h3>
             <h6>"Our state-of-the-art chemistry lab provides a safe and stimulating environment for hands-on learning. Equipped with modern apparatus and safety equipment, students conduct experiments to explore chemical reactions and principles, fostering curiosity, critical thinking, and practical skills essential for mastering the world of chemistry and scientific inquiry."</h6>
             
         </div>

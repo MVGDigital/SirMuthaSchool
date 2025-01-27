@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Computer Lab <span>Facility</span></h3>
+            <h3>Computer <span> Lab</span></h3>
             <h6>"Our computer lab is equipped with the latest technology, providing hands-on learning experiences. With modern systems, high-speed internet, and interactive tools, students develop essential digital skills, explore innovative ideas, and stay updated in the ever-evolving tech world, ensuring a strong foundation for future success."</h6>
             
         </div>

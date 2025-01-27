@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Music & Art room <span>facilities</span></h3>
+            <h3>Music &  <span> Arts Room</span></h3>
             <h6></h6>
 
         </div>
