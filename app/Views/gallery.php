@@ -22,7 +22,7 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="#" class="active">Gallery</a></li>
+                <li><a href="<?= base_url('gallery#galleryTabs') ?>" class="active">Gallery</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -38,7 +38,7 @@
     <!-- Section Menus -->
 
     <!-- Tab View Sections -->
-    <section class="container-space blueBg-Sec wave-bottom-img ptb-80">
+    <section id="galleryTabs" class="container-space blueBg-Sec wave-bottom-img pb-60">
         <div class="Panel">
             <nav>
                 <ul class="Tabs">
