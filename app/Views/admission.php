@@ -170,7 +170,7 @@
                     <div class="cardTitle">
                         <h4>Apply For LKG to Grade X: 2025-2026</h4>
                     </div>
-                    <img src="<?= base_url('images/admission/kg-1std.png') ?>" class="img-fluid w100"
+                    <img src="<?= base_url('images/admission/admission_gradeX.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
                     <div class="blueBtn-medium">
                         <a href="<?= base_url('admission/form') ?>">Know More</a>
