@@ -103,11 +103,11 @@
                                         <label for="registration_required">Registration Required</label>
                                         <select class="form-control" id="registration_required"
                                             name="registration_required">
-                                            <option value="yes"
-                                                <?= $event['registration_required'] === 'yes' ? 'selected' : ''; ?>>Yes
+                                            <option value="1"
+                                                <?= $event['registration_required'] === '1' ? 'selected' : ''; ?>>Yes
                                             </option>
-                                            <option value="no"
-                                                <?= $event['registration_required'] === 'no' ? 'selected' : ''; ?>>No
+                                            <option value="0"
+                                                <?= $event['registration_required'] === '0' ? 'selected' : ''; ?>>No
                                             </option>
                                         </select>
                                     </div>

@@ -98,7 +98,7 @@
                                         <h4>Interact <span>Club </span></h4>
                                     </div>
                                     <div class="blueBtn-medium">
-                                        <a href="<?= base_url('/beyond-curriculum/ecoclub') ?>">Know More</a>
+                                        <a href="<?= base_url('/beyond-curriculum/interactclub') ?>">Know More</a>
                                     </div>
                                 </div>
                             </div>

@@ -37,10 +37,8 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Academic <span>Facilities</span></h3>
 
-            <h6>Audio – Visual senses of students are targeted, and it helps the students store the information fast and
-                more effectively. </h6>
-            <h6>Uses interactive modules like videos and presentations. These visually attractive methods of teaching
-                help students learn a concept that is difficult to understand through traditional methods. </h6>
+            <h6>"Experience excellence with top-notch academic facilities, including advanced classrooms, cutting-edge laboratories, and a comprehensive, resourceful library. Our state-of-the-art infrastructure is designed to foster a dynamic, engaging learning environment, inspiring academic growth and holistic development for every student." </h6>
+            
         </div>
     </section>
     <!-- Section Menus -->
