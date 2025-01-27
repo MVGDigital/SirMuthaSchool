@@ -98,6 +98,9 @@ $routes->get('inclusive-education', 'InclusiveEducation::index');
 $routes->group('beyond-curriculum', function ($routes) {
 $routes->get('', 'BeyondCurriculum::index');
 $routes->get('heritageclub', 'BeyondCurriculum::heritageclub');
+$routes->get('mathsclub', 'BeyondCurriculum::mathsclub');
+$routes->get('ecoclub', 'BeyondCurriculum::ecoclub');
+$routes->get('interactclub', 'BeyondCurriculum::interactclub');
 });
 
 //Beyond Curriculum
