@@ -22,11 +22,11 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('about#ourhistory') ?>" class="active">Our History</a></li>
-                <li><a href="https://themadrassevasadan.org/about">About MSS</a></li>
+                <li><a href="https://themadrassevasadan.org/about" target="_blank">About MSS</a></li>
                 <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
                 <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
                 <li><a href="<?= base_url('about#boardmember') ?>">Board Members</a></li>
-                <li><a href="https://themadrassevasadan.org/Be_A_Part">Be a Part</a></li>
+                <li><a href="https://themadrassevasadan.org/Be_A_Part" target="_blank">Be a Part</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -61,7 +61,7 @@
                 <p>Faculty Members</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="168">0</h6>
+                <h6 class="counter-number" data-count="1341">0</h6>
                 <p>I To XII Students</p>
             </div>
         </div>
@@ -85,7 +85,7 @@
                     With a view to impart to them such education and training as would make them fit, in course of time,
                     to look after themselves, and be thoroughly self-supporting and self-reliant.
                 </h6>
-                <a href="https://themadrassevasadan.org/about" class="blueBtn">Know More</a>
+                <a href="https://themadrassevasadan.org/about" target="_blank" class="blueBtn">Know More</a>
             </div>
         </div>
     </section>
@@ -273,7 +273,7 @@
             <div class="sectionTitle-white-italic col-lg-10 m-auto">
                 <h4>Donate, Partner & Volunteer <br> With Us</h4>
                 <div class="lightYellowBtn">
-                    <a href="https://themadrassevasadan.org/be_a_part">Begin your Chapter</a>
+                    <a href="https://themadrassevasadan.org/be_a_part" target="_blank">Begin your Chapter</a>
                 </div>
             </div>
         </div>

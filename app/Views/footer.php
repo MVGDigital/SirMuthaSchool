@@ -44,7 +44,7 @@
     <div class="copy-rights">
         <div class="col-12 col-md-4 col-lg-4 col-xl-6">
             <div class="policy-txt">
-                <a href="/disclaimerdocument/disclaimer.pdf" target="_blank">Disclaimer</a>
+            <a href="<?= base_url('disclaimerdocument/Disclaimer.pdf') ?>" target="_blank">Disclaimer</a>
             </div>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
@@ -53,7 +53,7 @@
                     document.write(new Date().getFullYear())
                     </script> SIR MUTHA SCHOOL</a>
                 <hr>
-                <a href="#"> Designed & Developed By MVG Digital </a>
+                <a href="https://mvgdigital.com/" target="_blank"> Designed & Developed By MVG Digital </a>
             </div>
         </div>
     </div>
