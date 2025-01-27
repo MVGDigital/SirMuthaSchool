@@ -3,8 +3,10 @@
     <section class="banner-section">
         <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -18,7 +20,7 @@
 
     <!-- Section Menus -->
     <section class="container-space innerMenus-sec">
-        
+
         <div class="pageTitleLine col-lg-8 m-auto">
             <hr>
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
@@ -64,7 +66,9 @@
     </section>
     <!-- Event Details -->
 
-    <script>console.log('Show Registration Form: <?= $show_registration_form ?>');</script>
+    <script>
+    console.log('Show Registration Form: <?= $show_registration_form ?>');
+    </script>
     <!-- Contact Form -->
     <?php if ($show_registration_form): ?>
     <section class="container-space lightColor-bg eventRegBg">
