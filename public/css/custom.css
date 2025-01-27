@@ -646,7 +646,7 @@ main{
     margin: 0 5px;
 }
 .sectionTitle-white h3{
-    font-size: 33px;
+    font-size: 32px;
     line-height: 33px;
     text-align: center;
     color: var(--color-white);
@@ -710,7 +710,7 @@ main{
 }
 
 .sectionTitle-blue h3{
-    font-size: 33px;
+    font-size: 32px;
     line-height: 33px;
     text-align: center;
     color: var(--color-blue);
@@ -952,9 +952,17 @@ main{
     background-repeat: no-repeat;    
 }
 .join-with-us{
+    background-size: 100%;
     background-image: url(../images/about/join-with-us.png);
 }
-
+.join-with-us .join-with-us-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-with-us .sectionTitle-white-italic h4{
+    font-size: 32px;
+}
 .lightYellowBtn{
     text-align: center;
     padding: 40px 0;
@@ -1078,7 +1086,9 @@ main{
     font-family: 'Figtree-Regular';
     color: var(--color-inActive);
 }
-
+.teacher-enrichment-img{
+    background-image: url(../images/academics/teacher-enrichment.jpg);
+}
 /* Annual Policy */
 .white-wave{
     position: relative;
@@ -1551,6 +1561,11 @@ main{
     display: flex;
     align-items: stretch;
 }
+.contact-details-container .sectionTitle-white h3{
+    line-height: 48px;
+    letter-spacing: 6px;
+    font-family: 'EBGaramond-Regular';
+}
 .regForm{
     width: 100%;
     padding: 50px;
@@ -1561,6 +1576,11 @@ main{
 }
 .regForm p{
     font-size: 18px;
+    line-height: 36.6px;
+}
+.addressContainer{
+    padding: 50px;
+    background-color: #feffff1c;
 }
 #contact-form{
     /* background-color: #FFF; */
