@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Library <span>facility</span></h3>
+            <h3><span>Library</span></h3>
             <h6>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. Stocked with periodicals, daily news updates, and a diverse range of materials, it supports young learners and advanced students alike. With over 7,900 books, it stands as an inspiring center for research, exploration, and intellectual growth.</h6>
             
         </div>

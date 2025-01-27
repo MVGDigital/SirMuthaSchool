@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Swimming Pool <span>Facilitiy</span></h3>
+            <h3>Swimming <span> Pool</span></h3>
             <h6>"Our school features a well-maintained swimming pool that promotes physical fitness and water safety. Students enjoy structured lessons, free swim time, and water-based activities, enhancing their coordination and stamina. This facility offers a refreshing, fun environment for learning swimming skills and encourages overall well-being and team spirit."</h6>
             
         </div>

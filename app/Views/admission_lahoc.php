@@ -558,6 +558,9 @@
                             required: true,
                             phoneIN: true // Use the phone validation method
                         },
+                        father_office_address: {
+                            required: true
+                        },
                         father_email: {
                             required: true,
                             emailValidation: true // Use the email validation method
@@ -580,6 +583,9 @@
                         mother_mobile: {
                             required: true,
                             phoneIN: true // Use the phone validation method
+                        },
+                        mother_office_address: {
+                            required: true
                         },
                         mother_email: {
                             required: true,
@@ -644,6 +650,9 @@
                         father_mobile: {
                             required: "Father's Mobile Number is required"
                         },
+                        father_office_address: {
+                            required: "Father's Office Address is required"
+                        },
                         father_email: {
                             required: "Father's Email ID is required"
                         },
@@ -664,6 +673,9 @@
                         },
                         mother_mobile: {
                             required: "Mother's Mobile Number is required"
+                        },
+                        mother_office_address: {
+                            required: "Mother's Office Address is required"
                         },
                         mother_email: {
                             required: "Mother's Email ID is required"

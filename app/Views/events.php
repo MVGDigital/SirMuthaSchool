@@ -42,6 +42,21 @@
     <section id="upcomingEvents" class="container-space lightColor-bg pt-60 pb-100">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Upcoming<span> Events</span></h3>
+
+            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('career/searchJobs') ?>" method="get">
+                <div class="shortBySearch">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback">
+                            <img src="<?= base_url('images/searchIcon.svg') ?>" alt="Search icon">
+                        </span>
+                        <input type="text" class="searchInput form-control" name="keyword"
+                            placeholder="Search for job by title or keyword">
+                    </div>
+                    <select class="selectDropdown" id="jobCategory" name="selectDropdown">
+                        <option value="" selected="selected">Select Month</option>
+                    </select>
+                </div>
+            </form>
         </div>
         <div id="upcoming-events" class="splide paginationCenter cardSlider mt-50">
             <div class="splide__track">
@@ -88,12 +103,12 @@
         </div>
 
         <?php foreach ($past_events as $event): ?>
-        <div class="pastEvent-container row w100">
+        <div class="pastEvent-container pastEvent-items row w100">
             <div class="col-12 col-md-12 col-lg-5 col-xl-4">
                 <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100"
                     alt="<?= esc($event['event_name']) ?>">
             </div>
-            <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50">
+            <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50 ">
                 <h6><?= esc($event['event_name']) ?> - <?= date('Y', strtotime($event['event_date'])) ?></h6>
                 <div class="event-date">
                     <img src="<?= base_url('images/calendar.svg') ?>" class="img-fluid" alt="Event date Icon">
@@ -108,5 +123,12 @@
             </div>
         </div>
         <?php endforeach; ?>
-    </section>
-    <!-- Past Events -->
+
+        <!-- Past Event Grid Cards-->
+        <div class="text-center m-3">
+            <div id="loader">
+                <div id="loader" class="spinner"></div>
+            </div>
+        </div>
+        </section>
+        <!-- Past Events -->

@@ -59,7 +59,7 @@
         <div class="accordion-container">
             <?php foreach ($jobs as $job): ?>
             <div class="accordion">
-                <button class="menu-button">
+                <button class="menu-button jobItems">
                     <div class="jobInfo">
                         <h5><?= esc($job['job_title']) ?></h5>
                         <h6><?= esc($job['employment_type']) ?> - <?= esc($job['location']) ?></h6>
@@ -119,6 +119,13 @@
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+
+        <!-- Past Event Grid Cards-->
+        <div class="text-center m-3">
+            <div id="loader">
+                <div id="loader" class="spinner"></div>
+            </div>
         </div>
 
     </section>

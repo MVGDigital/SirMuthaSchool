@@ -22,10 +22,9 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="#" class="active">Application Process</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Free Structure</a></li>
-                <li><a href="#">Registration Process</a></li>
+                <li><a href="parents#parentsportal" class="active">Parent Portal</a></li>
+                <li><a href="parents#association">Parent Association</a></li>
+                <li><a href="parents#resources">Resources</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -34,38 +33,20 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Welcome To Sir Mutha School !</h3>
+            <h3>Welcome To <span> Sir Mutha School !</span></h3>
             <h6>"At Sir Mutha School, our Parent Page offers essential tools for active involvement in your child's education. From the Parent Portal for real-time updates to the Parent Association for community engagement and a comprehensive Resources section, we ensure parents have the support and information needed for a seamless school experience."</h6>
         </div>
     </section>
     <!-- Section Menus -->
 
-    <!-- Video Section -->
-    <section id="campusVideo" class="admsn-PageVideo pb-60">
-        <div class="col-lg-10 m-auto">
-            <?php if (!empty($video)) : ?>
-            <video id="sir-mutha-campus" controls playsinline>
-                <source src="<?= base_url('uploads/videos/' . $video['video_file']); ?>" type="video/mp4">
-            </video>
-            <?php endif; ?>
-
-            <!-- Play icon and text overlay -->
-            <div id="playOverlay" class="playOverlay">
-                <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
-                <span class="playText">Play</span>
-            </div>
-        </div>
-    </section>
-    <!-- Video Section -->
-
     <!-- Parent Portal -->
     <section id="parentsportal" class="wave-sec wave-yellowWith-bottom-img container-space ptb-80">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-6">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
                     <h3>Parent <span> Portal</span></h3>
                     <p>The Parent Portal at Lady Andal IB School is designed to streamline communication and provide quick access to essential resources for parents. 
@@ -81,7 +62,7 @@
     <!-- Parent Portal -->
 
     <!-- Parent Association -->
-    <section class="wave-sec white-bgImg">
+    <section id="association" class="wave-sec white-bgImg">
         <div class="itemSpaceBetween">
             <div class="col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
@@ -105,11 +86,11 @@
     <!-- Parent Association -->
 
     <!-- Resource -->
-    <section class="wave-sec blueBg-Sec lightYellow-wave-bottom-img">
+    <section id="resources" class="wave-sec blueBg-Sec lightYellow-wave-bottom-img">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-white lft-rgt-content">
-                    <h3>Resources</span></h3>
+                    <h3><span>Resources</span></h3>
                     <p>The Resources section is your one-stop hub for practical tools and information. From student handbooks that outline policies and expectations to updated lunch menus and uniform guidelines, this section ensures that parents have easy access to essential documents. Designed for convenience, it keeps parents informed and prepared, helping them navigate the school year with ease. At Lady Andal IB School, we believe in providing resources that make school life more organized and enjoyable for both parents and students.</p>
                 </div>
             </div>

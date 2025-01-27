@@ -32,7 +32,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Sir Mutha <span> Achievements</span></h3>
-            <h6>"Sir Mutha School is proud of its exceptional achievements, from academic excellence to extracurricular accomplishments. Our students consistently excel in sports, arts, and community service, earning recognition at local, national, and international levels. These achievements reflect our commitment to nurturing well-rounded individuals, preparing them for success in every field."</h6>
+            <h6>"Sir Mutha School is proud of its exceptional achievements, from academic excellence to extracurricular
+                accomplishments. Our students consistently excel in sports, arts, and community service, earning
+                recognition at local, national, and international levels. These achievements reflect our commitment to
+                nurturing well-rounded individuals, preparing them for success in every field."</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -47,48 +50,65 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6> Sarvepalli Sai Aditya</h6>
-                            <p>of class XI has won a silver 4*200M freestyle Relay and two Bronze medals in 1500M freestyle and 4*100M freestyle relay, respectively, at the 39th Junior Aquatic National Championship held in August 2023, in Bhubaneshwar. At the CBSE Swimming National Tournament held in Sonipat, Haryana, in November 2023, he won a bronze medal in the 800m freestyle in the Under-17 category. </p>
+                            <p>of class XI has won a silver 4*200M freestyle Relay and two Bronze medals in 1500M
+                                freestyle and 4*100M freestyle relay, respectively, at the 39th Junior Aquatic National
+                                Championship held in August 2023, in Bhubaneshwar. At the CBSE Swimming National
+                                Tournament held in Sonipat, Haryana, in November 2023, he won a bronze medal in the 800m
+                                freestyle in the Under-17 category. </p>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Aarushi R Chowatia</h6>
-                            <p>of class 10 has won silver medals butterfly, a backstroke and freestyle and a bronze medal in breaststroke at the JITO National Games 2024. </p>
+                            <p>of class 10 has won silver medals butterfly, a backstroke and freestyle and a bronze
+                                medal in breaststroke at the JITO National Games 2024. </p>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Devan S</h6>
-                            <p>Devan S of Class II bagged gold medals in the 25m freestyle, backstroke, and butterfly in the under 7 category at the SBKF 10th National Games 2024, held in May 2024 at Jammu University, Jammu & Kashmir.</p>
+                            <p>Devan S of Class II bagged gold medals in the 25m freestyle, backstroke, and butterfly in
+                                the under 7 category at the SBKF 10th National Games 2024, held in May 2024 at Jammu
+                                University, Jammu & Kashmir.</p>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>The swimming team of Sir Mutha School</h6>
-                            <p>The swimming team of Sir Mutha School secured the second place in the CBSE South zone-I, swimming competition 2023-24</p>
+                            <p>The swimming team of Sir Mutha School secured the second place in the CBSE South zone-I,
+                                swimming competition 2023-24</p>
                             <p>Kyishong and Sai Aditya will receive the trophy on behalf of the team.</p>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid w100">
+                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>"
+                                class="img-fluid w100">
                         </div>
                         <div class="thumbContent">
                             <h6>Mohamed Izaan</h6>
-                            <p>Mohamed Izaan of Class II has won gold medals in 300m, 500m, and relay, and a silver medal in 1000m at the Asiatic Roller Sports Expert Confederacy 2023, held at ARSEC Speed Skating Rink, Bangkok, Thailand, in the under-6 speed inline category. He has also secured a gold medal and a silver medal in the 9th National Level Dance Skate Sport event championship 2024 for the events: Zig Zag Dash 100m and Mini Dash.</p>
+                            <p>Mohamed Izaan of Class II has won gold medals in 300m, 500m, and relay, and a silver
+                                medal in 1000m at the Asiatic Roller Sports Expert Confederacy 2023, held at ARSEC Speed
+                                Skating Rink, Bangkok, Thailand, in the under-6 speed inline category. He has also
+                                secured a gold medal and a silver medal in the 9th National Level Dance Skate Sport
+                                event championship 2024 for the events: Zig Zag Dash 100m and Mini Dash.</p>
                         </div>
                     </li>
                 </ul>
