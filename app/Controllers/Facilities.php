@@ -46,7 +46,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'swimmingpool',
+            'page_title' => 'Swimming Pool Facility',
             'page_code' => 'swimmingpool',
             'banner' => $banner,
             'video' => $video
@@ -63,7 +63,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'concerthall',
+            'page_title' => 'Concert Hall Facility',
             'page_code' => 'concerthall',
             'banner' => $banner,
             'video' => $video
@@ -80,7 +80,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'cricketnets',
+            'page_title' => 'cricket Nets Facility',
             'page_code' => 'cricketnets',
             'banner' => $banner,
             'video' => $video
@@ -97,7 +97,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'hockeyfield',
+            'page_title' => 'Hockey Field Facility',
             'page_code' => 'hockeyfield',
             'banner' => $banner,
             'video' => $video
@@ -113,7 +113,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'biologylab',
+            'page_title' => 'Biology Lab Facility',
             'page_code' => 'biologylab',
             'banner' => $banner,
             'video' => $video
@@ -129,7 +129,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'library',
+            'page_title' => 'Library ',
             'page_code' => 'library',
             'banner' => $banner,
             'video' => $video
@@ -145,7 +145,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'musicandartroom',
+            'page_title' => 'Music and Art Room',
             'page_code' => 'musicandartroom',
             'banner' => $banner,
             'video' => $video
@@ -161,7 +161,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'networkedclassrooms',
+            'page_title' => 'Networked Classrooms Facility',
             'page_code' => 'networkedclassrooms',
             'banner' => $banner,
             'video' => $video
@@ -177,7 +177,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'chemistrylab',
+            'page_title' => 'Chemistry Lab Facility',
             'page_code' => 'chemistrylab',
             'banner' => $banner,
             'video' => $video
@@ -193,7 +193,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'physicslab',
+            'page_title' => 'Physics Lab Facility',
             'page_code' => 'physicslab',
             'banner' => $banner,
             'video' => $video
@@ -209,7 +209,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'artandcraft',
+            'page_title' => 'Art and Craft Facility',
             'page_code' => 'artandcraft',
             'banner' => $banner,
             'video' => $video
@@ -225,7 +225,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'technology',
+            'page_title' => 'Technology Facility',
             'page_code' => 'technology',
             'banner' => $banner,
             'video' => $video
@@ -241,7 +241,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'healthandsaftey',
+            'page_title' => 'Health and Saftey',
             'page_code' => 'healthandsaftey',
             'banner' => $banner,
             'video' => $video
@@ -249,14 +249,5 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('healthandsaftey', $data) . view('footer');
     }
-    
-    
-    
-    
-    
-    
-
-    
-    
     
 }
