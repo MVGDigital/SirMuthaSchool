@@ -35,8 +35,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Welcome To Sir Mutha School !</h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h6>
+            <h6>"At Sir Mutha School, our Parent Page offers essential tools for active involvement in your child's education. From the Parent Portal for real-time updates to the Parent Association for community engagement and a comprehensive Resources section, we ensure parents have the support and information needed for a seamless school experience."</h6>
         </div>
     </section>
     <!-- Section Menus -->

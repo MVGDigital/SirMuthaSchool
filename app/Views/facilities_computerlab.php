@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Computer <span>Lab</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h3>Computer Lab <span>Facility</span></h3>
+            <h6>"Our computer lab is equipped with the latest technology, providing hands-on learning experiences. With modern systems, high-speed internet, and interactive tools, students develop essential digital skills, explore innovative ideas, and stay updated in the ever-evolving tech world, ensuring a strong foundation for future success."</h6>
             
         </div>
     </section>
@@ -64,7 +64,7 @@
         <div class="itemSpaceBetween">
         <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Computer Lab<span> Facility</span></h3>
+                    <h3>Computer Lab<span> Overview</span></h3>
                     <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
                     <!--    <div class="splide__track">-->
                     <!--        <ul class="splide__list">-->
@@ -88,8 +88,8 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h3>Computer Lab <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Empowering students with modern technology in our fully equipped computer lab."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

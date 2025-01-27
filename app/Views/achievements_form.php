@@ -148,7 +148,6 @@
                                 </form>
                             </div>
                         </div>
-
                         <?= $this->include('partials/footer') ?>
                     </div>
                     <!--end row-->

@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Swimming  <span>Pool</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h3>Swimming Pool <span>Facilitiy</span></h3>
+            <h6>"Our school features a well-maintained swimming pool that promotes physical fitness and water safety. Students enjoy structured lessons, free swim time, and water-based activities, enhancing their coordination and stamina. This facility offers a refreshing, fun environment for learning swimming skills and encourages overall well-being and team spirit."</h6>
             
         </div>
     </section>
@@ -90,7 +90,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Swimming Pool <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h6 style="color:black;">"Fostering fitness and fun with our well-maintained swimming pool for students of all levels."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

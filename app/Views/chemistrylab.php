@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Computer <span>Lab</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h3>Chemistry Lab <span>Facility</span></h3>
+            <h6>"Our state-of-the-art chemistry lab provides a safe and stimulating environment for hands-on learning. Equipped with modern apparatus and safety equipment, students conduct experiments to explore chemical reactions and principles, fostering curiosity, critical thinking, and practical skills essential for mastering the world of chemistry and scientific inquiry."</h6>
             
         </div>
     </section>
@@ -89,8 +89,8 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h3>Chemistry Lab <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Conducting exciting experiments and exploring chemical reactions in our well-equipped chemistry lab."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

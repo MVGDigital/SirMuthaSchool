@@ -32,10 +32,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Sir Mutha <span> Gallery</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur</h6>
+            <h6>"Discover the essence of Sir Mutha School through our gallery. It captures moments from academic events, sports, cultural activities, and student milestones, offering a visual celebration of our school's dynamic atmosphere, growth, and the achievements that define our vibrant community."</h6>
         </div>
     </section>
     <!-- Section Menus -->

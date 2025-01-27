@@ -35,7 +35,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Academic<span>facilities</span></h3>
+            <h3>Music & Art room <span>facilities</span></h3>
             <h6></h6>
 
         </div>
@@ -92,8 +92,8 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h3>Music & Art room <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Unleashing creativity through vibrant music and art rooms for expressive student learning."</h6>
                     </div>
                     
                     <div class="row w100 m-0">
