@@ -147,4 +147,24 @@ class AchievementController extends BaseController
         }
         return redirect()->to('adm1n/achievements')->with('success', 'Achievement deleted successfully');
     }
+
+    public function togglePublished($id)
+{
+        $achievement = $this->achievementModel->find($id);
+
+        if ($achievement) {
+            $newStatus = $this->request->getJSON()->published ? 1 : 0;
+            $this->achievementModel->update($id, ['published' => $newStatus]);
+
+            return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'Published status updated successfully.',
+            ]);
+        }
+
+        return $this->response->setJSON([
+            'status' => 'error',
+            'message' => 'Achievement not found.',
+        ]);
+    }
 }

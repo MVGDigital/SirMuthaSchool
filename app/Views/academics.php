@@ -119,7 +119,7 @@
                 </h6> -->
                 <p class="light-blue">Sir Mutha School stands firmly by its core values of Commitment, Acceptance, Respect, Excellence, and Strength (CARES), each of which serves as a cornerstone in shaping the character and aspirations of our students. At the heart of our approach lies the creation of a vibrant, joyful learning environment where students are encouraged to express themselves freely, embrace their creative potential, and nurture the multifaceted dimensions of their personalities.</p>
                 <p class="light-blue">Equally central to our philosophy is the emphasis on a dynamic teaching approach, one that goes beyond conventional instruction. Our educators, with their profound expertise and dedication, engage in continuous professional development, ensuring their methods remain both innovative and attuned to the diverse needs of our students.</p>
-                <h6 class="light-blue">To ensure students are engaged and involved in their learning, we personalise learning in the following ways:</h6>
+                <h6 class="light-blue"><b>To ensure students are engaged and involved in their learning, we personalise learning in the following ways:</b></h6>
                 <ul class="content-lists">
                     <li>Carefully planned curriculum based on each individual child’s needs which includes:</li>
                     <li>Emphasis on prior knowledge</li>
