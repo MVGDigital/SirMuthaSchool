@@ -32,10 +32,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Stay <span> Connected</span></h3>
-            <h6>The Madras Seva Sadan was founded in 1928 by Sir & Lady M. Venkatasubba Rao with their personal initial
-                contribution of Rs. 10,000/- and further contributions on a continuous basis. Sir M. Venkatasubba Rao
-                was the Founder-President and Lady M. Venkatasubba Rao was the Founder Honorary General Secretary and
-                Treasurer.</h6>
+            <h6>Stay connected with Sir Mutha School to receive the latest updates, news, and announcements. Engage with us through our website and social media channels to stay informed about events, achievements, and important information. Together, let’s build a stronger school community and support your child’s educational journey.</h6>
         </div>
     </section>
     <!-- Section Menus -->

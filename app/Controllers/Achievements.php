@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Achievement;
 use App\Models\BannerModel;
 use App\Models\VideoBannerModel;
 
@@ -11,15 +12,31 @@ class Achievements extends BaseController
     {
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
+        $achievementModel = new Achievement();
 
         $banner = $bannerModel->where('page', 'achievement')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'achievements')->where('is_published', 1)->first();
+
+        $achievements = $achievementModel->where('published', 1)->findAll();
+
+        $sportsAchievements = [];
+        $teachersAchievements = [];
+
+        foreach ($achievements as $achievement) {
+            if ($achievement['category'] === 'Sports Achievements') {
+                $sportsAchievements[] = $achievement;
+            } elseif ($achievement['category'] === 'Teachers Achievements') {
+                $teachersAchievements[] = $achievement;
+            }
+        }
 
         $data = [
             'page_title' => 'Achievements',
             'page_code' => 'achievements',
             'banner' => $banner,
-            'video' => $video
+            'video' => $video,
+            'sportsAchievements' => $sportsAchievements,
+            'teachersAchievements' => $teachersAchievements,
         ];
 
         return view('header', $data) . view('achievements', $data) . view('footer');
