@@ -33,7 +33,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
-            <h3>Empowering Students Through <span>Dynamic Clubs</span></h3> 
+            <h3>Empowering Students for a <span>Better Tomorrow</span></h3> 
             <h6>"At Sir Mutha School, our diverse clubs—Heritage, Maths, Eco, and Interact—empower students to explore, create, and contribute to society. Through engaging activities and community-driven initiatives, we foster a sense of responsibility, creativity, and social awareness, nurturing well-rounded individuals committed to making a positive impact on the world."
             </h6>
         </div>
