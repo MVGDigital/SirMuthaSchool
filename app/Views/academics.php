@@ -51,7 +51,6 @@
     </section>
     <!-- Section Menus -->
 
-<<<<<<< HEAD
     <!-- CBSE Curriculum -->
     <section class="wave-sec white-bgImg" id="cbsecurriculum">
         <div class="itemSpaceBetween">
@@ -83,8 +82,6 @@
     </section>
     <!-- CBSE Curriculum -->
 
-=======
->>>>>>> ddb60f7ca5b4c234c1a41d561df3e65fb6e85fc8
     <!--  Teacher Enrichment -->
     <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80">
         <div class="col-lg-9 m-auto">
@@ -109,38 +106,6 @@
         </div>
     </section>
     <!--  Teacher Enrichment -->
-
-    
-    <!-- CBSE Curriculum -->
-    <section class="wave-sec white-bgImg" id="cbsecurriculum">
-        <div class="itemSpaceBetween">
-            <div class="col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
-            </div>
-            <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
-                <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>CBSE <span> Curriculam</span></h3>
-
-                    <p>The curriculum aims to cultivate the holistic development of students, enhancing not only their
-                        physical and intellectual abilities but also their social competencies. It incorporates
-                        values-based learning activities that instil a strong ethical foundation. Furthermore, the
-                        curriculum seamlessly integrates environmental education across various subjects and
-                        disciplines, while also promoting critical and creative thinking. Emphasis is placed on
-                        application-based learning to prepare students for real-world challenges. The adoption of the
-                        National Curriculum Framework for School Education – 2023, as stipulated by the Central Board of
-                        Secondary Education (CBSE), mandates that institutions that come under the board adhere to these
-                        comprehensive educational guidelines. The CBSE Curriculum for Classes IX-XII (2024-25) is
-                        accessible via link given below:
-                    </p>
-                    <div class="blueBtn-medium">
-                        <a href="https://cbseacademic.nic.in/curriculum_2025.html" target="_blank">Know More</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CBSE Curriculum -->
 
     <!--  Annual Pedagogical Policy -->
     <section id="annual-pedagogical">

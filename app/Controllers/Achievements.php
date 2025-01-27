@@ -30,6 +30,10 @@ class Achievements extends BaseController
             }
         }
 
+        usort($sportsAchievements, function($a, $b) {
+            return strtotime($b['created_at']) - strtotime($a['created_at']);
+        });
+
         $data = [
             'page_title' => 'Achievements',
             'page_code' => 'achievements',
