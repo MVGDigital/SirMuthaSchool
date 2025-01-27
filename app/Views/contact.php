@@ -22,20 +22,17 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="#" class="active">Contact Us</a></li>
+                <li><a href="contact#contactSec" class="active">Contact Us</a></li>
             </ul>
         </div>
-        <div class="pageTitleLine col-lg-8 m-auto">
+        <div id="contactSec" class="pageTitleLine col-lg-8 m-auto">
             <hr>
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Stay <span> Connected</span></h3>
-            <h6>The Madras Seva Sadan was founded in 1928 by Sir & Lady M. Venkatasubba Rao with their personal initial
-                contribution of Rs. 10,000/- and further contributions on a continuous basis. Sir M. Venkatasubba Rao
-                was the Founder-President and Lady M. Venkatasubba Rao was the Founder Honorary General Secretary and
-                Treasurer.</h6>
+            <h6>Stay connected with Sir Mutha School to receive the latest updates, news, and announcements. Engage with us through our website and social media channels to stay informed about events, achievements, and important information. Together, let’s build a stronger school community and support your child’s educational journey.</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -79,7 +76,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 col-xl-5 contact-details-container">
+            <div class="col-12 col-md-12 col-lg-4 col-xl-5 contact-details-container addressContainer">
                 <div class="contactForm">
                     <div class="contactInfo">
                         <h6>Address</h6>
@@ -97,7 +94,7 @@
                     </div>
                     <div class="contactInfo">
                         <h6>Phone Number</h6>
-                        <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
+                        <p><a href="tel:+917358103843">+91 73581 03843</a></p>
                     </div>
                     <div class="contactInfo-line">
                         <hr>
@@ -120,9 +117,9 @@
 
     <!-- Map Section -->
     <section class="map-view">
-        <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SHENSTONE%20PARK,%207,%20Harrington%20Rd,%20Chetpet,%20Chennai,%20Tamil%20Nadu%20600031,%20India+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                    href="https://www.gps.ie/">gps devices</a></iframe></div>
+        <div style="width: 100%">
+            <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sir%20mutha%20school+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a>
+            </iframe>
+        </div>
     </section>
     <!-- Map Section -->
