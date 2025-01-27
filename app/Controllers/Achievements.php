@@ -12,7 +12,7 @@ class Achievements extends BaseController
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
 
-        $banner = $bannerModel->where('page', 'achievements')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'achievement')->where('is_published', 1)->first();
         $video = $videoBannerModel->where('page', 'achievements')->where('is_published', 1)->first();
 
         $data = [

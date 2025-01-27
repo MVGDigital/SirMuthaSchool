@@ -34,10 +34,7 @@
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
             <h3>Welcome to sir mutha <span>clubs</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
+            <h6>"At Sir Mutha School, our diverse clubs—Heritage, Maths, Eco, and Interact—empower students to explore, create, and contribute to society. Through engaging activities and community-driven initiatives, we foster a sense of responsibility, creativity, and social awareness, nurturing well-rounded individuals committed to making a positive impact on the world."
             </h6>
         </div>
     </section>
@@ -115,8 +112,7 @@
     <section id="news-letter" class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Students <span>Newsletter</span></h3>
-            <h6 class="light-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            <h6 class="light-blue">"Our student newsletter showcases the latest school news, events, achievements, and creative student contributions. It provides a platform for students to express their ideas, celebrate success, and stay informed."
             </h6>
         </div>
 

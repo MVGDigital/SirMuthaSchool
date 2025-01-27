@@ -30,15 +30,15 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-        <!--<div class="pageTitleLine col-lg-8 m-auto">-->
-        <!--    <hr>-->
-        <!--    <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">-->
-        <!--    <hr>-->
-        <!--</div>-->
-        <!--<div class="sectionTitle-white col-lg-10 m-auto">-->
-        <!--    <h3>Special <span> Education</span></h3>-->
-        <!--    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h6>-->
-        <!--</div>-->
+        <div class="pageTitleLine col-lg-8 m-auto">
+           <hr>
+           <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
+           <hr>
+        </div>
+        <div class="sectionTitle-white col-lg-10 m-auto">
+           <h3>Special <span> Education</span></h3>
+           <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centers and occupational therapy. With comprehensive training for caregivers and tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child achieve their full potential, promoting inclusivity and growth."</h6>
+        </div>
     </section>
     <!-- Section Menus -->
 

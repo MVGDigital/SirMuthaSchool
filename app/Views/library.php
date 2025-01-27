@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Library<span>facility</span></h3>
-            <h6>Our school features an expansive library of 880 square feet, serving as a haven for inquisitive minds. With seven periodicals and two daily newspapers, it fosters a culture of reading and awareness. The collection includes 44 reference books for primary classes and 145 for secondary and higher secondary students. Additionally, seven magazines and an impressive 7,924 books and other resources enrich the intellectual landscape. This library is not merely a repository of books; it is a vibrant hub for exploration and discovery.</h6>
+            <h3>Library <span>facility</span></h3>
+            <h6>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. Stocked with periodicals, daily news updates, and a diverse range of materials, it supports young learners and advanced students alike. With over 7,900 books, it stands as an inspiring center for research, exploration, and intellectual growth.</h6>
             
         </div>
     </section>
@@ -88,8 +88,8 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h3>Library <span> Gallery</span></h3>
+                        <h6 style="color:black;">"A haven of knowledge with extensive resources to inspire learning and exploration."</h6>
                     </div>
                     
                     <div class="row w100 m-0">
