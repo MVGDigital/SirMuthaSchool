@@ -30,7 +30,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'heritageclub',
+            'page_title' => 'Heritage Club',
             'page_code' => 'heritageclub',
             'banner' => $banner
         ];
@@ -43,7 +43,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'mathsclub',
+            'page_title' => 'Maths Club',
             'page_code' => 'mathsclub',
             'banner' => $banner
         ];
@@ -56,7 +56,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'ecoclub',
+            'page_title' => 'Eco Club',
             'page_code' => 'ecoclub',
             'banner' => $banner
         ];
@@ -70,7 +70,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'interactclub',
+            'page_title' => 'Interact Club',
             'page_code' => 'interactclub',
             'banner' => $banner
         ];

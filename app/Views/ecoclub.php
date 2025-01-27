@@ -36,19 +36,20 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- Green Campus -->
-    <section class="green-campus-sec" id="greencampus">
-
-        <div class="container-space wave-yellow-overwireBg ptb-80">
-            <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
-                <h3>Eco <span>club</span></h3>
-                
-                <h6 class="light-blue">
-                The Eco-Club of our school plays a vital role in establishing a central hub for all environmental and sustainability initiatives. It serves as a catalyst for cultivating a sustainable campus, in alignment with the principles of ecological stewardship. Through a range of engaging programmes and activities, the club aims to raise awareness among students about the importance of environmental conservation.
-                Members participate in projects that promote biodiversity, reduce waste, and encourage sustainable practices within the school community. By fostering a sense of responsibility and connection to the environment, the Eco-Club not only empowers students to act but also instils a lasting commitment to safeguarding our planet for future generations.
-                </h6>
-                
+    <!-- Literary & Arts -->
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>ECO <span> club</span></h3>
+                    <p>The Eco-Club of our school plays a vital role in establishing a central hub for all environmental and sustainability initiatives. It serves as a catalyst for cultivating a sustainable campus, in alignment with the principles of ecological stewardship. Through a range of engaging programmes and activities, the club aims to raise awareness among students about the importance of environmental conservation.</p>
+                    <p>Members participate in projects that promote biodiversity, reduce waste, and encourage sustainable practices within the school community. By fostering a sense of responsibility and connection to the environment, the Eco-Club not only empowers students to act but also instils a lasting commitment to safeguarding our planet for future generations.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
             </div>
         </div>
     </section>
-    <!-- Green Campus -->
+    <!-- Literary & Arts -->
