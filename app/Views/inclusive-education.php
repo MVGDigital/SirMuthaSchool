@@ -42,7 +42,7 @@
     <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/inclusive-education/learningcenter1.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
@@ -79,10 +79,10 @@
                         <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/occupational_therapy2.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/occupational_therapy3.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                 </ul>
             </div>
