@@ -1,7 +1,7 @@
 <?= $this->include('partials/html') ?>
 
 <head>
-    <?php echo view("partials/title-meta", array('title' => 'Announcements')) ?>
+    <?php echo view("partials/title-meta", array('title' => 'Achievements')) ?>
     <link rel="stylesheet" href="<?= base_url('/libs/jsvectormap/jsvectormap.min.css') ?>">
     <?= $this->include('partials/head-css') ?>
 </head>
@@ -25,13 +25,13 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h4><?= isset($announcement) ? 'Edit Announcement' : 'Add Announcement' ?></h4>
+                                        <h4><?= isset($achievement) ? 'Edit Achievement' : 'Add Achievement' ?></h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-body pt-0">
                                 <form
-                                    action="<?= isset($announcement) ? base_url('adm1n/announcements/update/' . $announcement['announcement_id']) : base_url('adm1n/announcements/store') ?>"
+                                    action="<?= isset($achievement) ? base_url('adm1n/achievements/update/' . $achievement['achievement_id']) : base_url('adm1n/achievements/store') ?>"
                                     method="post" enctype="multipart/form-data">
                                     <?= csrf_field() ?>
                                     <div class="row">
@@ -49,12 +49,34 @@
                                                 <?= session()->getFlashdata('error') ?>
                                             </div>
                                             <?php endif; ?>
+                                            <div class="mb-3 row">
+                                                <label class="col-sm-4 col-form-label" for="category">Category</label>
+                                                <div class="col-sm-8">
+                                                    <select name="category" id="category" class="form-control">
+                                                        <option value="" disabled selected>Select Category</option>
+                                                        <option value="Sports Achievements"
+                                                            <?= (isset($achievement) && $achievement['category'] == 'Sports Achievements') ? 'selected' : '' ?>>
+                                                            Sports Achievements</option>
+                                                        <option value="Teachers Achievements"
+                                                            <?= (isset($achievement) && $achievement['category'] == 'Teachers Achievements') ? 'selected' : '' ?>>
+                                                            Teachers Achievements</option>
+                                                    </select>
+                                                    <!-- Display validation error for category -->
+                                                    <?php if (session()->getFlashdata('validation')): ?>
+                                                    <?php if (isset(session()->getFlashdata('validation')['category'])): ?>
+                                                    <div class="text-danger">
+                                                        <?= esc(session()->getFlashdata('validation')['category']) ?>
+                                                    </div>
+                                                    <?php endif; ?>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
 
                                             <div class="mb-3 row">
                                                 <label class="col-sm-4 col-form-label" for="title">Title</label>
                                                 <div class="col-sm-8">
                                                     <input type="text" name="title" id="title" class="form-control"
-                                                        value="<?= isset($announcement) ? esc($announcement['title']) : '' ?>">
+                                                        value="<?= isset($achievement) ? esc($achievement['title']) : '' ?>">
                                                     <!-- Display validation error for title -->
                                                     <?php if (session()->getFlashdata('validation')): ?>
                                                     <?php if (isset(session()->getFlashdata('validation')['title'])): ?>
@@ -70,7 +92,7 @@
                                                     for="description">Description</label>
                                                 <div class="col-sm-8">
                                                     <textarea name="description" id="description" class="form-control"
-                                                        rows="4"><?= old('description', isset($announcement) ? esc($announcement['description']) : '') ?></textarea>
+                                                        rows="4"><?= old('description', isset($achievement) ? esc($achievement['description']) : '') ?></textarea>
                                                     <!-- Display validation error for description -->
                                                     <?php if (session()->getFlashdata('validation')): ?>
                                                     <?php if (isset(session()->getFlashdata('validation')['description'])): ?>
@@ -83,23 +105,24 @@
                                             </div>
 
                                             <div class="mb-3 row">
-                                                <label class="col-sm-4 col-form-label" for="pdf_file">Upload PDF</label>
+                                                <label class="col-sm-4 col-form-label" for="image_file">Upload
+                                                    Image</label>
                                                 <div class="col-sm-8">
-                                                    <input type="file" name="pdf_file" id="pdf_file"
-                                                        class="form-control" accept=".pdf">
-                                                    <p class="m-2 text-danger"><span> *Accept only PDF format*</span>
-                                                    </p>
-                                                    <?php if (isset($announcement['pdf_file'])): ?>
-                                                    <p>Current PDF: <a
-                                                            href="<?= base_url('uploads/announcements/' . esc($announcement['pdf_file'])) ?>"
-                                                            target="_blank"><?= esc($announcement['pdf_file']) ?></a>
+                                                    <input type="file" name="image_file" id="image_file"
+                                                        class="form-control" accept="image/*">
+                                                    <p class="m-2 text-danger"><span> *Accept only image formats (jpg,
+                                                            jpeg, png, gif)*</span></p>
+                                                    <?php if (isset($achievement['image_file'])): ?>
+                                                    <p>Current Image: <a
+                                                            href="<?= base_url('uploads/achievements/' . esc($achievement['image_file'])) ?>"
+                                                            target="_blank"><?= esc($achievement['image_file']) ?></a>
                                                     </p>
                                                     <?php endif; ?>
-                                                    <!-- Display validation error for pdf_file -->
+                                                    <!-- Display validation error for image_file -->
                                                     <?php if (session()->getFlashdata('validation')): ?>
-                                                    <?php if (isset(session()->getFlashdata('validation')['pdf_file'])): ?>
+                                                    <?php if (isset(session()->getFlashdata('validation')['image_file'])): ?>
                                                     <div class="text-danger">
-                                                        <?= esc(session()->getFlashdata('validation')['pdf_file']) ?>
+                                                        <?= esc(session()->getFlashdata('validation')['image_file']) ?>
                                                     </div>
                                                     <?php endif; ?>
                                                     <?php endif; ?>
@@ -110,14 +133,14 @@
                                                 <label class="col-sm-4 col-form-label" for="published">Published</label>
                                                 <div class="col-sm-8">
                                                     <input type="checkbox" name="published" id="published"
-                                                        <?= isset($announcement) && $announcement['published'] ? 'checked' : '' ?>>
+                                                        <?= isset($achievement) && $achievement['published'] ? 'checked' : '' ?>>
                                                 </div>
                                             </div>
 
                                             <div class="mb-3 row">
                                                 <div class="col-sm-8 offset-sm-4">
                                                     <button type="submit"
-                                                        class="btn bg-colour"><?= isset($announcement) ? 'Update' : 'Submit' ?></button>
+                                                        class="btn bg-colour"><?= isset($achievement) ? 'Update' : 'Submit' ?></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,7 +148,6 @@
                                 </form>
                             </div>
                         </div>
-
                         <?= $this->include('partials/footer') ?>
                     </div>
                     <!--end row-->
