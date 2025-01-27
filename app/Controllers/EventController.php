@@ -56,7 +56,7 @@ class EventController extends Controller
                 'mime_in[mobile_image,image/jpg,image/jpeg,image/gif,image/png]',
                 'max_size[mobile_image,2048]',
             ],
-            'registration_required' => 'required|in_list[yes,no]',
+            'registration_required' => 'required|in_list[0,1]',
         ]);
 
         if (!$validation) {
@@ -78,7 +78,7 @@ class EventController extends Controller
             'end_time' => $this->request->getPost('end_time'),
             'event_location' => $this->request->getPost('event_location'),
             'event_description' => $this->request->getPost('event_description'),
-            'registration_required' => $this->request->getPost('registration_required'),
+            'registration_required' => $this->request->getPost('registration_required') == '1' ? 1 : 0,
             'desktop_image' => $desktopImageName,
             'mobile_image' => $mobileImageName,
             'is_published' => $this->request->getPost('is_published') ? 1 : 0,
@@ -129,7 +129,7 @@ public function update($id)
             'mime_in[mobile_image,image/jpg,image/jpeg,image/gif,image/png]',
             'max_size[mobile_image,2048]',
         ],
-        'registration_required' => 'required|in_list[yes,no]',
+        'registration_required' => 'required|in_list[0,1]',
     ]);
 
     if (!$validation) {
@@ -141,7 +141,7 @@ public function update($id)
         'event_date' => $this->request->getPost('event_date'),
         'start_time' => $this->request->getPost('start_time'),
         'end_time' => $this->request->getPost('end_time'),
-        'registration_required' => $this->request->getPost('registration_required') == 1 ? 'yes' : 'no',
+        'registration_required' => $this->request->getPost('registration_required') == '1' ? 1 : 0,
         'event_location' => $this->request->getPost('event_location'),
         'event_description' => $this->request->getPost('event_description'),
         'registration_required' => $this->request->getPost('registration_required'),
@@ -232,7 +232,7 @@ public function update($id)
             $sheet->setCellValue('D' . $row, $event['end_time']);
             $sheet->setCellValue('E' . $row, $event['event_location']);
             $sheet->setCellValue('F' . $row, $event['event_description']);
-            $sheet->setCellValue('G' . $row, $event['registration_required']);
+            $sheet->setCellValue('G' . $row, $event['registration_required'] ? 'Yes' : 'No');
             $sheet->setCellValue('H' . $row, $event['is_published'] ? 'Yes' : 'No');
             $row++;
         }
