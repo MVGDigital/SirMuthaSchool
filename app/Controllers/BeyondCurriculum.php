@@ -30,7 +30,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'Heritage Club',
+            'page_title' => 'Heritage Celub',
             'page_code' => 'heritageclub',
             'banner' => $banner
         ];

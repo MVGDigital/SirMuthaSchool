@@ -12,7 +12,7 @@
         .fields label {
             font-size: 16px;
             color: #474747;
-            font-family: 'Open Sans';
+            font-family: 'Figtree-Regular';
         }
 
         .fields label span {
@@ -45,14 +45,14 @@
         input::placeholder {
             font-size: 14px;
             line-height: 25px;
-            font-family: 'Open Sans Light';
+            font-family: 'Figtree-Light';
             color: #72716D !important;
         }
 
         select {
             font-size: 14px;
             line-height: 25px;
-            font-family: 'Open Sans Light';
+            font-family: 'Figtree-Light';
             color: #4d4d4d !important;
         }
 
@@ -60,18 +60,31 @@
             color: #72716D !important;
         }
 
+        .fields span{
+            font-size: 14px;
+            color: var(--color-blue);
+            font-family: 'Figtree-Regular';
+        }
+        .fields .error{
+            font-size: 14px;
+            color: #ff1400!important;
+            font-family: 'Figtree-Regular';
+        }
         label.error {
             margin: 10px 0;
-            color: #ff1400;
+            color: #ff1400!important;
         }
 
         .captcha-error {
             margin: 10px 0;
-            color: #ff1400 !important;
+            color: #ff1400!important;
             font-size: 14px;
-            font-family: 'Open Sans';
+            font-family: 'Figtree-Regular';
         }
 
+        .form-control.error{
+            color: #4d4d4d !important;
+        }
         .formFields {
             display: flex;
         }
@@ -175,7 +188,7 @@
                             <input type="date" id="dob" name="dob" min="2021-04-01" max="2022-04-01"
                                 class="form-control"
                                 value="<?php echo isset($oldInput['dob']) ? $oldInput['dob'] : ''; ?>">
-                            <large>(The child should have completed 3 years of age as on 31st March 2025)</large>
+                            <span>(The child should have completed 3 years of age as on 31st March 2025)</span>
                         </div>
                     </div>
                     <div class="formFields row w100 m-0">

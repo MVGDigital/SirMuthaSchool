@@ -33,7 +33,7 @@
             <hr>
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
-            <h3>Empowering Students Through <span>Dynamic Clubs</span></h3> 
+            <h3>Empowering Students for a <span>Better Tomorrow</span></h3> 
             <h6>"At Sir Mutha School, our diverse clubs—Heritage, Maths, Eco, and Interact—empower students to explore, create, and contribute to society. Through engaging activities and community-driven initiatives, we foster a sense of responsibility, creativity, and social awareness, nurturing well-rounded individuals committed to making a positive impact on the world."
             </h6>
         </div>
@@ -49,7 +49,7 @@
                         <div class="row m-0 w100">
                             <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
-                                    <img src="<?= base_url('images/facilities/Heritage club.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/facilities/heritage_main.png') ?>" class="img-fluid"
                                         alt="Sir Mutha Logo">
                                     <div class="sectionSubTitle-white">
                                         <h4>Heritage <span>Club</span></h4>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
-                                    <img src="<?= base_url('images/facilities/Maths club.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/facilities/maths_main.png') ?>" class="img-fluid"
                                         alt="Sir Mutha Logo">
                                     <div class="sectionSubTitle-white">
                                         <h4>Maths <span>Club</span></h4>

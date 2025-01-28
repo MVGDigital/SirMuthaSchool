@@ -216,6 +216,19 @@ var splide = new Splide('#facilities', {
 });
 splide.mount();
 
+var splide = new Splide('#greenCampus-slider', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 1,
+    arrows: false,
+});
+splide.mount();
+
 //curve Slider
 var splide = new Splide('#curve-slider', {
     type: 'slide',
@@ -610,8 +623,12 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
+            
             form.submit();
+            
+            setTimeout(() => {
+                $(form)[0].reset();
+            }, 1000);
         }
     });
 });

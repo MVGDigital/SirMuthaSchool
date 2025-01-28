@@ -234,7 +234,7 @@ p {
     background: var(--blue-bg);
     border: 2px solid var(--color-blue);
 }
-.sectionTitle-blue .splide__pagination__page.is-active, #boardmember .splide__pagination__page.is-active{
+.sectionTitle-blue .splide__pagination__page.is-active, #boardmember .splide__pagination__page.is-active,#curve-slider .splide__pagination__page.is-active, #upcoming-events .splide__pagination__page.is-active{
     background: #102753;
     border: 2px solid #102753;
 }
@@ -1972,6 +1972,10 @@ label.error{
 }
 /* =============================== Beyond Curriculum =================================*/
 /* =============================== Events =================================*/
+.flash-msg{
+    text-align: center;
+    color: #00f200 !important;
+}
 #upcoming-events .splide__pagination{
     bottom: -18%;
 }
@@ -1998,6 +2002,7 @@ label.error{
     width: 20%;
 }
 .eventFullDate{
+    width: 100%;
     display: flex;
     padding: 0 20px;
     margin-bottom: 25%;
@@ -2028,6 +2033,7 @@ label.error{
     font-family: 'Figtree-Medium';
 }
 .upcomingEvent-info{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2075,6 +2081,7 @@ label.error{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
 }
 
 .pastEvent-container{

@@ -60,33 +60,16 @@
 
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img container-space ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Networked Classrooms and <span> Smart Boards</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-
-                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information
-                        fast and more effectively.</p>
-                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of
-                        teaching help students learn a concept that is difficult to understand through traditional
-                        methods.</p>
-                    <!--<div class="blueBtn-medium">-->
-                    <!--    <a href="<?= base_url('facilities_artandcraft') ?>">Know More</a>-->
-                    <!--</div>-->
-                    <!--</li>-->
-
-
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <h3>Networked Classrooms and <span>Smart Boards</span></h3>
+                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
+                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

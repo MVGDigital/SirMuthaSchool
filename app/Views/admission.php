@@ -150,7 +150,7 @@
     <!-- Admission Enquiry Form -->
     <section class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue mb-80">
-            <h3>Admission <span> Form</span></h3>
+            <h3>Admission Enquiry <span> Form</span></h3>
         </div>
         <div class="row m-0 w100">
             <div class="col-lg-6 p-0">

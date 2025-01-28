@@ -60,23 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Biology Lab <span>Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">The biology lab at Sir Mutha School is a vibrant hub of discovery and learning, designed to inspire curiosity in the natural world. Equipped with modern facilities and a wealth of resources, students engage in hands-on experiments that deepen their understanding of biological concepts. Guided by experienced teachers, learners explore everything from cellular structures to ecological systems, promoting a sense of wonder and inquiry. The lab not only supports the curriculum but also encourages critical thinking and collaboration, preparing students for future scientific endeavours. Through these enriching experiences, the biology lab plays a crucial role in shaping informed, environmentally conscious individuals.</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <p>The biology lab at Sir Mutha School is a vibrant hub of discovery and learning, designed to inspire curiosity in the natural world. Equipped with modern facilities and a wealth of resources, students engage in hands-on experiments that deepen their understanding of biological concepts. Guided by experienced teachers, learners explore everything from cellular structures to ecological systems, promoting a sense of wonder and inquiry. The lab not only supports the curriculum but also encourages critical thinking and collaboration, preparing students for future scientific endeavours. Through these enriching experiences, the biology lab plays a crucial role in shaping informed, environmentally conscious individuals.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/bio_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

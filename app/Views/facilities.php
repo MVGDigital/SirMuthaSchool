@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-12 p-0">
                     <div class="cardWith-Btn">
                         <img src="<?= base_url('images/facilities/cricket_mainpage.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
@@ -224,7 +224,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/co-curricular.png') ?>"
+                                    <img src="<?= base_url('images/facilities/art.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/co-curricular.png') ?>"
+                                    <img src="<?= base_url('images/facilities/technology.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
@@ -283,7 +283,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/co-curricular.png') ?>"
+                                    <img src="<?= base_url('images/facilities/health_centre.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
@@ -371,9 +371,24 @@
 
     <!-- Green Campus -->
     <section class="green-campus-sec" id="greencampus">
-        <div class="img-overwite-wave">
-            <img src="<?= base_url('images/facilities/green-capus.jpg') ?>" class="img-fluid deskTopImg" alt="">
-            <img src="<?= base_url('images/facilities/green-capusMob.jpg') ?>" class="img-fluid mobImg" alt="">
+              <div id="greenCampus-slider" class="splide paginationCenter fullWidthImg img-overwite-wave">
+                
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/facilities/greencampus_desk1.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/greencampus_Mob1.png') ?>" class="img-fluid mobImg" alt="">     
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/facilities/greencampus_desk2.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/greencampus_Mob2.png') ?>" class="img-fluid mobImg" alt="">     
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/facilities/greencampus_desk3.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/greencampus_Mob3.png') ?>" class="img-fluid mobImg" alt="">     
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="container-space wave-yellow-overwireBg ptb-80">
