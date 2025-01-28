@@ -623,8 +623,12 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
+            
             form.submit();
+            
+            setTimeout(() => {
+                $(form)[0].reset();
+            }, 1000);
         }
     });
 });
