@@ -270,10 +270,10 @@
   }
   
 .slick-prev.slick-arrow {
-  display: block;
+  display: block!important;
 }
 .slick-next.slick-arrow {
-  display: block;
+  display: block!important;
 }
 }
 @media (min-width: 768px) and (max-width: 820px){
@@ -580,7 +580,12 @@ position: unset;
   bottom: -7% !important;
 }
 
-
+.pdf-container canvas{
+  padding: 20px 0px;
+}
+.join-with-us{
+  background-image: url(../images/about/join-with-us-mobImg.png);
+}
 /* Footer Section */
 footer .itemSpaceBetween{
   flex-direction: column;
@@ -774,6 +779,9 @@ footer .itemSpaceBetween{
   .wave-yellow-overwireBg {
     margin-top: -55%;
     padding-top: 60%;
+}
+.banner-subTitle h2{
+  font-size: 30px;
 }
 .jobHyp-link a{
   padding: 0 8px;
