@@ -67,6 +67,9 @@
 .img-hoverEffect.paginationCenter .splide__pagination{
   bottom: -12% !important;
 }
+.fullWidthImg .splide__pagination{
+  bottom: 6.5em;
+}
 
 }
 
@@ -177,6 +180,8 @@
   .mobContTop-p-tb50{
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .dropdown-toggle::after{
     display: block;
@@ -481,7 +486,9 @@ position: unset;
 .blueBg-Sec .paginationCenter .splide__arrow--next{
   right: -8em;
 }
-
+#specialeducation .paginationCenter .splide__arrow--next {
+  right: -10em;
+}
 /* Academics */
 
 /* Facilities */
@@ -502,11 +509,14 @@ position: unset;
   padding: 8px 5%;
 }
 #spl-education-slider.paginationCenter .splide__arrow--prev{
-  left: 0p!important;
+  left: -10em!important;
 }
 #spl-education-slider.paginationCenter .splide__pagination{
   left: 0%;
   bottom: 3.5% !important;
+}
+.fullWidthImg .splide__pagination{
+  bottom: 6.5em;
 }
 /* Facilities */
 
@@ -724,7 +734,11 @@ footer .itemSpaceBetween{
     bottom: -15%;
   }
   #spl-education-slider.paginationCenter .splide__pagination{
-    left: 10%;
+    left: 0%;
+  }
+  #greencampus .wave-yellow-overwireBg{
+    margin-top: -24%;
+    padding-top: 30%;
   }
 }
 @media (max-width: 601px){
@@ -804,6 +818,10 @@ footer .itemSpaceBetween{
 .sectionTitle-white h3{
   font-size: 24px;
 }
+#greencampus .wave-yellow-overwireBg{
+  margin-top: -73%;
+        padding-top: 70%;
+}
 }
 @media (max-width: 350px){
   .lft-rgt-content{
@@ -855,6 +873,10 @@ footer .itemSpaceBetween{
   }
   .mobBtns .contactBtn{
     padding: 12px 12px;
+  }
+  #greencampus .wave-yellow-overwireBg{
+    margin-top: -88%;
+    padding-top: 95%;
   }
 }
 

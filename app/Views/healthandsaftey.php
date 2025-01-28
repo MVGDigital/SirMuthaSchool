@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/facilities/health-and-safty.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
