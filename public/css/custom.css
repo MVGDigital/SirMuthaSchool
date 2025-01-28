@@ -465,11 +465,11 @@ main{
     opacity: 1;
     background-color: #fff;
 }
-.headerContact-info{
+/* .headerContact-info{
     padding: 0 12px;
     position: absolute;
     bottom: 10%;
-}
+} */
 
 .mobBtns{
     display: none;

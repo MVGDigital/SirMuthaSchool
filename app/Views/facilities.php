@@ -391,15 +391,15 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <img src="<?= base_url('images/facilities/greencampus_desk1.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/greencampus_Mob1.png') ?>" class="img-fluid mobImg" alt="">     
+                        <img src="<?= base_url('images/facilities/greencampus_Mob1.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                     <li class="splide__slide">
                         <img src="<?= base_url('images/facilities/greencampus_desk2.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/greencampus_Mob2.png') ?>" class="img-fluid mobImg" alt="">     
+                        <img src="<?= base_url('images/facilities/greencampus_Mob2.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                     <li class="splide__slide">
                         <img src="<?= base_url('images/facilities/greencampus_desk3.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/greencampus_Mob3.png') ?>" class="img-fluid mobImg" alt="">     
+                        <img src="<?= base_url('images/facilities/greencampus_Mob3.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                 </ul>
             </div>
