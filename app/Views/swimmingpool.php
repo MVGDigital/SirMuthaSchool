@@ -60,24 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Swimming Pool <span> Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">Our school proudly boasts an exclusive 25-metre, six-lane swimming pool, which is integral to our curriculum. We host competitions at District, State, and International levels, with coaches who are experienced trainers and have previously managed National teams. The annual ORCA Inter-School Swimming Meet is a highly anticipated highlight of our calendar. From dawn until dusk, the pool is alive with vibrant activity, epitomising the dedication of our swimmers. Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan.
-</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <p>Our school proudly boasts an exclusive 25-metre, six-lane swimming pool, which is integral to our curriculum. We host competitions at District, State, and International levels, with coaches who are experienced trainers and have previously managed National teams. The annual ORCA Inter-School Swimming Meet is a highly anticipated highlight of our calendar. From dawn until dusk, the pool is alive with vibrant activity, epitomising the dedication of our swimmers. Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/swimming_pool_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

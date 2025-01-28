@@ -60,24 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Chemistry Lab <span> Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">The Chemistry lab at Sir Mutha School is an inspiring environment where students delve into the fascinating world of chemical science. The lab encourages a spirit of inquiry and collaboration, allowing students to explore chemical reactions, properties of substances, and analytical techniques, all while developing essential lab skills. This prompts students to ask questions and think critically about the scientific principles at play. Through these hands-on experiences, the Chemistry lab cultivates a passion for science and prepares students for future academic pursuits in the field.
-</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <h3>Chemistry Lab <span>Overview</span></h3>
+                    <p>The Chemistry lab at Sir Mutha School is an inspiring environment where students delve into the fascinating world of chemical science. The lab encourages a spirit of inquiry and collaboration, allowing students to explore chemical reactions, properties of substances, and analytical techniques, all while developing essential lab skills. This prompts students to ask questions and think critically about the scientific principles at play. Through these hands-on experiences, the Chemistry lab cultivates a passion for science and prepares students for future academic pursuits in the field.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/che_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

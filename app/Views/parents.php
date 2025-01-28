@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/parents/parent_resources.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>

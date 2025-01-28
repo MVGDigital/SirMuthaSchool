@@ -60,23 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Concert Hall <span> Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">The Sir Mutha Venkatasubba Rao Concert Hall is one of the city's pioneering venues, equipped with state-of-the-art audio-visual and lighting technology operated by skilled technicians. This versatility makes it an ideal setting for performances of all scales. Spanning 2,600 sq. ft., the fully air-conditioned hall accommodates nearly 1,200 attendees and includes a 200-seat black box experimental theatre, an outdoor performance area, and three adaptable training rooms. It proudly hosts our Founders Day productions, offering every student the opportunity to experience the thrill of performing on a grand stage. </p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <h3>Concert Hall <span>Overview</span></h3>
+                    <p>The Sir Mutha Venkatasubba Rao Concert Hall is one of the city's pioneering venues, equipped with state-of-the-art audio-visual and lighting technology operated by skilled technicians. This versatility makes it an ideal setting for performances of all scales. Spanning 2,600 sq. ft., the fully air-conditioned hall accommodates nearly 1,200 attendees and includes a 200-seat black box experimental theatre, an outdoor performance area, and three adaptable training rooms. It proudly hosts our Founders Day productions, offering every student the opportunity to experience the thrill of performing on a grand stage.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/concerthall_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
