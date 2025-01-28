@@ -33,3 +33,5 @@
     <?php else: ?>
     <p class="text-danger" style="text-align:center;">Invalid application number. Please try again.</p>
     <?php endif; ?>
+
+    

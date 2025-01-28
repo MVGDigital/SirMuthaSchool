@@ -405,7 +405,7 @@ var main = new Splide('#annual-event', {
     type: 'slide',
     heightRatio: 0.5,
     pagination: false,
-    arrows: false,
+    arrows: true,
     cover: true,
 });
 
@@ -435,20 +435,6 @@ var thumbnails = new Splide('#thumbnail-slider', {
 main.sync(thumbnails);
 main.mount();
 thumbnails.mount();
-
-// Initialize Individual Event Sliders
-var annualEventImg = new Splide('.annual-event-imgs', {
-    type: 'slide',
-    autoplay: true,
-    pauseOnHover: false,
-    pagination: false,
-    speed: 1000,
-    rewindSpeed: 1000,
-    height: 'auto',
-    perPage: 1,
-    arrows: true,
-})
-annualEventImg.mount();
 
 
 $(document).ready(function() {

@@ -33,10 +33,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Events From <span>Sir Mutha</span></h3>
-            <h6>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From
-                academic achievements to cultural celebrations, discover moments that unite our community and showcase
-                the talents and accomplishments of our students and staff. Stay informed and connected through this
-                engaging platform.</h6>
+            <h6>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From academic achievements to cultural celebrations, discover moments that unite our community and showcase the talents and accomplishments of our students and staff. Stay informed and connected through this engaging platform.</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -46,7 +43,7 @@
         <div class="sectionTitle-blue m-auto">
             <h3>Upcoming<span> Events</span></h3>
 
-            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('events') ?>" method="get">
+            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('career/searchJobs') ?>" method="get">
                 <div class="shortBySearch">
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback">
@@ -108,7 +105,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Past Events -->
     <section id="pastEvents" class="container-space ptb-80">

@@ -268,36 +268,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="thumbnail-image">-->
-                        <!--    <div class="thumbImg">-->
-                        <!--        <img src="<?= base_url('images/beyond-curriculum/nav-news-1.png') ?>"-->
-                        <!--            alt="Sir Mutha Newsletter Image">-->
-                        <!--    </div>-->
-                        <!--    <div class="thumbContent">-->
-                        <!--        <h6>KARE secure top honours</h6>-->
-                        <!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor....-->
-                        <!--        </p>-->
-                        <!--        <span>Dec, 2024</span>-->
-                        <!--        <div class="whiteBtn-medium">-->
-                        <!--            <a href="#">Know More</a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="thumbnail-image">-->
-                        <!--    <div class="thumbImg">-->
-                        <!--        <img src="<?= base_url('images/beyond-curriculum/nav-news-2.png') ?>"-->
-                        <!--            alt="Sir Mutha Newsletter Image">-->
-                        <!--    </div>-->
-                        <!--    <div class="thumbContent">-->
-                        <!--        <h6>School unravels traffic knots</h6>-->
-                        <!--        <p>Sir Mutha School has introduced a new traffic arrangement to ease traffic....</p>-->
-                        <!--        <span>August, 2017</span>-->
-                        <!--        <div class="whiteBtn-medium">-->
-                        <!--            <a href="#">Know More</a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-
                     </div>
                 </div>
             </div>
@@ -307,26 +277,18 @@
     <!-- News Letters -->
 
     <!-- Annual Events -->
-    <section id="annual-events" class="container-space annual-event-waveBg blueBg-Sec ptb-80">
+    <!-- <section id="annual-events" class="container-space annual-event-waveBg blueBg-Sec ptb-80">
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Annual <span>Events</span></h3>
         </div>
         <div id="thumbnail-slider" class="splide col-lg-8 m-auto">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><span>2024</span></li>
-                    <li class="splide__slide"><span>2023</span></li>
-                    <li class="splide__slide"><span>2022</span></li>
-                    <li class="splide__slide"><span>2021</span></li>
-                    <li class="splide__slide"><span>2020</span></li>
-                    <li class="splide__slide"><span>2019</span></li>
-                    <li class="splide__slide"><span>2018</span></li>
-                    <li class="splide__slide"><span>2017</span></li>
-
+                    <li class="splide__slide"><span>2024 - 2025</span></li>
                 </ul>
             </div>
         </div>
-        <div id="annual-event" class="splide splideMain col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
+        <div id="annual-event" class="splide splideMain paginationCenter col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -385,16 +347,16 @@
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6>Sports Day, Nov 2022</h6>
+                            <h6>Sports Day,06 Nov 2022</h6>
                             <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
-                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
-                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                Education (KARE), Srivilliputhur, bagged the overall championship
+                                trophies in school and
+                                college category in the KESPA - HITS TN State level Swimming meet 2024
+                                organised by the
+                                Kerala Sportspersons Association (KESPA) Chennai in association with the
+                                Dolphin
                                 Swimming
                                 Academy, Mogappair.</p>
-                            <div class="whiteBtn-medium">
-                                <a href="#">View Gallery</a>
-                            </div>
                         </div>
                     </li>
                     <li class="splide__slide">
@@ -405,9 +367,12 @@
                         <div class="thumbContent">
                             <h6>Sports Day, Nov 2022</h6>
                             <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and
-                                college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the
-                                Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin
+                                Education (KARE), Srivilliputhur, bagged the overall championship
+                                trophies in school and
+                                college category in the KESPA - HITS TN State level Swimming meet 2024
+                                organised by the
+                                Kerala Sportspersons Association (KESPA) Chennai in association with the
+                                Dolphin
                                 Swimming
                                 Academy, Mogappair.</p>
                             <div class="whiteBtn-medium">
@@ -433,8 +398,8 @@
                             </div>
                         </div>
                     </li> -->
-                </ul>
+                <!-- </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Annual Events -->

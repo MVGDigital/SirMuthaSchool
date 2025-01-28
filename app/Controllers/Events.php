@@ -16,6 +16,14 @@ class Events extends BaseController
         $eventModel = new EventModel();
 
         $banner = $bannerModel->where('page', 'events')->where('is_published', 1)->first();
+        $upcomingEvents = $eventModel->where('event_date >=', date('Y-m-d'))
+                                      ->where('is_published', 1)
+                                      ->orderBy('event_date', 'ASC')
+                                      ->findAll();
+        $pastEvents = $eventModel->where('event_date <', date('Y-m-d'))
+                                  ->where('is_published', 1)
+                                  ->orderBy('event_date', 'DESC')
+                                  ->findAll();
 
         // Get distinct months for the dropdown
         $months = $eventModel->select("DATE_FORMAT(event_date, '%Y-%m') as month")

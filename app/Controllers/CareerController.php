@@ -208,10 +208,10 @@ class CareerController extends BaseController
                 ],
             ]);
         } catch (AwsException $e) {
-            return redirect()->to('/career/form')->with('error', 'Application submitted successfully, but email notification failed: ' . $e->getMessage());
+            return redirect()->to('/career')->with('error', 'Application submitted successfully, but email notification failed: ' . $e->getMessage());
         }
 
-        return redirect()->to('/career/form')->with('message', 'Application submitted successfully');
+        return redirect()->to('/career')->with('message', 'Application submitted successfully');
     } else {
         return redirect()->back()->withInput()->with('error', 'Failed to save the application.');
     }
