@@ -172,7 +172,7 @@
                     </div>
                     <img src="<?= base_url('images/admission/admission_gradeX.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">
-                    <div class="blueBtn-medium">
+                    <div class="blueBtn-medium">a
                         <a href="<?= base_url('admission/form') ?>">Know More</a>
                     </div>
                 </div>
