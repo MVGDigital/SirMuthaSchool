@@ -1,18 +1,20 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
+        <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
-            alt="<?= esc($banner['title']); ?>">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
-        <div class="banner-subTitle">
-            <h2><?= esc($banner['title']); ?></h2>
-        </div>
+            <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
+                alt="<?= esc($banner['title']); ?>">
+            <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+                alt="Banner image">
+            <div class="bannerTitle">
+                <h1>Sir Mutha School</h1>
+                <p>A unit of the madras seva sadan</p>
+            </div>
+            <div class="banner-subTitle">
+                <h2><?= esc($banner['title']); ?></h2>
+            </div>
         <?php endif; ?>
-        </div>
     </section>
     <!-- Banner Section -->
 
@@ -20,7 +22,7 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="#" class="active">Gallery</a></li>
+                <li><a href="<?= base_url('gallery#galleryTabs') ?>" class="active">Gallery</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -30,16 +32,13 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Sir Mutha <span> Gallery</span></h3>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur</h6>
+            <h6>"Discover the essence of Sir Mutha School through our gallery. It captures moments from academic events, sports, cultural activities, and student milestones, offering a visual celebration of our school's dynamic atmosphere, growth, and the achievements that define our vibrant community."</h6>
         </div>
     </section>
     <!-- Section Menus -->
 
     <!-- Tab View Sections -->
-    <section class="container-space blueBg-Sec wave-bottom-img ptb-80">
+    <section id="galleryTabs" class="container-space blueBg-Sec wave-bottom-img pb-60">
         <div class="Panel">
             <nav>
                 <ul class="Tabs">
@@ -53,93 +52,137 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="row w100 m-0">
+
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/rsp_1.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/gallery-1.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/gallery/rsp_3.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/gallery-2.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/gallery/rsp_4.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-3.png') ?>" class="img-fluid"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-4.png') ?>" class="img-fluid"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row w100 m-0">
-                        <div class="col-lg-6 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid"
+                                <img src="<?= base_url('images/gallery/rsp_2.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-2" style="display: none;">
+                    <!--<div class="row w100 m-0">-->
+                    <!--<div class="col-lg-6 p-0">-->
+                    <!--    <div class="gallery-imgs">-->
+                    <!--        <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid w100"-->
+                    <!--            alt="Sir Gallery Images">-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--    <div class="col-lg-6 p-0">-->
+                    <!--        <div class="gallery-imgs">-->
+                    <!--            <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid w100"-->
+                    <!--                alt="Sir Gallery Images">-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <div class="row w100 m-0">
-                        <div class="col-lg-6 p-0">
+
+                        <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-5.png') ?>" class="img-fluid"
+                                <img src="<?= base_url('images/gallery/yoga3.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
-                        <div class="col-lg-6 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-6.png') ?>" class="img-fluid"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row w100 m-0">
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/gallery-1.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/gallery/yoga1.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/gallery-2.png') ?>" class="img-fluid"
+                                    <img src="<?= base_url('images/gallery/yoga2.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-3.png') ?>" class="img-fluid"
-                                    alt="Sir Gallery Images">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 p-0">
-                            <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/gallery-4.png') ?>" class="img-fluid"
+                                <img src="<?= base_url('images/gallery/yoga4.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-3" style="display: none;">
-                    <h1>tab 3</h1>
+                    <div class="row w100 m-0">
+
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/health&wellness_left.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/health&wellness_top.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/health&wellness_bottom.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/health&wellness_right.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="tab-4" style="display: none;">
-                    <h1>tab 4</h1>
+                    <div class="row w100 m-0">
+
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/imu_nation_left.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/imu_nation_top.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/imu_nation_bottom.png') ?>" class="img-fluid w100"
+                                        alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/imu_nation_right.png') ?>" class="img-fluid w100"
+                                    alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

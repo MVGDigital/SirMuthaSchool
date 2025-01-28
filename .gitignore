@@ -5,7 +5,7 @@ node_modules/
 # vendor/
 
 # Environment and configuration files
-# .env
+.env
 # .env.*
 # .idea/
 # .vscode/
@@ -16,7 +16,7 @@ node_modules/
 
 # CodeIgniter writable directories
 # writable/cache/*
-# writable/logs/*
+writable/logs/*
 writable/session/*
 # writable/uploads/*
 
@@ -37,3 +37,4 @@ writable/session/*
 
 # MacOS specific files
 # *.DS_Store
+composer.zip

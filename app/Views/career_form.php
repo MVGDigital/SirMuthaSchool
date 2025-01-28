@@ -33,6 +33,7 @@
                             <div class="card-body pt-0">
                                 <form action="<?= base_url('adm1n/career/submit') ?>" method="post"
                                     enctype="multipart/form-data">
+                                    <input type="hidden" name="career_id" value="<?= isset($career) ? $career['career_id'] : '' ?>">
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="formFields row w100 m-0">
@@ -60,31 +61,6 @@
                                                     </ul>
                                                 </div>
                                                 <?php endif; ?>
-
-                                                <div class="mb-3 row">
-                                                    <input type="hidden" name="career_id"
-                                                        value="<?= isset($career) ? $career['career_id'] : '' ?>">
-                                                    <label for="job-type" class="col-sm-4 col-form-label">Job
-                                                        Type</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-select" id="job-type" name="job_type">
-                                                            <option value="" disabled
-                                                                <?= empty($career['job_type']) ? 'selected' : '' ?>>
-                                                                Select
-                                                                Job Type</option>
-                                                            <option value="Academic Opportunities"
-                                                                <?= isset($career) && $career['job_type'] === 'Academic Opportunities' ? 'selected' : '' ?>>
-                                                                Academic Opportunities</option>
-                                                            <option value="Administrative Opportunities"
-                                                                <?= isset($career) && $career['job_type'] === 'Administrative Opportunities' ? 'selected' : '' ?>>
-                                                                Administrative Opportunities</option>
-                                                        </select>
-                                                        <?php if (isset($validation) && $validation->getError('job_type')): ?>
-                                                        <div class="text-danger">
-                                                            <?= $validation->getError('job_type') ?></div>
-                                                        <?php endif; ?>
-                                                    </div>
-                                                </div>
 
                                                 <div class="mb-3 row">
                                                     <label for="job-title" class="col-sm-4 col-form-label">Job

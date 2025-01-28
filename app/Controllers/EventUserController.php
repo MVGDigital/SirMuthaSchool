@@ -93,7 +93,7 @@ class EventUserController extends BaseController
             $sheet->setCellValue('D' . $row, $user['mobile_number']);
             $sheet->setCellValue('E' . $row, $user['guests']);
             $sheet->setCellValue('F' . $row, $user['residential_address']);
-            $sheet->setCellValue('G' . $row, $user['created_at']);
+            $sheet->setCellValue('G' . $row, date('d-m-Y', strtotime($user['created_at'])));
             $row++;
         }
 
