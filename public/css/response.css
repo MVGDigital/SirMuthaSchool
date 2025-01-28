@@ -720,7 +720,15 @@ footer .itemSpaceBetween{
 .annual-event-waveBg{
   background-size: auto 80%;
 }
-
+#annual-event.paginationCenter .splide__arrows{
+  top: 33% !important;
+}
+#annual-event.paginationCenter .splide__arrow--prev{
+  left: 0em;
+}
+#annual-event.paginationCenter .splide__arrow--next{
+  right: 0em;
+}
 }
 @media (min-width: 712px) and (max-width: 730px) {
   .splide__pagination{
@@ -821,6 +829,9 @@ footer .itemSpaceBetween{
 #greencampus .wave-yellow-overwireBg{
   margin-top: -73%;
         padding-top: 70%;
+}
+#annual-event.paginationCenter .splide__arrows{
+  top: 13% !important;
 }
 }
 @media (max-width: 350px){
