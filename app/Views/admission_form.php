@@ -133,7 +133,6 @@
         .form-btn {
             padding: 20px 50px !important;
             margin-top: 30px;
-            width: 40%;
             border-radius: 5px;
         }
 
@@ -398,17 +397,13 @@
                         </div>
                     </div>
                     <div class="formFields row w100 m-0">
-
-                        <div class="col-6 col-md-6 col-lg-6 fields">
-
-
+                        <div class="col-12 col-md-6 col-lg-6 fields">
                             <label for="father_email">Email ID*</label>
                             <input type="email" id="father_email" name="father_email" class="form-control"
                                 placeholder="Enter father's email ID"
                                 value="<?php echo isset($oldInput['father_email']) ? $oldInput['father_email'] : ''; ?>">
                         </div>
-
-                        <div class="col-6 col-md-6 col-lg-6 fields"></div>
+                        <div class="col-12 col-md-6 col-lg-6 fields"></div>
                     </div>
                     <h3 class="text-center sectionTitle">Mother's Details</h3>
                     <p class="text-center sectionTitle mt-0">Fill in the student details and * marked fields are
