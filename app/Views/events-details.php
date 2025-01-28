@@ -91,7 +91,7 @@
                     <?php endif; ?>
 
                     <?php if (session('error')): ?>
-                    <div class="flash-msg">
+                    <div class="flash-erroeMsg">
                         <?= session('error') ?>
                     </div>
                     <script>

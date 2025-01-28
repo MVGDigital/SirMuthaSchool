@@ -305,6 +305,16 @@
 #spl-education-slider .splide__pagination {
   bottom: 2.5%;
 }
+.eventsSearch .shortBySearch{
+  justify-content: space-between;
+}
+.eventsSearch .has-search{
+  width: 100%;
+}
+.eventsSearch .shortBySearch .ss-main{
+  margin: 0;
+  width: 25%;
+}
 
 }
 
@@ -546,6 +556,16 @@ position: unset;
   padding: 0 10px;
 }
 /* Career */
+.eventsSearch .shortBySearch{
+  justify-content: space-between;
+}
+.eventsSearch .has-search{
+  width: 100%;
+}
+.eventsSearch .shortBySearch .ss-main{
+  width: 45%;
+  margin: 20px 0;
+}
 .event-location{
   justify-content: start;
 }
@@ -802,6 +822,9 @@ footer .itemSpaceBetween{
   }
   .eventRegBg{
     padding: 75% 0 80px 0;
+  }
+  .eventsSearch .shortBySearch .ss-main{
+    width: 60%;
   }
 }
 

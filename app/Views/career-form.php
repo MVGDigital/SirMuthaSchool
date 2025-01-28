@@ -45,7 +45,7 @@
         <div class="careerForm-container">
             <div class="col-12 col-md-12 col-lg-12 col-xl-12 m-auto">
                 <?php if (isset($job_details)): ?>
-                <div class="selected-job-details">
+                <div class="sectionTitle-blue">
                     <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
                 </div>
                 <?php endif; ?>
@@ -106,10 +106,10 @@
                             <div class="file-info">
                                 <img src="<?= base_url('images/file-info.svg') ?>"
                                     alt="Lady andal upload cv information icon">
-                                <span>File can be any format</span>
+                                <span>File can be one of the following formats</span>
                                 <div class="hoverInfo">
-                                    <p>Please upload your resume in any format (e.g., PDF, DOC, DOCX, TXT). Ensure the
-                                        file size is within the allowable limit.</p>
+                                    <p>Please upload your resume in one of the following formats: PDF, DOC, or DOCX. Ensure the file size is within the allowable limit.
+                                    </p>
                                 </div>
                             </div>
                             <div id="fileError" class="file-info">Maximum Limit: 2Mb</div>
