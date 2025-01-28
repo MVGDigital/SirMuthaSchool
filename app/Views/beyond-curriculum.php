@@ -291,25 +291,21 @@
         <div id="annual-event" class="splide splideMain paginationCenter col-12 col-md-12 col-lg-12 col-xl-10 m-auto">
             <div class="splide__track">
                 <ul class="splide__list">
+
+
                     <li class="splide__slide">
                         <div class="annualEventImg">
                             <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6>Sports Day,06 Nov 2022</h6>
-                            <p>Sir Mutha School, Chennai, and Kalasalingam Academy of Research and
-                                Education (KARE), Srivilliputhur, bagged the overall championship
-                                trophies in school and
-                                college category in the KESPA - HITS TN State level Swimming meet 2024
-                                organised by the
-                                Kerala Sportspersons Association (KESPA) Chennai in association with the
-                                Dolphin
-                                Swimming
-                                Academy, Mogappair.</p>
+                            <h6>4th April</h6>
+                            <p>The documentary Palette of Emotions, featuring Rupak Munje and his mother, Rajendra Munje, was screened for students from Classes VII to XII in their classrooms. A discussion on autism was held, the following day, highlighting how Rupak channelled his emotions through art. The event concluded with an engaging panel discussion at the Sir Mutha Venkatasubba Rao concert hall.
+                            </p>
                         </div>
                     </li>
-                    <li class="splide__slide">
+
+                                        <li class="splide__slide">
                         <div class="annualEventImg">
                             <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
@@ -327,6 +323,9 @@
                                 Academy, Mogappair.</p>
                         </div>
                     </li>
+
+
+
                 </ul>
             </div>
         </div>
