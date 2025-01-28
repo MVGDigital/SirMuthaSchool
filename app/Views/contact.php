@@ -102,11 +102,15 @@
                     <div class="contactInfo">
                         <h6>Social</h6>
                         <div class="contact-socialIcons">
-                            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/contact/instagram-Icon.svg') ?>"
-                                    alt="Instagram icon"></a>
-                            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/contact/facebook-Icon.svg') ?>"
-                                    alt="facebook icon"></a>
-                            <a href="#"><img src="<?= base_url('images/contact/x-icon.svg') ?>" alt="x icon"></a>
+                            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw==">
+                                <img src="<?= base_url('images/contact/instagram-Icon.svg') ?>" alt="Instagram icon">
+                                </a>
+                            <a href="https://www.facebook.com/Sirmuthaschool/">
+                                <img src="<?= base_url('images/contact/facebook-Icon.svg') ?>" alt="facebook icon">
+                            </a>
+                            <a href="#">
+                                <img src="<?= base_url('images/contact/x-icon.svg') ?>" alt="x icon">
+                            </a>
                         </div>
                     </div>
                 </div>

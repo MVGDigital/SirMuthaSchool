@@ -43,7 +43,7 @@
     <section id="parentsportal" class="wave-sec wave-yellowWith-bottom-img container-space ptb-80">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-5 col-xl-6">
-                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/parents/parents_portal.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5 mobContTop-p-tb50">
@@ -65,7 +65,7 @@
     <section id="association" class="wave-sec white-bgImg">
         <div class="itemSpaceBetween">
             <div class="col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
+                <img src="<?= base_url('images/parents/parents_association.png') ?>" class="img-fluid" alt="Lady Andal">
             </div>
             <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/parents/parent_resources.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>

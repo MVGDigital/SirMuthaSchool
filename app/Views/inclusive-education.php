@@ -79,10 +79,10 @@
                         <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/occupational_therapy2.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/occupational_therapy3.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>" class="img-fluid" alt="" id="Occupational">
                     </li>
                 </ul>
             </div>

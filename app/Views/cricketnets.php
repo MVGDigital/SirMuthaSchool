@@ -60,24 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Cricket Nets <span> Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">The academy's world-class infrastructure, complemented by top-tier equipment and exceptional coaching, has swiftly propelled our teams to victory in various inter-school and inter-state events. Most recently, the school team clinched the Under-14 inter-school cricket championships, highlighting the profound influence of the Cricket Academy. Central to this success are our BCCI-accredited coaches, who expertly guide aspiring cricketers. This, alongside internationally-standardised facilities and premier cricketing gear, allows students to simulate actual match scenarios before competing in larger sporting arenas. Consequently, not only have we secured team championships, but we have also nurtured talent, with several cricketers advancing to state-level division and league matches across various age categories.
-</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <h3>Cricket Nets <span>Overview</span></h3>
+                    <p>The academy's world-class infrastructure, complemented by top-tier equipment and exceptional coaching, has swiftly propelled our teams to victory in various inter-school and inter-state events. Most recently, the school team clinched the Under-14 inter-school cricket championships, highlighting the profound influence of the Cricket Academy. Central to this success are our BCCI-accredited coaches, who expertly guide aspiring cricketers. This, alongside internationally-standardised facilities and premier cricketing gear, allows students to simulate actual match scenarios before competing in larger sporting arenas. Consequently, not only have we secured team championships, but we have also nurtured talent, with several cricketers advancing to state-level division and league matches across various age categories.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/cricket_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>

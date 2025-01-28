@@ -60,23 +60,15 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Library <span>Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">Our school features an expansive library of 880 square feet, serving as a haven for inquisitive minds. With seven periodicals and two daily newspapers, it fosters a culture of reading and awareness. The collection includes 44 reference books for primary classes and 145 for secondary and higher secondary students. Additionally, seven magazines and an impressive 7,924 books and other resources enrich the intellectual landscape. This library is not merely a repository of books; it is a vibrant hub for exploration and discovery.</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <p>Our school features an expansive library of 880 square feet, serving as a haven for inquisitive minds. With seven periodicals and two daily newspapers, it fosters a culture of reading and awareness. The collection includes 44 reference books for primary classes and 145 for secondary and higher secondary students. Additionally, seven magazines and an impressive 7,924 books and other resources enrich the intellectual landscape. This library is not merely a repository of books; it is a vibrant hub for exploration and discovery.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/facilities/co-curricular.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
