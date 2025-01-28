@@ -42,7 +42,7 @@
     </section>
     <!-- Section Menus -->
 
-    <section id="campusVideo" class="admsn-PageVideo pb-60">
+    <!-- <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-12 m-auto">
             <?php if (!empty($video)) : ?>
             <video id="sir-mutha-campus" controls playsinline>
@@ -50,31 +50,17 @@
             </video>
             <?php endif; ?>
 
-            <!--<div id="playOverlay" class="playOverlay">
+            <div id="playOverlay" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
-            </div>-->
+            </div>
         </div>
-    </section>
+    </section> -->
 
 
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowWithGg-img container-space ptb-80" id="terms_conditions">
-        <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
-                <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Networked Classrooms and <span>Smart Boards</span></h3>
-                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
-                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
-                    alt="Lady Andal">
-            </div>
-        </div>
-    </section>
+    a
     <!-- Co-Curricular -->
     <section class="container-space ptb-80">
         <div class="Panel">

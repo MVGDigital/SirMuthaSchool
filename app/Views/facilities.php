@@ -278,7 +278,7 @@
                                             environment where every child feels secure, valued, and empowered to
                                             succeed.</p>
                                         <div class="blueBtn-medium">
-                                            <a href="<?=base_url('healthandsaftey') ?>">Know More</a>
+                                            <a href="<?=base_url('facilities/healthandsaftey') ?>">Know More</a>
                                         </div>
                                     </div>
                                 </div>

@@ -36,13 +36,14 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Art and <span>Craft</span></h3>
-            <h6></h6>
+            <h6> 
+            At Sir Mutha School, art and craft nurture creativity and skill development. Students explore diverse mediums like Madhubani painting, clay modeling, and jewelry making, fostering imagination, patience, and precision. These activities inspire innovative thinking, refine motor skills, and encourage holistic growth through meaningful artistic expression.</h6>
             
         </div>
     </section>
     <!-- Section Menus -->
 
-    <section id="campusVideo" class="admsn-PageVideo pb-60">
+    <!-- <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-12 m-auto">
             <?php if (!empty($video)) : ?>
             <video id="sir-mutha-campus" controls playsinline>
@@ -50,34 +51,26 @@
             </video>
             <?php endif; ?>
 
-            <!--<div id="playOverlay" class="playOverlay">
+            <div id="playOverlay" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
-            </div>-->
+            </div>
         </div>
-    </section>
+    </section> -->
 
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img container-space ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Art and Craft <span> Overview</span></h3>
-                    <div id="curve-slider" class="splide paginationCenter toRight-pagination">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <p class="facilitycontent"> </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h3>Art and Craft <span>Overview</span></h3>
+                    <p>Art and craft at Sir Mutha School spark creativity and critical thinking, offering students hands-on experiences with diverse mediums. These activities enhance self-expression, motor skills, and innovation, fostering holistic growth and a love for the arts.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/art&craft_overview.png') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
@@ -89,7 +82,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Art & Craft <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h6 style="color:black;">"Showcasing creativity through vibrant art and craft projects by students."</h6>
                     </div>
                     
                     <div class="row w100 m-0">
