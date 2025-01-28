@@ -567,6 +567,7 @@ position: unset;
   margin: 20px 0;
 }
 .event-location{
+  flex-direction: column;
   justify-content: start;
 }
 .event-details-sec .wave-yellow-overwireLightBg{
@@ -737,7 +738,10 @@ footer .itemSpaceBetween{
   margin: 10px 0px;
 }
 .regForm {
-  margin: 20px;
+  margin:20px 0;
+}
+.contactInfo{
+  padding: 0 15px;
 }
 }
 @media (max-width: 375px){

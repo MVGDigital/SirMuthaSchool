@@ -132,7 +132,6 @@
         .form-btn {
             padding: 20px 50px !important;
             margin-top: 30px;
-            width: 40%;
             border-radius: 5px;
         }
     </style>
