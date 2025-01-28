@@ -77,9 +77,9 @@
                                         <h6><?= esc($event['event_name']) ?></h6>
                                         <p>Starts at <?= esc($event['start_time']) ?></p>
                                     </div>
-                                    <div class="eventRegCount">
+                                    <!-- <div class="eventRegCount">
                                         <span>+66</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <form action="<?= base_url('events/set-event-details') ?>" method="POST"
                                     style="display: inline;">

@@ -88,7 +88,7 @@
                     <p>The school conducts an orientation session to familiarise newly admitted students and their parents/guardians with the school's environment, guidelines,and policies.</p>
 
                     <p>We understand how important it is to choose the right school for your child’s education, and we are pleased that you are considering Sir Mutha School. Our team of experienced admissions staff is dedicated to providing excellent service, offering guidance and information at every step of the process to support you through the admissions process.</p>
-                    <p>We are able to consider your child for entry from LKG to Grade IX, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
+                    <p>We are able to consider your child for entry from LKG to Grade X, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
                     
                     <div class="blueBtn-medium">
                         <!-- <a href="#">Know More</a> -->
