@@ -42,7 +42,7 @@
     </section>
     <!-- Section Menus -->
 
-    <section id="campusVideo" class="admsn-PageVideo pb-60">
+    <!-- <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-12 m-auto">
             <?php if (!empty($video)) : ?>
             <video id="sir-mutha-campus" controls playsinline>
@@ -50,12 +50,12 @@
             </video>
             <?php endif; ?>
 
-            <!--<div id="playOverlay" class="playOverlay">
+            <div id="playOverlay" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
-            </div>-->
+            </div>
         </div>
-    </section>
+    </section> -->
 
    
 

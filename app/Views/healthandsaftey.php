@@ -36,13 +36,13 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Health and  <span>Safety</span></h3>
-            <h6>Step into our state-of-the-art computer labs, where innovation and creativity come alive. Explore a gallery showcasing students immersed in hands-on learning, collaborative projects, and cutting-edge technology that empowers them to shape the future.</h6>
+            <h6>At Sir Mutha School, health and safety are priorities. Through Apollo Shine Health Rooms, we offer medical care, check-ups, and health education. With fire protocols, water audits, and an accessible infirmary, we ensure a secure and nurturing environment, fostering the well-being and growth of every student and staff member.</h6>
             
         </div>
     </section>
     <!-- Section Menus -->
 
-    <section id="campusVideo" class="admsn-PageVideo pb-60">
+    <!-- <section id="campusVideo" class="admsn-PageVideo pb-60">
         <div class="col-lg-12 m-auto">
             <?php if (!empty($video)) : ?>
             <video id="sir-mutha-campus" controls playsinline>
@@ -50,34 +50,26 @@
             </video>
             <?php endif; ?>
 
-            <!--<div id="playOverlay" class="playOverlay">
+            <div id="playOverlay" class="playOverlay">
                 <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
                 <span class="playText">Play</span>
-            </div>-->
+            </div>
         </div>
-    </section>
+    </section> -->
 
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img container-space ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-7 col-xl-7 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Health and Safety <span> Overview</span></h3>
-                    <div id="curve-slider" class="splide paginationCenter toRight-pagination">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <p class="facilitycontent">In the modern educational landscape, our computer labs emerge as dynamic hubs of digital discovery. To keep pace with this evolution, ongoing research in both technology and pedagogy is essential. They are thoughtfully designed to equip students not only with technical skills but also with the confidence and creativity needed to navigate an increasingly complex world. By engaging with cutting-edge technologies, such as artificial intelligence, students develop into adept problem solvers.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h3>Health and Safety <span>Overview</span></h3>
+                    <p>Sir Mutha School ensures health and safety through Apollo Shine Health Rooms, regular check-ups, fire protocols, water audits, and an infirmary, creating a secure environment that promotes well-being and growth for all students and staff.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/healthsafety_overview.png') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
@@ -89,7 +81,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Health and Safety <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Where innovation meets inspiration—our computer labs empower minds to shape the future."</h6>
+                        <h6 style="color:black;">"Health and safety prioritized with care, awareness, and proactive measures."</h6>
                     </div>
                     
                     <div class="row w100 m-0">
