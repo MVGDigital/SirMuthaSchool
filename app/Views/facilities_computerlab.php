@@ -60,9 +60,9 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80 container-space" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Computer Lab <span>Overview</span></h3>
                     <p>In the modern educational landscape, our computer labs emerge as dynamic hubs of digital discovery. To keep pace with this evolution, ongoing research in both technology and pedagogy is essential. They are thoughtfully designed to equip students not only with technical skills but also with the confidence and creativity needed to navigate an increasingly complex world. By engaging with cutting-edge technologies, such as artificial intelligence, students develop into adept problem solvers.</p>

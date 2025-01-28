@@ -90,7 +90,7 @@
 
                                                 <td>
                                                     <a target="_blank"
-                                                        href="<?php echo base_url('admission/printView/' . $admission['registration_number']); ?>">View</a>
+                                                        href="<?php echo base_url('admission/adminprintView_lahoc/' . $admission['registration_number']); ?>">View</a>
                                                 </td>
                                                 <td>
                                                     <a href="<?php echo base_url('admission/delete/' . $admission['id']); ?>"

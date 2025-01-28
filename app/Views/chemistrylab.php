@@ -60,9 +60,9 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80 container-space" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Chemistry Lab <span>Overview</span></h3>
                     <p>The Chemistry lab at Sir Mutha School is an inspiring environment where students delve into the fascinating world of chemical science. The lab encourages a spirit of inquiry and collaboration, allowing students to explore chemical reactions, properties of substances, and analytical techniques, all while developing essential lab skills. This prompts students to ask questions and think critically about the scientific principles at play. Through these hands-on experiences, the Chemistry lab cultivates a passion for science and prepares students for future academic pursuits in the field.</p>
