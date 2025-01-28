@@ -86,10 +86,13 @@ $routes->post('admission/submit', 'Admission::submit');
 $routes->get('admission/success', 'Admission::success');
 $routes->get('admission/printView/(:num)', 'Admission::printView/$1');
 $routes->get('admission/list', 'Admission::listAdmissions');
+$routes->get('/admission/adminprintView/(:num)', 'Admission::adminprintView/$1');
+
 $routes->post('admissionformlahoc/submit', 'AdmissionFormLahoc::submit');
 $routes->get('admissionformlahoc/success', 'AdmissionFormLahoc::success');
 $routes->get('admissionformlahoc/printView/(:num)', 'AdmissionFormLahoc::printView/$1');
 $routes->get('admissionformlahoc/list', 'AdmissionFormLahoc::listAdmissions');
+$routes->get('/admissionformlahoc/adminprintView_lahoc/(:num)', 'AdmissionFormLahoc::adminprint_view_lahoc/$1');
 
 //Inclusive Education
 $routes->get('inclusive-education', 'InclusiveEducation::index');

@@ -9,12 +9,12 @@ class Intheoutdoors extends BaseController
     public function index()
     {
         $bannerModel = new BannerModel();
-        $banners = $bannerModel->where('page', 'about')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+        $banner = $bannerModel->where('page', 'intheoutdoor')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'In The Outdoors',
             'page_code' => 'intheoutdoors',
-            'banners' => $banners
+            'banner' => $banner
         ];
 
         return view('header', $data) . view('intheoutdoors', $data) . view('footer');

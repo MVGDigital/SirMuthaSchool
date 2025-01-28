@@ -60,9 +60,9 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80 container-space" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Swimming Pool <span> Overview</span></h3>
                     <p>Our school proudly boasts an exclusive 25-metre, six-lane swimming pool, which is integral to our curriculum. We host competitions at District, State, and International levels, with coaches who are experienced trainers and have previously managed National teams. The annual ORCA Inter-School Swimming Meet is a highly anticipated highlight of our calendar. From dawn until dusk, the pool is alive with vibrant activity, epitomising the dedication of our swimmers. Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan.</p>

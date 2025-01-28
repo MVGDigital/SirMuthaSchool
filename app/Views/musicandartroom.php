@@ -60,9 +60,9 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80 container-space" id="terms_conditions">
         <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Music <span>And</span> Arts room facility</h3>
                     <p>Arts</p>
