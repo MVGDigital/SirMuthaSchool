@@ -3,8 +3,10 @@
     <section class="banner-section">
         <div class="bannerImg-OverlayContainer"></div>
         <?php if (!empty($banner)): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid"
+        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
+        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
+            alt="Banner image">
         <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
@@ -30,10 +32,13 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-       
+
         <div class="sectionTitle-white col-lg-10 m-auto">
-           <h3>Special <span> Education</span></h3>
-           <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centers and occupational therapy. With comprehensive training for caregivers and tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child achieve their full potential, promoting inclusivity and growth."</h6>
+            <h3>Special <span> Education</span></h3>
+            <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through
+                dedicated learning centers and occupational therapy. With comprehensive training for caregivers and
+                tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child
+                achieve their full potential, promoting inclusivity and growth."</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -46,7 +51,7 @@
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
-                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
+                <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Learning <span> Centers</span></h3>
                     <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to
                         cater to the needs of children with special needs,
@@ -76,13 +81,16 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt=""
+                            id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>"
+                            class="img-fluid" alt="" id="Occupational">
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>"
+                            class="img-fluid" alt="" id="Occupational">
                     </li>
                 </ul>
             </div>

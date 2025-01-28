@@ -43,7 +43,7 @@
         <div class="sectionTitle-blue m-auto">
             <h3>Upcoming<span> Events</span></h3>
 
-            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('career/searchJobs') ?>" method="get">
+            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('events') ?>" method="get">
                 <div class="shortBySearch">
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback">

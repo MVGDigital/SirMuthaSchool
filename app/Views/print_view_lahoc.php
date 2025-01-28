@@ -104,6 +104,10 @@
     </section>
     <!-- Banner Section -->
     <div class="container mt-5">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <img src="<?= base_url('images/favicon.png') ?>" alt="School Logo" style="max-width: 80px; height: auto;">
+            <h1 style="margin: 0;">Sir Mutha School</h1>
+        </div>
         <h3>ONLINE ADMISSION ENQUIRY FORM 2025-26</h3>
         <?php if (isset($admissions)): ?>
         <table>

@@ -47,7 +47,7 @@
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5 mobContTop-p-tb50">
-                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
+                <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Parent <span> Portal</span></h3>
                     <p>The Parent Portal at Lady Andal IB School is designed to streamline communication and provide quick access to essential resources for parents. 
                     Stay informed with academic calendars, fee payment systems, and classroom schedules at your fingertips

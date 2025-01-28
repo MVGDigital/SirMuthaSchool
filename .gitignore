@@ -23,6 +23,7 @@ writable/session/*
 # Ignore database file (if applicable)
 # *.sql
 # *.sqlite
+*.zip
 
 # Operating system files
 # .DS_Store
