@@ -73,7 +73,7 @@
                             <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
                             <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                             <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                            <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                            <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annula Pedegogical Policy</a></li>
                         </ul>
                     </li>
                     <li id="facilitiesMenu" class="nav-item">
@@ -166,7 +166,7 @@
                         <li><a href="<?= base_url('academics#aboutcbse') ?>">About CBSE</a></li>
                         <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                         <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                        <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annula Pedegogical Policy</a></li>
                     </ul>
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">

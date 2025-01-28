@@ -40,7 +40,7 @@
 
     <!--  Upcoming Events -->
     <section id="upcomingEvents" class="container-space lightColor-bg pt-60 pb-100">
-        <div class="sectionTitle-blue col-lg-10 m-auto">
+        <div class="sectionTitle-blue m-auto">
             <h3>Upcoming<span> Events</span></h3>
 
             <form id="sort-by-key" class="eventsSearch" action="<?= base_url('career/searchJobs') ?>" method="get">
@@ -50,7 +50,7 @@
                             <img src="<?= base_url('images/searchIcon.svg') ?>" alt="Search icon">
                         </span>
                         <input type="text" class="searchInput form-control" name="keyword"
-                            placeholder="Search for job by title or keyword">
+                            placeholder="Search Events">
                     </div>
                     <select class="selectDropdown" id="jobCategory" name="selectDropdown">
                         <option value="" selected="selected">Select Month</option>
@@ -77,9 +77,9 @@
                                         <h6><?= esc($event['event_name']) ?></h6>
                                         <p>Starts at <?= esc($event['start_time']) ?></p>
                                     </div>
-                                    <div class="eventRegCount">
+                                    <!-- <div class="eventRegCount">
                                         <span>+66</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <form action="<?= base_url('events/set-event-details') ?>" method="POST"
                                     style="display: inline;">

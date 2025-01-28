@@ -80,7 +80,7 @@
                     </div>
 
                     <?php if (session('success')): ?>
-                    <div class="" id="flash-message">
+                    <div class="flash-msg" id="flash-message">
                         <?= session('success') ?>
                     </div>
                     <script>
@@ -91,7 +91,7 @@
                     <?php endif; ?>
 
                     <?php if (session('error')): ?>
-                    <div class="">
+                    <div class="flash-erroeMsg">
                         <?= session('error') ?>
                     </div>
                     <script>

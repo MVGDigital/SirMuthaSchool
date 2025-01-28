@@ -1972,6 +1972,14 @@ label.error{
 }
 /* =============================== Beyond Curriculum =================================*/
 /* =============================== Events =================================*/
+.flash-msg{
+    text-align: center;
+    color: #00f200 !important;
+}
+.flash-erroeMsg{
+    text-align: center;
+    color: #ff3838 !important;
+}
 #upcoming-events .splide__pagination{
     bottom: -18%;
 }
