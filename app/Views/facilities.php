@@ -50,7 +50,9 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/faclites_home.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/faclites_home.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/faclites_homeMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -62,7 +64,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/Arts.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/Arts.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/ArtsMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -74,7 +78,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/library.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/library.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/libraryMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -87,7 +93,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/facilities.jpg') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/facilities.jpg') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/facilitiesMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -99,8 +107,10 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/Biology_lab.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/Biology_lab.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Imsages">
+                            <img src="<?= base_url('images/facilities/biology_labMob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
                             <h4>Biology Lab</h4>
@@ -111,7 +121,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/Chemistry_lab.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/Chemistry_lab.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/chemistry_labMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -123,7 +135,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/Physics lab.png') ?>" class="img-fluid w100"
+                            <img src="<?= base_url('images/facilities/physics_lab.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/physics_labMob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">

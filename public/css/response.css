@@ -270,10 +270,10 @@
   }
   
 .slick-prev.slick-arrow {
-  display: block;
+  display: block!important;
 }
 .slick-next.slick-arrow {
-  display: block;
+  display: block!important;
 }
 }
 @media (min-width: 768px) and (max-width: 820px){
@@ -402,7 +402,7 @@ position: unset;
   top: 15%;
 }
 .banner-subTitle{
-  bottom: 15%;
+  bottom: 20%;
 }
 .innerMenus-sec{
   margin-top: -30%;
@@ -474,6 +474,7 @@ position: unset;
 .sliderItem-end-content{
   width: 100%;
   right: 0;
+  bottom: 20%;
   text-align: start;
   padding: 0 20px;
 }
@@ -567,6 +568,7 @@ position: unset;
   margin: 20px 0;
 }
 .event-location{
+  flex-direction: column;
   justify-content: start;
 }
 .event-details-sec .wave-yellow-overwireLightBg{
@@ -579,7 +581,12 @@ position: unset;
   bottom: -7% !important;
 }
 
-
+.pdf-container canvas{
+  padding: 20px 0px;
+}
+.join-with-us{
+  background-image: url(../images/about/join-with-us-mobImg.png);
+}
 /* Footer Section */
 footer .itemSpaceBetween{
   flex-direction: column;
@@ -737,7 +744,10 @@ footer .itemSpaceBetween{
   margin: 10px 0px;
 }
 .regForm {
-  margin: 20px;
+  margin:20px 0;
+}
+.contactInfo{
+  padding: 0 15px;
 }
 }
 @media (max-width: 375px){
@@ -770,6 +780,9 @@ footer .itemSpaceBetween{
   .wave-yellow-overwireBg {
     margin-top: -55%;
     padding-top: 60%;
+}
+.banner-subTitle h2{
+  font-size: 30px;
 }
 .jobHyp-link a{
   padding: 0 8px;
@@ -825,6 +838,9 @@ footer .itemSpaceBetween{
   }
   .eventsSearch .shortBySearch .ss-main{
     width: 60%;
+  }
+  .mobBtns .contactBtn{
+    padding: 12px 12px;
   }
 }
 
