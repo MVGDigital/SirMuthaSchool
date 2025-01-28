@@ -295,7 +295,6 @@
 
     <!-- Annual Events -->
 
-
     <section id="annual-events" class="container-space annual-event-waveBg blueBg-Sec ptb-80">
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Annual <span>Events</span></h3>
@@ -344,6 +343,5 @@
             </div>
         </div>
     </section>
-
 
     <!-- Annual Events -->

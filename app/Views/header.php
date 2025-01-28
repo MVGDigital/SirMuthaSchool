@@ -217,7 +217,7 @@
                 </div>
                  
             </div>
-            <div class="col-12 col-md-12 col-lg-12 col-xl-4">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-4 itemCenter">
                 <div class="headerContact-info">
                     <h5>Quick Links</h5>
 

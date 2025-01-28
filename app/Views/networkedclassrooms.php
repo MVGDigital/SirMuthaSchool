@@ -42,11 +42,6 @@
     </section>
     <!-- Section Menus -->
 
-    
-
-
-    <!-- Co-Curricular -->
-    a
     <!-- Co-Curricular -->
     <section class="container-space ptb-80">
         <div class="Panel">
