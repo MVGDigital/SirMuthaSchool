@@ -474,6 +474,7 @@ position: unset;
 .sliderItem-end-content{
   width: 100%;
   right: 0;
+  bottom: 20%;
   text-align: start;
   padding: 0 20px;
 }
@@ -837,6 +838,9 @@ footer .itemSpaceBetween{
   }
   .eventsSearch .shortBySearch .ss-main{
     width: 60%;
+  }
+  .mobBtns .contactBtn{
+    padding: 12px 12px;
   }
 }
 
