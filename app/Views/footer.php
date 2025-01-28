@@ -405,7 +405,7 @@ var main = new Splide('#annual-event', {
     type: 'slide',
     heightRatio: 0.5,
     pagination: false,
-    arrows: true,
+    arrows: false,
     cover: true,
 });
 
@@ -623,8 +623,12 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
+            
             form.submit();
+            
+            setTimeout(() => {
+                $(form)[0].reset();
+            }, 1000);
         }
     });
 });
@@ -1016,7 +1020,7 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            alert("Form submitted successfully!");
+
             form.submit();
 
             setTimeout(() => {

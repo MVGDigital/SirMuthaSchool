@@ -19,7 +19,7 @@
         <?php endif; ?>
     </section>
     <!-- Banner Section -->
-    <h3 style="text-align:center;" class="mt-5">Applied for kindergarten to grade IX : 2025-2026</h3>
+    <h3 style="text-align:center;" class="mt-5">Applied for kindergarten to grade X : 2025-2026</h3>
     <h4 style="text-align:center;margin-top:30px;" class="m-5">
         Your Application has been successfully registered.
         <br>Please note this Application Number for your future reference
