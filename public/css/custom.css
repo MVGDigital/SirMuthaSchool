@@ -952,7 +952,7 @@ main{
     background-repeat: no-repeat;    
 }
 .join-with-us{
-    background-size: 100%;
+    background-size: cover;
     background-image: url(../images/about/join-with-us.png);
 }
 .join-with-us .join-with-us-container{
