@@ -153,6 +153,31 @@ class AdmissionFormLahoc extends BaseController
         return view('header', $data) . view('print_view_lahoc', $data) . view('footer');
     }
 
+    public function adminprintView_lahoc($registration_number)
+    {
+        if (!is_numeric($registration_number)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Invalid Registration Number');
+        }
+
+        $admissionModel = new AdmissionLahocModel();
+        $admissions = $admissionModel->where('registration_number', $registration_number)->first();
+
+        // Retrieve banners
+        $bannerModel = new BannerModel();
+        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+
+        // Prepare data for the view
+        $data = [
+            'admissions' => $admissions,
+            'banners' => $banners,
+            'page_title' => 'Print Application',
+            'page_code' => 'print-view'
+        ];
+
+        // Load the header, print view, and footer
+        return view('header', $data) . view('r', $data) . view('footer');
+    }
+
     public function delete($id)
     {
         $admissionModel = new AdmissionLahocModel();

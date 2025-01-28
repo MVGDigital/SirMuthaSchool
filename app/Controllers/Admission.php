@@ -172,6 +172,30 @@ class Admission extends BaseController
         // Load the header, print view, and footer
         return view('header', $data) . view('print_view', $data) . view('footer');
     }
+    public function adminprintView($registration_number)
+    {
+        if (!is_numeric($registration_number)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Invalid Registration Number');
+        }
+
+        $admissionModel = new AdmissionModel();
+        $application_details = $admissionModel->where('registration_number', $registration_number)->first();
+
+        // Retrieve banners
+        $bannerModel = new BannerModel();
+        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
+
+        // Prepare data for the view
+        $data = [
+            'admissions' => $application_details,
+            'banners' => $banners,
+            'page_title' => 'Print Application',
+            'page_code' => 'print-view'
+        ];
+
+        // Load the header, print view, and footer
+        return view('header', $data) . view('adminprint_view', $data) . view('footer');
+    }
 
     public function listAdmissions()
     {
