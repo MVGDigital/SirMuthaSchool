@@ -106,7 +106,7 @@
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?= base_url('adm1n/admission'); ?>">Kindergarten Grade
-                                        IX</a>
+                                        X</a>
                                 </li>
                                 <!--end nav-item-->
                                 <li class="nav-item">
@@ -199,6 +199,24 @@
                             <!--end nav-->
                         </div>
                         <!--end startbarDashboards-->
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sidebarachievements" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarachievements">
+                            <i class="fa-solid fa-trophy menu-icon"></i> <!-- Trophy icon for achievements -->
+                            <span>Achievements</span>
+                        </a>
+                        <div class="collapse" id="sidebarachievements">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?= base_url('adm1n/achievements'); ?>">Achievements</a>
+                                </li>
+                                <!--end nav-item-->
+                            </ul>
+                            <!--end nav-->
+                        </div>
+                        <!--end sidebarachievements-->
                     </li>
 
                     <li class="nav-item">
