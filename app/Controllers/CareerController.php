@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Models\BannerModel;
 use App\Models\CareerModel;
 use App\Models\JobApplicationModel;
+use Aws\Ses\SesClient;
+use Aws\Exception\AwsException;
 
 class CareerController extends BaseController
 {
@@ -107,62 +109,139 @@ class CareerController extends BaseController
     }
 
     public function apply()
-    {
-        $jobApplicationModel = new JobApplicationModel();
-        $careerModel = new CareerModel();
+{
+    $jobApplicationModel = new JobApplicationModel();
+    $careerModel = new CareerModel();
 
-        $validation = \Config\Services::validation();
-        $validation->setRules([
-            'job_id' => 'required|integer',
-            'first-name' => 'required|min_length[2]',
-            'last-name' => 'required|min_length[2]',
-            'email' => 'required|valid_email',
-            'mobile-number' => 'required|numeric|min_length[10]|max_length[15]',
-            'fileUpload' => 'uploaded[fileUpload]|mime_in[fileUpload,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document]|max_size[fileUpload,2048]'
+    $validation = \Config\Services::validation();
+    $validation->setRules([
+        'job_id' => 'required|integer',
+        'first-name' => 'required|min_length[2]',
+        'last-name' => 'required|min_length[2]',
+        'email' => 'required|valid_email',
+        'mobile-number' => 'required|numeric|min_length[10]|max_length[15]',
+        'fileUpload' => 'uploaded[fileUpload]|mime_in[fileUpload,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document]|max_size[fileUpload,2048]'
+    ]);
+
+    if (!$validation->withRequest($this->request)->run()) {
+        return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+    }
+
+    $file = $this->request->getFile('fileUpload');
+    $newName = null;
+    $fileContent = null; // For email attachment
+    $fileMimeType = null;
+
+    if ($file->isValid() && !$file->hasMoved()) {
+        $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
+        $extension = $file->getExtension();
+        $dateTime = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
+        $formattedDateTime = $dateTime->format('_dmY_His');
+        $newName = $originalName . $formattedDateTime . '.' . $extension;
+
+        // Capture file content and MIME type before moving
+        $fileContent = file_get_contents($file->getTempName());
+        $fileMimeType = $file->getMimeType();
+
+        $file->move(FCPATH . 'uploads/cv', $newName);
+    } else {
+        return redirect()->back()->withInput()->with('error', 'File upload failed.');
+    }
+
+    $jobId = $this->request->getPost('job_id');
+    $jobDetails = $careerModel->find($jobId);
+
+    if (!$jobDetails) {
+        return redirect()->back()->withInput()->with('error', 'Invalid job ID.');
+    }
+
+    $dateTime = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
+
+    $data = [
+        'career_id' => $jobId,
+        'job_title' => $jobDetails['job_title'],
+        'first_name' => $this->request->getPost('first-name'),
+        'last_name' => $this->request->getPost('last-name'),
+        'email' => $this->request->getPost('email'),
+        'mobile' => $this->request->getPost('mobile-number'),
+        'cv' => $newName,
+        'created_at' => $dateTime->format('Y-m-d H:i:s')
+    ];
+
+    if ($jobApplicationModel->insert($data)) {
+        $sesClient = new SesClient([
+            'version' => 'latest',
+            'region'  => getenv('AWS_REGION'),
+        'credentials' => [
+            'key'    => getenv('AWS_ACCESS_KEY'),
+            'secret' => getenv('AWS_SECRET_KEY'),
+        ],
         ]);
 
-        if (!$validation->withRequest($this->request)->run()) {
-            return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        $adminEmail = 'sr.developer@mvgdigital.com';
+        $applicantName = $data['first_name'] . ' ' . $data['last_name'];
+        $applicantEmail = $data['email'];
+
+        $emailContent = <<<EOD
+        <p>New Job Application Received</p>
+        <p><strong>Job Title:</strong> {$jobDetails['job_title']}</p>
+        <p><strong>Applicant Name:</strong> {$applicantName}</p>
+        <p><strong>Email:</strong> {$applicantEmail}</p>
+        <p><strong>Mobile:</strong> {$data['mobile']}</p>
+        <p><strong>Resume:</strong> Attached</p>
+        EOD;
+
+        try {
+            $sesClient->sendRawEmail([
+                'Source' => 'Sir Mutha School <tamilselvan.m@mvgdigital.in>',
+                'Destinations' => [$adminEmail],
+                'RawMessage' => [
+                    'Data' => $this->buildSesRawMessage(
+                        'New Job Application - ' . $jobDetails['job_title'],
+                        $emailContent,
+                        $adminEmail,
+                        'tamilselvan.m@mvgdigital.in',
+                        $newName,
+                        $fileContent,
+                        $fileMimeType
+                    ),
+                ],
+            ]);
+        } catch (AwsException $e) {
+            return redirect()->to('/career')->with('error', 'Application submitted successfully, but email notification failed: ' . $e->getMessage());
         }
 
-        $file = $this->request->getFile('fileUpload');
-        $newName = null;
-        if ($file->isValid() && !$file->hasMoved()) {
-            $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
-            $extension = $file->getExtension();
-            $dateTime = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
-            $formattedDateTime = $dateTime->format('_dmY_His');
-            $newName = $originalName . $formattedDateTime . '.' . $extension;
-
-            $file->move(FCPATH . 'uploads/cv', $newName);
-        } else {
-            return redirect()->back()->withInput()->with('error', 'File upload failed.');
-        }
-
-        $jobId = $this->request->getPost('job_id');
-        $jobDetails = $careerModel->find($jobId);
-
-        if (!$jobDetails) {
-            return redirect()->back()->withInput()->with('error', 'Invalid job ID.');
-        }
-
-        $dateTime = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
-
-        $data = [
-            'career_id' => $jobId,
-            'job_title' => $jobDetails['job_title'],
-            'first_name' => $this->request->getPost('first-name'),
-            'last_name' => $this->request->getPost('last-name'),
-            'email' => $this->request->getPost('email'),
-            'mobile' => $this->request->getPost('mobile-number'),
-            'cv' => $newName,
-            'created_at' => $dateTime->format('Y-m-d H:i:s')
-        ];
-
-        if ($jobApplicationModel->insert($data)) {
-            return redirect()->to('/career')->with('message', 'Application submitted successfully.');
-        } else {
-            return redirect()->back()->withInput()->with('error', 'Failed to save the application.');
-        }
+        return redirect()->to('/career')->with('message', 'Application submitted successfully');
+    } else {
+        return redirect()->back()->withInput()->with('error', 'Failed to save the application.');
     }
+}
+
+/**
+ * Builds a raw email message for SES.
+ */
+private function buildSesRawMessage($subject, $bodyHtml, $to, $from, $fileName, $fileContent, $fileMimeType)
+{
+    $boundary = uniqid('boundary_');
+    $rawMessage = "From: {$from}\n";
+    $rawMessage .= "To: {$to}\n";
+    $rawMessage .= "Subject: {$subject}\n";
+    $rawMessage .= "MIME-Version: 1.0\n";
+    $rawMessage .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\n\n";
+
+    $rawMessage .= "--{$boundary}\n";
+    $rawMessage .= "Content-Type: text/html; charset=UTF-8\n\n";
+    $rawMessage .= "{$bodyHtml}\n\n";
+
+    $rawMessage .= "--{$boundary}\n";
+    $rawMessage .= "Content-Type: {$fileMimeType}; name=\"{$fileName}\"\n";
+    $rawMessage .= "Content-Disposition: attachment; filename=\"{$fileName}\"\n";
+    $rawMessage .= "Content-Transfer-Encoding: base64\n\n";
+    $rawMessage .= chunk_split(base64_encode($fileContent)) . "\n\n";
+
+    $rawMessage .= "--{$boundary}--";
+
+    return $rawMessage;
+}
+
 }
