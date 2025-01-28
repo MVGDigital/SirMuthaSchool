@@ -14,7 +14,7 @@
   }
   .whiteLine{
     margin-bottom: auto;
-    height: 65% !important;
+    height: 75% !important;
   }
   .navbar-nav .nav-link{
     font-size: 26px;
@@ -58,6 +58,16 @@
 #spl-education-slider .splide__pagination {
   bottom: 6%;
 }
+#upcoming-events .splide__pagination{
+  bottom: -15%;
+}
+#sports.paginationCenter .splide__pagination {
+  bottom: -4.3% !important;
+}
+.img-hoverEffect.paginationCenter .splide__pagination{
+  bottom: -12% !important;
+}
+
 }
 
 @media (max-width: 1024px) {
