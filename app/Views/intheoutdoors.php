@@ -46,18 +46,22 @@
     <!-- Section Menus -->
 
     <!-- Adventure Camps Section-->
-    <section id="adventure-camps" class="wave-sec white-bgImg" id="cbsecurriculum">
+    <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
         <div class="itemSpaceBetween">
-            <div class="col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/academics/curriculum.svg') ?>" class="img-fluid" alt="Lady Andal">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+                <img src="<?= base_url('images/intheoutdoors/adventure_camp_outdoors.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
             </div>
-            <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
-                <div class="sectionTitle-blue lft-rgt-content">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
+                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
                     <h3>Adventure <span> Camps</span></h3>
-                    
-                    <p>Adventure camps offer immersive experiences that extend beyond the classroom, broadening students' horizons and enhancing practical skills. These thoughtfully designed expeditions build self-confidence, resilience, and teamwork. Activities such as camping, and trekking encourage a deeper connection with nature and nurture essential life skills. Each adventure creates lasting memories and connections, equipping students to face life's challenges with determination.</p>
-                    <!--<p>https://cbseacademic.nic.in/curriculum_2025.html</p>-->
-                    
+                    <p>Adventure camps offer immersive experiences that extend beyond the classroom, broadening students' horizons and enhancing practical skills. These thoughtfully designed expeditions build self-confidence, resilience, and teamwork. Activities such as camping, and trekking encourage a deeper connection with nature and nurture essential life skills. Each adventure creates lasting memories and connections, equipping students to face life's challenges with determination.
+                    </p>
+                   
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor-->
+                    <!--    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
+                    <!--    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat-->
+                    <!--</p>-->
                 </div>
             </div>
         </div>
@@ -78,7 +82,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/about/vision-mission.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/intheoutdoors/excursions.png') ?>" class="img-fluid w100"
                     alt="Sir Mutha Vision and Mission">
             </div>
         </div>
@@ -87,7 +91,7 @@
 
     <!-- Educational Tours Section-->
     <section id="educational-tour">
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+        <img src="<?= base_url('images/intheoutdoors/educationtours.png') ?>" class="img-fluid" alt="" id="Occupational">
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
                 <h3>Educational <span>Tours</span></h3>

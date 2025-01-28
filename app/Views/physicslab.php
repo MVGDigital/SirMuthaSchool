@@ -60,25 +60,16 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Physics Lab <span> Overview</span></h3>
-                    <!--<div id="curve-slider" class="splide paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
-                                    <p class="facilitycontent">The Physics lab at Sir Mutha School is an engaging space where students can immerse themselves in the principles of physics through hands-on experimentation. Equipped with essential instruments and tools, learners conduct experiments that illustrate key concepts such as motion, energy, and waves. This interactive environment not only enhances their understanding of scientific theories but also inspires a lifelong interest in the wonders of the physical world. Students develop problem-solving skills while exploring the practical applications of physics in everyday life.
-</p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <h3>Physics Lab <span>Overview</span></h3>
+                    <p>The Physics lab at Sir Mutha School is an engaging space where students can immerse themselves in the principles of physics through hands-on experimentation. Equipped with essential instruments and tools, learners conduct experiments that illustrate key concepts such as motion, energy, and waves. This interactive environment not only enhances their understanding of scientific theories but also inspires a lifelong interest in the wonders of the physical world. Students develop problem-solving skills while exploring the practical applications of physics in everyday life.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/phy overview.png') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/facilities/phy_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>

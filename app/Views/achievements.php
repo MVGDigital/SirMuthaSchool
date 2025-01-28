@@ -70,7 +70,7 @@
     <section id="inter-school" class="wave-sec white-bgImg" id="cbsecurriculum">
         <div class="itemSpaceBetween">
             <div class="col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/spl-edication.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/achievements/inter_school.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
             <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80 ptb-80">
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/achievements/literary_arts.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>

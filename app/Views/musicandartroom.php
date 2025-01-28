@@ -60,28 +60,20 @@
    
 
     <!-- Co-Curricular -->
-    <section class="wave-sec ligh-yellowBG" id="co-curricular">
+    <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
-        <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Music <span>and</span>Arts room facility</h3>
-                    <!--<div id="curve-slider" class=" paginationCenter toRight-pagination">-->
-                    <!--    <div class="splide__track">-->
-                    <!--        <ul class="splide__list">-->
-                    <!--            <li class="splide__slide">-->
+                    <h3>Music <span>And</span> Arts room facility</h3>
                     <p>Arts</p>
                                     <p >The art room stands as a sanctuary of creativity, designed to inspire and encourage artistic expression. Here, students are free to experiment with various mediums, cultivating their imagination. By integrating arts education into our academic framework, we foster well-rounded individuals who think creatively. This vital aspect of our vision empowers students to explore their full potential. Ultimately, creativity becomes a lens through which they engage with the world.</p>
                                <p>Music</p>
                                 <p>In our classrooms, music thrives as a dynamic blend of Indian and Western traditions. It’s more than just melodies; it’s a celebration of culture and creativity. By embracing music education, we ignite passion and develop skills that extend beyond academics. Here, students discover their unique voices and connect with the world around them. During Founder’s Day celebration, they showcase their talents and celebrate the spirit of our school.
 </p>
-                    <!--            </li>-->
-                    <!--        </ul>-->
-                    <!--    </div>-->
-                    <!--</div>-->
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-                <img src="<?= base_url('images/facilities/music_arts_overiview.jpg') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/facilities/music_arts_overiview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
