@@ -404,6 +404,10 @@ position: unset;
 .banner-subTitle{
   bottom: 20%;
 }
+.banner-subTitle h2{
+  font-size: 34px;
+  line-height: 34px;
+}
 .innerMenus-sec{
   margin-top: -30%;
   padding-top: 30%;
