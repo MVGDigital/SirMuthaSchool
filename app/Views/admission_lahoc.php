@@ -166,7 +166,7 @@
                 </div>
             <?php endif; ?>
 
-            <form id="admission-form" method="post" action="/admissionformlahoc/submit" enctype="multipart/form-data">
+            <form id="admission-form" method="post" action="<?= base_url('admissionformlahoc/submit') ?>" enctype="multipart/form-data">
                 <h5 class="sectionTitle text-center mt-5">Join Sir Mutha School</h5>
                 <h3 class="sectionTitle text-center ">Lady Andal House Of Children Activity Centre / Pre-KG : 2025-
                     2026
@@ -489,8 +489,7 @@
         </div>
         </form>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+
         <script>
             $(document).ready(function() {
                 // Custom method for email validation

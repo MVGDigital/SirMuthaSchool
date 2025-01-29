@@ -152,7 +152,7 @@
             <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
                 alt="<?= esc($banner['title']); ?>">
             <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
-                alt="Banner image">
+                alt="Banner image">
             <div class="bannerTitle">
                 <h1>Sir Mutha School</h1>
                 <p>A unit of the madras seva sadan</p>
@@ -173,7 +173,7 @@
                 </div>
             <?php endif; ?>
 
-            <form id="admission-form" method="post" action="/admission/submit">
+            <form id="admission-form" method="post" action="<?= base_url('admission/submit') ?>">
                 <h5 class="sectionTitle text-center m-2 mt-5">Join Sir Mutha School</h5>
                 <h3 class="sectionTitle text-center m-3">Apply for LKG to Grade X (2025-2026)</h3>
                 <p class="text-center sectionTitle m-4">Fill in the student details and * marked fields are mandatory

@@ -53,7 +53,7 @@
                 <form id="career-form" action="<?= base_url('career/apply') ?>" method="POST"
                     enctype="multipart/form-data">
                     <?php if (session()->getFlashdata('message')): ?>
-                        <div class="alert alert-success"><?= session()->getFlashdata('message') ?></div>
+                    <div class="alert alert-success"><?= session()->getFlashdata('message') ?></div>
                     <?php endif; ?>
                     <?php if (session()->getFlashdata('errors')): ?>
                     <div class="alert alert-danger">

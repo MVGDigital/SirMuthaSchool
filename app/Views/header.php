@@ -136,9 +136,9 @@
                     <li id="achievementsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('achievements') ?>">Achievements</a>
                     </li>
-                    <li id="intheoutdoorsMenu" class="nav-item">
+                    <!-- <li id="intheoutdoorsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('in-the-outdoors') ?>">In the outdoors</a>
-                    </li>
+                    </li> -->
                     <li id="galleryMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                     </li>
