@@ -103,23 +103,9 @@
                                 <div class="row w100 m-0">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                                         <h4>Sir Mutha Venkatasubba Rao</h4>
-                                        <p>Sir Mutha Venkatasubba Rao, born on 18 July 1878, was a distinguished legal
-                                            luminary and social reformer.
-                                            Educated at Madras Christian College, he became the youngest judge of the
-                                            Madras High Court in 1921,
-                                            specialising in cases initiated directly in the court. Honoured with a
-                                            knighthood for his contributions,
-                                            he received the King George V and VI Medals. Together with his wife,
-                                            Andalamma,
-                                            he fervently pursued his passion for social welfare and reform, founding The
-                                            Madras Seva Sadan—a pioneering institution dedicated to championing women’s
-                                            rights and empowerment.
-                                            Renowned for his unwavering integrity and meticulousness, he seamlessly
-                                            blended legal acumen with philanthropy.
-                                            At the age of 82, on 30 December 1960, he reached the lotus feet of the
-                                            Almighty, ending a glorious and beautiful life.
-                                        </p>
-
+                                        <p>Sir Mutha Venkatasubba Rao was born on July 18, 1878, and had an illustrious academic career, graduating from Madras Christian College. After earning his B.L. degree, he apprenticed under Sir C.V. Kumaraswamy Sastri and began his legal career in 1903. In 1904, he partnered with his collegemate Mr. Radhakrishnaya, establishing the firm Venkatasubba Rao and Radhakrishnaya. Within a few years, he became a prominent leader at the Bar, specializing in the Original Side of law.</p>
+                                    <p>In 1921, he was appointed as a Judge of the Madras High Court, becoming both the first practitioner from the Original Side and the youngest person to sit on its bench. He served for 17 years and retired in 1939 as the acting Chief Justice. His tenure was marked by unwavering dedication to justice, independence, and integrity. In 1939, he was appointed as the Agent for Berar of the Nizam of Hyderabad, where he set the foundation for this prestigious office.</p>
+                                    <p>Beyond his legal career, Sir Mutha was deeply committed to social welfare. After marrying Andalamma in 1922, they co-founded The Madras Seva Sadan, a pioneering institution for social reform. A perfectionist in both personal and public life, he valued discipline, cleanliness, and ethical conduct. Known for his kindness and philanthropy, he contributed significantly to social causes, particularly The Madras Seva Sadan. His legacy remains as one of the greatest judges in Madras High Court history and a visionary social reformer dedicated to justice and welfare.</p>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                                         <img src="<?= base_url('images/about/founder_sir_mutha.png') ?>"
