@@ -250,11 +250,9 @@
                                         <h3>Co- <span> Curricular</span></h3>
                                         <p>Technology</p>
                                         <h4>Networked classrooms and smart boards</h4>
-                                        <p>Our classrooms are the epitome of educational modernity with sophisticated
-                                            smart boards and comprehensive networked systems. This avant-garde
-                                            infrastructure transforms the traditional learning space into a hub of
-                                            intellectual curiosity, facilitating seamless collaboration and interaction.
+                                        <p>Our networked classrooms are designed to revolutionize learning by seamlessly integrating technology into education. These classrooms are equipped with advanced digital tools, enabling real-time collaboration, interactive lessons, and dynamic teaching methods. With high-speed connectivity and cutting-edge devices, students gain access to a world of resources, enhancing their understanding and creativity in every subject.
                                         </p>
+                                        <p>By fostering an interactive and connected learning environment, our networked classrooms bridge the gap between traditional teaching and modern innovation. Teachers can deliver personalized lessons, and students can engage in collaborative projects, preparing them for a future shaped by technology and global connectivity.</p>
                                         <div class="blueBtn-medium">
                                             <a href="<?= base_url('facilities/networkedclassrooms') ?>">Know More</a>
                                         </div>

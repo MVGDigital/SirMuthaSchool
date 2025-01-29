@@ -32,13 +32,10 @@
             <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
             <hr>
         </div>
-
+       
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Special <span> Education</span></h3>
-            <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through
-                dedicated learning centers and occupational therapy. With comprehensive training for caregivers and
-                tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child
-                achieve their full potential, promoting inclusivity and growth."</h6>
+           <h3>Special <span> Education</span></h3>
+           <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centers and occupational therapy. With comprehensive training for caregivers and tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child achieve their full potential, promoting inclusivity and growth."</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -81,16 +78,19 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt=""
-                            id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>"
-                            class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>"
-                            class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                 </ul>
             </div>

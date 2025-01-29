@@ -721,7 +721,7 @@ footer .itemSpaceBetween{
   background-size: auto 80%;
 }
 #annual-event.paginationCenter .splide__arrows{
-  top: 50% !important;
+  top: 33% !important;
 }
 #annual-event.paginationCenter .splide__arrow--prev{
   left: 0em;
@@ -829,6 +829,9 @@ footer .itemSpaceBetween{
 #greencampus .wave-yellow-overwireBg{
   margin-top: -73%;
         padding-top: 70%;
+}
+#annual-event.paginationCenter .splide__arrows{
+  top: 13% !important;
 }
 }
 @media (max-width: 350px){
