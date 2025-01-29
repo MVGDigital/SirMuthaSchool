@@ -145,7 +145,7 @@
             <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
                 alt="<?= esc($banner['title']); ?>">
             <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
-                alt="Banner image">
+                alt="Banner image">
             <div class="bannerTitle">
                 <h1>Sir Mutha School</h1>
                 <p>A unit of the madras seva sadan</p>
@@ -489,7 +489,8 @@
         </div>
         </form>
         </div>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
         <script>
             $(document).ready(function() {
                 // Custom method for email validation
