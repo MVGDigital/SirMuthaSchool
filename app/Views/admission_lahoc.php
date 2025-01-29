@@ -489,6 +489,7 @@
         </div>
         </form>
         </div>
+
         <script>
             $(document).ready(function() {
                 // Custom method for email validation
