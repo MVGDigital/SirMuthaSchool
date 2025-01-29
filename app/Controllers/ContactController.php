@@ -29,13 +29,13 @@ class ContactController extends BaseController
             $sheet->setCellValue('B1', 'Last Name');
             $sheet->setCellValue('C1', 'Email');
             $sheet->setCellValue('D1', 'Phone');
-            $sheet->setCellValue('E1', 'Enquiry');
+            $sheet->setCellValue('E1', 'Message');
 
             $sheet->setCellValue('A2', $contact['first_name']);
             $sheet->setCellValue('B2', $contact['last_name']);
             $sheet->setCellValue('C2', $contact['email']);
             $sheet->setCellValue('D2', $contact['phone']);
-            $sheet->setCellValue('E2', $contact['enquiry']);
+            $sheet->setCellValue('E2', $contact['message']);
 
             $filename = 'contact_' . $contact['first_name'] . '.xlsx';
 
