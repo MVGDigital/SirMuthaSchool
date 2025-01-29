@@ -35,8 +35,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Music &  <span> Arts Room</span></h3>
-            <h6></h6>
+            <h3>Music & <span> Arts Room</span></h3>
+            <h6>"Unleashing creativity in our vibrant Music and Art Room, where students explore their talents through melodies, rhythms, colors, and expressions. Equipped with modern instruments and art supplies, this inspiring space nurtures artistic growth and a passion for the arts."</h6>
 
         </div>
     </section>

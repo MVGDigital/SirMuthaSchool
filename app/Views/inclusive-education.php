@@ -48,7 +48,7 @@
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
-                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
+                <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Learning <span> Centers</span></h3>
                     <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to
                         cater to the needs of children with special needs,
@@ -78,13 +78,19 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy2_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>" class="img-fluid" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+                        <img src="<?= base_url('images/inclusive-education/ocupational_therapy3_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+
                     </li>
                 </ul>
             </div>

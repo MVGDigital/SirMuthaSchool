@@ -46,7 +46,9 @@
         </div>
     </section>
     <div class="overlay-wave-img">
-        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid"
+        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid deskTopImg"
+            alt="Teacher's Discussion">
+            <img src="<?= base_url('images/statutory/compliance-details_mob.png') ?>" class="img-fluid mobImg w100"
             alt="Teacher's Discussion">
     </div>
     <!-- Section Menus -->
