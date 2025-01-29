@@ -7,13 +7,13 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-            <div class="bannerTitle">
-                <h1>Sir Mutha School</h1>
-                <p>A unit of the madras seva sadan</p>
-            </div>
-            <div class="banner-subTitle">
-                <h2><?= esc($banner['title']); ?></h2>
-            </div>
+        <div class="bannerTitle">
+            <h1>Sir Mutha School</h1>
+            <p>A unit of the madras seva sadan</p>
+        </div>
+        <div class="banner-subTitle">
+            <h2><?= esc($banner['title']); ?></h2>
+        </div>
         <?php endif; ?>
     </section>
     <!-- Banner Section -->
@@ -22,7 +22,8 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('statutory#Statutory-Compliances') ?>" class="active">Statutory Compliances</a></li>
+                <li><a href="<?= base_url('statutory#Statutory-Compliances') ?>" class="active">Statutory
+                        Compliances</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -46,9 +47,7 @@
         </div>
     </section>
     <div class="overlay-wave-img">
-        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid deskTopImg"
-            alt="Teacher's Discussion">
-            <img src="<?= base_url('images/statutory/compliance-details_mob.png') ?>" class="img-fluid mobImg w100"
+        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid"
             alt="Teacher's Discussion">
     </div>
     <!-- Section Menus -->
@@ -66,11 +65,12 @@
                         <h5>Building Safety Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/building-safety-certificate.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/building-safety-certificate.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                 <div class="center-card">
                     <div class="card-content">
@@ -78,7 +78,8 @@
                         <h5>Cbse Affiliation Letter</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/cbse-affiliation-letter.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/cbse-affiliation-letter.pdf') ?>" target="_blank">Know
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,8 @@
                         <h5>Calender 2024-2025</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/calender-2024-2025.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/calender-2024-2025.pdf') ?>" target="_blank">Know
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +102,8 @@
                         <h5>Certificate of Recognition</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/certificate-of-recognition.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/certificate-of-recognition.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +114,8 @@
                         <h5>Fire & Rescue No Objection Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/fire&rescue-no-objection-certificate.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/fire&rescue-no-objection-certificate.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +126,8 @@
                         <h5>No Objection Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/no-objection-certificate.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/no-objection-certificate.pdf') ?>" target="_blank">Know
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -133,7 +138,8 @@
                         <h5>Sanitary Certificate</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/sanitary-certificate.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/sanitary-certificate.pdf') ?>" target="_blank">Know
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +150,8 @@
                         <h5>School Management Committee</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/school-management-committee.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/school-management-committee.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +162,8 @@
                         <h5>Staff Details with Qualification</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/staff-details-with-qualification.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/staff-details-with-qualification.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -166,7 +174,7 @@
                         <h5>TC FORMAT</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/tc-format.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/tc-format.pdf') ?>" target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +185,8 @@
                         <h5>Text Books Revised Order 2024-2025</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/text-books-revised-order-2024-2025.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/text-books-revised-order-2024-2025.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
@@ -188,13 +197,14 @@
                         <h5>Tuition Fees and School Strength</h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="/statutorydocument/tuition-fees-and-school-strength.pdf" target="_blank">Know More</a>
+                        <a href="<?= base_url('statutorydocument/tuition-fees-and-school-strength.pdf') ?>"
+                            target="_blank">Know More</a>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
+
     <!-- Policys -->
 
     <!-- <section class="container-space linenWhite-bgImg ptb-80" id="">
