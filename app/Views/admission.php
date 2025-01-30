@@ -99,6 +99,31 @@
     </section>
     <!-- Application Process-->
 
+
+        <!-- Terms & Conditions -->
+        <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>Terms & <span> Conditions</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Terms & Conditions -->
+
     <!-- Fee Structure -->
     <section class="wave-sec wave-lightyellow-bottom-img"  id="fee_structure">
         <div class="itemSpaceBetween">
@@ -122,30 +147,6 @@
         </div>
     </section>
     <!-- Fee Structure -->
-
-    <!-- Terms & Conditions -->
-    <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
-        <div class="itemSpaceBetween">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
-                    alt="Lady Andal">
-            </div>
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
-                <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Terms & <span> Conditions</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Terms & Conditions -->
 
     <!-- Admission Enquiry Form -->
     <section class="container-space wave-with-bgImg ptb-80">
