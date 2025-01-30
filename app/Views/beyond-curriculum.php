@@ -80,8 +80,7 @@
                         <div class="row m-0 w100">
                             <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
-                                    <img src="<?= base_url('images/facilities/Eco club.png') ?>" class="img-fluid"
-                                        alt="Sir Mutha Logo">
+                                    <img src="<?= base_url('images/facilities/Eco club.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
                                     <div class="sectionSubTitle-white">
                                         <h4>Eco <span>Club </span></h4>
                                     </div>
@@ -92,8 +91,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                                 <div class="cardWith-under-info">
-                                    <img src="<?= base_url('images/facilities/Interact club.png') ?>" class="img-fluid"
-                                        alt="Sir Mutha Logo">
+                                    <img src="<?= base_url('images/facilities/Interact club.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
                                     <div class="sectionSubTitle-white">
                                         <h4>Interact <span>Club </span></h4>
                                     </div>
@@ -307,7 +305,7 @@
 
                                         <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/april/annual-april-23-04-2024-01.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/april/annual-april-23-04-2024-02.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -319,7 +317,7 @@
 
                    <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/april/annual-april-24-04-2024-01.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/april/annual-april-24-04-2024-03.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -440,7 +438,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-18-07-2014.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-18-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -452,7 +450,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-27-07-2014.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-27-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -463,7 +461,7 @@
                     </li>
 
                     <li class="splide__slide">
-                        <div class="annualEventImg">
+                        <div class="annualEventImg mx-auto">
                             <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
@@ -596,14 +594,174 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-05-09-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6></h6>
-                            <p></p>
+                            <h6>05th Sept</h6>
+                            <p>Sir Mutha School celebrated Teachers’ Day on Thursday, 5th September 2024, to honour the unwavering dedication and commitment of its educators in shaping the lives of students. The event was a vibrant celebration, highlighting the invaluable contributions of teachers while offering a day filled with joy and camaraderie for all participants. A carnival, featuring food and game stalls, was organised for the students, with all proceeds directed towards the initiatives of the Interact and Juvenoptimist club. 
+                            </p>
                         </div>
                     </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-05-09-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>06th Sept</h6>
+                            <p>The Heritage Club of our school organised a series of activities to commemorate Madras Day, engaging students from LKG to Class XII. Students of LKG and UKG participated by dressing in traditional attire, adding a festive touch to the celebration. For other classes, activities included doodle art, a puppet show, coconut décor, fireless cooking, and a session highlighting key milestones in the rich history of Madras. These activities offered students an opportunity to delve into the city’s rich history, understand its evolution into modern-day Chennai, and celebrate its vibrant cultural heritage.</p>
+                        </div>
+                    </li>
+
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-10-09-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>10th Sept</h6>
+                            <p>Sir Mutha School, had the distinct honour of hosting the prestigious West Chennai Sahodaya Cluster Schools Teachers’ Awards Function 2024 at the Sir Mutha Venkatasubba Rao concert hall, a celebration of pedagogical excellence. Mrs. Shonali Matthai from Sir Mutha School was one of the recipients. The ceremony was presided over by Dr. S. Santhosh Baboo, Principal of D.G. Vaishnav College. The awardees were duly felicitated with commemorative mementoes, symbolising their dedication and service to the noble vocation of teaching.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-05-09-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>24th Sept</h6>
+                            <p>A session on mental and physical health for teachers was conducted in the AV room, led by the school counsellor, Mrs. Shanti Rao. The session focused on strategies for maintaining well-being, managing stress, and staying physically active. Teachers were given valuable insights into balancing their professional and personal lives, with practical tips for enhancing overall health and well-being.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-25-10-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>25th Oct</h6>
+                            <p>The inauguration of the Language Club was held in the school’s library for Classes VII to X, showcasing an array of cultural expressions. The programme featured vibrant dance performances, compelling speeches, and captivating dramas in Tamil, Hindi, and Sanskrit. It was truly an event that honoured and celebrated Indian languages. 
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-25-10-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>25th Oct</h6>
+                            <p>A Road Safety Training Session was conducted for children who were part of the RSP unit of Sir Mutha School, from Classes VII to X, by Mr. Vivek. The session focused on essential traffic rules and hand signals, with students actively practising and demonstrating these skills. Mr Vivek’s engaging presentation highlighted the importance of responsible road behaviour. The session was well-received, leaving a lasting impact on the young participants.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-27-10-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>27th Oct</h6>
+                            <p>The CanStop Awareness Annual Walkathon unfolded against the picturesque backdrop of Island Grounds Park, drawing spirited participation from students and teachers of Classes XI and XII. This poignant and purposeful initiative underscored the enduring significance of collective action in the fight against cancer, exemplifying solidarity and heartfelt commitment for the cause.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-27-10-2024.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>29th Oct</h6>
+                            <p>The Language Club recently hosted an engaging activity for students, offering an immersive exploration of a few Indian languages through interactive games and activities. The activities not only enhanced linguistic skills but also aimed to spark curiosity about diverse cultures, encouraging students to expand their cultural and linguistic horizons. 
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/nov/november_ 14_11_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>14th Nov</h6>
+                            <p>On the occasion of Children’s Day on Thursday, 14th November 2024, students celebrated the day in their classes with cheerful class parties. They brought their favourite snacks and board games, creating a lively and enjoyable atmosphere. The celebrations were marked by laughter, camaraderie, and shared moments of joy, making the day truly memorable
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/nov/november_ 22_11_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>22nd Nov</h6>
+                            <p>Founder’s Day at Sir Mutha School was celebrated with grandeur at the Sir Mutha Venkatasubba Rao concert hall, a venue befitting the occasion. The event featured captivating dramas such as, The Enchantment of the Rose and My Fair Lady, performed by the students. The day became a vibrant celebration, leaving a lasting impression on the audience.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg m">
+                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 06_12_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>05th Dec</h6>
+                            <p>The Maths Club was inaugurated during the school assembly, attended by students from Classes VI to VIII. With the theme, Mathematics is a Way of Life, the event sought to kindle a deeper appreciation for the subject by exploring its indispensability. Presentations vividly illustrated how mathematics shapes our daily lives, leaving students intrigued and inspired to delve into its wonders.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 06_12_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>06th Dec</h6>
+                            <p>The Maths Club organised The Maths Matrix, an engaging series of activities for students across all classes, blending creativity with logical thinking. For Classes XI and XII, a thrilling treasure hunt incorporated the analytical challenge of Sudoku. For other classes, activities included crafting jewellery inspired by mathematical patterns, exploring symmetry through Mandala Art, and solving intricate puzzles. The event celebrated the fun and beauty of mathematics for everyone involved. 
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 07_12_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>07th Dec</h6>
+                            <p>The ‘Open House’ for Kindergarten to Class XI was held on Saturday, 7th December 2024, offering parents valuable insights into their children’s progress. The event coincided with the Christmas Fair 2024, which transformed the campus into a vibrant carnival. Featuring a variety of stalls, games, and activities, the fair created a festive and lively atmosphere. Students, parents, and staff enthusiastically participated in the celebrations, making it a day to cherish.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="annualEventImg">
+                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 10_12_24.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                        </div>
+                        <div class="thumbContent">
+                            <h6>10th Dec</h6>
+                            <p>The Investiture Ceremony for the new office bearers of 2025-26 was in the presence of the Chief Guest, Ms. Dia Rekhi, an alumna of Lady Andal Venkatasubba Rao School. In a moment of solemnity, the new office bearers took their oath, vowing to uphold their duties with steadfast integrity and commitment. The occasion also featured a heartfelt prayer service for the students of Classes X and XII, as they stand on the cusp of their public examinations. The event was a beautiful convergence of leadership, faith, and encouragement, reaffirming the values of responsibility and resilience.
+                            </p>
+                        </div>
+                    </li>
+
 
 
 
