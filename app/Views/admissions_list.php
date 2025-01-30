@@ -114,7 +114,10 @@
         <script>
         $(document).ready(function() {
             $('#admissionsTable').DataTable({
-                dom: '<"export-button-container"B>frtip', // Custom button placement
+                dom:  '<"row"<"col-sm-12 mb-2 text-md-right"B>>' + // Buttons (Export) on the right
+             '<"row"<"col-sm-6"l><"col-sm-6"f>>' + // Length on the left, Search on the right
+             '<"row"<"col-sm-12"tr>>' + // Table
+             '<"row"<"col-sm-12"i><"col-sm-12"p>>', // Custom button placement
                 buttons: [{
                     extend: 'excelHtml5',
                     text: 'Export to Excel',
@@ -195,7 +198,7 @@
                         XLSX.utils.book_append_sheet(wb, ws, 'Admissions');
 
                         // Export the workbook
-                        XLSX.writeFile(wb, 'admissionslist.xlsx');
+                        XLSX.writeFile(wb, 'admissions-list.xlsx');
                     }
                 }],
                 responsive: true // Makes the table responsive

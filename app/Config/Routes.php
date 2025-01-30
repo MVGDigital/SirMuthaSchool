@@ -166,7 +166,8 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('/adm1n/event-list', 'EventController::index');
     $routes->get('adm1n/events/edit/(:num)', 'EventController::edit/$1');
     $routes->post('adm1n/events/update/(:num)', 'EventController::update/$1');
-    $routes->get('events/view/(:num)', 'EventController::view/$1');
+    $routes->get('adm1n/events/view/(:num)', 'EventController::view/$1');
+    $routes->get('adm1n/event/exportExcel', 'EventController::exportExcel');
     $routes->delete('adm1n/events/delete/(:num)', 'EventController::delete/$1');
     $routes->get('adm1n/event_users', 'EventUserController::event');
     $routes->get('adm1n/event-user/exportCsv', 'EventUserController::exportCsv');
@@ -247,6 +248,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('adm1n/contact/create', 'ContactController::create');
     $routes->post('adm1n/contact/submit', 'ContactController::submit');
     $routes->get('adm1n/contact/export/(:num)', 'ContactController::export/$1');
+    $routes->get('/adm1n/admission/delete/(:num)', 'AdmissionFormLahoc::delete/$1');
 
     // Student routes
     $routes->get('/adm1n/students', 'AdmissionFormLahoc::listAdmissions');
