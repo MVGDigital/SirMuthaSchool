@@ -27,7 +27,7 @@ class BeyondCurriculum extends BaseController
     public function heritageclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'heritageclub')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Heritage Celub',
@@ -40,7 +40,7 @@ class BeyondCurriculum extends BaseController
     public function mathsclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'mathsclub')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Maths Club',
@@ -53,7 +53,7 @@ class BeyondCurriculum extends BaseController
     public function ecoclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'ecoclub')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Eco Club',
@@ -67,7 +67,7 @@ class BeyondCurriculum extends BaseController
     public function interactclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'interactclub')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Interact Club',
