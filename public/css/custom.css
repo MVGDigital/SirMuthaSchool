@@ -1772,6 +1772,9 @@ label.error{
     border-radius: 4px;
     display: flex!important;
 }
+.slick-arrow{
+    z-index: 9!important;
+}
 .slick-vertical .slick-slide:active,
 .slick-vertical .slick-slide:focus,
 .slick-arrow:hover,
