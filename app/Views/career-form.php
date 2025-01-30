@@ -35,7 +35,6 @@
 
     <!-- Jobs Section -->
     <section class="container-space ptb-80">
-
         <div class="backBtn">
             <a href="<?= base_url('career') ?>">
                 <img src="<?= base_url('images/backBtnArrow.svg') ?>" alt="Back Button Arrow">
@@ -49,21 +48,10 @@
                     <h3 class="text-center"><?= esc($job_details['job_title']) ?></h3>
                 </div>
                 <?php endif; ?>
-                <h6>fill in your details</h6>
+                <h6>Fill in your details</h6>
                 <form id="career-form" action="<?= base_url('career/apply') ?>" method="POST"
                     enctype="multipart/form-data">
-                    <?php if (session()->getFlashdata('message')): ?>
-                    <div class="alert alert-success"><?= session()->getFlashdata('message') ?></div>
-                    <?php endif; ?>
-                    <?php if (session()->getFlashdata('errors')): ?>
-                    <div class="alert alert-danger">
-                        <ul>
-                            <?php foreach (session()->getFlashdata('errors') as $error): ?>
-                            <li><?= esc($error) ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                    <?php endif; ?>
+                    <div id="response-message"></div> <!-- For displaying success/error messages -->
                     <input type="hidden" name="job_id" value="<?= esc($job_details['career_id']) ?>">
                     <div class="career-fieldsContainer">
                         <div class="formFields row w100 m-0">
@@ -84,14 +72,13 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-6 fields">
                                 <label for="mobile-number">Phone Number</label>
-                                <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter phone number">
+                                <input type="tel" name="mobile-number" id="mobile-number"
+                                    placeholder="Enter phone number">
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <h6>Upload your resume</h6>
 
+                    <h6>Upload your resume</h6>
                     <div class="file-upload-container">
                         <label for="fileUpload" class="file-upload-label">
                             <div class="file-upload-icon">
@@ -108,8 +95,8 @@
                                     alt="Lady andal upload cv information icon">
                                 <span>File can be one of the following formats</span>
                                 <div class="hoverInfo">
-                                    <p>Please upload your resume in one of the following formats: PDF, DOC, or DOCX. Ensure the file size is within the allowable limit.
-                                    </p>
+                                    <p>Please upload your resume in one of the following formats: PDF, DOC, or DOCX.
+                                        Ensure the file size is within the allowable limit.</p>
                                 </div>
                             </div>
                             <div id="fileError" class="file-info">Maximum Limit: 2Mb</div>
@@ -117,10 +104,9 @@
                     </div>
 
                     <div class="formBtn-fullWidth col-8 col-md-6 col-lg-6 col-xl-6 m-auto">
-                        <button id="submitBtn" type='sumit'>Submit</button>
+                        <button id="submitBtn" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
-
     </section>

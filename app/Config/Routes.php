@@ -92,8 +92,7 @@ $routes->post('admissionformlahoc/submit', 'AdmissionFormLahoc::submit');
 $routes->get('admissionformlahoc/success', 'AdmissionFormLahoc::success');
 $routes->get('admissionformlahoc/printView/(:num)', 'AdmissionFormLahoc::printView/$1');
 $routes->get('admissionformlahoc/list', 'AdmissionFormLahoc::listAdmissions');
-$routes->get('/admissionformlahoc/adminprintView_lahoc/(:num)', 'AdmissionFormLahoc::adminprint_view_lahoc/$1');
-
+$routes->get('/admissionformlahoc/adminprintView_lahoc/(:num)', 'AdmissionFormLahoc::adminprintView_lahoc/$1');
 //Inclusive Education
 $routes->get('inclusive-education', 'InclusiveEducation::index');
 
@@ -255,6 +254,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('/adm1n/students/create', 'Student::create');
     $routes->post('students/submit', 'Student::submit');
     $routes->get('/adm1n/students/export/(:num)', 'Student::export/$1');
+    $routes->get('/admissionformlahoc/adminprintView_lahoc/(:num)', 'AdmissionFormLahoc::adminprintView_lahoc/$1');
 
     // Kindergarten routes
     $routes->get('/adm1n/admission', 'Admission::listAdmissions');
