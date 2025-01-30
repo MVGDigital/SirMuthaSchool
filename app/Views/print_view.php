@@ -100,9 +100,13 @@
         <?php endif; ?>
     </section>
     <!-- Banner Section -->
-    <div class="container mt-5 ">
-        a
-        <h3>ONLINE ADMISSION ENQUIRY FORM 2025-26</h3>
+    <div class="container mt-5">
+        <div style="text-align: center;">
+    <img src="<?= base_url('images/favicon.png') ?>" alt="School Logo" style="max-width: 80px; height: auto; display: block; margin: 0 auto;">
+    <h1 style="margin: 10px 0 0;">Sir Mutha School</h1>
+</div>
+
+        <h4>ONLINE ADMISSION ENQUIRY FORM 2025-26</h4>
         <?php if (isset($admissions)): ?>
         <table>
             <tr>

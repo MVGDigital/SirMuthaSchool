@@ -145,7 +145,7 @@
             <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
                 alt="<?= esc($banner['title']); ?>">
             <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
-                alt="Banner image">
+                alt="Banner image">
             <div class="bannerTitle">
                 <h1>Sir Mutha School</h1>
                 <p>A unit of the madras seva sadan</p>
@@ -166,7 +166,7 @@
                 </div>
             <?php endif; ?>
 
-            <form id="admission-form" method="post" action="/admissionformlahoc/submit" enctype="multipart/form-data">
+            <form id="admission-form" method="post" action="<?= base_url('admissionformlahoc/submit') ?>" enctype="multipart/form-data">
                 <h5 class="sectionTitle text-center mt-5">Join Sir Mutha School</h5>
                 <h3 class="sectionTitle text-center ">Lady Andal House Of Children Activity Centre / Pre-KG : 2025-
                     2026

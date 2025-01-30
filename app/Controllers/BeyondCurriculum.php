@@ -81,4 +81,61 @@ class BeyondCurriculum extends BaseController
     
     
     
+    public function heritageclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Heritage Celub',
+            'page_code' => 'heritageclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('heritageclub', $data) . view('footer');
+    }
+    public function mathsclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Maths Club',
+            'page_code' => 'mathsclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('mathsclub', $data) . view('footer');
+    }
+    public function ecoclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Eco Club',
+            'page_code' => 'ecoclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('ecoclub', $data) . view('footer');
+    }
+    
+    public function interactclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Interact Club',
+            'page_code' => 'interactclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('interactclub', $data) . view('footer');
+    }
+    
+    
+    
+    
 }

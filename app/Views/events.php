@@ -43,7 +43,7 @@
         <div class="sectionTitle-blue m-auto">
             <h3>Upcoming<span> Events</span></h3>
 
-            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('career/searchJobs') ?>" method="get">
+            <form id="sort-by-key" class="eventsSearch" action="<?= base_url('events') ?>" method="get">
                 <div class="shortBySearch">
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback">
@@ -52,8 +52,14 @@
                         <input type="text" class="searchInput form-control" name="keyword"
                             placeholder="Search Events">
                     </div>
-                    <select class="selectDropdown" id="jobCategory" name="selectDropdown">
-                        <option value="" selected="selected">Select Month</option>
+                    <select class="selectDropdown" id="jobCategory" name="month" onchange="this.form.submit()">
+                        <option value="" <?= empty($selected_month) ? 'selected' : '' ?>>Select Month</option>
+                        <?php foreach ($months as $month): ?>
+                        <option value="<?= $month['month'] ?>"
+                            <?= $selected_month === $month['month'] ? 'selected' : '' ?>>
+                            <?= date('F Y', strtotime($month['month'] . '-01')) ?>
+                        </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
             </form>
@@ -61,6 +67,7 @@
         <div id="upcoming-events" class="splide paginationCenter cardSlider mt-50">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <?php if (!empty($upcoming_events)): ?>
                     <?php foreach ($upcoming_events as $event): ?>
                     <li class="splide__slide">
                         <div class="slider-card">
@@ -91,6 +98,9 @@
                         </div>
                     </li>
                     <?php endforeach; ?>
+                    <?php else: ?>
+                    <p>No events found for the selected filter.</p>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
@@ -130,5 +140,5 @@
                 <div id="loader" class="spinner"></div>
             </div>
         </div>
-        </section>
-        <!-- Past Events -->
+    </section>
+    <!-- Past Events -->
