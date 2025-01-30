@@ -525,7 +525,7 @@ position: unset;
   bottom: 3.5% !important;
 }
 .fullWidthImg .splide__pagination{
-  bottom: 0.5em;
+  bottom: 6.5em;
 }
 /* Facilities */
 
@@ -834,6 +834,9 @@ footer .itemSpaceBetween{
 #greencampus .wave-yellow-overwireBg{
   margin-top: -73%;
         padding-top: 70%;
+}
+.fullWidthImg .splide__pagination{
+  bottom: 4.5em;
 }
 }
 @media (max-width: 350px){

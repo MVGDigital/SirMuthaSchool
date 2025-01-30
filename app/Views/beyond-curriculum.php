@@ -224,7 +224,7 @@
                                     alt="Sir Mutha Newsletter Image">
                             </div>
                             <div class="thumbContent">
-                                <h6>Sir Mutha Ne Overall Title Jeeta – Swimming News</h6>
+                                <h6>Jeeta – Swimming News</h6>
                                 <p class="newsThumbText">Madras District Aquatic Association dwara Orca pool me organized 30th age-group swimming competition me Sir Mutha School ki team ne boys (165 points) and girls (165 points) ki category me overall championship jeeti.</p>
                                 <span>Oct 7th 2014</span>
                                 <div class="whiteBtn-medium">
