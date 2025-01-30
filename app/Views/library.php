@@ -75,7 +75,7 @@
         </div>
     </section>
     <!-- Co-Curricular -->
-    <section class="container-space ptb-80">
+    <section class="container-space ptb-80 d-none">
         <div class="Panel">
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">

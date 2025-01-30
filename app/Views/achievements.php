@@ -19,10 +19,11 @@
     <!-- Banner Section -->
 
     <!-- Section Menus -->
-    <section class="container-space innerMenus-sec">
+    <section class="container-space innerMenus-sec" id="achievements">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="#" class="active">Achievements</a></li>
+                <li><a href="<?= base_url('achievements#achievements') ?>" class="active">Achievements</a></li>
+                
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">

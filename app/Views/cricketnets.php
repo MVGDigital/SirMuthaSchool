@@ -36,7 +36,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Cricket <span> Nets</span></h3>
-            <h6>"Our school features a dedicated cricket net facility, designed to hone students' batting and bowling skills. With high-quality equipment and a safe, spacious environment, it provides aspiring cricketers the opportunity to practice, improve technique, and prepare for competitive matches, fostering teamwork and sportsmanship."</h6>
+            <h6>"Our school features a dedicated cricket net facility, designed to home students' batting and bowling skills. With high-quality equipment and a safe, spacious environment, it provides aspiring cricketers the opportunity to practice, improve technique, and prepare for competitive matches, fostering teamwork and sportsmanship."</h6>
             
         </div>
     </section>
