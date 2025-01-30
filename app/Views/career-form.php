@@ -104,9 +104,13 @@
                     </div>
 
                     <div class="formBtn-fullWidth col-8 col-md-6 col-lg-6 col-xl-6 m-auto">
-                        <button id="submitBtn" type="submit">Submit</button>
+                        <button id="submitBtn" type="submit">
+                            <span class="button-text">Submit</span>
+                            <span class="loaderBtn" style="display: none;"></span>
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
+
     </section>

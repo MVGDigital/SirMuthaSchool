@@ -609,9 +609,9 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            
+
             form.submit();
-            
+
             setTimeout(() => {
                 $(form)[0].reset();
             }, 1000);
@@ -1006,7 +1006,15 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
+            var submitBtn = $("#submitBtn");
+            var buttonText = submitBtn.find(".button-text");
+            var loaderBtn = submitBtn.find(".loaderBtn");
             var formData = new FormData(form);
+
+            // Show loader and disable button
+            buttonText.hide();
+            loaderBtn.show();
+            submitBtn.prop("disabled", true);
 
             $.ajax({
                 type: "POST",
@@ -1015,14 +1023,42 @@ $(document).ready(function() {
                 contentType: false,
                 processData: false,
                 success: function(response) {
-                    $("#response-message").html('<div class="alert alert-success">' + response.message + '</div>');
-                    form.reset();
+                    setTimeout(() => {
+                        $("#response-message").html('<div class="alert alert-success">' +
+                        response.message + '</div>');
+
+                        // Scroll to error message
+                        $("html, body").animate({
+                            scrollTop: $("#response-message").offset().top - 200
+                        }, 500);
+
+                        // Reset form & restore button state
+                        form.reset();
+                        buttonText.show();
+                        loaderBtn.hide();
+                        submitBtn.prop("disabled", false);
+                    }, 3000);
                 },
                 error: function(xhr) {
-                    $("#response-message").html('<div class="alert alert-danger">' + xhr.responseJSON.message + '</div>');
+                    setTimeout(() => {
+                        $("#response-message").html('<div class="alert alert-danger">' + xhr
+                        .responseJSON.message + '</div>');
+
+                        // Restore button state on error
+                        buttonText.show();
+                        loaderBtn.hide();
+                        submitBtn.prop("disabled", false);
+
+                        // Scroll to error message
+                        $("html, body").animate({
+                            scrollTop: $("#response-message").offset().top - 200
+                        }, 500);
+
+                     }, 3000);                    
                 }
             });
         }
+
     });
 
 });
