@@ -7,7 +7,7 @@
         <div class="contact-details">
             <p>Shenstone Park, No.7,Harrington Road, Chennai-600 031.</p>
             <p><a href="mailto:info@sirmuthaschool.edu.in">info@sirmuthaschool.edu.in</a></p>
-            <p><a href="tel:+91 73586 99957">+91 73586 99957</a></p>
+            <p><a href="tel:+917358699957">+917358699957</a></p>
         </div>
         <div class="social-media">
             <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img
