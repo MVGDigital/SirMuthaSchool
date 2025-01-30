@@ -1037,6 +1037,9 @@ $(document).ready(function() {
                         buttonText.show();
                         loaderBtn.hide();
                         submitBtn.prop("disabled", false);
+                        setTimeout(() => {
+                            window.location.href = "<?php echo base_url('career'); ?>";
+                        }, 1000);
                     }, 3000);
                 },
                 error: function(xhr) {
