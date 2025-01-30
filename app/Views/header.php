@@ -88,7 +88,7 @@
                             <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                         </ul>
                     </li>
-                    <li id="admissionMenu" class="nav-item">
+                    <!-- <li id="admissionMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('admission') ?>">Admissions</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
@@ -98,7 +98,7 @@
                             <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
                             <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li id="inclusiveMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
@@ -136,9 +136,9 @@
                     <li id="achievementsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('achievements') ?>">Achievements</a>
                     </li>
-                    <li id="intheoutdoorsMenu" class="nav-item">
+                    <!-- <li id="intheoutdoorsMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('in-the-outdoors') ?>">In the outdoors</a>
-                    </li>
+                    </li> -->
                     <li id="galleryMenu" class="nav-item">
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                     </li>
@@ -217,7 +217,7 @@
                 </div>
                  
             </div>
-            <div class="col-12 col-md-12 col-lg-12 col-xl-4 itemCenter">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-4 itemCenter mobContactBtn">
                 <div class="headerContact-info">
                     <h5>Quick Links</h5>
 

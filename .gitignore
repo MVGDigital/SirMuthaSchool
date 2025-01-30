@@ -5,7 +5,7 @@ node_modules/
 # vendor/
 
 # Environment and configuration files
-# .env
+.env
 # .env.*
 # .idea/
 # .vscode/
@@ -23,6 +23,7 @@ writable/session/*
 # Ignore database file (if applicable)
 # *.sql
 # *.sqlite
+*.zip
 
 # Operating system files
 # .DS_Store
@@ -37,3 +38,4 @@ writable/session/*
 
 # MacOS specific files
 # *.DS_Store
+composer.zip
