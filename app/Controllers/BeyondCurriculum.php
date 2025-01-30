@@ -77,11 +77,4 @@ class BeyondCurriculum extends BaseController
 
         return view('header', $data) . view('interactclub', $data) . view('footer');
     }
-    
-    
-    
-    
-    
-    
-    
 }
