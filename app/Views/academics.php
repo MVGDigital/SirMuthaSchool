@@ -83,7 +83,7 @@
     <!-- CBSE Curriculum -->
 
     <!--  Teacher Enrichment -->
-    <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80">
+    <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80"  id="teacherenrichment" >
         <div class="col-lg-9 m-auto">
             <div class="center-card">
                 <div class="sectionTitle-blue detailpagecontent">
@@ -108,8 +108,10 @@
     <!--  Teacher Enrichment -->
 
     <!--  Annual Pedagogical Policy -->
-    <section id="annual-pedagogical">
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid" alt="" id="Occupational">
+    <section id="annulapolicy">
+
+        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
+        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
 
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">

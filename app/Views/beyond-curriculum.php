@@ -124,76 +124,51 @@
                 <div class="slick-banner-slider">
                     <div class="slider slider-for">
                         <div class="slick-slider-banner-image">
-                            <img src="<?= base_url('images/beyond-curriculum/thumb-banner-1.jpg') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/news-main-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                             <div class="thumbContent">
                                 <h6>Sir Mutha School, KARE secure top honours</h6>
-                                <span>Dec, 2024</span>
-                                <p class="newsText"><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy
-                                    of Research and</p>
+                                <span>Feb 21 2024</span>
+                                <p class="newsText"><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy of Research and Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin Swimming Academy, Mogappair.</p>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter2.pdf"
-                                        target="_blank">Know
+                                    <a href="https://www.newindianexpress.com/cities/chennai/2024/Feb/21/sir-mutha-school-kare-secure-top-honours" target="_blank">Know
                                         More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="slick-slider-banner-image">
-                            <img src="<?= base_url('images/beyond-curriculum/newsletterbannerimg2.jpg') ?>"
+                            <img src="<?= base_url('images/beyond-curriculum/news-main-2.png') ?>"
                                 class="img-fluid" alt="Sir Mutha Newsletter Image">
                             <div class="thumbContent">
-                                <h6>School unravels traffic knots</h6>
-                                <span>August, 2017</span>
-                                <p class="newsText"><b>Sir Mutha School :</b> Over the last few days, Harrington Road is
-                                    not as congested
-                                    as before, during rush hour. On the heels of Chennai Traffic Police (CTP) restoring
-                                    two-way traffic on EVR Salai-Chetpet-Gengu Reddy Subway, Sir Mutha School (CBSE),
-                                    Harrington Road, took measures to prevent traffic snarls on the stretch.</p>
+                                <h6>Models of the diplomatic order</h6>
+                                <span>Nov 7th 2022</span>
+                                <p class="newsText"><b>Chennai :</b> With 33 students of Sir Mutha School, Chetpet, chosen to attend the Oxford Model United Nations Conference (OXMUN), from November 11 to 13 at Oxford University, the school organised an interactive MUN session on Friday. Oxford will be hosting its seventh MUN a programme designed exclusively for school and college students who wish to learn the art of diplomacy and its first in-person conference since 2019. This is Sir Mutha School’s second time at the conference, after 2017.</p>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf"
-                                        target="_blank">Know
-                                        More</a>
+                                    <a href="https://www.newindianexpress.com/cities/chennai/2022/Nov/06/models-of-thediplomatic-order-2515591.html" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="slick-slider-banner-image">
-                            <img src="<?= base_url('images/beyond-curriculum/thumb-banner-1.jpg') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/news-main-3.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                             <div class="thumbContent">
-                                <h6>Sir Mutha School, KARE secure top honours</h6>
-                                <span>Dec, 2024</span>
-                                <p class="newsText"><b>CHENNAI :</b> Sir Mutha School, Chennai, and Kalasalingam Academy
-                                    of Research and
-                                    Education (KARE), Srivilliputhur, bagged the overall championship trophies in school
-                                    and college category in the KESPA - HITS TN State level Swimming meet 2024 organised
-                                    by the Kerala Sportspersons Association (KESPA) Chennai in association with the
-                                    Dolphin Swimming Academy, Mogappair.</p>
+                                <h6>Sir Mutha bags overall title</h6>
+                                <span>Oct 1st 2024</span>
+                                <p class="newsText"><b>CHENNAI :</b>The Sir Mutha School team bagged the overall championship in the boys (165 points) and the girls (111 points ) categories at the 30th age-group swimming competition organized by The Madras District Aquatic Association at Orca pool.</p>
                                 <div class="whiteBtn-medium">
-                                    <!-- <a
-                                        href="https://www.newindianexpress.com/cities/chennai/2024/Feb/21/sir-mutha-school-kare-secure-top-honours">Know
-                                        More</a> -->
-
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter2.pdf"
-                                        target="_blank">Know
-                                        More</a>
+                                    <a href="https://www.newindianexpress.com/sport/cricket/2024/Oct/01/sir-mutha-bags-overall-title" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="slick-slider-banner-image">
-                            <img src="<?= base_url('images/beyond-curriculum/newsletterbannerimg2.jpg') ?>"
+                            <img src="<?= base_url('images/beyond-curriculum/news-main-4.png') ?>"
                                 class="img-fluid" alt="Sir Mutha Newsletter Image">
                             <div class="thumbContent">
-                                <h6>School unravels traffic knots</h6>
-                                <span>August, 2017</span>
-                                <p class="newsText"><b>Sir Mutha School :</b> Over the last few days, Harrington Road is
-                                    not as congested
-                                    as before, during rush hour. On the heels of Chennai Traffic Police (CTP) restoring
-                                    two-way traffic on EVR Salai-Chetpet-Gengu Reddy Subway, Sir Mutha School (CBSE),
-                                    Harrington Road, took measures to prevent traffic snarls on the stretch.</p>
+                                <h6>Sir Mutha Ne Overall Title Jeeta – Swimming News</h6>
+                                <span>Oct 7th 2014</span>
+                                <p class="newsText"><b> Chennai:</b> Madras District Aquatic Association dwara Orca pool me organized 30th age-group swimming competition me Sir Mutha School ki team ne boys (165 points) and girls (165 points) ki category me overall championship jeeti.</p>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf"
-                                        target="_blank">Know
-                                        More</a>
+                                <a href="https://swimswam.com/sir-mutha-ne-overall-title-jeeta-swimming-news/" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
@@ -202,67 +177,58 @@
                     <div class="slider slider-nav thumb-image">
                         <div class="thumbnail-image">
                             <div class="thumbImg">
-                                <img src="<?= base_url('images/beyond-curriculum/nav-news-1.png') ?>"
+                                <img src="<?= base_url('images/beyond-curriculum/thumb-1.png') ?>"
                                     alt="Sir Mutha Newsletter Image">
                             </div>
                             <div class="thumbContent">
                                 <h6>KARE secure top honours</h6>
-                                <p class="newsThumbText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                </p>
-                                <span>Dec, 2024</span>
+                                <p class="newsThumbText">Sir Mutha School, Chennai, and Kalasalingam Academy of Research and Education (KARE), Srivilliputhur, bagged the overall championship trophies in school and college category in the KESPA - HITS TN State level Swimming meet 2024 organised by the Kerala Sportspersons Association (KESPA) Chennai in association with the Dolphin Swimming Academy, Mogappair.</p>
+                                <span>Feb 21 2024</span>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter2.pdf">Know
-                                        More</a>
+                                    <a href="https://www.newindianexpress.com/cities/chennai/2024/Feb/21/sir-mutha-school-kare-secure-top-honours" target="_blank">Know
+                                    More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="thumbnail-image">
                             <div class="thumbImg">
-                                <img src="<?= base_url('images/beyond-curriculum/nav-news-2.png') ?>"
+                                <img src="<?= base_url('images/beyond-curriculum/thumb-2.png') ?>"
                                     alt="Sir Mutha Newsletter Image">
                             </div>
                             <div class="thumbContent">
-                                <h6>School unravels traffic knots</h6>
-                                <p class="newsThumbText">Sir Mutha School has introduced a new traffic arrangement to
-                                    ease traffic</p>
-                                <span>August, 2017</span>
+                                <h6>Models of the diplomatic order</h6>
+                                <p class="newsThumbText">With 33 students of Sir Mutha School, Chetpet, chosen to attend the Oxford Model United Nations Conference (OXMUN), from November 11 to 13 at Oxford University, the school organised an interactive MUN session on Friday. Oxford will be hosting its seventh MUN a programme designed exclusively for school and college students who wish to learn the art of diplomacy and its first in-person conference since 2019. This is Sir Mutha School’s second time at the conference, after 2017.</p>
+                                <span>Nov 7th 2022</span>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf">Know
-                                        More</a>
+                                    <a href="https://www.newindianexpress.com/cities/chennai/2022/Nov/06/models-of-thediplomatic-order-2515591.html" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="thumbnail-image">
                             <div class="thumbImg">
-                                <img src="<?= base_url('images/beyond-curriculum/nav-news-1.png') ?>"
+                                <img src="<?= base_url('images/beyond-curriculum/thumb-3.png') ?>"
                                     alt="Sir Mutha Newsletter Image">
                             </div>
                             <div class="thumbContent">
-                                <h6>KARE secure top honours</h6>
-                                <p class="newsThumbText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                </p>
-                                <span>Dec, 2024</span>
+                                <h6>Sir Mutha bags overall title</h6>
+                                <p class="newsThumbText">The Sir Mutha School team bagged the overall championship in the boys (165 points) and the girls (111 points ) categories at the 30th age-group swimming competition organized by The Madras District Aquatic Association at Orca pool.</p>
+                                <span>Oct 1st 2024</span>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter2.pdf">Know
-                                        More</a>
+                                    <a href="https://www.newindianexpress.com/sport/cricket/2024/Oct/01/sir-mutha-bags-overall-title" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="thumbnail-image">
                             <div class="thumbImg">
-                                <img src="<?= base_url('images/beyond-curriculum/nav-news-2.png') ?>"
+                                <img src="<?= base_url('images/beyond-curriculum/thumb-4.png') ?>"
                                     alt="Sir Mutha Newsletter Image">
                             </div>
                             <div class="thumbContent">
-                                <h6>School unravels traffic knots</h6>
-                                <p class="newsThumbText">Sir Mutha School has introduced a new traffic arrangement to
-                                    ease traffic</p>
-                                <span>August, 2017</span>
+                                <h6>Sir Mutha Ne Overall Title Jeeta – Swimming News</h6>
+                                <p class="newsThumbText">Madras District Aquatic Association dwara Orca pool me organized 30th age-group swimming competition me Sir Mutha School ki team ne boys (165 points) and girls (165 points) ki category me overall championship jeeti.</p>
+                                <span>Oct 7th 2014</span>
                                 <div class="whiteBtn-medium">
-                                    <a href="https://sirmuthaschool.mvgdigital.com/public/images/news-letter1.pdf">Know
-                                        More</a>
+                                    <a href="https://swimswam.com/sir-mutha-ne-overall-title-jeeta-swimming-news/" target="_blank">Know More</a>
                                 </div>
                             </div>
                         </div>
