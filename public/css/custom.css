@@ -514,7 +514,7 @@ main{
     background-color: var(--blue-bg);
 }
 .banner-section .bannerImg-OverlayContainer{    
-    opacity: 40%;
+    opacity: 0.4;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -1269,7 +1269,7 @@ main{
     margin: 0 auto;
     height: 1px !important;
     border: 1px solid #102753;
-    opacity: 25%;
+    opacity: 0.25;
 }
 .linenWhite-bgImg{
     margin-top: -5%;
@@ -2700,7 +2700,7 @@ footer{
 .copyRights-txt a{
     font-size: 14px;
     line-height: 16px;
-    opacity: 34%;
+    opacity: 0.34;
     text-transform: uppercase;
     color: var(--color-white);
     font-family: 'Figtree-Light';

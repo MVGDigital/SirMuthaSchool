@@ -23,8 +23,8 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('in-the-outdoors#adventure-camps') ?>" class="active">Adventure Camps</a></li>
-                <li><a href="<?= base_url('in-the-outdoors#excursions') ?>">Educational Tours</a></li>
-                <li><a href="<?= base_url('in-the-outdoors#educational-tour') ?>">Excursions</a></li>
+                <li><a href="<?= base_url('in-the-outdoors#educational-tour') ?>">Educational Tours</a></li>
+                <li><a href="<?= base_url('in-the-outdoors#excursions') ?>">Excursions</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
