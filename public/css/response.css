@@ -38,7 +38,6 @@
     right: 0;
     z-index: 99;
     position: fixed;
-    background: var(--blue-bg);
     padding: 0 80px;
     margin: 0 auto;
 }
@@ -74,6 +73,14 @@
 #founders-slider .splide__pagination{
   bottom: -6.5%;
 }
+
+
+}
+@media (min-width:1440px) {
+  .event-details-sec .wave-yellow-overwireLightBg{
+    margin-top: -8%;
+    padding-top: 17%;
+  }
 }
 @media (max-width: 1024px) {
   .deskTopImg-forTab{
@@ -244,7 +251,7 @@
   }
   .contactForm{
     width: 100%;
-    padding-top: 50px 0;
+    padding-top: 50px;
   }
   .clubsSec .overlayPagination .splide__arrows{
     bottom: -4% !important;
