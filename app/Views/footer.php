@@ -1000,18 +1000,28 @@ $(document).ready(function() {
         },
         errorPlacement: function(error, element) {
             if (element.attr("id") === "fileUpload") {
-                fileError.html(error);
+                $("#fileError").html(error);
             } else {
                 error.insertAfter(element);
             }
         },
         submitHandler: function(form) {
+            var formData = new FormData(form);
 
-            form.submit();
-
-            setTimeout(() => {
-                form.reset();
-            }, 2000);
+            $.ajax({
+                type: "POST",
+                url: $(form).attr('action'),
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    $("#response-message").html('<div class="alert alert-success">' + response.message + '</div>');
+                    form.reset();
+                },
+                error: function(xhr) {
+                    $("#response-message").html('<div class="alert alert-danger">' + xhr.responseJSON.message + '</div>');
+                }
+            });
         }
     });
 

@@ -158,17 +158,13 @@ class AdmissionFormLahoc extends BaseController
         $admissionModel = new AdmissionLahocModel();
         $admissions = $admissionModel->where('registration_number', $registration_number)->first();
 
-        $bannerModel = new BannerModel();
-        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
-
         $data = [
             'admissions' => $admissions,
-            'banners' => $banners,
             'page_title' => 'Print Application',
             'page_code' => 'print-view'
         ];
 
-        return view('header', $data) . view('r', $data) . view('footer');
+        return view('adminprint_view_lahoc', $data);
     }
 
     public function delete($id)

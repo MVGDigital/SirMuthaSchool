@@ -1,6 +1,6 @@
 <head>
-    <!-- <title>Application Details</title> -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('images/favicon.png') ?>"> -->
+    <title>Application Details</title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('images/favicon.png') ?>">
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -101,10 +101,11 @@
     </section> -->
     <!-- Banner Section -->
     <div class="container mt-5 ">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <img src="<?= base_url('images/favicon.png') ?>" alt="School Logo" style="max-width: 80px; height: auto;">
-    <h1>Sir Mutha School</h1>
-    </div>
+        <div style="text-align: center;">
+            <img src="<?= base_url('images/favicon.png') ?>" alt="School Logo"
+                style="max-width: 80px; height: auto; display: block; margin: 0 auto;">
+            <h1 style="margin: 10px 0 0;">Sir Mutha School</h1>
+        </div>
         <h3>ONLINE ADMISSION ENQUIRY FORM 2025-26</h3>
         <?php if (isset($admissions)): ?>
         <table>
@@ -253,11 +254,12 @@
                 <td><?php echo $admissions['other_info']; ?></td>
             </tr>
         </table>
-        <div class="note">
-            Note: A copy of this completed Registration Form with Signature must be submitted to Mrs. Swarnalatha, +91
-            73586 00554, at the time of the Interview.
+        <div class="note my-5">
+            <p class="mb-5"> Note: A copy of this completed Registration Form with Signature must be submitted to Mrs.
+                Swarnalatha, +91
+                73586 00554, at the time of the Interview.</p>
         </div>
-        <a href="javascript:window.print()" class="btn m-5">Save as PDF</a>
+        <a href="javascript:window.print()" class="btn m-5 my-5">Save as PDF</a>
 
         <?php else: ?>
         <p>No details found for this application.</p>

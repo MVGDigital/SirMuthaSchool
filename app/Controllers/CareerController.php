@@ -124,7 +124,7 @@ class CareerController extends BaseController
     ]);
 
     if (!$validation->withRequest($this->request)->run()) {
-        return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        return $this->response->setJSON(['success' => false, 'message' => 'Validation failed', 'errors' => $validation->getErrors()]);
     }
 
     $file = $this->request->getFile('fileUpload');
@@ -145,14 +145,14 @@ class CareerController extends BaseController
 
         $file->move(FCPATH . 'uploads/cv', $newName);
     } else {
-        return redirect()->back()->withInput()->with('error', 'File upload failed.');
+        return $this->response->setJSON(['success' => false, 'message' => 'File upload failed.']);
     }
 
     $jobId = $this->request->getPost('job_id');
     $jobDetails = $careerModel->find($jobId);
 
     if (!$jobDetails) {
-        return redirect()->back()->withInput()->with('error', 'Invalid job ID.');
+        return $this->response->setJSON(['success' => false, 'message' => 'Invalid job ID.']);
     }
 
     $dateTime = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
@@ -172,10 +172,10 @@ class CareerController extends BaseController
         $sesClient = new SesClient([
             'version' => 'latest',
             'region'  => getenv('AWS_REGION'),
-        'credentials' => [
-            'key'    => getenv('AWS_ACCESS_KEY'),
-            'secret' => getenv('AWS_SECRET_KEY'),
-        ],
+            'credentials' => [
+                'key'    => getenv('AWS_ACCESS_KEY'),
+                'secret' => getenv('AWS_SECRET_KEY'),
+            ],
         ]);
 
         $adminEmail = 'sr.developer@mvgdigital.com';
@@ -207,13 +207,12 @@ class CareerController extends BaseController
                     ),
                 ],
             ]);
+            return $this->response->setJSON(['success' => true, 'message' => 'Application submitted successfully.']);
         } catch (AwsException $e) {
-            return redirect()->to('/career')->with('error', 'Application submitted successfully, but email notification failed: ' . $e->getMessage());
+            return $this->response->setJSON(['success' => false, 'message' => 'Application submitted successfully, but email notification failed: ' . $e->getMessage()]);
         }
-
-        return redirect()->to('/career')->with('message', 'Application submitted successfully');
     } else {
-        return redirect()->back()->withInput()->with('error', 'Failed to save the application.');
+        return $this->response->setJSON(['success' => false, 'message' => 'Failed to save the application.']);
     }
 }
 

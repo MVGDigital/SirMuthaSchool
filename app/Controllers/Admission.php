@@ -175,12 +175,11 @@ class Admission extends BaseController
 
         $data = [
             'admissions' => $application_details,
-            'banners' => $banners,
             'page_title' => 'Print Application',
             'page_code' => 'print-view'
         ];
 
-        return view('header');
+        return view('adminprint_view', $data);
     }
 
     public function listAdmissions()
