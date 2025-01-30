@@ -93,7 +93,7 @@
                                                         href="<?php echo base_url('admission/adminprintView_lahoc/' . $admission['registration_number']); ?>">View</a>
                                                 </td>
                                                 <td>
-                                                    <a href="<?php echo base_url('admission/delete/' . $admission['id']); ?>"
+                                                    <a href="<?php echo base_url('adm1n/admission/delete/' . $admission['id']); ?>"
                                                         onclick="return confirm('Are you sure you want to delete this record?');">Delete</a>
                                                 </td>
                                             </tr>
@@ -118,34 +118,92 @@
         <script>
         $(document).ready(function() {
             $('#admissionsTable').DataTable({
-                dom: '<"row"<"col-md-4"l><"col-md-4 text-center"B><"col-md-4"f>>' +
-                    '<"row"<"col-12"tr>>' +
-                    '<"row"<"col-md-6"i><"col-md-6"p>>', // Layout structure
+                dom: '<"row"<"col-sm-12 mb-2 text-md-right"B>>' + // Buttons (Export) on the right
+                    '<"row"<"col-sm-6"l><"col-sm-6"f>>' + // Length on the left, Search on the right
+                    '<"row"<"col-sm-12"tr>>' + // Table
+                    '<"row"<"col-sm-12"i><"col-sm-12"p>>', // Layout structure
                 buttons: [{
                     extend: 'excelHtml5',
                     text: 'Export to Excel',
                     className: 'btn btn-success',
+                    exportOptions: {
+                        columns: ':visible', // Export all visible columns
+                    },
                     action: function(e, dt, node, config) {
                         // Get all rows data
                         var data = dt.rows({
                             search: 'applied'
                         }).data().toArray();
 
-                        // Manually include hidden data
-                        var extendedData = data.map(function(row) {
-                            row.push(row.registration_number); // Add hidden field
-                            row.push(row.dob); // Add another hidden field
-                            return row;
-                        });
+                        // Create a new workbook
+                        var wb = XLSX.utils.book_new();
+                        var ws_data = [];
 
-                        // Export the data
-                        var excelData = new Blob([JSON.stringify(extendedData)], {
-                            type: "application/vnd.ms-excel"
-                        });
-                        var link = document.createElement('a');
-                        link.href = URL.createObjectURL(excelData);
-                        link.download = "admissionslist.xlsx";
-                        link.click();
+                        // Add headers
+                        ws_data.push(['S.No', 'Registration Number', 'Student Name',
+                            'Date of Birth', 'Gender',
+                            'Nationality', 'State', 'Religion', 'Caste',
+                            'Community',
+                            'Residential Address', 'Father Name', 'Father Religion',
+                            'Father Language', 'Father Qualification',
+                            'Father Occupation',
+                            'Father Mobile', 'Father Email', 'Mother Name',
+                            'Mother Religion',
+                            'Mother Language', 'Mother Qualification',
+                            'Mother Occupation',
+                            'Mother Mobile', 'Mother Email', 'Guardian Name',
+                            'Guardian Relation', 'Guardian Occupation',
+                            'Guardian Mobile',
+                            'Guardian Email', 'Guardian Address', 'Sibling Name',
+                            'Other Info'
+                        ]);
+
+                        // Add data rows for all admissions
+                        <?php $serial = 1; ?>
+                        <?php foreach ($admissions as $admission): ?>
+                        ws_data.push([
+                            <?php echo $serial++; ?>, // S.No
+                            '<?php echo esc($admission['registration_number']); ?>', // Registration Number
+                            '<?php echo esc($admission['student_name']); ?>', // Student Name
+                            '<?php echo esc(date('d-M-Y', strtotime($admission['dob']))); ?>', // Date of Birth
+                            '<?php echo esc($admission['gender']); ?>', // Gender
+                            '<?php echo esc($admission['nationality']); ?>', // Nationality
+                            '<?php echo esc($admission['state']); ?>', // State
+                            '<?php echo esc($admission['religion']); ?>', // Religion
+                            '<?php echo esc($admission['caste']); ?>', // Caste
+                            '<?php echo esc($admission['community']); ?>', // Community
+                            '<?php echo esc($admission['residential_address']); ?>', // Residential Address
+                            '<?php echo esc($admission['father_name']); ?>', // Father Name
+                            '<?php echo esc($admission['father_religion']); ?>', // Father Religion
+                            '<?php echo esc($admission['father_language']); ?>', // Father Language
+                            '<?php echo esc($admission['father_qualification']); ?>', // Father Qualification
+                            '<?php echo esc($admission['father_occupation']); ?>', // Father Occupation
+                            '<?php echo esc($admission['father_mobile']); ?>', // Father Mobile
+                            '<?php echo esc($admission['father_email']); ?>', // Father Email
+                            '<?php echo esc($admission['mother_name']); ?>', // Mother Name
+                            '<?php echo esc($admission['mother_religion']); ?>', // Mother Religion
+                            '<?php echo esc($admission['mother_language']); ?>', // Mother Language
+                            '<?php echo esc($admission['mother_qualification']); ?>', // Mother Qualification
+                            '<?php echo esc($admission['mother_occupation']); ?>', // Mother Occupation
+                            '<?php echo esc($admission['mother_mobile']); ?>', // Mother Mobile
+                            '<?php echo esc($admission['mother_email']); ?>', // Mother Email
+                            '<?php echo esc($admission ['guardian_name']); ?>', // Guardian Name
+                            '<?php echo esc($admission['guardian_relation']); ?>', // Guardian Relation
+                            '<?php echo esc($admission['guardian_occupation']); ?>', // Guardian Occupation
+                            '<?php echo esc($admission['guardian_mobile']); ?>', // Guardian Mobile
+                            '<?php echo esc($admission['guardian_email']); ?>', // Guardian Email
+                            '<?php echo esc($admission['guardian_address']); ?>', // Guardian Address
+                            '<?php echo esc($admission['sibling_name']); ?>', // Sibling Name
+                            '<?php echo esc($admission['other_info']); ?>' // Other Info
+                        ]);
+                        <?php endforeach; ?>
+
+                        // Create worksheet and add data
+                        var ws = XLSX.utils.aoa_to_sheet(ws_data);
+                        XLSX.utils.book_append_sheet(wb, ws, "Admissions");
+
+                        // Export the workbook
+                        XLSX.writeFile(wb, "admissions-lahoc-list.xlsx");
                     }
                 }],
                 responsive: true,

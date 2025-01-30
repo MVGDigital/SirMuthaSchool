@@ -54,16 +54,13 @@ class Admission extends BaseController
         return view('header', $data) . view('admission_lahoc', $data) . view('footer');
     }
 
-    public function submit()    // This method will be called when the form is submitted
+    public function submit()
     {
-        // Instantiate the model
         $admissionModel = new AdmissionModel();
         
-        // Retrieve input from the form
         $formData = $this->request->getPost();
 
-        // Generate the next registration number
-        $db = \Config\Database::connect(); // Connect to the database
+        $db = \Config\Database::connect();
         $registration_number = '';
         $sql = "SELECT registration_number FROM admissions ORDER BY id DESC LIMIT 1";
         $query = $db->query($sql);
@@ -81,7 +78,7 @@ class Admission extends BaseController
             $registration_number = sprintf("%03d", $registration_number);
         }
 
-        // Save the valid data along with the registration number into the database
+        try{
         $admissionModel->save([
             'name' => $formData['name'],
             'dob' => $formData['dob'],
@@ -118,24 +115,23 @@ class Admission extends BaseController
             'guardian_address' => $formData['guardian_address'],
             'sibling_name' => $formData['sibling_name'],
             'other_info' => $formData['other_info'],
-            
             'registration_number' => $registration_number
         ]);
+    } catch (\Exception $e) {
+        log_message('error', 'Database save error: ' . $e->getMessage());
+        return redirect()->back()->with('error', 'Failed to save admission data. Please try again.');
+    }
 
-        // Redirect to a success page with the registration number
         return redirect()->to('/admission/success?registration_number=' . $registration_number);
     }
 
     public function success()
     {
-        // Get the registration number from the query parameter
         $registration_number = $this->request->getGet('registration_number');
 
-        // Retrieve banners
         $bannerModel = new BannerModel();
         $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
 
-        // Prepare data for the view
         $data = [
             'message' => 'Your admission form has been submitted successfully!',
             'registration_number' => $registration_number,
@@ -144,7 +140,6 @@ class Admission extends BaseController
             'page_code' => 'application-success'
         ];
 
-        // Load the header, success page, and footer
         return view('header', $data) . view('success_page', $data) . view('footer');
     }
 
@@ -157,11 +152,9 @@ class Admission extends BaseController
         $admissionModel = new AdmissionModel();
         $application_details = $admissionModel->where('registration_number', $registration_number)->first();
 
-        // Retrieve banners
         $bannerModel = new BannerModel();
         $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
 
-        // Prepare data for the view
         $data = [
             'admissions' => $application_details,
             'banners' => $banners,
@@ -169,7 +162,6 @@ class Admission extends BaseController
             'page_code' => 'print-view'
         ];
 
-        // Load the header, print view, and footer
         return view('header', $data) . view('print_view', $data) . view('footer');
     }
     public function adminprintView($registration_number)
@@ -181,11 +173,6 @@ class Admission extends BaseController
         $admissionModel = new AdmissionModel();
         $application_details = $admissionModel->where('registration_number', $registration_number)->first();
 
-        // Retrieve banners
-        $bannerModel = new BannerModel();
-        $banners = $bannerModel->where('page', 'admission')->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
-
-        // Prepare data for the view
         $data = [
             'admissions' => $application_details,
             'banners' => $banners,
@@ -193,8 +180,7 @@ class Admission extends BaseController
             'page_code' => 'print-view'
         ];
 
-        // Load the header, print view, and footer
-        return view('header', $data) . view('adminprint_view', $data) . view('footer');
+        return view('header');
     }
 
     public function listAdmissions()
