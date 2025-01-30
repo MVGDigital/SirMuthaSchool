@@ -53,7 +53,7 @@
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
-                <div class="sectionTitle-blue lft-rgt-content changeTitleColor">
+                <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Adventure <span> Camps</span></h3>
                     <p>Adventure camps offer immersive experiences that extend beyond the classroom, broadening students' horizons and enhancing practical skills. These thoughtfully designed expeditions build self-confidence, resilience, and teamwork. Activities such as camping, and trekking encourage a deeper connection with nature and nurture essential life skills. Each adventure creates lasting memories and connections, equipping students to face life's challenges with determination.
                     </p>
