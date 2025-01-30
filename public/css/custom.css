@@ -1582,6 +1582,9 @@ main{
     padding: 50px;
     background-color: #feffff1c;
 }
+.contactForm{
+    width: 100%;
+}
 #contact-form{
     /* background-color: #FFF; */
     margin-top: 40px;
@@ -1772,6 +1775,9 @@ label.error{
     border-radius: 4px;
     display: flex!important;
 }
+.slick-arrow{
+    z-index: 9!important;
+}
 .slick-vertical .slick-slide:active,
 .slick-vertical .slick-slide:focus,
 .slick-arrow:hover,
@@ -1901,7 +1907,13 @@ label.error{
     color: var(--color-white);
 }
 #sports.paginationCenter .splide__pagination{
-    bottom: -6%!important;
+    bottom: -5.5%!important;
+}
+#sports.paginationCenter .splide__arrow--prev{
+    left: -8em;
+}
+#sports.paginationCenter .splide__arrow--next{
+    right: -8em;
 }
 #annual-event .splide__slide{
     height: auto!important;
