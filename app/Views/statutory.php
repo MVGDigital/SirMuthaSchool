@@ -46,7 +46,7 @@
                 the management in this regard is final.</p>
         </div>
     </section>
-    <div class="overlay-wave-img">
+    <div class="overlay-wave-img statutorySecBanner">
         <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid"
             alt="Teacher's Discussion">
     </div>
