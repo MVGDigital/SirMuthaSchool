@@ -25,7 +25,7 @@
                 <li><a href="<?= base_url('admission#application_process') ?>" class="active">Application Process</a></li>
                 <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
                 <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
-                <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
+                <li><a href="<?= base_url('admission#admission_enquiry') ?>">Admission Enquiry Form</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -148,7 +148,7 @@
     <!-- Terms & Conditions -->
 
     <!-- Admission Enquiry Form -->
-    <section class="container-space wave-with-bgImg ptb-80">
+    <section class="container-space wave-with-bgImg ptb-80" id="admission_enquiry">
         <div class="sectionTitle-blue mb-80">
             <h3>Admission Enquiry <span> Form</span></h3>
         </div>

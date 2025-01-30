@@ -22,7 +22,7 @@
     <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('announcements') ?>" class="active">Announcements</a></li>
+                <li><a href="<?= base_url('announcements#announcements') ?>" class="active">Announcements</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -44,7 +44,7 @@
     <!-- Section Menus -->
 
 
-    <section class="container-space blueBg-Sec ptb-80">
+    <section class="container-space blueBg-Sec ptb-80" id="announcements">
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3><span>Announcements</span></h3>
         </div>
