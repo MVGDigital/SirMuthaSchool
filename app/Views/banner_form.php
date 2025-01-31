@@ -31,7 +31,7 @@
                             </div>
 
                             <div class="card-body pt-0">
-                                <form id="bannerForm"
+                                <form
                                     action="<?= isset($banner) ? base_url("adm1n/banner/update/{$banner['banner_id']}") : base_url("adm1n/banner/upload") ?>"
                                     method="post" enctype="multipart/form-data">
                                     <div class="row">
