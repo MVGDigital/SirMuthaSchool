@@ -1024,12 +1024,14 @@ $(document).ready(function() {
                 processData: false,
                 success: function(response) {
                     setTimeout(() => {
-                        $("#response-message").html('<div class="alert alert-success">' +
-                        response.message + '</div>');
+                        $("#response-message").html(
+                            '<div class="alert alert-success">' +
+                            response.message + '</div>');
 
                         // Scroll to error message
                         $("html, body").animate({
-                            scrollTop: $("#response-message").offset().top - 200
+                            scrollTop: $("#response-message").offset()
+                                .top - 200
                         }, 500);
 
                         // Reset form & restore button state
@@ -1038,14 +1040,16 @@ $(document).ready(function() {
                         loaderBtn.hide();
                         submitBtn.prop("disabled", false);
                         setTimeout(() => {
-                            window.location.href = "<?php echo base_url('career'); ?>";
+                            window.location.href =
+                                "<?php echo base_url('career'); ?>";
                         }, 1000);
                     }, 3000);
                 },
                 error: function(xhr) {
                     setTimeout(() => {
-                        $("#response-message").html('<div class="alert alert-danger">' + xhr
-                        .responseJSON.message + '</div>');
+                        $("#response-message").html(
+                            '<div class="alert alert-danger">' + xhr
+                            .responseJSON.message + '</div>');
 
                         // Restore button state on error
                         buttonText.show();
@@ -1054,10 +1058,11 @@ $(document).ready(function() {
 
                         // Scroll to error message
                         $("html, body").animate({
-                            scrollTop: $("#response-message").offset().top - 200
+                            scrollTop: $("#response-message").offset()
+                                .top - 200
                         }, 500);
 
-                     }, 3000);                    
+                    }, 3000);
                 }
             });
         }
@@ -1167,8 +1172,17 @@ $(document).ready(function() {
                     );
                     $(form)[0].reset();
 
+                    // Scroll to message
+                    $("html, body").animate({
+                        scrollTop: $("#responseMessage").offset().top - 200
+                    }, 500);
+
+                    // Hide message after 3 seconds
                     setTimeout(function() {
-                        $('#responseMessage').html('');
+                        $('#responseMessage').fadeOut("slow", function() {
+                            $(this).html("")
+                        .show(); // Reset message after fade out
+                        });
                     }, 3000);
                 },
                 error: function(xhr, status, error) {
@@ -1176,11 +1190,20 @@ $(document).ready(function() {
                         '<p class="error-message text-center" style="color: #ff1b1b;">There was an error while submitting your message. Please try again later.</p>'
                     );
 
+                    // Scroll to message
+                    $("html, body").animate({
+                        scrollTop: $("#responseMessage").offset().top - 200
+                    }, 500);
+
+                    // Hide message after 3 seconds
                     setTimeout(function() {
-                        $('#responseMessage').html('');
+                        $('#responseMessage').fadeOut("slow", function() {
+                            $(this).html("").show();
+                        });
                     }, 3000);
                 }
             });
+
         }
     });
 });
