@@ -2225,6 +2225,7 @@ label.error{
 }
 .alert{
     text-align: center;
+    text-transform: capitalize;
 }
 .has-search {
     width: 100%;

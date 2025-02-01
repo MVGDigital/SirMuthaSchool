@@ -103,6 +103,7 @@ $routes->get('heritageclub', 'BeyondCurriculum::heritageclub');
 $routes->get('mathsclub', 'BeyondCurriculum::mathsclub');
 $routes->get('ecoclub', 'BeyondCurriculum::ecoclub');
 $routes->get('interactclub', 'BeyondCurriculum::interactclub');
+$routes->get('past-annual-events', 'BeyondCurriculum::pastannualevents');
 });
 
 //Beyond Curriculum
