@@ -33,7 +33,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Events From <span>Sir Mutha</span></h3>
-            <h6>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From academic achievements to cultural celebrations, discover moments that unite our community and showcase the talents and accomplishments of our students and staff. Stay informed and connected through this engaging platform.</h6>
+            <h6>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From
+                academic achievements to cultural celebrations, discover moments that unite our community and showcase
+                the talents and accomplishments of our students and staff. Stay informed and connected through this
+                engaging platform.</h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -49,8 +52,7 @@
                         <span class="fa fa-search form-control-feedback">
                             <img src="<?= base_url('images/searchIcon.svg') ?>" alt="Search icon">
                         </span>
-                        <input type="text" class="searchInput form-control" name="keyword"
-                            placeholder="Search Events">
+                        <input type="text" class="searchInput form-control" name="keyword" placeholder="Search Events">
                     </div>
                     <select class="selectDropdown" id="jobCategory" name="month" onchange="this.form.submit()">
                         <option value="" <?= empty($selected_month) ? 'selected' : '' ?>>Select Month</option>
@@ -115,8 +117,8 @@
         <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container pastEvent-items row w100">
             <div class="col-12 col-md-12 col-lg-5 col-xl-4">
-                <img src="<?= base_url('images/events/past-event-1.jpg') ?>" class="img-fluid w100"
-                    alt="<?= esc($event['event_name']) ?>">
+                <img src="<?= base_url('uploads/desktop_images/' . esc($event['desktop_image'])) ?>"
+                    class="img-fluid w100" alt="<?= esc($event['event_name']) ?>">
             </div>
             <div class="col-12 col-md-12 col-lg-7 col-xl-8 mobContTop-p50 ">
                 <h6><?= esc($event['event_name']) ?> - <?= date('Y', strtotime($event['event_date'])) ?></h6>

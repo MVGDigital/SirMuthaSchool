@@ -238,7 +238,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/art.png') ?>"
+                                    <img src="<?= base_url('images/facilities/art_craft.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
@@ -259,7 +259,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/technology.png') ?>"
+                                    <img src="<?= base_url('images/facilities/network_classrooms.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
-                                    <img src="<?= base_url('images/facilities/health_centre.png') ?>"
+                                    <img src="<?= base_url('images/facilities/health.png') ?>"
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>

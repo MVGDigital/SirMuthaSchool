@@ -155,6 +155,18 @@
                                                             <option value="healthandsaftey"
                                                                 <?= isset($banner) && $banner['page'] == 'healthandsaftey' ? 'selected' : '' ?>>
                                                                 Health and Saftey</option>
+                                                            <option value="heritageclub"
+                                                                <?= isset($banner) && $banner['page'] == 'heritageclub' ? 'selected' : '' ?>>
+                                                                Heritage Club</option>
+                                                            <option value="mathsclub"
+                                                                <?= isset($banner) && $banner['page'] == 'mathsclub' ? 'selected' : '' ?>>
+                                                                Maths Club</option>
+                                                            <option value="ecoclub"
+                                                                <?= isset($banner) && $banner['page'] == 'ecoclub' ? 'selected' : '' ?>>
+                                                                Eco Club</option>
+                                                            <option value="interactclub"
+                                                                <?= isset($banner) && $banner['page'] == 'interactclub' ? 'selected' : '' ?>>
+                                                                Interact Club</option>
                                                             <option value="under-construction"
                                                                 <?= isset($banner) && $banner['page'] == 'under-construction' ? 'selected' : '' ?>>
                                                                 Under Construction</option>

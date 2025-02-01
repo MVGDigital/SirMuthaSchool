@@ -114,10 +114,6 @@
                                         Centre/Pre-KG</a>
                                 </li>
                                 <!--end nav-item-->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?= base_url('adm1n/faq'); ?>">FAQ</a>
-                                </li>
-                                <!--end nav-item-->
                             </ul>
                             <!--end nav-->
                         </div>

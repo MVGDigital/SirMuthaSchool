@@ -42,7 +42,7 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h4 class="card-title">Admissions List</h4>
+                                        <h4 class="card-title">Admissions LAHOC List</h4>
                                     </div>
                                 </div>
                             </div>

@@ -83,11 +83,13 @@
     <!-- CBSE Curriculum -->
 
     <!--  Teacher Enrichment -->
-    <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80"  id="teacherenrichment" >
+    <section class="container-space bgImg-with-center-content teacher-enrichment-img ptb-80" id="teacherenrichment">
         <div class="col-lg-9 m-auto">
             <div class="center-card">
                 <div class="sectionTitle-blue detailpagecontent">
-                    <h3>Teacher<span> Enrichment</span></h3>
+                    <h3 style="text-transform: capitalize !important;">
+                        Teacher <span style="text-transform: capitalize !important;">Enrichment</span>
+                    </h3>
                     <p>The school conducts teacher enrichment programmes and workshops focusing on mental health,
                         classroom management strategies, and overall health and well-being. These programmes address
                         academic, co-curricular, and life-skill domains, ensuring a dynamic learning environment. In
@@ -110,8 +112,10 @@
     <!--  Annual Pedagogical Policy -->
     <section id="annulapolicy">
 
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt="" id="Occupational">
-        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt="" id="Occupational">
+        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt=""
+            id="Occupational">
+        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt=""
+            id="Occupational">
 
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
