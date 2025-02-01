@@ -734,5 +734,8 @@
                 </ul>
             </div>
         </div>
+        <div class="blueBtn-medium text-center">
+            <a href="<?= base_url('past-annual-events'); ?>">Know More</a>
+        </div>
     </section>
     <!-- Annual Events -->
