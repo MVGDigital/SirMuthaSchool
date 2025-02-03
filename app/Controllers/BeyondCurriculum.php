@@ -78,6 +78,34 @@ class BeyondCurriculum extends BaseController
         return view('header', $data) . view('interactclub', $data) . view('footer');
     }
     
+    public function literaryclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'literaryclub')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Literary Club',
+            'page_code' => 'literaryclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('literary-club', $data) . view('footer');
+    }
+    
+    public function languageclub()
+    {
+        $bannerModel = new BannerModel();
+        $banner = $bannerModel->where('page', 'languageclub')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Language Club',
+            'page_code' => 'languageclub',
+            'banner' => $banner
+        ];
+
+        return view('header', $data) . view('language-club', $data) . view('footer');
+    }
+    
     public function pastannualevents()
     {
         $bannerModel = new BannerModel();

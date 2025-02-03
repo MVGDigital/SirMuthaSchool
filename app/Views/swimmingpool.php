@@ -75,6 +75,25 @@
         </div>
     </section>
     <!-- Co-Curricular -->
+
+    <!-- Video Section -->
+    <section id="campusVideo" class="admsn-PageVideo pb-60">
+        <div class="col-lg-10 m-auto">
+            <?php if (!empty($video)) : ?>
+            <video id="sir-mutha-campus" playsinline>
+                <source src="<?= base_url('uploads/videos/' . $video['video_file']); ?>" type="video/mp4">
+            </video>
+            <?php endif; ?>
+
+            <!-- Play icon and text overlay -->
+            <div id="playOverlayBtn" class="playOverlay">
+                <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
+                <span class="playText">Play</span>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section -->
+     
     <section class="container-space ptb-80">
         <div class="Panel">
             <div class="Panel-body">

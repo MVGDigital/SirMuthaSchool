@@ -136,7 +136,6 @@
                 <h6 class="light-blue"><b>To ensure students are engaged and involved in their learning, we personalise
                         learning in the following ways:</b></h6>
                 <ul class="content-lists">
-                    <li>Carefully planned curriculum based on each individual child’s needs which includes:</li>
                     <li>Emphasis on prior knowledge</li>
                     <li>Stress on individual interests</li>
                     <li>Focus on individual learning styles</li>

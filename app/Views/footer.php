@@ -303,6 +303,81 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 <?php endif; ?>
+<?php if ($page_code === 'swimmingpool'): ?>
+
+$(document).ready(function() {
+    var video = $('#sir-mutha-campus').get(0); // Get the video element
+    var playOverlay = $('#playOverlayBtn'); // Play overlay button
+    var isUserPaused = false; // Track if the user explicitly paused the video
+
+    // Ensure the video is muted for autoplay
+    video.muted = true;
+
+    // Use IntersectionObserver to detect visibility
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                console.log('Video is in view');
+                if (!isUserPaused) {
+                    video.play().catch(function(error) {
+                        console.error('Autoplay prevented:', error);
+                    });
+                }
+            } else {
+                console.log('Video is out of view');
+                video.pause();
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(document.querySelector('#campusVideo'));
+
+    // Hide overlay when the video starts playing
+    video.addEventListener('play', function() {
+        playOverlay.addClass('hidden');
+        console.log('Video started playing');
+    });
+
+    // Show overlay when the video is paused or ended
+    video.addEventListener('pause', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video paused');
+    });
+
+    video.addEventListener('ended', function() {
+        playOverlay.removeClass('hidden');
+        console.log('Video ended');
+    });
+
+    // Play or pause the video when overlay is clicked
+    playOverlay.click(function() {
+        console.log('Play overlay clicked');
+        if (video.paused) {
+            video.play();
+            playOverlay.addClass('hidden');
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            playOverlay.removeClass('hidden');
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+
+    // Auto-play when clicking the video itself
+    $('#sir-mutha-campus').click(function() {
+        console.log('Video clicked');
+        if (video.paused) {
+            video.play();
+            isUserPaused = false; // Reset flag when user resumes playing
+        } else {
+            video.pause();
+            isUserPaused = true; // Set flag when user pauses
+        }
+    });
+});
+<?php endif; ?>
 
 
 <?php if ($page_code === 'computerlab'): ?>
@@ -1181,7 +1256,7 @@ $(document).ready(function() {
                     setTimeout(function() {
                         $('#responseMessage').fadeOut("slow", function() {
                             $(this).html("")
-                        .show(); // Reset message after fade out
+                                .show(); // Reset message after fade out
                         });
                     }, 3000);
                 },

@@ -43,7 +43,7 @@ class Facilities extends BaseController
         $bannerModel = new BannerModel();
         $videoBannerModel = new VideoBannerModel();
         $banner = $bannerModel->where('page', 'swimmingpool')->where('is_published', 1)->first();
-        $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
+        $video = $videoBannerModel->where('page', 'swimmingpool')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Swimming Pool Facility',
@@ -105,6 +105,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('hockeyfield', $data) . view('footer');
     }
+
     public function biologylab()
     {
         $bannerModel = new BannerModel();
@@ -121,6 +122,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('biologylab', $data) . view('footer');
     }
+
     public function library()
     {
         $bannerModel = new BannerModel();
@@ -137,6 +139,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('library', $data) . view('footer');
     }
+
     public function musicandartroom()
     {
         $bannerModel = new BannerModel();
@@ -153,6 +156,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('musicandartroom', $data) . view('footer');
     }
+
     public function networkedclassrooms()
     {
         $bannerModel = new BannerModel();
@@ -169,6 +173,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('networkedclassrooms', $data) . view('footer');
     }
+
     public function chemistrylab()
     {
         $bannerModel = new BannerModel();
@@ -185,6 +190,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('chemistrylab', $data) . view('footer');
     }
+
     public function physicslab()
     {
         $bannerModel = new BannerModel();
@@ -201,6 +207,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('physicslab', $data) . view('footer');
     }
+
     public function artandcraft()
     {
         $bannerModel = new BannerModel();
@@ -217,6 +224,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('artandcraft', $data) . view('footer');
     }
+
     public function technology()
     {
         $bannerModel = new BannerModel();
@@ -233,6 +241,7 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('technology', $data) . view('footer');
     }
+
     public function healthandsaftey()
     {
         $bannerModel = new BannerModel();
@@ -249,5 +258,21 @@ class Facilities extends BaseController
 
         return view('header', $data) . view('healthandsaftey', $data) . view('footer');
     }
-    
+
+    public function greencampus()
+    {
+        $bannerModel = new BannerModel();
+        $videoBannerModel = new VideoBannerModel();
+        $banner = $bannerModel->where('page', 'greencampus')->where('is_published', 1)->first();
+        $video = $videoBannerModel->where('page', 'greencampus')->where('is_published', 1)->first();
+
+        $data = [
+            'page_title' => 'Green Campus',
+            'page_code' => 'greencampus',
+            'banner' => $banner,
+            'video' => $video
+        ];
+
+        return view('header', $data) . view('green-campus', $data) . view('footer');
+    }
 }

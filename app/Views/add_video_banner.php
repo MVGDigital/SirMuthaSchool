@@ -85,9 +85,9 @@
                                                             <option value="admission"
                                                                 <?= isset($banner) && $banner['page'] == 'admission' ? 'selected' : '' ?>>
                                                                 Admission</option>
-                                                            <option value="parentLanding"
-                                                                <?= isset($banner) && $banner['page'] == 'parentLanding' ? 'selected' : '' ?>>
-                                                                Parents</option>
+                                                            <option value="swimmingpool"
+                                                                <?= isset($banner) && $banner['page'] == 'swimmingpool' ? 'selected' : '' ?>>
+                                                                Swimming Pool</option>
                                                         </select>
                                                     </div>
                                                 </div>
