@@ -421,11 +421,12 @@ main{
 }
 .whiteLine {
     width: 1px;
-    height: 100% !important;
+    height: 85% !important;
     border: 1px solid #FFFF;
     color: #FFF;
     background-color: #FFFF;
     opacity: 1;
+    margin-bottom: auto;
 }
 .subMenus .subMenuItems ul li{
     font-size: 18px;

@@ -19,14 +19,13 @@
     <!-- Banner Section -->
 
     <!-- Section Menus -->
-    <section class="container-space innerMenus-sec" id="academicfacility">
+    <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
-                <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
-                <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
+                <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
+                <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
+                <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
+                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -35,9 +34,19 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Networked <span>classrooms</span></h3>
-            <h6>Experience the future of education with our networked classrooms and interactive smart boards. These advanced tools foster collaboration, enhance engagement, and bring lessons to life with dynamic visuals and seamless connectivity. Empowering students to explore, learn, and excel in a technology-driven learning environment.</h6>
+            <h3>About <span>CBSE</span></h3>
 
+            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+                education system that nurtures excellence in every sphere of human endeavour.
+                The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
+                vitality among its learners.
+                It strives to create a learning process and environment that empowers future citizens to emerge as
+                global leaders in the evolving knowledge society.
+                The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
+                learners.
+                It is committed to offering a stress-free learning environment that cultivates competent, confident, and
+                enterprising individuals who promote harmony and peace.
+            </h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -47,9 +56,13 @@
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Networked classroom <span>facility</span></h3>
-                        <p >Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
-                        <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods. </p>
+                    <h3>Teacher <span>Enrichment</span></h3>
+                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information
+                        fast
+                        and more effectively.</p>
+                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of
+                        teaching
+                        help students learn a concept that is difficult to understand through traditional methods. </p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
@@ -58,16 +71,18 @@
             </div>
         </div>
     </section>
-     <!-- Overview section -->
-      
-    <!-- Co-Curricular -->
+    <!-- Overview section -->
+
+    <!-- Teacher Enrichment Gallery -->
     <section class="container-space ptb-80">
         <div class="Panel">
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Networked Classroom <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected, modern classrooms."</h6>
+                        <h3>Teacher Enrichment <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
+                            modern
+                            classrooms."</h6>
                     </div>
 
                     <div class="row w100 m-0">
@@ -100,12 +115,4 @@
             </div>
         </div>
     </section>
-    <style>
-    p.facilitycontent {
-        font-size: 22px;
-        line-height: 35px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        color: var(--color-inActive);
-    }
-    </style>
+    <!-- Teacher Enrichment Gallery -->

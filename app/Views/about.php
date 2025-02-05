@@ -54,7 +54,7 @@
         <div class="row counter col-lg-10 m-auto">
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="176">0</h6>
-                <p>Montessori Students</p>
+                <p>kindergarten Students</p>
             </div>
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="66">0</h6>

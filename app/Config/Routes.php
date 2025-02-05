@@ -47,7 +47,7 @@ $routes->get('/visionandmission', 'About::visionandmission');
 //Academics page
 $routes->group('academics', function ($routes) {
     $routes->get('', 'Academics::index');
-    $routes->get('annulapolicy', 'Academics::annulapolicy');
+    $routes->get('teacher-enrichment', 'Academics::teacherEnrichment');
 });
 //Facilities
 $routes->group('facilities', function ($routes) {
