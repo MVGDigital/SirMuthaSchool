@@ -66,6 +66,7 @@ $routes->group('facilities', function ($routes) {
     $routes->get('artandcraft', 'Facilities::artandcraft');
     $routes->get('technology', 'Facilities::technology');
     $routes->get('healthandsaftey', 'Facilities::healthandsaftey');
+    $routes->get('green-campus', 'Facilities::greencampus');
 });
 
 //Statutory
@@ -104,6 +105,8 @@ $routes->get('mathsclub', 'BeyondCurriculum::mathsclub');
 $routes->get('ecoclub', 'BeyondCurriculum::ecoclub');
 $routes->get('interactclub', 'BeyondCurriculum::interactclub');
 $routes->get('past-annual-events', 'BeyondCurriculum::pastannualevents');
+$routes->get('literary-club', 'BeyondCurriculum::literaryclub');
+$routes->get('language-club', 'BeyondCurriculum::languageclub');
 });
 
 //Beyond Curriculum
