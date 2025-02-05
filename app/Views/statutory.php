@@ -26,30 +26,7 @@
                         Compliances</a></li>
             </ul>
         </div>
-        <div class="pageTitleLine col-lg-8 m-auto">
-            <hr>
-            <img src="<?= base_url('images/title-logo.svg') ?>" alt="Sir Mutha Logo">
-            <hr>
-        </div>
-        <div class="sectionTitle-white col-lg-10 m-auto withYellowBtn statutarypagecontent">
-            <h3>Compliance <span>Details</span></h3>
-            <p>Students are prohibited from bringing cell phones, discs, walkmans, iPods, or CDs to school. Confiscated
-                items will not be returned.</p>
-            <p>On occasions when it is essential to bring a mobile phone to school, it must be handed over to the school
-                office at the beginning of the day.</p>
-            <p>The Department of Education strictly prohibits students from riding or driving any motorized vehicles.
-            </p>
-            <p>Any communication (request/complaint/excuse) made by parents should be addressed to the Principal and not
-                to the class teacher.</p>
-            <p>Pupils are responsible for the safe custody of their books and belongings.</p>
-            <p>Any damage done to school property will have to be compensated for, and the disciplinary action taken by
-                the management in this regard is final.</p>
-        </div>
     </section>
-    <div class="overlay-wave-img statutorySecBanner">
-        <img src="<?= base_url('images/statutory/compliance-details.png') ?>" class="img-fluid"
-            alt="Teacher's Discussion">
-    </div>
     <!-- Section Menus -->
 
     <!-- Policys -->

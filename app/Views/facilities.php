@@ -157,15 +157,6 @@
     <section class="container-space cardWith-overlay-Btn white-bgImg ptb-80" id="extra-curricular">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Extra <span>Curricular</span></h3>
-            <!--    <h6 class="light-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor-->
-            <!--        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco-->
-            <!--    </h6>-->
-            <!--</div>-->
-            <!--<h6 class="left-line">Getting involved with the arts at Sir Mutha School presents you with many possibilities.-->
-            <!--    It is a chance to create something whether bringing an image to life on canvas or a character to life on-->
-            <!--    stage. It is also an opportunity to acquire something new skills, new tools for creative problem solving,-->
-            <!--    and new opportunities to explore your creative side.</h6>-->
-
             <div class="row m-0 w100 mt-50">
                 <div class="col-lg-6 p-0">
                     <div class="cardWith-Btn">
@@ -382,9 +373,43 @@
     <!-- Special Education -->
 
     <!-- Green Campus -->
+    <section class="container-space" id="greencampus">
+        <div class="ptb-80">
+            <div id="campusVideo" class="pb-60">
+                <div class="col-lg-10 m-auto">
+                    <?php if (!empty($video)) : ?>
+                    <video id="sir-mutha-campus" playsinline>
+                        <source src="<?= base_url('uploads/videos/' . $video['video_file']); ?>" type="video/mp4">
+                    </video>
+                    <?php endif; ?>
+
+                    <!-- Play icon and text overlay -->
+                    <div id="playOverlayBtn" class="playOverlay">
+                        <img src="<?= base_url('images/play.png') ?>" alt="Play Icon" class="playIcon img-fluid">
+                        <span class="playText">Play</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
+                <h3>Green <span>Campus</span></h3>
+
+                <p class="light-blue">
+                    Outbound trips and educational tours, both within the country and beyond our borders, offer a wealth
+                    of benefits, broadening students' horizons by immersing them in diverse cultures and environments.
+                    These adventures provide practical learning experiences that extend well beyond the classroom,
+                    enhancing problem-solving skills and adaptability.
+                    As students navigate new and unfamiliar territories, they cultivate independence and self-confidence
+                    while forging lasting memories and connections that foster a sense of global citizenship.
+                    From camping and rock climbing to parasailing and microlight flying, these meticulously planned
+                    expeditions instil resilience and teamwork alongside a profound respect for nature.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Green Campus -->
+
+    <!-- Scouts & Guides -->
     <section class="green-campus-sec" id="greencampus">
-              <div id="greenCampus-slider" class="splide paginationCenter fullWidthImg img-overwite-wave">
-                
+        <div id="greenCampus-slider" class="splide paginationCenter fullWidthImg img-overwite-wave">   
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -402,7 +427,8 @@
 
         <div class="container-space wave-yellow-overwireBg ptb-80">
             <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
-                <h3>Green <span>Campus</span></h3>
+        
+                <h3>NCC &<span> Guides</span></h3>
 
                 <p class="light-blue">
                     Outbound trips and educational tours, both within the country and beyond our borders, offer a wealth
@@ -425,4 +451,4 @@
             </div>
         </div>
     </section>
-    <!-- Green Campus -->
+    <!-- Scouts & Guides -->

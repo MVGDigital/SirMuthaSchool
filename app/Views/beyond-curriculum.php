@@ -23,6 +23,7 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
+                <li><a href="<?= base_url('beyond-curriculum#munSec') ?>">MUN</a></li>
                 <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
                 <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
             </ul>
@@ -109,6 +110,52 @@
     </section>
     <!-- Clubs -->
 
+    <!-- MUN -->
+    <section id="munSec" class="blueBg-Sec blue-wave">
+        <div class="sectionTitle-white col-lg-10 m-auto">
+            <h3> Model United Nations <span> (MUN)</span></h3>
+        </div>
+        <div id="mun" class="splide paginationCenter overlayPagination cardSlider mt-50">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="wave-slider-img">
+                            <img src="<?= base_url('images/facilities/faclites_home.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/faclites_homeMob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="wave-slider-img">
+                            <img src="<?= base_url('images/facilities/Arts.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/ArtsMob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="wave-slider-img">
+                            <img src="<?= base_url('images/facilities/library.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/libraryMob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="wave-slider-img">
+                            <img src="<?= base_url('images/facilities/facilities.jpg') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/facilities/facilitiesMob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- MUN -->
+
     <!-- News Letters -->
     <section id="news-letter" class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
@@ -172,7 +219,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="slider slider-nav thumb-image">
                         <div class="thumbnail-image">
