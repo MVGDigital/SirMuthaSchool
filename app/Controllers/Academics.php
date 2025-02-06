@@ -33,19 +33,19 @@ class Academics extends BaseController
 
         return view('header', $data) . view('cbsecurriculum', $data) . view('footer');
     }
-    public function annulapolicy()
+    public function teacherEnrichment()
     {
         $bannerModel = new BannerModel();
         $banner = $bannerModel->where('page', 'academics')->where('is_published', 1)->first();
         
 
         $data = [
-            'page_title' => 'annulapolicy',
-            'page_code' => 'annula_policy',
+            'page_title' => 'Teacher Enrichment',
+            'page_code' => 'teacher-enrichment',
             'banner' => $banner
         ];
 
-        return view('header', $data) . view('annulapolicy', $data) . view('footer');
+        return view('header', $data) . view('teacher-enrichment', $data) . view('footer');
     }
     
     public function biologylab()

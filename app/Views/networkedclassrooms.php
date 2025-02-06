@@ -48,10 +48,8 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Networked classroom <span>facility</span></h3>
-                      <p >Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively. 
-                      </p>
-                               <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods. </p>
-</p>
+                        <p >Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
+                        <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods. </p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
@@ -61,6 +59,7 @@
         </div>
     </section>
      <!-- Overview section -->
+      
     <!-- Co-Curricular -->
     <section class="container-space ptb-80">
         <div class="Panel">

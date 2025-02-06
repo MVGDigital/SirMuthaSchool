@@ -101,7 +101,7 @@
                         teaching methods.
                     </p>
                     <div class="blueBtn-medium">
-                        <a href="<?= base_url('events'); ?>">Know More</a>
+                        <a href="<?= base_url('academics/teacher-enrichment'); ?>">Know More</a>
                     </div>
                 </div>
             </div>

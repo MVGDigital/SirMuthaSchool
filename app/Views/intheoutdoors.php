@@ -34,12 +34,17 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>In the <span>outdoors</span></h3>
-            
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school education system that nurtures excellence in every sphere of human endeavour. 
-            The Board is dedicated to providing quality education that encourages intellectual, social, and cultural vitality among its learners. 
-            It strives to create a learning process and environment that empowers future citizens to emerge as global leaders in the evolving knowledge society. 
-            The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of learners. 
-            It is committed to offering a stress-free learning environment that cultivates competent, confident, and enterprising individuals who promote harmony and peace.
+
+            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+                education system that nurtures excellence in every sphere of human endeavour.
+                The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
+                vitality among its learners.
+                It strives to create a learning process and environment that empowers future citizens to emerge as
+                global leaders in the evolving knowledge society.
+                The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
+                learners.
+                It is committed to offering a stress-free learning environment that cultivates competent, confident, and
+                enterprising individuals who promote harmony and peace.
             </h6>
         </div>
     </section>
@@ -55,9 +60,13 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Adventure <span> Camps</span></h3>
-                    <p>Adventure camps offer immersive experiences that extend beyond the classroom, broadening students' horizons and enhancing practical skills. These thoughtfully designed expeditions build self-confidence, resilience, and teamwork. Activities such as camping, and trekking encourage a deeper connection with nature and nurture essential life skills. Each adventure creates lasting memories and connections, equipping students to face life's challenges with determination.
+                    <p>Adventure camps offer immersive experiences that extend beyond the classroom, broadening
+                        students' horizons and enhancing practical skills. These thoughtfully designed expeditions build
+                        self-confidence, resilience, and teamwork. Activities such as camping, and trekking encourage a
+                        deeper connection with nature and nurture essential life skills. Each adventure creates lasting
+                        memories and connections, equipping students to face life's challenges with determination.
                     </p>
-                   
+
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor-->
                     <!--    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
                     <!--    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat-->
@@ -75,7 +84,10 @@
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3><span>Excursions</span></h3>
 
-                    <p>Excursions offer students a delightful break from routine, combining fun with learning. For students these trips provide opportunities to explore new environments, bond with peers, and experience hands-on learning. Each outing is carefully planned to balance education and enjoyment, making every trip memorable.</p>
+                    <p>Excursions offer students a delightful break from routine, combining fun with learning. For
+                        students these trips provide opportunities to explore new environments, bond with peers, and
+                        experience hands-on learning. Each outing is carefully planned to balance education and
+                        enjoyment, making every trip memorable.</p>
                     <!-- <div class="blueBtn-medium">
                         <a href="<?= base_url('visionandmission') ?>">Know More</a>
                     </div> -->
@@ -91,13 +103,22 @@
 
     <!-- Educational Tours Section-->
     <section id="educational-tour">
-        <img src="<?= base_url('images/intheoutdoors/educationtours.png') ?>" class="img-fluid" alt="" id="Occupational">
+        <img src="<?= base_url('images/intheoutdoors/educationtours.png') ?>" class="img-fluid" alt=""
+            id="Occupational">
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
                 <h3>Educational <span>Tours</span></h3>
-                <h6 class="light-blue">At Sir Mutha School, educational tours are an integral part of holistic learning, offering students opportunities to explore diverse cultures, historical landmarks, and innovative advancements.</h6>
-                <p class="light-blue">These experiences broaden their perspectives, enhance critical thinking, and strengthen their understanding of the world beyond the classroom. The recent tour to Japan provided insights into the country’s rich heritage, technological innovations, and cultural ethos, leaving an indelible impact on the students' minds.</p>
-                <p class="light-blue">Participation in Model United Nations (MUN) conferences, including the prestigious Oxford MUN, empowers our students to enhance their diplomacy, public speaking, and problem-solving skills. By engaging in meaningful debates on global issues, they learn the value of collaboration, leadership, and informed decision-making, enriching their academic and personal development.</p>
+                <h6 class="light-blue">At Sir Mutha School, educational tours are an integral part of holistic learning,
+                    offering students opportunities to explore diverse cultures, historical landmarks, and innovative
+                    advancements.</h6>
+                <p class="light-blue">These experiences broaden their perspectives, enhance critical thinking, and
+                    strengthen their understanding of the world beyond the classroom. The recent tour to Japan provided
+                    insights into the country’s rich heritage, technological innovations, and cultural ethos, leaving an
+                    indelible impact on the students' minds.</p>
+                <p class="light-blue">Participation in Model United Nations (MUN) conferences, including the prestigious
+                    Oxford MUN, empowers our students to enhance their diplomacy, public speaking, and problem-solving
+                    skills. By engaging in meaningful debates on global issues, they learn the value of collaboration,
+                    leadership, and informed decision-making, enriching their academic and personal development.</p>
                 <!--<div class="blueBtn-medium text-center">-->
                 <!--    <a href="#">Know More</a>-->
                 <!--</div>-->
@@ -105,3 +126,47 @@
         </div>
     </section>
     <!-- Educational Tours Section-->
+
+    <!-- Gallery Section -->
+    <section class="container-space ptb-80">
+        <div class="Panel">
+            <div class="Panel-body">
+                <div class="tab-content" id="tab-1">
+                    <div class="sectionTitle-blue col-lg-10 m-auto">
+                        <h3>Teacher Enrichment <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
+                            modern classrooms."
+                        </h6>
+                    </div>
+
+                    <div class="row w100 m-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
