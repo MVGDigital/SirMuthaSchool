@@ -216,6 +216,25 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#sidebarstatutory" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarstatutory">
+                            <i class="fa-solid fa-balance-scale menu-icon"></i>
+                            <!-- Balance scale icon for statutory -->
+                            <span>Statutory</span>
+                        </a>
+                        <div class="collapse" id="sidebarstatutory">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?= base_url('adm1n/statutory'); ?>">Statutory</a>
+                                </li>
+                                <!--end nav-item-->
+                            </ul>
+                            <!--end nav-->
+                        </div>
+                        <!--end sidebarstatutory-->
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#sidebarGallery" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarGallery">
                             <i class="fa-solid fa-image menu-icon"></i>

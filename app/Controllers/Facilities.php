@@ -250,7 +250,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'Health and Saftey',
+            'page_title' => 'Health and Safety',
             'page_code' => 'healthandsaftey',
             'banner' => $banner,
             'video' => $video

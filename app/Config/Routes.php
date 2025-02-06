@@ -236,6 +236,16 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
         $routes->post('toggle-published/(:num)', 'AnnouncementController::togglePublished/$1');
     });
 
+    $routes->group('adm1n/statutory', ['namespace' => 'App\Controllers'], function ($routes) {
+        $routes->get('/', 'StatutoryController::index');
+        $routes->get('create', 'StatutoryController::create');
+        $routes->post('store', 'StatutoryController::store');
+        $routes->get('edit/(:num)', 'StatutoryController::edit/$1');
+        $routes->post('update/(:num)', 'StatutoryController::update/$1');
+        $routes->get('delete/(:num)', 'StatutoryController::delete/$1');
+        $routes->post('toggle-published/(:num)', 'StatutoryController::togglePublished/$1');
+    });
+
     $routes->group('adm1n', function($routes) {
         $routes->get('achievements', 'AchievementController::index');
         $routes->get('achievements/create', 'AchievementController::create');
