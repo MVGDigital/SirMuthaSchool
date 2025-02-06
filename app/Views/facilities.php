@@ -312,7 +312,7 @@
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
                                         class="img-fluid tabImg w100" alt="Lady Andal">
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-white">
                                         <h3>Special <span> Education</span></h3>
                                         <h4 class="text-white">Learning Centre</h4>
@@ -342,7 +342,7 @@
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
                                         class="img-fluid tabImg w100" alt="Lady Andal">
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-7  mobContTop-p-tb50">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-white">
                                         <h3>Special <span> Education</span></h3>
                                         <h4 class="text-white">Occupational Therapy Centre</h4>

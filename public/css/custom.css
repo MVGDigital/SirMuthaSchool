@@ -687,11 +687,11 @@ main{
     color: var(--color-white);
 }
 .innerMenus-sec .sectionTitle-white h3{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .sectionTitle-white p{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     line-height: 25.8px;
     color: var(--color-white);
@@ -714,6 +714,9 @@ main{
     color: var(--color-blue);
 }
 
+.green-campus-sec .sectionTitle-blue h3{
+    margin-top: 30px;
+}
 .sectionTitle-blue h3{
     font-size: 32px;
     line-height: 33px;
@@ -747,14 +750,14 @@ main{
 .sectionTitle-blue h6{
     font-size: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     line-height: 34px;
     font-family: 'Figtree-Regular';
     color: var(--color-white);
 }
 .sectionTitle-blue p{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     line-height: 25.8px;
     font-family: 'Figtree-Regular';
