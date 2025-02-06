@@ -101,13 +101,13 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="row w100 m-0">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 p-0">
                                         <h4>Sir Mutha Venkatasubba Rao</h4>
                                         <p>Sir Mutha Venkatasubba Rao was born on July 18, 1878, and had an illustrious academic career, graduating from Madras Christian College. After earning his B.L. degree, he apprenticed under Sir C.V. Kumaraswamy Sastri and began his legal career in 1903. In 1904, he partnered with his collegemate Mr. Radhakrishnaya, establishing the firm Venkatasubba Rao and Radhakrishnaya. Within a few years, he became a prominent leader at the Bar, specializing in the Original Side of law.</p>
                                     <p>In 1921, he was appointed as a Judge of the Madras High Court, becoming both the first practitioner from the Original Side and the youngest person to sit on its bench. He served for 17 years and retired in 1939 as the acting Chief Justice. His tenure was marked by unwavering dedication to justice, independence, and integrity. In 1939, he was appointed as the Agent for Berar of the Nizam of Hyderabad, where he set the foundation for this prestigious office.</p>
                                     <p>Beyond his legal career, Sir Mutha was deeply committed to social welfare. After marrying Andalamma in 1922, they co-founded The Madras Seva Sadan, a pioneering institution for social reform. A perfectionist in both personal and public life, he valued discipline, cleanliness, and ethical conduct. Known for his kindness and philanthropy, he contributed significantly to social causes, particularly The Madras Seva Sadan. His legacy remains as one of the greatest judges in Madras High Court history and a visionary social reformer dedicated to justice and welfare.</p>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                         <img src="<?= base_url('images/about/founder_sir_mutha.png') ?>"
                                             class="img-fluid w100" alt="Lady Andal">
                                     </div>
@@ -115,7 +115,7 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="row w100 m-0">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 p-0">
                                         <h4>Lady Andal Venkatasubba Rao</h4>
                                         <p>Lady Andal Venkatasubba Rao, born in 1894, emerged as a transformative figure
                                             in a Madras marked by social injustices,
@@ -141,7 +141,7 @@
                                         </p>
 
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                         <img src="<?= base_url('images/about/founder_lady1.png') ?>"
                                             class="img-fluid w100" alt="Lady Andal">
                                     </div>
@@ -149,7 +149,7 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="row w100 m-0">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 p-0">
                                         <h4>Mrs. C. Prema Kumar</h4>
                                         <p>Mrs. C. Prema Kumar, the grandniece of Sir Mutha Venkatasubba Rao and Lady
                                             Andal Venkatasubba Rao and long-time Correspondent of the Lady Andal
@@ -176,7 +176,7 @@
                                         </p>
 
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                         <img src="<?= base_url('images/about/founder_prema.png') ?>"
                                             class="img-fluid w100" alt="Lady Andal">
                                     </div>
@@ -201,14 +201,11 @@
                 <div class="sectionTitle-white lft-rgt-content">
                     <h3>Vision <span class="and">&</span> <span> Mission</span></h3>
 
-                    <p>To provide top-notch scholastic education, with a broad, participative and balanced curriculum
+                    <p>To provide top-notch scholastic education, with a broad, participative and balanced curriculum.
                     </p>
-                    <p>To facilitate a nurturing and safe environment that encourages lifelong learning and personal
-                        growth</p>
-                    <p>To enable students to discover their talents & capabilities and achieve their true potential, so
-                        that they may reach the highest possible standard in everything they undertake</p>
-                    <p>To encourage citizenship and responsibility and teach generosity of spirit, so that students
-                        become self-disciplined and learn to respect themselves, each other, and the world in general.
+                    <p>To facilitate a nurturing and safe environment that encourages lifelong learning and personal growth.</p>
+                    <p>To enable students to discover their talents & capabilities and achieve their true potential, so that they may reach the highest possible standard in everything they undertake.</p>
+                    <p>To encourage citizenship and responsibility and teach generosity of spirit, so that students become self-disciplined and learn to respect themselves, each other, and the world in general.
                     </p>
                     <!-- <div class="blueBtn-medium">
                         <a href="<?= base_url('visionandmission') ?>">Know More</a>

@@ -306,7 +306,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                     <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
                                         class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
@@ -336,7 +336,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                     <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
                                         class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"

@@ -538,6 +538,7 @@ position: unset;
 }
 .center-card{
   margin: 15px 0;
+  padding: 40px 20px!important;
 }
 .cardTitle h4{
   font-size: 20px;

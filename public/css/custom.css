@@ -519,7 +519,8 @@ main{
     height: 100%;
     width: 100%;
     position: absolute;
-    background: #102753;
+    /* background: #102753; */
+
 }
 .bannerTitle{
     position: absolute;
@@ -657,6 +658,8 @@ main{
 .sectionTitle-white h4{
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'Figtree-SemiBold';
 }
 .sectionTitle-white h3 span{
     color: var(--color-orange);
@@ -722,6 +725,8 @@ main{
 .sectionTitle-blue h4{
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'Figtree-SemiBold';
 }
 .sectionTitle-blue h3 span{
     color: var(--color-orange);
@@ -1333,6 +1338,12 @@ main{
 }
 .application-process-img{
     background-image: url(../images/admission/admission-process.jpg);
+}
+.application-process-img .sectionTitle-blue h3{
+    margin-bottom: 40px;
+}
+.application-process-img .center-card{
+    padding: 40px 50px;
 }
 .bgImg-with-center-content p{
     color: var(--color-inActive)!important;
@@ -2361,7 +2372,7 @@ label.error{
 }
 .accordion-container .menu-button {
     width: 100%;
-    padding: 10px 40px;
+    padding: 20px 40px;
     margin-top: 10px;
     font-size: 18px;
     display: flex;
