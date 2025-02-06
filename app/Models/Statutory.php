@@ -10,10 +10,10 @@ class Statutory extends Model
     protected $primaryKey = 'statutory_id';
     protected $allowedFields = ['title', 'description', 'pdf_file', 'published', 'created_at', 'updated_at'];
 
-    public function getStatutory()
+    public function getPublishedDocuments()
     {
         return $this->where('published', 1)
-                    ->orderBy('created_at', 'DESC')
+                    ->orderBy('title', 'ASC')
                     ->findAll();
     }
 }

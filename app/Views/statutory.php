@@ -35,150 +35,20 @@
             <h3>Statutory <span>Compliances</span></h3>
         </div>
         <div class="row m-0 w100 mt-50">
+            <?php foreach ($documents as $document): ?>
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
                 <div class="center-card">
                     <div class="card-content">
                         <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Building Safety Certificate</h5>
+                        <h5><?= esc($document['title']) ?></h5>
                     </div>
                     <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/building-safety-certificate.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Cbse Affiliation Letter</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/cbse-affiliation-letter.pdf') ?>" target="_blank">Know
+                        <a href="<?= base_url('uploads/statutory/' . $document['pdf_file']) ?>" target="_blank">Know
                             More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Calender 2024-2025</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/calender-2024-2025.pdf') ?>" target="_blank">Know
-                            More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Certificate of Recognition</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/certificate-of-recognition.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Fire & Rescue No Objection Certificate</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/fire&rescue-no-objection-certificate.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>No Objection Certificate</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/no-objection-certificate.pdf') ?>" target="_blank">Know
-                            More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Sanitary Certificate</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/sanitary-certificate.pdf') ?>" target="_blank">Know
-                            More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>School Management Committee</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/school-management-committee.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Staff Details with Qualification</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/staff-details-with-qualification.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>TC FORMAT</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/tc-format.pdf') ?>" target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Text Books Revised Order 2024-2025</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/text-books-revised-order-2024-2025.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                <div class="center-card">
-                    <div class="card-content">
-                        <img src="<?= base_url('images/pdf-icon.svg') ?>" class="pdfIcon" alt="">
-                        <h5>Tuition Fees and School Strength</h5>
-                    </div>
-                    <div class="blueBtn-medium">
-                        <a href="<?= base_url('statutorydocument/tuition-fees-and-school-strength.pdf') ?>"
-                            target="_blank">Know More</a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </section>
 

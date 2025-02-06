@@ -88,6 +88,9 @@
                                                             <option value="swimmingpool"
                                                                 <?= isset($banner) && $banner['page'] == 'swimmingpool' ? 'selected' : '' ?>>
                                                                 Swimming Pool</option>
+                                                            <option value="greencampus"
+                                                                <?= isset($banner) && $banner['page'] == 'greencampus' ? 'selected' : '' ?>>
+                                                                Green Campus</option>
                                                         </select>
                                                     </div>
                                                 </div>

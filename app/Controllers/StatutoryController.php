@@ -30,7 +30,7 @@ class StatutoryController extends BaseController
 
         $rules = [
             'title' => 'required',
-            'pdf_file' => 'uploaded[pdf_file]|max_size[pdf_file,2048]|ext_in[pdf_file,pdf]',
+            'pdf_file' => 'uploaded[pdf_file]|ext_in[pdf_file,pdf]',
         ];
 
         if (!$this->validate($rules)) {
