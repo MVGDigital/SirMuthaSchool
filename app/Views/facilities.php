@@ -306,13 +306,13 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                     <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
                                         class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
                                         class="img-fluid tabImg w100" alt="Lady Andal">
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-white">
                                         <h3>Special <span> Education</span></h3>
                                         <h4 class="text-white">Learning Centre</h4>
@@ -336,13 +336,13 @@
                         </li>
                         <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-0">
                                     <img src="<?= base_url('images/facilities/spl-edication.png') ?>"
                                         class="img-fluid deskTopImg-forTab w100" alt="Lady Andal">
                                     <img src="<?= base_url('images/facilities/spl-edicationMob.png') ?>"
                                         class="img-fluid tabImg w100" alt="Lady Andal">
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-7  mobContTop-p-tb50">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-white">
                                         <h3>Special <span> Education</span></h3>
                                         <h4 class="text-white">Occupational Therapy Centre</h4>

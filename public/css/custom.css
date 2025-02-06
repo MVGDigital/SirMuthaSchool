@@ -519,7 +519,8 @@ main{
     height: 100%;
     width: 100%;
     position: absolute;
-    background: #102753;
+    /* background: #102753; */
+
 }
 .bannerTitle{
     position: absolute;
@@ -657,6 +658,8 @@ main{
 .sectionTitle-white h4{
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'Figtree-SemiBold';
 }
 .sectionTitle-white h3 span{
     color: var(--color-orange);
@@ -684,11 +687,11 @@ main{
     color: var(--color-white);
 }
 .innerMenus-sec .sectionTitle-white h3{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .sectionTitle-white p{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     line-height: 25.8px;
     color: var(--color-white);
@@ -711,6 +714,9 @@ main{
     color: var(--color-blue);
 }
 
+.green-campus-sec .sectionTitle-blue h3{
+    margin-top: 30px;
+}
 .sectionTitle-blue h3{
     font-size: 32px;
     line-height: 33px;
@@ -722,6 +728,8 @@ main{
 .sectionTitle-blue h4{
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'Figtree-SemiBold';
 }
 .sectionTitle-blue h3 span{
     color: var(--color-orange);
@@ -742,14 +750,14 @@ main{
 .sectionTitle-blue h6{
     font-size: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     line-height: 34px;
     font-family: 'Figtree-Regular';
     color: var(--color-white);
 }
 .sectionTitle-blue p{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     line-height: 25.8px;
     font-family: 'Figtree-Regular';
@@ -1333,6 +1341,12 @@ main{
 }
 .application-process-img{
     background-image: url(../images/admission/admission-process.jpg);
+}
+.application-process-img .sectionTitle-blue h3{
+    margin-bottom: 40px;
+}
+.application-process-img .center-card{
+    padding: 40px 50px;
 }
 .bgImg-with-center-content p{
     color: var(--color-inActive)!important;
@@ -2361,7 +2375,7 @@ label.error{
 }
 .accordion-container .menu-button {
     width: 100%;
-    padding: 10px 40px;
+    padding: 20px 40px;
     margin-top: 10px;
     font-size: 18px;
     display: flex;
