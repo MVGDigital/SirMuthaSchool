@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,10 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -36,7 +33,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Networked <span>classrooms</span></h3>
-            <h6>Experience the future of education with our networked classrooms and interactive smart boards. These advanced tools foster collaboration, enhance engagement, and bring lessons to life with dynamic visuals and seamless connectivity. Empowering students to explore, learn, and excel in a technology-driven learning environment.</h6>
+            <h6>Experience the future of education with our networked classrooms and interactive smart boards. These advanced tools promote collaboration, boost engagement, and make learning more immersive with dynamic visuals and seamless connectivity. They empower students to explore, discover, and excel in a technology-driven environment, preparing them for the challenges of the digital age.</h6>
 
         </div>
     </section>
@@ -47,9 +44,8 @@
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Networked classroom <span>facility</span></h3>
-                        <p >Audio – Visual senses of students are targeted, and it helps the students store the information fast and more effectively.</p>
-                        <p>Uses interactive modules like videos and presentations. These visually attractive methods of teaching help students learn a concept that is difficult to understand through traditional methods. </p>
+                    <h3>Networked classrooms <span>Overview</span></h3>
+                        <p>Our classrooms are the epitome of educational modernity with sophisticated smart boards and comprehensive networked systems. This avant-garde infrastructure transforms the traditional learning space into a hub of intellectual curiosity, facilitating seamless collaboration and interaction.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">

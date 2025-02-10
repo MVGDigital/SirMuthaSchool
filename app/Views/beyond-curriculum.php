@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -35,10 +32,7 @@
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
             <h3>Empowering Students for a <span>Better Tomorrow</span></h3>
-            <h6>"At Sir Mutha School, our diverse clubs—Heritage, Maths, Eco, and Interact—empower students to explore,
-                create, and contribute to society. Through engaging activities and community-driven initiatives, we
-                foster a sense of responsibility, creativity, and social awareness, nurturing well-rounded individuals
-                committed to making a positive impact on the world."
+            <h6>At Sir Mutha School, our diverse clubs—including Heritage, Maths, Eco, and Interact—provide students with opportunities to learn, innovate, and give back to the community. Through interactive activities and service-oriented initiatives, students develop critical thinking, creativity, and social awareness, shaping them into well-rounded individuals ready to make a meaningful impact.
             </h6>
         </div>
     </section>
@@ -357,7 +351,7 @@
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6>5th June in AV room</h6>
+                            <h6>5th June</h6>
                             <p>A Science, Technology, Engineering, and Mathematics (STEM) orientation for Science and Maths teachers was held in the AV room, showcasing innovative teaching techniques and resources. The session aimed to equip educators with the latest strategies to enhance student engagement in these critical subjects. This orientation marked a significant step towards creating a modern and dynamic learning environment in science and mathematics.
                             </p>
                         </div>
@@ -369,7 +363,7 @@
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6>6th June in AV room</h6>
+                            <h6>6th June</h6>
                             <p>A short reading workshop for students of Classes I to III, led by Mrs. Nikita Dutta Gupta, was conducted in the AV room. The workshop aimed to instil a love of reading among young learners through engaging activities and storytelling sessions. Mrs Gupta's dynamic approach captivated the students, making the reading experience both enjoyable and educational.
                             </p>
                         </div>
@@ -381,7 +375,7 @@
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
-                            <h6>12 June</h6>
+                            <h6>12th June</h6>
                             <p>An orientation for the newly admitted students and teachers was held at the Sir Mutha Venkatasubba Rao Concert Hall. The session, featuring a speech by the Correspondent Mrs. Krithika Kumar Quintal, detailed the history of the Madras Seva Sadan and its rich legacy. Mrs Quintal’s speech highlighted the institution's commitment to education, excellence, and community service.
                             </p>
                         </div>
@@ -442,7 +436,7 @@
                         </div>
                         <div class="thumbContent">
                             <h6>1st July</h6>
-                            <p>A Dramact theatre workshop was conducted in the library for students aged 8 and above. The session was led by Mr N. Nilakantan, a seasoned Voice-Over Professional, Emcee, Public Speaker, Corporate Trainer, and Theatre Actor and Director with over 30 years of experience. The workshop focused on enhancing students’ acting skills and building their confidence through interactive theatre techniques. Mr. Nilakantan's expertise and dynamic teaching style made it a memorable and enriching experience for all participants.
+                            <p>A Dramatic theatre workshop was conducted in the library for students aged 8 and above. The session was led by Mr N. Nilakantan, a seasoned Voice-Over Professional, Emcee, Public Speaker, Corporate Trainer, and Theatre Actor and Director with over 30 years of experience. The workshop focused on enhancing students’ acting skills and building their confidence through interactive theatre techniques. Mr. Nilakantan's expertise and dynamic teaching style made it a memorable and enriching experience for all participants.
                             </p>
                         </div>
                     </li>

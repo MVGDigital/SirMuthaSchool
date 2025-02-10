@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,10 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -36,7 +33,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Physics <span> Lab</span></h3>
-            <h6>"Our physics lab is equipped with cutting-edge instruments, providing students with practical experiences in scientific principles. Through hands-on experiments and demonstrations, students explore concepts of physics, enhancing their understanding of motion, energy, and force. This interactive environment encourages curiosity, critical thinking, and a deeper appreciation for the physical world."</h6>
+            <h6>Our physics lab features advanced instruments, offering students practical experience in scientific principles. Through hands-on experiments and demonstrations, they explore motion, energy, and force, fostering curiosity, critical thinking, and a deeper understanding of physics.</h6>
             
         </div>
     </section>

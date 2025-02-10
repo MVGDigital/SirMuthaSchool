@@ -80,7 +80,7 @@ class Facilities extends BaseController
         $video = $videoBannerModel->where('page', 'admission')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'cricket Nets Facility',
+            'page_title' => 'Cricket Nets Facility',
             'page_code' => 'cricketnets',
             'banner' => $banner,
             'video' => $video

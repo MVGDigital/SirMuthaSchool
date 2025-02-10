@@ -81,10 +81,10 @@
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
-                            <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                            <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                            <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                            <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                             <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                            <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                            <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                             <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                         </ul>
                     </li>
@@ -100,12 +100,12 @@
                         </ul>
                     </li> -->
                     <li id="inclusiveMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Educations</a>
+                        <a class="nav-link" href="<?= base_url('inclusive-education') ?>">Inclusive Education</a>
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
                             <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a></li>
-                            <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
+                            <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Therapy</a></li>
                         </ul>
                     </li>
                     <li id="curriculumMenu" class="nav-item">
@@ -171,10 +171,10 @@
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="<?= base_url('facilities#academicfacility') ?>">Academic Facility</a></li>
-                        <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                        <li><a href="<?= base_url('facilities#academicfacility') ?>">Academic Facilities</a></li>
+                        <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                         <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                        <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                        <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                         <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                     </ul>
                 </div>

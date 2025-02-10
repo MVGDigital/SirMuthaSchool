@@ -2,10 +2,7 @@
 
     <!-- Banner Section -->
     <section class=" banner-section">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
     </section>
     <div id="homeSlider" class="splide homeBanner">
         <div class="splide__track">

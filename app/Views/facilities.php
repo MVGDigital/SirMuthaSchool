@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,10 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -70,7 +67,7 @@
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
-                            <h4>Music & Arts Room</h4>
+                            <h4>Music & Art Room</h4>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('facilities/musicandartroom') ?>">Know More</a>
                             </div>
@@ -153,10 +150,10 @@
     </section>
     <!-- Academic Facilities -->
 
-    <!-- Extra Curricular -->
+    <!-- Extracurricular -->
     <section class="container-space cardWith-overlay-Btn white-bgImg ptb-80" id="extra-curricular">
         <div class="sectionTitle-blue col-lg-10 m-auto">
-            <h3>Extra <span>Curricular</span></h3>
+            <h3>Extra<span>curricular</span></h3>
             <div class="row m-0 w100 mt-50">
                 <div class="col-lg-6 p-0">
                     <div class="cardWith-Btn">
@@ -189,7 +186,7 @@
 
             </div>
     </section>
-    <!-- Extra Curricular -->
+    <!-- Extracurricular -->
 
     <!-- Co-Curricular -->
     <section class="wave-sec ligh-yellowBG" id="co-curricular">
@@ -202,7 +199,7 @@
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-blue">
                                         <h3>Co- <span> Curricular</span></h3>
-                                        <p>Arts</p>
+                                        <p>Art</p>
                                         <p>The art room stands as a sanctuary of creativity, designed to inspire and
                                             encourage artistic expression.
                                             Here, students are free to experiment with various mediums, cultivating
@@ -234,7 +231,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="splide__slide">
+                        <!-- <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
                                     <div class="sectionTitle-blue">
@@ -254,7 +251,7 @@
                                         class="img-fluid w100" alt="Lady Andal">
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="splide__slide">
                             <div class="row w100 m-0 itemSpaceBetween">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 mobContTop-p-tb50 plr-80">
@@ -317,18 +314,7 @@
                                         <h3>Special <span> Education</span></h3>
                                         <h4 class="text-white">Learning Centre</h4>
                                         <p>
-                                            In keeping with the vision of Sir Mutha School, the Learning Centre was
-                                            established in 2012 to cater to the needs of children with special needs,
-                                            while simultaneously fostering awareness among teachers, parents, and the
-                                            community at large.
-                                            Caregivers are equipped through comprehensive training programmes, enabling
-                                            them
-                                            to assist these children in mainstream classrooms.
-                                            The Learning Centre has garnered accolades from the Madras Dyslexia
-                                            Association,
-                                            being hailed as one of the best in its field. Ultimately,
-                                            this initiative reinforces the school’s commitment to helping every child
-                                            achieve their unique potential.
+                                        In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to cater to the needs of children with special needs while simultaneously creating awareness among teachers, parents, and the community at large. Caregivers are equipped through comprehensive training programmes, enabling them to assist these children in mainstream classrooms. The Learning Centre has garnered accolades from the Madras Dyslexia Association, being hailed as one of the best in its field. Ultimately, this initiative reinforces the school’s commitment to helping every child achieve their unique potential.
                                         </p>
                                     </div>
                                 </div>
@@ -428,7 +414,7 @@
         <div class="container-space wave-yellow-overwireBg ptb-80">
             <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
         
-                <h3>NCC &<span> Guides</span></h3>
+                <h3>NCC</h3>
 
                 <p class="light-blue">
                     Outbound trips and educational tours, both within the country and beyond our borders, offer a wealth

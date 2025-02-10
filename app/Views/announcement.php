@@ -1,16 +1,13 @@
 <main>
     <!-- Banner Section -->
     <section class="banner-section">
-        <div class="bannerImg-OverlayContainer"></div>
+        <!-- <div class="bannerImg-OverlayContainer"></div> -->
         <?php if (!empty($banner)): ?>
         <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>

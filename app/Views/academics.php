@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -59,7 +56,7 @@
             </div>
             <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>CBSE <span> Curriculam</span></h3>
+                    <h3>CBSE <span> Curriculum</span></h3>
 
                     <p>The curriculum aims to cultivate the holistic development of students, enhancing not only their
                         physical and intellectual abilities but also their social competencies. It incorporates
@@ -112,9 +109,9 @@
     <!--  Annual Pedagogical Policy -->
     <section id="annulapolicy">
 
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt=""
+        <img src="<?= base_url('images/inclusive-education/annual-pedagogical-desk.jpg') ?>" class="img-fluid deskTopImg" alt=""
             id="Occupational">
-        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt=""
+        <img src="<?= base_url('images/inclusive-education/annual-pedagolagical-mob.png') ?>" class="img-fluid mobImg w100" alt=""
             id="Occupational">
 
         <div class="container-space ptb-80">

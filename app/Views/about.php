@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -54,7 +51,7 @@
         <div class="row counter col-lg-10 m-auto">
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="176">0</h6>
-                <p>kindergarten Students</p>
+                <p>Kindergarten Students</p>
             </div>
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="66">0</h6>

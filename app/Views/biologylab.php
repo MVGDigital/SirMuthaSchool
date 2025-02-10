@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,10 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
+                <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -36,7 +33,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Biology <span> Lab</span></h3>
-            <h6>"Our well-equipped biology lab offers a dynamic learning environment with advanced tools and specimens. Students engage in hands-on experiments, deepening their understanding of biological concepts. The lab fosters curiosity, scientific inquiry, and practical knowledge, providing the perfect setting for exploration and discovery in the world of life sciences."</h6>
+            <h6>Our well-equipped biology lab offers a dynamic learning environment with advanced tools and specimens. Students engage in hands-on experiments, deepening their understanding of biological concepts. The lab fosters curiosity, scientific inquiry, and practical knowledge, providing the perfect setting for exploration and discovery in the world of life sciences.</h6>
             
         </div>
     </section>
