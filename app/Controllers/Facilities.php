@@ -10,12 +10,15 @@ class Facilities extends BaseController
     public function index()
     {
         $bannerModel = new BannerModel();
+        $videoBannerModel = new VideoBannerModel();
         $banner = $bannerModel->where('page', 'facilities')->where('is_published', 1)->first();
+        $video = $videoBannerModel->where('page', 'greencampus')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Facilities',
             'page_code' => 'facilities',
-            'banner' => $banner
+            'banner' => $banner,
+            'video' => $video
         ];
 
         return view('header', $data) . view('facilities', $data) . view('footer');

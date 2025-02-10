@@ -373,7 +373,7 @@
     <!-- Special Education -->
 
     <!-- Green Campus -->
-    <section class="container-space" id="greencampus">
+    <section class="container-space videosec" id="greencampus">
         <div class="ptb-80">
             <div id="campusVideo" class="pb-60">
                 <div class="col-lg-10 m-auto">
