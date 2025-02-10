@@ -15,7 +15,7 @@ class StatutoryController extends BaseController
 
     public function index()
     {
-        $data['statutory'] = $this->statutoryModel->getStatutory();
+        $data['statutory'] = $this->statutoryModel->findAll();
         return view('statutory_list', $data);
     }
 
