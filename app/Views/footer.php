@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="col-12 col-md-8 col-lg-12 col-xl-12 m-auto footer-menus">
-        <div class="itemSpaceBetween">
+        <div class="footer-menus-list">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
             <a href="<?= base_url('academics') ?>">Academics</a>
@@ -34,7 +34,6 @@
             <a href="<?= base_url('parents') ?>">Parents</a>
             <a href="<?= base_url('admission') ?>">Admission</a>
             <a href="<?= base_url('career') ?>">Career</a>
-            <a href="<?= base_url('contact') ?>">Contact</a>
 
         </div>
     </div>
@@ -1472,7 +1471,7 @@ var splide = new Splide('#clubs', {
     breakpoints: {
         767: {
             perPage: 1,
-            pagination: true,
+            pagination: false,
         },
     },
 });
@@ -1491,7 +1490,7 @@ var splide = new Splide('#topper', {
     breakpoints: {
         767: {
             perPage: 1,
-            pagination: true,
+            pagination: false,
         },
     },
 });
