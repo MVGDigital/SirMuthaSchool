@@ -32,7 +32,7 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>In the <span>outdoors</span></h3>
 
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+            <!-- <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
                 education system that nurtures excellence in every sphere of human endeavour.
                 The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
                 vitality among its learners.
@@ -42,7 +42,7 @@
                 learners.
                 It is committed to offering a stress-free learning environment that cultivates competent, confident, and
                 enterprising individuals who promote harmony and peace.
-            </h6>
+            </h6> -->
         </div>
     </section>
     <!-- Section Menus -->
@@ -130,34 +130,33 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Teacher Enrichment <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
-                            modern classrooms."
+                        <h3>In The Outdoors <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Adventure, education, and exploration come alive through camps, tours, and excursions."
                         </h6>
                     </div>
 
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                <img src="<?= base_url('images/gallery/education_tour_gallery_01.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                    <img src="<?= base_url('images/gallery/education_tour_gallery_02.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                    <img src="<?= base_url('images/gallery/education_tour_gallery_03.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                <img src="<?= base_url('images/gallery/education_tour_gallery_04.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>

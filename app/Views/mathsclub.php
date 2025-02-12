@@ -58,34 +58,33 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Teacher Enrichment <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
-                            modern classrooms."
+                        <h3>Maths Club <span> Gallery</span></h3>
+                        <h6 style="color:black;">"The Maths Club encourages creativity, problem-solving, and a love for mathematics."
                         </h6>
                     </div>
 
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                <img src="<?= base_url('images/gallery/math_clib_gallery_01.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                    <img src="<?= base_url('images/gallery/math_clib_gallery_02.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                    <img src="<?= base_url('images/gallery/math_clib_gallery_03.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                <img src="<?= base_url('images/gallery/math_clib_gallery_04.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>

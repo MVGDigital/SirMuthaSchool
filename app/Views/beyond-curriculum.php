@@ -114,33 +114,33 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/faclites_home.png') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_01_desk.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/faclites_homeMob.png') ?>" class="img-fluid mobImg w100"
-                                alt="Academic Facilities Images">
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/Arts.png') ?>" class="img-fluid deskTopImg w100"
-                                alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/ArtsMob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_01_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/library.png') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_02_desk.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/libraryMob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_02_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/facilities.jpg') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_03_desk.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/facilitiesMob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_03_mob.png') ?>" class="img-fluid mobImg w100"
+                                alt="Academic Facilities Images">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="wave-slider-img">
+                            <img src="<?= base_url('images/beyond-curriculum/mun_04_desk.png') ?>" class="img-fluid deskTopImg w100"
+                                alt="Academic Facilities Images">
+                            <img src="<?= base_url('images/beyond-curriculum/mun_04_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                     </li>

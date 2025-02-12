@@ -47,9 +47,9 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/faclites_home.png') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/facilities/network_classroom.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/faclites_homeMob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/facilities/network_classroom_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -296,7 +296,7 @@
     <!-- Co-Curricular -->
 
     <!-- Special Education -->
-    <section class="wave-sec blueBg-Sec" id="specialeducation">
+    <!-- <section class="wave-sec blueBg-Sec" id="specialeducation">
         <div class="lft-rgt-content">
             <div id="spl-education-slider" class="splide paginationCenter">
                 <div class="splide__track">
@@ -355,7 +355,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Special Education -->
 
     <!-- Green Campus -->
@@ -399,12 +399,20 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/facilities/greencampus_desk1.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/greencampus_Mob1.png') ?>" class="img-fluid mobImg w100" alt="">     
+                        <img src="<?= base_url('images/facilities/ncc_slider_desk.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/ncc_slider_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/facilities/greencampus_desk2.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/greencampus_Mob2.png') ?>" class="img-fluid mobImg w100" alt="">     
+                        <img src="<?= base_url('images/facilities/ncc_slidertwo_desk.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/ncc_slidertwo_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/facilities/scouts&guides_slidertwo_desk.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/scouts&guides_slidertwo_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
+                    </li>
+                    <li class="splide__slide">
+                        <img src="<?= base_url('images/facilities/ncc_slidertwo_desk.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/ncc_slidertwo_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                    
                 </ul>

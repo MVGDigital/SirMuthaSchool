@@ -45,7 +45,7 @@
                     <li class="Tabs__tab active Tab" data-tab="1"><span>RSP</span></li>
                     <li class="Tabs__tab Tab" data-tab="2"><span>Yoga</span></li>
                     <li class="Tabs__tab Tab" data-tab="3"><span>Health & Wellness</span></li>
-                    <li class="Tabs__tab Tab" data-tab="4"><span>Model IMU Nations</span></li>
+                    <li class="Tabs__tab Tab" data-tab="4"><span>Apollo Shine</span></li>
                     <li class="Tabs__presentation-slider" role="presentation"></li>
                 </ul>
             </nav>
@@ -159,18 +159,18 @@
 
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/imu_nation_left.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/apollo_shine_01.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/imu_nation_top.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/apollo_shine_02.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/imu_nation_bottom.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/apollo_shine_03.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
 
                         <div class="col-lg-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/imu_nation_right.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/apollo_shine_04.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>

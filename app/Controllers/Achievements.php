@@ -45,4 +45,21 @@ class Achievements extends BaseController
 
         return view('header', $data) . view('achievements', $data) . view('footer');
     }
+
+    public function academicsAchievements()
+    {
+        $bannerModel = new BannerModel();
+        
+        $banner = $bannerModel->where('page', 'achievement')->where('is_published', 1)->first();
+        
+
+        $data = [
+            'page_title' => 'Academic Achievements',
+            'page_code' => 'academic-achievements',
+            'banner' => $banner,
+            
+        ];
+
+        return view('header', $data) . view('academic-achievements', $data) . view('footer');
+    }
 }

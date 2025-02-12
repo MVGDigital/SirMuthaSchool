@@ -51,3 +51,46 @@
         </div>
     </section>
     <!-- Literary & Arts -->
+
+        <!-- Gallery Section -->
+        <section class="container-space ptb-80">
+        <div class="Panel">
+            <div class="Panel-body">
+                <div class="tab-content" id="tab-1">
+                    <div class="sectionTitle-blue col-lg-10 m-auto">
+                        <h3>Interact Club <span> Gallery</span></h3>
+                        <h6 style="color:black;">"The Interact Club promotes service, compassion, and social responsibility through initiatives."
+                        </h6>
+                    </div>
+
+                    <div class="row w100 m-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/interact_clib_gallery.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/interact_clib_gallery_03.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/interact_clib_gallery_02.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/interact_clib_gallery_04.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->

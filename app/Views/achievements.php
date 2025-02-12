@@ -20,6 +20,9 @@
         <div class="innerMenus">
             <ul class="lessMenus">
                 <li><a href="<?= base_url('achievements#achievements') ?>" class="active">Achievements</a></li>
+                <li><a href="<?= base_url('achievements#learing_center') ?>">Academic Achievements</a></li>
+                <li><a href="<?= base_url('achievements#sports') ?>">Sports Achievements</a></li>
+                <li><a href="<?= base_url('achievements#teachers') ?>">Teachers Achievements</a></li>
                 
             </ul>
         </div>
@@ -34,9 +37,31 @@
                 accomplishments. Our students consistently excel in sports, arts, and community service, earning
                 recognition at local, national, and international levels. These achievements reflect our commitment to
                 nurturing well-rounded individuals, preparing them for success in every field.</h6>
+                
         </div>
     </section>
     <!-- Section Menus -->
+
+      <!-- Adventure Camps Section-->
+      <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-5 col-xl-5">
+                <img src="<?= base_url('images/achievements/academic_facilities_overview.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>Academic <span> Achievements</span></h3>
+                    <p>Our students of Grades X, XI, and XII have showcased exceptional academic excellence with outstanding results. Their dedication, perseverance, and hard work have led to remarkable achievements, securing top scores across subjects. Their success reflects the school’s commitment to academic excellence, inspiring future batches to strive for greater heights.
+                    </p>
+                    <div class="blueBtn-medium">
+                                        <a href="<?= base_url('achievements/academic-achievements') ?>">Know More</a>
+                                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Adventure Camps Section-->
 
     <!--  Sports Section -->
     <section class="container-space blueBg-Sec ptb-80">
@@ -80,7 +105,7 @@
                         whether through the Model United Nations, the West Chennai Sahodaya Cluster Schools’ events, or
                         dynamic sporting events such as the Padma Bhushan Lady Andal Memorial Inter-School Tournament
                         and Swimming Meet, or vibrant cultural festivals organised by other schools. These platforms not
-                        only hone their talents but also cultivate in them a profound sense of collaboration,
+                        only have their talents but also cultivate in them a profound sense of collaboration,
                         resilience, and global perspective, preparing them to excel in an interconnected world.</p>
 
                 </div>

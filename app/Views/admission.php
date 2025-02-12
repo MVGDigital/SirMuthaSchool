@@ -58,6 +58,29 @@
     </section>
     <!-- Video Section -->
 
+     <!-- Terms & Conditions -->
+        <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>Start Your <span> Journey</span></h3>
+                    <p>Education is not a destination, but a winding journey—where each question plants the seed of discovery, and every answer blooms into new realms of understanding.
+
+                    </p>
+                    <p>At Sir Mutha School, education transcends the traditional boundaries of the classroom, while classrooms provide a structured foundation for academic learning, they are only one part of the broader educational journey. The school offers a wealth of opportunities—ranging from sports and performing arts to cultural activities—encouraging students to explore, excel, and discover their true passions. Embracing inclusivity, we integrate students with diverse learning needs, ensuring that every individual thrives in a supportive and collaborative environment. In this nurturing space, education is not just a phase, but a lifelong pursuit—a journey of growth, discovery, and purpose that extends far beyond the walls of the classroom.
+                    </p>
+                    <p>Join us, and embark on a journey that will shape your child’s future and stay with them for a lifetime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Terms & Conditions -->
+
     <!-- Application Process -->
     <section class="container-space bgImg-with-center-content application-process-img ptb-80"  id="application_process">
         <div class="sectionTitle-white">
@@ -69,7 +92,7 @@
         <div class="col-lg-9 m-auto mt-50">
             <div class="center-card card-text-start">
                 <div class="sectionTitle-blue">
-                    <h3>Step to <span>follow</span></h3>
+                    <h3>Steps to <span>follow</span></h3>
                     <p><b>1. Online enquiry form</b> </p>
                     <p>The school's admission enquiry form will be available on the website from January onwards.</p>
                     <p><b>2. Submission of Online Enquiry Form</b></p>
@@ -98,7 +121,7 @@
 
 
         <!-- Terms & Conditions -->
-        <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
+        <!-- <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
@@ -118,7 +141,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Terms & Conditions -->
 
     <!-- Fee Structure -->

@@ -500,6 +500,8 @@ var splide = new Splide('#clubs', {
 });
 splide.mount();
 
+
+
 var splide = new Splide('#mun', {
     type: 'slide',
     autoplay: false,
@@ -1455,8 +1457,50 @@ $(document).ready(function() {
 
 <?php endif; ?>
 
-<?php if ($page_code === 'achievements'): ?>
+<?php if ($page_code === 'academic-achievements'): ?>
 
+var splide = new Splide('#clubs', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+var splide = new Splide('#topper', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: true,
+        },
+    },
+});
+splide.mount();
+
+
+<?php endif; ?>
+
+<?php if ($page_code === 'achievements'): ?>
 var splide = new Splide('#teachers', {
     type: 'slide',
     autoplay: false,
