@@ -1250,7 +1250,12 @@ main {
     left: -6em;
     background-image: url(../images/next-arrow-white.svg);
 }
-
+#topper.paginationCenter .splide__arrow--prev{
+    left: -8em;
+}
+#topper.paginationCenter .splide__arrow--next{
+    right: -8em;
+}
 .blueBg-Sec .paginationCenter .splide__pagination {
     bottom: -13%;
 }
@@ -1494,7 +1499,7 @@ main {
 }
 
 .linenWhite-bgImg {
-    margin-top: -5%;
+    margin-top: -5%;f
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/statutory/linenWhite-Bg.svg);
@@ -1516,7 +1521,7 @@ main {
 
 video {
     width: 100%;
-    height: 600px;
+    height: auto;
     cursor: pointer;
 }
 
