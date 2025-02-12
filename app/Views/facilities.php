@@ -49,7 +49,7 @@
                         <div class="wave-slider-img">
                             <img src="<?= base_url('images/facilities/network_classroom.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/network_classroom_mob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/facilities/network_classroom_mob.pn') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -411,8 +411,8 @@
                         <img src="<?= base_url('images/facilities/scouts&guides_slidertwo_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                     <li class="splide__slide">
-                        <img src="<?= base_url('images/facilities/ncc_slidertwo_desk.png') ?>" class="img-fluid deskTopImg" alt="">
-                        <img src="<?= base_url('images/facilities/ncc_slidertwo_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
+                        <img src="<?= base_url('images/facilities/scouts&guides_slider_desk.png') ?>" class="img-fluid deskTopImg" alt="">
+                        <img src="<?= base_url('images/facilities/scouts&guides_slider_mob.png') ?>" class="img-fluid mobImg w100" alt="">     
                     </li>
                    
                 </ul>
