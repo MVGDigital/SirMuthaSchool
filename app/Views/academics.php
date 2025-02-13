@@ -22,7 +22,7 @@
                 <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
                 <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                 <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annual Pedagogical Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
