@@ -775,7 +775,7 @@
             </div>
         </div>
         <div class="blueBtn-medium text-center">
-            <a href="<?= base_url('beyond-curriculum/past-annual-events'); ?>">Know More</a>
+            <a href="<?= base_url('beyond-curriculum/past-annual-events'); ?>">Past Annual Events</a>
         </div>
     </section>
     <!-- Annual Events -->

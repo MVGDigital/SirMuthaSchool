@@ -47,7 +47,7 @@
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>CHERUKURI MAHATI</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <p>Mark <span> - 489/500</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -60,8 +60,8 @@
                             <img src="<?= base_url('images/achievements/diya_balani.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>DIYA BALANI <span>- 483</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>DIYA BALANI</h6>
+                                <p>Mark <span> - 483/500</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -74,8 +74,8 @@
                             <img src="<?= base_url('images/achievements/vir_naving_mukhi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M. VIR NAVIN MUKHI <span>- 475</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>M. VIR NAVIN MUKHI</h6>
+                                <p>Mark <span> - 475/500</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -88,8 +88,8 @@
                             <img src="<?= base_url('images/achievements/krisha_arun_kinger.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>KRISHA ARUN KINGER <span>- 98 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>KRISHA ARUN KINGER</h6>
+                                <p>English <span> - 98 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -102,8 +102,8 @@
                             <img src="<?= base_url('images/achievements/n_nauffiah_husn.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>N NAUFFIAH HUSN <span>- 95 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>N NAUFFIAH HUSN</h6>
+                                <p>Tamil <span> - 95 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -116,8 +116,8 @@
                             <img src="<?= base_url('images/achievements/sarvelpalli_sai_aditya.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>SARVEPALLI SAI ADITYA <span>- 98 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>SARVEPALLI SAI ADITYA</h6>
+                                <p>Sanskrit <span> - 98 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -130,8 +130,8 @@
                             <img src="<?= base_url('images/achievements/krisha_arun_kinger.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>KRISHA ARUN KINGER <span>- 98 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>KRISHA ARUN KINGER</h6>
+                                <p>Sanskrit <span> - 98 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -145,8 +145,8 @@
                             <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>CHERUKURI MAHATI <span>- 98 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>CHERUKURI MAHATI</h6>
+                                <p>Sanskrit <span> - 98 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -159,8 +159,8 @@
                             <img src="<?= base_url('images/achievements/vir_naving_mukhi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>S. AYUSH <span>-97 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>S. AYUSH</h6>
+                                <p>Hindi <span> - 97 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -173,8 +173,8 @@
                             <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M. VIR NAVIN MUKHI <span>- 97 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>M. VIR NAVIN MUKHI</h6>
+                                <p>Hindi <span> - 97 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -187,8 +187,8 @@
                             <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>RAJVEER AGRAWAL <span>- 99 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>RAJVEER AGRAWAL</h6>
+                                <p>Mathematics <span> - 99 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -202,8 +202,8 @@
                             <img src="<?= base_url('images/achievements/diya_balani.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>CHERUKURI MAHATI <span>- 99 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>CHERUKURI MAHATI</h6>
+                                <p>Mathematics <span> - 99 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -217,8 +217,8 @@
                             <img src="<?= base_url('images/achievements/tanya_mukhi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>CHERUKURI MAHATI <span>- 97 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>CHERUKURI MAHATI</h6>
+                                <p>Science <span> - 97 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -232,8 +232,8 @@
                             <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>DIYA BALANI  <span>- 99 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>DIYA BALANI</h6>
+                                <p>Social Science <span> - 99 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -246,8 +246,8 @@
                             <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>TANYA MUKHI  <span>- 97 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>TANYA MUKHI</h6>
+                                <p>Computer Application <span> - 97 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know
@@ -260,8 +260,8 @@
                             <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>DIYA SITARA RAMAN   <span>- 99 Marks</h6>
-                                <p>Mark <span> - 489</span></p>
+                                <h6>DIYA SITARA RAMAN</h6>
+                                <p>Painting <span> - 99 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
                                 <a href="<?= base_url('uploads/achievements/Xth_result_analysis_(2023- 2024).pdf') ?>" target="_blank">Know

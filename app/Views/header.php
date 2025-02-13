@@ -84,7 +84,6 @@
                             <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
                             <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                             <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                            <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                             <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                         </ul>
                     </li>
@@ -174,7 +173,6 @@
                         <li><a href="<?= base_url('facilities#academicfacility') ?>">Academic Facilities</a></li>
                         <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                         <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                        <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                         <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
                     </ul>
                 </div>

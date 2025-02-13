@@ -20,8 +20,7 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('admission#application_process') ?>" class="active">Application Process</a></li>
-                <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
-                <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
+                    <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
                 <li><a href="<?= base_url('admission#admission_enquiry') ?>">Admission Enquiry Form</a></li>
             </ul>
         </div>

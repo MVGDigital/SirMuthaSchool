@@ -48,7 +48,7 @@
     <!-- Section Menus -->
 
     <!-- Adventure Camps Section-->
-    <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
+    <section id="adventure-camps" class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/intheoutdoors/adventure_camp_outdoors.png') ?>" class="img-fluid w100"

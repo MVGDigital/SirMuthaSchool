@@ -22,7 +22,6 @@
                 <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
                 <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Special Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -49,7 +48,7 @@
                         <div class="wave-slider-img">
                             <img src="<?= base_url('images/facilities/network_classroom.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/network_classroom_mob.pn') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/facilities/network_classroom_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
