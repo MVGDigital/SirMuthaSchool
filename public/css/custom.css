@@ -1511,6 +1511,7 @@ main {
 
 /* =========================== Admission ========================= */
 .admsn-PageVideo {
+    position: relative;
     background-color: var(--blue-bg);
 }
 
@@ -2214,8 +2215,37 @@ label.error {
     font-size: 24px;
     line-height: 34px;
     color: var(--color-blue);
-    text-transform: capitalize;
     font-family: 'Figtree-Regular';
+    margin: 0;
+    text-transform: capitalize !important;
+}
+
+.academic-thumbContent h6 {
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--color-white);
+    font-family: 'Figtree-Regular';
+    margin: 0;
+    text-transform: capitalize !important;
+    padding: 20px 0;
+}
+
+.academic-thumbContent p {
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-family: 'EBGaramond-Medium';
+    margin: 0;
+    text-transform: capitalize !important;
+}
+
+.academic-thumbContent p span {
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--color-orange);
+    text-transform: capitalize;
+    font-family: 'EBGaramond-Medium';
     margin: 0;
     text-transform: capitalize !important;
 }
@@ -3139,13 +3169,18 @@ footer {
 .social-media a {
     margin: 10px;
 }
-
+.footer-menus-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .footer-menus a {
     font-size: 14px;
     line-height: 33px;
     color: var(--color-white);
     font-family: 'Figtree-Regular';
-    padding-top: 15px;
+    padding: 5px 10px;
     transition: padding 0.4s ease;
 }
 

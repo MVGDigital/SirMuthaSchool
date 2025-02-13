@@ -40,7 +40,6 @@
                 alt="<?= esc($event['event_name']) ?>">
             <img src="<?= base_url('uploads/mobile_images/'. $event['mobile_image']);?>" class="img-fluid mobImg w100"
                 alt="<?= esc($event['event_name']) ?>">
-            <img src="<?= base_url('images/facilities/green-capus.jpg') ?>" class="img-fluid mobImg w100" alt="Sir Mutha event images">
         </div>
 
         <div class="container-space wave-yellow-overwireLightBg ptb-80-30">
