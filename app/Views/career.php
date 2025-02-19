@@ -21,8 +21,12 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Current <span> Vacancies</span></h3>
-            <h6>Join the esteemed faculty and staff at Sir Mutha School. Explore current vacancies and become part of our dedicated team committed to nurturing excellence in education. We seek passionate professionals eager to inspire, guide, and contribute to shaping the future of our students. Apply now and make a difference!</h6>
+            <h3>Careers at <span> Sir Mutha School</span></h3> 
+            <h6>Join the esteemed faculty and staff at Sir Mutha School. Explore the available
+positions and become part of a dedicated team committed to promoting excellence
+in education. We are seeking passionate teachers who are eager to inspire, guide,
+and contribute to shaping the future of our students. When you work with us, you
+will become part of a team that is making a real difference in the community.</h6>
         </div>
     </section>
     <!-- Section Menus -->

@@ -22,6 +22,7 @@
                 <li><a href="<?= base_url('achievements#achievements') ?>" class="active">Achievements</a></li>
                 <li><a href="<?= base_url('achievements#learing_center') ?>">Academic Achievements</a></li>
                 <li><a href="<?= base_url('achievements#sports') ?>">Sports Achievements</a></li>
+                <li><a href="<?= base_url('achievements#inter-school') ?>">Inter School</a></li>
                 <li><a href="<?= base_url('achievements#teachers') ?>">Teachers Achievements</a></li>
                 
             </ul>
@@ -107,7 +108,9 @@
                         and Swimming Meet, or vibrant cultural festivals organised by other schools. These platforms not
                         only have their talents but also cultivate in them a profound sense of collaboration,
                         resilience, and global perspective, preparing them to excel in an interconnected world.</p>
-
+                        <div class="blueBtn-medium">
+                                        <a href="<?= base_url('achievements/inter-school') ?>">Know More</a>
+                                    </div>
                 </div>
             </div>
         </div>

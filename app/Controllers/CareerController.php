@@ -31,7 +31,7 @@ class CareerController extends BaseController
         $totalJobs = count($jobs);
 
         $data = [
-            'page_title' => 'Career',
+            'page_title' => 'Careers',
             'page_code' => 'career',
             'banner' => $banner,
             'categories' => $categories,

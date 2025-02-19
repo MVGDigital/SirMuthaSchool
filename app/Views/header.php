@@ -103,7 +103,7 @@
                         <span class="dropdown-arrow"><img src="<?= base_url('images/menuDownArrow.svg') ?>" class="img-fluid"
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
-                            <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a></li>
+                            <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centre</a></li>
                             <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Therapy</a></li>
                         </ul>
                     </li>
@@ -196,8 +196,8 @@
                 </div>
                 <div id="inclusiveSubMenu" class="subMenuItems">
                     <ul>
-                        <li><a href="<?= base_url('inclusive-education#learing_center') ?>">Learning Centers</a></li>
-                        <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
+                        <li><a href="<?= base_url('inclusive-education#learing_center') ?>">Learning Centre</a></li>
+                        <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Therapy</a></li>
                     </ul>
                 </div>
                 <div id="curriculumSubMenu" class="subMenuItems">
@@ -242,7 +242,7 @@
                         <div class="quickLinks">
                             <a href="<?= base_url('career') ?>">
                                 <img src="<?= base_url('images/menu-career.svg') ?>" alt="">
-                                <span>Career</span>
+                                <span>Careers</span>
                             </a>
                         </div>
                     </div>

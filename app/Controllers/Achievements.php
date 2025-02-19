@@ -62,4 +62,21 @@ class Achievements extends BaseController
 
         return view('header', $data) . view('academic-achievements', $data) . view('footer');
     }
+
+    public function interSchool()
+    {
+        $bannerModel = new BannerModel();
+        
+        $banner = $bannerModel->where('page', 'achievement')->where('is_published', 1)->first();
+        
+
+        $data = [
+            'page_title' => 'Inter School',
+            'page_code' => 'inter-school',
+            'banner' => $banner,
+            
+        ];
+
+        return view('header', $data) . view('inter-school', $data) . view('footer');
+    }
 }

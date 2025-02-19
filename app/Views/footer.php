@@ -32,8 +32,8 @@
             <a href="<?= base_url('in-the-outdoors') ?>">In The Outdoors</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>
             <a href="<?= base_url('parents') ?>">Parents</a>
-            <a href="<?= base_url('admission') ?>">Admission</a>
-            <a href="<?= base_url('career') ?>">Career</a>
+            <a href="<?= base_url('admission') ?>">Admissions</a>
+            <a href="<?= base_url('career') ?>">Careers</a>
 
         </div>
     </div>

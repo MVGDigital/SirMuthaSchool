@@ -32,7 +32,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3><span>Library</span></h3>
-            <h6>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. Stocked with periodicals, daily news updates, and a diverse range of materials, it supports young learners and advanced students alike. With over 7,900 books, it stands as an inspiring center for research, exploration, and intellectual growth.</h6>
+            <h6>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. It is replete with a rich array of periodicals, daily news updates, and a diverse
+assortment of materials, supporting all students. With an impressive collection of
+over 7,900 books, this library stands not merely as a repository, but as a vibrant hub
+of exploration, learning, and personal growth.</h6>
             
         </div>
     </section>
@@ -64,14 +67,14 @@
                     <p>Our school features an expansive library of 880 square feet, serving as a haven for inquisitive minds. With seven periodicals and two daily newspapers, it fosters a culture of reading and awareness. The collection includes 44 reference books for primary classes and 145 for secondary and higher secondary students. Additionally, seven magazines and an impressive 7,924 books and other resources enrich the intellectual landscape. This library is not merely a repository of books; it is a vibrant hub for exploration and discovery.</p>
                 </div>
             </div>
-            <!-- <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/facilities/library_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
-            </div> -->
+            </div>
         </div>
     </section>
     <!-- Co-Curricular -->
-    <section class="container-space ptb-80 d-none">
+    <section class="container-space ptb-80 ">
         <div class="Panel">
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
@@ -83,25 +86,25 @@
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/rsp_gallery_5.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/library_gallery_03.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/rsp_gallery_3.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/library_gallery_02.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/rsp_gallery_4.png') ?>" class="img-fluid w100"
+                                    <img src="<?= base_url('images/gallery/library_gallery_01.png') ?>" class="img-fluid w100"
                                         alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/rsp_gallery_6.png') ?>" class="img-fluid w100"
+                                <img src="<?= base_url('images/gallery/library_gallery_04.png') ?>" class="img-fluid w100"
                                     alt="Sir Gallery Images">
                             </div>
                         </div>

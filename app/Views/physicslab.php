@@ -32,7 +32,11 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Physics <span> Lab</span></h3>
-            <h6>Our physics lab features advanced instruments, offering students practical experience in scientific principles. Through hands-on experiments and demonstrations, they explore motion, energy, and force, fostering curiosity, critical thinking, and a deeper understanding of physics.</h6>
+            <h6>Our physics lab is equipped with cutting-edge instruments, providing students
+with invaluable practical experience in scientific principles. Through immersive
+experiments and demonstrations, they unravel the mysteries of motion, energy,
+and force, cultivating curiosity, sharpening critical thinking, and deepening their
+understanding of the physical world.</h6>
             
         </div>
     </section>
@@ -67,7 +71,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/phy_overview.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/facilities/physics_lab_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
@@ -79,7 +83,8 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Physics Lab <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Discovering the laws of nature through hands-on experiments in our advanced physics lab."</h6>
+                        <h6 style="color:black;">"Unveiling the laws of nature through immersive experiments in our
+well-equipped physics lab"</h6>
                     </div>
                     
                     <div class="row w100 m-0">

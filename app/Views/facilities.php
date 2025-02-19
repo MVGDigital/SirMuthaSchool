@@ -74,9 +74,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/facilities/library.png') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/facilities/library_slider.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/facilities/libraryMob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/facilities/library_slider_mob.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                         <div class="sliderItem-end-content">
@@ -376,17 +376,15 @@
                 </div>
             </div>
             <div class="sectionTitle-blue col-lg-12 col-xl-10 m-auto">
+                
                 <h3>Green <span>Campus</span></h3>
 
-                <p class="light-blue">
-                    Outbound trips and educational tours, both within the country and beyond our borders, offer a wealth
-                    of benefits, broadening students' horizons by immersing them in diverse cultures and environments.
-                    These adventures provide practical learning experiences that extend well beyond the classroom,
-                    enhancing problem-solving skills and adaptability.
-                    As students navigate new and unfamiliar territories, they cultivate independence and self-confidence
-                    while forging lasting memories and connections that foster a sense of global citizenship.
-                    From camping and rock climbing to parasailing and microlight flying, these meticulously planned
-                    expeditions instil resilience and teamwork alongside a profound respect for nature.</p>
+                <p class="light-blue ">
+                Our commitment to sustainability aligns seamlessly with the Sustainable Development Goals (SDGs). We prioritise effective garbage disposal practices, ensuring waste is managed responsibly and efficiently. The installation of solar panels harnesses renewable energy, reducing our carbon footprint and promoting environmental stewardship. Embracing a plastic-free ethos, we advocate for alternatives that protect our planet's resources. Inclusivity and diversity are fundamental to our ethos, recognising the value of diverse groups from varying economic strata. Through these initiatives, we cultivate a community that not only thrives academically but also champions sustainability and social responsibility.</p>
+
+                    <div class="blueBtn-medium text-center">
+                        <a href="<?= base_url('facilities/green-campus'); ?>">Know More</a>
+                    </div>
             </div>
         </div>
     </section>

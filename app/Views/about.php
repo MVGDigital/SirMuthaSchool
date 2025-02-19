@@ -33,14 +33,14 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Our <span>History</span></h3>
-            <h6>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
+            <h6><i>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
                 Established on the 18th of July 2012 and affiliated with the Central Board of Secondary Education,
                 the school embodies a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the
                 late Chief Justice Sir Mutha Venkatasubba Rao,
                 it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child.
                 The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a
                 spirit of excellence.
-                Here, learning is not merely an academic endeavour but a journey of self-discovery.
+                Here, learning is not merely an academic endeavour but a journey of self-discovery.</i>
             </h6>
         </div>
     </section>
@@ -50,15 +50,15 @@
     <section class="container-space counter-sec">
         <div class="row counter col-lg-10 m-auto">
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="176">0</h6>
+                <h6 class="counter-number" data-count="199">0</h6>
                 <p>Kindergarten Students</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="66">0</h6>
+                <h6 class="counter-number" data-count="87">0</h6>
                 <p>Faculty Members</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="1341">0</h6>
+                <h6 class="counter-number" data-count="1140">0</h6>
                 <p>I To XII Students</p>
             </div>
         </div>

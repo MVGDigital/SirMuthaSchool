@@ -16,7 +16,7 @@ class About extends BaseController
         $boardMembers = $boardModel->where('is_published', 1)->orderBy('sort_order', 'ASC')->findAll();
 
         $data = [
-            'page_title' => 'About',
+            'page_title' => 'About Us',
             'page_code' => 'about',
             'banner' => $banner,
             'boardMembers' => $boardMembers

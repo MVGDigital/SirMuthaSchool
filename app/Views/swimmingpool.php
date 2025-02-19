@@ -87,7 +87,7 @@
                         are experienced trainers and have previously managed National teams. The annual ORCA
                         Inter-School Swimming Meet is a highly anticipated highlight of our calendar. From dawn until
                         dusk, the pool is alive with vibrant activity, epitomising the dedication of our swimmers.
-                        Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan.
+                        Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan. Also, students immerse themselves.
                     </p>
                 </div>
             </div>

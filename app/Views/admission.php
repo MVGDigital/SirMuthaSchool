@@ -83,7 +83,7 @@
     <!-- Application Process -->
     <section class="container-space bgImg-with-center-content application-process-img ptb-80"  id="application_process">
         <div class="sectionTitle-white">
-            <h3>Appication Process <span></h3>
+            <h3>Application Process <span></h3>
             <!--<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et-->
             <!--    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
             <!--    ex ea commodo consequat.</h6>-->
@@ -176,7 +176,7 @@
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
                     <div class="cardTitle">
-                        <h4>Activity Centre/PREK-KG: 2025-26</h4>
+                        <h4>Kindergarten/PREK-KG: 2025-26</h4>
                     </div>
                     <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">

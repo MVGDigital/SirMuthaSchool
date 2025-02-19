@@ -32,7 +32,8 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Music & <span> Art Room</span></h3>
-            <h6>The Music and Art Room is a dynamic space where students express their creativity through music and visual arts. With a variety of modern instruments and art supplies, this environment encourages exploration, skill development, and a deep appreciation for the arts.</h6>
+            <h6>Igniting creativity through vibrant music and art rooms that serve as a
+            canvas for students' expressive learning.</h6>
 
         </div>
     </section>
