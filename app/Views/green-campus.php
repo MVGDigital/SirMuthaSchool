@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/facilities/green_campus_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
@@ -68,25 +68,25 @@
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                <img src="<?= base_url('images/gallery/green_campus_gallery_03.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                    <img src="<?= base_url('images/gallery/green_campus_gallery_02.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                    <img src="<?= base_url('images/gallery/green_campus_gallery_01.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                <img src="<?= base_url('images/gallery/green_campus_gallery_04.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>

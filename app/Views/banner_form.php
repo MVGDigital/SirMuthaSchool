@@ -167,6 +167,9 @@
                                                             <option value="interactclub"
                                                                 <?= isset($banner) && $banner['page'] == 'interactclub' ? 'selected' : '' ?>>
                                                                 Interact Club</option>
+                                                            <option value="greencampus"
+                                                                <?= isset($banner) && $banner['page'] == 'green-campus' ? 'selected' : '' ?>>
+                                                               Green Campus</option>
                                                             <option value="under-construction"
                                                                 <?= isset($banner) && $banner['page'] == 'under-construction' ? 'selected' : '' ?>>
                                                                 Under Construction</option>

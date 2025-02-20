@@ -32,7 +32,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Chemistry <span> Lab</span></h3>
-            <h6>Our well-equipped chemistry lab provides a safe and engaging environment for hands-on learning. With modern apparatus and safety measures, students conduct experiments, developing curiosity, critical thinking, and essential scientific skills.</h6>
+            <h6><i>Our well-equipped chemistry lab provides a safe and engaging environment for hands-on learning. With modern apparatus and safety measures, students conduct experiments, developing curiosity, critical thinking, and essential scientific skills.</i></h6>
             
         </div>
     </section>

@@ -32,10 +32,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3><span>Library</span></h3>
-            <h6>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. It is replete with a rich array of periodicals, daily news updates, and a diverse
+            <h6><i>Our school boasts a spacious 880-square-foot library, designed to nurture curiosity and knowledge. It is replete with a rich array of periodicals, daily news updates, and a diverse
 assortment of materials, supporting all students. With an impressive collection of
 over 7,900 books, this library stands not merely as a repository, but as a vibrant hub
-of exploration, learning, and personal growth.</h6>
+of exploration, learning, and personal growth.</i></h6>
             
         </div>
     </section>

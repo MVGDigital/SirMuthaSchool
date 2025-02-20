@@ -7,10 +7,10 @@
                 alt="<?= esc($banner['title']); ?>">
             <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
                 alt="Banner image">
-            <div class="bannerTitle">
+            <!-- <div class="bannerTitle">
                 <h1>Sir Mutha School</h1>
                 <p>A unit of the madras seva sadan</p>
-            </div>
+            </div> -->
             <div class="banner-subTitle">
                 <h2><?= esc($banner['title']); ?></h2>
             </div>
@@ -31,8 +31,8 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Sir Mutha <span> Gallery</span></h3>
-            <h6>"Discover the essence of Sir Mutha School through our gallery. It captures moments from academic events, sports, cultural activities, and student milestones, offering a visual celebration of our school's dynamic atmosphere, growth, and the achievements that define our vibrant community."</h6>
+            <h3>Sir Mutha School <span> Gallery</span></h3>
+            <h6><i>Discover the essence of Sir Mutha School through our gallery. It captures moments from academic events, sports, cultural activities, and student milestones, offering a visual celebration of our school's dynamic atmosphere, growth, and the achievements that define our vibrant community.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->

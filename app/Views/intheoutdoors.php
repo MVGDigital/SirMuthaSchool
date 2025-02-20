@@ -166,3 +166,46 @@
         </div>
     </section>
     <!-- Gallery Section -->
+
+     <!-- Gallery Section -->
+     <section class="container-space ptb-80">
+        <div class="Panel">
+            <div class="Panel-body">
+                <div class="tab-content" id="tab-1">
+                    <div class="sectionTitle-blue col-lg-10 m-auto">
+                        <h3>Japan <span> Tour</span></h3><br>
+                        <!-- <h6 style="color:black;">"Adventure, education, and exploration come alive through camps, tours, and excursions."
+                        </h6> -->
+                    </div>
+
+                    <div class="row w100 m-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/educational_trip_gallery_03.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/educational_trip_gallery_02.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/educational_trip_gallery_01.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/educational_trip_gallery_04.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->

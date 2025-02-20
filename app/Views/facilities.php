@@ -33,7 +33,7 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Academic <span>Facilities</span></h3>
 
-            <h6>"Experience excellence with top-notch academic facilities, including advanced classrooms, cutting-edge laboratories, and a comprehensive, resourceful library. Our state-of-the-art infrastructure is designed to foster a dynamic, engaging learning environment, inspiring academic growth and holistic development for every student." </h6>
+            <h6><i>Experience excellence with top-notch academic facilities, including advanced classrooms, cutting-edge laboratories, and a comprehensive, resourceful library. Our state-of-the-art infrastructure is designed to foster a dynamic, engaging learning environment, inspiring academic growth and holistic development for every student.</i></h6>
             
         </div>
     </section>
@@ -422,14 +422,8 @@
                 <h3>NCC</h3>
 
                 <p class="light-blue">
-                    Outbound trips and educational tours, both within the country and beyond our borders, offer a wealth
-                    of benefits, broadening students' horizons by immersing them in diverse cultures and environments.
-                    These adventures provide practical learning experiences that extend well beyond the classroom,
-                    enhancing problem-solving skills and adaptability.
-                    As students navigate new and unfamiliar territories, they cultivate independence and self-confidence
-                    while forging lasting memories and connections that foster a sense of global citizenship.
-                    From camping and rock climbing to parasailing and microlight flying, these meticulously planned
-                    expeditions instil resilience and teamwork alongside a profound respect for nature.</p>
+                Our NCC Unit, comprising 50 cadets under the guidance of Mr. Sathish Kumar, nurtures self-confidence, punctuality, and a spirit of adventure. Through rigorous training in camps and parades, our cadets embody the ideals of sportsmanship and selfless service, shaping their development as responsible citizens. The unit actively participates in organising significant events such as the School Republic Day and Independence Day celebrations, while also spreading awareness of government initiatives. Additionally, our cadets receive specialised training in handling SLR rifles, learning to assemble and dismantle them safely. This comprehensive approach fosters leadership, teamwork, and a secular outlook, preparing our students to be the leaders of tomorrow.
+                </p>
 
                 <h3>Scouts & <span>Guides</span></h3>
 

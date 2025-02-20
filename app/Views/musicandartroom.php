@@ -32,8 +32,8 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Music & <span> Art Room</span></h3>
-            <h6>Igniting creativity through vibrant music and art rooms that serve as a
-            canvas for students' expressive learning.</h6>
+            <h6><i>Igniting creativity through vibrant music and art rooms that serve as a
+            canvas for students' expressive learning.</i></h6>
 
         </div>
     </section>

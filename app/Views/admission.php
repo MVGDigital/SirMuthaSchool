@@ -20,7 +20,7 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('admission#application_process') ?>" class="active">Application Process</a></li>
-                    <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
+                    <!-- <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li> -->
                 <li><a href="<?= base_url('admission#admission_enquiry') ?>">Admission Enquiry Form</a></li>
             </ul>
         </div>
@@ -31,10 +31,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Welcome To Sir Mutha School !</h3>
-            <h6>A Home away from Home – a place where diversity thrives, minds are nurtured, and students are prepared for the future.
+            <h6><i>A Home away from Home – a place where diversity thrives, minds are nurtured, and students are prepared for the future.
             At Sir Mutha School, we are driven by a passion for innovation offering a holistic education that supports every learner's growth. 
             The school seamlessly blends tradition with progress, 
-            creating an environment where excellence flourishes and new opportunities are embraced.</h6>
+            creating an environment where excellence flourishes and new opportunities are embraced.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -144,7 +144,7 @@
     <!-- Terms & Conditions -->
 
     <!-- Fee Structure -->
-    <section class="wave-sec wave-lightyellow-bottom-img"  id="fee_structure">
+    <section class="wave-sec wave-lightyellow-bottom-img d-none"  id="fee_structure">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">

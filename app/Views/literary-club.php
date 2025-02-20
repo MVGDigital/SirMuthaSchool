@@ -33,24 +33,23 @@
     </section>
     <!-- Section Menus -->
 
-    <!-- Literary -->
+    <!-- Literary & Arts -->
     <section class="wave-sec ligh-yellowWithGg-img ptb-80" id="terms_conditions">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Literary <span> club</span></h3>
-                    <p>The ‘Maths Club’ facilitates students’ exploration of mathematics beyond the confines of textbooks, encouraging them to think creatively and develop a genuine interest in the subject. Through a variety of stimulating activities, the club sharpens learning and enhances problem-solving skills applicable to everyday life.</p>
-                <p>Students enjoy engaging in mathematical games, puzzles, and artistic exercises that reinforce essential concepts, transforming the study of mathematics into an enjoyable pursuit. By participating in the Maths Club activities, students not only deepen their understanding of mathematical principles but also cultivate a lasting appreciation for the subject, equipping them with skills that extend far beyond the classroom.
-                </p>
+                    <p>The Eco-Club of our school plays a vital role in establishing a central hub for all environmental and sustainability initiatives. It serves as a catalyst for cultivating a sustainable campus, in alignment with the principles of ecological stewardship. Through a range of engaging programmes and activities, the club aims to raise awareness among students about the importance of environmental conservation.</p>
+                    <p>Members participate in projects that promote biodiversity, reduce waste, and encourage sustainable practices within the school community. By fostering a sense of responsibility and connection to the environment, the Eco-Club not only empowers students to act but also instils a lasting commitment to safeguarding our planet for future generations.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/beyond-curriculum/maths_curve.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/beyond-curriculum/literary_club_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
     </section>
-    <!-- Literary -->
+    <!-- Literary & Arts -->
 
     <!-- Gallery Section -->
     <section class="container-space ptb-80">
@@ -58,34 +57,33 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Teacher Enrichment <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
-                            modern classrooms."
+                        <h3>Literary Club <span> Gallery</span></h3>
+                        <h6 style="color:black;">"The Eco-Club promotes sustainability, conservation, and environmental responsibility among students."
                         </h6>
                     </div>
 
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                <img src="<?= base_url('images/gallery/literary_club_gallery_03.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                    <img src="<?= base_url('images/gallery/literary_club_gallery_02.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                    <img src="<?= base_url('images/gallery/literary_club_gallery_01.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                <img src="<?= base_url('images/gallery/literary_club_gallery_04.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>

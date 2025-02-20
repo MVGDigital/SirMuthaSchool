@@ -33,7 +33,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Inter <span> School</span></h3>
-            <h6>At Sir Mutha School, education extends beyond classrooms, encouraging intellectual, cultural, and athletic growth. Inter-school events help students develop confidence, leadership, and teamwork through competitions like MUN and West Chennai Sahodaya Cluster Schools’ events.</h6>
+            <h6><i>At Sir Mutha School, education extends beyond classrooms, encouraging intellectual, cultural, and athletic growth. Inter-school events help students develop confidence, leadership, and teamwork through competitions like MUN and West Chennai Sahodaya Cluster Schools’ events.</i></h6>
 
         </div>
     </section>

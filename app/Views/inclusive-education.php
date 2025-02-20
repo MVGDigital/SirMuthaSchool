@@ -32,7 +32,7 @@
        
         <div class="sectionTitle-white col-lg-10 m-auto">
            <h3>Special <span> Education</span></h3>
-           <h6>At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centres and occupational therapy. With comprehensive training for caregivers and personalized therapy sessions, we focus on nurturing development, enhancing skills, and helping each child reach their full potential while promoting inclusivity and growth.</h6>
+           <h6><i>At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centres and occupational therapy. With comprehensive training for caregivers and personalized therapy sessions, we focus on nurturing development, enhancing skills, and helping each child reach their full potential while promoting inclusivity and growth.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->

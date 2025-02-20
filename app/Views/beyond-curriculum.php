@@ -32,7 +32,7 @@
         </div>
         <div class="sectionTitle-white sectionSubTitle col-lg-10 m-auto">
             <h3>Empowering Students for a <span>Better Tomorrow</span></h3>
-            <h6>At Sir Mutha School, our diverse clubs—including Heritage, Maths, Eco, and Interact—provide students with opportunities to learn, innovate, and give back to the community. Through interactive activities and service-oriented initiatives, students develop critical thinking, creativity, and social awareness, shaping them into well-rounded individuals ready to make a meaningful impact.
+            <h6><i>At Sir Mutha School, our diverse clubs—including Heritage, Maths, Eco, and Interact—provide students with opportunities to learn, innovate, and give back to the community. Through interactive activities and service-oriented initiatives, students develop critical thinking, creativity, and social awareness, shaping them into well-rounded individuals ready to make a meaningful impact.</i>c
             </h6>
         </div>
     </section>
@@ -95,6 +95,33 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="row m-0 w100">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                                <div class="cardWith-under-info">
+                                    <img src="<?= base_url('images/facilities/literary_main_img_1.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Literary <span>Club </span></h4>
+                                    </div>
+                                    <div class="blueBtn-medium">
+                                        <a href="<?= base_url('/beyond-curriculum/literary-club') ?>">Know More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                                <div class="cardWith-under-info">
+                                    <img src="<?= base_url('images/facilities/Interact club.png') ?>" class="img-fluid" alt="Sir Mutha Logo">
+                                    <div class="sectionSubTitle-white">
+                                        <h4>Interact <span>Club </span></h4>
+                                    </div>
+                                    <div class="blueBtn-medium">
+                                        <a href="<?= base_url('/beyond-curriculum/interactclub') ?>">Know More</a>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </li>
 

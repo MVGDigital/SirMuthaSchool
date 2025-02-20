@@ -32,11 +32,11 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Physics <span> Lab</span></h3>
-            <h6>Our physics lab is equipped with cutting-edge instruments, providing students
+            <h6><i>Our physics lab is equipped with cutting-edge instruments, providing students
 with invaluable practical experience in scientific principles. Through immersive
 experiments and demonstrations, they unravel the mysteries of motion, energy,
 and force, cultivating curiosity, sharpening critical thinking, and deepening their
-understanding of the physical world.</h6>
+understanding of the physical world.</i></h6>
             
         </div>
     </section>

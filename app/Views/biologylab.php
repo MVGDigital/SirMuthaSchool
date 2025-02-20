@@ -32,7 +32,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Biology <span> Lab</span></h3>
-            <h6>Our well-equipped biology lab offers a dynamic learning environment with tools and specimens. Students engage in hands-on experiments, deepening their understanding of biological concepts. The lab fosters curiosity, scientific inquiry, and practical knowledge, providing the perfect setting for exploration and discovery in the world of life sciences.</h6>
+            <h6><i>Our well-equipped biology lab offers a dynamic learning environment with tools and specimens. Students engage in hands-on experiments, deepening their understanding of biological concepts. The lab fosters curiosity, scientific inquiry, and practical knowledge, providing the perfect setting for exploration and discovery in the world of life sciences.</i></h6>
             
         </div>
     </section>

@@ -79,4 +79,21 @@ class Achievements extends BaseController
 
         return view('header', $data) . view('inter-school', $data) . view('footer');
     }
+
+    public function literaryArts()
+    {
+        $bannerModel = new BannerModel();
+        
+        $banner = $bannerModel->where('page', 'achievement')->where('is_published', 1)->first();
+        
+
+        $data = [
+            'page_title' => 'Literary & Arts',
+            'page_code' => 'literary-arts',
+            'banner' => $banner,
+            
+        ];
+
+        return view('header', $data) . view('literary-arts', $data) . view('footer');
+    }
 }

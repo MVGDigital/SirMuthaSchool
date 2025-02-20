@@ -29,11 +29,11 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Events From <span>Sir Mutha</span></h3>
-            <h6>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From
+            <h3>Events From <span>Sir Mutha School</span></h3>
+            <h6><i>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From
                 academic achievements to cultural celebrations, discover moments that unite our community and showcase
                 the talents and accomplishments of our students and staff. Stay informed and connected through this
-                engaging platform.</h6>
+                engaging platform.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->

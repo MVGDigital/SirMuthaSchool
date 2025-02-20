@@ -33,16 +33,12 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>About <span>CBSE</span></h3>
 
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
-                education system that nurtures excellence in every sphere of human endeavour.
-                The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
-                vitality among its learners.
-                It strives to create a learning process and environment that empowers future citizens to emerge as
-                global leaders in the evolving knowledge society.
-                The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
-                learners.
-                It is committed to offering a stress-free learning environment that cultivates competent, confident, and
-                enterprising individuals who promote harmony and peace.
+            <h6><i>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+                education system that nurtures excellence in every sphere of human endeavour. The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
+                vitality among its learners. It strives to create a learning process and environment that empowers future citizens to emerge as
+                global leaders in the evolving knowledge society. The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
+                learners. It is committed to offering a stress-free learning environment that cultivates competent, confident, and
+                enterprising individuals who promote harmony and peace.</i></h6>
             </h6>
         </div>
     </section>

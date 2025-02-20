@@ -131,6 +131,9 @@
                         skills but also encourages a deeper appreciation for culture and creativity. These experiences
                         enrich their academic and personal growth, reinforcing the importance of creativity in
                         education.</p>
+                        <div class="blueBtn-medium">
+                                        <a href="<?= base_url('achievements/literary-arts') ?>">Know More</a>
+                                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
