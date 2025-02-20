@@ -113,7 +113,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/sarvelpalli_sai_aditya.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/boy_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>SARVEPALLI SAI ADITYA</h6>
@@ -156,7 +156,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/vir_naving_mukhi.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/boy_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>S. AYUSH</h6>
@@ -170,7 +170,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/vir_naving_mukhi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>M. VIR NAVIN MUKHI</h6>
@@ -184,7 +184,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/boy_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>RAJVEER AGRAWAL</h6>
@@ -199,7 +199,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/diya_balani.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>CHERUKURI MAHATI</h6>
@@ -214,7 +214,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/tanya_mukhi.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/cherukuri_mahati.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>CHERUKURI MAHATI</h6>
@@ -229,7 +229,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/diya_balani.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>DIYA BALANI</h6>
@@ -243,7 +243,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/tanya_mukhi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>TANYA MUKHI</h6>
@@ -317,7 +317,7 @@
                             <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M.A.S Imran</h6>
+                                <h6>A.S Imran</h6>
                                 <p>Mark <span> - 478/500</span></p>
                             </div>
                             <div class="blueBtn-medium">
@@ -359,7 +359,7 @@
                             <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M.A.S. Imran</h6>
+                                <h6>A.S. Imran</h6>
                                 <p>English <span> - 99 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
@@ -370,7 +370,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/rashida.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/girl_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Isha Hegde</h6>
@@ -384,7 +384,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/atira.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/rashida.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Rashida.A.Madraswala</h6>
@@ -398,7 +398,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/saloni_bisani.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/atira.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Atira Mardia</h6>
@@ -412,7 +412,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/shloka.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/saloni_bisani.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Saloni Bisani</h6>
@@ -426,7 +426,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/saloni_bisani.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/shloka.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Shloka Mehta</h6>
@@ -441,7 +441,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/viraj_girish_ramdas.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/saloni_bisani.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Saloni Bisani</h6>
@@ -456,7 +456,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/nadine_faith_balaji.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/viraj_girish_ramdas.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Viraj Girish Ramdas</h6>
@@ -471,7 +471,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/samiksha_rao.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/girl_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Isha Hegde</h6>
@@ -486,7 +486,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/sohalaya_syed.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/nadine_faith_balaji.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Nadine Faith Balaji</h6>
@@ -501,7 +501,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/dhruv_choudry.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/samiksha_rao.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Samiksha Rao</h6>
@@ -516,7 +516,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/atira.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/boy_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Aditya</h6>
@@ -530,7 +530,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/sohalaya_syed.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Sohaliya Syed</h6>
@@ -545,7 +545,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/dhruv_choudry.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Dhruv Chowdhary</h6>
@@ -560,7 +560,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/atira.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Atira Mardia</h6>
@@ -575,7 +575,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Shri Syleshwar</h6>
@@ -590,7 +590,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Shri Syleshwar</h6>
@@ -605,7 +605,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/grethi.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/shre_syleshwar.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Shri Syleshwar</h6>
@@ -620,10 +620,10 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/mehar.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M.A.S Imran</h6>
+                                <h6>A.S Imran</h6>
                                 <p>Accountancy <span> - 97 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
@@ -635,10 +635,10 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/imran.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
-                                <h6>M.A.S Imran</h6>
+                                <h6>A.S Imran</h6>
                                 <p>Applied Mathematics <span> - 95 Marks</span></p>
                             </div>
                             <div class="blueBtn-medium">
@@ -650,7 +650,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/grethi.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>D.Grethi</h6>
@@ -665,7 +665,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/mehar.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Mehar Dinesh Balani</h6>
@@ -680,7 +680,7 @@
 
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/chaturbujan.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/boy_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>R Rohin Kidambi</h6>
@@ -694,7 +694,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/chaturbujan.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Purab R Jain</h6>
@@ -708,7 +708,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/chaturbujan.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Purab R Jain</h6>
@@ -722,7 +722,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/chaturbujan.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/purab_r_jain.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>Purab R Jain</h6>
