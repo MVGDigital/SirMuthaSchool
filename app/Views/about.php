@@ -40,7 +40,7 @@
                 it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child.
                 The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a
                 spirit of excellence.
-                Here, learning is not merely an academic endeavour but a journey of self-discovery.</i>
+                Here, learning is not me    rely an academic endeavour but a journey of self-discovery.</i>
             </h6>
         </div>
     </section>

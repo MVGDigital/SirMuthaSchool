@@ -61,7 +61,7 @@
         <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/admission/start_ur_journey_sirmutha.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
