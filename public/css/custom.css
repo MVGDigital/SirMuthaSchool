@@ -1499,7 +1499,7 @@ main {
 }
 
 .linenWhite-bgImg {
-    margin-top: -5%;f
+    margin-top: -5%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/statutory/linenWhite-Bg.svg);
@@ -1518,6 +1518,10 @@ main {
 .videosec {
     position: relative;
     display: flex;
+}
+
+#campusVideo{
+  position: relative;
 }
 
 video {
@@ -1709,6 +1713,20 @@ video {
     text-align: center;
     cursor: pointer;
     margin: 0 30px;
+}
+
+#galleryTabs .Tabs__tab:first-child.active~.Tabs__presentation-slider{
+        transform: translateX(8.333%) scaleX(0.100)!important;
+}
+
+#galleryTabs .Tabs__tab:nth-child(2).active~.Tabs__presentation-slider {
+    transform: translateX(25.133%) scaleX(0.102);
+}
+#galleryTabs .Tabs__tab:nth-child(3).active~.Tabs__presentation-slider {
+    transform: translateX(calc(21.833%* 2)) scaleX(0.246);
+}
+#galleryTabs .Tabs__tab:nth-child(4).active~.Tabs__presentation-slider {
+    transform: translateX(calc(38.133%* 2)) scaleX(0.210);
 }
 
 .Tabs__tab:first-child.active~.Tabs__presentation-slider {
