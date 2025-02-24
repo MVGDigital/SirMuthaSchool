@@ -374,7 +374,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/june/annual-june-05-06-2014.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -386,7 +386,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/june/annual-june-06-06-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -434,7 +434,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/june/annual-june-06-06-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -458,7 +458,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-11-07-2014.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -471,7 +471,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-18-07-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-27-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -483,7 +483,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-27-07-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-08-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -495,7 +495,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg mx-auto">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-11-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -507,7 +507,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-18-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -519,7 +519,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -531,7 +531,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/july/annual-july-27-07-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -543,7 +543,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/annual-event-1.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -639,7 +639,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-05-09-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-06-09-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -651,7 +651,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-10-09-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -664,7 +664,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/sept/annual-september-05-09-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -689,7 +689,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-25-10-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -701,7 +701,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-27-10-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/cevents_annual_na.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -713,7 +713,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-27-10-2024.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-25-10-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">

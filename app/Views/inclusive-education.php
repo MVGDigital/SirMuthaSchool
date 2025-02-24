@@ -46,7 +46,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Learning <span> Centres</span></h3>
+                    <h3>Learning <span> Centre</span></h3>
                     <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to
                         cater to the needs of children with special needs,
                         while simultaneously fostering awareness among teachers, parents, and the community at large.
