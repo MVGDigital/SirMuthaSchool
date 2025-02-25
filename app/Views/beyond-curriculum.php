@@ -761,7 +761,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 06_12_24.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/dec/december_ 06_12_2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">

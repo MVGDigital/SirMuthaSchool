@@ -214,8 +214,8 @@
     <!-- Vision & Mission Section -->
 
     <!-- Our Board Member -->
-    <section class="container-space ptb-80" id="boardmember">
-        <div class="sectionTitle-blue col-lg-10 m-auto">
+    <section class="container-space ptb-80 d-none" id="boardmember">
+        <div class="sectionTitle-blue col-lg-10 m-auto ">
             <h3>Our Board<span> Members</span></h3>
         </div>
         <div class="col-12 col-md-12 col-lg-12 col-xl-9 m-auto">
