@@ -19,7 +19,7 @@
     <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('announcements#announcements') ?>" class="active">Announcements</a></li>
+                <li><a href="<?= base_url('announcements#announcements') ?>" class="active">Sir Mutha Announcements</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -43,7 +43,7 @@
 
     <section class="container-space blueBg-Sec ptb-80" id="announcements">
         <div class="sectionTitle-white col-lg-10 m-auto">
-        <h3>Sir Mutha <span> Announcements</span></h3>
+        <!-- <h3>Sir Mutha <span> Announcements</span></h3> -->
         </div>
         <div id="pdf-render-area"></div>
     </section>

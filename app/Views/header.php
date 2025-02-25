@@ -142,7 +142,8 @@
                         <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
                     </li>
                     <li id="parentsMenu" class="nav-item">
-                        <a class="nav-link" href="<?= base_url('parents') ?>">Parents</a>
+                        
+                <a class="nav-link" href="https://student.schoolcanvas.com/sms" target="_blank">Parents</a>
                     </li>
                 </ul>
             </div>

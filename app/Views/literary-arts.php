@@ -69,7 +69,7 @@
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/literary_arts_gallery_01.png') ?>"
+                                <img src="<?= base_url('images/gallery/literary_arts_gallery_03.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/literary_arts_gallery_03.png') ?>"
+                                    <img src="<?= base_url('images/gallery/literary_arts_gallery_01.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>

@@ -31,7 +31,8 @@
             <a href="<?= base_url('announcements') ?>">Announcements</a>
             <a href="<?= base_url('in-the-outdoors') ?>">In The Outdoors</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>
-            <a href="<?= base_url('parents') ?>">Parents</a>
+            <!-- <a href="<?= base_url('parents') ?>">Parents</a> -->
+            <a class="nav-link" href="https://student.schoolcanvas.com/sms" target="_blank">Parents</a>
             <a href="<?= base_url('admission') ?>">Admissions</a>
             <a href="<?= base_url('career') ?>">Careers</a>
 
@@ -1636,9 +1637,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <?php endif; ?>
 
 <?php if ($page_code === 'parents'): ?>
-
-
+  
 <?php endif; ?>
+
 </script>
 </div>
 </body>

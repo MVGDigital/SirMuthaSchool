@@ -85,7 +85,6 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                    <div class="cardWith-under-info-center">
                         <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
@@ -102,3 +101,23 @@
             </div>
         </div>
     </section> -->
+
+        <!-- Educational Tours Section-->
+        <section id="educational-tour">
+        <img src="<?= base_url('images/statutory/child_safety_posco.png') ?>" class="img-fluid" alt=""
+            id="Occupational">
+        <div class="container-space ptb-80">
+            <div class="sectionTitle-blue col-lg-10 m-auto">
+                <h3>POCSO <span>Act</span></h3>
+                <h6 class="light-blue">Protection of Children from Sexual Offences (POCSO)
+                </h6>
+                <p class="light-blue">As part of our commitment to maintaining a secure and supportive educational environment, we have organised a comprehensive workshop for teachers focused on the Protection of Children from Sexual Offences (POCSO) Act. This initiative is essential to ensuring that our staff is well-informed and equipped to uphold institutional integrity and comply with national regulations. Additionally, a committee has been established to oversee the continuous monitoring and enforcement of these standards. The committee will ensure the effective implementation of policies and address any concerns related to the safety and well-being of our students. Through this proactive approach, we reaffirm our unwavering commitment to protecting the rights, safety, and dignity of all students.
+                </p>
+          
+                <!--<div class="blueBtn-medium text-center">-->
+                <!--    <a href="#">Know More</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+    <!-- Educational Tours Section-->

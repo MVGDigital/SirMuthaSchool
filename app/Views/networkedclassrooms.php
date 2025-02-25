@@ -44,7 +44,14 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Networked classrooms <span>Overview</span></h3>
-                        <p>Our classrooms are the epitome of educational modernity with sophisticated smart boards and comprehensive networked systems. This avant-garde infrastructure transforms the traditional learning space into a hub of intellectual curiosity, facilitating seamless collaboration and interaction.</p>
+                        <p> The integration of both auditory and visual stimuli caters to the diverse
+sensory needs of students, thereby enhancing the speed and effectiveness with
+which they absorb and retain information. By incorporating interactive
+modules, such as videos and presentations, this approach transforms the
+learning experience. </p>
+<p>These visually captivating methods of instruction provide a dynamic
+alternative to traditional pedagogical techniques, particularly when tackling
+complex concepts that might otherwise be challenging to grasp.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">

@@ -78,7 +78,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Concert Hall <span> Gallery</span></h3>
-                        <h6 style="color:black;">"A vibrant space for music, drama, and cultural performances, showcasing student talent and creativity."</h6>
+                        <h6 style="color:black;">"A vibrant space for music, drama, and cultural performances, showcasing students' talent and creativity."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

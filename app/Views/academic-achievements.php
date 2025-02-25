@@ -257,7 +257,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="cardWith-under-info">
-                            <img src="<?= base_url('images/achievements/diya_sitara_raman.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/achievements/girl_vector.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Logo">
                             <div class="academic-thumbContent">
                                 <h6>DIYA SITARA RAMAN</h6>
