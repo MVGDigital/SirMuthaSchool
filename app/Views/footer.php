@@ -5,7 +5,7 @@
             <p>Sir mutha school</p>
         </a>
         <div class="contact-details">
-            <p>No7,Shenstone Park,Harrington Road,Chetpet, Chennai-600 031.</p>
+            <p>No:7,Shenstone Park,Harrington Road,Chetpet, Chennai-600 031.</p>
             <p><a href="mailto:info@sirmuthaschool.edu.in">info@sirmuthaschool.edu.in</a></p>
             <p><a href="tel:+917358103843">+917358103843</a></p>
         </div>

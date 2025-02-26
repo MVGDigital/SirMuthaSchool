@@ -77,7 +77,7 @@
                 <div class="contactForm">
                     <div class="contactInfo">
                         <h6>Address</h6>
-                        <p>Shenstone Park, No.7,Harrington Road, Chennai-600 031.</p>
+                        <p>Shenstone Park, No.7,Harrington Road,chetpet, Chennai-600 031.</p>
                     </div>
                     <div class="contactInfo-line">
                         <hr>

@@ -165,9 +165,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="wave-slider-img">
-                            <img src="<?= base_url('images/beyond-curriculum/mun_04_desk.png') ?>" class="img-fluid deskTopImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_04_desktop.png') ?>" class="img-fluid deskTopImg w100"
                                 alt="Academic Facilities Images">
-                            <img src="<?= base_url('images/beyond-curriculum/mun_04_mob.png') ?>" class="img-fluid mobImg w100"
+                            <img src="<?= base_url('images/beyond-curriculum/mun_04_mobi.png') ?>" class="img-fluid mobImg w100"
                                 alt="Academic Facilities Images">
                         </div>
                     </li>
@@ -191,6 +191,33 @@
             <div class="vehicle-detail-banner banner-content clearfix">
                 <div class="slick-banner-slider">
                     <div class="slider slider-for">
+                    <div class="slick-slider-banner-image">
+                            <img src="<?= base_url('images/beyond-curriculum/newsletter-banner-1.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+                            <div class="thumbContent">
+                                <h6>SHENSTONE MAIL NEWSLETTER</h6>
+                                <span>Aug 2022</span>
+                                <p class="newsText">Introducing to you the first edition of our school newsletter - August 2022</p>
+                                <div class="whiteBtn-medium">
+                                <a href="<?= base_url('images/beyond-curriculum/news-letter-1.pdf') ?>" target="_blank">Know More</a>
+                                More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slick-slider-banner-image">
+                        <img src="<?= base_url('images/beyond-curriculum/newsletter-banner-2.png') ?>" class="img-fluid"
+                                alt="Sir Mutha Newsletter Image">
+
+                            <div class="thumbContent">
+                            <h6>SHENSTONE MAIL NEWSLETTER</h6>
+                                <span>Oct 2022</span>
+                                <p class="newsText">The second edition of our school newsletter - October 2022</p>
+                                <div class="whiteBtn-medium">
+                                <a href="<?= base_url('images/beyond-curriculum/news-letter-2.pdf') ?>" target="_blank">Know More</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="slick-slider-banner-image">
                             <img src="<?= base_url('images/beyond-curriculum/news-main-1.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
@@ -239,9 +266,41 @@
                                 <a href="https://swimswam.com/sir-mutha-ne-overall-title-jeeta-swimming-news/" target="_blank">Know More</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div class="slider slider-nav thumb-image">
+                    <div class="thumbnail-image">
+                            <div class="thumbImg">
+                                <img src="<?= base_url('images/beyond-curriculum/newsletter-thumb-1.png') ?>"
+                                    alt="Sir Mutha Newsletter Image">
+                            </div>
+                            <div class="thumbContent">
+                                <h6>SHENSTONE MAIL NEWSLETTER</h6>
+                                <p class="newsThumbText">Introducing to you the first edition of our school newsletter - August 2022</p>
+                                <span>Aug 2022</span>
+                                <div class="whiteBtn-medium">
+                                <a href="<?= base_url('images/beyond-curriculum/news-letter-1.pdf') ?>" target="_blank">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="thumbnail-image">
+                            <div class="thumbImg">
+                                <img src="<?= base_url('images/beyond-curriculum/newsletter-thumb-2.png') ?>"
+                                    alt="Sir Mutha Newsletter Image">
+                            </div>
+                            <div class="thumbContent">
+                                <h6>SHENSTONE MAIL NEWSLETTER</h6>
+                                <p class="newsThumbText">The second edition of our school newsletter - October 2022</p>
+                                <span>Oct 2022</span>
+                                <div class="whiteBtn-medium">
+                                <a href="<?= base_url('images/beyond-curriculum/news-letter-2.pdf') ?>" target="_blank">Know More</a>
+
+                                </div>
+                            </div>
+
+                        </div>
                         <div class="thumbnail-image">
                             <div class="thumbImg">
                                 <img src="<?= base_url('images/beyond-curriculum/thumb-1.png') ?>"
@@ -434,7 +493,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/june/annualevents-26th-june.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">

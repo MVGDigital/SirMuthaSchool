@@ -39,8 +39,9 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Literary <span> club</span></h3>
-                    <p>The Eco-Club of our school plays a vital role in establishing a central hub for all environmental and sustainability initiatives. It serves as a catalyst for cultivating a sustainable campus, in alignment with the principles of ecological stewardship. Through a range of engaging programmes and activities, the club aims to raise awareness among students about the importance of environmental conservation.</p>
-                    <p>Members participate in projects that promote biodiversity, reduce waste, and encourage sustainable practices within the school community. By fostering a sense of responsibility and connection to the environment, the Eco-Club not only empowers students to act but also instils a lasting commitment to safeguarding our planet for future generations.</p>
+                    <p>The Literary Club aims to cultivate an appreciation for literature while sharpening analytical and creative faculties. It provides a space where students refine their linguistic skills, engage in thoughtful discussions, and gain confidence in articulating their ideas with clarity and poise.</p>
+                    <p>This year, the Club presented the Caricature Convention, featuring activities such as bookmark making, a puppet show, essay writing, and story writing. These events encouraged students to explore diverse forms of literary expression, enhancing both their imaginative and critical abilities. Through such initiatives, the Club nurtures curiosity, deepens literary engagement,for the students.
+                    </p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
@@ -58,7 +59,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Literary Club <span> Gallery</span></h3>
-                        <h6 style="color:black;">"The Eco-Club promotes sustainability, conservation, and environmental responsibility among students."
+                        <h6 style="color:black;">" Literature is not merely studied—it is experienced, expressed, and celebrated."
                         </h6>
                     </div>
 
