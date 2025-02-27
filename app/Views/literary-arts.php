@@ -63,7 +63,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Literary & Arts <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Literary arts inspire creativity, critical thinking, and cultural appreciation."</h6>
+                        <h6 style="color:black;">"Literary and artistic expression ignite creativity, refine intellect, and deepen cultural appreciation."</h6>
                     </div>
 
                     <div class="row w100 m-0">

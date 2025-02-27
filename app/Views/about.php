@@ -34,13 +34,13 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Our <span>History</span></h3>
             <h6><i>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
-                Established on the 18th of July 2012 and affiliated with the Central Board of Secondary Education,
+                Established on the 18<sup>th</sup> of July 2012 and affiliated with the Central Board of Secondary Education,
                 the school embodies a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the
                 late Chief Justice Sir Mutha Venkatasubba Rao,
                 it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child.
                 The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a
                 spirit of excellence.
-                Here, learning is not me    rely an academic endeavour but a journey of self-discovery.</i>
+                Here, learning is not merely an academic endeavour but a journey of self-discovery.</i>
             </h6>
         </div>
     </section>
@@ -55,7 +55,7 @@
             </div>
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="87">0</h6>
-                <p>Faculty Members</p>
+                <p>Staff</p>
             </div>
             <div class="col-lg-3 counterItem">
                 <h6 class="counter-number" data-count="1140">0</h6>

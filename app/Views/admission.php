@@ -176,7 +176,7 @@
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
                     <div class="cardTitle">
-                        <h4>Kindergarten</h4>
+                        <h4>Kindergarten: 2025-2026</h4>
                     </div>
                     <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">

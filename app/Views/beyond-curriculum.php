@@ -181,9 +181,7 @@
     <section id="news-letter" class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Students <span>Newsletter</span></h3>
-            <h6 class="light-blue">"The student’s newsletter showcases the latest school news, events, achievements, and
-                creative student contributions. It provides a platform for students to express their ideas, celebrate
-                success, and stay informed."
+            <h6 class="light-blue">"Shenstone Mail, features the latest school news, events, achievements, and creative contributions from students. It serves as a platform for them to express their ideas and stay informed."
             </h6>
         </div>
 
