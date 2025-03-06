@@ -78,6 +78,7 @@
 var splide = new Splide('#homeSlider', {
     type: 'loop',
     autoplay: true,
+    pauseOnHover: false,
     padding: '10rem',
     arrows: false,
     pagination: false,
@@ -1541,7 +1542,7 @@ splide.mount();
 
 <?php if ($page_code === 'announcement'): ?>
 
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
     // Fetch announcements from PHP
     var pdfFiles = <?= json_encode($announcements) ?>;
 
@@ -1594,6 +1595,39 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+}); */
+
+document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.getElementsByClassName("Tab");
+    var contents = document.getElementsByClassName("tab-content");
+
+    // Add event listeners to tabs
+    Array.prototype.forEach.call(tabs, function(tab) {
+        tab.addEventListener("click", setActiveClass);
+    });
+
+    function setActiveClass(evt) {
+        // Remove active class from all tabs
+        Array.prototype.forEach.call(tabs, function(tab) {
+            tab.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        evt.currentTarget.classList.add("active");
+
+        // Hide all tab content
+        Array.prototype.forEach.call(contents, function(content) {
+            content.style.display = "none";
+        });
+
+        // Show the content that corresponds to the clicked tab
+        var tabNumber = evt.currentTarget.getAttribute("data-tab");
+        var selectedTabContent = document.getElementById("tab-" + tabNumber);
+        selectedTabContent.style.display = "block";
+
+        // Reinitialize pagination for the selected tab
+        reinitializePagination(selectedTabContent);
+    }
 });
 
 <?php endif; ?>

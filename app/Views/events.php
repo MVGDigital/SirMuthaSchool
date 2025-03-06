@@ -70,6 +70,9 @@
                     <?php foreach ($upcoming_events as $event): ?>
                     <li class="splide__slide">
                         <div class="slider-card">
+                            <div class="eventBg-img">
+                                <img src="<?= base_url('images/events/past-event-2.jpg') ?>" class="img-fluid" alt="">
+                            </div>
                             <div class="card-content">
                                 <div class="eventFullDate">
                                     <h5><?= date('d', strtotime($event['event_date'])) ?></h5>

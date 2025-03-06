@@ -2393,6 +2393,120 @@ label.error {
 }
 
 /* =============================== Beyond Curriculum =================================*/
+/* =============================== Announcements =================================*/
+#announcements .Tabs__presentation-slider{
+    display: none;
+}
+#announcements .Tabs__tab{
+    width: 100%;
+    margin: 0;
+}
+#announcements .Panel-body{
+    padding: 0;
+}
+#announcements .Tabs{
+    flex-wrap: nowrap;
+}
+#announcements .Panel nav{
+    max-width: 100%;
+    margin: 0;
+}
+#announcements .Tabs__tab.active{
+    background-color: #FFF;
+}
+#announcements .Tabs__tab span{
+    text-align: start;
+    opacity: 1;
+    padding: 8px 20px!important;
+    color: var(--color-white)!important;
+}
+#announcements .Tabs__tab.active span{
+    color: var(--color-orange)!important;
+}
+#announcements .date-badge {
+    width: 80px;
+    background-color: #0d3057; /* Dark blue color */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+#announcements .year{
+    font-size: 24px;
+    color: #102753;
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: 'Figtree-Bold';
+}
+#announcements .day {
+    font-size: 40px;
+    line-height: 34px;
+    color: var(--color-white);
+    font-family: 'EBGaramond-SemiBold';
+}
+
+#announcements .month {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-family: 'EBGaramond-Medium';
+}
+.annoucementCards{
+    display: flex;
+    padding:10px 25px;
+    margin-bottom: 2px;
+    background-color: #FFF;
+}
+.dateOf-annoucement{
+    padding:0 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.desc-annoucement{
+    padding:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blue);
+}
+
+.viewPdf-annoucement{
+    padding:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewPdf-annoucement a{
+    font-size: 12px;
+    color: #000!important;
+    font-family: 'Figtree-Medium';
+}
+.viewPdf{
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #CFD4DD;
+    border: 1px solid #CFD4DD;
+    transition: background-color 0.3s ease-in-out;
+}
+.viewPdf:hover{
+    border: 1px solid var(--color-blue);
+}
+.viewPdf span{
+    white-space: nowrap;
+}
+.viewPdf img{
+    width: 50%;
+}
+/* =============================== Announcements =================================*/
+
+
 /* =============================== Events =================================*/
 .flash-msg {
     text-align: center;
@@ -2415,11 +2529,26 @@ label.error {
 #upcoming-events .slider-card {
     width: 100%;
     height: 100%;
+    margin:0 15px;
     padding-left: 0;
     padding-right: 0;
-    background-color: var(--white-bg) !important;
+    border-radius: 0px;
+    border-radius: 4px;
+    background-color: #04000073 !important;
+    position: relative;
 }
-
+.eventBg-img{
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+}
+.eventBg-img img{
+    object-fit: cover;
+    height: 100%;  
+    border-radius: 4px;
+}
 .eventsSearch {
     margin-top: 50px !important;
 }
@@ -2452,7 +2581,7 @@ label.error {
 .eventFullDate h5 {
     font-size: 55px;
     line-height: 55px;
-    color: #474747;
+    color: #FFF;
     margin-bottom: 0;
     font-family: 'Figtree-Light';
 }
@@ -2460,7 +2589,7 @@ label.error {
 .eventFullDate p {
     font-size: 16px;
     line-height: 25px;
-    color: #474747;
+    color: #FFF;
     margin-bottom: 0;
     font-family: 'Figtree-Medium';
 }
@@ -2468,7 +2597,7 @@ label.error {
 .eventFullDate span {
     font-size: 16px;
     line-height: 25px;
-    color: var(--color-inActive);
+    color: #FFF;
     font-family: 'Figtree-Medium';
 }
 
@@ -2478,12 +2607,13 @@ label.error {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .upcomingEvent-info .eventTitle h6 {
     font-size: 18px;
     line-height: 25px;
-    color: #333333;
+    color: #FFF;
     text-align: start;
     text-transform: capitalize;
     font-family: 'Figtree-Medium';
@@ -2492,7 +2622,7 @@ label.error {
 .upcomingEvent-info .eventTitle p {
     font-size: 16px;
     line-height: 25px;
-    color: #6D7A84;
+    color: #FFF;
     text-align: start;
     margin-bottom: 0;
     font-family: 'Figtree-Regular';
