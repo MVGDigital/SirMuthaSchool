@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,9 +19,9 @@
     <section class="container-space innerMenus-sec">
         <div class="innerMenus">
             <ul class="lessMenus">
-                <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centers</a>
+                <li><a href="<?= base_url('inclusive-education#learing_center') ?>" class="active">Learning Centres</a>
                 </li>
-                <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Theraphy</a></li>
+                <li><a href="<?= base_url('inclusive-education#Occupational') ?>">Occupational Therapy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -34,8 +31,8 @@
         </div>
        
         <div class="sectionTitle-white col-lg-10 m-auto">
-           <h3>Special <span> Education</span></h3>
-           <h6>"At Sir Mutha School, our Special Education program supports children with unique learning needs through dedicated learning centers and occupational therapy. With comprehensive training for caregivers and tailored therapy sessions, we focus on fostering development, enhancing skills, and helping each child achieve their full potential, promoting inclusivity and growth."</h6>
+           <!-- <h3>Special <span> Education</span></h3> -->
+           <h6><i>Sir Mutha School supports children with unique learning needs through dedicated learning centres and occupational therapy. With comprehensive training for caregivers and personalised therapy sessions, we focus on nurturing development, enhancing skills, and helping each child reach their full potential while promoting inclusivity and growth.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -49,7 +46,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Learning <span> Centers</span></h3>
+                    <h3>Learning <span> Centre</span></h3>
                     <p>In keeping with the vision of Sir Mutha School, the Learning Centre was established in 2012 to
                         cater to the needs of children with special needs,
                         while simultaneously fostering awareness among teachers, parents, and the community at large.
@@ -98,7 +95,7 @@
 
         <div class="container-space ptb-80">
             <div class="sectionTitle-blue col-lg-10 m-auto">
-                <h3>Occupational <span>Theraphy</span></h3>
+                <h3>Occupational <span>Therapy</span></h3> 
                 <h6 class="light-blue">An Occupational Therapy Centre thrives within the school, dedicated to the
                     essential role of the Occupational Therapist in paediatrics.
                 </h6>

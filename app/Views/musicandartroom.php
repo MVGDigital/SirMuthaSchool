@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -19,13 +16,12 @@
     <!-- Banner Section -->
 
     <!-- Section Menus -->
-    <section class="container-space innerMenus-sec" id="academicfacility">
+    <section class="container-space innerMenus-sec" id="academicfalcility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -35,8 +31,9 @@
             <hr>
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
-            <h3>Music & <span> Arts Room</span></h3>
-            <h6>"Unleashing creativity in our vibrant Music and Art Room, where students explore their talents through melodies, rhythms, colors, and expressions. Equipped with modern instruments and art supplies, this inspiring space nurtures artistic growth and a passion for the arts."</h6>
+            <h3>Music & <span> Art Room</span></h3>
+            <h6><i>Igniting creativity through vibrant music and art rooms that serve as a
+            canvas for students' expressive learning.</i></h6>
 
         </div>
     </section>
@@ -64,9 +61,9 @@
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>Music <span>And</span> Arts room facility</h3>
-                    <p>Arts</p>
-                                    <p >The art room stands as a sanctuary of creativity, designed to inspire and encourage artistic expression. Here, students are free to experiment with various mediums, cultivating their imagination. By integrating arts education into our academic framework, we foster well-rounded individuals who think creatively. This vital aspect of our vision empowers students to explore their full potential. Ultimately, creativity becomes a lens through which they engage with the world.</p>
+                    <h3>Music <span>And</span> Art room Overview</h3>
+                    <p>Art</p>
+                                    <p >The art room serves as a sanctuary of creativity, designed to inspire and nurture artistic expression. Here, students are free to experiment with various mediums, enhancing their imagination. By integrating arts education into our academic framework, we shape well-rounded individuals who think innovatively. This vital aspect of our vision empowers students to explore their full potential, allowing creativity to become a lens through which they engage with the world.</p>
                                <p>Music</p>
                                 <p>In our classrooms, music thrives as a dynamic blend of Indian and Western traditions. It’s more than just melodies; it’s a celebration of culture and creativity. By embracing music education, we ignite passion and develop skills that extend beyond academics. Here, students discover their unique voices and connect with the world around them. During Founder’s Day celebration, they showcase their talents and celebrate the spirit of our school.
 </p>

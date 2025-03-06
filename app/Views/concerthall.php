@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,9 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -36,7 +32,7 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Concert <span> Hall</span></h3>
-            <h6>"Our school’s concert hall is a premier venue for musical performances, drama, and cultural events. Equipped with excellent acoustics and a spacious seating arrangement, it provides a vibrant platform for students to showcase their talents. It fosters creativity, teamwork, and a love for the performing arts in a dynamic environment."</h6>
+            <h6>Our school’s concert hall is a premier venue for musical performances, drama, and cultural events. With exceptional acoustics and a spacious seating arrangement, it offers a vibrant platform for students to showcase their talents. The hall encourages creativity, teamwork, and a passion for the performing arts in an inspiring environment.</h6>
 
         </div>
     </section>
@@ -82,7 +78,7 @@
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
                         <h3>Concert Hall <span> Gallery</span></h3>
-                        <h6 style="color:black;">"A vibrant space for music, drama, and cultural performances, showcasing student talent and creativity."</h6>
+                        <h6 style="color:black;">"A vibrant space for music, drama, and cultural performances, showcasing students' talent and creativity."</h6>
                     </div>
                     
                     <div class="row w100 m-0">

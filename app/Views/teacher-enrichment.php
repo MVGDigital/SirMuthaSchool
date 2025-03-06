@@ -7,17 +7,12 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
         <?php endif; ?>
-    </section>
-    <!-- Banner Section -->
-
+        </section>
     <!-- Section Menus -->
     <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
@@ -25,7 +20,7 @@
                 <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
                 <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                 <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annual Pedagogical Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -36,17 +31,12 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>About <span>CBSE</span></h3>
 
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
-                education system that nurtures excellence in every sphere of human endeavour.
-                The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
-                vitality among its learners.
-                It strives to create a learning process and environment that empowers future citizens to emerge as
-                global leaders in the evolving knowledge society.
-                The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
-                learners.
-                It is committed to offering a stress-free learning environment that cultivates competent, confident, and
-                enterprising individuals who promote harmony and peace.
-            </h6>
+            <h6><i>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+                education system that nurtures excellence in every sphere of human endeavour. The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
+                vitality among its learners. It strives to create a learning process and environment that empowers future citizens to emerge as
+                global leaders in the evolving knowledge society. The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
+                learners. It is committed to offering a stress-free learning environment that cultivates competent, confident, and
+                enterprising individuals who promote harmony and peace.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -57,16 +47,13 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 ">
                 <div class="sectionTitle-blue lft-rgt-content">
                     <h3>Teacher <span>Enrichment</span></h3>
-                    <p>Audio – Visual senses of students are targeted, and it helps the students store the information
-                        fast
-                        and more effectively.</p>
-                    <p>Uses interactive modules like videos and presentations. These visually attractive methods of
-                        teaching
-                        help students learn a concept that is difficult to understand through traditional methods. </p>
+                    <p>Sir Mutha School actively organises teacher workshops, both in-house and as mandated by CBSE, to enhance professional growth. These sessions equip educators with innovative pedagogical strategies and evolving best practices. They create dynamic learning environments that benefit both teachers and students alike. CBSE-recommended training ensures alignment with national educational standards. Through continuous development, the school upholds excellence in teaching and learning.
+                    </p>
+                    
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-                <img src="<?= base_url('images/facilities/networkclassroom_overview.png') ?>" class="img-fluid w100"
+                <img src="<?= base_url('images/academics/teacher_enrichment_overview.png') ?>" class="img-fluid w100"
                     alt="Lady Andal">
             </div>
         </div>
@@ -80,33 +67,32 @@
                     <div class="tab-content" id="tab-1">
                         <div class="sectionTitle-blue col-lg-10 m-auto">
                             <h3>Teacher Enrichment <span> Gallery</span></h3>
-                            <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
-                                modern classrooms."
+                            <h6 style="color:black;">"Teaching excellence through dynamic workshops and CBSE training." 
                             </h6>
                         </div>
 
                         <div class="row w100 m-0">
                             <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                                 <div class="gallery-imgs">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                    <img src="<?= base_url('images/academics/teacher_enrichment_gallery_01.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                             <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                                 <div class="gallery-imgs">
                                     <div class="gallery-imgItem1">
-                                        <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                        <img src="<?= base_url('images/academics/teacher_enrichment_gallery_02.png') ?>"
                                             class="img-fluid w100" alt="Sir Gallery Images">
                                     </div>
                                     <div class="gallery-imgItem2">
-                                        <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                        <img src="<?= base_url('images/academics/teacher_enrichment_gallery_03.png') ?>"
                                             class="img-fluid w100" alt="Sir Gallery Images">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                                 <div class="gallery-imgs">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                    <img src="<?= base_url('images/academics/teacher_enrichment_gallery_04.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>

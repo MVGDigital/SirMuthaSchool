@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -25,7 +22,7 @@
                 <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
                 <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                 <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annual Pedagogical Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">

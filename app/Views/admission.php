@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -23,8 +20,7 @@
         <div class="innerMenus">
             <ul>
                 <li><a href="<?= base_url('admission#application_process') ?>" class="active">Application Process</a></li>
-                <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
-                <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
+                    <!-- <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li> -->
                 <li><a href="<?= base_url('admission#admission_enquiry') ?>">Admission Enquiry Form</a></li>
             </ul>
         </div>
@@ -35,10 +31,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Welcome To Sir Mutha School !</h3>
-            <h6>A Home away from Home – a place where diversity thrives, minds are nurtured, and students are prepared for the future.
+            <h6><i>A Home away from Home – a place where diversity thrives, minds are nurtured, and students are prepared for the future.
             At Sir Mutha School, we are driven by a passion for innovation offering a holistic education that supports every learner's growth. 
             The school seamlessly blends tradition with progress, 
-            creating an environment where excellence flourishes and new opportunities are embraced.</h6>
+            creating an environment where excellence flourishes and new opportunities are embraced.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -61,10 +57,33 @@
     </section>
     <!-- Video Section -->
 
+     <!-- Terms & Conditions -->
+        <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
+        <div class="itemSpaceBetween">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                <img src="<?= base_url('images/admission/start_ur_journey_sirmutha.png') ?>" class="img-fluid w100"
+                    alt="Lady Andal">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mobContTop-p-tb50 plr-80">
+                <div class="sectionTitle-blue lft-rgt-content">
+                    <h3>Start Your <span> Journey</span></h3>
+                    <p>Education is not a destination, but a winding journey—where each question plants the seed of discovery, and every answer blooms into new realms of understanding.
+
+                    </p>
+                    <p>At Sir Mutha School, education transcends the traditional boundaries of the classroom, while classrooms provide a structured foundation for academic learning, they are only one part of the broader educational journey. The school offers a wealth of opportunities—ranging from sports and performing arts to cultural activities—encouraging students to explore, excel, and discover their true passions. Embracing inclusivity, we integrate students with diverse learning needs, ensuring that every individual thrives in a supportive and collaborative environment. In this nurturing space, education is not just a phase, but a lifelong pursuit—a journey of growth, discovery, and purpose that extends far beyond the walls of the classroom.
+                    </p>
+                    <p>Join us, and embark on a journey that will shape your child’s future and stay with them for a lifetime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Terms & Conditions -->
+
     <!-- Application Process -->
     <section class="container-space bgImg-with-center-content application-process-img ptb-80"  id="application_process">
         <div class="sectionTitle-white">
-            <h3>Appication Process <span></h3>
+            <h3>Application Process <span></h3>
             <!--<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et-->
             <!--    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
             <!--    ex ea commodo consequat.</h6>-->
@@ -72,7 +91,7 @@
         <div class="col-lg-9 m-auto mt-50">
             <div class="center-card card-text-start">
                 <div class="sectionTitle-blue">
-                    <h3>Step to <span>follow</span></h3>
+                    <h3>Steps to <span>follow</span></h3>
                     <p><b>1. Online enquiry form</b> </p>
                     <p>The school's admission enquiry form will be available on the website from January onwards.</p>
                     <p><b>2. Submission of Online Enquiry Form</b></p>
@@ -101,7 +120,7 @@
 
 
         <!-- Terms & Conditions -->
-        <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
+        <!-- <section class="wave-sec ligh-yellowWithGg-img ptb-80"  id="terms_conditions">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-6 col-xl-5">
                 <img src="<?= base_url('images/admission/terms-and-conditions.png') ?>" class="img-fluid w100"
@@ -121,11 +140,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Terms & Conditions -->
 
     <!-- Fee Structure -->
-    <section class="wave-sec wave-lightyellow-bottom-img"  id="fee_structure">
+    <section class="wave-sec wave-lightyellow-bottom-img d-none"  id="fee_structure">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
@@ -157,7 +176,7 @@
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
                     <div class="cardTitle">
-                        <h4>Activity Centre/PREK-KG: 2025-26</h4>
+                        <h4>Kindergarten: 2025-2026</h4>
                     </div>
                     <img src="<?= base_url('images/admission/pre-kg.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">

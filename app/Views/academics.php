@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -25,7 +22,7 @@
                 <li><a href="<?= base_url('academics#aboutcbse') ?>" class="active">About CBSE</a></li>
                 <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                 <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annula Pedegogical Policy</a></li>
+                <li><a href="<?= base_url('academics#annulapolicy') ?>">Annual Pedagogical Policy</a></li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -36,16 +33,12 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>About <span>CBSE</span></h3>
 
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
-                education system that nurtures excellence in every sphere of human endeavour.
-                The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
-                vitality among its learners.
-                It strives to create a learning process and environment that empowers future citizens to emerge as
-                global leaders in the evolving knowledge society.
-                The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
-                learners.
-                It is committed to offering a stress-free learning environment that cultivates competent, confident, and
-                enterprising individuals who promote harmony and peace.
+            <h6><i>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+                education system that nurtures excellence in every sphere of human endeavour. The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
+                vitality among its learners. It strives to create a learning process and environment that empowers future citizens to emerge as
+                global leaders in the evolving knowledge society. The Board advocates Continuous and Comprehensive Evaluation, emphasising the holistic development of
+                learners. It is committed to offering a stress-free learning environment that cultivates competent, confident, and
+                enterprising individuals who promote harmony and peace.</i></h6>
             </h6>
         </div>
     </section>
@@ -59,7 +52,7 @@
             </div>
             <div class="col-md-12 col-lg-7 col-xl-7 mobContTop-p-tb50 plr-80">
                 <div class="sectionTitle-blue lft-rgt-content">
-                    <h3>CBSE <span> Curriculam</span></h3>
+                    <h3>CBSE <span> Curriculum</span></h3>
 
                     <p>The curriculum aims to cultivate the holistic development of students, enhancing not only their
                         physical and intellectual abilities but also their social competencies. It incorporates
@@ -112,9 +105,9 @@
     <!--  Annual Pedagogical Policy -->
     <section id="annulapolicy">
 
-        <img src="<?= base_url('images/inclusive-education/ot.png') ?>" class="img-fluid deskTopImg" alt=""
+        <img src="<?= base_url('images/inclusive-education/annual-pedagogical-desk.jpg') ?>" class="img-fluid deskTopImg" alt=""
             id="Occupational">
-        <img src="<?= base_url('images/inclusive-education/ot_mob.png') ?>" class="img-fluid mobImg w100" alt=""
+        <img src="<?= base_url('images/inclusive-education/annual-pedagolagical-mob.png') ?>" class="img-fluid mobImg w100" alt=""
             id="Occupational">
 
         <div class="container-space ptb-80">

@@ -120,6 +120,9 @@ $routes->get('in-the-outdoors', 'Intheoutdoors::index');
 
 //Parent Landing 
 $routes->get('achievements', 'Achievements::index');
+$routes->get('achievements/academic-achievements', 'Achievements::academicsAchievements');
+$routes->get('achievements/inter-school', 'Achievements::interSchool');
+$routes->get('achievements/literary-arts', 'Achievements::literaryArts');
 
 //Gallery
 $routes->get('gallery', 'Gallery::index');

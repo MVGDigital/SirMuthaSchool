@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -35,7 +32,7 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>In the <span>outdoors</span></h3>
 
-            <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
+            <!-- <h6>The Central Board of Secondary Education (CBSE) envisions a robust, vibrant, and holistic school
                 education system that nurtures excellence in every sphere of human endeavour.
                 The Board is dedicated to providing quality education that encourages intellectual, social, and cultural
                 vitality among its learners.
@@ -45,13 +42,13 @@
                 learners.
                 It is committed to offering a stress-free learning environment that cultivates competent, confident, and
                 enterprising individuals who promote harmony and peace.
-            </h6>
+            </h6> -->
         </div>
     </section>
     <!-- Section Menus -->
 
     <!-- Adventure Camps Section-->
-    <section class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
+    <section id="adventure-camps" class="wave-sec wave-yellowWith-bottom-img container-space ptb-80" id="learing_center">
         <div class="itemSpaceBetween">
             <div class="col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src="<?= base_url('images/intheoutdoors/adventure_camp_outdoors.png') ?>" class="img-fluid w100"
@@ -133,34 +130,76 @@
             <div class="Panel-body">
                 <div class="tab-content" id="tab-1">
                     <div class="sectionTitle-blue col-lg-10 m-auto">
-                        <h3>Teacher Enrichment <span> Gallery</span></h3>
-                        <h6 style="color:black;">"Enhancing education through interactive smart boards and connected,
-                            modern classrooms."
+                        <h3>In The Outdoors <span> Gallery</span></h3>
+                        <h6 style="color:black;">"Adventure, education, and exploration come alive through camps, tours, and excursions."
                         </h6>
                     </div>
 
                     <div class="row w100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_rightside.png') ?>"
+                                <img src="<?= base_url('images/gallery/education_tour_gallery_01.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
                             <div class="gallery-imgs">
                                 <div class="gallery-imgItem1">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_top.png') ?>"
+                                    <img src="<?= base_url('images/gallery/education_tour_gallery_02.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/networkclassroom_bottom.png') ?>"
+                                    <img src="<?= base_url('images/gallery/education_tour_gallery_03.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
                             <div class="gallery-imgs">
-                                <img src="<?= base_url('images/gallery/networkclassroom_leftside.png') ?>"
+                                <img src="<?= base_url('images/gallery/education_tour_gallery_04.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+
+     <!-- Gallery Section -->
+     <section class="container-space ptb-80">
+        <div class="Panel">
+            <div class="Panel-body">
+                <div class="tab-content" id="tab-1">
+                    <div class="sectionTitle-blue col-lg-10 m-auto">
+                        <h3>Japan <span> Tour</span></h3><br>
+                        <!-- <h6 style="color:black;">"Adventure, education, and exploration come alive through camps, tours, and excursions."
+                        </h6> -->
+                    </div>
+
+                    <div class="row w100 m-0">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/educational_trip_gallery_03.png') ?>"
+                                    class="img-fluid w100" alt="Sir Gallery Images">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <div class="gallery-imgItem1">
+                                    <img src="<?= base_url('images/gallery/educational_trip_gallery_02.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                                <div class="gallery-imgItem2">
+                                    <img src="<?= base_url('images/gallery/educational_trip_gallery_01.png') ?>"
+                                        class="img-fluid w100" alt="Sir Gallery Images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-0">
+                            <div class="gallery-imgs">
+                                <img src="<?= base_url('images/gallery/educational_trip_gallery_04.png') ?>"
                                     class="img-fluid w100" alt="Sir Gallery Images">
                             </div>
                         </div>

@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -36,14 +33,14 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Our <span>History</span></h3>
-            <h6>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
-                Established on the 18th of July 2012 and affiliated with the Central Board of Secondary Education,
+            <h6><i>Nestled in a lush, verdant campus, Sir Mutha School is a child’s ideal home away from home.
+                Established on the 18<sup>th</sup> of July 2012 and affiliated with the Central Board of Secondary Education,
                 the school embodies a harmonious blend of legacy and innovation. Inspired by the visionary ideals of the
                 late Chief Justice Sir Mutha Venkatasubba Rao,
                 it is deeply committed to nurturing the spirit of inquiry and the pursuit of knowledge in every child.
                 The school stands as a beacon of our dedication to fostering intellectual curiosity, inclusivity, and a
                 spirit of excellence.
-                Here, learning is not merely an academic endeavour but a journey of self-discovery.
+                Here, learning is not merely an academic endeavour but a journey of self-discovery.</i>
             </h6>
         </div>
     </section>
@@ -53,15 +50,15 @@
     <section class="container-space counter-sec">
         <div class="row counter col-lg-10 m-auto">
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="176">0</h6>
-                <p>kindergarten Students</p>
+                <h6 class="counter-number" data-count="199">0</h6>
+                <p>Kindergarten Students</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="66">0</h6>
-                <p>Faculty Members</p>
+                <h6 class="counter-number" data-count="87">0</h6>
+                <p>Staff</p>
             </div>
             <div class="col-lg-3 counterItem">
-                <h6 class="counter-number" data-count="1341">0</h6>
+                <h6 class="counter-number" data-count="1140">0</h6>
                 <p>I To XII Students</p>
             </div>
         </div>
@@ -217,9 +214,10 @@
     <!-- Vision & Mission Section -->
 
     <!-- Our Board Member -->
-    <section class="container-space ptb-80" id="boardmember">
-        <div class="sectionTitle-blue col-lg-10 m-auto">
-            <h3>Our Board<span> Members</span></h3>
+    <section class="container-space ptb-80 " id="boardmember">
+        <div class="sectionTitle-blue col-lg-10 m-auto ">
+            <h3>School Management<span> Committee</span></h3> 
+
         </div>
         <div class="col-12 col-md-12 col-lg-12 col-xl-9 m-auto">
             <div id="board-member-slider" class="splide paginationCenter mt-50">

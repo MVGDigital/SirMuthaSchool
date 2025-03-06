@@ -5,9 +5,9 @@
             <p>Sir mutha school</p>
         </a>
         <div class="contact-details">
-            <p>Shenstone Park, No.7,Harrington Road, Chennai-600 031.</p>
+            <p>No:7,Shenstone Park,Harrington Road,Chetpet, Chennai-600 031.</p>
             <p><a href="mailto:info@sirmuthaschool.edu.in">info@sirmuthaschool.edu.in</a></p>
-            <p><a href="tel:+917358699957">+917358699957</a></p>
+            <p><a href="tel:+917358103843">+917358103843</a></p>
         </div>
         <div class="social-media">
             <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw==">
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="col-12 col-md-8 col-lg-12 col-xl-12 m-auto footer-menus">
-        <div class="itemSpaceBetween">
+        <div class="footer-menus-list">
             <a href="<?= base_url('index') ?>">Home</a>
             <a href="<?= base_url('about') ?>">About Us</a>
             <a href="<?= base_url('academics') ?>">Academics</a>
@@ -31,10 +31,10 @@
             <a href="<?= base_url('announcements') ?>">Announcements</a>
             <a href="<?= base_url('in-the-outdoors') ?>">In The Outdoors</a>
             <a href="<?= base_url('gallery') ?>">Gallery</a>
-            <a href="<?= base_url('parents') ?>">Parents</a>
-            <a href="<?= base_url('admission') ?>">Admission</a>
-            <a href="<?= base_url('career') ?>">Career</a>
-            <a href="<?= base_url('contact') ?>">Contact</a>
+            <!-- <a href="<?= base_url('parents') ?>">Parents</a> -->
+            <a class="nav-link" href="https://student.schoolcanvas.com/sms" target="_blank">Parents</a>
+            <a href="<?= base_url('admission') ?>">Admissions</a>
+            <a href="<?= base_url('career') ?>">Careers</a>
 
         </div>
     </div>
@@ -291,7 +291,7 @@ splide.mount();
 
 var splide = new Splide('#greenCampus-slider', {
     type: 'slide',
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: false,
     pagination: true,
     speed: 1000,
@@ -499,6 +499,8 @@ var splide = new Splide('#clubs', {
     },
 });
 splide.mount();
+
+
 
 var splide = new Splide('#mun', {
     type: 'slide',
@@ -1455,8 +1457,50 @@ $(document).ready(function() {
 
 <?php endif; ?>
 
-<?php if ($page_code === 'achievements'): ?>
+<?php if ($page_code === 'academic-achievements'): ?>
 
+var splide = new Splide('#clubs', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: false,
+        },
+    },
+});
+splide.mount();
+
+var splide = new Splide('#topper', {
+    type: 'slide',
+    autoplay: false,
+    pauseOnHover: false,
+    pagination: true,
+    speed: 1000,
+    rewindSpeed: 1000,
+    height: 'auto',
+    perPage: 3,
+    arrows: true,
+    breakpoints: {
+        767: {
+            perPage: 1,
+            pagination: false,
+        },
+    },
+});
+splide.mount();
+
+
+<?php endif; ?>
+
+<?php if ($page_code === 'achievements'): ?>
 var splide = new Splide('#teachers', {
     type: 'slide',
     autoplay: false,
@@ -1593,9 +1637,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <?php endif; ?>
 
 <?php if ($page_code === 'parents'): ?>
-
-
+  
 <?php endif; ?>
+
 </script>
 </div>
 </body>

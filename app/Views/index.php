@@ -2,7 +2,7 @@
 
     <!-- Banner Section -->
     <section class=" banner-section">
-        <div class="bannerTitle">
+    <div class="bannerTitle">
             <h1>Sir Mutha School</h1>
             <p>A unit of the madras seva sadan</p>
         </div>

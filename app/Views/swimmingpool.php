@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -22,10 +19,9 @@
     <section class="container-space innerMenus-sec" id="academicfacility">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facility</a></li>
-                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extra Curricular</a></li>
+                <li><a href="<?= base_url('facilities#academicfacility') ?>" class="active">Academic Facilities</a></li>
+                <li><a href="<?= base_url('facilities#extra-curricular') ?>">Extracurricular</a></li>
                 <li><a href="<?= base_url('facilities#co-curricular') ?>">Co-Curricular</a></li>
-                <li><a href="<?= base_url('facilities#specialeducation') ?>">Specila Education</a></li>
                 <li><a href="<?= base_url('facilities#greencampus') ?>">Green Campus</a></li>
             </ul>
         </div>
@@ -36,10 +32,10 @@
         </div>
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Swimming <span> Pool</span></h3>
-            <h6>"Our school features a well-maintained swimming pool that promotes physical fitness and water safety.
+            <h6>Our school features a well-maintained swimming pool that promotes physical fitness and water safety.
                 Students enjoy structured lessons, free swim time, and water-based activities, enhancing their
                 coordination and stamina. This facility offers a refreshing, fun environment for learning swimming
-                skills and encourages overall well-being and team spirit."</h6>
+                skills and encourages overall well-being and team spirit.</h6>
 
         </div>
     </section>
@@ -91,7 +87,7 @@
                         are experienced trainers and have previously managed National teams. The annual ORCA
                         Inter-School Swimming Meet is a highly anticipated highlight of our calendar. From dawn until
                         dusk, the pool is alive with vibrant activity, epitomising the dedication of our swimmers.
-                        Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan.
+                        Expert instruction is delivered by NIS-certified coaches associated with The Madras Seva Sadan. Also, students immerse themselves.
                     </p>
                 </div>
             </div>

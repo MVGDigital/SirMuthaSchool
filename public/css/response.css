@@ -180,6 +180,9 @@
   .socialMedial-links{
     margin-top: 0;
   }
+  .playOverlay{
+    top: 40%;
+  }
 }
 @media (max-width: 992px) {
 
@@ -800,6 +803,7 @@ footer .itemSpaceBetween{
 #sports.paginationCenter .splide__pagination{
   bottom: -7.5% !important;
 }
+
 }
 @media (max-width: 375px){
   .navbar-nav .nav-link{

@@ -30,7 +30,7 @@ class BeyondCurriculum extends BaseController
         $banner = $bannerModel->where('page', 'heritageclub')->where('is_published', 1)->first();
 
         $data = [
-            'page_title' => 'Heritage Celub',
+            'page_title' => 'Heritage Club',
             'page_code' => 'heritageclub',
             'banner' => $banner
         ];
@@ -53,7 +53,7 @@ class BeyondCurriculum extends BaseController
     public function ecoclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'ecoclub')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Eco Club',
@@ -81,7 +81,7 @@ class BeyondCurriculum extends BaseController
     public function literaryclub()
     {
         $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'literaryclub')->where('is_published', 1)->first();
+        $banner = $bannerModel->where('page', 'beyond-curriculum')->where('is_published', 1)->first();
 
         $data = [
             'page_title' => 'Literary Club',
@@ -92,19 +92,7 @@ class BeyondCurriculum extends BaseController
         return view('header', $data) . view('literary-club', $data) . view('footer');
     }
     
-    public function languageclub()
-    {
-        $bannerModel = new BannerModel();
-        $banner = $bannerModel->where('page', 'languageclub')->where('is_published', 1)->first();
 
-        $data = [
-            'page_title' => 'Language Club',
-            'page_code' => 'languageclub',
-            'banner' => $banner
-        ];
-
-        return view('header', $data) . view('language-club', $data) . view('footer');
-    }
     
     public function pastannualevents()
     {

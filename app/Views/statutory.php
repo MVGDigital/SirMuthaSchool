@@ -7,10 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        <div class="bannerTitle">
-            <h1>Sir Mutha School</h1>
-            <p>A unit of the madras seva sadan</p>
-        </div>
+        
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -88,7 +85,6 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 p-0">
-                    <div class="cardWith-under-info-center">
                         <img src="<?= base_url('images/statutory/child-support-policy.png') ?>" class="img-fluid w100"
                             alt="Sir Mutha Logo">
                         <div class="sectionSubTitle-blue">
@@ -105,3 +101,4 @@
             </div>
         </div>
     </section> -->
+
