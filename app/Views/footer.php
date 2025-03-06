@@ -10,10 +10,10 @@
             <p><a href="tel:+917358699957">+917358699957</a></p>
         </div>
         <div class="social-media">
-            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img
-                    src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
-            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/fb.svg') ?>"
-                    alt="facebook icon"></a>
+            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw==">
+                <img src="<?= base_url('images/instagram.svg') ?>" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/Sirmuthaschool/">
+                <img src="<?= base_url('images/fb.svg') ?>" alt="facebook icon"></a>
             <a href="#"><img src="<?= base_url('images/x.svg') ?>" alt="x icon"></a>
         </div>
     </div>
