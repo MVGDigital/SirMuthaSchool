@@ -291,7 +291,7 @@ splide.mount();
 
 var splide = new Splide('#greenCampus-slider', {
     type: 'slide',
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: false,
     pagination: true,
     speed: 1000,
