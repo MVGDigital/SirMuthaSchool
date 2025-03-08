@@ -15,7 +15,7 @@ class AnnouncementController extends BaseController
 
     public function index()
     {
-        $data['announcements'] = $this->announcementModel->getAnnouncements();
+        $data['announcements'] = $this->announcementModel->orderBy('created_at', 'DESC')->findAll();
         return view('announcements_list', $data);
     }
 
@@ -30,6 +30,7 @@ class AnnouncementController extends BaseController
 
         $rules = [
             'title' => 'required',
+            'category' => 'required|in_list[school_updates,cbse_curriculum]',
             'pdf_file' => 'uploaded[pdf_file]|max_size[pdf_file,2048]|ext_in[pdf_file,pdf]',
         ];
 
@@ -44,28 +45,28 @@ class AnnouncementController extends BaseController
                 if (!is_dir($filePath)) {
                     mkdir($filePath, 0777, true);
                 }
-    
+
                 $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
                 $extension = $file->getExtension();
                 $uniqueName = $originalName . '_' . date('dmy_His') . '.' . $extension;
-    
+
                 $file->move($filePath, $uniqueName);
                 $pdfFile = $uniqueName;
             }
         }
 
-        $currentDateTime = date('Y-m-d H:i:s');
-
         $this->announcementModel->insert([
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
             'pdf_file' => $pdfFile,
+            'category' => $this->request->getPost('category'),
             'published' => $this->request->getPost('published') ? 1 : 0,
-            'created_at' => $currentDateTime,
+            'created_at' => date('Y-m-d H:i:s'),
         ]);
 
         return redirect()->to('adm1n/announcements')->with('success', 'Announcement added successfully');
     }
+
 
     public function edit($id)
     {
@@ -84,7 +85,8 @@ class AnnouncementController extends BaseController
 
         $rules = [
             'title' => 'required',
-            'pdf_file' => 'max_size[pdf_file,2048]|ext_in[pdf_file,pdf]',
+            'category' => 'required|in_list[school_updates,cbse_curriculum]',
+            'pdf_file' => 'max_size[pdf_file,2048]|ext_in[pdf_file,pdf]', // PDF is optional but must meet size/type criteria if uploaded
         ];
 
         if (!$this->validate($rules)) {
@@ -96,39 +98,43 @@ class AnnouncementController extends BaseController
             return redirect()->to('adm1n/announcements')->with('error', 'Announcement not found.');
         }
 
-        $pdfFile = $announcement['pdf_file'];
-
+        // Handle PDF file upload
+        $pdfFile = $announcement['pdf_file']; // Keep existing PDF if no new file is uploaded
         if ($file = $this->request->getFile('pdf_file')) {
             if ($file->isValid() && !$file->hasMoved()) {
                 $filePath = FCPATH . 'uploads/announcements/';
                 if (!is_dir($filePath)) {
                     mkdir($filePath, 0777, true);
                 }
-    
-                if ($pdfFile && file_exists($filePath . $pdfFile)) {
-                    unlink($filePath . $pdfFile);
-                }
-    
+
                 $originalName = pathinfo($file->getName(), PATHINFO_FILENAME);
                 $extension = $file->getExtension();
                 $uniqueName = $originalName . '_' . date('dmy_His') . '.' . $extension;
-    
+
                 $file->move($filePath, $uniqueName);
+
+                // Delete old PDF file if a new one is uploaded
+                if ($announcement['pdf_file'] && file_exists($filePath . $announcement['pdf_file'])) {
+                    unlink($filePath . $announcement['pdf_file']);
+                }
+
                 $pdfFile = $uniqueName;
             }
         }
-        $currentDateTime = date('Y-m-d H:i:s');
 
+        // Update the announcement
         $this->announcementModel->update($id, [
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
             'pdf_file' => $pdfFile,
+            'category' => $this->request->getPost('category'),
             'published' => $this->request->getPost('published') ? 1 : 0,
-            'updated_at' => $currentDateTime,
+            'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        return redirect()->to('adm1n/announcements')->with('success', 'Announcement updated successfully');
+        return redirect()->to('adm1n/announcements')->with('success', 'Announcement updated successfully.');
     }
+
 
     public function delete($id)
     {

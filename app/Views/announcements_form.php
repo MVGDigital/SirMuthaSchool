@@ -51,6 +51,26 @@
                                             <?php endif; ?>
 
                                             <div class="mb-3 row">
+                                                <label class="col-sm-4 col-form-label" for="category">Category</label>
+                                                <div class="col-sm-8">
+                                                    <select name="category" id="category" class="form-control">
+                                                        <option value="school_updates"
+                                                            <?= isset($announcement) && $announcement['category'] == 'school_updates' ? 'selected' : '' ?>>
+                                                            School Updates</option>
+                                                        <option value="cbse_curriculum"
+                                                            <?= isset($announcement) && $announcement['category'] == 'cbse_curriculum' ? 'selected' : '' ?>>
+                                                            CBSE Curriculum</option>
+                                                    </select>
+                                                    <?php if (session()->getFlashdata('validation') && isset(session()->getFlashdata('validation')['category'])): ?>
+                                                    <div class="text-danger">
+                                                        <?= esc(session()->getFlashdata('validation')['category']) ?>
+                                                    </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mb-3 row">
                                                 <label class="col-sm-4 col-form-label" for="title">Title</label>
                                                 <div class="col-sm-8">
                                                     <input type="text" name="title" id="title" class="form-control"

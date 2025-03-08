@@ -175,7 +175,7 @@
 
             <form id="admission-form" method="post" action="<?= base_url('admission/submit') ?>">
                 <h5 class="sectionTitle text-center m-2 mt-5">Join Sir Mutha School</h5>
-                <h3 class="sectionTitle text-center m-3">Apply for LKG to Grade X (2025-2026)</h3>
+                <h3 class="sectionTitle text-center m-3">Apply for LKG to Grade IX (2025-2026)</h3>
                 <p class="text-center sectionTitle m-4">Fill in the student details and * marked fields are mandatory
                 </p>
                 <div class="row">

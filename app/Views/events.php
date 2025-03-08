@@ -7,7 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        
+
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -31,9 +31,10 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Events From <span>Sir Mutha School</span></h3>
             <h6><i>Explore a dynamic timeline of past and upcoming events, reflecting the school’s vibrant culture. From
-                academic achievements to cultural celebrations, discover moments that unite our community and showcase
-                the talents and accomplishments of our students and staff. Stay informed and connected through this
-                engaging platform.</i></h6>
+                    academic achievements to cultural celebrations, discover moments that unite our community and
+                    showcase
+                    the talents and accomplishments of our students and staff. Stay informed and connected through this
+                    engaging platform.</i></h6>
         </div>
     </section>
     <!-- Section Menus -->
@@ -71,7 +72,8 @@
                     <li class="splide__slide">
                         <div class="slider-card">
                             <div class="eventBg-img">
-                                <img src="<?= base_url('images/events/past-event-2.jpg') ?>" class="img-fluid" alt="">
+                                <img src="<?= base_url('uploads/desktop_images/'. $event['desktop_image']);?>"
+                                    class="img-fluid" alt="<?= esc($event['event_name']) ?>">
                             </div>
                             <div class="card-content">
                                 <div class="eventFullDate">

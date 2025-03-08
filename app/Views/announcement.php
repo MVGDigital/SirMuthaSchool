@@ -7,7 +7,7 @@
             alt="<?= esc($banner['title']); ?>">
         <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
             alt="Banner image">
-        
+
         <div class="banner-subTitle">
             <h2><?= esc($banner['title']); ?></h2>
         </div>
@@ -19,7 +19,8 @@
     <section class="container-space innerMenus-sec" id="abouctbse">
         <div class="innerMenus">
             <ul>
-                <li><a href="<?= base_url('announcements#announcements') ?>" class="active">Sir Mutha Announcements</a></li>
+                <li><a href="<?= base_url('announcements#announcements') ?>" class="active">Sir Mutha Announcements</a>
+                </li>
             </ul>
         </div>
         <div class="pageTitleLine col-lg-8 m-auto">
@@ -45,8 +46,8 @@
         <div class="sectionTitle-white col-lg-10 m-auto">
             <h3>Announcements</h3>
         </div>
-        
-         <!-- Tab View Sections -->
+
+        <!-- Tab View Sections -->
         <div id="announcements" class="container-space mt-50">
             <div class="Panel">
                 <nav>
@@ -56,174 +57,63 @@
                         <li class="Tabs__presentation-slider" role="presentation"></li>
                     </ul>
                 </nav>
-                <div class="Panel-body">
-                    <div class="tab-content" id="tab-1">
 
+                <div class="Panel-body">
+                    <!-- School Updates Tab -->
+                    <div class="tab-content" id="tab-1">
+                        <?php foreach ($school_updates as $announcement): ?>
                         <div class="annoucementCards">
                             <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
+                                <h5 class="year"><?= date('Y', strtotime($announcement['created_at'])) ?></h5>
                                 <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
+                                    <div class="day"><?= date('d', strtotime($announcement['created_at'])) ?></div>
+                                    <div class="month"><?= date('M', strtotime($announcement['created_at'])) ?></div>
                                 </div>
                             </div>
                             <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
+                                <p><?= esc($announcement['description']) ?></p>
                             </div>
                             <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
+                                <a href="<?= base_url('uploads/announcements/' . esc($announcement['pdf_file'])) ?>"
+                                    target="_blank">
+                                    <div class="viewPdf">
+                                        <span>View PDF</span>
+                                        <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        
+                        <?php endforeach; ?>
                     </div>
+
+                    <!-- CBSE Curriculum Tab -->
                     <div class="tab-content" id="tab-2" style="display: none;">
+                        <?php foreach ($cbse_curriculum as $announcement): ?>
                         <div class="annoucementCards">
                             <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
+                                <h5 class="year"><?= date('Y', strtotime($announcement['created_at'])) ?></h5>
                                 <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
+                                    <div class="day"><?= date('d', strtotime($announcement['created_at'])) ?></div>
+                                    <div class="month"><?= date('M', strtotime($announcement['created_at'])) ?></div>
                                 </div>
                             </div>
                             <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
+                                <p><?= esc($announcement['description']) ?></p>
                             </div>
                             <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
+                                <a href="<?= base_url('uploads/announcements/' . esc($announcement['pdf_file'])) ?>"
+                                    target="_blank">
+                                    <div class="viewPdf">
+                                        <span>View PDF</span>
+                                        <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="annoucementCards">
-                            <div class="dateOf-annoucement">
-                                <h5 class="year">2025</h5>
-                                <div class="date-badge">
-                                    <div class="day">30</div>
-                                    <div class="month">Jan</div>
-                                </div>
-                            </div>
-                            <div class="desc-annoucement">
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining ess</p>
-                            </div>
-                            <div class="viewPdf-annoucement">
-                            <a href="<?= base_url('images/announcements/Circular-Open-House-2024.pdf') ?>" target="_blank">
-                                <div class="viewPdf">
-                                    <span>View PDF</span>
-                                    <img src="<?= base_url('images/announcements/eyeIcon.svg') ?>" alt="">
-                                </div>
-                            </a>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- Tab View Sections -->

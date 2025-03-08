@@ -65,10 +65,6 @@
         </div>
     </section>
     <!-- Event Details -->
-
-    <script>
-    console.log('Show Registration Form: <?= $show_registration_form ?>');
-    </script>
     <!-- Contact Form -->
     <?php if ($show_registration_form): ?>
     <section class="container-space lightColor-bg eventRegBg">

@@ -113,7 +113,7 @@
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
                             <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
-                            <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
+                            <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student's Newsletters</a></li>
                             <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                         </ul>
                     </li>
@@ -166,7 +166,7 @@
                         <li><a href="<?= base_url('academics#aboutcbse') ?>">About CBSE</a></li>
                         <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                         <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annula Pedegogical Policy</a></li>
+                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annul Pedegogical Policy</a></li>
                     </ul>
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">
@@ -204,7 +204,7 @@
                 <div id="curriculumSubMenu" class="subMenuItems">
                     <ul>
                         <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>">Clubs</a></li>
-                        <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
+                        <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student's Newsletters</a></li>
                         <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                     </ul>
                 </div>
