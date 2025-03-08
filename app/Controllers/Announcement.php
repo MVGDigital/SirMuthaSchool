@@ -13,7 +13,6 @@ class Announcement extends BaseController
     $banner = $bannerModel->where('page', 'announcement')->where('is_published', 1)->first();
     $announcementModel = new AnnouncementModel();
 
-    // Fetch announcements based on category
     $school_updates = $announcementModel->getAnnouncements('school_updates');
     $cbse_curriculum = $announcementModel->getAnnouncements('cbse_curriculum');
 
@@ -23,7 +22,7 @@ class Announcement extends BaseController
         'banner' => $banner,
         'school_updates' => $school_updates, 
         'cbse_curriculum' => $cbse_curriculum,
-        'announcements' => array_merge($school_updates, $cbse_curriculum) // Ensure this is passed
+        'announcements' => array_merge($school_updates, $cbse_curriculum)
     ];
 
     return view('header', $data) . view('announcement', $data) . view('footer', $data);

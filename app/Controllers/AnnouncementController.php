@@ -15,7 +15,7 @@ class AnnouncementController extends BaseController
 
     public function index()
     {
-        $data['announcements'] = $this->announcementModel->getAnnouncements();
+        $data['announcements'] = $this->announcementModel->orderBy('created_at', 'DESC')->findAll();
         return view('announcements_list', $data);
     }
 
