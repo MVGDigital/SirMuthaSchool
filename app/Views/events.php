@@ -103,7 +103,7 @@
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
-                    <p>No events found for the selected filter.</p>
+                    <p>No events found.</p>
                     <?php endif; ?>
                 </ul>
             </div>
@@ -115,7 +115,7 @@
         <div class="sectionTitle-blue col-lg-10 m-auto">
             <h3>Past<span> Events</span></h3>
         </div>
-
+        <?php if (!empty($past_events)): ?>
         <?php foreach ($past_events as $event): ?>
         <div class="pastEvent-container pastEvent-items row w100">
             <div class="col-12 col-md-12 col-lg-5 col-xl-4">
@@ -137,6 +137,9 @@
             </div>
         </div>
         <?php endforeach; ?>
+        <?php else: ?>
+        <p>No events found.</p>
+        <?php endif; ?>
 
         <!-- Past Event Grid Cards-->
         <div class="text-center m-3">
