@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
                 <li><a href="<?= base_url('beyond-curriculum#munSec') ?>">MUN</a></li>
-                <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student Newsletters</a></li>
+                <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student's Newsletters</a></li>
                 <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
             </ul>
         </div>
@@ -180,7 +180,7 @@
     <!-- News Letters -->
     <section id="news-letter" class="container-space wave-with-bgImg ptb-80">
         <div class="sectionTitle-blue col-lg-10 m-auto">
-            <h3>Students <span>Newsletter</span></h3>
+            <h3>Student's <span>Newsletter</span></h3>
             <h6 class="light-blue">"Shenstone Mail, features the latest school news, events, achievements, and creative contributions from students. It serves as a platform for them to express their ideas and stay informed."
             </h6>
         </div>

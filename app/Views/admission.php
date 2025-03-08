@@ -106,8 +106,8 @@
                     <p><b>6. Orientation</b></p>
                     <p>The school conducts an orientation session to familiarise newly admitted students and their parents/guardians with the school's environment, guidelines,and policies.</p>
 
-                    <p>We understand how important it is to choose the right school for your child’s education, and we are pleased that you are considering Sir Mutha School. Our team of experienced admissions staff is dedicated to providing excellent service, offering guidance and information at every step of the process to support you through the admissions process.</p>
-                    <p>We are able to consider your child for entry from LKG to Grade X, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
+                    <p>We understand the importance of choosing the right school for your child’s education, and we are pleased that you are considering Sir Mutha School. We offer guidance and information at every step to ensure the admissions process is smooth and seamless throughout.                    </p>
+                    <p>We are able to consider your child for entry from LKG to Grade IX, as well as into our Activity Centre, allowing you to choose the entry point that best suits your child. We are here to support you every step of the way.</p>
                     
                     <div class="blueBtn-medium">
                         <!-- <a href="#">Know More</a> -->
@@ -188,7 +188,7 @@
             <div class="col-lg-6 p-0">
                 <div class="cardWith-Btn">
                     <div class="cardTitle">
-                        <h4>Apply For LKG to Grade X: 2025-2026</h4>
+                        <h4>Apply For LKG to Grade IX: 2025-2026</h4>
                     </div>
                     <img src="<?= base_url('images/admission/admission_gradeX.png') ?>" class="img-fluid w100"
                         alt="Sir Mutha Logo">

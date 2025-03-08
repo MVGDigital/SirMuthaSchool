@@ -8,12 +8,16 @@ class Announcement extends Model
 {
     protected $table = 'announcements';
     protected $primaryKey = 'announcement_id';
-    protected $allowedFields = ['title', 'description', 'pdf_file', 'published', 'created_at', 'updated_at'];
+    protected $allowedFields = ['title', 'description', 'pdf_file', 'published', 'category', 'created_at', 'updated_at'];
 
-    public function getAnnouncements()
+    public function getAnnouncements($category = null)
     {
-        return $this->where('published', 1)
-                    ->orderBy('created_at', 'DESC')
-                    ->findAll();
+        $query = $this->where('published', 1)->orderBy('created_at', 'DESC');
+        
+        if ($category) {
+            $query->where('category', $category);
+        }
+        
+        return $query->findAll();
     }
 }
