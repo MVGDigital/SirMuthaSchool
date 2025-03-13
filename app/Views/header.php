@@ -18,33 +18,34 @@
 
 <body>
     <div class="mainContainer">
-    <!-- Header Section -->
-    <nav class="navbar navbar-light">
-        <div class="container-fluid itemSpaceBetween p-0">
-            <a class="navbar-brand logo" href="<?= base_url('index') ?>">
-                <img src="<?= base_url('images/sir-mutha-logo.svg') ?>" class="img-fluid" alt="Sir Mutha School Logo">
-                <p>Sir mutha school</p>
-            </a>
-            <div class="headerInfo">
-                <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" target="_blank">Donate</a>
-                <a class="contactBtn contactMenuBtn" href="<?= base_url('contact') ?>">contact Us</a>
-                <!-- Search Code -->
-                <!-- <button class="search">
+        <!-- Header Section -->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid itemSpaceBetween p-0">
+                <a class="navbar-brand logo" href="<?= base_url('index') ?>">
+                    <img src="<?= base_url('images/sir-mutha-logo.svg') ?>" class="img-fluid"
+                        alt="Sir Mutha School Logo">
+                    <p>Sir mutha school</p>
+                </a>
+                <div class="headerInfo">
+                    <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" target="_blank">Donate</a>
+                    <a class="contactBtn contactMenuBtn" href="<?= base_url('contact') ?>">contact Us</a>
+                    <!-- Search Code -->
+                    <!-- <button class="search">
                     <img src="<?= base_url('images/search.svg') ?>" alt="">
                 </button> -->
-                <!-- Search Code -->
-                <!-- Menu Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="<?= base_url('images/menu-icon.svg') ?>" class="openIcon" alt="menu icon">
-                    <img src="<?= base_url('images/closeIcon.svg') ?>" class="closeIcon" alt="menu icon">
-                </button>
-                <!-- Menu Button -->
+                    <!-- Search Code -->
+                    <!-- Menu Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="<?= base_url('images/menu-icon.svg') ?>" class="openIcon" alt="menu icon">
+                        <img src="<?= base_url('images/closeIcon.svg') ?>" class="closeIcon" alt="menu icon">
+                    </button>
+                    <!-- Menu Button -->
 
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <!-- Menus -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -157,7 +158,7 @@
                         <li><a href="<?= base_url('about#aboutmss') ?>">About MSS</a></li>
                         <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
                         <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
-                        <li><a href="<?= base_url('about#boardmember') ?>">School Committee</a></li>
+                        <li><a href="<?= base_url('about#boardmember') ?>">Board Members</a></li>
                         <li><a target="_blank" href="https://themadrassevasadan.org/Be_A_Part">Be a Part</a></li>
                     </ul>
                 </div>
@@ -166,7 +167,7 @@
                         <li><a href="<?= base_url('academics#aboutcbse') ?>">About CBSE</a></li>
                         <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                         <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annul Pedagogical Policy</a></li>
+                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annul Pedegogical Policy</a></li>
                     </ul>
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">
@@ -181,7 +182,7 @@
                     <ul>
                         <li><a href="<?= base_url('admission#application_process') ?>">Application Process</a></li>
                         <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
-                        <li><a href="<?= base_url('admission#fee_structure') ?>">Fee Structure</a></li>
+                        <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
                         <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                     </ul>
                 </div>
@@ -220,59 +221,62 @@
                 <div class="headerContact-info">
                     <h5>Quick Links</h5>
 
-                    <div class="mobQuickLinks">
-                        <!-- <div class="quickLinks">
+                        <div class="mobQuickLinks">
+                            <!-- <div class="quickLinks">
                             <img src="<?= base_url('images/menu-enquire.svg') ?>" alt="">
                             <span>Inquire</span>
                         </div>
                         <hr class="horizontal-whiteLine"> -->
-                        <div class="quickLinks">
-                            <a href="<?= base_url('announcements') ?>">
-                                <img src="<?= base_url('images/menu-schoolNews.svg') ?>" alt="">
-                                <span>School News</span>
-                            </a>
+                            <div class="quickLinks">
+                                <a href="<?= base_url('announcements') ?>">
+                                    <img src="<?= base_url('images/menu-schoolNews.svg') ?>" alt="">
+                                    <span>School News</span>
+                                </a>
+                            </div>
+                            <hr class="horizontal-whiteLine">
+                            <div class="quickLinks">
+                                <a href="<?= base_url('admission') ?>">
+                                    <img src="<?= base_url('images/menu-admission.svg') ?>" alt="">
+                                    <span>Admissions</span>
+                                </a>
+                            </div>
+                            <hr class="horizontal-whiteLine">
+                            <div class="quickLinks">
+                                <a href="<?= base_url('career') ?>">
+                                    <img src="<?= base_url('images/menu-career.svg') ?>" alt="">
+                                    <span>Careers</span>
+                                </a>
+                            </div>
                         </div>
-                        <hr class="horizontal-whiteLine">
-                        <div class="quickLinks">
-                            <a href="<?= base_url('admission') ?>">
-                                <img src="<?= base_url('images/menu-admission.svg') ?>" alt="">
-                                <span>Admissions</span>
-                            </a>
-                        </div>
-                        <hr class="horizontal-whiteLine">
-                        <div class="quickLinks">
-                            <a href="<?= base_url('career') ?>">
-                                <img src="<?= base_url('images/menu-career.svg') ?>" alt="">
-                                <span>Careers</span>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="socialMedial-links">
-                        <div class="socialIcons">
-                            <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img src="<?= base_url('images/menu-instaIcon.svg') ?>" alt="">
-                            <span>Instagram</span></a>
+                        <div class="socialMedial-links">
+                            <div class="socialIcons">
+                                <a href="https://www.instagram.com/sir_mutha_school?igsh=MXZzMHVjajRqd3V2bw=="><img
+                                        src="<?= base_url('images/menu-instaIcon.svg') ?>" alt="">
+                                    <span>Instagram</span></a>
+                            </div>
+                            <div class="socialIcons">
+                                <a href="https://www.facebook.com/Sirmuthaschool/"><img
+                                        src="<?= base_url('images/menu-facebookIcon.svg') ?>" alt="">
+                                    <span>Facebook</span></a>
+                            </div>
+                            <div class="socialIcons">
+                                <a href="#"><img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
+                                    <span>Twitter</span></a>
+                            </div>
                         </div>
-                        <div class="socialIcons">
-                            <a href="https://www.facebook.com/Sirmuthaschool/"><img src="<?= base_url('images/menu-facebookIcon.svg') ?>" alt="">
-                            <span>Facebook</span></a>
-                        </div>
-                        <div class="socialIcons">
-                            <a href="#"><img src="<?= base_url('images/menu-xIcon.svg') ?>" alt="">
-                            <span>Twitter</span></a>
-                        </div>
-                    </div>
 
-                    <div class="mobBtns">
-                        <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part" target="_blank">Donate</a>
-                        <a class="contactBtn" href="<?= base_url('contact') ?>">contact Us</a>
-                    </div>
+                        <div class="mobBtns">
+                            <a class="contactBtn" href="https://themadrassevasadan.org/be_a_part"
+                                target="_blank">Donate</a>
+                            <a class="contactBtn" href="<?= base_url('contact') ?>">contact Us</a>
+                        </div>
 
+                    </div>
                 </div>
             </div>
+
         </div>
+        <!-- Menus -->
 
-    </div>
-    <!-- Menus -->
-
-    <!-- Header Section -->
+        <!-- Header Section -->

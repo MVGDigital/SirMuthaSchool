@@ -429,6 +429,10 @@ main {
     color: #B5D2EE !important;
 }
 
+#admissionMenu{
+    display: none;
+}
+
 .subMenuItems ul li a {
     transition: padding 0.7s ease;
 }

@@ -40,6 +40,10 @@
         background-color: #1f2c6d;
     }
 
+    .pad{
+        padding: 20px;
+    }
+
     /* Print-specific styles */
     @media print {
         .note {
@@ -84,23 +88,7 @@
 </head>
 
 <body>
-    <!-- Banner Section -->
-    <!-- <section class="banner-section" id="BannerSection">
-        <?php if (!empty($banners)): ?>
-        <?php foreach ($banners as $banner): ?>
-        <img src="<?= base_url('uploads/banner_images/' . $banner['desktop_image']); ?>" class="img-fluid deskTopImg"
-            alt="<?= esc($banner['title']); ?>">
-        <img src="<?= base_url('uploads/banner_images/' . $banner['mobile_image']); ?>" class="img-fluid mobImg w100"
-            alt="Banner image">
-        
-        <div class="banner-subTitle">
-            <h2><?= esc($banner['title']); ?></h2>
-        </div>
-        <?php endforeach; ?>
-        <?php endif; ?>
-    </section> -->
-    <!-- Banner Section -->
-    <div class="container mt-5">
+    <div class="container mt-5 pad">
         <div style="text-align: center;">
             <img src="<?= base_url('images/favicon.png') ?>" alt="School Logo"
                 style="max-width: 80px; height: auto; display: block; margin: 0 auto;">
