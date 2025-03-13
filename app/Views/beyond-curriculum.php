@@ -443,7 +443,7 @@
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/events_annual_na.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/june/sixth_june_annualevents.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">
@@ -768,7 +768,7 @@
                         </div>
                     </li>
 
-                    <li class="splide__slide">
+                    <!-- <li class="splide__slide">
                         <div class="annualEventImg">
                             <img src="<?= base_url('images/beyond-curriculum/oct/annual-october-25-10-2024.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
@@ -778,11 +778,11 @@
                             <p>The Language Club recently hosted an engaging activity for students, offering an immersive exploration of a few Indian languages through interactive games and activities. The activities not only enhanced linguistic skills but also aimed to spark curiosity about diverse cultures, encouraging students to expand their cultural and linguistic horizons. 
                             </p>
                         </div>
-                    </li>
+                    </li> -->
 
                     <li class="splide__slide">
                         <div class="annualEventImg">
-                            <img src="<?= base_url('images/beyond-curriculum/nov/november_ 14_11_24.png') ?>" class="img-fluid"
+                            <img src="<?= base_url('images/beyond-curriculum/nov/november_fourteen_annualevents.png') ?>" class="img-fluid"
                                 alt="Sir Mutha Newsletter Image">
                         </div>
                         <div class="thumbContent">

@@ -62,7 +62,7 @@
                             <li><a href="<?= base_url('about#aboutmss') ?>">About MSS</a></li>
                             <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
                             <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
-                            <li><a href="<?= base_url('about#boardmember') ?>">School Committee</a></li>
+                            <li><a href="<?= base_url('about#boardmember') ?>">School Management Committee</a></li>
                             <li><a target="_blank" href="https://themadrassevasadan.org/Be_A_Part">Be a Part</a></li>
                         </ul>
                     </li>
@@ -158,7 +158,7 @@
                         <li><a href="<?= base_url('about#aboutmss') ?>">About MSS</a></li>
                         <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
                         <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
-                        <li><a href="<?= base_url('about#boardmember') ?>">Board Members</a></li>
+                        <li><a href="<?= base_url('about#boardmember') ?>">School Management Committee</a></li>
                         <li><a target="_blank" href="https://themadrassevasadan.org/Be_A_Part">Be a Part</a></li>
                     </ul>
                 </div>
@@ -182,7 +182,7 @@
                     <ul>
                         <li><a href="<?= base_url('admission#application_process') ?>">Application Process</a></li>
                         <li><a href="<?= base_url('admission#terms_conditions') ?>">Terms & Conditions</a></li>
-                        <li><a href="<?= base_url('admission#fee_structure') ?>">Free Structure</a></li>
+                        <li><a href="<?= base_url('admission#fee_structure') ?>">Fee Structure</a></li>
                         <li><a href="<?= base_url('admission#registration_process') ?>">Registration Process</a></li>
                     </ul>
                 </div>
