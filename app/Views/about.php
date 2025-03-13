@@ -22,7 +22,7 @@
                 <li><a href="https://themadrassevasadan.org/about" target="_blank">About MSS</a></li>
                 <li><a href="<?= base_url('about#ourfounders') ?>">Our Founders</a></li>
                 <li><a href="<?= base_url('about#visionmission') ?>">Vision & Mission</a></li>
-                <li><a href="<?= base_url('about#boardmember') ?>">Board Members</a></li>
+                <li><a href="<?= base_url('about#boardmember') ?>">School Committee</a></li>
                 <li><a href="https://themadrassevasadan.org/Be_A_Part" target="_blank">Be a Part</a></li>
             </ul>
         </div>
