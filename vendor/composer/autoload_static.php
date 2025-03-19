@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit567a92394b716173f3787ed712930814
+class ComposerStaticInitcc9fb6dd8b653214c8b626d995760ef8
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -267,6 +267,7 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'App\\Controllers\\JobApplication' => __DIR__ . '/../..' . '/app/Controllers/JobApplication.php',
         'App\\Controllers\\ParentLanding' => __DIR__ . '/../..' . '/app/Controllers/ParentLanding.php',
         'App\\Controllers\\Statutory' => __DIR__ . '/../..' . '/app/Controllers/Statutory.php',
+        'App\\Controllers\\StatutoryController' => __DIR__ . '/../..' . '/app/Controllers/StatutoryController.php',
         'App\\Controllers\\VideoBannerController' => __DIR__ . '/../..' . '/app/Controllers/VideoBannerController.php',
         'App\\Database\\Seeds\\UserSeeder' => __DIR__ . '/../..' . '/app/Database/Seeds/UserSeeder.php',
         'App\\Filters\\Auth' => __DIR__ . '/../..' . '/app/Filters/Auth.php',
@@ -284,6 +285,7 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'App\\Models\\EventUserModel' => __DIR__ . '/../..' . '/app/Models/EventUserModel.php',
         'App\\Models\\GalleryModel' => __DIR__ . '/../..' . '/app/Models/GalleryModel.php',
         'App\\Models\\JobApplicationModel' => __DIR__ . '/../..' . '/app/Models/JobApplicationModel.php',
+        'App\\Models\\Statutory' => __DIR__ . '/../..' . '/app/Models/Statutory.php',
         'App\\Models\\Users' => __DIR__ . '/../..' . '/app/Models/Users.php',
         'App\\Models\\VideoBannerModel' => __DIR__ . '/../..' . '/app/Models/VideoBannerModel.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -350,6 +352,7 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'Aws\\Api\\Shape' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/Shape.php',
         'Aws\\Api\\ShapeMap' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/ShapeMap.php',
         'Aws\\Api\\StructureShape' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/StructureShape.php',
+        'Aws\\Api\\SupportedProtocols' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/SupportedProtocols.php',
         'Aws\\Api\\TimestampShape' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/TimestampShape.php',
         'Aws\\Api\\Validator' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/Validator.php',
         'Aws\\AppConfigData\\AppConfigDataClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AppConfigData/AppConfigDataClient.php',
@@ -706,8 +709,6 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'Aws\\ElastiCache\\Exception\\ElastiCacheException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElastiCache/Exception/ElastiCacheException.php',
         'Aws\\ElasticBeanstalk\\ElasticBeanstalkClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticBeanstalk/ElasticBeanstalkClient.php',
         'Aws\\ElasticBeanstalk\\Exception\\ElasticBeanstalkException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticBeanstalk/Exception/ElasticBeanstalkException.php',
-        'Aws\\ElasticInference\\ElasticInferenceClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticInference/ElasticInferenceClient.php',
-        'Aws\\ElasticInference\\Exception\\ElasticInferenceException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticInference/Exception/ElasticInferenceException.php',
         'Aws\\ElasticLoadBalancingV2\\ElasticLoadBalancingV2Client' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticLoadBalancingV2/ElasticLoadBalancingV2Client.php',
         'Aws\\ElasticLoadBalancingV2\\Exception\\ElasticLoadBalancingV2Exception' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticLoadBalancingV2/Exception/ElasticLoadBalancingV2Exception.php',
         'Aws\\ElasticLoadBalancing\\ElasticLoadBalancingClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ElasticLoadBalancing/ElasticLoadBalancingClient.php',
@@ -789,6 +790,8 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'Aws\\FraudDetector\\FraudDetectorClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/FraudDetector/FraudDetectorClient.php',
         'Aws\\FreeTier\\Exception\\FreeTierException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/FreeTier/Exception/FreeTierException.php',
         'Aws\\FreeTier\\FreeTierClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/FreeTier/FreeTierClient.php',
+        'Aws\\GameLiftStreams\\Exception\\GameLiftStreamsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GameLiftStreams/Exception/GameLiftStreamsException.php',
+        'Aws\\GameLiftStreams\\GameLiftStreamsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GameLiftStreams/GameLiftStreamsClient.php',
         'Aws\\GameLift\\Exception\\GameLiftException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GameLift/Exception/GameLiftException.php',
         'Aws\\GameLift\\GameLiftClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GameLift/GameLiftClient.php',
         'Aws\\GeoMaps\\Exception\\GeoMapsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GeoMaps/Exception/GeoMapsException.php',
@@ -816,9 +819,6 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'Aws\\GuardDuty\\Exception\\GuardDutyException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GuardDuty/Exception/GuardDutyException.php',
         'Aws\\GuardDuty\\GuardDutyClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/GuardDuty/GuardDutyClient.php',
         'Aws\\HandlerList' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/HandlerList.php',
-        'Aws\\Handler\\GuzzleV5\\GuzzleHandler' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Handler/GuzzleV5/GuzzleHandler.php',
-        'Aws\\Handler\\GuzzleV5\\GuzzleStream' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Handler/GuzzleV5/GuzzleStream.php',
-        'Aws\\Handler\\GuzzleV5\\PsrStream' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Handler/GuzzleV5/PsrStream.php',
         'Aws\\Handler\\GuzzleV6\\GuzzleHandler' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Handler/GuzzleV6/GuzzleHandler.php',
         'Aws\\HasDataTrait' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/HasDataTrait.php',
         'Aws\\HasMonitoringEventsTrait' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/HasMonitoringEventsTrait.php',
@@ -870,6 +870,8 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'Aws\\IoTFleetWise\\IoTFleetWiseClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTFleetWise/IoTFleetWiseClient.php',
         'Aws\\IoTJobsDataPlane\\Exception\\IoTJobsDataPlaneException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTJobsDataPlane/Exception/IoTJobsDataPlaneException.php',
         'Aws\\IoTJobsDataPlane\\IoTJobsDataPlaneClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTJobsDataPlane/IoTJobsDataPlaneClient.php',
+        'Aws\\IoTManagedIntegrations\\Exception\\IoTManagedIntegrationsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTManagedIntegrations/Exception/IoTManagedIntegrationsException.php',
+        'Aws\\IoTManagedIntegrations\\IoTManagedIntegrationsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTManagedIntegrations/IoTManagedIntegrationsClient.php',
         'Aws\\IoTSecureTunneling\\Exception\\IoTSecureTunnelingException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTSecureTunneling/Exception/IoTSecureTunnelingException.php',
         'Aws\\IoTSecureTunneling\\IoTSecureTunnelingClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTSecureTunneling/IoTSecureTunnelingClient.php',
         'Aws\\IoTSiteWise\\Exception\\IoTSiteWiseException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/IoTSiteWise/Exception/IoTSiteWiseException.php',
@@ -3078,6 +3080,7 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
         'PHPUnit\\Metadata\\IgnoreDeprecations' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/IgnoreDeprecations.php',
         'PHPUnit\\Metadata\\IgnoreFunctionForCodeCoverage' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/IgnoreFunctionForCodeCoverage.php',
         'PHPUnit\\Metadata\\IgnoreMethodForCodeCoverage' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/IgnoreMethodForCodeCoverage.php',
+        'PHPUnit\\Metadata\\InvalidAttributeException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/Exception/InvalidAttributeException.php',
         'PHPUnit\\Metadata\\InvalidVersionRequirementException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/Exception/InvalidVersionRequirementException.php',
         'PHPUnit\\Metadata\\Metadata' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/Metadata.php',
         'PHPUnit\\Metadata\\MetadataCollection' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/MetadataCollection.php',
@@ -4571,10 +4574,10 @@ class ComposerStaticInit567a92394b716173f3787ed712930814
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit567a92394b716173f3787ed712930814::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit567a92394b716173f3787ed712930814::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit567a92394b716173f3787ed712930814::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit567a92394b716173f3787ed712930814::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcc9fb6dd8b653214c8b626d995760ef8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcc9fb6dd8b653214c8b626d995760ef8::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcc9fb6dd8b653214c8b626d995760ef8::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcc9fb6dd8b653214c8b626d995760ef8::$classMap;
 
         }, null, ClassLoader::class);
     }

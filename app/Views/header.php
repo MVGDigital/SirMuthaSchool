@@ -114,7 +114,7 @@
                         alt="menu arrow"></span>
                         <ul class="dropdown-menu">
                             <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>" class="active">Clubs</a></li>
-                            <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student's Newsletters</a></li>
+                            <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Students' Newsletter</a></li>
                             <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                         </ul>
                     </li>
@@ -205,7 +205,7 @@
                 <div id="curriculumSubMenu" class="subMenuItems">
                     <ul>
                         <li><a href="<?= base_url('beyond-curriculum#sirMutha-clubs') ?>">Clubs</a></li>
-                        <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Student's Newsletters</a></li>
+                        <li><a href="<?= base_url('beyond-curriculum#news-letter') ?>">Students' Newsletter</a></li>
                         <li><a href="<?= base_url('beyond-curriculum#annual-events') ?>">Annual Events</a></li>
                     </ul>
                 </div>
