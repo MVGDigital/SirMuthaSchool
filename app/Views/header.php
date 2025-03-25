@@ -167,7 +167,7 @@
                         <li><a href="<?= base_url('academics#aboutcbse') ?>">About CBSE</a></li>
                         <li><a href="<?= base_url('academics#cbsecurriculum') ?>">CBSE Curriculum</a></li>
                         <li><a href="<?= base_url('academics#teacherenrichment') ?>">Teacher Enrichment</a></li>
-                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annul Pedegogical Policy</a></li>
+                        <li><a href="<?= base_url('academics#annual-pedagogical') ?>">Annual Pedagogical Policy</a></li>
                     </ul>
                 </div>
                 <div id="facilitiesSubMenu" class="subMenuItems">
