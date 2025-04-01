@@ -1633,6 +1633,49 @@ document.addEventListener("DOMContentLoaded", function() {
 <?php endif; ?>
 
 
+/*popup code start*/
+$(document).ready(function() {
+    $("#pop-success").hide();
+    $("#loader").hide();
+    const submitButton = $("#cv-upload-btn");
+
+    $("#open-cv-form").click(function() {
+        $('#pop-container-upload-cv').show('slow');
+    });
+
+    $('#pop_close').click(function() {
+        $('#pop-container-upload-cv').hide('slow');
+        $('body').css('overflow', 'auto');
+    });
+});
+
+$(document).ready(function() {
+    const admissionPopupClosed = sessionStorage.getItem('admissionPopupClosed');
+    if (admissionPopupClosed === 'true') {
+        $('#admissionPopUp').hide();
+        $('body').css('overflow', 'auto');
+    } else {
+        $('#admissionPopUp').show();
+        $('body').css('overflow', 'hidden');
+    }
+
+    $('#pop_close').click(function() {
+        $('#admissionPopUp').hide('slow');
+        $('body').css('overflow', 'auto');
+        sessionStorage.setItem('admissionPopupClosed', 'true');
+    });
+
+    $(window).click(function(event) {
+        if (!$(event.target).closest('.popup-container').length) {
+            $('#admissionPopUp').hide('slow');
+            $('body').css('overflow', 'auto');
+            sessionStorage.setItem('admissionPopupClosed', 'true');
+        }
+    });
+});
+    
+/*popup code end*/
+
 <?php if ($page_code === 'gallery'): ?>
 
 document.addEventListener("DOMContentLoaded", function() {

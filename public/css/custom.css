@@ -121,6 +121,8 @@ a {
     padding: 0;
 }
 
+
+
 p {
     line-height: 36.6px;
     font-family: 'Figtree-Light';
@@ -185,9 +187,12 @@ p {
 }
 
 /* Images */
+
 .mobileImg {
     display: none;
 }
+
+
 
 .mainContainer {
     max-width: 1920px;
@@ -204,28 +209,28 @@ p {
 }
 
 .itemCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center!important;
+    align-items: center !important;
 }
 
 .alignItemCenter {
-    display: flex;
-    align-items: center;
+    display: flex!important;
+    align-items: center!important;
 }
 
 .itemCenterWithWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap!important;
 }
 
 .itemSpaceBetween {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
 .itemStretch {
@@ -3409,3 +3414,109 @@ footer {
     line-height: 25px;
     font-family: 'Figtree-Regular';
 }
+
+/* PopUp Code Start */
+#admissionPopUp {
+    display: block;
+}
+
+.Popup-form-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    cursor: pointer;
+    display: flex;
+    height: 100vh;
+    background-color: #56000085;
+}
+
+.PopupGridContainer {
+    margin: auto;
+}
+
+.popup-container {
+    padding: 30px!important;
+    cursor: auto;
+    background-color: #102753;
+    position: relative;
+}
+
+.popup-close-icon {
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px!important;
+    
+    
+}
+
+.popup-close-icon img {
+    transition: transform .7s ease-in-out;
+}
+
+.popup-close-icon img:hover {
+    transform: rotate(360deg);
+}
+
+.popup-logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-logo p {
+    font-size: 8px;
+    line-height: 18px;
+    color: #ffffffb8;
+    font-family: 'LeBeauneNew';
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.popup-container h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #FFF;
+    line-height: 36.6px;
+    margin: 20px 0;
+    font-family: 'LeBeauneNew';
+}
+
+.popup-content {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.popup-content h2 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-family: 'Open Sans';
+}
+
+.popup-content a {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #102753;
+    font-family: 'Open Sans SemiBold';
+}
+
+.popup-cardBg {
+    background-color: #F6EDEE;
+}
+
+.mobileImg-1 {
+    display: none;
+}
+.mobileImg-2 {
+    display: none;
+}
+
+.p-12 {
+    padding-top: 12px;
+}
+
+/* PopUp Code End */

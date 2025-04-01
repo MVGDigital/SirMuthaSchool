@@ -1428,4 +1428,78 @@
 
 }
 
+
 /* Slick Slider */
+
+/* Pop Up Code */
+.popup-close-icon{
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  z-index: 999;
+
+}
+.Popup-form-container{
+  padding: 20px;
+}
+.popup-container{
+  padding: 15px;
+}
+.popup-container h1{
+  font-size: 20px;
+  margin: 10px 0;
+}
+.popup-content h2{
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+.popup-content a{
+  padding: 8px 30px;
+}
+.popup-content{
+  padding: 20px 15px;
+}
+#upload-cv .popup-container{
+  padding: 25px 20px;
+}
+.file-upload-label{
+  padding: 20px 20px;
+}
+#cv-upload-btn{
+  margin-bottom: 0;
+}
+.upload-doc-msg{
+  flex-wrap: wrap;
+}
+.simple-pagination li{
+  margin: 0 3px !important;
+}
+.popup-container h1{
+  font-size: 17px;
+}
+.popup-content h2{
+  font-size: 15px;
+}
+.popup-content a{
+  font-size: 12px;
+}
+@media (max-width: 350px){
+  .PopupGridContainer .mobileImg{
+      display: none!important;
+  }
+}
+.mobileImg{
+  display: none !important;
+}
+@media (max-width: 600px){
+  .PopupGridContainer .mobileImg-1{
+      display: block!important;
+  }
+}
+@media (max-width: 600px){
+  .PopupGridContainer .mobileImg-2{
+      display: block!important;
+  }
+}
+/*popup code end */
