@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-md-7 col-lg-8 itemCenter popup-cardBg p-0">
                         <div class="popup-content">
-                            <h2>Applications Now Open for Kindergarten to Grade 10</h2>
+                            <h2>Applications Now Open for LKG to Grade IX</h2>
                             <a href="<?= base_url('admission/form') ?>" class="form-btn">Apply Now</a>
                         </div>
                     </div>
