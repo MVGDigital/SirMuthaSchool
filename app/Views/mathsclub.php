@@ -77,7 +77,7 @@
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                                 <div class="gallery-imgItem2">
-                                    <img src="<?= base_url('images/gallery/math_clib_gallery_03.png') ?>"
+                                    <img src="<?= base_url('images/gallery/mathsclub_gallery_three.png') ?>"
                                         class="img-fluid w100" alt="Sir Gallery Images">
                                 </div>
                             </div>

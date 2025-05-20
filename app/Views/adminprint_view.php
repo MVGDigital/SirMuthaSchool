@@ -1,6 +1,7 @@
 <head>
     <title>Application Details</title>
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('images/favicon.png') ?>">
+    
     <style>
     body {
         font-family: Arial, sans-serif;
